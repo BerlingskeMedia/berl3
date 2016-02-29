@@ -42,6 +42,9 @@ img {
 	@extend .img-fluid;
 }
 
+.teaser.bb:last-child {
+	border-bottom: 0;
+}
 
 .teaser {
 	a {

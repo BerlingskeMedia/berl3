@@ -128,6 +128,14 @@
 						</div>
 						<div class="col-lg-4 col-md-4">
 							
+							<?php 
+								$imgW='420'; 
+								// $class = 'fs10 teaser-bg teaser-bg-narrow teaser-font-alt';
+								$class = 'fs10  teaser-bg teaser-bg-narrow ';
+								$showImg = '1';
+								$imgRatio = '4:5';
+								include('includes/teaser.php') ?>
+
 							<? while (dumb_luck("4")): ?>
 							<?php 
 								$imgW='420'; 
