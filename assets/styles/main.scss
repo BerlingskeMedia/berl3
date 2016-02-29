@@ -1,0 +1,148 @@
+@charset "UTF-8";
+// @import url(https://fonts.googleapis.com/css?family=Playfair+Display:700|Coda|PT+Serif:400,700);
+
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700|PT+Serif:400,700|Montserrat:400,700);
+
+$font-serif: 'Playfair Display', serif;
+$font-sans: 'Montserrat', sans-serif;
+$font-teaser: 'Playfair Display', serif;
+$font-teaser-weight: 700;
+$font-teaser-lineheight: 1.3;
+
+$background-color: #f8f8f8;
+
+@import "bootstrap/bootstrap";
+@import "_variables";
+@import "teasers";
+@import "buttons";
+@import "demo";
+
+@import "tools";
+
+
+html, body {
+	height: 100%;
+}
+
+
+body {
+	background-color: $background-color;
+}
+
+ul.list-reset {
+	margin: 0;
+	padding-left: 0;
+	list-style: none;
+	li {
+		padding-left: 0;
+	}
+}
+
+
+
+.well-container + .row > .col-primary {
+	margin-top: -3rem;
+	min-height: 400px;
+	z-index: 100;
+	padding-top: 1.2rem;
+	padding-right: 1.2rem;
+	position: relative;
+	&:after {
+		position: absolute;
+		left: .625rem;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background: $background-color;
+		content: '';
+		z-index: -1;
+	}
+}
+
+.deck {
+	margin-bottom: $spacer * 2;
+	@extend .clearfix;
+}
+.section-title {
+	text-transform: uppercase;
+	@extend .font-sans;
+	font-weight: 700;
+	margin-bottom: .5rem;
+
+	color: #333;
+	font-size: .9rem;
+	line-height: 1;
+	display: block;
+	letter-spacing: .05rem;
+	margin-top: $spacer;
+	@extend .top-block;
+
+}
+.section-link, 
+.section-date {
+	@extend .font-sans;
+	display: block;
+	font-weight: 700;
+	font-size: .8rem;
+	line-height: 1;
+	padding: .3rem 0;
+	a {
+		// color: #f26522;
+		color: #004ec3;
+		display: block;
+	}
+}
+.section-date {
+	color: #999;
+	font-size: .7rem;
+	font-weight: normal; 
+}
+
+.sidebar {
+	padding-top: $spacer;
+}
+.list-title {
+	@extend .font-sans;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	letter-spacing: .1rem;
+	margin-top: $spacer;
+	margin-bottom: $spacer;
+	@extend .top-block;
+}
+
+.top-block {
+	position: relative;
+	&:before {
+		display: inline-block;
+		width: 2rem;
+		content: '';
+		height: .35rem;
+		position: absolute;
+		top: -$spacer;
+		background-color: #222;
+	}
+}
+.list-news {
+	@extend .font-sans;
+	li {
+		margin-bottom: $spacer;
+		font-size: .95rem;
+	}
+}
+
+$col-deck-label-width: 150px;
+
+.col-deck-label {
+	width: $col-deck-label-width;
+	float: left;
+	@extend .hidden-md-down;
+}
+.col-deck-content {
+	width: calc(100% - 150px);
+	@include media-breakpoint-down(md) {
+		width: 100%;
+	}
+	float: left;
+}

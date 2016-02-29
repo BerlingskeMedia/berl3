@@ -1,0 +1,25 @@
+{
+  "name": "BT",
+  "homepage": "https://marginmedia.dk/",
+  "authors": [
+    "Bo Skakke <bo@skakke.dk>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "jquery": "^2.2.0"
+  },
+  "devDependencies": {},
+  "description": "",
+  "main": "",
+  "moduleType": [
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

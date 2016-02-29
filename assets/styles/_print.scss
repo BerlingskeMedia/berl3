@@ -1,0 +1,26 @@
+
+@media print {
+  .site-header *,
+  .fixed-bottom,
+  .sidebar,
+  .article-embedded-link,
+  .gallery-container,
+  .article-related,
+  .article-share-bottom,
+  .site-footer,
+  .article-content-below, 
+  .no-print,
+  .banner,
+  .article-share,
+  .article-newsletter,
+  .demo-ban,
+  .mobile-share-menu,
+  .share-trigger,
+  .article-embed-video {
+    display: none;
+  }
+  .article-content > ul {
+    list-style: disc;
+  }
+  
+}

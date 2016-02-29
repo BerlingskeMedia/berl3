@@ -1,0 +1,136 @@
+
+
+@mixin fontFace($family,$src,$style: normal,$weight: normal) {
+	@font-face {
+		font-family: $family;
+		src: url('#{$src}.eot'); // IE9 compat
+		src: url('#{$src}.eot?#iefix') format('embedded-opentype'), // IE8 and below
+			url('#{$src}.woff') format('woff'), // standards
+			url('#{$src}.ttf') format('truetype'), // Safari, Android, iOS
+			url('#{$src}.svg##{$family}') format('svg'); // legacy iOS
+
+		font-style: $style;
+		font-weight: $weight;
+	}
+}
+
+
+// Import fonts
+
+@include fontFace('swissBlack', '../fonts/swiss_721_black_condensed', 'normal','300');
+@include fontFace('SwissBold', '../fonts/swiss_721_bold_condensed', 'normal','300');
+@include fontFace('bt-icons', '../fonts/bt-icons', 'normal','300');
+
+
+// Define font variables
+
+$font-family-base: "helvetica neue", helvetica, arial, sans-serif;
+$font-family-header: 'SwissBlack', impact, sans-serif;
+$font-family-advertorial: 'AvenirNext-Bold', 'arial black', impact, tahoma, sans-serif;
+
+$font-family-subheader: 'SwissBold', impact, sans-serif;
+$bt_one-demibold: 'bt_one-demibold', helvetica, arial, sans-serif;
+
+
+.header-advertorial {
+  font-family: $font-family-advertorial;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+}
+.header-font, 
+.subheader-font {
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.01em;
+  font-weight: normal;
+  line-height: 1.05;
+}
+.header-font {
+  font-family: $font-family-header;
+  strong {
+    font-weight: normal;
+  }
+}
+.subheader-font {
+  font-family: $font-family-subheader;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  @include media-breakpoint-down(sm) {
+    font-size: 1.5rem;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @extend .header-font;
+}
+
+
+[class^="bticon-"]:before, [class*=" icon-"]:before {
+  font-family: "bt-icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: auto;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.bticon-instagramm:before { content: '\e800'; } /* '' */
+.bticon-search-2:before { content: '\e801'; } /* '' */
+.bticon-twitter:before { content: '\e802'; } /* '' */
+.bticon-facebook:before { content: '\e803'; } /* '' */
+.bticon-right-dir:before { content: '\e804'; } /* '' */
+.bticon-down-dir:before { content: '\e805'; } /* '' */
+.bticon-gplus:before { content: '\e806'; } /* '' */
+.bticon-mail:before { content: '\e807'; } /* '' */
+.bticon-mobile:before { content: '\e808'; } /* '' */
+.bticon-up-dir:before { content: '\e809'; } /* '' */
+.bticon-angle-left:before { content: '\e80a'; } /* '' */
+.bticon-angle-right:before { content: '\e80b'; } /* '' */
+.bticon-ok:before { content: '\e80c'; } /* '' */
+.bticon-eye:before { content: '\e80d'; } /* '' */
+.bticon-angle-up:before { content: '\e80e'; } /* '' */
+.bticon-angle-down:before { content: '\e80f'; } /* '' */
+.bticon-thumbs-up-alt:before { content: '\e810'; } /* '' */
+.bticon-plus-1:before { content: '\e811'; } /* '' */
+.bticon-camera:before { content: '\e812'; } /* '' */
+.bticon-comment:before { content: '\e813'; } /* '' */
+.bticon-left-dir:before { content: '\e814'; } /* '' */
+.bticon-ccw:before { content: '\e815'; } /* '' */
+.bticon-share:before { content: '\e816'; } /* '' */
+.bticon-print:before { content: '\e817'; } /* '' */
+.bticon-user:before { content: '\e818'; } /* '' */
+.bticon-flame:before { content: '\e819'; } /* '' */
+.bticon-down-open:before { content: '\e81a'; } /* '' */
+.bticon-left-open:before { content: '\e81b'; } /* '' */
+.bticon-right-open:before { content: '\e81c'; } /* '' */
+.bticon-up-open:before { content: '\e81d'; } /* '' */
+.bticon-dot-circled:before { content: '\e81e'; } /* '' */
+.bticon-clock:before { content: '\e81f'; } /* '' */
+.bticon-download:before { content: '\e820'; } /* '' */
+.bticon-video:before { content: '\e821'; } /* '' */
+.bticon-menu:before { content: '\e822'; } /* '' */
+.bticon-thumbs-up:before { content: '\e823'; } /* '' */
+.bticon-whatsapp:before { content: '\e824'; } /* '' */
+.bticon-link:before { content: '\e825'; } /* '' */
+.bticon-basket:before { content: '\e826'; } /* '' */
+.bticon-down-micro:before { content: '\e827'; } /* '' */
+.bticon-down-circle:before { content: '\e828'; } /* '' */
+.bticon-arrow-share:before { content: '\e829'; } /* '' */
+.bticon-resize-full-circle:before { content: '\e82a'; } /* '' */
+.bticon-play:before { content: '\e82b'; } /* '' */
+.bticon-info:before { content: '\e82c'; } /* '' */
+.bticon-asterisk:before { content: '\e82d'; } /* '' */
+.bticon-star-1:before { content: '\e82e'; } /* '' */
+.bticon-cancel:before { content: '\e82f'; } /* '' */
+.bticon-file-pdf:before { content: '\e830'; } /* '' */

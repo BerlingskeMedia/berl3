@@ -1,0 +1,247 @@
+//
+// Base styles
+//
+
+.btn {
+  @extend .font-sans;
+
+  display: inline-block;
+  font-weight: normal;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  user-select: none;
+  border: $border-width solid transparent;
+  // border-bottom: rgba(0,0,0,.2) .15rem solid;
+  @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $line-height, $btn-border-radius);
+  transition: all .1s ease-in-out;
+  text-transform: uppercase;
+  @extend .header-font;
+  
+  outline: 0!important;  
+
+  &,
+  &:active,
+  &.active {
+    &:focus,
+    &.focus {
+
+      @include tab-focus();
+    }
+  }
+
+  @include hover-focus {
+    text-decoration: none;
+  }
+  &.focus {
+    text-decoration: none;
+  }
+
+  &:active,
+  &.active {
+    background-image: none;
+    
+    @include box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
+
+  }
+
+  &.disabled,
+  &:disabled {
+    cursor: $cursor-disabled;
+    opacity: .65;
+    @include box-shadow(none);
+  }
+}
+
+// Future-proof disabling of clicks on `<a>` elements
+a.btn.disabled,
+fieldset[disabled] a.btn {
+  pointer-events: none;
+}
+
+
+//
+// Alternate buttons
+//
+
+
+
+
+.btn-fff {
+  @include button-variant(#333, #fff, darken(#fff, 5%));
+  // box-shadow: none;
+  &:hover {
+   //  background-color: transparent;
+  }
+}
+
+
+
+
+.btn-sms {
+  font-size: .7rem!important;
+}
+.btn-flat {
+  box-shadow: none;
+  border-radius: 0!important;
+}
+
+
+/*
+.btn-twitter {
+  @include btn($col-twitter, #fff, 1rem, 1, $col-counter:true);
+}
+.btn-black {
+  @include btn(#000, #fff, 16px, 1);
+}
+.btn-transparent {
+  @include btn(#fff, #666, 16px, 1);
+  box-shadow: none;
+}*/
+
+
+
+//
+// Link buttons
+//
+
+// Make a button look and behave like a link
+.btn-link {
+  font-weight: normal;
+  color: transparentize($link-color, .5);
+  border-radius: 0;
+  box-shadow: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+
+  &,
+  &:active,
+  &.active,
+  &:disabled {
+    background-color: transparent;
+    @include box-shadow(none);
+  }
+  &,
+  &:focus,
+  &:active {
+    border-color: transparent;
+  }
+  @include hover {
+    border-color: transparent;
+  }
+  @include hover-focus {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+    background-color: transparent;
+  }
+  &:disabled {
+    @include hover-focus {
+      color: $btn-link-disabled-color;
+      text-decoration: none;
+    }
+  }
+}
+
+
+//
+// Button Sizes
+//
+.btn-sm {
+  // line-height: ensure proper height of button next to small input
+  @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $font-size-sm, $line-height-sm, $btn-border-radius-sm);
+}
+.btn-md {
+  // line-height: ensure proper height of button next to small input
+  @include button-size($btn-padding-y-md, $btn-padding-x-md, $font-size-md, $line-height-md, $btn-border-radius-sm);
+}
+
+.btn-lg {
+  @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $font-size-lg, $line-height-lg, $btn-border-radius-lg);
+  @include media-breakpoint-down(sm) {
+    @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $font-size-sm, $line-height-sm, $btn-border-radius-sm);
+  }
+}
+
+.btn-xs {
+  // line-height: ensure proper height of button next to small input
+  @include button-size($btn-padding-y-xs, $btn-padding-x-xs, $font-size-xs, $line-height-xs, $btn-border-radius-xs);
+}
+
+
+
+
+
+// Specificity overrides
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  &.btn-block {
+    width: 100%;
+  }
+}
+
+
+/*----------------------------------------------- */
+
+form label {
+	cursor: pointer;
+}
+
+button {
+	border: 0;
+	background-color: transparent;
+}
+
+ 
+.btn-clean {
+	border: 0;
+	background: transparent;
+}
+.btn-newsletter-toggle {
+  border: 0;
+  line-height: 2.5rem;
+  padding: 0;
+  color: #999; 
+}
+.btn-round {
+	border-radius: 50%;
+	text-align: center;
+  display: inline-block;
+  padding: 0;
+  box-shadow: none;
+}
+
+.btn-block {
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+.form-oneliner {
+  position: relative;
+  .btn,
+  .fake-btn {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    vertical-align: middle;
+    box-shadow: none;
+    border-bottom: 0;
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+  .btn {
+      // font-size: 1.5rem;
+      line-height: 1;
+    }
+
+}
+
+
+

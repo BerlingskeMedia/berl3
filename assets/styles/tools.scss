@@ -1,0 +1,66 @@
+.module,
+.mb {
+	margin-bottom: $spacer;
+}
+
+.bb {
+	border-bottom: $border-width solid $border-color;
+	padding-bottom: $spacer ;
+	margin-bottom: $spacer;
+}
+
+.pb {
+	padding-bottom: $spacer / 2;
+}
+
+.fs08 {
+	.header {
+		font-size: .8rem;
+	}
+}
+
+.fs10 {
+	.header {
+		font-size: 1rem;
+	}
+}
+.fs12 {
+	.header {
+		font-size: 1.2rem;
+	}
+}
+.fs14 {
+	.header {
+		font-size: 1.4rem;
+	}
+}
+.fs16 {
+	.header {
+		font-size: 1.6rem;
+	}
+}
+.fs18 {
+	.header {
+		font-size: 1.8rem;
+	}
+}
+.fs20 {
+	.header {
+		font-size: 2.0rem;
+	}
+}
+
+.link-fff {
+	a {
+		color: #fff;
+		&:hover {
+			color: #fff;
+		}
+	}
+	&:hover {
+		a {
+			color: #fff;
+		}
+	}
+
+}
