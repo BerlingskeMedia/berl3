@@ -68,36 +68,51 @@ img {
 		}
 	}
 }
-
+.teaser-label {
+	@extend .teaser-cat;
+}
 
 // teaser well 
 .teaser-well {
 	position: relative;
 	padding-top: 56.25%;
+	margin-bottom: $spacer;
+	&:hover {
+		.teaser-bg:before {
+			opacity: .2;
+		}
+	}
 	.teaser-bg {
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center center;
-		position: absolute;
-		top: 0;
 		bottom: 0;
-		left: 0;
-		right: 0;
+		@extend .absolute;
+		&:before {
+			@extend .absolute;
+			bottom: 0;
+			content: '';
+			background: #fff;
+			opacity: 0;
+			transition: opacity .2s ease;
+		}
 	}
+
 	a {
-		color: #fff;
+		color:#fff;
+		text-decoration: none;
 	}
 	.teaser-content {
-		position: absolute;
-		bottom: 40px;
-		left: 0;
+		@extend .absolute;
+		top: auto;
+		bottom: 5rem;
 		width: 100%;
 		z-index: 100;
 		padding: 1rem;
 		&:after {
 			display: block;
 			position: absolute;
-			bottom: -40px;
+			bottom: -5rem;
 			top: -100px;
 			left: 0;
 			right: 0;
@@ -112,7 +127,7 @@ img {
 		color: #fff;
 		font-size: 4rem;
 		margin-bottom: 1rem;
-		text-shadow: 1px 1px 1px rgba(37,37,37,.4);
+		text-shadow: 1px 1px 1px rgba(37,37,37,.4), 0 0 30px rgba(0,0,0,.7);
 
 	}
 	.well-summary {
@@ -143,7 +158,7 @@ img {
 .teaser-sm {
 	margin-bottom: $spacer;
 	.teaser-img {
-		margin-bottom: .3rem;
+		margin-bottom: .625rem;
 	}
 	.header {
 		@extend .font-teaser;
@@ -179,9 +194,8 @@ img {
 	}
 	.teaser-body {
 		@include gradient-vertical(rgba(37,37,37,.0), rgba(37,37,37,.9), 0%, 100%);
-		position: absolute;
-		left: 0;
-		right: 0;
+		@extend .absolute;
+		top: initial;
 		bottom: 0;
 		padding: 3rem 1rem 1rem;
 	}

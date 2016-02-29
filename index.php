@@ -1,7 +1,7 @@
 <? require_once("../dummy/dummy.php") ?>
 
 <?php 
-	$showWell = true;
+	$showWell = rand(1,1);
 ?>
 <!DOCTYPE html>
 <html lang="da">
@@ -15,10 +15,67 @@
 <body>
 
 
+<header class="site-header">
+	<div class="header-top hidden-md-down">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<nav>
+						<ul class="pull-right list-reset list-xs">
+							<li><a href="#">E-avisen</a></li>
+							<li><a href="#">Nyhedsbreve</a></li>
+							<li><a href="#">Kundeservice</a></li>
+							<li><a href="#">Privatlivspolitik</a></li>
+						</ul>
+					</nav>			
+				</div>
+			</div>
+		</div>	
+	</div>
+	<div class="header-middle text-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<a href="tpl-frontpage.php" class="site-logo">Berlingske</a>
+					<nav class="tools-menu">
+						<ul class="list-reset list-xs">
+							<li><a href="#"><i class="bicon-search"></i> Søg</a></li>
+							<li><a href="#"><i class="bicon-user"></i> Log ind</a></li>
+							
+						</ul>
+					</nav>			
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<nav>
+						<ul class="list-reset list-sm">
+							<li class="active"><a href="#">Nyheder</a></li>
+							<li><a href="#">Politik</a></li>
+							<li><a href="#">Udland</a></li>
+							<li><a href="#">Kultur</a></li>
+							<li><a href="#">Opinion</a></li>
+							<li><a href="#">Business <i class="bicon-chart-line"></i></a></li>
+						</ul>
+					</nav>			
+				</div>
+			</div>
+		</div>	
+	</div>
+</header>
+
+<div class="site-wrapper">
+
+	<div class="bg-banner"></div>
+	<div class="topbanner demo-banner" style="width: 930px; height: 180px;"></div>
 
 
-<div class="container">
-	<?php if($showWell): ?>
+<div class="container main-content">
+	<?php if($showWell == '1'): ?>
 		<div class="row well-container">
 			<div class="col-md-12">
 				<?php include('includes/teaser-well.php'); ?>
@@ -44,7 +101,7 @@
 				<div class="col-deck-content">
 					
 					<div class="r ow">
-						<?php if(!$showWell): ?>
+						<?php if($showWell == '0'): ?>
 							<div class="col-lg-12">
 								<?php
 
@@ -74,9 +131,10 @@
 							<? while (dumb_luck("4")): ?>
 							<?php 
 								$imgW='420'; 
-								$class = 'fs10 teaser-bg teaser-bg-narrow teaser-font-alt';
+								// $class = 'fs10 teaser-bg teaser-bg-narrow teaser-font-alt';
+								$class = 'fs10 bb ';
 								$showImg = '1';
-								$imgRatio = '1:1';
+								$imgRatio = '16:9';
 								include('includes/teaser.php') ?>
 							<? endwhile ?>
 						</div>
@@ -86,7 +144,7 @@
 			</div>
 		</div>
 
-		<div class="col-lg-4 sidebar">
+		<div class="col-lg-4 col-md-12 sidebar">
 
 			<div class="banner">
 				<div style="width: 300px; height: 250px;" class="demo-banner"></div>
@@ -116,19 +174,19 @@
 				Opinion
 			</span>
 			<span class="section-link">
-				<a href="tpl-section.php">Se alle</a>
+				<a href="tpl-section.php">Se alle <i class="bicon-right"></i></a>
 			</span>
 		</div>
 		<div class="col-deck-content">
 			<div class="row">
 			<? while (dumb_luck("4")): ?>
-			<div class="col-lg-3">
+			<div class="col-lg-3 col-md-3">
 				<?php 
 					$imgW='420'; 
 					$class = 'fs12';
 					$showImg = '1';
 					$imgRatio = '1:1';
-					include('includes/teaser.php') ?>
+					include('includes/teaser-cat.php') ?>
 			</div>
 			<?php endwhile; ?>
 			</div>
@@ -138,10 +196,10 @@
 	<div class="deck">
 		<div class="col-deck-label">
 			<span class="section-title">
-				Dagens billede
+				Verden i billeder
 			</span>
 			<span class="section-link">
-				<a href="tpl-section.php">Se flere</a>
+				<a href="tpl-section.php">Se flere <i class="bicon-right"></i></a>
 			</span>
 		</div>
 		<div class="col-deck-content">
@@ -152,6 +210,7 @@
 	</div>
 	
 </div>
+</div><!-- site-wrapper -->
 
 <br><br><br><br><br><br>
 
