@@ -3,6 +3,9 @@
 <?php if(isset($_GET["well"])) {
 	$showWell = true;
 } ?>
+<?php if(isset($_GET["oneliner"])) {
+	$showOneliner = true;
+} ?>
 
 <?php 
 	// $showWell = rand(1,1);
@@ -16,9 +19,11 @@
 	<title>Front page</title>
 	<link rel="stylesheet" href="/dist/styles/main.css">
 </head>
-<body>
+<body class="">
 
-
+<div class="site-search-overlay">
+	
+</div>
 <?php include('includes/site-header.php'); ?>
 
 <div class="site-wrapper">
@@ -50,6 +55,9 @@
 				
 			<div class="row">
 				<div class="col-deck-label">
+				
+					<div class="section-title">Topnyheder</div>
+
 					<span class="section-date">
 						<strong>Mandag</strong>28. februar 2015
 					</span>
@@ -63,45 +71,64 @@
 				</div>
 
 				
-				<div class="col-deck-content">
-						<div class="col-lg-12">
-							<?php if(!$showWell) : ?>
-								
+				<div class="col-deck-content border-right-lg">
+							
+						<div class="col-lg-8 col-md-8 border-right-lg">
+						
+							<?php // if(!$showWell) : ?>
 									<?php
-
-										$imgW='820'; 
+										$imgW='920'; 
 										$showImg = '1';
-										$class = ' fs20 border-bottom main-teaser';
+										$class = ' fs22 border-bottom main-teaser';
 										$imgRatio = '16:9';
 										$showSummary = '1';
 										include('includes/teaser.php') ?>
-									
-								
-							<?php endif; ?>
-						</div>
-						<div class="col-lg-8 col-md-8">
-							<? while (dumb_luck("6")): ?>
+							<?php // endif; ?>
+						
+
+							<? while (dumb_luck("4")): ?>
 							<?php 
 								$imgW='140'; 
 								$showImg = '1';
 								$class = 'teaser-float-left fs12 bb';
-								$imgRatio = '1:1';
+								$imgRatio = '3:2';
 								$showSummary = '0';
 								include('includes/teaser.php') ?>
 							<? endwhile ?>
+
+							<?php // if(!$showWell) : ?>
+									<?php
+										$imgW='920'; 
+										$showImg = '1';
+										$class = ' fs22 border-bottom main-teaser';
+										$imgRatio = '16:9';
+										$showSummary = '0';
+										include('includes/teaser.php') ?>
+							<?php // endif; ?>
+
+							<? while (dumb_luck("2")): ?>
+							<?php 
+								$imgW='140'; 
+								$showImg = '1';
+								$class = 'teaser-float-left fs12 bb';
+								$imgRatio = '3:2';
+								$showSummary = '0';
+								include('includes/teaser.php') ?>
+							<? endwhile ?>
+
 						</div>
 						<div class="col-lg-4 col-md-4">
 							
 							
 
-							<? while (dumb_luck("4")): ?>
+							<? while (dumb_luck("6")): ?>
 							<?php 
 								$imgW='420'; 
 								// $class = 'fs10 teaser-bg teaser-bg-narrow teaser-font-alt';
 								$class = 'fs10 bb ';
 								$showImg = '1';
-								$imgRatio = '16:9';
-								include('includes/teaser-cat.php') ?>
+								$imgRatio = '3:2';
+								include('includes/teaser.php') ?>
 							<? endwhile ?>
 						</div>
 					
@@ -115,21 +142,8 @@
 			<div class="banner mb-2">
 				<div style="width: 300px; height: 250px;" class="demo-banner"></div>
 			</div>
-			<section class="latest-news mb-2" >
-				
-				<div class="section-title ">Seneste nyt</div>
-
-				<ul class="list-reset list-news">
-					<? while (dumb_luck("8")): ?>
-					<li>
-						<div class="list-body">
-							<a href="#"><? dummy("text@headline-b2") ?></a>
-						</div>
-					</li>
-					<? endwhile ?>
-				</ul>
-
-			</section>
+			
+			<?php include('includes/list-news.php'); ?>
 
 			<section class="module">
 				<div class="section-title ">
@@ -143,7 +157,7 @@
 					<?php 
 					$imgW='420'; 
 					// $class = 'fs10 teaser-bg teaser-bg-narrow teaser-font-alt';
-					$class = 'fs08 teaser-font-alt';
+					$class = 'fs10 teaser-font-alt';
 					$showImg = '1';
 					$imgRatio = '16:9';
 					include('includes/teaser.php') ?>
@@ -154,6 +168,10 @@
 				</div>
 				</div>
 			</section>
+
+			<div class="banner mb-2">
+				<div style="width: 300px; height: 250px;" class="demo-banner"></div>
+			</div>
 		</div>
 		
 	</div>

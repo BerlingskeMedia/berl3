@@ -55,6 +55,17 @@
 .border-bottom {
 	border-bottom: $border-width solid $border-color;
 }
+.border-right-lg {
+	&:after {
+		@extend .absolute;
+		bottom: 0;
+		left: auto;
+		right: 0;
+		width: $border-width;
+		background-color: $border-color;
+		content: '';
+	}
+}
 .link-fff {
 	a {
 		color: #fff;
@@ -96,4 +107,19 @@
 .white-padding {
 	padding: .3rem;
 	background-color: #fff;
+}
+
+.header,
+.font-header {
+	line-height: 1.2;
+	font-family: $font-serif;
+}
+
+.font-sans {
+	font-family: $font-sans;
+	line-height: 1.2;
+}
+.font-sans-alt {
+	font-family: $font-sans-alt;
+	line-height: 1.2;
 }

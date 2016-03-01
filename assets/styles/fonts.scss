@@ -46,6 +46,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 .bicon-chart-line:before { content: '\e800'; } /* '' */
 .bicon-search:before { content: '\e801'; } /* '' */
 .bicon-user:before { content: '\e802'; } /* '' */
@@ -63,3 +64,4 @@ h1, h2, h3, h4, h5, h6 {
 .bicon-angle-down:before { content: '\e80e'; } /* '' */
 .bicon-camera:before { content: '\e80f'; } /* '' */
 .bicon-menu:before { content: '\e810'; } /* '' */
+.bicon-right-1:before { content: '\e811'; } /* '' */

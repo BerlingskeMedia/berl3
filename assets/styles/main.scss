@@ -1,10 +1,13 @@
 @charset "UTF-8";
 // @import url(https://fonts.googleapis.com/css?family=Playfair+Display:700|Coda|PT+Serif:400,700);
 
+
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:700|PT+Serif:400,700|Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:900);
 
 $font-serif: 'Playfair Display', serif;
 $font-sans: 'Montserrat', sans-serif;
+$font-sans-alt: $font-sans;
 $font-teaser: 'Playfair Display', serif;
 $font-teaser-weight: 700;
 $font-teaser-lineheight: 1.2;
@@ -16,6 +19,7 @@ $background-color: rgba(248,248,248,1);
 @import "header";
 @import "teasers";
 @import "buttons";
+@import "lists";
 @import "demo";
 
 @import "tools";
@@ -121,10 +125,10 @@ ul.list-reset {
 }
 .section-title {
 	text-transform: uppercase;
-	@extend .font-sans;
+	@extend .font-sans-alt;
 	font-weight: 700;
 	margin-bottom: $spacer;
-	font-size: .9rem;
+	font-size: 1.2rem;
 	color: #333;
 	line-height: 1.2;
 	display: block;
@@ -134,7 +138,6 @@ ul.list-reset {
 	/*transform: rotate(-90deg);
 	transform-origin: right top 0;*/
 	
-	top: 0;
 
 }
 .section-link, 
@@ -195,13 +198,7 @@ ul.list-reset {
 		background-color: #222;
 	}
 }
-.list-news {
-	@extend .font-sans;
-	li {
-		margin-bottom: $spacer;
-		font-size: .95rem;
-	}
-}
+
 
 $col-deck-label-width: 160px;
 
@@ -220,3 +217,18 @@ $col-deck-label-width: 160px;
 	}
 	float: left;
 }
+
+/*.show-site-search {
+	filter: blur(5px);
+	overflow: hidden;
+	.site-search-overlay {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: rgba(255,255,255,.6);
+		z-index: 9999;
+	}	
+}*/
+
