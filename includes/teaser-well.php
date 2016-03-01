@@ -1,5 +1,7 @@
-<article class="teaser-well">
-	<div class="teaser-bg" style="background-image:url(<? dummy("image@1240x,16:9") ?>)"></div>
+<article class="teaser-well teaser-well-white">
+	<a href="tpl-article.php">
+	<div class="teaser-bg" style="background-image:url(<? dummy("image/!b-breaking@1240x,16:9") ?>)"></div>
+	</a>
 	
 	<div class="teaser-content">
 		<h2 class="header"><a href="tpl-article.php"><? dummy("text@headline-b2") ?></a></h2>
@@ -8,7 +10,7 @@
 			<? while (dumb_luck("0-2")): ?>
 			<li>
 				<figure class="related-img">
-					<a href="tpl-article.php"><img src="<? dummy("image@160x,16:9") ?>" width="" height="" alt="" /></a>
+					<a href="tpl-article.php"><img src="<? dummy("image@120x,16:9") ?>" width="" height="" alt="" /></a>
 				</figure>
 				<h3 class="header-related">
 					<a href="tpl-article.php"><? dummy("text@headline-b2") ?></a>

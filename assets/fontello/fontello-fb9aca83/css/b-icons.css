@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'b-icons';
-  src: url('../font/b-icons.eot?89582488');
-  src: url('../font/b-icons.eot?89582488#iefix') format('embedded-opentype'),
-       url('../font/b-icons.woff?89582488') format('woff'),
-       url('../font/b-icons.ttf?89582488') format('truetype'),
-       url('../font/b-icons.svg?89582488#b-icons') format('svg');
+  src: url('../font/b-icons.eot?39930797');
+  src: url('../font/b-icons.eot?39930797#iefix') format('embedded-opentype'),
+       url('../font/b-icons.woff?39930797') format('woff'),
+       url('../font/b-icons.ttf?39930797') format('truetype'),
+       url('../font/b-icons.svg?39930797#b-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -14,7 +14,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'b-icons';
-    src: url('../font/b-icons.svg?89582488#b-icons') format('svg');
+    src: url('../font/b-icons.svg?39930797#b-icons') format('svg');
   }
 }
 */
@@ -69,3 +69,4 @@
 .bicon-angle-right:before { content: '\e80c'; } /* '' */
 .bicon-angle-up:before { content: '\e80d'; } /* '' */
 .bicon-angle-down:before { content: '\e80e'; } /* '' */
+.bicon-camera:before { content: '\e80f'; } /* '' */

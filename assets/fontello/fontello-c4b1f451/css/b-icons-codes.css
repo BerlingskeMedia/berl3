@@ -14,3 +14,5 @@
 .bicon-angle-right:before { content: '\e80c'; } /* '' */
 .bicon-angle-up:before { content: '\e80d'; } /* '' */
 .bicon-angle-down:before { content: '\e80e'; } /* '' */
+.bicon-camera:before { content: '\e80f'; } /* '' */
+.bicon-menu:before { content: '\e810'; } /* '' */

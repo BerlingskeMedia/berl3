@@ -47,11 +47,13 @@ img {
 }
 
 .teaser {
+
 	a {
 		color: #000;
+		transition: color .2s ease;
 		&:hover {
 			text-decoration: none;
-			color: #333;
+			color: $col-alt;
 		}
 	}
 	.header {
@@ -69,22 +71,58 @@ img {
 				opacity: .9;
 			}
 		}
+		a {
+			color: $col-alt;
+		}
 	}
 }
 .teaser-label {
 	@extend .teaser-cat;
 }
 
+.main-teaser {
+	padding-bottom: $spacer;
+
+	/*background-color: #fff;*/
+	/*.teaser-body {
+		padding: 0 .625rem .625rem;
+	}*/
+}
+
 // teaser well 
+
+.teaser-well-black {
+	.teaser-content:after {
+		@include gradient-vertical(rgba(37,37,37,.0), rgba(37,37,37,.9), 0%, 100%);
+	}
+	
+	.header {
+		text-shadow: 1px 1px 1px rgba(37,37,37,.4), 0 0 30px rgba(0,0,0,.7);
+	}
+	.well-summary {
+		color: #fff;
+	}
+}
+.teaser-well-white {
+	.teaser-content:after {
+		@include gradient-vertical(rgba(248,248,248,.0), rgba(248,248,248,1), 0%, 90%);
+	}
+	
+	.well-summary,
+	.header a {
+		color: #000;
+	}
+}
 .teaser-well {
 	position: relative;
 	padding-top: 56.25%;
 	margin-bottom: $spacer;
 	&:hover {
-		.teaser-bg:before {
-			opacity: .2;
+		.teaser-content:after {
+			top: -130px;
 		}
 	}
+
 	.teaser-bg {
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -97,7 +135,6 @@ img {
 			content: '';
 			background: #fff;
 			opacity: 0;
-			transition: opacity .2s ease;
 		}
 	}
 
@@ -113,6 +150,7 @@ img {
 		z-index: 100;
 		padding: 1rem;
 		&:after {
+			transition: all .2s ease;
 			display: block;
 			position: absolute;
 			bottom: -5rem;
@@ -120,24 +158,25 @@ img {
 			left: 0;
 			right: 0;
 			width: 100%;
-			@include gradient-vertical(rgba(37,37,37,.0), rgba(37,37,37,.9), 0%, 100%);
 			content: '';
 			z-index: -1;
 		}
 	}
+
 	.header {
 		@extend .font-header;
+		line-height: 1;
 		color: #fff;
 		font-size: 4rem;
 		margin-bottom: 1rem;
-		text-shadow: 1px 1px 1px rgba(37,37,37,.4), 0 0 30px rgba(0,0,0,.7);
+		max-width: 80%
 
 	}
 	.well-summary {
-		color: #fff;
-		font-size: 1.3rem;
+		font-size: 1.2rem;
 		max-width: 51rem;
 		@extend .font-sans;
+		margin-bottom: 0;
 	}
 	.well-related {
 		@extend ul.reset;
@@ -167,6 +206,13 @@ img {
 		@extend .font-teaser;
 		font-weight: $font-teaser-weight;
 		line-height: $font-teaser-lineheight;
+		padding-bottom: .2rem;
+	}
+	.teaser-summary {
+		margin-top: .625rem;
+		color: #333;
+		line-height: 1.3;
+		
 	}
 }
 
@@ -213,4 +259,43 @@ img {
 	.teaser-body {
 		padding: 1rem .5rem .5rem;
 	}
+}
+
+.teaser-imageoftheday {
+	position: relative;
+	padding: .625rem;
+	background: #000;
+	// background-color: #111;
+	figcaption {
+		position: absolute;
+		background-color: #000;
+		@include gradient-directional($start-color: #000, $end-color: #222, $deg: 0deg);
+		left: .625rem;
+		bottom: .625rem;
+		padding: .625rem;
+		max-width: 600px; 
+	}
+	figure {
+		position: relative;
+	}
+	
+	.header {
+		color: #fff;
+		font-size: 2rem;
+	&:before {
+		@extend .absolute;
+		top: -2.625rem;
+		left: -.375rem;
+		content: '\e80f';
+		font-family: b-icons;
+		width: 3rem;
+		height: 3rem;
+		line-height: 3rem;
+		text-align: center;
+		background: #ccdd22;
+		background: yellow;
+		color: #000;
+	}
+
+	}	
 }

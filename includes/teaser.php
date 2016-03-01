@@ -2,7 +2,7 @@
 $imgW = ($imgW ? $imgW : '420');
 $showImg = ($showImg ? $showImg : '0');
 $imgRatio = ($imgRatio ? $imgRatio : '3:2');
-
+$showSummary = ($showSummary ? $showSummary : '0');
 
 ?>
 
@@ -22,5 +22,11 @@ $imgRatio = ($imgRatio ? $imgRatio : '3:2');
 			<? dummy("text@headline-b2") ?>
 			</a>
 		</h2>
+		<?php if ($showSummary === '1'): ?>
+		<div class="teaser-summary">
+			<? dummy("text@teaser") ?>
+		</div>
+		<?php endif; ?>
+
 	</div>
 </article>

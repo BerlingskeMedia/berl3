@@ -527,6 +527,12 @@
       "css": "search",
       "code": 59393,
       "src": "modernpics"
+    },
+    {
+      "uid": "b59cc4d390a6df564a055f43c03a6af5",
+      "css": "camera",
+      "code": 59407,
+      "src": "linecons"
     }
   ]
 }

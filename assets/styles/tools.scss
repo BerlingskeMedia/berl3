@@ -2,6 +2,9 @@
 .mb {
 	margin-bottom: $spacer;
 }
+.mb-2 {
+	margin-bottom: $spacer * 4;	
+}
 
 .bb {
 	border-bottom: $border-width solid $border-color;
@@ -71,4 +74,26 @@
 		color: darken(#999, 15%);
 		text-decoration: none;
 	}
+}
+
+.link-gray-dark {
+	a {
+		color: #666;
+		&:hover {
+			color: darken(#666, 15%);
+		}
+	}	
+}
+.link-blue {
+	color: $col-alt;
+	&:hover {
+		color: darken($col-alt, 10%);
+	}
+}
+.gray {
+	color: #666;
+}
+.white-padding {
+	padding: .3rem;
+	background-color: #fff;
 }

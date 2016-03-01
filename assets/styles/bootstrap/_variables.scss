@@ -82,9 +82,9 @@ $body-color:                 #333 !default;
 //
 // Style anchor elements.
 
-$link-color:                 #666 !default;
+$link-color:                 #222 !default;
 $link-decoration:            none !default;
-$link-hover-color:           darken($link-color, 15%) !default;
+$link-hover-color:           $col-alt;
 $link-hover-decoration:      underline !default;
 
 
@@ -103,7 +103,7 @@ $grid-breakpoints: (
   // Large screen / desktop
    lg: 992px,
   // Extra large screen / wide desktop
-   xl: 1400px
+   xl: 1600px
 ) !default;
 
 
