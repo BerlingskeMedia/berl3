@@ -1,19 +1,38 @@
-.module,
+.mb-0 {
+	margin-bottom: 0;
+}
+
 .mb {
 	margin-bottom: $spacer;
 }
+
 .mb-2 {
 	margin-bottom: $spacer * 4;	
 }
+.mt-2 {
+	margin-top: $spacer * 2;
+}
+.mt-3 {
+	margin-top: $spacer * 3;
+}
 
-.bb {
+.bb:not(:last-of-type) {
 	border-bottom: $border-width solid $border-color;
 	padding-bottom: $spacer ;
 	margin-bottom: $spacer;
+
+}
+.hidden {
+	display: none;
+}
+.pb {
+	padding-bottom: .625rem;
 }
 
-.pb {
-	padding-bottom: $spacer / 2;
+.module {
+	border-bottom: $border-width solid $border-color;
+	margin-bottom: $spacer * 2;
+	padding-bottom: $spacer;
 }
 
 .fs08 {
@@ -21,7 +40,11 @@
 		font-size: .8rem;
 	}
 }
-
+.fs09 {
+	.header {
+		font-size: .9rem;
+	}
+}
 .fs10 {
 	.header {
 		font-size: 1rem;
@@ -52,12 +75,23 @@
 		font-size: 2.0rem;
 	}
 }
+
+.display-block {
+	display: block;
+}
+.teaser-bw:not(:hover) {
+	img {
+		filter:grayscale(100%);
+	}
+}
 .border-bottom {
 	border-bottom: $border-width solid $border-color;
 }
 .border-right-lg {
+	position: relative;
 	&:after {
-		@extend .absolute;
+		position: absolute;
+		top: 0;
 		bottom: 0;
 		left: auto;
 		right: 0;
@@ -66,6 +100,25 @@
 		content: '';
 	}
 }
+.br-lg .flex-row:not(:last-child){
+	.teaser {
+		position: relative;
+		// padding-bottom: .625rem;
+		
+		&:after {
+			border-right: $border-width solid $border-color;
+			content: '';
+			position: absolute;
+			right: -.625rem; 
+			top: 0;
+			bottom: 0;
+			width: $border-width;
+			background-color: $border-color;
+		
+		}
+	}
+}
+
 .link-fff {
 	a {
 		color: #fff;
@@ -102,24 +155,32 @@
 	}
 }
 .gray {
-	color: #666;
+	color: #999;
+}
+.gray-darker {
+	color: darken(#999, 25%);	
 }
 .white-padding {
 	padding: .3rem;
 	background-color: #fff;
 }
 
-.header,
-.font-header {
-	line-height: 1.2;
-	font-family: $font-serif;
+.gray {
+	font-color: #999; 
+}
+.small, 
+.small p {
+
+	font-size: .75rem;
 }
 
-.font-sans {
-	font-family: $font-sans;
-	line-height: 1.2;
+
+.flex-row {
+	display:flex;
+	flex-wrap:wrap;
+	list-style: none;
 }
-.font-sans-alt {
-	font-family: $font-sans-alt;
-	line-height: 1.2;
-}
+
+ .inline-block {
+ 	display: inline-block;
+ }

@@ -1,28 +1,18 @@
 @charset "UTF-8";
-// @import url(https://fonts.googleapis.com/css?family=Playfair+Display:700|Coda|PT+Serif:400,700);
 
-
-@import url(https://fonts.googleapis.com/css?family=Playfair+Display:700|PT+Serif:400,700|Montserrat:400,700);
-@import url(https://fonts.googleapis.com/css?family=Roboto:900);
-
-$font-serif: 'Playfair Display', serif;
-$font-sans: 'Montserrat', sans-serif;
-$font-sans-alt: $font-sans;
-$font-teaser: 'Playfair Display', serif;
-$font-teaser-weight: 700;
-$font-teaser-lineheight: 1.2;
-$background-color: rgba(248,248,248,1);
 
 @import "bootstrap/bootstrap";
 @import "_variables";
+@import "grid-hack";
 @import "fonts";
 @import "header";
 @import "teasers";
 @import "buttons";
 @import "lists";
+@import "menu";
 @import "demo";
 
-@import "tools";
+
 
 
 html, body {
@@ -34,7 +24,7 @@ html, body {
 body {
 	background: $background-color;
 }
-.site-wrapper {
+.banner-wrapper {
 	position: relative;
 }
 .bg-banner {
@@ -53,14 +43,14 @@ body {
 }
 .main-content {
 	padding-top: .625rem;
-	border-top: .35rem #333 solid;
+	border-top: .35rem #222 solid;
 	
 }
 
 
 
 ul.list-reset {
-	margin: 0;
+	margin-top: 0;
 	padding-left: 0;
 	list-style: none;
 	li {
@@ -73,14 +63,15 @@ ul.list-reset {
 .well-container + .row > .col-primary {
 	margin-top: -5rem;
 	min-height: 400px;
-	z-index: 100;
+	z-index: 5;
 	padding-top: 1.2rem;
 	padding-right: 1.2rem;
 	position: relative;
+	background-color: $background-color;
 	&:after {
-		position: absolute;
+		
 		left: .625rem;
-		right: 0;
+		right: (.625rem / 2);
 		top: 0;
 		bottom: 0;
 		background: $background-color;
@@ -90,12 +81,10 @@ ul.list-reset {
 }
 
 .weather-of-the-day {
-	margin-top: $spacer * 2;
+	margin-top: $spacer ;
 	font-size: .8rem;
-	@extend .font-sans;
 	line-height: 1.4;
 	a {
-		
 		font-size: 80%;
 		display: block;
 	}
@@ -106,7 +95,6 @@ ul.list-reset {
 	height: 34px;
 	line-height: 34px;
 	display: block;	
-	color: #666;
 }
 .weather-icon-2 {
 	background-position: 0 -34px;
@@ -120,53 +108,43 @@ ul.list-reset {
 
 
 .deck {
-	margin-bottom: $spacer * 2;
+	margin-bottom: $spacer * 3;
 	@extend .clearfix;
 }
 .section-title {
-	text-transform: uppercase;
 	@extend .font-sans-alt;
-	font-weight: 700;
 	margin-bottom: $spacer;
-	font-size: 1.2rem;
 	color: #333;
 	line-height: 1.2;
+	font-size: 1.5rem;
 	display: block;
 	letter-spacing: .0rem;
 	margin-top: $spacer;
 	@extend .top-block;
+
 	/*transform: rotate(-90deg);
 	transform-origin: right top 0;*/
-	
-
+}
+.sidebar .section-title {
+	margin-top: $spacer * 2;
 }
 .section-link, 
 .section-date {
 	@extend .font-sans;
 	display: block;
-	font-weight: 700;
 	font-size: .8rem;
 	line-height: 1;
 	padding: .3rem 0;
 	a {
-		
 		@extend .link-blue;
 		display: block;
 	}
 }
 .section-date {
-	color: #999;
-	font-weight: normal; 
-	
 	line-height: 1.4;
-	padding-top: 0;
-	
-	strong {
-		display: block;
-		// font-size: 1.7rem;
-		// font-weight: normal;
-		color: #444;
-	}
+	padding: $spacer 0;
+	border-top: $border-width solid $border-color;
+	border-bottom: $border-width solid $border-color;
 }
 
 .col-primary {
@@ -174,7 +152,7 @@ ul.list-reset {
 }
 .sidebar {
 	// padding-top: $spacer;
-	width: 300px;
+	width: 320px;
 }
 .list-title {
 	@extend .font-sans;
@@ -205,18 +183,52 @@ $col-deck-label-width: 160px;
 .col-deck-label {
 	width: $col-deck-label-width;
 	float: left;
+	min-width: 1px;
+	min-height: 1px;
 	position: relative;
 	@extend .hidden-md-down;
 	padding-right: .625rem;
 	padding-left: .625rem;
+	position: relative;
+	&:after {
+		content: '';
+		position: absolute;
+		right: 0px;
+		top: 0;
+		bottom: 0;
+		background-color: $border-color;
+		width: $border-width;
+	}
 }
+
+
 .col-deck-content {
 	width: calc(100% - 160px);
+	float: left;
+	position: relative;
 	@include media-breakpoint-down(md) {
 		width: 100%;
 	}
-	float: left;
+
+	&:after {
+		position: absolute;
+		top: 0rem;
+		bottom: 0;
+		left: auto;
+		right: 0;
+		width: $border-width;
+		background-color: $border-color;
+		content: '';
+	
+	}	
 }
+.well-container + .row > .col-primary .col-deck-content {
+	&:after {
+		top: 3.75rem;
+		right: -(.625rem / 2);
+	}
+}
+
 
 /*.show-site-search {
 	filter: blur(5px);
@@ -232,3 +244,26 @@ $col-deck-label-width: 160px;
 	}	
 }*/
 
+
+// Gallery
+.row-gallery {
+	padding-top: .625rem;
+	width: 100%;
+	
+}
+.gallery-item {
+	width: 33.33333%;
+	float: left;
+	border-right: .625rem solid #000;
+	&:last-child {
+		border-right: 0;
+	}
+}
+
+.today {
+	strong {
+		@extend .gray-darker;
+	}
+}
+
+@import "tools";

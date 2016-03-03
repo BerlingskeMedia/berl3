@@ -1,0 +1,60 @@
+// This grid enables 20% width grid cols
+
+.col-xs-1-5th,
+.col-sm-1-5th,
+.col-md-1-5th,
+.col-xs-1-10th,
+.col-sm-1-10th,
+.col-md-1-10th {
+    position: relative;
+    min-height: 1px;
+    padding-right: .6rem;
+    padding-left: .6rem;
+}
+
+.col-xs-1-5th {
+    width: 20%;
+    float: left;
+}
+.col-xs-1-10th {
+    width: 10%;
+    float: left;
+}
+@include media-breakpoint-up(md) {
+.col-sm-1-5th {
+        width: 20%;
+        float: left;
+    }
+    .col-sm-1-10th {
+        width: 10%;
+        float: left;
+    }
+    .col-md-1-10th {
+            width: 10%;
+            float: left;
+    }
+}
+@include media-breakpoint-up(lg) {
+.col-md-1-5th {
+        width: 20%;
+        float: left;
+    }
+}
+
+
+.row-narrow {
+    margin-left: -.2rem;
+    margin-right: -.2rem;
+
+    .col-xs-1-5th,
+    .col-sm-1-5th,
+    .col-md-1-5th,
+    .col-xs-1-10th,
+    .col-sm-1-10th,
+    .col-md-1-10th {
+        position: relative;
+        min-height: 1px;
+        padding-right: .2rem;
+        padding-left: .2rem;
+    }    
+}

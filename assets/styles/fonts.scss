@@ -13,7 +13,7 @@
 		font-weight: $weight;
 	}
 }
-
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 // Import fonts
 
@@ -21,6 +21,42 @@
 @include fontFace('SwissBold', '../fonts/swiss_721_bold_condensed', 'normal','300');*/
 @include fontFace('b-icons', '../fonts/b-icons', 'normal','300');
 
+@include fontFace('Sanomat', '../fonts/SanomatWeb-Semibold', 'normal','500');
+@include fontFace('Publico', '../fonts/PublicoHeadline-Bold-Web', 'normal','700');
+
+@include fontFace('CPHsigns', '../fonts/cph_signs_regular', 'normal','300');
+
+
+
+
+
+
+$font-serif: 'Publico', serif;
+$font-serif-regular: 'Publico-regular', serif;
+$font-sans: 'Montserrat', sans-serif;
+$font-sans-alt: 'CPHsigns', 'Montserrat', sans-serif;
+
+
+$font-teaser-weight: 700;
+$font-teaser-lineheight: 1.2;
+$background-color: rgba(248,248,248,1);
+
+.header,
+.font-header {
+  line-height: 1.2;
+  font-family: $font-serif;
+  font-weight: normal;
+}
+
+
+.font-sans {
+  font-family: $font-sans;
+  
+}
+.font-sans-alt {
+  font-family: $font-sans-alt;
+  line-height: 1.2;
+}
 
 // Define font variables
 
@@ -65,3 +101,5 @@ h1, h2, h3, h4, h5, h6 {
 .bicon-camera:before { content: '\e80f'; } /* '' */
 .bicon-menu:before { content: '\e810'; } /* '' */
 .bicon-right-1:before { content: '\e811'; } /* '' */
+.bicon-cancel:before { content: '\e812'; } /* '' */
+.bicon-key:before { content: '\e813'; } /* '' */

@@ -4,7 +4,7 @@
 			<div class="row">
 				<div class="col-xs-12">
 					<nav>
-						<ul class="pull-right list-reset list-bullet list-xs">
+						<ul class="pull-right list-reset list-bullet list-bullet-not-first list-xs">
 							<li><a href="#">Køb abonnement</a></li>
 							<li><a href="#">E-avisen</a></li>
 							<li><a href="#">Nyhedsbreve</a></li>
@@ -17,13 +17,14 @@
 		</div>	
 	</div>
 	
-	<div class="header-middle text-center">
+	<div class="header-middle text-center ">
+
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
 					<nav class="tools-menu-left">
 						<ul class="list-reset list-sm">
-							<li><a href="#" class="site-search"><i class="bicon-menu"></i> Indhold</a></li>
+							<li><a href="#" class="site-menu toggle-offcanvas"><i class="bicon-menu"></i> Indhold</a></li>
 							<li><a href="#" class="site-search"><i class="bicon-search"></i> Søg</a></li>
 						</ul>
 					</nav>
@@ -39,21 +40,22 @@
 			</div>
 		</div>
 	</div>
+
 	<?php if($showOneliner): ?>
 	<div class="header-oneliner clearfix">
 		<article class="teaser-oneliner">
 			<h2 class="header">
-				<a href="tpl-article.php"><? dummy("text@headline-b2") ?></a>
+				<a href="tpl-article.php"><strong>BREAKING &mdash;</strong> <? dummy("text@headline-b2") ?></a>
 			</h2>
 		</article>
 	</div>
 	<?php endif; ?>
-	<div class="header-bottom">
+	<div class="header-bottom ">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 text-center">
 					<nav>
-						<ul class="list-reset list-sm">
+						<ul class="list-reset list-sm mb-0">
 							<li><a href="#">Nyheder</a></li>
 							<li><a href="#">Politik</a></li>
 							<li><a href="#">Global</a></li>
@@ -69,4 +71,6 @@
 			</div>
 		</div>	
 	</div>
+
 </header>
+

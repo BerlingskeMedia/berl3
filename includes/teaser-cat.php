@@ -8,7 +8,7 @@ $imgRatio = ($imgRatio ? $imgRatio : '3:2');
 
 
 <article class="teaser teaser-sm <?= $class; ?>">
-	<span class="teaser-label">
+	<span class="teaser-cat">
 		<a href="tpl-section.php">Nyheder</a>
 	</span>
 
