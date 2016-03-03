@@ -87,6 +87,9 @@
 .border-bottom {
 	border-bottom: $border-width solid $border-color;
 }
+.border-top {
+	border-top: $border-width solid $border-color;
+}
 .border-right-lg {
 	position: relative;
 	&:after {

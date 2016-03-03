@@ -79,12 +79,22 @@ img {
 	}*/
 }
 
+.toggle-oneliner {
+	position: absolute;
+	top: .3rem;
+	right: 0;
 
+}
+.header-oneliner {
+	overflow: hidden;
+	transition: height .2s ease;
+}
 .teaser-oneliner {
+	position: relative;
 	padding: .6rem 0;
 	text-align: center;
 	background-color: yellow;
-	@extend .border-bottom; 
+	@extend .border-top; 
 	.header {
 		@extend .font-sans;
 		font-size: 1rem;
@@ -92,6 +102,13 @@ img {
 		padding: 0;
 	}
 }
+.remove-oneliner {
+	@extend .animate-goodbye-2; 
+	.header {
+		@extend .animate-goodbye;
+	}
+}
+
 
 
 // teaser well 
@@ -225,7 +242,7 @@ img {
 	}
 	.header {
 		@extend .font-teaser;
-		font-weight: $font-teaser-weight;
+		// font-weight: $font-teaser-weight;
 		line-height: $font-teaser-lineheight;
 		padding-bottom: .2rem;
 	}
@@ -346,6 +363,7 @@ img {
 .teaser-breaking .well-category {
 	background: yellow;
 	color: #000;
+	margin-bottom: .3rem;
 }
 
 .teaser-longread {

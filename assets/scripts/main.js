@@ -38,6 +38,9 @@
 		$('#'+activeTab).addClass('active');
 	});
 	
+	$('.toggle-oneliner').click(function(){
+		$(this).closest('div').toggleClass('remove-oneliner');
+	});
 
 
 

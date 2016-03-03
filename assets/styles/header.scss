@@ -114,6 +114,7 @@
 
 .header-bottom {
 	@extend .border-bottom;
+	@extend .border-top;
 	li  {
 		a {
 			line-height: 45px;
@@ -135,7 +136,6 @@
 	height: 80px;
 	padding: ($spacer / 2) 0;
 	overflow: hidden;
-	@extend .border-bottom;
 	line-height: 1;
 	li a {
 		line-height: 40px;
@@ -165,28 +165,37 @@
 	transition: all .2s ease;
 }
 
-.fixed-header .header-middle {
-	background-color: $background-color;
+.fixed-header .make-fixed  {
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
 	z-index: 10;
-	border-color: transparent;
-	// box-shadow: 0 0 4px rgba(0,0,0,.25);
-	box-shadow: 3px 0 11px rgba(0,0,0,.5);
-	height: 60px;
 
-	.site-logo {
-		height: calc(60px - 1rem);
-		width: 240px;
+		box-shadow: 3px 0 11px rgba(0,0,0,.5);
+	
+}
+
+.fixed-header {
+	
+	.header-middle {
+		background-color: $background-color;
+		// border-color: transparent;
+		// box-shadow: 3px 0 11px rgba(0,0,0,.5);
+		height: 60px;
+
+		.site-logo {
+			height: calc(60px - 1rem);
+			width: 240px;
+		}
+		[class*=tools-menu-] a {
+			margin-top: .2rem;
+		}
+		li a {
+			line-height: 35px;
+		}
 	}
-	[class*=tools-menu-] a {
-		margin-top: .2rem;
-	}
-	li a {
-		line-height: 35px;
-	}
+	
 
 }
 
