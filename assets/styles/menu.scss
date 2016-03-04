@@ -86,7 +86,7 @@ $menu-width: 18rem;
 			border-right: $border-width solid $border-color;
 		}
 		&:not(.active) {
-			background: darken($background-color, 10%);
+			background: #333;
 			a {
 				color: #999;
 			}

@@ -5,9 +5,9 @@
 				<div class="col-xs-12">
 					<nav>
 						<ul class="pull-right list-reset list-bullet list-bullet-not-first list-xs">
-							<li><a href="#">Køb abonnement</a></li>
-							<li><a href="#">E-avisen</a></li>
-							<li><a href="#">Nyhedsbreve</a></li>
+							<li><a href="?well">Køb abonnement</a></li>
+							<li><a href="?oneliner">E-avisen</a></li>
+							<li><a href="?well&oneliner">Nyhedsbreve</a></li>
 							<li><a href="#">Kundeservice</a></li>
 							<li><a href="#">Privatlivspolitik</a></li>
 						</ul>

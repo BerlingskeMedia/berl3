@@ -30,19 +30,23 @@
 
 
 <?php include('includes/site-header.php'); ?>
-<div class="canvas-main">
 
-<div class="banner-wrapper">
-	
-	
-	
+<?php include('includes/banners.php'); ?>
+<?php 
+$campaignId = 'campaign-' . mt_rand(1,3);
+?>
 
-	
+<div class="canvas-main <?php echo $campaignId; ?>">
+
+
+	<div class="banner-wrapper">
 	<div class="bg-banner"></div>
 	<div class="topbanner demo-banner" style="width: 930px; height: 180px;"></div>
+	
+	
 
 
-<div class="container main-content">
+	<div class="container main-content">
 
 
 	<?php if($showWell): ?>
@@ -84,7 +88,21 @@
 
 				
 				<div class="col-deck-content ">
-							
+						
+							<div class="col-lg-12">
+								<?php // if(!$showWell) : ?>
+										<?php
+											$imgW='920'; 
+											$showImg = '1';
+											$class = ' fs262 mb border-bottom main-teaser';
+											$imgRatio = '16:7';
+											$showSummary = '1';
+											$showRelated = '1';
+											include('includes/teaser.php') ?>
+								<?php // endif; ?>
+
+							</div>
+						
 						<div class="col-lg-8 col-md-8 border-right-lg">
 						
 							<?php // if(!$showWell) : ?>

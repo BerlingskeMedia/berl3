@@ -19,14 +19,14 @@
 }
 
 .animate-goodbye {
-  animation: slideOut .3s ;
+  animation: slideOut .2s ;
   animation-fill-mode:forwards;
   // animation-delay:200ms;
   animation-timing-function: ease;
 }
 .animate-goodbye-2 {
-  animation: slideUp .3s ;
+  animation: slideUp .2s ;
   animation-fill-mode:forwards;
-  animation-delay:.3s;
+  animation-delay:.2s;
   animation-timing-function: ease;
 }

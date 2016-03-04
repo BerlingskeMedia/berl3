@@ -1,7 +1,61 @@
-.banner {
+
+.demo-banner {
+	background: rgba(0,0,0,.1);
+	margin: 0 auto;
+	position: relative;
+	z-index: 2;
+	&:after {
+		position: absolute;
+		top: .625rem;
+		left: .625rem;
+		content: 'Banner';
+		@extend .small;
+		color: #999;
+	}
+}
+.topbanner {
 	
 }
-.demo-banner {
-	background: rgba(0,0,0,.2);
-	margin: 0 auto;
+.banner-wrapper {
+	position: relative;
+}
+.bg-banner {
+	@extend .absolute;
+	bottom: 0;
+	height: 100%;
+	
+}
+
+
+.campaign-1 {
+
+	.topbanner {
+		background: url(/dist/images/banners/1/topbanner.png) center top no-repeat ;
+	}
+	.bg-banner {
+		background: url(/dist/images/banners/1/banner-sm.jpg) center top no-repeat ;
+		@include media-breakpoint-only(xl) {
+			background-image: url(/dist/images/banners/1/banner.jpg);
+		}
+	}
+
+}
+.campaign-2  {
+	.topbanner {
+		background: url(/dist/images/banners/2/topbanner.png) center top no-repeat ;
+	}
+	.bg-banner {
+		background: url(/dist/images/banners/2/banner-sm.jpg) center top no-repeat ;
+		@include media-breakpoint-only(xl) {
+			background-image: url(/dist/images/banners/2/banner.jpg);
+		}
+	}
+}
+.campaign-3  {
+	.topbanner {
+		background: url(/dist/images/banners/3/topbanner.png) center top no-repeat ;
+	}
+	.bg-banner {
+		background: url(/dist/images/banners/3/banner-sm.jpg) center top no-repeat ;
+	}
 }

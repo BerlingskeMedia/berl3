@@ -25,18 +25,7 @@ html, body {
 body {
 	background: $background-color;
 }
-.banner-wrapper {
-	position: relative;
-}
-.bg-banner {
-	@extend .absolute;
-	bottom: 0;
-	height: 100%;
-	background: url(/dist/images/banners/banner-sm.jpg) center top no-repeat ;
-	@include media-breakpoint-only(xl) {
-		background-image: url(/dist/images/banners/banner.jpg);
-	}
-}
+
 .container {
 	background-color: $background-color;
 	position: relative;
