@@ -1,11 +1,20 @@
 <? require_once("../dummy/dummy.php") ?>
 
-<?php if(isset($_GET["well"])) {
+<?php 
+if(isset($_GET["well"])) {
 	$showWell = true;
-} ?>
-<?php if(isset($_GET["oneliner"])) {
+} 
+if(isset($_GET["oneliner"])) {
 	$showOneliner = true;
-} ?>
+} 
+if(isset($_GET["top"])) {
+	$showTop = true;
+}
+if(isset($_GET["business"])) {
+	$siteBusiness = true;
+}
+?>
+
 
 <?php 
 	// $showWell = rand(1,1);
@@ -18,8 +27,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Front page</title>
 	<link rel="stylesheet" href="/dist/styles/main.css">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat|Oswald:300' rel='stylesheet' type='text/css'>
 </head>
-<body class="">
+<body class=" <?php if($siteBusiness): ?>site-business<?php endif; ?>">
 
 <div class="site-search-overlay">
 	
@@ -88,20 +98,18 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 
 				
 				<div class="col-deck-content ">
-						
+						<?php  if($showTop) : ?>
 							<div class="col-lg-12">
-								<?php // if(!$showWell) : ?>
-										<?php
-											$imgW='920'; 
-											$showImg = '1';
-											$class = ' fs26 mb border-bottom main-teaser';
-											$imgRatio = '16:7';
-											$showSummary = '1';
-											$showRelated = '1';
-											include('includes/teaser.php') ?>
-								<?php // endif; ?>
-
+							<?php
+									$imgW='920'; 
+									$showImg = '1';
+									$class = ' fs26 mb border-bottom main-teaser';
+									$imgRatio = '16:8';
+									$showSummary = '1';
+									$showRelated = '1';
+									include('includes/teaser.php') ?>
 							</div>
+						<?php endif; ?>
 						
 						<div class="col-lg-8 col-md-8 border-right-lg">
 						
@@ -136,19 +144,43 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 
 						</div>
 						<div class="col-lg-4 col-md-4">
-							
-							
-
-							<? while (dumb_luck("6")): ?>
+							<?php 
+							$teaserColor = rand(1,2); 
+							if($teaserColor == '1') 
+								{$color = 'teaser-quote-1'; } 
+								else 
+								{$color = 'teaser-quote-2'; }
+							?>
+							<? while (dumb_luck("2")): ?>
 							<?php 
 								$imgW='420'; 
-								// $class = 'fs10 teaser-bg teaser-bg-narrow teaser-font-alt';
 								$class = 'fs10 bb ';
 								$showImg = '1';
 								$imgRatio = '3:2';
 								$showKey = true;
 								include('includes/teaser.php') ?>
 							<? endwhile ?>
+							<?php 
+								$imgW='120'; 
+								$class = 'fs16 bb ' . $color;
+								$showImg = '1';
+								$imgSrc = '/!b-kommentatorer';
+								$imgRatio = '1:1';
+								$showKey = true;
+								include('includes/teaser.php') ?>
+
+							<? while (dumb_luck("3")): ?>
+							<?php 
+								$imgW='420'; 
+								$class = 'fs10 bb ';
+								$showImg = '1';
+								$imgRatio = '3:2';
+								$showKey = true;
+								include('includes/teaser.php') ?>
+							<? endwhile ?>
+							
+
+							
 
 							<div>
 							
@@ -221,12 +253,12 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 
 	<div class="row deck flex-row	">
 		<div class="col-deck-label">
-			<span class="section-title">
+			<div class="section-title">
 				Opinion
-			</span>
-			<span class="section-link">
+			</div>
+			<div class="section-link">
 				<a href="tpl-section.php">Se alle <i class="bicon-angle-right"></i></a>
-			</span>
+			</div>
 		</div>
 		<div class="col-deck-content">
 			<div class="flex-row br-lg">
@@ -284,59 +316,40 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 		
 		<div class="col-lg-8 col-md-12 col-primary">
 					
-						
-						
-						
-					<div class="row flex-row">
-						<div class="col-deck-label">
-							<div class="section-title">
-								Verden i billeder
-							</div>						
-						</div>
-
-						
-						<div class="col-deck-content ">
-									
-								<div class="col-lg-12 col-md-12 border-right-lg">
-								
-									
-								
-
-									<?php include('includes/teaser-gallery.php'); ?>
-									
-									
-									
-											
-									
-
-									
-
-								</div>
-								
-							
-						</div>
-					</div>
+			<div class="row flex-row">
+				<div class="col-deck-label">
+					<div class="section-title">
+						Verden i billeder
+					</div>						
+				</div>
+					
+				<div class="col-deck-content border-right-lg">
+					
+						<?php include('includes/teaser-gallery.php'); ?>
 					
 				</div>
 
-				<div class="col-lg-4 col-md-12 sidebar">
+			</div>
+		</div>
 
-					<div class="banner module ">
-						<div style="width: 300px; height: 250px;" class="demo-banner"></div>
-					</div>
-					
-					<?php 
-					$showTime = true; 
-					$sectionClass = 'mb-0';
-					$listClass = 'list-top';
-					$listTitle = 'Andre læser lige nu';
-					$listCount = '5';
-					$showTime = false; 
-					
-					include('includes/list-news.php');
-					?>
+		<div class="col-lg-4 col-md-12 sidebar">
 
-				</div>
+			<div class="banner module ">
+				<div style="width: 300px; height: 250px;" class="demo-banner"></div>
+			</div>
+			
+			<?php 
+			$showTime = true; 
+			$sectionClass = 'mb-0';
+			$listClass = 'list-top';
+			$listTitle = 'Andre læser lige nu';
+			$listCount = '5';
+			$showTime = false; 
+			
+			include('includes/list-news.php');
+			?>
+
+		</div>
 
 	</div><!-- /deck -->
 
@@ -440,7 +453,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 							<?php 
 								$imgW='120'; 
 								// $class = 'fs10 teaser-bg teaser-bg-narrow teaser-font-alt';
-								$class = 'fs10 mb teaser-thumb bb';
+								$class = 'fs10 mb teaser-thumb bb-all';
 								$showImg = '1';
 								$imgRatio = '1:1';
 								$imgSrc = '!b-tilstregen';

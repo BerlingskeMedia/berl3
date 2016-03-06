@@ -29,12 +29,37 @@ body {
 .container {
 	background-color: $background-color;
 	position: relative;
+}
+
+
+
+
+.site-business {
+
+	background: $col-business;	
+	.site-header .header-bottom,
+	.container {
+		background: $col-business;
+	}
+
+	.header-top .container, 
+	.header-middle .container{
+		background-color: $background-color;
+	}
 
 }
 .main-content {
-	padding-top: .625rem;
-	border-top: .35rem #222 solid;
+	padding-top: 1.425rem;
 	
+	&:before {
+		content: '';
+		position: absolute;
+		top: .5rem;
+		left: .625rem;
+		right: .625rem;
+		height: 6px;
+		background-color: #222;
+	}
 }
 
 
@@ -47,8 +72,6 @@ ul.list-reset {
 		padding-left: 0;
 	}
 }
-
-
 
 .well-container + .row > .col-primary {
 	margin-top: -5rem;
@@ -69,14 +92,18 @@ ul.list-reset {
 		z-index: -1;
 	}
 }
+.site-business .well-container + .row > .col-primary {
+	background-color: $col-business;
+}
 
 .weather-of-the-day {
 	margin-top: $spacer ;
-	font-size: .8rem;
 	line-height: 1.4;
+	font-size: .8rem;
 	a {
 		font-size: 80%;
 		display: block;
+		padding: .3125rem 0;
 	}
 }
 [class*="weather-icon-"] {
@@ -103,14 +130,14 @@ ul.list-reset {
 }
 .section-title {
 	@extend .font-sans-alt;
-	margin-bottom: $spacer;
 	color: #333;
 	line-height: 1.2;
 	font-size: 1.5rem;
 	display: block;
 	letter-spacing: .0rem;
-	margin-top: $spacer;
+	margin: $spacer 0;
 	@extend .top-block;
+	text-transform: uppercase;
 
 	/*transform: rotate(-90deg);
 	transform-origin: right top 0;*/
@@ -160,7 +187,7 @@ ul.list-reset {
 		display: inline-block;
 		width: 2rem;
 		content: '';
-		height: .35rem;
+		height: 6px;
 		position: absolute;
 		top: -$spacer;
 		background-color: #222;
@@ -234,21 +261,21 @@ $col-deck-label-width: 160px;
 	}	
 }*/
 
-
+.test {
+	background-color: red;
+}
 // Gallery
-.row-gallery {
-	padding-top: .625rem;
-	width: 100%;
-	
+.row-narrow {
+	margin-left: -.3125rem;
+	margin-right: -.3125rem;
 }
 .gallery-item {
-	width: 33.33333%;
+	width: 33.333333333%;
 	float: left;
-	border-right: .625rem solid #000;
-	&:last-child {
-		border-right: 0;
-	}
+	padding-left: .3125rem;
+	padding-right: .3125rem;
 }
+
 
 .today {
 	strong {

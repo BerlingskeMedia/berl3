@@ -36,6 +36,17 @@ img {
 	padding-bottom: 0;
 }
 
+
+.site-business  {
+	.teaser:hover {
+		a {
+			color: $col-bus-alt;
+		}
+	}
+	.teaser a:hover {
+		color: $col-bus-alt;
+	}
+}
 .teaser {
 
 	a {
@@ -138,6 +149,20 @@ img {
 	}
 }
 
+.site-business .teaser-well-white {
+	.teaser-content:after {
+		@include gradient-vertical(transparentize($col-business, 1), transparentize($col-business, 0), 0%, 85%);
+	}
+	
+	.well-summary,
+	.header {
+		text-shadow: 0 0 30px rgba(255,255,255,.5), 1px 1px 0 rgba(255,255,255,.2);
+		 a {
+			color: #000;
+		}
+	}
+}
+
 .well-category {
 	display: inline-block;
 	background-color: red;
@@ -148,6 +173,7 @@ img {
 	text-transform: uppercase;
 	z-index: 2;
 	position: relative;
+	margin-bottom: .3125rem;
 
 }
 
@@ -303,13 +329,17 @@ img {
 .teaser-imageoftheday {
 	position: relative;
 	padding: .625rem;
-	background: #000;
+	background: $border-color;
+	a:hover {
+		cursor: zoom-in;
+	}
+
 	figcaption {
 		position: absolute;
 		background-color: #000;
 		@include gradient-directional($start-color: #000, $end-color: #222, $deg: 0deg);
-		left: .625rem;
-		bottom: .625rem;
+		left: 0;
+		bottom: 0;
 		padding: .625rem;
 		max-width: 600px; 
 	}
@@ -322,11 +352,13 @@ img {
 	}	
 	.image-count {
 		position: absolute;
-		left: 0;
-		top: -3rem;
+		bottom: 0;
 		height: 3rem;
+		width: 5rem;
+		right: -5rem;
+		text-align: center;
 		line-height: 3rem;
-		background-color: yellow;
+		background-color: #ffcc00;
 		display: inline-block;
 		z-index: 2;
 		font-size: 1.8rem;
@@ -339,8 +371,8 @@ img {
 			height: 3rem;
 			line-height: 3rem;
 			text-align: center;
-			background: #ccdd22;
-			background: yellow;
+			
+			
 			color: #000;
 			margin-right: .5rem;
 		}
@@ -382,14 +414,14 @@ img {
 			content: '';
 			@include gradient-vertical(rgba(37,37,37,.0), rgba(37,37,37,.9), 0%, 100%);
 			top: -3rem;
-		
 		}
 	}
 	.header {
-		font-size: 4rem;
+		font-size: 2.5rem;
 		padding-bottom: $spacer;
-		max-width: 60rem;
+		
 		padding-left: $spacer;
+		padding-right: $spacer;
 		color: #fff;
 		z-index: 2;
 		position: relative;
@@ -406,7 +438,7 @@ img {
 	}
 }
 .members-only {
-	background-color: darken($background-color, 10%);
+	background-color: rgba(0,0,0,.05);
 	display: inline-block;
 	clear: left;
 	border-radius: .1rem;
@@ -418,6 +450,65 @@ img {
 		
 
 	}
+}
+[class*="teaser-quote-"] {
+	padding: .625rem;
+	
+	.header {
+		font-family: Oswald, sans-serif;
+		// text-transform: uppercase;
+		font-weight: 300;
+	}
+	.teaser-img {
+		width: 100%;
+	}
+	.img {
+		border-radius: 50%;
+		height: 70px;
+		width: 70px;
+		margin: 0 0 0 auto;
+		float: right;
+		border: $border-width solid rgba(0,0,0,.2);
+		box-shadow: 3px 3px 0 rgba(0,0,0,.2);
+	}
+	&:hover a,
+	a:hover {
+		color: #fff;
+	}
+}
+.teaser-quote-1 {
+	background-color: $col-alt;
+	a {
+		color: #fff;
+	}
+	&:hover {
+		background-color: darken($col-alt, 3%);
+	}
+}
+
+.teaser-quote-2 {
+	background-color: #cc955b;
+	a {
+		color: #fff;
+	}
+	&:hover {
+		background-color: darken(#cc955b, 3%);
+	}
+}
+
+.site-business {
+	.teaser-quote-1 {
+		background-color: #333;
+		a {
+			color: #fff;
+		}
+		&:hover {
+			background-color: darken(#333, 3%);
+			a {
+				color: #fff;
+			}
+		}
+	}	
 }
 /*.teaser-editorial {
 	background: url(/dist/images/vaabenskjold-2.png) center top no-repeat;

@@ -1,3 +1,4 @@
+<div class="col-lg-12">
 <article class="teaser teaser-imageoftheday">
 	<a href="#">
 	<figure><img src="<? dummy("image@1240x,16:9") ?>" width="" height="" alt="" />
@@ -6,15 +7,21 @@
 			<h2 class="header"><? dummy("text@headline-b2") ?></h2>
 		</figcaption>
 	</figure>
-
-
 	</a>
-
-	<div class="row-gallery clearfix">
+	
+	
+	<div class="row-narrow mt-half clearfix">
 		<? while (dumb_luck("3")): ?>
 		<div class="gallery-item">
 			<a href="#"><img src="<? dummy("image@280x,16:9") ?>" width="" height="" alt="" /></a>
 		</div>
 		<? endwhile ?>
 	</div>
+	
 </article>
+
+
+
+
+
+</div>

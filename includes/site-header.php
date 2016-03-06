@@ -4,11 +4,17 @@
 			<div class="row">
 				<div class="col-xs-12">
 					<nav>
+						<?php if($siteBusiness) :?>
+						<ul class="pull-left list-reset list-xs">
+							<li><a href="?well"><i class="bicon-left"></i> Berlingske.dk</a></li>
+						</ul>
+					<?php endif; ?>
+
 						<ul class="pull-right list-reset list-bullet list-bullet-not-first list-xs">
 							<li><a href="?well">Køb abonnement</a></li>
 							<li><a href="?oneliner">E-avisen</a></li>
 							<li><a href="?well&oneliner">Nyhedsbreve</a></li>
-							<li><a href="#">Kundeservice</a></li>
+							<li><a href="?business">Kundeservice</a></li>
 							<li><a href="#">Privatlivspolitik</a></li>
 						</ul>
 					</nav>			
@@ -29,7 +35,9 @@
 								<li><a href="#" class="site-search"><i class="bicon-search"></i> Søg</a></li>
 							</ul>
 						</nav>
+						
 						<a href="/" class="site-logo">Berlingske</a>
+						
 						<nav class="tools-menu-right">
 							<ul class="list-reset list-sm">
 								<li><a href="#" class="site-login"><i class="bicon-user"></i> Log ind</a></li>
@@ -56,19 +64,41 @@
 	<div class="header-bottom ">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12 text-center">
+				<div class="col-xs-12 ">
 					<nav>
-						<ul class="list-reset list-sm mb-0">
-							<li><a href="#">Nyheder</a></li>
-							<li><a href="#">Politik</a></li>
+						<?php if(!$siteBusiness): ?>
+						<ul class="list-reset list-sm mb-0 list-gray">
+							<li class="active"><a href="#"><b class="bicon-home"></b> Forside</a></li>
+							<!-- <li><a href="?business">Business</a></li> -->
+							<li><a href="#">Politiko</a></li>
+							<li><a href="#">Debat</a></li>
 							<li><a href="#">Global</a></li>
 							<li><a href="#">Tech</a></li>
+							<li><a href="#">Viden</a></li>
+							<li><a href="#">Kultur</a></li>
+							<li><a href="#">AoK</a></li>
 							<li><a href="#">Livsstil</a></li>
 							<li><a href="#">Rejseliv</a></li>
-							<li><a href="#">Kultur</a></li>
-							<li><a href="#">Opinion</a></li>
-							<li><a href="#">Business <i class="bicon-chart-line"></i></a></li>
+							<li><a href="#">Sport</a></li>
+							<li class="menu-divider"><a href="?business&well">Business 
+							<?php $stock = rand(0,1); ?>
+							<span class="omx-container " > &mdash; C20 
+								<span class="<? if ($stock == '1'): ?>stock-green<? else: ?>stock-red<? endif ?>">
+									<?php if($stock == '0'){ echo '-';} ?><? dummy("text@stock-change-2") ?>% <? if ($stock == '1'): ?><i class="bicon-up"></i><?php else: ?><i class="bicon-down"></i><?php endif ?></span>
+							</span></a></li>
 						</ul>
+						<?php else: ?>
+						<ul class="list-reset list-sm mb-0 list-gray">
+							<li class="active"><a href="#"><b class="bicon-home"></b> Business</a></li>
+							<li><a href="#">Investor</a></li>
+							<li><a href="#">Virksomheder</a></li>
+							<li><a href="#">Privatøkonomi</a></li>
+							<li><a href="#">Karriere</a></li>
+							<li><a href="#">TV</a></li>
+							<li><a href="#">Opinion</a></li>
+							<li class="menu-divider"><a href="/">Berlingske</a></li>
+						</ul>
+						<?php endif; ?>
 					</nav>			
 				</div>
 			</div>
