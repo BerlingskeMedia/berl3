@@ -86,6 +86,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 						<div>Mandag</div>
 						28. februar 2015
 					</div>
+					<?php if(!$siteBusiness): ?>
 					<div class="weather-of-the-day">
 						<div class="forecast">
 							København <a href="#" class="link-blue">Skift by <i class="bicon-angle-right"></i></a>
@@ -94,6 +95,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 						<span class="weather-icon-<?php echo rand(1,4); ?>"> 3&deg; / 9&deg;</span>
 						
 					</div>
+					<?php endif; ?>
 				</div>
 
 				
@@ -211,7 +213,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 			include('includes/list-news.php');
 			?>
 			
-
+			<?php if(!$siteBusiness ): ?>
 			<section class="module">
 				<div class="section-title ">
 					Berlingske Shop
@@ -223,18 +225,26 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 					<div class="col-xs-6">
 					<?php 
 					$imgW='420'; 
-					// $class = 'fs10 teaser-bg teaser-bg-narrow teaser-font-alt';
 					$class = 'fs09 teaser-font-alt';
 					$showImg = '1';
 					$imgRatio = '16:9';
 					include('includes/teaser.php') ?>
 					</div>
-					
-
 				<? endwhile ?>
-				
 				</div>
 			</section>
+			<?php else: ?>
+
+			<section class="module">
+				<div class="section-title">
+					Børstal
+				</div>
+				<div class="test" style="height: 300px;">
+					TBA
+				</div>
+			</section>
+
+			<?php endif; ?>
 
 			<div class="banner mb-2 ">
 				<div style="width: 300px; height: 250px;" class="demo-banner"></div>
