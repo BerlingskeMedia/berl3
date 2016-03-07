@@ -6,10 +6,21 @@
 					<nav>
 						<?php if($siteBusiness) :?>
 						<ul class="pull-left list-reset list-xs">
-							<li><a href="?well"><i class="bicon-left"></i> Berlingske.dk</a></li>
+							<li class="menu-divider"><a href="?well"><i class="bicon-left"></i> Berlingske.dk</a></li>
+						</ul>
+						<?php else: ?>
+						<ul class="pull-left list-reset list-xs">
+						<li class="menu-divider"><a href="?business&well"><i class="bicon-right"></i> Business.dk</a></li>
+						<li>
+							<?php $stock = rand(0,1); ?>
+							<span class="omx-container " >OMX C20
+								<span class="<? if ($stock == '1'): ?>stock-green<? else: ?>stock-red<? endif ?>">
+									<?php if($stock == '0'){ echo '-';} ?><? dummy("text@stock-change-2") ?>% <? if ($stock == '1'): ?><i class="bicon-up"></i><?php else: ?><i class="bicon-down"></i><?php endif ?></span>
+							</span>
+						</li>
 						</ul>
 					<?php endif; ?>
-
+						
 						<ul class="pull-right list-reset list-bullet list-bullet-not-first list-xs">
 							<li><a href="?well">Køb abonnement</a></li>
 							<li><a href="?oneliner">E-avisen</a></li>
@@ -64,7 +75,7 @@
 	<div class="header-bottom ">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12 ">
+				<div class="col-xs-12 text-center">
 					<nav>
 						<?php if(!$siteBusiness): ?>
 						<ul class="list-reset list-sm mb-0 list-gray">
@@ -80,12 +91,7 @@
 							<li><a href="#">Livsstil</a></li>
 							<li><a href="#">Rejseliv</a></li>
 							<li><a href="#">Sport</a></li>
-							<li class="menu-divider"><a href="?business&well">Business 
-							<?php $stock = rand(0,1); ?>
-							<span class="omx-container " > &mdash; C20 
-								<span class="<? if ($stock == '1'): ?>stock-green<? else: ?>stock-red<? endif ?>">
-									<?php if($stock == '0'){ echo '-';} ?><? dummy("text@stock-change-2") ?>% <? if ($stock == '1'): ?><i class="bicon-up"></i><?php else: ?><i class="bicon-down"></i><?php endif ?></span>
-							</span></a></li>
+							
 						</ul>
 						<?php else: ?>
 						<ul class="list-reset list-sm mb-0 list-gray">
@@ -96,7 +102,6 @@
 							<li><a href="#">Karriere</a></li>
 							<li><a href="#">TV</a></li>
 							<li><a href="#">Opinion</a></li>
-							<li class="menu-divider"><a href="/">Berlingske</a></li>
 						</ul>
 						<?php endif; ?>
 					</nav>			

@@ -82,7 +82,6 @@ ul.list-reset {
 	position: relative;
 	background-color: $background-color;
 	&:after {
-		
 		left: .625rem;
 		right: (.625rem / 2);
 		top: 0;
@@ -203,7 +202,7 @@ $col-deck-label-width: 160px;
 	min-width: 1px;
 	min-height: 1px;
 	position: relative;
-	@extend .hidden-md-down;
+	
 	padding-right: .625rem;
 	padding-left: .625rem;
 	position: relative;
@@ -218,6 +217,16 @@ $col-deck-label-width: 160px;
 	}
 }
 
+@include media-breakpoint-down(md) {
+	.col-deck-content,
+	.col-deck-label {
+		display: block;
+		width: 100%;
+	}
+	.col-primary {
+		width: 100%;
+	}
+}
 
 .col-deck-content {
 	width: calc(100% - 160px);

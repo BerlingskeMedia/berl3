@@ -61,7 +61,15 @@
 	height: 40px;
 	@extend .border-bottom;
 	@extend .link-gray-dark;
-
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 4px;
+		background: rgba(0,0,0,.1);
+	}
 	li {
 		a {
 			line-height: 40px;
@@ -132,7 +140,7 @@
 	position: relative;
 	box-shadow: 0 2px 5px rgba(0,0,0,.2);
 	z-index: 10;
-	// @extend .border-bottom;
+	// @extend .border-top;
 	
 	&:before {
 		@extend .absolute;
@@ -146,7 +154,7 @@
 		top: 0;
 		left: 0;
 		right: 0;
-		height: 0.25rem;
+		height: $border-width;
 		background: rgba(0,0,0,.1);
 	}
 	ul > li {
@@ -155,9 +163,7 @@
 		&:not(:first-child) {
 			margin-left: -.3rem;
 		}
-		&:hover {
-			box-shadow: 0 6px 0 #222 inset;
-		}
+		 
 		&> a {
 			line-height: 45px;
 			padding: 0 $spacer;
@@ -165,8 +171,9 @@
 			
 			
 		}
-		&.active {
-			box-shadow: 0 6px 0 #222 inset;
+		&.active,
+		&:hover {
+			box-shadow: 0 4px 0 #222 inset;
 		}
 		
 	}
@@ -236,29 +243,24 @@
 
 .menu-divider {
 	display: inline-block;
-	border-left: $border-width solid $border-color;
-	position: absolute;
-	right: .625rem;
-	box-shadow: 0 .25rem 0 $col-business inset!important;
+	box-shadow: 0 4px 0 $col-business inset!important;
 	transition: background-color .9s ease;
-	background-color: #fff;
+	// background-color: #fff;
 	z-index: 2;
 	&:hover {
-		background-color: $col-business;
-		box-shadow: 0 6px 0 #222 inset!important;
+		// background-color: $col-business;
+		//box-shadow: 0 6px 0 #222 inset!important;
 	}
 }
 
 .site-business .menu-divider {
 	background-color: $background-color;
-	box-shadow: 0 .2rem 0 rgba(0,0,0,.1) inset!important;
+	box-shadow: 0 4px 0 rgba(0,0,0,.1) inset!important;
 	&:hover {
-		box-shadow: 0 6px 0 #222 inset!important;
+		box-shadow: 0 4px 0 #222 inset!important;
 	}
 }
 .omx-container {
-	font-size: .75rem;
-	color: #666;
 	font-weight: normal;
 }
 .stock-green {
