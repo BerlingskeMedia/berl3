@@ -10,6 +10,7 @@ $showrelated = ($showRelated ? $showrelated : '0');
 
 
 <article class="teaser teaser-sm <?= $class; ?>">
+	
 	<?php if ($showImg === '1'): ?>
 	<figure class="teaser-img">
 		<a href="tpl-article.php"><img src="<? dummy("image". $imgSrc ."@". $imgW ."x,". $imgRatio ."") ?>" width="" height="" alt="" class="img" /></a>

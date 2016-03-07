@@ -1,0 +1,67 @@
+$col-left: 10rem;
+$col-sidebar: 20rem;
+
+
+.deck {
+	margin: 0 -.625rem 4rem;
+	display: flex;
+	min-height: 400px;
+	display: flex;
+	flex-wrap: wrap;
+	@extend .clearfix;
+}
+
+.col-left {
+	float: left;
+	min-height: 1px;
+	width: $col-left; 
+	padding: 0 .625rem;
+	@extend .border-right-xl;
+}
+.col-content {
+	float: left;
+	min-height: 1px;
+	width: calc(100% - #{$col-left + $col-sidebar});
+	@extend .border-right-lg;
+	padding: 0 .625rem;
+}
+
+.col-sidebar {
+	float: left;
+	min-height: 1px;
+	width: $col-sidebar; 
+	padding: 0 .625rem;
+}
+
+
+@include media-breakpoint-down(lg) {
+	.col-left {
+		display: block;
+		float: none;
+		width: 100%;
+		border: none;
+	}
+	.col-content {
+		float: left;
+		min-height: 1px;
+		width: calc(100% - #{$col-sidebar});
+		padding: 0 .625rem;
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.deck {
+		display: block;
+	}
+}
+
+.col-left, 
+.col-content, 
+.col-sidebar {
+	@include media-breakpoint-down(md) {
+		display: block;
+		float: none;
+		width: 100%;
+		border: none;
+	}
+}
