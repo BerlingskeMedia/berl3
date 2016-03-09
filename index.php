@@ -32,35 +32,85 @@ if(isset($_GET["business"])) {
 <body class="">
 
 
-
+<style>
+	h2, h3 {
+		line-height: 1.2;
+	}
+	h2 {
+		padding: 1rem 0;
+		margin-top: 2rem;
+	}
+	.breaker {
+		display: block;
+		
+		font-weight: 300;
+		color: #999;
+	}
+	a {
+		color: #369;
+	}
+	ul {
+		margin-top: .2rem;
+	}
+</style>
 
 
 <div class="container">
 	<div class="row">
-		<div class="col-lg-12 text-center border-bottom mb-2 pb" style="padding-top: 4rem" >
-			<a href="/" class="site-logo" >Berlingske</a>
+		
+		
+		<div class="col-lg-8 col-lg-offset-2">
+			<div class="row">
+					
+				<div class="col-lg-12 text-center border-bottom mb pb" style="padding-top: 4rem" >
+					<a href="/" class="site-logo" >Berlingske</a>
+				</div>
+
+				<div class="col-lg-12">
+					<h2 class="border-bottom">BERLINGSKE</h2>
+				</div>
+
+				<div class="col-lg-3">
+					<h4 ><small class="breaker">Template:</small> Front page</h4>
+				</div>
+			
+				<div class="col-lg-9">
+					<ul>
+						<li><a href="tpl-frontpage.php">Default</a></li>
+						<li><a href="tpl-frontpage.php?top">Large top</a></li>
+						<li><a href="tpl-frontpage.php?well">Giant top</a></li>
+						<li><a href="tpl-frontpage.php?oneliner">Oneliner - Breaking</a></li>
+					</ul>
+				</div>
+			
+
+				<div class="col-lg-12">
+					<h2 class=" border-bottom">BUSINESS</h2>
+				</div>
+
+				<div class="col-lg-3">
+					<h4 ><small class="breaker">Template:</small> Front page</h4>
+				</div>
+
+				<div class="col-lg-9">
+					<ul>
+						<li><a href="tpl-frontpage.php?business">Default</a></li>
+						<li><a href="tpl-frontpage.php?business&amp;top">Large top</a></li>
+						<li><a href="tpl-frontpage.php?business&amp;well">Giant top</a></li>
+						<li><a href="tpl-frontpage.php?business&amp;oneliner">Oneliner - Breaking</a></li>
+					</ul>
+				</div>
+			
+
+
+				<div class="col-lg-12 text-center" style="padding-top: 4rem;">
+					<footer class="small">Bo Skakke - 20 61 67 68 / <a href="mailto:bsk@berlingskemedia.dk">bsk@berlingskemedia.dk</a></footer>
+				</div>
+			</div>
 		</div>
-		<div class="col-lg-6">
-			<h2>Berlingske</h2>
-			<h4>Template: Front page</h4>
-			<ul>
-				<li><a href="tpl-frontpage.php">Default</a></li>
-				<li><a href="tpl-frontpage.php?top">Large top</a></li>
-				<li><a href="tpl-frontpage.php?well">Giant top</a></li>
-				<li><a href="tpl-frontpage.php?oneliner">Oneliner - breaking</a></li>
-			</ul>
-		</div>
-		<div class="col-lg-6">
-			<h2>Business</h2>
-			<h4>Template: Front page</h4>
-			<ul>
-				<li><a href="tpl-frontpage.php?business">Default</a></li>
-				<li><a href="tpl-frontpage.php?business&amp;top">Large top</a></li>
-				<li><a href="tpl-frontpage.php?business&amp;well">Giant top</a></li>
-				<li><a href="tpl-frontpage.php?business&amp;oneliner">Oneliner - breaking</a></li>
-			</ul>
-		</div>
+	
 	</div>
+
 </div>
 
 
