@@ -47,7 +47,7 @@
 							</ul>
 						</nav>
 						
-						<a href="/" class="site-logo">Berlingske</a>
+						<a href="tpl-frontpage.php" class="site-logo">Berlingske</a>
 						
 						<nav class="tools-menu-right">
 							<ul class="list-reset list-sm">
