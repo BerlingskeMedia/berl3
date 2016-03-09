@@ -1,3 +1,9 @@
+.border-bottom {
+	border-bottom: $border-width solid $border-color;
+	padding-bottom: $spacer;
+	margin-bottom: $spacer;
+}
+
 .border-right {
 	border-right: $border-width solid $border-color;
 }
@@ -65,6 +71,13 @@
 		}
 	}
 }
+
+@include media-breakpoint-up(md) {
+	.border-bottom-lg {
+		@extend .border-bottom;
+	}
+}
+
 
 
 @include media-breakpoint-only(lg) {

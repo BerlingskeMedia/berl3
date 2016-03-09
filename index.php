@@ -60,7 +60,7 @@ if(isset($_GET["business"])) {
 								<?php
 								$imgW='620'; 
 								$showImg = '1';
-								$class = 'headline-2 ';
+								$class = 'headline-3 teaser-img-left-lg ';
 								$imgRatio = '3:2';
 								$showSummary = '0';
 								$showRelated = '0';

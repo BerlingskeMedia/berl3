@@ -1,3 +1,7 @@
+.teaser {
+	margin-bottom: $spacer;
+}
+
 .header, 
 .header-related {
 	margin: 0;
@@ -6,4 +10,32 @@
 
 .teaser-body {
 	overflow: hidden;
+}
+
+.teaser-summary {
+	font-size: .9rem;
+}
+.teaser-related {
+	@extend .list-reset;
+	li {
+
+	}
+}
+
+.teaser-img {
+	margin-bottom: .3125rem;
+}
+
+@include media-breakpoint-up(lg) {
+	.teaser-img-left-lg {
+		clear: left;
+		@border-bottom-lg;
+		.teaser-img {
+			float: left;
+		}
+		.img {
+			margin: 0 .625rem 0 0;
+			max-width: 10rem;
+		}
+	}
 }
