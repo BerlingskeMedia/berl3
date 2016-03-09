@@ -69,6 +69,7 @@ $enable-grid-classes:       true !default;
 // variables. Mostly focused on spacing.
 
 $spacer:                     1rem !default;
+$spacer-mini:                .625rem !default;
 $spacer-x:                   $spacer !default;
 $spacer-y:                   $spacer !default;
 $border-width:               1px !default;
@@ -111,7 +112,7 @@ $grid-breakpoints: (
 ) !default;
 
 
-// Grid containers
+/*// Grid containers
 //
 // Define the maximum width of `.container` for different screen sizes.
 
@@ -121,7 +122,7 @@ $container-max-widths: (
   lg: 1000px,
   xl: 1260px
 ) !default;
-
+*/
 
 
 

@@ -5,9 +5,9 @@
 		$breakingLabel = 'Breaking';
 	}
 ?>
-<article class="teaser-well <?php if($isBreaking == '1') { echo 'teaser-breaking';} ?> <? if (dumb_luck("50%")): ?>teaser-well-white<? else: ?>teaser-well-black<? endif ?>">
+<article class="teaser teaser-well <?php if($isBreaking == '1') { echo 'teaser-breaking';} ?> <? if (dumb_luck("50%")): ?>teaser-well-white<? else: ?>teaser-well-black<? endif ?>">
 	<a href="tpl-article.php">
-	<div class="teaser-bg" style="background-image:url(<? dummy("image/!b-breaking@1240x,16:9") ?>)"></div>
+		<div class="teaser-bg" style="background-image:url(<? dummy("image/!b-breaking@1240x,16:9") ?>)"></div>
 	</a>
 	
 	<div class="teaser-content">

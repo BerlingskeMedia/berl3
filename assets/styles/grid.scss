@@ -9,6 +9,7 @@ $col-sidebar: 20rem;
 	display: flex;
 	flex-wrap: wrap;
 	@extend .clearfix;
+	overflow: hidden;
 }
 
 .col-left {
@@ -22,7 +23,6 @@ $col-sidebar: 20rem;
 	float: left;
 	min-height: 1px;
 	width: calc(100% - #{$col-left + $col-sidebar});
-	@extend .border-right-lg;
 	padding: 0 .625rem;
 }
 

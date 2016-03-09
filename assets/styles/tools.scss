@@ -1,4 +1,4 @@
-.border-bottom {
+.bb {
 	border-bottom: $border-width solid $border-color;
 	padding-bottom: $spacer;
 	margin-bottom: $spacer;
@@ -8,17 +8,19 @@
 	border-right: $border-width solid $border-color;
 }
 
-.headline-1 .header {
-	font-size: 2rem;
+
+
+
+
+
+
+.flex-row {
+	display:flex;
+	flex-wrap:wrap;
+	list-style: none;
 }
 
-.headline-2 .header {
-	font-size: 1.4rem;
-}
-
-.headline-3 .header {
-	font-size: 1.2rem;
-}
+// FONT SIZES
 
 @include media-breakpoint-only(lg) {
 	.headline-1 .header {
@@ -44,6 +46,7 @@
 		font-size: .6rem;
 	}
 }
+
 @include media-breakpoint-down(sm) {
 	.headline-1 .header {
 		font-size: 1rem;
@@ -57,8 +60,41 @@
 	}
 }
 
+
+// :::::::::::::::::::::::::::::::::::::::::::::::::
+// DOWN RULES ::::::::::::::::::::::::::::::::::::::
+// :::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+// IPAD AND DOWN 
+
+@include media-breakpoint-down(md) {
+	
+}
+
+
+// PHONE AND DOWN 
+
+@include media-breakpoint-down(sm) {
+	
+}
+
+// :::::::::::::::::::::::::::::::::::::::::::::::::
+// UP RULES :::::::::::::::::::::::::::::::::::::::
+// :::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+// IPAD and up
+
 @include media-breakpoint-up(md) {
-	.border-right-md-up {
+	
+}
+
+
+// LG and up
+
+@include media-breakpoint-up(lg) {
+	.col-border-right-lg-up {
 		position: relative;
 		&:after {
 			content: '';
@@ -70,18 +106,29 @@
 			bottom: 0;
 		}
 	}
-}
 
-@include media-breakpoint-up(md) {
-	.border-bottom-lg {
-		@extend .border-bottom;
+	.col-border-left-lg-up {
+		position: relative;
+		&:after {
+			content: '';
+			width: $border-width;
+			background-color: $border-color; 
+			position: absolute;
+			left: 0;
+			top: 0;
+			bottom: 0;
+		}
 	}
 }
 
+// :::::::::::::::::::::::::::::::::::::::::::::::::
+// ONLY ONE SCREEN SIZE RULES ::::::::::::::::::::::
+// :::::::::::::::::::::::::::::::::::::::::::::::::
 
+// LG ONLY
 
 @include media-breakpoint-only(lg) {
-	.border-right-lg {
+	.col-border-right-lg {
 		position: relative;
 		&:after {
 			content: '';
@@ -95,8 +142,11 @@
 	}
 }
 
+
+// XL ONLY
+
 @include media-breakpoint-only(xl) {
-	.border-right-xl {
+	.col-border-right-xl {
 		position: relative;
 		&:after {
 			content: '';

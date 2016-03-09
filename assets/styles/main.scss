@@ -32,17 +32,43 @@ body {
 	position: relative;
 }
 
+
 .section-title {
+	@extend .top-block;
 	@extend .font-sans-alt;
-	text-transform: uppercase;
-	font-size: 1.6rem;
+	color: #333;
+    line-height: 1.2;
+    font-size: 1.5rem;
+    display: block;
+    letter-spacing: 0;
+    margin: 1rem 0;
+    text-transform: uppercase;
 }
 
-
+.top-block {
+	position: relative;
+	&:before {
+		display: inline-block;
+		width: 2rem;
+		content: '';
+		height: 6px;
+		position: absolute;
+		top: -1rem;
+		background-color: #222;
+	}
+}
 
 
 
 .teaser-img img {
 	@extend .img-fluid;
+}
+
+@include media-breakpoint-down(sm) {
+	.col-sidebar .banner {
+		background-color: #fff;
+		padding: ($spacer * 2) 0;
+		margin: 0 -$spacer-mini; 
+	}
 }
 @import "tools";
