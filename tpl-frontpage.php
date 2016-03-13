@@ -14,7 +14,7 @@ if(isset($_GET["business"])) {
 	$siteBusiness = true;
 }
 
-$showWell = true;
+
 ?>
 
 
@@ -39,7 +39,7 @@ $showWell = true;
 <div class="site-wrapper">
 	<div class="container">
 		
-		<?php if($showWell): ?>
+		<?php if(isset($showWell)): ?>
 			<div class="row well-container">
 				<div class="col-md-12">
 					<?php include('includes/teaser-well.php'); ?>
@@ -54,35 +54,61 @@ $showWell = true;
 			<div class="col-content">
 				<div class="row flex-row">
 					
-						<?php  if($showTop) : ?>
+						<?php if(isset($showTop)) : ?>
 							<div class="col-xs-12">		
 							<?php
 								$imgW='920'; 
 								$showImg = '1';
 								$class = ' bb fs-4 teaser-regular main-teaser';
-								
 								$imgRatio = '16:8';
+								$showAuthor = false;
 								$showSummary = true;
 								$showRelated = true;
 								$showCat = true;
+								$showKey = true;
+								$teaserLink = false;
+								$imgSrc = false;
+
 								include('includes/teaser.php') ?>
 							</div>		
 						<?php endif; ?>
 					
 					<div class="col-lg-8 col-xs-12 col-border-right-lg-up ">
-						
+
 							<?php
 							$imgW='920'; 
 							$showImg = '1';
+							
+							$imgSrc = false;
 							$class = 'teaser-regular bb fs-3';
 							$imgRatio = '16:8';
+							$showAuthor = false;
+							$showLink = false;
 							$showSummary = true;
 							$showRelated = true;
 							$showCat = true;
+							$showKey = true;
+
 							include('includes/teaser.php') ?>
 						
 						<div class="row flex-row">
-							
+						<div class="col-lg-12 col-xs-6 teaser-bb-lg-up ">
+							<?php
+							$imgW='520'; 
+							$imgSrc = '/portrait';
+							$showImg = '1';
+							$class = 'teaser-regular bb fs-4';
+							$imgRatio = '1:1';
+							$showAuthor = false;
+							$showLink = false;
+							$showSummary = true;
+							$showRelated = true;
+							$showCat = true;
+							$showKey = true;
+
+							include('includes/teaser.php') ?>
+						</div>
+
 							<? while (dumb_luck("6")): ?>
 								<div class="col-lg-12 col-xs-6 teaser-bb-lg-up-not-last ">
 								<?php

@@ -1,3 +1,7 @@
+<?php 
+!isset($teaserLink) || $teaserLink == 'tpl-article.php';
+?>
+
 <article class="teaser <?= $class; ?>">
 	<div class="teaser-content">
 		
