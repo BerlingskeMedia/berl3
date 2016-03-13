@@ -12,6 +12,7 @@
 @import "buttons";
 @import "lists";
 @import "menu";
+@import "articles";
 @import "demo";
 
 
@@ -71,4 +72,15 @@ body {
 		margin: 0 -$spacer-mini; 
 	}
 }
+
+
+
+.banner {
+	@extend .text-center;
+}
+
+
+
+
+
 @import "tools";

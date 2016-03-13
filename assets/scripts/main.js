@@ -1,4 +1,7 @@
 (function($) {
+
+
+
 	// MISC VARS - STICKY HEADER ON SCROLL
 	var bodyClass = $('body');
 	var sticky_navigation_offset_top = 0;
@@ -42,7 +45,30 @@
 		$(this).closest('div').toggleClass('remove-oneliner');
 	});
 
+		
 
+
+
+		// Pin #1
+		new $.Zebra_Pin($('#sticky_1'), {
+		    z_index: 2,
+		    contain: true,	    
+		    bottom_spacing: 100,
+		    onUnpin: function() {
+        	//	$('div').remove();
+        		alert('jeg har fri nu');
+			}
+
+		});
+
+
+		// Pin #2
+		new $.Zebra_Pin($('#sticky_2'), {
+			z_index: 3,
+		});		
+
+		
+	    
 
 })(jQuery); 
 

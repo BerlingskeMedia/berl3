@@ -1,0 +1,20 @@
+.article-sidebar {
+	position: relative;
+	width: 20rem;
+}
+.sticky-container {
+	height: 1500px;
+	background-color: orange;
+	position: relative;
+	&> div {
+		// background-color: $background-color;
+		
+	}
+	&+ .sticky-container {
+		background-color: green;
+	}
+}
+
+.sticky {
+	width: 20rem;
+}
