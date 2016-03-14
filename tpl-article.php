@@ -61,7 +61,7 @@ if(isset($_GET["business"])) {
 					<div id="sticky_1" class="sticky">
 						<div class="mb banner"><?php dummy("ad@300x250") ?></div>
 						<div class="mb">
-							<h2 class="list-title">Seneste nyt</h2>
+							<h2 class="list-title">I'm a list</h2>
 							<ul class="list-reset">
 								<? while (dumb_luck("10")): ?>
 									<li><a href="tpl-article.php"><?php dummy("text@headline") ?></a></li>
@@ -73,21 +73,21 @@ if(isset($_GET["business"])) {
 					</div>
 
 				</div>
-				<div class="sticky-container">
+				
 					
 					<div id="sticky_2" class="sticky">
 						<div class="mb banner"><?php dummy("ad@300x250") ?></div>
 						<div class="mb">
-							<h2 class="list-title">Seneste nyt</h2>
-							<ul>
-								<? while (dumb_luck("10")): ?>
+							<h2 class="list-title">I'm a different list</h2>
+							<ol>
+								<? while (dumb_luck("8")): ?>
 									<li><a href="tpl-article.php"><?php dummy("text@headline") ?></a></li>
 								<? endwhile ?>
-							</ul>
+							</ol>
 						</div>
 					</div>
 
-				</div>
+				
 			</div>
 
 			
@@ -95,7 +95,16 @@ if(isset($_GET["business"])) {
 
 			
 		</div>		
-
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="text-center">
+					<h1>Article footer</h1>
+					<? while (dumb_luck("25")): ?>
+						<p><?php dummy("text@paragraph") ?></p>
+					<? endwhile ?>
+				</div>
+			</div>
+		</div>
 	</div><!-- container -->
 </div><!-- site-wrapper -->
 

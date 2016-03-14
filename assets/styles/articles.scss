@@ -3,18 +3,14 @@
 	width: 20rem;
 }
 .sticky-container {
-	height: 1500px;
-	background-color: orange;
+	height: 1000px;
 	position: relative;
-	&> div {
-		// background-color: $background-color;
-		
-	}
-	&+ .sticky-container {
-		background-color: green;
-	}
+	
 }
-
 .sticky {
-	width: 20rem;
+	width: 18.75rem;
+}
+#sticky_2 {
+	position: relative;
+	top: 1000px;
 }

@@ -53,10 +53,10 @@
 		new $.Zebra_Pin($('#sticky_1'), {
 		    z_index: 2,
 		    contain: true,	    
-		    bottom_spacing: 100,
+		     bottom_spacing: 300,
 		    onUnpin: function() {
         	//	$('div').remove();
-        		alert('jeg har fri nu');
+        		// alert('jeg har fri nu');
 			}
 
 		});
@@ -64,11 +64,8 @@
 
 		// Pin #2
 		new $.Zebra_Pin($('#sticky_2'), {
-			z_index: 3,
-		});		
-
-		
-	    
+			z_index: 3
+		});
 
 })(jQuery); 
 
