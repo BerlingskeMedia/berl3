@@ -66,7 +66,9 @@ fieldset[disabled] a.btn {
 // Alternate buttons
 //
 
-
+.btn-news {
+    @include button-variant(#fff, $col-live, $col-live);
+}
 
 
 .btn-fff {

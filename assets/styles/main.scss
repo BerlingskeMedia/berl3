@@ -1,13 +1,14 @@
 @charset "UTF-8";
 
-
-@import "bootstrap/bootstrap";
 @import "_variables";
+@import "bootstrap/bootstrap";
+
 @import "grid-hack";
 @import "animations";
 @import "fonts";
 @import "header";
 @import "teasers";
+@import "article";
 @import "buttons";
 @import "lists";
 @import "menu";
@@ -301,6 +302,83 @@ $col-deck-label-width: 160px;
 .today {
 	strong {
 		@extend .gray-darker;
+	}
+}
+
+.img-gradient {
+	display: inline-block;
+	overflow: hidden;
+	border-radius: 50% 50% 50% 0;
+	@include gradient-directional( red, #ddd ,45deg);
+
+	img {
+		filter: grayscale(100%) ;	
+
+		opacity: .7;
+	}
+}
+
+.quote {
+	/*@extend .font-header;*/
+	font-family: Oswald, sans-serif;
+	font-size: 1.5rem;
+	line-height: 1.9;
+	color: rgba(0,0,0,.7);
+	span {
+		border-bottom: ($border-width * 2)  solid red;	
+	}
+	cite {
+		@extend .font-sans;
+		font-style: normal;
+		color: #888;
+		font-size: .9rem;
+		display: block;
+	}
+}
+
+.article-badge-kronik {
+	background-color: #222;
+	color: #fff;
+	font-size: .7rem;
+	text-transform: uppercase;
+	padding: .3rem .5rem;
+	font-weight: normal;
+	display: inline-block; 
+	margin-bottom: $spacer;
+
+}
+$sharebutton: 2.5rem;
+
+.share-buttons {
+	margin: 0 0 $spacer;
+}
+.btn-share {
+	display: inline-block;
+	height: $sharebutton;
+	width: $sharebutton;
+	line-height: $sharebutton;
+	padding: 0;
+	border: .13rem solid #333;
+	background-color: transparent;
+	border-radius: 50%;
+	text-align: center;
+	vertical-align: middle;
+	transition: all .2s ease;
+	color: #333;
+	i {
+		line-height: 1;
+		font-size: 1.3rem;
+		vertical-align: initial;
+	}
+	&:hover {
+		background-color: #333;
+		color: #fff;
+	}
+	&:active{
+		transform: scale(.95);
+	}
+	& + .btn-share {
+		margin-left: $spacer / 2;
 	}
 }
 

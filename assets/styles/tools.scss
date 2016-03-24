@@ -5,7 +5,9 @@
 .mb {
 	margin-bottom: $spacer;
 }
-
+.mb-1 {
+	margin-bottom: $spacer * 2;	
+}
 .mb-2 {
 	margin-bottom: $spacer * 4;	
 }

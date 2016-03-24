@@ -1,0 +1,155 @@
+.col-article-primary {
+	width: calc(100% - 400px);
+}
+.article-sidebar {
+	width: 380px;
+}
+.article-title {
+	@extend .font-header;
+	font-size: 3rem;
+}
+
+.article-main-image {
+	margin-bottom: $spacer;
+	position: relative;
+	.caption {
+		background-color: rgba(0,0,0,.3);
+		padding: .2rem .4rem;
+		color: rgba(255,255,255,.9);
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		font-size: .6rem;
+	}
+}
+.article-header {
+	margin-bottom: $spacer;	
+}
+.article-header-live {
+	margin-top: -($spacer * 3);
+	padding: $spacer $spacer 0;
+	background-color: $background-color;
+	margin-bottom: 0;
+}
+
+
+.article-summary {
+	font-size: 1.3rem;
+}
+
+.article-content {
+	padding-bottom: 10rem;
+	padding-left: 8rem;
+	&> p {
+		@extend .font-serif;
+		font-size: 1.2rem;
+		&:first-child {
+			// font-size: 1.4rem;
+			font-weight: bold;
+			// @extend .font-sans;
+		}
+		&> a {
+			color: $link-hover-color;
+		}
+	}
+}
+
+.widget-livestream {
+	background-color: #fff;
+	padding: $spacer;
+	border-radius: .2rem;
+}
+
+.article-badge-live {
+	background-color: $col-live;
+	color: #fff;
+	text-align: center;
+	padding: .2rem 0;
+}
+
+.widget-livestream {
+	ul {
+		list-style: none;
+		position: relative;
+		&:before {
+			content: '';
+			width: .2rem;
+			left: 1.3rem;
+			top: 0;
+			bottom: 0;
+			position: absolute;
+			background-color: $col-live;
+			display: inline-block;
+		}
+	}
+	li {
+		@extend .clearfix;
+		margin-bottom: $spacer * 2;
+		position: relative;
+		font-family: georgia;
+		font-size: 1.1rem;
+		&:before {
+			content: '\e815';
+			font-family: b-icons;
+			float: left;
+			margin-left: -1.6rem;
+			margin-top: -.0rem;
+			color: $col-live;
+			background-color: #fff;
+			font-size: 1.2rem;
+			z-index: 2;
+		}
+		h2 {
+			@extend .font-header;
+		}
+	}
+
+
+	time {
+		color: $col-live;
+		display: block;
+	}
+
+	.live-img {
+		float: right;
+		max-width: 300px;
+		margin: 0 0 $spacer $spacer;
+		clear: right;
+		figcaption {
+			font-size: .7rem;
+			padding-top: .3rem;
+			@extend .font-sans;
+		}
+	}
+	.video-youtube,
+	.twitter-tweet {
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}	
+}
+
+.article-byline {
+	@extend .font-serif;
+	font-style: italic;
+	color: #666;
+	font-size: .9rem;
+	margin-bottom: .5rem;
+	.divider {
+		padding: 0 .3rem;
+		color: #666;
+	}
+}
+.article-date {
+	@extend .font-serif;
+	margin-bottom: $spacer;
+	text-transform: lowercase;
+	color: #666;
+	font-size: .9rem;
+}
+
+.author-username {
+	border-bottom: 2px solid $link-hover-color;
+
+}

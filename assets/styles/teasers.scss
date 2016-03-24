@@ -1,3 +1,5 @@
+// BREAKING TAG
+
 .teaser-font-alt {
 	.header {
 		@extend .font-sans;
@@ -163,7 +165,7 @@ img {
 	}
 }
 
-.well-category {
+.teaser-category {
 	display: inline-block;
 	background-color: red;
 	color: #fff;
@@ -184,23 +186,6 @@ img {
 	&:hover {
 		.teaser-content:after {
 			height: 450px;
-		}
-	}
-
-	
-
-	.teaser-bg {
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center center;
-		bottom: 0;
-		@extend .absolute;
-		&:before {
-			@extend .absolute;
-			bottom: 0;
-			content: '';
-			background: #fff;
-			opacity: 0;
 		}
 	}
 
@@ -259,6 +244,160 @@ img {
 		font-weight: normal;
 	}
 }
+
+// teaser-bg
+
+.teaser-background {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	bottom: 0;
+	@extend .absolute;
+	&:before {
+		@extend .absolute;
+		bottom: 0;
+		content: '';
+		background: #fff;
+		opacity: 0;
+	}
+}
+
+// teaser-wide
+
+.teaser-wide {
+	border-bottom: $border-width solid $border-color;
+	margin-bottom: $spacer;
+	.teaser-img {
+		position: relative;
+	}
+	.teaser-summary {
+		font-size: 1.4rem;
+	}
+	figcaption {
+		position: absolute;
+		bottom: $spacer * 3;
+		left: $spacer + .6rem;
+		z-index: 2;
+		max-width: 40rem;
+		
+	}
+	.teaser-related {
+		li {
+			font-size: 1rem;
+		}
+	}
+	.teaser-category {
+		margin-left: -.625rem;
+		padding: .3rem .3rem;
+		background-color: #fff;
+		color: #000;
+		
+
+
+	}
+	.mega-header {
+		font-size: 3rem;
+		font-kerning: auto;
+		line-height: 1.3;
+		span {	
+			background-color: #111;
+			padding: .625rem 0;
+			color: #fff;
+			box-shadow: .625rem 0 #111, -.626rem 0 #111;
+		}
+	}
+	
+	.teaser-content {
+		margin-top: -2rem;
+		position: relative;
+		z-index: 2;
+		padding: 0 ($spacer * 2) 0 $spacer;
+	}
+	.teaser-padding {
+		padding: $spacer;
+		background-color: $background-color;
+
+	}
+	
+	
+	.widget {
+		background-color: #fff;
+		border-radius: .2rem;
+		padding: $spacer;		
+		position: absolute;
+		bottom: $spacer;
+		right: 2rem;
+		left: -2rem;
+		box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+		.btn {
+			border: .2rem solid red;
+			border-radius: 0;
+			padding: .2rem .625rem;
+			background-color: red;
+			color: #fff;
+			font-size: .8rem;
+			font-weight: 300;
+			i {
+				@extend .animate-blink;
+				animation-duration: 1.3s;
+			}
+			&:hover {
+				background-color: darken(red, 10%);
+				border-color: darken(red, 10%);;
+			}
+		}
+	}
+	.fadeImg:not(:first-child) {
+		display: none;
+		position: absolute;
+		left: 0;
+		top: 0;
+		display: block;
+		opacity: 0;
+		z-index: 2;
+		// @extend .animate-fade-in;
+		animation: fadeInSlide 30s linear infinite 0s;
+
+	}
+
+	.fadeImg:nth-child(1) { 
+
+	}
+	.fadeImg:nth-child(2) {
+		animation-delay: 6s;
+	}
+	.fadeImg:nth-child(3) {
+		animation-delay: 12s;
+	}
+	.fadeImg:nth-child(4) {
+		animation-delay: 18s;
+	}
+	.fadeImg:nth-child(5) {
+		animation-delay: 24s;
+	}
+}
+
+@keyframes 	fadeInSlide {  
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+	}
+	2% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+	}
+	23% {
+		opacity: 1
+	}
+	25% {
+		opacity: 0
+	}
+	100% {
+		opacity: 0
+	}
+}
+
+
 
 // teaser-sm 
 
@@ -392,7 +531,7 @@ img {
 		padding: .2rem .5rem;
 	}
 }
-.teaser-breaking .well-category {
+.teaser-breaking .teaser-category {
 	background: yellow;
 	color: #000;
 	margin-bottom: .3rem;
@@ -510,6 +649,9 @@ img {
 		}
 	}	
 }
+
+
+
 /*.teaser-editorial {
 	background: url(/dist/images/vaabenskjold-2.png) center top no-repeat;
 	background-size: contain;

@@ -7,11 +7,11 @@
 ?>
 <article class="teaser-well <?php if($isBreaking == '1') { echo 'teaser-breaking';} ?> <? if (dumb_luck("50%")): ?>teaser-well-white<? else: ?>teaser-well-black<? endif ?>">
 	<a href="tpl-article.php">
-	<div class="teaser-bg" style="background-image:url(<? dummy("image/!b-breaking@1240x,16:9") ?>)"></div>
+	<div class="teaser-background" style="background-image:url(<? dummy("image/!b-breaking@1240x,16:9") ?>)"></div>
 	</a>
 	
 	<div class="teaser-content">
-		<div class="well-category">
+		<div class="teaser-category">
 			<?php echo $breakingLabel; ?>
 		</div>
 		<h2 class="header"><a href="tpl-article.php"><? dummy("text@headline-b2") ?></a></h2>

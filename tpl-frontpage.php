@@ -1,6 +1,10 @@
 <? require_once("../dummy/dummy.php") ?>
 
 <?php 
+if(isset($_GET["wide"])) {
+	$showWide = true;
+} 
+
 if(isset($_GET["well"])) {
 	$showWell = true;
 } 
@@ -34,10 +38,12 @@ if(isset($_GET["business"])) {
 
 
 
+
+
 <div class="site-search-overlay">
 	<div class="warning">
 
-		<div style="text-center"><p><strong>Av av av</strong></p> <p>Dette website er ikke responsivt endnu - kan endnu kun ses på store skærme :-)</p>
+		<div class="text-center"><p><strong>Av av av</strong></p> <p>Dette website er ikke responsivt endnu - kan endnu kun ses på store skærme :-)</p>
 		</div>
 	</div>	
 </div>
@@ -64,6 +70,15 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 
 
 	<div class="container main-content">
+
+	<?php if($showWide): ?>
+		<div class="row">
+			<div class="col-md-12">
+				<?php include('includes/teaser-wide.php'); ?>
+			</div>
+		</div>
+	
+	<?php endif; ?>
 
 
 	<?php if($showWell): ?>
@@ -107,6 +122,8 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 
 				
 				<div class="col-deck-content ">
+						
+						
 						<?php  if($showTop) : ?>
 							<div class="col-lg-12">
 							<?php

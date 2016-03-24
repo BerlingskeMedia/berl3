@@ -66,6 +66,7 @@
 
 .list-bullet {
 	li {
+
 		&:before {
 			display: inline-block;
 			width: .25rem;
@@ -83,4 +84,38 @@
 	li:first-child:before {
 		content: none;
 	}
+}
+
+.widget-header {
+	text-transform: uppercase;
+	border-bottom: $border-width solid $border-color;
+
+}
+.list-live-stream {
+	list-style: none;
+	font-size: .6rem;
+	padding-left: 1.2rem;
+	h2 {
+		font-weight: normal;
+		line-height: 1.2;
+	}
+	time {
+		color: $col-live;
+		display: block;
+		&:before {
+			content: '\e815';
+			font-family: b-icons;
+			float: left;
+			margin-left: -1.2rem;	
+		}
+	}
+}
+.widget {
+	footer {
+		text-align: right;
+	}
+}
+.live-stream {
+	background-color: orange;
+	padding: 1rem;
 }
