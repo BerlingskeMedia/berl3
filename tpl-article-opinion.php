@@ -70,45 +70,45 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 	<div class="container " style="padding-top: 2rem">
 
 
-		<div class="row">
-			<div class="col-md-2">
-				<figure class="article-main-image img-gradient">
-					<img src="<? dummy("image/!author@200x,1:1") ?>" width="" height="" alt="" />
-				</figure>
-				<div class="quote">
-					<span>"<? dummy("text@quote") ?>"</span>
+		<div class="col-1-content" >
+		
 
-				</div>
+		<figure class="article-main-image img-gradient">
+			<img src="<? dummy("image/!author@200x,1:1") ?>" width="" height="" alt="" />
+		</figure>
+		<header class="article-header" >
+			<div class="article-badge-kronik">Kronikken</div><br>
+			<h1 class="article-title">
+				<? dummy("text@headline") ?>
+			</h1>
+			<div class="article-byline">Af: <? dummy("text@author") ?>, Filosof  <span class="divider">&mdash;</span> <i class="bicon-twitter"></i> <a href="#" class="author-username"><? dummy("text@username") ?></a></div>
+			<div class="article-date"><? dummy("text@date-long") ?></div>
+			<div class="share-buttons">
+				<button class="btn-share"><i class="bicon-facebook"></i></button>
+				<button class="btn-share"><i class="bicon-twitter"></i></button>
+				<button class="btn-share"><i class="bicon-linkedin"></i></button>
+				<button class="btn-share"><i class="bicon-mail"></i></button>
 			</div>
-			<div class="col-md-7">
-				<header class="article-header" >
-					<div class="article-badge-kronik">Kronikken</div><br>
-					<h1 class="article-title">
-						<? dummy("text@headline") ?>
-					</h1>
-					<div class="article-byline">Af: <? dummy("text@author") ?>, Filosof  <span class="divider">&mdash;</span> <i class="bicon-twitter"></i> <a href="#" class="author-username"><? dummy("text@username") ?></a></div>
-					<div class="article-date"><? dummy("text@date-long") ?></div>
-					<div class="share-buttons">
-						<button class="btn-share"><i class="bicon-facebook"></i></button>
-						<button class="btn-share"><i class="bicon-twitter"></i></button>
-						<button class="btn-share"><i class="bicon-linkedin"></i></button>
-						<button class="btn-share"><i class="bicon-mail"></i></button>
-					</div>
-				</header>
+		</header>
 
-				<div class="article-content" style="padding-left: 0;">
-					<p><? dummy("text@teaser") ?></p>
-					<? while (dumb_luck("10")): ?>
-						<p><? dummy("text@paragraph") ?></p>
-					<? endwhile ?>
-				</div>
-			</div>
-			<div class="col-md-3">
-				Banne
-			</div>
+		<div class="article-content" style="padding-left: 0;">
 			
-			
-		</div><!-- row -->
+			<p><? dummy("text@teaser") ?></p>
+			<div class="quote">
+				<span>"<? dummy("text@quote") ?>"</span>
+			</div>
+			<? while (dumb_luck("10")): ?>
+				<p><? dummy("text@paragraph") ?></p>
+			<? endwhile ?>
+		</div>
+
+		</div>
+		<div class="col-2-sidebar">
+		<div class="banner module ">
+			<div style="width: 300px; height: 250px;" class="demo-banner"></div>
+		</div>
+		</div>
+		
 		
 		
 

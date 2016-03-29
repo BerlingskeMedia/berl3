@@ -321,11 +321,16 @@ $col-deck-label-width: 160px;
 .quote {
 	/*@extend .font-header;*/
 	font-family: Oswald, sans-serif;
-	font-size: 1.5rem;
-	line-height: 1.9;
-	color: rgba(0,0,0,.7);
+	font-size: 1.75rem;
+	line-height: 1.75;
+	color: rgba(0,0,0,.8);
+	margin-left: -220px;
+	max-width: 280px;
+	float: left;
+	margin-right: $spacer;
 	span {
-		border-bottom: ($border-width * 2)  solid red;	
+		border-bottom: ($border-width * 2)  solid rgba(255,0,0,.6);	
+		background-color: rgba(255,0,0,.05);	
 	}
 	cite {
 		@extend .font-sans;
@@ -336,7 +341,7 @@ $col-deck-label-width: 160px;
 	}
 }
 
-.article-badge-kronik {
+[class*="article-badge"] {
 	background-color: #222;
 	color: #fff;
 	font-size: .7rem;
@@ -345,8 +350,17 @@ $col-deck-label-width: 160px;
 	font-weight: normal;
 	display: inline-block; 
 	margin-bottom: $spacer;
-
 }
+
+.article-badge-live {
+	background-color: $col-live;
+	color: #fff;
+	text-align: center;
+	padding: .625rem 0;
+	display: block;
+	margin: 0;
+}
+
 $sharebutton: 2.5rem;
 
 .share-buttons {
@@ -382,4 +396,18 @@ $sharebutton: 2.5rem;
 	}
 }
 
+.col-1-content {
+	width: calc(100% - 340px);
+	float: left;
+	padding-left: 220px;
+}
+
+.col-2-sidebar {
+	width: 320px;
+	float: left;
+}
+.img-gradient {
+	float: left;
+	margin-left: -220px;
+}
 @import "tools";

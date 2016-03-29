@@ -80,6 +80,19 @@ if(isset($_GET["business"])) {
 						<li><a href="tpl-frontpage.php?top">Large top</a></li>
 						<li><a href="tpl-frontpage.php?well">Giant top</a></li>
 						<li><a href="tpl-frontpage.php?oneliner">Oneliner - Breaking</a></li>
+						<li><a href="tpl-frontpage.php?wide">LIVE</a></li>
+					</ul>
+				</div>
+
+				<div class="col-lg-3">
+					<h4 ><small class="breaker">Template:</small> Article</h4>
+				</div>
+				
+				<div class="col-lg-9">
+					<ul>
+						<li><a href="tpl-article-default.php">Default</a></li>
+						<li><a href="tpl-live.php">LIVE</a></li>
+						<li><a href="tpl-article-opinion.php">Kronik</a></li>
 					</ul>
 				</div>
 			

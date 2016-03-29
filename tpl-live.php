@@ -84,7 +84,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 			</div>
 			<div class="col-md-10">
 				<header class="article-header-live">
-					<span class="article-category">
+					<span class="article-badge">
 						Terror i Bruxelles
 					</span>
 					<h1 class="article-title">
