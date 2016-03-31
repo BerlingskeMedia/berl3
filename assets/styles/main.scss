@@ -1,3 +1,4 @@
+
 @charset "UTF-8";
 
 @import "_variables";
@@ -32,7 +33,9 @@ body {
 	position: relative;
 }
 
-
+.col-twitter {
+	color: $col-twitter;
+}
 
 
 .site-business {
@@ -324,7 +327,7 @@ $col-deck-label-width: 160px;
 	font-size: 1.75rem;
 	line-height: 1.75;
 	color: rgba(0,0,0,.8);
-	margin-left: -220px;
+	margin-left: -$col-1-width ;
 	max-width: 280px;
 	float: left;
 	margin-right: $spacer;
@@ -363,9 +366,7 @@ $col-deck-label-width: 160px;
 
 $sharebutton: 2.5rem;
 
-.share-buttons {
-	margin: 0 0 $spacer;
-}
+
 .btn-share {
 	display: inline-block;
 	height: $sharebutton;
@@ -399,7 +400,7 @@ $sharebutton: 2.5rem;
 .col-1-content {
 	width: calc(100% - 340px);
 	float: left;
-	padding-left: 220px;
+	padding-left: $col-1-width;
 }
 
 .col-2-sidebar {
@@ -408,6 +409,6 @@ $sharebutton: 2.5rem;
 }
 .img-gradient {
 	float: left;
-	margin-left: -220px;
+	margin-left: -$col-1-width;
 }
 @import "tools";

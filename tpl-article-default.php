@@ -73,38 +73,50 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 
 		<div class="col-1-content" >
 		
+		<header class="article-header article-pull-left " >
+			<div class="article-badge-kronik"><? dummy("text@b-cat") ?></div><br>
+			
+			<h1 class="article-title">
+				<? dummy("text@headline") ?>
+			</h1>
+			
+			
+			
+			
+			<div class="article-byline clearfix">
+				<figure class="article-avatar"><img src="<? dummy("image/!author@100x100,") ?>" width="" height="" alt="" /></figure>
+				<? dummy("text@author") ?>  <? if (dumb_luck("50%")): ?><br> <i class="bicon-twitter col-twitter"></i> <? dummy("text@username") ?><? endif ?>
+			</div>
+			<div class="article-meta clearfix">
+				<div class="article-date"><? dummy("text@date-long") ?> &mdash; kl. <? dummy("text@time") ?></div>
+			
+			<div class="share-buttons">
+				<button class="btn-share"><i class="bicon-facebook"></i></button>
+				<button class="btn-share"><i class="bicon-twitter"></i></button>
+				<button class="btn-share"><i class="bicon-linkedin"></i></button>
+				<button class="btn-share"><i class="bicon-mail"></i></button>
+			</div>
+			</div>
+		</header>
 
-
-		<figure class="article-main-image">
-			<img src="<? dummy("image@1240x,16:9") ?>" width="" height="" alt="" />
-			<figcaption><? dummy("text@short-teaser") ?> <span>Foto: <? dummy("text@author") ?></span></figcaption>
-		</figure>
+		
 		
 		
 		
 
 		<div class="article-content" style="padding-left: 0;">
+		
 
-			<header class="article-header article-header-left" >
-				<div class="article-badge-kronik"><? dummy("text@b-cat") ?></div><br>
-				<h1 class="article-title">
-					<? dummy("text@headline") ?>
-				</h1>
-				<div class="article-float-left">
-					<div class="article-byline">
-					<figure class="article-avatar"><img src="<? dummy("image/!author@100x100,") ?>" width="" height="" alt="" /></figure>
-					<? dummy("text@author") ?>  <? if (dumb_luck("50%")): ?><br> <i class="bicon-twitter"></i><? endif ?></div>
-					<div class="article-date"><? dummy("text@date-long") ?></div>
-				</div>		
-				<div class="share-buttons">
-					<button class="btn-share"><i class="bicon-facebook"></i></button>
-					<button class="btn-share"><i class="bicon-twitter"></i></button>
-					<button class="btn-share"><i class="bicon-linkedin"></i></button>
-					<button class="btn-share"><i class="bicon-mail"></i></button>
-				</div>
-			</header>
-			
+		<figure class="article-main-image article-pull-left">
+			<img src="<? dummy("image@1240x,16:9") ?>" width="" height="" alt="" />
+			<figcaption><? dummy("text@short-teaser") ?> <span>Foto: <? dummy("text@author") ?></span></figcaption>
+		</figure>
+
+		
 			<p><strong><? dummy("text@teaser") ?></strong></p>
+		
+			
+			
 			
 			<? while (dumb_luck("5")): ?>
 				<p><? dummy("text@paragraph") ?></p>
@@ -130,6 +142,23 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 					<div class="header"><a href="tpl-article-default.php"><? dummy("text@headline") ?></a></div>
 				</section>
 			<?php endif; ?>
+			<? while (dumb_luck("5")): ?>
+				<p><? dummy("text@paragraph") ?></p>
+			<? endwhile ?>
+			<figure class="article-image-embed">
+				<img src="<? dummy("image@940x,16:9") ?>" width="" height="" alt="" />
+				<figcaption>
+				<? dummy("text@teaser") ?></figcaption>
+			</figure>
+			<? while (dumb_luck("5")): ?>
+				<p><? dummy("text@paragraph") ?></p>
+			<? endwhile ?>
+
+			<figure class="article-image-embed article-embed-right">
+				<img src="<? dummy("image@940x,16:9") ?>" width="" height="" alt="" />
+				<figcaption>
+				<? dummy("text@teaser") ?></figcaption>
+			</figure>
 			<? while (dumb_luck("5")): ?>
 				<p><? dummy("text@paragraph") ?></p>
 			<? endwhile ?>
