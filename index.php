@@ -222,8 +222,9 @@ if(isset($_GET["business"])) {
 				
 				<div class="col-lg-9">
 					<ul>
-						<li class="red"><a href="#">Front-page</a></li>
+						
 						<li class="red">Article <a href="#">Example 1</a> <a href="#">Example 2</a></li>
+						<li class="red">Section	 <a href="#">Example 1</a> <a href="#">Example 2</a></li>
 					</ul>
 				</div>
 
@@ -260,7 +261,8 @@ if(isset($_GET["business"])) {
 						<li class="red"><a href="#">404</a></li>
 						<li class="red"><a href="#">Send tip</a></li>
 						<li class="red"><a href="#">Article archive</a></li>
-						<li class="red"><a href="#">Buy printed editions</a></li>
+						
+					
 					</ul>
 				</div>
 
