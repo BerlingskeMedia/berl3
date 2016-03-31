@@ -199,11 +199,20 @@ if(isset($_GET["business"])) {
 					<ul>
 						<li class="red"><a href="#">Front page</a></li>
 						<li class="red"><a href="#">Section</a></li>
-					
 						<li class="red">Article <a href="#">Locked</a> <a href="#">Un-locked</a></li>
-						
 						<li class="red">Buy options <a href="#">Option 1</a> <a href="#">Option 2</a> <a href="#">Option 3</a></li>
 						<li class="red"><a href="#">About Plus</a></li>
+					</ul>
+				</div>
+
+				<div class="col-lg-3">
+					<h4>Singles</h4>
+				</div>
+				
+				<div class="col-lg-9">
+					<ul>
+						<li class="red"><a href="#">Front-page</a></li>
+						<li class="red">Single single-sale</li>
 					</ul>
 				</div>
 
