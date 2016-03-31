@@ -51,6 +51,44 @@ if(isset($_GET["business"])) {
 	}
 	ul {
 		margin-top: .2rem;
+		list-style-type: none;
+		padding-left: 0;
+	}
+	em {
+		font-size: .8rem;
+	}
+	[class*="span-"],
+	li a {
+		display: inline-block;
+		padding: .2rem;
+		color: #333;
+		transition: background-color .2s ease;
+	}
+	li a:hover {
+		color: #000;
+	}
+	.span-red,
+	.red a {
+		background-color: rgba(255,0,0,.1);
+	}
+	.red a:hover {
+		background-color: rgba(255,0,0,.15);
+	}
+
+	.span-orange,
+	.orange a {
+		background-color: rgba(242,100,34,.2);
+	}
+	.orange a:hover {
+		background-color: rgba(242,100,34,.3);
+	}
+
+	.span-green,
+	.green a {
+		background-color: rgba(0,166,81,.2);
+	}
+	.green a:hover {
+		background-color: rgba(0,166,81,.3);
 	}
 </style>
 
@@ -67,21 +105,157 @@ if(isset($_GET["business"])) {
 				</div>
 
 				<div class="col-lg-12">
-					<h2 class="border-bottom">BERLINGSKE</h2>
+					
+					<div style="margin-bottom: 1rem;">
+						<span class="span-red">Not started</span>
+						<span class="span-orange">Awaiting...</span>
+						<span class="span-green">OK</span>
+					</div>
+				</div>
+				
+				<div class="col-lg-3">
+					<h4>Header / Menu / Footer</h4>
+				</div>
+				
+				<div class="col-lg-9">
+					<ul>
+						<li class="red"><a href="#">Default</a></li>
+						<li class="red"><a href="#">Logged in</a></li>
+						<li class="red"><a href="#">User profile page</a></li>
+						<li class="red"><a href="#">Footer</a></li>
+					</ul>
 				</div>
 
 				<div class="col-lg-3">
-					<h4 ><small class="breaker">Template:</small> Front page</h4>
+					<h4>Front page</h4>
 				</div>
 			
 				<div class="col-lg-9">
 					<ul>
-						<li><a href="tpl-frontpage.php">Default</a></li>
-						<li><a href="tpl-frontpage.php?top">Large top</a></li>
-						<li><a href="tpl-frontpage.php?well">Giant top</a></li>
-						<li><a href="tpl-frontpage.php?oneliner">Oneliner - Breaking</a></li>
+						<li class="red"><a href="#">Default</a></li>
+						<li class="red">- <a href="#">Large top</a> <em>Option</em></li>
+						<li class="red">- <a href="#">Giant top</a> <em>Option</em></li>
+						<li class="red">- <a href="#">Live top</a> <em>Option</em></li>
+						
+						<li class="red">Oneliners: <a href="#">Breaking</a> <a href="#">Live</a> <a href="#">Comming up</a></li>
+						
 					</ul>
 				</div>
+
+				<div class="col-lg-3">
+					<h4>Article</h4>
+				</div>
+				
+				<div class="col-lg-9">
+					<ul>
+						<li class="red"><a href="#">Default</a></li>
+						<li class="red">- <a href="#">Breaking</a> <em>Option</em></li>
+						<li class="red">- <a href="#">Live</a> <em>Option</em></li>
+						<li class="red">- <a href="#">Large image</a> <em>Option</em></li>
+						<li class="red">- <a href="#">Video</a> <em>Option</em></li>
+						<li class="red">- <a href="#">Slider</a> <em>Option</em></li>
+						<li class="red">- <a href="#">Rating</a> <em>Option</em></li>
+						<li class="red"><a href="#">Wide article</a></li>
+						<li class="red"><a href="#">Editorial</a></li>
+						<li class="red"><a href="#">Blog</a></li>
+						<li class="red"><a href="#">'Groft sagt'</a></li>
+						<li class="red"><a href="#">Pay wall</a></li>
+						<li class="red"><a href="#">Longread</a></li>
+
+
+						<li class="red"><a href="#">Article embeds</a> <em>(documentation)</em></li>
+					</ul>
+				</div>
+
+				
+
+
+
+				<div class="col-lg-3">
+					<h4>Sections</h4>
+				</div>
+				
+				<div class="col-lg-9">
+					<ul>
+						<li class="red"><a href="#">Auto (default)</a></li>
+						<li class="red"><a href="#">Culture</a></li>
+						<li class="red"><a href="#">Politiko</a></li>
+						<li class="red"><a href="#">Opinion</a></li>
+
+						<li class="red"><a href="#">Corrections ('Fejl og fakta')</a></li>
+						<li class="red"><a href="#">Blog</a></li>
+						<li class="red"><a href="#">Topic page</a></li>
+						<li class="red"><a href="#">Author overview</a></li>
+						<li class="red"><a href="#">Author profile</a></li>
+						<li class="red"><a href="#">Search result</a></li>
+					</ul>
+				</div>
+
+				<div class="col-lg-3">
+					<h4>Plus</h4>
+				</div>
+				
+				<div class="col-lg-9">
+					<ul>
+						<li class="red"><a href="#">Front page</a></li>
+						<li class="red"><a href="#">Section</a></li>
+					
+						<li class="red">Article <a href="#">Locked</a> <a href="#">Un-locked</a></li>
+						
+						<li class="red">Buy options <a href="#">Option 1</a> <a href="#">Option 2</a> <a href="#">Option 3</a></li>
+						<li class="red"><a href="#">About Plus</a></li>
+					</ul>
+				</div>
+
+				<div class="col-lg-3">
+					<h4>Advertorials</h4>
+				</div>
+				
+				<div class="col-lg-9">
+					<ul>
+						<li class="red"><a href="#">Front-page</a></li>
+						<li class="red">Article <a href="#">Example 1</a> <a href="#">Example 2</a></li>
+					</ul>
+				</div>
+
+				<div class="col-lg-3">
+					<h4>Gallery</h4>
+				</div>
+				
+				<div class="col-lg-9">
+					<ul>
+						<li class="red"><a href="#">Teaser</a></li>
+						<li class="red"><a href="#">Overlay</a></li>
+						<li class="red"><a href="#">Overlay - last slide</a></li>
+						
+					</ul>
+				</div>
+
+				<div class="col-lg-3">
+					<h4>Text pages</h4>
+				</div>
+
+				<div class="col-lg-9">
+					<ul>
+						<li class="red"><a href="#">Contact</a></li>
+						<li class="red"><a href="#">Annoncering</a></li>
+					</ul>
+				</div>
+
+				<div class="col-lg-3">
+					<h4>Misc</h4>
+				</div>
+				
+				<div class="col-lg-9">
+					<ul>
+						<li class="red"><a href="#">404</a></li>
+						<li class="red"><a href="#">Send tip</a></li>
+						<li class="red"><a href="#">Article archive</a></li>
+						<li class="red"><a href="#">Buy printed editions</a></li>
+					</ul>
+				</div>
+
+
 			
 
 				<div class="col-lg-12">
@@ -89,15 +263,12 @@ if(isset($_GET["business"])) {
 				</div>
 
 				<div class="col-lg-3">
-					<h4 ><small class="breaker">Template:</small> Front page</h4>
+					<h4 >?</h4>
 				</div>
 
 				<div class="col-lg-9">
 					<ul>
-						<li><a href="tpl-frontpage.php?business">Default</a></li>
-						<li><a href="tpl-frontpage.php?business&amp;top">Large top</a></li>
-						<li><a href="tpl-frontpage.php?business&amp;well">Giant top</a></li>
-						<li><a href="tpl-frontpage.php?business&amp;oneliner">Oneliner - Breaking</a></li>
+						<li>?</li>
 					</ul>
 				</div>
 			
