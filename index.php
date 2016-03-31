@@ -104,7 +104,7 @@ if(isset($_GET["business"])) {
 					<a href="/" class="site-logo" >Berlingske</a>
 				</div>
 
-				<div class="col-lg-12">
+				<div class="col-lg-9 col-lg-offset-3">
 					
 					<div style="margin-bottom: 1rem;">
 						<span class="span-red">Not started</span>
