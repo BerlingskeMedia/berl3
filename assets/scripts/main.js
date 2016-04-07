@@ -43,7 +43,15 @@
 	});
 
 
-	
+	$('.social-toggle').click(function(e) {
+		e.preventDefault();
+		$(this).closest('.share-buttons').toggleClass('collapsed');
+	});
+
+	$('.demo-trigger').click(function(e){
+		e.preventDefault();
+		$('#hidden-menu').toggleClass('show-hidden-menu');
+	});
 
 })(jQuery); 
 

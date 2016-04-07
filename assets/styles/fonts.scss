@@ -1,59 +1,135 @@
-
-
-@mixin fontFace($family,$src,$style: normal,$weight: normal) {
+@mixin fontFace($family,$src, $style: normal, $weight: normal) {
 	@font-face {
 		font-family: $family;
-		src: url('#{$src}.eot'); // IE9 compat
-		src: url('#{$src}.eot?#iefix') format('embedded-opentype'), // IE8 and below
-			url('#{$src}.woff') format('woff'), // standards
-			url('#{$src}.ttf') format('truetype'), // Safari, Android, iOS
-			url('#{$src}.svg##{$family}') format('svg'); // legacy iOS
-
+		/*src: url('#{$src}.eot'); // IE9 compat
+		src: url('#{$src}.eot?#iefix') format('embedded-opentype'), // IE8 and below*/
+    src:
+      url('#{$src}.woff2') format('woff2'),
+      url('#{$src}.woff') format('woff');
 		font-style: $style;
 		font-weight: $weight;
 	}
 }
-/*@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);*/
 
-// Import fonts
 
-/*@include fontFace('swissBlack', '../fonts/swiss_721_black_condensed', 'normal','300');
-@include fontFace('SwissBold', '../fonts/swiss_721_bold_condensed', 'normal','300');*/
+
+
+
+
+
+
+
 @include fontFace('b-icons', '../fonts/b-icons', 'normal','300');
-
-// @include fontFace('Sanomat', '../fonts/SanomatWeb-Regular', 'normal','500');
-@include fontFace('Publico', '../fonts/PublicoHeadline-Bold-Web', 'normal','700');
 
 @include fontFace('CPHsigns', '../fonts/cph_signs_regular', 'normal','300');
 
+@include fontFace('Sanomat', '../fonts/Sanomat-Black', 'normal','900');
+
+@include fontFace('Helsingin Regular', '../fonts/HelsinginAlt-Regular', 'normal','normal');
+@include fontFace('Helsingin Medium', '../fonts/HelsinginAlt-Medium', 'italic','normal');
+@include fontFace('Helsingin Bold', '../fonts/HelsinginAlt-Bold', 'normal','normal');
+
+@include fontFace('Giorgio Sans Light', '../fonts/GiorgioSans-Light', 'normal','300');
+@include fontFace('Giorgio Sans Medium', '../fonts/GiorgioSans-Medium', 'normal','500');
+@include fontFace('Giorgio Sans Bold', '../fonts/GiorgioSans-Bold', 'normal','bold');
+
+@include fontFace('Guardian Regular', '../fonts/GuardianTextEgyp-Regular', 'normal','normal');
+@include fontFace('Guardian Black', '../fonts/GuardianTextEgyp-Black', 'normal','900');
+@include fontFace('Guardian Italic', '../fonts/GuardianTextEgyp-RegularIt', 'italic','normal');
+
+
+$font-giorgio-sans-light: 'Giorgio Sans Light', sans-serif;
+$font-giorgio-sans-medium: 'Giorgio Sans Medium', sans-serif;
+$font-giorgio-sans-bold: 'Giorgio Sans Bold', sans-serif;
+
+
+$font-helsinginAlt-Regular: 'Helsingin Regular', sans-serif;
+$font-helsinginAlt-Medium: 'Helsingin Medium', sans-serif;
+$font-helsinginAlt-Bold: 'Helsingin Bold', sans-serif;
+
+
+$font-Guardian-1: 'Guardian Regular', georgia, serif;
+$font-Guardian-2: 'Guardian Black', georgia, serif;
+$font-Guardian-3: 'Guardian Italic', georgia, serif;
+$font-Helsingin: 'Helsingin Alt';
 
 
 
-
-
-$font-serif: 'Publico', serif;
+$font-Sanomat: 'Sanomat', georgia, serif;
 $font-serif-regular: georgia, times, "times new roman", serif;
-$font-sans: 'Montserrat', sans-serif;
+
 $font-sans-alt: 'CPHsigns', 'Montserrat', sans-serif;
 
 
 $font-teaser-weight: 700;
 $font-teaser-lineheight: 1.2;
 
-
+.font-1,
 .header,
 .font-header {
   line-height: 1.2;
-  font-family: $font-serif;
+  font-family: $font-Sanomat;
   font-weight: normal;
+}
+
+.font-21 {
+  font-family: $font-giorgio-sans-light;
+  font-weight: normal;
+}
+
+.font-22 {
+  font-family: $font-giorgio-sans-medium;
+  font-weight: normal;
+}
+
+.font-23 {
+  font-family: $font-giorgio-sans-bold;
+  font-weight: normal;
+}
+
+.font-31 {
+  font-family: $font-helsinginAlt-Regular;
+  font-weight: normal;
+}
+.font-32 {
+  font-family: $font-helsinginAlt-Medium;
+  font-weight: normal;
+}
+.font-33 {
+  font-family: $font-helsinginAlt-Bold;
+  font-weight: normal;
+}
+
+.font-51 {
+  font-family: $font-Guardian-1;
+  font-weight: normal;
+  text-rendering: optimizeLegibility; 
+}
+.font-52 {
+  font-family: $font-Guardian-2;
+  font-weight: normal;
+  text-rendering: optimizeLegibility; 
+}
+.font-53 {
+  font-family: $font-Guardian-3;
+  font-weight: normal;
+  text-rendering: optimizeLegibility; 
 }
 
 .font-serif {
   font-family: $font-serif-regular;
 }
+
+
+
+
+
+
+
+
 .font-sans {
-  font-family: $font-sans;
-  
+  font-weight: normal;
+  text-rendering: optimizeLegibility; 
 }
 .font-sans-alt {
   font-family: $font-sans-alt;
@@ -109,3 +185,8 @@ h1, h2, h3, h4, h5, h6 {
 .bicon-clock-alt:before { content: '\e815'; } /* '' */
 .bicon-asterisk:before { content: '\e816'; } /* '' */
 .bicon-link:before { content: '\e817'; } /* '' */
+.bicon-quote:before { content: '\e818'; } /* '' */
+.bicon-down-open-big:before { content: '\e819'; } /* '' */
+.bicon-up-open-big:before { content: '\e81a'; } /* '' */
+.bicon-ok-circled:before { content: '\e81b'; } /* '' */
+.bicon-print:before { content: '\e81c'; } /* '' */

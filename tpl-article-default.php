@@ -69,33 +69,47 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 	
 	<div class="container " style="padding-top: 2rem">
 
-		
+		<div class="row">
+			<div class="col-md-12">
+				<div class="article-badge-kronik"><? dummy("text@b-cat") ?></div><br>
+			</div>
+		</div>
 
 		<div class="col-1-content" >
 		
 		<header class="article-header article-pull-left " >
-			<div class="article-badge-kronik"><? dummy("text@b-cat") ?></div><br>
+			
 			
 			<h1 class="article-title">
 				<? dummy("text@headline") ?>
 			</h1>
 			
+			<p class="article-summary"><? dummy("text@teaser") ?></p>
 			
 			
-			
-			<div class="article-byline clearfix">
-				<figure class="article-avatar"><img src="<? dummy("image/!author@100x100,") ?>" width="" height="" alt="" /></figure>
-				<? dummy("text@author") ?>  <? if (dumb_luck("50%")): ?><br> <i class="bicon-twitter col-twitter"></i> <? dummy("text@username") ?><? endif ?>
+			<div class="article-byline">
+				<? while (dumb_luck("1-2")): ?>
+					<div class="article-author">
+						<figure class="article-avatar img-gradient">
+							<a href=="tpl-author.php"><img src="<? dummy("image/!author@100x100,") ?>" width="" height="" alt="" /></a>
+						</figure>
+						<div class="author-info">
+							<a href="tpl-author.php"><? dummy("text@author") ?> <i class="bicon-angle-down"></i></a>
+							<? if (dumb_luck("50%")): ?> <div class="author-username"><a href="http://twitter.com" target="_blank"><i class="bicon-twitter col-twitter"></i> <? dummy("text@username") ?></a></div><? endif ?>
+						</div>
+					</div>
+				<? endwhile ?>
 			</div>
+
 			<div class="article-meta clearfix">
 				<div class="article-date"><? dummy("text@date-long") ?> &mdash; kl. <? dummy("text@time") ?></div>
 			
-			<div class="share-buttons">
-				<button class="btn-share"><i class="bicon-facebook"></i></button>
-				<button class="btn-share"><i class="bicon-twitter"></i></button>
-				<button class="btn-share"><i class="bicon-linkedin"></i></button>
-				<button class="btn-share"><i class="bicon-mail"></i></button>
-			</div>
+			<!-- <div class="share-buttons">
+				<div class="mb"><button class="btn-share"><i class="bicon-facebook"></i></button></div>
+				<div class="mb"><button class="btn-share"><i class="bicon-twitter"></i></button></div>
+				<div class="mb"><button class="btn-share"><i class="bicon-linkedin"></i></button></div>
+				<div class="mb"><button class="btn-share"><i class="bicon-mail"></i></button></div>
+			</div> -->
 			</div>
 		</header>
 
@@ -112,8 +126,9 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 			<figcaption><? dummy("text@short-teaser") ?> <span>Foto: <? dummy("text@author") ?></span></figcaption>
 		</figure>
 
-		
-			<p><strong><? dummy("text@teaser") ?></strong></p>
+			<div class="article-body">
+			
+
 		
 			
 			
@@ -162,6 +177,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 			<? while (dumb_luck("5")): ?>
 				<p><? dummy("text@paragraph") ?></p>
 			<? endwhile ?>
+			</div>
 		</div>
 
 		</div>

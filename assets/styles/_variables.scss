@@ -1,10 +1,18 @@
 $col-alt: #4183a7;
 $col-business: #fadcd2;
 $col-bus-alt: #e64d1a;
+$col-blue-1: #007cbb;	// light
+$col-blue-2: #191b35;	// dark
 
-$col-facebook:        #4c66a4;
-$col-twitter:         #54a9f0;
+$col-beige: #e7dfd2;
+$col-gray: #949aa8;
+
+
+$col-facebook:			#4c66a4;
+$col-twitter:			#54a9f0;
+$col-linkedin:			#1f89be;
 $background-color: rgba(248,248,248,1);
+
 
 $border-color: rgba(0,0,0,.1);
 
@@ -22,4 +30,6 @@ $brand-danger:              #d9534f !default;
 
 $col-live: 	red;
 $col-breaking: yellow;
-$col-1-width: 120px;
+$col-1-width: 80px;
+
+$body-link-color:           $col-blue-1;
