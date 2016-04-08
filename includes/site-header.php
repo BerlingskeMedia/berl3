@@ -9,7 +9,7 @@
 							<li class="menu-divider"><a href="?well"><i class="bicon-left"></i> Berlingske.dk</a></li>
 						</ul>
 						<?php else: ?>
-						<ul class="pull-left list-reset list-xs">
+						<!-- <ul class="pull-left list-reset list-xs">
 						<li class="menu-divider"><a href="?business&well"><i class="bicon-right"></i> Business.dk</a></li>
 						<li>
 							<?php $stock = rand(0,1); ?>
@@ -18,7 +18,7 @@
 									<?php if($stock == '0'){ echo '-';} ?><? dummy("text@stock-change-2") ?>% <? if ($stock == '1'): ?><i class="bicon-up"></i><?php else: ?><i class="bicon-down"></i><?php endif ?></span>
 							</span>
 						</li>
-						</ul>
+						</ul> -->
 					<?php endif; ?>
 						
 						<ul class="pull-right list-reset list-bullet list-bullet-not-first list-xs">
@@ -76,14 +76,14 @@
 	<div class="header-bottom ">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12 text-center">
+				<div class="col-xs-12 ">
 					<nav>
 						<?php if(!$siteBusiness): ?>
 						<ul class="list-reset list-sm mb-0 list-gray">
-							<li class="active"><a href="#"><b class="bicon-home"></b> Forside</a></li>
+							<li><a href="#"><b class="bicon-home"></b> Forside</a></li>
 							<!-- <li><a href="?business">Business</a></li> -->
 							<li><a href="#">Politiko</a></li>
-							<li><a href="#">Debat</a></li>
+							<li  class="active"><a href="#">Debat</a></li>
 							<li><a href="#">Global</a></li>
 							<li><a href="#">Tech</a></li>
 							<li><a href="#">Viden</a></li>

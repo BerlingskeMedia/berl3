@@ -1,3 +1,6 @@
+.list {
+	@extend .font-g1;
+}
 .list-news {
 	li {
 		margin-bottom: $spacer;
@@ -12,12 +15,16 @@
 		padding-left: 2.5rem;
 	}
 	time {
-		font-size: .65rem;
+		font-size: .8rem;
+		font-weight: 500;
+
 		padding-top: .15rem;
+		@extend .font-s2;
 		display: block;
 		float: left;
 		margin-left: -2.5rem;
 		color: rgba(0,0,0,.5);
+		
 	}
 }
 

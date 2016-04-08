@@ -188,12 +188,14 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 								<? dummy("text@headline") ?>
 							</h1>
 							
+							<p class="article-summary"><? dummy("text@teaser") ?></p>
+							
 							<div class="article-date">Onsdag d. <? dummy("text@date-long") ?>  kl. <? dummy("text@time") ?>
 								<? if (dumb_luck("50%")): ?><span class="updated">&mdash; <strong>Opdateret: kl. <? dummy("text@time") ?></strong>
 								</span><? endif ?>
 							</div>
 							
-							<p class="article-summary"><? dummy("text@teaser") ?></p>
+							
 							
 							
 								<?php include('includes/article/byline.php') ?>
@@ -226,9 +228,12 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 
 					<div class="article-body">
 
-
+						<?php include('includes/article-embeds/blog-bio.php'); ?>
 						
 						<? while (dumb_luck("4")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
+
+						<h2><? dummy("text@headline") ?></h2>
+						<? while (dumb_luck("1")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
 						
 						<?php include('includes/article-embeds/blockquote.php'); ?>
 
@@ -258,7 +263,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 			<div class="mb">
 			<?php 
 			$showTime = true; 
-			$listClass = 'list-time';
+			$listClass = 'list list-time';
 			$listTitle = 'Sport';
 			$listCount = '10';
 			$sectionClass = 'latest-news mb-2';

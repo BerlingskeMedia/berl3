@@ -49,7 +49,19 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 
 
 
+<div class="g1" style="font-size: 50px;">
+<? dummy("text@teaser") ?>
+</div>
 
+<div class="g2" style="font-size: 50px;">
+<? dummy("text@teaser") ?>
+</div>
+<div class="g3" style="font-size: 50px;">
+<? dummy("text@teaser") ?>
+</div>
+<div class="g4" style="font-size: 50px;">
+<? dummy("text@teaser") ?>
+</div>
 
 
 <div class="container">

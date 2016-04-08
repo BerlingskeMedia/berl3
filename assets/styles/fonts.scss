@@ -12,54 +12,81 @@
 }
 
 
+@mixin installFont($family, $src, $style: normal, $weight: normal) {
+  @font-face {
+    font-family: "#{$family}";
+    src: url("#{$src}.eot");
+    src: url("#{$src}.eot?#iefix") format("embedded-opentype"),
+    url("#{$src}.woff2") format("woff2"),
+    url("#{$src}.woff") format("woff");
+    font-weight: #{$weight};
+    font-style: #{$style};
+    font-stretch: normal;
+ }
+}
+
+@include installFont('CPHsigns', '../fonts/cph_signs_regular', 'normal','300');
+@include installFont('b-icons', '../fonts/b-icons', 'normal','300');
+
+@include installFont('Sanomat Serif', '../fonts/Sanomat-Black', 'normal','900');
+
+@include installFont('Guardian Text Egyptian Web', '../fonts/Guardian Text Egyp Web-Black', 'normal', '900');
+@include installFont('Guardian Text Egyptian Web', '../fonts/Guardian Text Egyp Web-Bold', 'normal', '700');
+@include installFont('Guardian Text Egyptian Web', '../fonts/Guardian Text Egyp Web-Medium', 'normal', '500');
+@include installFont('Guardian Text Egyptian Web', '../fonts/Guardian Text Egyp Web-Regular', 'normal', '400');
+
+@include installFont('Giorgio Sans Web', '../fonts/Giorgio Sans Web-Bold', 'normal','700');
+@include installFont('Giorgio Sans Web', '../fonts/Giorgio Sans Web-Medium', 'normal','500');
+@include installFont('Giorgio Sans Web', '../fonts/Giorgio Sans Web-Regular', 'normal','400');
+@include installFont('Giorgio Sans Web', '../fonts/Giorgio Sans Web-Light', 'normal','300');
+
+@include installFont('Sanomat Sans Web', '../fonts/Sanomat Sans Web-Black', 'normal','900');
+@include installFont('Sanomat Sans Web', '../fonts/Sanomat Sans Web-Bold', 'normal','700');
+@include installFont('Sanomat Sans Web', '../fonts/Sanomat Sans Web-Medium', 'normal','500');
+@include installFont('Sanomat Sans Web', '../fonts/Sanomat Sans Web-Regular', 'normal','400');
+
+
+// SANOMAT SERIF: 900
+.font-s1 {
+  font-family: "Sanomat Serif", Georgia, serif;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  text-rendering: optimizeLegibility; 
+}
+
+// SANOMAT SANS: 400 / 500 / 700 / 900
+.font-s2 {
+  font-family: "Sanomat Sans Web", Helvetica, "Helvetica Neue", arial, sans-serif;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  text-rendering: optimizeLegibility; 
+}
+
+// GUARDIAN: 400 / 500 / 700 / 900
+.font-g1 {
+  font-family: "Guardian Text Egyptian Web", georgia, times, serif;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  text-rendering: optimizeLegibility; 
+}
+
+// GIORGIO: 300 / 400 / 500 / 700
+.font-g2 {
+  font-family: "Giorgio Sans Web", sans-serif;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  text-rendering: optimizeLegibility; 
+}
 
 
 
 
-
-
-
-@include fontFace('b-icons', '../fonts/b-icons', 'normal','300');
-
-@include fontFace('CPHsigns', '../fonts/cph_signs_regular', 'normal','300');
-
-@include fontFace('Sanomat', '../fonts/Sanomat-Black', 'normal','900');
-
-@include fontFace('Helsingin Regular', '../fonts/HelsinginAlt-Regular', 'normal','normal');
-@include fontFace('Helsingin Medium', '../fonts/HelsinginAlt-Medium', 'italic','normal');
-@include fontFace('Helsingin Bold', '../fonts/HelsinginAlt-Bold', 'normal','normal');
-
-@include fontFace('Giorgio Sans Light', '../fonts/GiorgioSans-Light', 'normal','300');
-@include fontFace('Giorgio Sans Medium', '../fonts/GiorgioSans-Medium', 'normal','500');
-@include fontFace('Giorgio Sans Bold', '../fonts/GiorgioSans-Bold', 'normal','bold');
-
-@include fontFace('Guardian Regular', '../fonts/GuardianTextEgyp-Regular', 'normal','normal');
-@include fontFace('Guardian Black', '../fonts/GuardianTextEgyp-Black', 'normal','900');
-@include fontFace('Guardian Italic', '../fonts/GuardianTextEgyp-RegularIt', 'italic','normal');
-
-
-$font-giorgio-sans-light: 'Giorgio Sans Light', sans-serif;
-$font-giorgio-sans-medium: 'Giorgio Sans Medium', sans-serif;
-$font-giorgio-sans-bold: 'Giorgio Sans Bold', sans-serif;
-
-
-$font-helsinginAlt-Regular: 'Helsingin Regular', sans-serif;
-$font-helsinginAlt-Medium: 'Helsingin Medium', sans-serif;
-$font-helsinginAlt-Bold: 'Helsingin Bold', sans-serif;
-
-
-$font-Guardian-1: 'Guardian Regular', georgia, serif;
-$font-Guardian-2: 'Guardian Black', georgia, serif;
-$font-Guardian-3: 'Guardian Italic', georgia, serif;
-$font-Helsingin: 'Helsingin Alt';
-
-
-
-$font-Sanomat: 'Sanomat', georgia, serif;
 $font-serif-regular: georgia, times, "times new roman", serif;
-
 $font-sans-alt: 'CPHsigns', 'Montserrat', sans-serif;
-
 
 $font-teaser-weight: 700;
 $font-teaser-lineheight: 1.2;
@@ -68,68 +95,19 @@ $font-teaser-lineheight: 1.2;
 .header,
 .font-header {
   line-height: 1.2;
-  font-family: $font-Sanomat;
+  @extend .font-s1;
+  font-weight: 900;
   font-weight: normal;
-}
-
-.font-21 {
-  font-family: $font-giorgio-sans-light;
-  font-weight: normal;
-}
-
-.font-22 {
-  font-family: $font-giorgio-sans-medium;
-  font-weight: normal;
-}
-
-.font-23 {
-  font-family: $font-giorgio-sans-bold;
-  font-weight: normal;
-}
-
-.font-31 {
-  font-family: $font-helsinginAlt-Regular;
-  font-weight: normal;
-}
-.font-32 {
-  font-family: $font-helsinginAlt-Medium;
-  font-weight: normal;
-}
-.font-33 {
-  font-family: $font-helsinginAlt-Bold;
-  font-weight: normal;
-}
-
-.font-51 {
-  font-family: $font-Guardian-1;
-  font-weight: normal;
-  text-rendering: optimizeLegibility; 
-}
-.font-52 {
-  font-family: $font-Guardian-2;
-  font-weight: normal;
-  text-rendering: optimizeLegibility; 
-}
-.font-53 {
-  font-family: $font-Guardian-3;
-  font-weight: normal;
-  text-rendering: optimizeLegibility; 
 }
 
 .font-serif {
-  font-family: $font-serif-regular;
+  @extend .font-g1;
+  font-weight: 400;
 }
 
-
-
-
-
-
-
-
 .font-sans {
-  font-weight: normal;
-  text-rendering: optimizeLegibility; 
+  
+  
 }
 .font-sans-alt {
   font-family: $font-sans-alt;

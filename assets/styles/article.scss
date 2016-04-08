@@ -18,11 +18,7 @@
 	
 }
 
-.article-summary {
-	@extend .font-52;
-	font-style: normal;
-	clear: left;
-}
+
 
 .main-image-caption {
 	background-color: rgba(0,0,0,.3);
@@ -33,11 +29,13 @@
 	top: 0;
 	right: 0;
 	font-size: .6rem;
+	@extend .font-g1;
 }
 
 .author-username {
 	font-size: .7rem;
-	@extend .font-32;
+	font-weight: 400;
+	@extend .font-s2;
 	a {
 		color: #222;
 	}
@@ -49,8 +47,9 @@
 .btn-follow-author {
 	padding: .1rem .3rem;
 	font-style: normal;
-	font-family: sans-serif;
-	font-weight: bold;
+	@extend .font-s2;
+	font-weight: 500;
+	text-transform: uppercase;
 	font-size: .6rem;
 	vertical-align: middle;
 	display: inline-block;
@@ -69,14 +68,19 @@
 	padding: 0 .2rem;
 	color: #379f1b;
 	color: $col-blue-1;
-	font-size: .7rem;
+	font-size: .9rem;
 	background-color: transparent;
 }
+.article-content {
+	padding-bottom: 10rem;
+	
+	
+}
 .article-body {
-	@extend .font-5;
-
+	@extend .font-g1;
+	font-size: 1.1rem;
 	&> p {
-		@extend .font-51;
+		@extend .font-g1;
 		font-size: 1.1rem;
 		line-height: 1.5;
 		margin-bottom: $spacer * 2;
@@ -87,6 +91,10 @@
 			}
 		}
 	}
+	&>h2 {
+		font-weight: 700;
+		font-size: 1.2rem
+	}
 
 }
 .article-byline {
@@ -95,7 +103,8 @@
 	@extend .clearfix;
 	margin-bottom: $spacer;
 	.author-info {
-		@extend .font-33;
+		@extend .font-s2;
+		font-weight: 700;
 	}
 	a {
 		color: rgba(0,0,0,.6);
@@ -124,21 +133,23 @@
 	margin-top: .625rem;
 }
 .image-caption {
-	font-size: .7rem;
+	font-size: .8rem;
+	font-weight: 400;
 	color: rgba(0,0,0,.7);
 	padding: .4rem 0;
-	.byline {
-		
-	}
+	@extend .font-g1;
+
+	
 }
 
 .image-meta {
 	color: rgba(0,0,0,.4);
 	display: block;
 	font-size: .6rem;
+	@extend .font-s2;
 	font-weight: bold;
 	text-transform: uppercase;
-	padding-top: .2rem;
+	padding-top: .4rem;
 	.image-count {
 		float: right;
 	}
@@ -177,17 +188,23 @@
 	font-size: 1.4rem;
 	color: #222;
 	max-width: 930px;
-
+	@extend .font-g1;
+	font-weight: 700;
+	clear: left;
 }
 
-.article-content {
-	padding-bottom: 10rem;
-	@extend .font-31;
-	p {
-		font-size: 1rem;
-		color: rgba(0,0,0,.8);
-	}	
-	
+
+.fact-content {
+	font-size: .7rem;
+	font-weight: 400;
+
+	@extend .font-g1;
+
+	p, li {
+		font-size: .9rem;
+		@extend .font-g1;
+		line-height: 1.4;
+	}
 }
 
 .article-fact-embedded-1 {
@@ -196,12 +213,10 @@
 	margin: 0 0 $spacer $spacer;
 	padding: $spacer;
 	background-color: darken($background-color, 5%);
-
-	h2 {
-		@extend .font-22;
-		font-size: 3rem;
-		line-height: 1.1;
+	.aside-header {
+		@extend .font-sans-alt;
 	}
+	
 }
 
 .article-fact-embedded-2 {
@@ -211,7 +226,7 @@
 	padding: $spacer;
 	background-color: $col-beige;
 	.aside-header {
-		@extend .font-21;
+		@extend .font-g2;
 		color: $col-blue-2;
 		font-size: 3.3rem;
 		line-height: 1;
@@ -228,16 +243,16 @@
 	padding: $spacer;
 	background-color: #fff;
 	.aside-header {
-		border-bottom: $border-width solid $border-color;
-		@extend .font-21;
+		
+		@extend .font-g2;
 		color: #222;
 		font-size: 3.3rem;
 		line-height: 1;
 		font-weight: normal;
-		margin-bottom: $spacer;
+		
 		text-transform: none;
 
-		padding-bottom: $spacer;
+		
 	}
 }
 
@@ -300,6 +315,7 @@
 	time {
 		color: $col-live;
 		display: block;
+
 	}
 
 	.live-img {
@@ -310,7 +326,7 @@
 		figcaption {
 			font-size: .7rem;
 			padding-top: .3rem;
-			@extend .font-sans;
+			
 		}
 	}
 	.video-youtube,
@@ -516,10 +532,15 @@ $sharebutton: 2.3rem;
 
 .byline-blog {
 	margin-bottom: $spacer;
-	text-align: center;
+	.btn-follow-author {
+		margin-left: 0;
+	}
+	.img-gradient {
+		border-radius: 50% 50% 50% 0;
+	}
 	.author-info {
-		@extend .font-33;
-		
+		@extend .font-s2;
+		font-weight: 700;
 	}
 	
 	.article-avatar {

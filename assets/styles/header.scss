@@ -29,6 +29,7 @@
 
 .site-header {
 	background-color: $background-color;
+	@extend .font-g1;
 	.container {
 		// background-color: transparent;
 	}
@@ -61,6 +62,8 @@
 	height: 40px;
 	@extend .border-bottom;
 	@extend .link-gray-dark;
+	@extend .font-s2;
+	font-weight: 500;
 	&:after {
 		content: '';
 		position: absolute;
@@ -137,6 +140,7 @@
 }
 
 .header-bottom {
+
 	position: relative;
 	// box-shadow: 0 2px 5px rgba(0,0,0,.2);
 	border-bottom: $border-width solid $border-color;
@@ -162,13 +166,18 @@
 	ul > li {
 		transition: box-shadow .2s ease, background-color .2s ease;
 		box-shadow: 0 .25rem 0 transparent inset;
+		margin: 0 $spacer;
 		&:not(:first-child) {
 			margin-left: -.3rem;
 		}
+		&:first-child {
+			margin-left: 0;
+		}
+
 		 
 		&> a {
 			line-height: 45px;
-			padding: 0 $spacer;
+			padding: 0 .325rem;
 			margin: 0 ; 
 			
 			
@@ -204,7 +213,9 @@
 	background-position: center center;
 	overflow: hidden;
 }
-
+.site-menu {
+	margin-left: -.625rem;
+}
 .site-logo {
 	height: calc(80px - 1rem);
 	@extend .berlingske-logo;

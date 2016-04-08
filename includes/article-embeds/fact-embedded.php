@@ -20,6 +20,9 @@
 		<? while (dumb_luck("1-2")): ?>
 			<p><? dummy("text@teaser") ?></p>
 		<? endwhile ?>
+		<ul>
+			<? while (dumb_luck("3")): ?><li><? dummy("text@item") ?></li><? endwhile ?>
+		</ul>
 	</div>
 </aside>
 
@@ -48,6 +51,10 @@
 		<? while (dumb_luck("1-2")): ?>
 			<p><? dummy("text@teaser") ?></p>
 		<? endwhile ?>
+
+		<ul>
+			<? while (dumb_luck("3")): ?><li><? dummy("text@item") ?></li><? endwhile ?>
+		</ul>
 	</div>
 </aside>
 
@@ -76,6 +83,9 @@
 		<? while (dumb_luck("1-2")): ?>
 			<p><? dummy("text@teaser") ?></p>
 		<? endwhile ?>
+		<ul>
+			<? while (dumb_luck("3")): ?><li><? dummy("text@item") ?></li><? endwhile ?>
+		</ul>
 	</div>
 </aside>
 
