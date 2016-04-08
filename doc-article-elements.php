@@ -73,16 +73,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 <div class="hidden-menu" id="hidden-menu">
 	
 	<ul class="demo-menu">
-		<li><a href="?">Article - default</a></li>
-		<li><a href="?imgSize=0">Article - Uden billede</a></li>
-		<li><a href="?imgSize=1">Article - Stort billede (default)</a></li>
-		<li><a href="?imgSize=2">Article - Lille billede</a></li>
-		<li><a href="?showEmbeds">Article - Embeddede billeder</a></li>
-		<li><a href="?showYoutube&amp;imgSize=1">Article - Youtube</a></li>
-		<li><a href="?showQuote">Article - Quote</a></li>
-		<li><a href="?showTrumpet">Article - Trumpet</a></li>
-		<li><a href="?showFactEmbedded">Article - Factbox</a></li>
-		<li><a href="?blog">Article - Blog</a></li>
+		HEJ
 	</ul>
 </div>
 
@@ -129,81 +120,93 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 	
 		<header class="article-header">
 							
-							<?php if($templateBlog): ?>
-							<div class="row">
-								<div class="col-md-2">
-									<div class="byline-blog">
-										<figure class="article-avatar img-gradient">
-											<a href="tpl-author.php" title="Se [AUTHOR NAME]'s profil"><img src="<? dummy("image/!author@200x200,") ?>" width="" height="" alt="[AUTHOR NAME]" /></a>
-
-										</figure>
-										
-										<div class="author-info">
-											<a href="tpl-author.php" title="Se [AUTHOR NAME]'s profil"><? dummy("text@author") ?></a>
-											<? if (dumb_luck("50%")): ?>
-											<div class="author-follow"><button class="btn-follow-author">Abonnér</button></div>
-											<? else: ?>
-											<div class="author-follow"><button class="btn-follow-author active" title="Du følger [AUTHOR NAME]"><i class="bicon-ok-circled"></i></button></div>
-											<? endif ?>
-											<? if (dumb_luck("50%")): ?> 
-												<div class="author-username">
-													<a href="http://twitter.com" target="_blank"><i class="bicon-twitter col-twitter"></i> <? dummy("text@username") ?></a>
-												</div>
-											<? endif ?>
-										</div>
+				<?php if($templateBlog): ?>
+				<div class="row">
+					<div class="col-md-2">
+						<div class="byline-blog">
+							<figure class="article-avatar img-gradient">
+								<a href="tpl-author.php" title="Se [AUTHOR NAME]'s profil"><img src="<? dummy("image/!author@200x200,") ?>" width="" height="" alt="[AUTHOR NAME]" /></a>
+							</figure>
+							
+							<div class="author-info">
+								<a href="tpl-author.php" title="Se [AUTHOR NAME]'s profil"><? dummy("text@author") ?></a>
+								<? if (dumb_luck("50%")): ?>
+								<div class="author-follow"><button class="btn-follow-author">Abonnér</button></div>
+								<? else: ?>
+								<div class="author-follow"><button class="btn-follow-author active" title="Du følger [AUTHOR NAME]"><i class="bicon-ok-circled"></i></button></div>
+								<? endif ?>
+								<? if (dumb_luck("50%")): ?> 
+									<div class="author-username">
+										<a href="http://twitter.com" target="_blank"><i class="bicon-twitter col-twitter"></i> <? dummy("text@username") ?></a>
 									</div>
-								</div>
-
-								<div class="col-md-10">
-									<h1 class="article-title">
-										<?php if($trumpet == '1'): ?>
-										<span class="article-trumpet">
-											<? dummy("text@item") ?>
-										</span>
-										<?php endif; ?>
-										<? dummy("text@headline") ?>
-									</h1>
-									
-									<div class="article-date">Onsdag <? dummy("text@date-long") ?> &mdash; kl. <? dummy("text@time") ?>
-										
-									</div>
-									
-									<p class="article-summary"><? dummy("text@teaser") ?></p>
-								</div>
+								<? endif ?>
 							</div>
-							
-							
-							
-							<?php else: ?>
+						</div>
+					</div>
 
-							
-							
-							
-							<h1 class="article-title">
-								<?php if($trumpet == '1'): ?>
-								<span class="article-trumpet">
-									<? dummy("text@item") ?>
-								</span>
-								<?php endif; ?>
-								<? dummy("text@headline") ?>
-							</h1>
-							
-							<p class="article-summary"><? dummy("text@teaser") ?></p>
-							
-							<div class="article-date">Onsdag d. <? dummy("text@date-long") ?>  kl. <? dummy("text@time") ?>
-								<? if (dumb_luck("50%")): ?><span class="updated">&mdash; <strong>Opdateret: kl. <? dummy("text@time") ?></strong>
-								</span><? endif ?>
-							</div>
-							
-							
-							
-							
-								<?php include('includes/article/byline.php') ?>
-							<?php endif; ?>
+					<div class="col-md-10">
 						
-						<div class="demo-banner mb" style="width:930px; height: 60px" ></div>
+						<h1 class="article-title">
+							<?php if($trumpet == '1'): ?>
+							<span class="article-trumpet">
+								<? dummy("text@item") ?>
+							</span>
+							<?php endif; ?>
+							<? dummy("text@headline") ?>
+						</h1>
 							
-						</header>
+						
+						
+						
+						<div class="article-date">Onsdag <? dummy("text@date-long") ?> &mdash; kl. <? dummy("text@time") ?>
+							
+						</div>
+						
+						<p class="article-summary relative"><? dummy("text@teaser") ?>
+							<span class="comments-count">
+								<? dummy("text@number") ?>
+							</span>
+						</p>
+					</div>
+				</div>
+				
+				
+				
+				<?php else: ?>
+
+				
+				
+				
+					<h1 class="article-title">
+						<?php if($trumpet == '1'): ?>
+						<span class="article-trumpet">
+							<? dummy("text@item") ?>
+						</span>
+						<?php endif; ?>
+						<? dummy("text@headline") ?>
+					</h1>
+					
+				
+				
+				<p class="article-summary relative"><? dummy("text@teaser") ?>
+					<a href="#" class="scroll-to-comments">
+						<span class="comments-count">
+							<i><? dummy("text@number") ?></i>
+						</span>
+					</a>
+				</p>
+				
+				<div class="article-date">Onsdag d. <? dummy("text@date-long") ?>  kl. <? dummy("text@time") ?>
+					<? if (dumb_luck("50%")): ?><span class="updated">&mdash; <strong>Opdateret: kl. <? dummy("text@time") ?></strong>
+					</span><? endif ?>
+				</div>
+				
+					<?php include('includes/article/byline.php') ?>
+				<?php endif; ?>
+			
+			<div class="demo-banner mb" style="width:930px; height: 60px" ></div>
+				
+		</header>
 
 		<div class="col-1-content">
 	
@@ -213,24 +216,33 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 				<?php include('includes/article/social-buttons.php'); ?>
 
 				<div class="article-content">
+					
 
 					<?php if($imageSize == '1'): // large image ?>
 					
-					<?php include('includes/article-embeds/article-image.php'); ?>
+						<?php include('includes/article-embeds/article-image.php'); ?>
 					
 					<?php elseif ($imageSize == '2'): ?>
 
-					<?php include('includes/article-embeds/article-image-float-right.php'); ?>
+						<?php include('includes/article-embeds/article-image-float-right.php'); ?>
 
-					<?php endif ?>
+					<?php elseif($imageSize == '3'): ?>
+
+						<?php include('includes/article-embeds/slider.php'); ?>
+
+					<?php endif; ?>
 					
 					
+
 
 					<div class="article-body">
 
 						<?php include('includes/article-embeds/blog-bio.php'); ?>
 						
 						<? while (dumb_luck("4")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
+
+						<?php include('includes/article-embeds/link.php'); ?>
+						<? while (dumb_luck("1")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
 
 						<h2><? dummy("text@headline") ?></h2>
 						<? while (dumb_luck("1")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>

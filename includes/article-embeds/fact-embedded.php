@@ -26,9 +26,14 @@
 	</div>
 </aside>
 
-<? while (dumb_luck("5")): ?>
+<? while (dumb_luck("1")): ?>
 	<p><? dummy("text@paragraph") ?></p>
 <? endwhile ?>
+<?php include('includes/article-embeds/link.php'); ?>
+<? while (dumb_luck("1")): ?>
+	<p><? dummy("text@paragraph") ?></p>
+<? endwhile ?>
+<?php include('includes/article-embeds/link.php'); ?>
 
 <aside class="article-fact-embedded-2">
 	<div class="aside-header">

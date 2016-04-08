@@ -156,7 +156,8 @@ if(isset($_GET["business"])) {
 						<li class="orange"><a href="doc-article-elements.php?showYoutube&amp;imgSize=1">Youtube embed</a></li>
 						<li class="orange"><a href="doc-article-elements.php?showQuote">Quote</a></li>
 						<li class="orange"><a href="doc-article-elements.php?showTrumpet">Trumpet</a></li>
-						<li class="orange"><a href="doc-article-elements.php?showFactEmbedded">Factbox</a></li>
+						<li class="red"><a href="doc-article-elements.php?showFactStatic">Factbox - Default</a></li>
+						<li class="orange"><a href="doc-article-elements.php?showFactEmbedded">Factbox - Embedded</a></li>
 						<li class="orange"><a href="doc-article-elements.php?blog">Blog</a></li>
 						<li class="red"><a href="doc-article-elements.php?slider">Slider</a></li>
 						<li class="red"><a href="#">Embedded links</a></li>

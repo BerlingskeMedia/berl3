@@ -14,12 +14,110 @@
 .article-image {
 	margin-bottom: $spacer;
 	position: relative;
+}
+.scroll-to-comments {
+	position: relative;
+	display: inline-block;
+	position: absolute;
+	right: -4rem; 
+	&:after {
+		content: 'Kommentarer';
+		display: block;
+		font-size: 1rem;
+		position: absolute;
+		bottom: -1rem;
+		left: -1rem;
+		right: -1rem;
+		text-align: center;	
+		font-weight: 500;
+		color: $col-blue-2;
+		text-transform: uppercase;
+		@extend .font-g2;
+	}
+}
+
+
+.comments-count {
+	border-radius: 50%;
+	height: 3.5rem;
+	width: 3.5rem;
+	
+	text-align: center;
+	line-height: 3.7rem;
+	background-color: $col-blue-2;
+	display: inline-block;
+	
+	color: #fff;
+	font-size: 2rem;
+	font-weight: 300;
+	@extend .font-g2;
+	overflow: hidden;
 	
 	
+	i {
+		font-style: normal;
+		opacity: 0;
+		display: block;
+		animation: fadeIn .9s;
+		animation-fill-mode:forwards;
+		animation-delay:0s;
+		animation-timing-function: ease-inout;
+		transform: translate3d(0, -100%, 0);
+	}
+
+	
+	
+	
+}
+@keyframes fadeIn {
+	0% {
+		opacity: 1;
+		transform: translate3d(0, -100%, 0);
+	}
+	75% {
+		opacity: 1;
+		transform: translate3d(0, 100%, 0);
+	}
+	75.1% {
+		opacity: 0;
+		transform: translate3d(0, 100%, 0);
+	}
+	76% {
+		opacity: 1;
+		transform: translate3d(0, -100%, 0);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
 }
 
 
 
+
+.open-gallery {
+	display: block;
+	position: relative;
+}
+.gallery-counter {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,.8);
+	color: #fff;
+	text-align: center;
+	padding: .625rem;
+	font-size: 2rem;
+	@extend .font-s2;
+	font-weight: 700;
+	.show-all {
+		display: block;
+		font-size: .8rem;
+		text-transform: uppercase;
+		font-weight: 500;
+	}
+}
 .main-image-caption {
 	background-color: rgba(0,0,0,.3);
 	padding: .2rem .4rem;
@@ -207,6 +305,9 @@
 	}
 }
 
+[class*="article-fact"] {
+	clear: right;
+}
 .article-fact-embedded-1 {
 	max-width: 37.5%;
 	float: right;
@@ -384,35 +485,29 @@
 	float: left;
 	max-width: 200px;
 }
-.article-embedded-link {
-	border-bottom: $border-width solid $border-color;
-	margin-left: -$col-1-width;	
-	margin-right: $spacer;
-	width: 200px;
-	float: left;
-	padding-bottom: $spacer;
+.article-embedded-link {	
 	
+	clear: left;
+	width: 100%;
+	clear: left;
+	
+	
+	padding: 1rem 0 2rem;
+	article {
+		
+	}
+	
+	span {
+		font-size: .8rem;
+	}
 	figure {
-		margin-bottom: .625rem;
+		float: left;
+		margin: 0 .625rem 0 0;
 	}
 	.header {
-		@extend .font-header;
+		@extend .font-g1;
 		position: relative;
-		padding-bottom: $spacer * 2;
-		&:after {
-			width: 1.5rem;
-			height: 1.5rem;
-			border-radius: 50%;
-			text-align: center;
-			line-height: 1.5rem;
-			color: #fff;
-			background-color: #222;
-			content: '\e802';
-			position: absolute;
-			right: 0;
-			bottom: 0;
-			font-family: b-icons;
-		}
+		
 	}
 }
 
