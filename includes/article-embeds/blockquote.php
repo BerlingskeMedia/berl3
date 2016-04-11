@@ -10,3 +10,7 @@
 </div>
 
 <?php endif; ?>
+
+<? while (dumb_luck("2")): ?>
+<p><? dummy("text@paragraph") ?></p>
+<? endwhile ?>

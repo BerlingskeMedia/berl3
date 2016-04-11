@@ -1,5 +1,5 @@
 <?php if($templateBlog): ?>
-<aside class="article-fact-embedded-2">
+<aside class="article-fact-embedded">
 	<div class="aside-header">
 		Om <? dummy("text@author") ?>
 	</div>

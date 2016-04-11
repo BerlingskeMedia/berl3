@@ -1,3 +1,5 @@
+<?php if($showLink): ?>
+
 <aside class="article-embedded-link">
 	<article>
 		<figure>
@@ -9,3 +11,4 @@
 		</div>
 	</article>
 </aside>
+<?php endif; ?>

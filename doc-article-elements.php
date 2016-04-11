@@ -37,13 +37,37 @@ if (isset($_GET['showEmbeds'])) {
 if (isset($_GET['showFactEmbedded'])) {
 	$showFactboxEmbedded = true;
 }
+if (isset($_GET['showTimeline'])) {
+	$showTimelineEmbedded = true;
+}
+if (isset($_GET['showTheme'])) {
+	$showThemeEmbedded = true;
+}
+
+if (isset($_GET['showFactDefault'])) {
+	$showFactboxDefault = true;
+}
 if (isset($_GET['showYoutube'])) {
 	$showYoutube = true;
+}
+if (isset($_GET['showTweet'])) {
+	$showTweet = true;
 }
 if (isset($_GET['blog'])) {
 	$templateBlog = true;
 }
-
+if (isset($_GET['editorial'])) {
+	$templateEditorial = true;
+}
+if (isset($_GET['showLink'])) {
+	$showLink = true;
+}
+if (isset($_GET['showRating'])) {
+	$showRating = true;
+}
+if (isset($_GET['event'])) {
+	$event = $_GET['event'];
+}
 
 $campaignId = 'campaign-' . mt_rand(1,3);
 
@@ -112,6 +136,8 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 		<div class="article-badge-kronik">
 		<?php if($templateBlog): ?>
 			KRONIKKEN
+		<?php elseif($templateEditorial): ?>
+			Leder
 		<?php else : ?>
 			<? dummy("text@b-cat") ?>
 		<?php endif; ?>
@@ -119,15 +145,19 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 		</div>
 	
 		<header class="article-header">
-							
-				<?php if($templateBlog): ?>
+				<?php include('includes/article/event-headers.php'); ?>
+				<?php if($templateBlog || $templateEditorial): ?>
 				<div class="row">
 					<div class="col-md-2">
 						<div class="byline-blog">
+							
+
+							<?php if($templateBlog): ?>
+							
 							<figure class="article-avatar img-gradient">
 								<a href="tpl-author.php" title="Se [AUTHOR NAME]'s profil"><img src="<? dummy("image/!author@200x200,") ?>" width="" height="" alt="[AUTHOR NAME]" /></a>
 							</figure>
-							
+
 							<div class="author-info">
 								<a href="tpl-author.php" title="Se [AUTHOR NAME]'s profil"><? dummy("text@author") ?></a>
 								<? if (dumb_luck("50%")): ?>
@@ -141,6 +171,17 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 									</div>
 								<? endif ?>
 							</div>
+							
+							<?php elseif($templateEditorial): ?>
+							
+							<figure class="article-avatar ">
+								<a href="tpl-author.php" title="Se [AUTHOR NAME]'s profil"><img src="/dist/images/logo.png" width="" height="" alt="[AUTHOR NAME]" /></a>
+							</figure>
+							
+							<?php endif; ?>
+
+							
+							
 						</div>
 					</div>
 
@@ -156,16 +197,16 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 						</h1>
 							
 						
+						<?php include('includes/article-embeds/rating.php'); ?>
 						
-						
-						<div class="article-date">Onsdag <? dummy("text@date-long") ?> &mdash; kl. <? dummy("text@time") ?>
-							
-						</div>
+						<div class="article-date">Onsdag <? dummy("text@date-long") ?> &mdash; kl. <? dummy("text@time") ?></div>
 						
 						<p class="article-summary relative"><? dummy("text@teaser") ?>
-							<span class="comments-count">
-								<? dummy("text@number") ?>
-							</span>
+							<a href="#" class="scroll-to-comments">
+								<span class="comments-count">
+									<? dummy("text@number") ?>
+								</span>
+							</a>
 						</p>
 					</div>
 				</div>
@@ -174,7 +215,6 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 				
 				<?php else: ?>
 
-				
 				
 				
 					<h1 class="article-title">
@@ -186,7 +226,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 						<? dummy("text@headline") ?>
 					</h1>
 					
-				
+				<?php include('includes/article-embeds/rating.php'); ?>
 				
 				<p class="article-summary relative"><? dummy("text@teaser") ?>
 					<a href="#" class="scroll-to-comments">
@@ -196,6 +236,8 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 					</a>
 				</p>
 				
+				
+
 				<div class="article-date">Onsdag d. <? dummy("text@date-long") ?>  kl. <? dummy("text@time") ?>
 					<? if (dumb_luck("50%")): ?><span class="updated">&mdash; <strong>Opdateret: kl. <? dummy("text@time") ?></strong>
 					</span><? endif ?>
@@ -230,6 +272,10 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 
 						<?php include('includes/article-embeds/slider.php'); ?>
 
+					<?php elseif($imageSize == '4'): ?>
+
+						<?php include('includes/article-embeds/article-video.php'); ?>
+
 					<?php endif; ?>
 					
 					
@@ -251,13 +297,24 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 
 						<?php include('includes/article-embeds/fact-embedded.php'); ?>
 
+						<?php include('includes/article-embeds/timeline-embedded.php'); ?>
+
+						<?php include('includes/article-embeds/theme-embedded.php'); ?>
+
 						<?php include('includes/article-embeds/embedded-images.php'); ?>
 
 						<?php include('includes/article-embeds/youtube.php'); ?>
 
+						<?php include('includes/article-embeds/tweet.php'); ?>
+						
+						<div class="article-topics">
+						Emner:
+						<a href="tpl-topic.php">Elektronik</a>  <a href="tpl-topic.php">Elgiganten</a>  <a href="tpl-topic.php">Fona</a>
+						</div>
 
+						<?php include('includes/article-embeds/fact-default.php'); ?>
 					</div><!-- article body -->
-
+					
 				</div><!-- article content -->
 
 			</article>

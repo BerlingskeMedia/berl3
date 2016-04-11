@@ -38,7 +38,12 @@ img {
 	padding-bottom: 0;
 }
 
-
+.teaser-float-left {
+	figure {
+		float: left;
+		margin: 0 .625rem  0 0;
+	}
+}
 .site-business  {
 	.teaser:hover {
 		a {
