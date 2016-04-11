@@ -1,4 +1,4 @@
-
+.container { position: relative; }
 .col-article-primary {
 	width: calc(100% - 400px);
 }
@@ -785,5 +785,75 @@ blockquote {
 			background-color: rgba(0,0,0,.1);
 			text-decoration: none;
 		}
+	}
+}
+
+.article-image-longread {
+	background-size: cover;
+	background-position: center center;
+	height: 40rem;
+	margin-top: -$spacer;
+	position: relative;
+	margin-bottom: 2 * $spacer;
+	.article-badge {
+		color: #fff;
+		padding-bottom: $spacer;
+		border-bottom: $border-width solid rgba(255,255,255,.5);
+	}
+	&:after {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background-color: rgba(0,0,0,.4);
+		z-index: 10;
+		content: '';
+	}
+	.article-header {
+		position: absolute;
+		top: 0;
+		left: .625rem * 2;
+		right: .625rem * 2;
+		z-index: 100;
+		border: 0;
+		padding-top: 1rem;
+	}
+	.article-title {
+		color: #fff;
+		font-size: 4rem;
+		max-width: 45rem;
+	}
+	
+
+
+}
+
+.tpl-article-longread {
+	.article-byline {
+		text-align: center;
+		margin-bottom: 2 * $spacer;
+	}
+	.article-date {
+		text-align: center;	
+		margin-bottom: 2 * $spacer;
+	}
+	.article-author {
+		float: none;
+		text-align: left;
+
+	}
+	.article-summary {
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 2 * $spacer;
+	}
+	.article-body {
+		padding-left: 12rem;
+		padding-right: 12rem;
+	}
+	.article-image-embed-longread {
+		margin: (2 * $spacer) -5rem;
 	}
 }

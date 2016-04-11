@@ -148,32 +148,32 @@ if(isset($_GET["business"])) {
 				
 				<div class="col-lg-9">
 					<ul>
-			 			<li class="orange"><a href="doc-article-elements.php?">Default</a></li>
-						<li class="orange"><a href="doc-article-elements.php?imgSize=0">No image</a> </li>
-						<li class="orange"><a href="doc-article-elements.php?imgSize=1">Large image (default)</a></li>
-						<li class="orange"><a href="doc-article-elements.php?imgSize=2">Small image</a></li>
-						<li class="orange"><a href="doc-article-elements.php?imgSize=3">Slider</a></li>
-						<li class="orange"><a href="doc-article-elements.php?imgSize=4">Video</a></li>
-						<li class="orange"><a href="doc-article-elements.php?showEmbeds">Embedded images</a></li>
-						<li class="orange"><a href="doc-article-elements.php?showYoutube&amp;imgSize=1">Youtube embed</a></li>
-						<li class="orange"><a href="doc-article-elements.php?showTweet">Tweet embed</a></li>
-						<li class="orange"><a href="doc-article-elements.php?showQuote">Quote</a></li>
-						<li class="orange"><a href="doc-article-elements.php?showTrumpet">Trumpet</a></li>
-						<li class="orange"><a href="doc-article-elements.php?showFactDefault">Factbox - Default</a></li>
-						<li class="orange"><a href="doc-article-elements.php?showFactEmbedded">Factbox - Embedded</a></li>
-						<li class="orange"><a href="doc-article-elements.php?showTheme">Theme - Embedded</a></li>
-						<li class="orange"><a href="doc-article-elements.php?showTimeline">Timeline - Embedded</a></li>
-						<li class="orange"><a href="doc-article-elements.php?blog">Blog</a></li>
-						<li class="orange"><a href="doc-article-elements.php?editorial">Editorial</a></li>
-						<li class="orange"><a href="doc-article-elements.php?slider">Slider</a></li>
-						<li class="orange"><a href="doc-article-elements.php?showLink">Embedded links</a></li>
-						<li class="orange"><a href="doc-article-elements.php?event=breaking">Tag: Breaking</a> </li>
-						<li class="orange"><a href="doc-article-elements.php?event=live">Tag: Live</a> </li>
-						<li class="orange"><a href="doc-article-elements.php?event=update">Tag: To be updated</a> </li>
-						<li class="orange"><a href="doc-article-elements.php?event=inawhile">Tag: In a while</a> </li>
+						<li class="orange"><a href="tpl-article.php?">Default</a></li>
+						<li class="orange"><a href="tpl-article.php?imgSize=0">No image</a> </li>
+						<li class="orange"><a href="tpl-article.php?imgSize=1">Large image (default)</a></li>
+						<li class="orange"><a href="tpl-article.php?imgSize=2">Small image</a></li>
+						<li class="orange"><a href="tpl-article.php?imgSize=3">Slider</a></li>
+						<li class="orange"><a href="tpl-article.php?imgSize=4">Video</a></li>
+						<li class="orange"><a href="tpl-article.php?showEmbeds">Embedded images</a></li>
+						<li class="orange"><a href="tpl-article.php?showYoutube&amp;imgSize=1">Youtube embed</a></li>
+						<li class="orange"><a href="tpl-article.php?showTweet">Tweet embed</a></li>
+						<li class="orange"><a href="tpl-article.php?showQuote">Quote</a></li>
+						<li class="orange"><a href="tpl-article.php?showTrumpet">Trumpet</a></li>
+						<li class="orange"><a href="tpl-article.php?showFactDefault">Factbox - Default</a></li>
+						<li class="orange"><a href="tpl-article.php?showFactEmbedded">Factbox - Embedded</a></li>
+						<li class="orange"><a href="tpl-article.php?showTheme">Theme - Embedded</a></li>
+						<li class="orange"><a href="tpl-article.php?showTimeline">Timeline - Embedded</a></li>
+						<li class="orange"><a href="tpl-article.php?blog">Blog</a></li>
+						<li class="orange"><a href="tpl-article.php?editorial">Editorial</a></li>
+						<li class="orange"><a href="tpl-article.php?slider">Slider</a></li>
+						<li class="orange"><a href="tpl-article.php?showLink">Embedded links</a></li>
+						<li class="orange"><a href="tpl-article.php?event=breaking">Tag: Breaking</a> </li>
+						<li class="orange"><a href="tpl-article.php?event=live">Tag: Live</a> </li>
+						<li class="orange"><a href="tpl-article.php?event=update">Tag: To be updated</a> </li>
+						<li class="orange"><a href="tpl-article.php?event=inawhile">Tag: In a while</a> </li>
 						
 						
-						<li class="orange"><a href="doc-article-elements.php?showRating">Rating</a> (<a href="doc-article-elements.php?showRating&amp;blog">Blog</a>)</li>
+						<li class="orange"><a href="tpl-article.php?showRating">Rating</a> (<a href="doc-article-elements.php?showRating&amp;blog">Blog</a>)</li>
 						<li class="red"><a href="#">Wide article</a></li>
 						
 						<li class="red"><a href="#">'Groft sagt'</a></li>
