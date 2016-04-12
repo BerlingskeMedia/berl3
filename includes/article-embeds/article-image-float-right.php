@@ -6,7 +6,7 @@
 			<div class="image-meta">
 				<span class="byline">Foto: <? dummy("text@author") ?></span>
 				<a href="#" class="open-gallery gallery-counter-small">
-					<span class="image-count"><i class="bicon-camera"></i> 12 &mdash; Se alle</span>
+					<span class="image-count"><em><i class="bicon-camera"></i> 12 -</em> Se alle</span>
 				</a>
 			</div>
 	

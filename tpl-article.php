@@ -89,7 +89,7 @@
 							<div class="author-info">
 								<a href="tpl-author.php" title="Se [AUTHOR NAME]'s profil"><? dummy("text@author") ?></a>
 								<? if (dumb_luck("50%")): ?>
-								<div class="author-follow"><button class="btn-follow-author">Følg</button></div>
+								<div class="author-follow"><button class="btn-follow-author" title="Ophæv abonnement">Følg</button></div>
 								<? else: ?>
 								<div class="author-follow"><button class="btn-follow-author active" title="Du følger [AUTHOR NAME]"><i class="bicon-ok-circled"></i></button></div>
 								<? endif ?>
