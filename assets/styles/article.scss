@@ -144,13 +144,14 @@
 	position: absolute;
 	right: 0;
 	bottom: 0;
-	background-color: rgba(0,0,0,.8);
+	background-color: rgba(0,0,0,.5);
 	color: #fff;
 	text-align: center;
 	padding: .625rem;
 	font-size: 2rem;
 	@extend .font-s2;
 	font-weight: 500;
+	transition: background-color .2s ease;
 	.show-all {
 		display: block;
 		font-size: .7rem;
@@ -158,25 +159,13 @@
 		font-weight: 500;
 	}
 }
-.gallery-counter-small {
-
-	display: inline-block;
-	padding: .2rem ;
-	color: $col-blue-1;
-	// color: #fff;
-	font-weight: 500;
-	float: right;
-	em {
-		color: #666;
-		font-style: normal;
+a:hover {
+	.gallery-counter {
+		background-color: $col-blue-1;
 	}
-	/*transition: background-color .2s ease;
-	&:hover {
-		background-color: darken(#eee, 40%);
-		color: #fff;
-		text-decoration: none;
-	}*/
+
 }
+
 .main-image-caption {
 	background-color: rgba(0,0,0,.3);
 	padding: .2rem .4rem;
@@ -355,7 +344,16 @@
 	max-width: 37.5%;
 	float: right;
 	margin-top: .5rem;
+	clear: right;
+	.gallery-counter {
+		font-size: 1rem;
+		padding: .4rem;
+		.show-all {
+			font-size: .6rem;
+		}
+	}
 }
+
 
 .article-header {
 	margin-bottom: $spacer;	
@@ -910,25 +908,7 @@ blockquote {
 
 figure > .open-gallery {
 	position: relative;
-	&:after {
-		position: absolute;
-		right: .425rem;
-		top: .425rem;
-		width: 2.2rem;
-		height: 2.2rem;
-		line-height: 2.2rem;
-		content: '\e80f';
-		font-size: 1.3rem;
-		color: #fff;
-		background-color: rgba(0,0,0,.6);
-		border-radius: 50%;
-		font-family: b-icons;
-		text-align: center;
-		transition: background-color .2s ease;
-	}
-	&:hover:after {
-		background-color: $col-blue-1;
-	}
+	
 }
 .article-image-float-right .open-gallery:after {
 	width: 2rem;
