@@ -1,6 +1,6 @@
 <?php if($showTimelineEmbedded): ?>
 <aside class="article-timeline-embedded">
-	<div class="aside-header">
+	<div class="aside-header-sm">
 		Timeline
 	</div>
 

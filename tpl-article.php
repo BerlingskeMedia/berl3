@@ -89,7 +89,7 @@
 							<div class="author-info">
 								<a href="tpl-author.php" title="Se [AUTHOR NAME]'s profil"><? dummy("text@author") ?></a>
 								<? if (dumb_luck("50%")): ?>
-								<div class="author-follow"><button class="btn-follow-author">Abonnér</button></div>
+								<div class="author-follow"><button class="btn-follow-author">Følg</button></div>
 								<? else: ?>
 								<div class="author-follow"><button class="btn-follow-author active" title="Du følger [AUTHOR NAME]"><i class="bicon-ok-circled"></i></button></div>
 								<? endif ?>
@@ -235,12 +235,10 @@
 
 						<?php include('includes/article-embeds/tweet.php'); ?>
 						
-						<div class="article-topics">
-						Emner:
-						<a href="tpl-topic.php">Elektronik</a>  <a href="tpl-topic.php">Elgiganten</a>  <a href="tpl-topic.php">Fona</a>
-						</div>
-
 						<?php include('includes/article-embeds/fact-default.php'); ?>
+
+						<?php include('indluces/article-embeds/topics.php'); ?>
+
 					</div><!-- article body -->
 					
 				</div><!-- article content -->

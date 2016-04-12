@@ -55,7 +55,9 @@
 	<div class="banner-wrapper">
 	
 	<div class="article-image-longread" style="background-image:url(<? dummy("image/landscape@2000x,16:9") ?>);">
-		
+		<span class="photo-byline">
+			Foto: <? dummy("text@author") ?>
+		</span>
 
 		<div class="container">
 			<header class="article-header">
@@ -121,11 +123,6 @@
 						<?php include('includes/article/social-buttons.php'); ?>
 
 						<div class="article-content">
-							
-							
-							
-							
-
 
 							<div class="article-body">
 
@@ -141,9 +138,7 @@
 								
 								<p><? dummy("text@paragraph") ?></p>
 
-								<figure class="article-image-embed-longread">
-									<img src="<? dummy("image@1200x,16:9") ?>" width="" height="" alt="" />
-								</figure>
+								<?php include('includes/article-embeds/embedded-image-longread.php') ?>
 								
 								<?php include('includes/article-embeds/blockquote.php'); ?>
 
@@ -153,18 +148,18 @@
 
 								<?php include('includes/article-embeds/theme-embedded.php'); ?>
 
-								<?php include('includes/article-embeds/embedded-images.php'); ?>
+								<?php include('includes/article-embeds/embedded-images-longread.php'); ?>
 
 								<?php include('includes/article-embeds/youtube.php'); ?>
 
 								<?php include('includes/article-embeds/tweet.php'); ?>
 								
-								<div class="article-topics">
-								Emner:
-								<a href="tpl-topic.php">Elektronik</a>  <a href="tpl-topic.php">Elgiganten</a>  <a href="tpl-topic.php">Fona</a>
-								</div>
-
 								<?php include('includes/article-embeds/fact-default.php'); ?>
+
+								<?php include('indluces/article-embeds/topics.php'); ?>
+								
+
+								
 							</div><!-- article body -->
 							
 						</div><!-- article content -->
@@ -177,25 +172,27 @@
 		
 
 		
-		</div>
-
+		
+	<div class="container">
 		<div class="row article-below">
-		<div class="col-md-12">
-		Footer
-		</div></div>
-		
-		
-		</div><!-- container -->
-
-		
-
-		
-		
-		
-		
-		
-
+			<div class="col-md-12">
+			Footer
+			</div>
+		</div>
 	</div>
+		
+		
+		
+
+		
+
+		
+		
+		
+		
+		
+
+	
 
 </div><!-- banner-wrapper -->
 </div><!-- canvas main -->

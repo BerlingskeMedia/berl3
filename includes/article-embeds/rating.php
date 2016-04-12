@@ -14,6 +14,6 @@
 	etc. ... 
 	-->
 
-	<span class="star-txt"> &mdash; <?php echo $rating; ?><?php if($rating == '1') : ?> stjerne <?php else : ?> stjerner <?php endif; ?></span>
+	<?php if($rating == '0'): ?><span class="star-txt"> &mdash; <?php echo $rating; ?>  stjerner </span><?php endif; ?>
 </div>
 <?php endif; ?>

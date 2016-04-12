@@ -4,7 +4,7 @@
 	<span class="gallery-counter">
 		<i class="bicon-camera"></i>
 		<span class="count">12</span>
-		<span class="show-all">Vis alle</span>
+		<span class="show-all">Åbn galleri</span>
 	</span>
 
 	</a>
