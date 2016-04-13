@@ -153,41 +153,66 @@ if(isset($_GET["business"])) {
 				</div>
 				
 				<div class="col-lg-9">
-					<ul>
-						<li class="emtpy">Images</li>
-						<li class="orange"><a href="tpl-article.php?imgSize=1">Large image (default)</a></li>
-						<li class="orange"><a href="tpl-article.php?imgSize=0">No image</a> </li>
-						<li class="orange"><a href="tpl-article.php?imgSize=2">Small image</a></li>
-						<li class="orange"><a href="tpl-article.php?imgSize=3">Slider</a></li>
-						<li class="orange"><a href="tpl-article.php?imgSize=4">Video</a></li>
-						<li class="emtpy">Embeds</li>
-						<li class="orange"><a href="tpl-article.php?showEmbeds">Embedded images</a></li>
-						<li class="orange"><a href="tpl-article.php?showCustom&amp;imgSize=1">Custom embed</a></li>
-						<li class="orange"><a href="tpl-article.php?showTweet">Tweet</a></li>
-						<li class="orange"><a href="tpl-article.php?showQuote">Quote</a></li>
-						<li class="orange"><a href="tpl-article.php?showFactDefault">Factbox - Default</a></li>
-						<li class="orange"><a href="tpl-article.php?showFactEmbedded">Factbox - Embedded</a></li>
-						<li class="orange"><a href="tpl-article.php?showTheme">Theme</a></li>
-						<li class="orange"><a href="tpl-article.php?showTimeline">Timeline</a></li>
-						<li class="orange"><a href="tpl-article.php?showLink">Embedded links</a></li>
-						
-						<li class="emtpy">Header stuff</li>
-						<li class="orange"><a href="tpl-article.php?showTrumpet">Trumpet</a></li>
-						<li class="orange"><a href="tpl-article.php?blog">Blog</a></li>
-						<li class="orange"><a href="tpl-article.php?editorial">Editorial</a></li>
-						<li class="orange"><a href="tpl-article.php?showRating">Rating</a> (<a href="doc-article-elements.php?showRating&amp;blog">Blog template</a>)</li>
-						
-						<li>Tags</li>
-						<li class="orange"><a href="tpl-article.php?event=breaking">Tag: Breaking</a> </li>
-						<li class="orange"><a href="tpl-article.php?event=live">Tag: Live</a> </li>
-						<li class="orange"><a href="tpl-article.php?event=update">Tag: To be updated</a> </li>
-						<li class="orange"><a href="tpl-article.php?event=inawhile">Tag: In a while</a> </li>
-						
-						<li class="red"><a href="#">'Groft sagt'</a></li>
-						
-						
-						<li class="red"><a href="#">Pay wall sign</a></li>
-					</ul>
+					<div class="row">
+						<div class="col-lg-3">Images</div>
+						<div class="col-lg-9">
+							<ul>
+								<li class="orange"><a href="tpl-article.php?imgSize=1">Large image (default)</a></li>
+								<li class="orange"><a href="tpl-article.php?imgSize=0">No image</a> </li>
+								<li class="orange"><a href="tpl-article.php?imgSize=2">Small image</a></li>
+								<li class="orange"><a href="tpl-article.php?imgSize=3">Slider</a></li>
+								<li class="orange"><a href="tpl-article.php?imgSize=4">Video</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-3">Embeds</div>
+						<div class="col-lg-9">
+							<ul>
+								<li class="orange"><a href="tpl-article.php?showEmbeds">Embedded images</a></li>
+								<li class="orange"><a href="tpl-article.php?showCustom&amp;imgSize=1">Custom embed</a></li>
+								<li class="orange"><a href="tpl-article.php?showTweet">Tweet</a></li>
+								<li class="orange"><a href="tpl-article.php?showQuote">Quote</a></li>
+								<li class="orange"><a href="tpl-article.php?showFactDefault">Factbox - Default</a></li>
+								<li class="orange"><a href="tpl-article.php?showFactEmbedded">Factbox - Embedded</a></li>
+								<li class="orange"><a href="tpl-article.php?showTheme">Theme</a></li>
+								<li class="orange"><a href="tpl-article.php?showTimeline">Timeline</a></li>
+								<li class="orange"><a href="tpl-article.php?showLink">Embedded links</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-3">Header stuff</div>
+						<div class="col-lg-9">
+							<ul>
+								<li class="orange"><a href="tpl-article.php?showTrumpet">Trumpet</a></li>
+								<li class="orange"><a href="tpl-article.php?blog">Blog</a></li>
+								<li class="orange"><a href="tpl-article.php?editorial">Editorial</a></li>
+								<li class="orange"><a href="tpl-article.php?showRating">Rating</a> (<a href="doc-article-elements.php?showRating&amp;blog">Blog template</a>)</li>
+								<li class="red"><a href="#">'Groft sagt'</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-3">Tags</div>
+						<div class="col-lg-9">
+							<ul>
+								<li class="orange"><a href="tpl-article.php?event=breaking">Tag: Breaking</a> </li>
+								<li class="orange"><a href="tpl-article.php?event=live">Tag: Live</a> </li>
+								<li class="orange"><a href="tpl-article.php?event=update">Tag: To be updated</a> </li>
+								<li class="orange"><a href="tpl-article.php?event=inawhile">Tag: In a while</a> </li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-3">Paywall</div>
+						<div class="col-lg-9">
+							<ul>
+								<li class="red"><a href="#">Pay wall sign</a></li>
+							</ul>
+						</div>
+					</div>
+					
 				</div>
 
 				<div class="col-lg-3">
@@ -195,25 +220,61 @@ if(isset($_GET["business"])) {
 				</div>
 				
 				<div class="col-lg-9">
-					<ul>
-						<li class="orange"><a href="tpl-article-longread.php?">Default</a></li>
-						<li class="orange"><a href="tpl-article-longread.php?imgSize=4">Video</a></li>
-						<li class="orange"><a href="tpl-article-longread.php?showEmbeds">Embedded images</a></li>
-						<li class="orange"><a href="tpl-article-longread.php?showCustom&amp;imgSize=1">Custom embed</a></li>
-						<li class="orange"><a href="tpl-article-longread.php?showTweet">Tweet embed</a></li>
-						<li class="orange"><a href="tpl-article-longread.php?showQuote">Quote</a></li>
-						<li class="orange"><a href="tpl-article-longread.php?showTrumpet">Trumpet</a></li>
-						<li class="orange"><a href="tpl-article-longread.php?showFactDefault">Factbox - Default</a></li>
-						<li class="orange"><a href="tpl-article-longread.php?showFactEmbedded">Factbox - Embedded</a></li>
-						<li class="orange"><a href="tpl-article-longread.php?showTheme">Theme</a></li>
-						<li class="orange"><a href="tpl-article-longread.php?showTimeline">Timeline</a></li>
-						<li class="orange"><a href="tpl-article-longread.php?showLink">Embedded links</a></li>
-						<li class="orange"><a href="tpl-article-longread.php?event=breaking">Tag: Breaking</a> </li>
-						<li class="orange"><a href="tpl-article-longread.php?event=live">Tag: Live</a> </li>
-						<li class="orange"><a href="tpl-article-longread.php?event=update">Tag: To be updated</a> </li>
-						<li class="orange"><a href="tpl-article-longread.php?event=inawhile">Tag: In a while</a> </li>
-						<li class="orange"><a href="tpl-article-longread.php?showRating">Rating</a></li>
-						<li class="red"><a href="#">Pay wall sign</a></li>
+					<div class="row">
+						<div class="col-lg-3">
+							Embeds
+						</div>
+						<div class="col-lg-9">
+							<ul>
+								<li class="orange"><a href="tpl-article-longread.php?showEmbeds">Embedded images</a></li>
+								<li class="orange"><a href="tpl-article-longread.php?showCustom&amp;imgSize=1">Custom embed</a></li>
+								<li class="orange"><a href="tpl-article-longread.php?showTweet">Tweet embed</a></li>
+								<li class="orange"><a href="tpl-article-longread.php?showQuote">Quote</a></li>	
+								<li class="orange"><a href="tpl-article-longread.php?showFactDefault">Factbox - Default</a></li>
+								<li class="orange"><a href="tpl-article-longread.php?showFactEmbedded">Factbox - Embedded</a></li>
+								<li class="orange"><a href="tpl-article-longread.php?showTheme">Theme</a></li>
+								<li class="orange"><a href="tpl-article-longread.php?showTimeline">Timeline</a></li>
+								<li class="orange"><a href="tpl-article-longread.php?showLink">Embedded links</a></li>	
+							</ul>
+							
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-3">
+							Header
+						</div>
+						<div class="col-lg-9">
+							<ul>
+								<li class="orange"><a href="tpl-article-longread.php?showTrumpet">Trumpet</a></li>		
+							</ul>
+							
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-lg-3">Tags</div>
+						<div class="col-lg-9">
+							<ul>
+								<li class="orange"><a href="tpl-article-longread.php?">Default</a></li>
+								<li class="orange"><a href="tpl-article-longread.php?event=breaking">Tag: Breaking</a> </li>
+								<li class="orange"><a href="tpl-article-longread.php?event=live">Tag: Live</a> </li>
+								<li class="orange"><a href="tpl-article-longread.php?event=update">Tag: To be updated</a> </li>
+								<li class="orange"><a href="tpl-article-longread.php?event=inawhile">Tag: In a while</a> </li>
+								<li class="orange"><a href="tpl-article-longread.php?showRating">Rating</a></li>
+							</ul>
+						</div>
+					</div>	
+					<div class="row">
+						<div class="col-lg-3">Paywall</div>
+						<div class="col-lg-9">
+							<ul>
+								<li class="red"><a href="#">Pay wall sign</a></li>
+							</ul>
+						</div>
+					</div>	
+						
+						
+						
 					</ul>
 				</div>
 
