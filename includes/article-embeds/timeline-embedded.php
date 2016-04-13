@@ -1,7 +1,7 @@
 <?php if($showTimelineEmbedded): ?>
-<aside class="article-timeline-embedded">
+<aside class="article-timeline-embedded article-embed-pull-right">
 	<div class="aside-header-sm">
-		Timeline
+		Tidslinie
 	</div>
 
 	<div class="aside-subheader">
@@ -27,9 +27,19 @@
 					</figure>
 					<a href="tpl-article.php"><? dummy("text@short-teaser") ?></a>
 				</article>
-				</dd>
+			</dd>
 			<? endif ?>
 			<? endwhile ?>
+			<dt><time><? dummy("text@time") ?></time></dt>
+			<dd>
+				<article class="teaser">
+					<figure class="mb">
+						<img src="<? dummy("image@300x,16:9") ?>" width="" height="" alt="" />
+					</figure>
+					<? dummy("text@short-teaser") ?>
+				</article>
+			</dd>
+
 		</dl>
 		
 	</div>

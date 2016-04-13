@@ -1,5 +1,5 @@
 <?php if($showFactboxEmbedded): ?>
-<aside class="article-fact-embedded">
+<aside class="article-fact-embedded article-embed-pull-right">
 	<div class="aside-header">
 		Jeg er en fakta header
 	</div>

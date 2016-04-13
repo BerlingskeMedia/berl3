@@ -1,5 +1,5 @@
 <?php if($showThemeEmbedded): ?>
-<aside class="article-theme-embedded">
+<aside class="article-theme-embedded article-embed-pull-right">
 	<div class="aside-header-sm">
 		Tema
 	</div>
@@ -30,8 +30,8 @@
 	</ul>
 	
 	<footer class="aside-footer">
-		<button class="btn btn-xs">Se alle</button>
-		<button class="btn btn-xs">Abonnér</button>
+		<button class="btn btn-xs btn-gray">Se alle</button>
+		<button class="btn btn-xs btn-blue pull-right">Følg</button>
 
 	</footer>
 		

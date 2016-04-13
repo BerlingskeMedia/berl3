@@ -1,6 +1,6 @@
 <?php if($showFactboxDefault): ?>
 
-<aside class="article-fact-default">
+<aside class="article-fact-default mb-1 ">
 	<div class="aside-header">
 		Jeg er en fakta header
 	</div>

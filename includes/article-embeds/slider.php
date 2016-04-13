@@ -1,10 +1,10 @@
 <figure class="article-main-gallery article-image">
-	<a href="#" class="open-gallery"><img src="<? dummy("image@900x,16:9") ?>" width="" height="" alt="" />
+	<a href="#" class="open-gallery"><img src="<? dummy("image@920x,16:9") ?>" width="" height="" alt="" />
 	
 	<span class="gallery-counter">
 		<i class="bicon-camera"></i>
 		<span class="count">12</span>
-		<span class="show-all">Åbn galleri</span>
+		<span class="show-all">Se flere</span>
 	</span>
 
 	</a>

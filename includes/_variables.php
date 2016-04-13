@@ -45,8 +45,8 @@ if (isset($_GET['showTheme'])) {
 if (isset($_GET['showFactDefault'])) {
 	$showFactboxDefault = true;
 }
-if (isset($_GET['showYoutube'])) {
-	$showYoutube = true;
+if (isset($_GET['showCustom'])) {
+	$showCustom = true;
 }
 if (isset($_GET['showTweet'])) {
 	$showTweet = true;
@@ -65,6 +65,10 @@ if (isset($_GET['showRating'])) {
 }
 if (isset($_GET['event'])) {
 	$event = $_GET['event'];
+}
+
+if (isset($_GET['paywall'])) {
+	$showPaywall = true;
 }
 
 $campaignId = 'campaign-' . mt_rand(1,3);

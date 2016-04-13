@@ -1,4 +1,8 @@
-<div class="share-buttons collapsed">
+<?php if($horizontalShareButtons == true) {
+	$class = 'share-buttons-horizontal';
+} 
+?>
+<div class="share-buttons collapsed <?php echo $class; ?>">
 	<div class="mb">
 		<button class="btn-share-facebook"><i class="bicon-facebook"></i></button>
 	</div>
@@ -24,3 +28,4 @@
 	
 	<a href="#" class="social-toggle"><i class="bicon-angle-down"></i></a>
 </div>
+<?php $horizontalShareButtons = false; ?>

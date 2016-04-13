@@ -61,129 +61,26 @@
 		<div class="row">
 		<div class="col-md-12">
 
-		<div class="article-badge-kronik">
-		<?php if($templateBlog): ?>
-			KRONIKKEN
-		<?php elseif($templateEditorial): ?>
-			Leder
-		<?php else : ?>
-			<? dummy("text@b-cat") ?>
-		<?php endif; ?>
+			<div class="article-badge-kronik">
+			<?php if($templateBlog): ?>
+				KRONIKKEN
+			<?php elseif($templateEditorial): ?>
+				Leder
+			<?php else : ?>
+				<? dummy("text@b-cat") ?>
+			<?php endif; ?>
 
-		</div>
+			</div>
 	
-		<header class="article-header">
-				<?php include('includes/article/event-headers.php'); ?>
-				<?php if($templateBlog || $templateEditorial): ?>
-				<div class="row">
-					<div class="col-md-2">
-						<div class="byline-blog">
-							
-
-							<?php if($templateBlog): ?>
-							
-							<figure class="article-avatar img-gradient">
-								<a href="tpl-author.php" title="Se [AUTHOR NAME]'s profil"><img src="<? dummy("image/!author@200x200,") ?>" width="" height="" alt="[AUTHOR NAME]" /></a>
-							</figure>
-
-							<div class="author-info">
-								<a href="tpl-author.php" title="Se [AUTHOR NAME]'s profil"><? dummy("text@author") ?></a>
-								<? if (dumb_luck("50%")): ?>
-								<div class="author-follow"><button class="btn-follow-author" title="Ophæv abonnement">Følg</button></div>
-								<? else: ?>
-								<div class="author-follow"><button class="btn-follow-author active" title="Du følger [AUTHOR NAME]"><i class="bicon-ok-circled"></i></button></div>
-								<? endif ?>
-								<? if (dumb_luck("50%")): ?> 
-									<div class="author-username">
-										<a href="http://twitter.com" target="_blank"><i class="bicon-twitter col-twitter"></i> <? dummy("text@username") ?></a>
-									</div>
-								<? endif ?>
-							</div>
-							
-							<?php elseif($templateEditorial): ?>
-							
-							<figure class="article-avatar ">
-								<a href="tpl-author.php" title="Se [AUTHOR NAME]'s profil"><img src="/dist/images/logo.png" width="" height="" alt="[AUTHOR NAME]" /></a>
-							</figure>
-							
-							<?php endif; ?>
-
-							
-							
-						</div>
-					</div>
-
-					<div class="col-md-10">
-						
-						<h1 class="article-title">
-							<?php if($trumpet == '1'): ?>
-							<span class="article-trumpet">
-								<? dummy("text@item") ?>
-							</span>
-							<?php endif; ?>
-							<? dummy("text@headline") ?>
-						</h1>
-							
-						
-						<?php include('includes/article-embeds/rating.php'); ?>
-						
-						<div class="article-date">Onsdag <? dummy("text@date-long") ?> &mdash; kl. <? dummy("text@time") ?></div>
-						
-						<p class="article-summary relative"><? dummy("text@teaser") ?>
-							<a href="#" class="scroll-to-comments">
-								<span class="comments-count">
-									<? dummy("text@number") ?>
-								</span>
-							</a>
-						</p>
-					</div>
-				</div>
-				
-				
-				
-				<?php else: ?>
-
-				
-				
-					<h1 class="article-title">
-						<?php if($trumpet == '1'): ?>
-						<span class="article-trumpet">
-							<? dummy("text@item") ?>
-						</span>
-						<?php endif; ?>
-						<? dummy("text@headline") ?>
-					</h1>
-					
-				<?php include('includes/article-embeds/rating.php'); ?>
-				
-				<p class="article-summary relative"><? dummy("text@teaser") ?>
-					<a href="#" class="scroll-to-comments">
-						<span class="comments-count">
-							<i><? dummy("text@number") ?></i>
-						</span>
-					</a>
-				</p>
-				
-				
-
-				<div class="article-date">Onsdag d. <? dummy("text@date-long") ?>  kl. <? dummy("text@time") ?>
-					<? if (dumb_luck("50%")): ?><span class="updated">&mdash; <strong>Opdateret: kl. <? dummy("text@time") ?></strong>
-					</span><? endif ?>
-				</div>
-				
-					<?php include('includes/article/byline.php') ?>
-				<?php endif; ?>
-			
-			<div class="demo-banner mb" style="width:930px; height: 60px" ></div>
-				
-		</header>
+		
+		<?php include('includes/article/header.php'); ?>
 
 		<div class="col-1-content">
 	
 		
-			<article>
+			
 				
-				<?php include('includes/article/social-buttons.php'); ?>
+				
 
 				<div class="article-content">
 					
@@ -193,7 +90,7 @@
 						<?php include('includes/article-embeds/article-image.php'); ?>
 					
 					<?php elseif ($imageSize == '2'): ?>
-
+						<?php $portrait = true; ?>
 						<?php include('includes/article-embeds/article-image-float-right.php'); ?>
 
 					<?php elseif($imageSize == '3'): ?>
@@ -207,43 +104,58 @@
 					<?php endif; ?>
 					
 					
-
+					<?php include('includes/article/social-buttons.php'); ?>
 
 					<div class="article-body">
 
+						
+						
 						<?php include('includes/article-embeds/blog-bio.php'); ?>
 						
-						<? while (dumb_luck("4")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
+						<? while (dumb_luck("2")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
+							
+						<?php if($showPaywall): ?>
+							
+							<?php include('includes/article/paywall.php'); ?>
 
-						<?php include('includes/article-embeds/link.php'); ?>
-						<? while (dumb_luck("1")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
+						<?php endif; ?>
 
-						<h2><? dummy("text@headline") ?></h2>
-						<? while (dumb_luck("1")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
 						
-						<?php include('includes/article-embeds/blockquote.php'); ?>
+						<?php if(!$showPaywall): ?>
 
-						<?php include('includes/article-embeds/fact-embedded.php'); ?>
+							<? while (dumb_luck("2")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
 
-						<?php include('includes/article-embeds/timeline-embedded.php'); ?>
 
-						<?php include('includes/article-embeds/theme-embedded.php'); ?>
+							<?php include('includes/article-embeds/link.php'); ?>
+							<? while (dumb_luck("1")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
 
-						<?php include('includes/article-embeds/embedded-images.php'); ?>
+							<h2><? dummy("text@headline") ?></h2>
+							<? while (dumb_luck("1")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
+							
+							<?php include('includes/article-embeds/blockquote.php'); ?>
 
-						<?php include('includes/article-embeds/youtube.php'); ?>
+							<?php include('includes/article-embeds/fact-embedded.php'); ?>
 
-						<?php include('includes/article-embeds/tweet.php'); ?>
-						
-						<?php include('includes/article-embeds/fact-default.php'); ?>
+							<?php include('includes/article-embeds/timeline-embedded.php'); ?>
 
-						<?php include('indluces/article-embeds/topics.php'); ?>
+							<?php include('includes/article-embeds/theme-embedded.php'); ?>
+
+							<?php include('includes/article-embeds/embedded-images.php'); ?>
+
+							<?php include('includes/article-embeds/custom.php'); ?>
+
+							<?php include('includes/article-embeds/tweet.php'); ?>
+							
+							<?php include('includes/article-embeds/fact-default.php'); ?>
+
+							<?php include('includes/article-embeds/topics.php'); ?>
+						<?php endif; // End Paywall ?>
 
 					</div><!-- article body -->
 					
 				</div><!-- article content -->
 
-			</article>
+	
 
 		
 		</div>

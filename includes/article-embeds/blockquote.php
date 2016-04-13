@@ -1,6 +1,6 @@
 <?php if($showQuote): ?>
 	
-<div class="article-embed-right article-embed-quote">
+<div class="article-embed-right article-embed-quote article-embed-pull-right">
 	<blockquote>
 		<p><? dummy("text@quote") ?></p>
 		<cite>Formand<br>

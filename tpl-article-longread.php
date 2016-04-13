@@ -120,9 +120,11 @@
 				<div class="col-md-12 ">
 					<article>
 						
-						<?php include('includes/article/social-buttons.php'); ?>
+						
 
 						<div class="article-content">
+
+						<?php include('includes/article/social-buttons.php'); ?>
 
 							<div class="article-body">
 
@@ -150,7 +152,7 @@
 
 								<?php include('includes/article-embeds/embedded-images-longread.php'); ?>
 
-								<?php include('includes/article-embeds/youtube.php'); ?>
+								<?php include('includes/article-embeds/custom.php'); ?>
 
 								<?php include('includes/article-embeds/tweet.php'); ?>
 								

@@ -218,12 +218,16 @@
 }
 .site-logo {
 	height: calc(80px - 1rem);
-	@extend .berlingske-logo;
+	@extend .font-s1;
 	width: 20rem;
 	display: inline-block;
 	margin: 0;
-	text-indent: -9999px;
+	font-size: 3.5rem;
 	transition: all .2s ease;
+	&:hover {
+		color: #000;
+		text-decoration: none;
+	}
 }
 
 
@@ -244,7 +248,7 @@
 		height: 60px;
 
 		.site-logo {
-			height: calc(60px - 1rem);
+			font-size: 2.5rem;
 			width: 240px;
 		}
 		[class*=tools-menu-] a {

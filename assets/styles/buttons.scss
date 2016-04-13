@@ -3,10 +3,7 @@
 //
 button {outline: 0!important}
 .btn {
-  @extend .font-sans;
-
   display: inline-block;
-  font-weight: normal;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -20,7 +17,6 @@ button {outline: 0!important}
   text-transform: uppercase;
   @extend .font-s2;
   font-weight: 500;
-  
   outline: 0!important;  
 
   &,
@@ -74,15 +70,22 @@ fieldset[disabled] a.btn {
 
 .btn-fff {
   @include button-variant(#333, #fff, darken(#fff, 5%));
-  // box-shadow: none;
+}
+
+.btn-blue {
+  @include button-variant(#fff, $col-blue-1, $col-blue-1 );
   &:hover {
-   //  background-color: transparent;
+    background-color: darken($col-blue-1, 10%);
   }
 }
 
-
-
-
+.btn-gray {
+  @include button-variant(#333, rgba(0,0,0,.1), rgba(0,0,0,.01) );
+  &:hover {
+    background-color: $col-blue-1;
+    color: #fff;
+  }
+}
 .btn-sms {
   font-size: .7rem!important;
 }
@@ -170,7 +173,7 @@ fieldset[disabled] a.btn {
 
 .btn-xs {
   // line-height: ensure proper height of button next to small input
-  @include button-size($btn-padding-y-xs, $btn-padding-x-xs, $font-size-xs, $line-height-xs, $btn-border-radius-xs);
+  @include button-size(.2rem, .625rem, .7rem, 1, 30rem);
 }
 
 
@@ -245,6 +248,8 @@ button {
     }
 
 }
+
+
 
 
 

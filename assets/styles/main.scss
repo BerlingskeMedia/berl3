@@ -356,7 +356,12 @@ $col-deck-label-width: 160px;
 .col-1-content {
 	width: calc(100% - 320px);
 	float: left;
-	padding-left: $col-1-width;
+	// padding-left: $col-1-width;
+}
+.tpl-article-large .col-1-content {
+	width: 100%;
+	padding-left: 0;
+
 }
 
 .col-2-sidebar {

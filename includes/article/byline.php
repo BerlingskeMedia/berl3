@@ -7,13 +7,8 @@
 			<div class="author-info">
 				<a href="tpl-author.php" title="Se [AUTHOR NAME]'s profil"><? dummy("text@author") ?></a>
 				
-				<? if (dumb_luck("100%")): ?>
-					<div class="author-follow"><button class="btn-follow-author" >Følg</button></div>
-				<? else: ?>
-					<div class="author-follow">
-						<a class="btn-follow-author btn-unfollow-author active" href="#" title="Stop med at følge [AUTHOR NAME]"><i class="bicon-ok-circled"></i></a>
-					</div>
-				<? endif ?>
+				<div class="author-follow"><button class="btn-follow-author" >Følg</button></div>
+				
 				<? if (dumb_luck("50%")): ?> 
 					<div class="author-username">
 						<a href="http://twitter.com" target="_blank"><i class="bicon-twitter col-twitter"></i> <? dummy("text@username") ?></a>

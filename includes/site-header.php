@@ -51,8 +51,8 @@
 						
 						<nav class="tools-menu-right">
 							<ul class="list-reset list-sm">
-								<li><a href="#" class=""> Køb abonnement</a></li>
-								<li><a href="#" class="site-login"><i class="bicon-user"></i> Log ind</a></li>
+								<li><a href="/" class=""> Køb abonnement</a></li>
+								<li><a href="/" class="site-login"><i class="bicon-user"></i> Log ind</a></li>
 							</ul>
 						</nav>			
 					</div>

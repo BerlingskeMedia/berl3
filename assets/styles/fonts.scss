@@ -53,7 +53,8 @@
   font-style: normal;
   font-stretch: normal;
   line-height: 1.2;
-  text-rendering: optimizeLegibility; 
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale; 
 }
 
 // SANOMAT SANS: 400 / 500 / 700 / 900
@@ -63,6 +64,8 @@
   font-stretch: normal;
   line-height: 1.2;
   text-rendering: optimizeLegibility; 
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 // GUARDIAN: 400 / 500 / 700 / 900
@@ -71,7 +74,8 @@
   font-style: normal;
   font-stretch: normal;
   line-height: 1.2;
-  text-rendering: optimizeLegibility; 
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 // GIORGIO: 300 / 400 / 500 / 700
@@ -81,6 +85,7 @@
   font-stretch: normal;
   line-height: 1;
   text-rendering: optimizeLegibility; 
+  -moz-osx-font-smoothing: grayscale;
 }
 
 
