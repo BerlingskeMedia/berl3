@@ -130,7 +130,7 @@
 
 								<?php include('includes/article-embeds/blog-bio.php'); ?>
 								
-								<? while (dumb_luck("4")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
+								<? while (dumb_luck("2")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
 
 								<?php include('includes/article-embeds/link.php'); ?>
 								
@@ -140,7 +140,7 @@
 								
 								<p><? dummy("text@paragraph") ?></p>
 
-								<?php include('includes/article-embeds/embedded-image-longread.php') ?>
+								
 								
 								<?php include('includes/article-embeds/blockquote.php'); ?>
 

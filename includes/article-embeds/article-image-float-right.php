@@ -1,17 +1,18 @@
-<?php if ($showEmbeddedImages) {
+<?php if ($showEmbeddedImages || $imageSize == '4') {
 	$class = 'show-counter';
 } ?>
 
 <figure class="article-image-float-right article-embed-pull-right ">
 
-	<a href="#" class="open-gallery <?php echo $class ?> sd">
+	<a href="#" class="open-gallery <?php echo $class ?> ">
 	<?php if($portrait) : ?>
 		<img src="<? dummy("image/portrait@400x,") ?>" width="" height="" alt="" />
 	<?php else : ?>
 		<img src="<? dummy("image@400x,") ?>" width="" height="" alt="" />
 	<?php endif; ?>
 		
-		<?php if($showEmbeddedImages): ?>
+		<?php if($class): ?>
+		<?php // if($showEmbeddedImages || $imageSize == '4'): ?>
 		<span class="gallery-counter">
 			<i class="bicon-camera"></i>
 			<span class="count">12</span>
@@ -30,4 +31,7 @@
 	</figcaption>
 </figure>
 
-<?php $portrait = false; ?>
+<?php 
+$portrait = false; 
+$class = false;
+?>

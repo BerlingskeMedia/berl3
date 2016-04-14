@@ -10,6 +10,16 @@
 		padding-bottom: .425rem;
 	}
 }
+.list-inline-block {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	li {
+		padding: 0;
+		display: inline-block;
+		margin-bottom: .4rem;
+	}
+}
 .list-time {
 	.list-body {
 		padding-left: 2.5rem;

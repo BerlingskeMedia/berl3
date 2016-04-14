@@ -85,7 +85,7 @@
 				<div class="article-content">
 					
 
-					<?php if($imageSize == '1'): // large image ?>
+					<?php if($imageSize == '1' || $imageSize == '4'): // large image ?>
 					
 						<?php include('includes/article-embeds/article-image.php'); ?>
 					
@@ -95,9 +95,10 @@
 
 					<?php elseif($imageSize == '3'): ?>
 
-						<?php include('includes/article-embeds/slider.php'); ?>
+						<?php include('includes/article-embeds/article-image.php'); ?>
+						<?php // include('includes/article-embeds/slider.php'); ?>
 
-					<?php elseif($imageSize == '4'): ?>
+					<?php elseif($imageSize == '5'): ?>
 
 						<?php include('includes/article-embeds/article-video.php'); ?>
 
@@ -148,11 +149,21 @@
 							
 							<?php include('includes/article-embeds/fact-default.php'); ?>
 
+							<?php include('includes/article-embeds/related.php'); ?>
+							
+							<?php include('includes/article-embeds/newsletter.php'); ?>
+							
 							<?php include('includes/article-embeds/topics.php'); ?>
-						<?php endif; // End Paywall ?>
 
+							
+
+
+						<?php endif; // End Paywall ?>
+						
 					</div><!-- article body -->
 					
+					
+
 				</div><!-- article content -->
 
 	

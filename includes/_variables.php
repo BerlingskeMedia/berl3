@@ -18,7 +18,7 @@ if(isset($_GET["business"])) {
 if (isset($_GET['imgSize'])) {
 	$imageSize = $_GET['imgSize'];
 } else {
-	$imageSize = '1'; // 0 = no image. 1 = large image. 2 = small image	
+	$imageSize = '1'; // 0 = no image. 1 = large image. 2 = small image. 3 = gallery. 4 = video, 5 = gallery + embedded images
 }
 
 if (isset($_GET['showQuote'])) {
@@ -69,6 +69,12 @@ if (isset($_GET['event'])) {
 
 if (isset($_GET['paywall'])) {
 	$showPaywall = true;
+}
+if (isset($_GET['showNewsletter'])) {
+	$showNewsletter = true;
+}
+if (isset($_GET['showRelated'])) {
+	$showRelated = true;
 }
 
 $campaignId = 'campaign-' . mt_rand(1,3);

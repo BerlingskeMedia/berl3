@@ -40,6 +40,10 @@ if(isset($_GET["business"])) {
 		padding: 1rem 0;
 		margin-top: 2rem;
 	}
+	h4 {
+		font-size: 1.5rem;
+		
+	}
 	.breaker {
 		display: block;
 		
@@ -117,116 +121,160 @@ if(isset($_GET["business"])) {
 					</div>
 				</div>
 				
-				<div class="col-lg-3">
-					<h4>Header / Menu / Footer</h4>
+				<div class="col-lg-12">
+					<h4>Header / Footer / User pages</h4>
 				</div>
 				
+				<div class="col-lg-3">
+					Header
+				</div>
 				<div class="col-lg-9">
 					<ul>
-						<li class="red"><a href="#">Header Frontpage</a> - <a href="#">Logged in</a></li>
-						<li class="red"><a href="#">Header Section</a> - <a href="#">Logged in</a></li>
-						
+						<li class="red"><a href="#">Frontpage</a> - <a href="#">(Logged in)</a></li>
+						<li class="red"><a href="#">Section</a> - <a href="#">(Logged in)</a></li>
 						<li class="red"><a href="#">User profile page</a></li>
+					</ul>
+				</div>
+
+				<div class="col-lg-3">
+					Footer
+				</div>
+				<div class="col-lg-9">
+					<ul>
+						
 						<li class="red"><a href="#">Footer</a></li>
 					</ul>
 				</div>
 
 				<div class="col-lg-3">
+					User
+				</div>
+				<div class="col-lg-9">
+					<ul>
+						<li class="red"><a href="#">User profile page</a></li>
+					</ul>
+				</div>
+
+				<div class="col-lg-12">
 					<h4>Front page</h4>
 				</div>
+
+				<div class="col-lg-3">Variations</div>
 			
 				<div class="col-lg-9">
 					<ul>
 						<li class="red"><a href="#">Default</a></li>
-						<li class="red">- <a href="#">Large top</a> <em>Option</em></li>
-						<li class="red">- <a href="#">Giant top</a> <em>Option</em></li>
-						<li class="red">- <a href="#">Live top</a> <em>Option</em></li>
+						<li class="red"><a href="#">Large top</a> </li>
+						<li class="red"><a href="#">Giant top</a> </li>
+						<li class="red"><a href="#">Live top</a></li>
 						
-						<li class="red">Oneliners: <a href="#">Breaking</a> <a href="#">Live</a> <a href="#">Comming up</a></li>
 						
+						
+					</ul>
+				</div>
+
+				<div class="col-lg-3">Oneliners</div>
+				<div class="col-lg-9">
+					<ul>
+						<li class="red"><a href="#">Breaking</a></li>
+						<li class="red"><a href="#">Live</a></li>
+						<li class="red"><a href="#">Comming up</a></li>
 					</ul>
 				</div>
 			
 				
-				<div class="col-lg-3">
+				<div class="col-lg-12">
 					<h4>Article</h4>
 				</div>
 				
+				<div class="col-lg-3">Images</div>
 				<div class="col-lg-9">
-					<div class="row">
-						<div class="col-lg-3">Images</div>
-						<div class="col-lg-9">
-							<ul>
-								<li class="orange"><a href="tpl-article.php?imgSize=1">Large image (default)</a></li>
-								<li class="orange"><a href="tpl-article.php?imgSize=0">No image</a> </li>
-								<li class="orange"><a href="tpl-article.php?imgSize=2">Small image</a></li>
-								<li class="orange"><a href="tpl-article.php?imgSize=3">Slider</a></li>
-								<li class="orange"><a href="tpl-article.php?imgSize=4">Video</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-lg-3">Embeds</div>
-						<div class="col-lg-9">
-							<ul>
-								<li class="orange"><a href="tpl-article.php?showEmbeds">Embedded images</a></li>
-								<li class="orange"><a href="tpl-article.php?showCustom&amp;imgSize=1">Custom embed</a></li>
-								<li class="orange"><a href="tpl-article.php?showTweet">Tweet</a></li>
-								<li class="orange"><a href="tpl-article.php?showQuote">Quote</a></li>
-								<li class="orange"><a href="tpl-article.php?showFactDefault">Factbox - Default</a></li>
-								<li class="orange"><a href="tpl-article.php?showFactEmbedded">Factbox - Embedded</a></li>
-								<li class="orange"><a href="tpl-article.php?showTheme">Theme</a></li>
-								<li class="orange"><a href="tpl-article.php?showTimeline">Timeline</a></li>
-								<li class="orange"><a href="tpl-article.php?showLink">Embedded links</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-lg-3">Header stuff</div>
-						<div class="col-lg-9">
-							<ul>
-								<li class="orange"><a href="tpl-article.php?showTrumpet">Trumpet</a></li>
-								<li class="orange"><a href="tpl-article.php?blog">Blog</a></li>
-								<li class="orange"><a href="tpl-article.php?editorial">Editorial</a></li>
-								<li class="orange"><a href="tpl-article.php?showRating">Rating</a> (<a href="doc-article-elements.php?showRating&amp;blog">Blog template</a>)</li>
-								<li class="red"><a href="#">'Groft sagt'</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-lg-3">Tags</div>
-						<div class="col-lg-9">
-							<ul>
-								<li class="orange"><a href="tpl-article.php?event=breaking">Tag: Breaking</a> </li>
-								<li class="orange"><a href="tpl-article.php?event=live">Tag: Live</a> </li>
-								<li class="orange"><a href="tpl-article.php?event=update">Tag: To be updated</a> </li>
-								<li class="orange"><a href="tpl-article.php?event=inawhile">Tag: In a while</a> </li>
-							</ul>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-lg-3">Paywall</div>
-						<div class="col-lg-9">
-							<ul>
-								<li class="red"><a href="#">Pay wall sign</a></li>
-							</ul>
-						</div>
+					
+					<ul>
+						<li class="orange"><a href="tpl-article.php?imgSize=1">Large image (default)</a></li>
+						<li class="orange"><a href="tpl-article.php?imgSize=0">No image</a> </li>
+						<li class="orange"><a href="tpl-article.php?imgSize=2">Small image</a></li>
+						<li class="orange"><a href="tpl-article.php?imgSize=3">Gallery - main image only</a></li>
+						<li class="orange"><a href="tpl-article.php?imgSize=4">Gallery - including embedded images</a></li>
+						<li class="orange"><a href="tpl-article.php?imgSize=5">Video</a></li>
+						
+					</ul>
 					</div>
 					
-				</div>
+					<div class="col-lg-3">Header</div>
 
-				<div class="col-lg-3">
+					<div class="col-lg-9">
+						<ul>
+							<li class="orange"><a href="tpl-article.php?showTrumpet">Trumpet</a></li>
+							<li class="orange"><a href="tpl-article.php?blog">Blog</a></li>
+							<li class="orange"><a href="tpl-article.php?editorial">Editorial</a></li>
+							<li class="orange"><a href="tpl-article.php?showRating">Rating</a> (<a href="doc-article-elements.php?showRating&amp;blog">Blog template</a>)</li>
+							<li class="red"><a href="#">'Groft sagt'</a></li>
+						</ul>
+					</div>
+
+				<div class="col-lg-3">Embeds</div>
+				<div class="col-lg-9">
+
+					<ul>
+						
+						<li class="orange"><a href="tpl-article.php?showCustom&amp;imgSize=1">Custom embed</a></li>
+						<li class="orange"><a href="tpl-article.php?showTweet">Tweet</a></li>
+						<li class="orange"><a href="tpl-article.php?showQuote">Quote</a></li>
+						<li class="orange"><a href="tpl-article.php?showFactDefault">Factbox - Default</a></li>
+						<li class="orange"><a href="tpl-article.php?showFactEmbedded">Factbox - Embedded</a></li>
+						<li class="orange"><a href="tpl-article.php?showTheme">Theme</a></li>
+						<li class="orange"><a href="tpl-article.php?showTimeline">Timeline</a></li>
+						<li class="orange"><a href="tpl-article.php?showLink">Embedded links</a></li>
+						<li class="red"><a href="tpl-article.php?showNewsletter">Newsletter signup</a></li>
+						<li class="red"><a href="tpl-article.php?showRelated">Related articles</a></li>
+					</ul>
+					</div>
+
+					
+
+					<div class="col-lg-3">Tags</div>
+					
+					<div class="col-lg-9">
+
+						<ul>
+							<li class="orange"><a href="tpl-article.php?event=breaking">Breaking</a> </li>
+							<li class="orange"><a href="tpl-article.php?event=live">Live</a> </li>
+							<li class="orange"><a href="tpl-article.php?event=update">To be updated</a> </li>
+							<li class="orange"><a href="tpl-article.php?event=inawhile">In a while</a> </li>
+						</ul>
+					</div>
+					<div class="col-lg-3">
+						Partner articles 
+					</div>
+					<div class="col-lg-9">
+						<ul>
+							<li class="red"><a href="#">'Videnskab.dk'</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-3">Paywall</div>
+
+					<div class="col-lg-9">
+
+					<ul>
+						<li class="red"><a href="#">Pay wall sign</a></li>
+					</ul>
+					</div>
+					
+				
+
+				<div class="col-lg-12">
 					<h4>Article Longread</h4>
 				</div>
 				
-				<div class="col-lg-9">
-					<div class="row">
+				
+					
 						<div class="col-lg-3">
 							Embeds
 						</div>
 						<div class="col-lg-9">
 							<ul>
-								<li class="orange"><a href="tpl-article-longread.php?showEmbeds">Embedded images</a></li>
+								<li class="orange"><a href="tpl-article-longread.php?imgSize=4">Embedded images</a></li>
 								<li class="orange"><a href="tpl-article-longread.php?showCustom&amp;imgSize=1">Custom embed</a></li>
 								<li class="orange"><a href="tpl-article-longread.php?showTweet">Tweet embed</a></li>
 								<li class="orange"><a href="tpl-article-longread.php?showQuote">Quote</a></li>	
@@ -235,11 +283,12 @@ if(isset($_GET["business"])) {
 								<li class="orange"><a href="tpl-article-longread.php?showTheme">Theme</a></li>
 								<li class="orange"><a href="tpl-article-longread.php?showTimeline">Timeline</a></li>
 								<li class="orange"><a href="tpl-article-longread.php?showLink">Embedded links</a></li>	
+								<li class="red"><a href="tpl-article-longread.php?showNewsletter">Newsletter signup</a></li>
+								<li class="red"><a href="tpl-article-longread.php?showrelated">Related articles</a></li>
 							</ul>
 							
 						</div>
-					</div>
-					<div class="row">
+				
 						<div class="col-lg-3">
 							Header
 						</div>
@@ -249,39 +298,27 @@ if(isset($_GET["business"])) {
 							</ul>
 							
 						</div>
-					</div>
 					
-					<div class="row">
-						<div class="col-lg-3">Tags</div>
-						<div class="col-lg-9">
-							<ul>
-								<li class="orange"><a href="tpl-article-longread.php?">Default</a></li>
-								<li class="orange"><a href="tpl-article-longread.php?event=breaking">Tag: Breaking</a> </li>
-								<li class="orange"><a href="tpl-article-longread.php?event=live">Tag: Live</a> </li>
-								<li class="orange"><a href="tpl-article-longread.php?event=update">Tag: To be updated</a> </li>
-								<li class="orange"><a href="tpl-article-longread.php?event=inawhile">Tag: In a while</a> </li>
-								<li class="orange"><a href="tpl-article-longread.php?showRating">Rating</a></li>
-							</ul>
-						</div>
-					</div>	
-					<div class="row">
 						<div class="col-lg-3">Paywall</div>
+					
 						<div class="col-lg-9">
 							<ul>
 								<li class="red"><a href="#">Pay wall sign</a></li>
 							</ul>
 						</div>
-					</div>	
+					
 						
 						
 						
-					</ul>
-				</div>
-
-				<div class="col-lg-3">
-					<h4>Article misc</h4>
-				</div>
+					
 				
+
+				<div class="col-lg-12">
+					<h4>Article Large</h4>
+				</div>
+				<div class="col-lg-3">
+					
+				</div>
 				<div class="col-lg-9">
 					<ul>
 						<li class="orange"><a href="tpl-article-large.php">Article - Large</a></li>
@@ -289,10 +326,11 @@ if(isset($_GET["business"])) {
 				</div>
 
 
-				<div class="col-lg-3">
+				<div class="col-lg-12">
 					<h4>Sections</h4>
 				</div>
 				
+				<div class="col-lg-3"></div>
 				<div class="col-lg-9">
 					<ul>
 						<li class="red"><a href="#">Auto (default)</a></li>
@@ -309,10 +347,13 @@ if(isset($_GET["business"])) {
 					</ul>
 				</div>
 
-				<div class="col-lg-3">
+				<div class="col-lg-12">
 					<h4>Plus</h4>
 				</div>
 				
+				<div class="col-lg-3">
+					
+				</div>
 				<div class="col-lg-9">
 					<ul>
 						<li class="red"><a href="#">Front page</a></li>
@@ -323,10 +364,11 @@ if(isset($_GET["business"])) {
 					</ul>
 				</div>
 
-				<div class="col-lg-3">
+				<div class="col-lg-12">
 					<h4>Singles</h4>
 				</div>
 				
+				<div class="col-lg-3"></div>
 				<div class="col-lg-9">
 					<ul>
 						<li class="red"><a href="#">Front-page</a></li>
@@ -334,22 +376,32 @@ if(isset($_GET["business"])) {
 					</ul>
 				</div>
 
-				<div class="col-lg-3">
+				<div class="col-lg-12">
 					<h4>Advertorials</h4>
 				</div>
 				
+				<div class="col-lg-3">Section</div>
+				<div class="col-lg-9">
+					<ul>
+						<li class="red"><a href="#">Example 1</a> <a href="#">Example 2</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-3">
+					Article
+				</div>
 				<div class="col-lg-9">
 					<ul>
 						
-						<li class="red">Article <a href="#">Example 1</a> <a href="#">Example 2</a></li>
-						<li class="red">Section	 <a href="#">Example 1</a> <a href="#">Example 2</a></li>
+						<li class="red"><a href="#">Example 1</a> <a href="#">Example 2</a></li>
+
 					</ul>
 				</div>
 
-				<div class="col-lg-3">
+				<div class="col-lg-12">
 					<h4>Gallery</h4>
 				</div>
 				
+				<div class="col-lg-3"></div>
 				<div class="col-lg-9">
 					<ul>
 						<li class="red"><a href="#">Teaser</a></li>
@@ -359,10 +411,11 @@ if(isset($_GET["business"])) {
 					</ul>
 				</div>
 
-				<div class="col-lg-3">
+				<div class="col-lg-12">
 					<h4>Text pages</h4>
 				</div>
-
+				
+				<div class="col-lg-3"></div>
 				<div class="col-lg-9">
 					<ul>
 						<li class="red"><a href="#">Contact</a></li>
@@ -370,10 +423,11 @@ if(isset($_GET["business"])) {
 					</ul>
 				</div>
 
-				<div class="col-lg-3">
+				<div class="col-lg-12">
 					<h4>Misc</h4>
 				</div>
 				
+				<div class="col-lg-3"></div>
 				<div class="col-lg-9">
 					<ul>
 						<li class="red"><a href="#">404</a></li>
@@ -385,10 +439,11 @@ if(isset($_GET["business"])) {
 				</div>
 
 
-				<div class="col-lg-3">
+				<div class="col-lg-12">
 					<h4>Email templates</h4>
 				</div>
 				
+				<div class="col-lg-3"></div>
 				<div class="col-lg-9">
 					<ul>
 						<li class="red"><a href="#">Newsletter</a></li>

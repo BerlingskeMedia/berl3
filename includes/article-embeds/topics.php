@@ -1,4 +1,9 @@
 <div class="article-topics">
-Emner:
-<a href="tpl-topic.php">Elektronik</a>  <a href="tpl-topic.php">Elgiganten</a>  <a href="tpl-topic.php">Fona</a>
+
+<ul class="list-inline-block">
+	<li>Emner:</li>
+	<? while (dumb_luck("1-6")): ?><li><a href="tpl-topic.php" title="Mere om [TOPIC]"><? dummy("text@topics") ?></a></li><? endwhile ?>
+</ul>
+
+
 </div>

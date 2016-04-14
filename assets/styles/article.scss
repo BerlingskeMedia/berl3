@@ -256,7 +256,8 @@ a:hover {
 	background-color: transparent;
 }
 .article-content {
-	padding-bottom: 10rem;
+	position: relative;
+	padding-bottom: 2rem;
 	margin-left: $col-1-width / 2;
 	margin-right: $col-1-width / 2;
 	
@@ -396,6 +397,9 @@ a:hover {
 	margin-right: -$col-1-width;
 	* {
 		max-width: 100%;
+	}
+	iframe {
+		margin: 0 auto;
 	}
 }
 .article-summary {
@@ -891,13 +895,17 @@ blockquote {
 	font-size: .75rem;
 	margin-bottom: $spacer;
 	@extend .font-g1;
+	clear: left;
 	color: #999;
+	
+	li {
+		margin-right: .2rem;
+	}
 	a {
 		display: inline-block;
 		border-radius: 40rem;
 		vertical-align: middle;
 		padding: .3rem .625rem .2rem; 
-		margin-left: .3rem;
 		background-color: rgba(0,0,0,.05);
 		color: #666;
 		&:hover {
@@ -907,6 +915,51 @@ blockquote {
 	}
 }
 
+.article-related {
+	width: 60%;
+	float: left;
+	padding-right: 1rem;
+}
+
+.list-article-related {
+	list-style: none;
+	padding-left: 0;
+	li {
+		padding: .4rem 0;
+		font-size: .9rem;
+		display: none;
+	}
+	li:nth-child(-n+2) {
+		display: block;
+	}
+}
+
+.article-related + .article-newsletter {
+	padding-left: $spacer;
+	border-right: $border-width solid $border-color;
+}
+.article-newsletter {
+	width: 40%;
+	float: left;
+	@extend .mb;
+	margin-left: -$col-1-width / 2;
+	input[type="email"]{
+		border: 0;
+		padding: .4rem .3rem;
+		background-color: transparent;
+		border-bottom: $border-width solid #999;
+		font-size: .8rem;
+	&:focus {
+		outline: 0;
+		background-color: #fff;
+		border-color: #ddd;
+	}
+	}
+	input:focus + .btn {
+		background-color: $col-blue-1;
+		color: #fff;
+	}
+}
 .article-image-longread {
 	background-size: cover;
 	background-position: center center;
@@ -949,7 +1002,7 @@ blockquote {
 
 }
 
-.open-gallery {
+a.open-gallery {
 	&:after {
 		width: 2rem;
 		height: 2rem;
@@ -972,7 +1025,7 @@ blockquote {
 	}
 }
 .show-counter:after {
-	display: none;
+	display: none!important;
 }
 figure > .open-gallery {
 	position: relative;
@@ -1014,6 +1067,9 @@ figure > .open-gallery {
 	}
 }
 .tpl-article-longread {
+	.article-embedded-custom {
+		// margin-left: -$col-1-width;	
+	}
 	.article-embed-pull-right {
 		margin-right: -10rem;
 	}
