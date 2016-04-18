@@ -182,11 +182,13 @@
 		</div>
 		</div>
 
-		<div class="row article-below">
-		<div class="col-md-12">
-		Footer
-		</div></div>
-		
+		<div class="article-below">
+			
+				<div class="col-md-12">
+				Footer
+				</div>
+			
+		</div>
 		
 		</div><!-- container -->
 

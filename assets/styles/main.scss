@@ -368,5 +368,11 @@ $col-deck-label-width: 160px;
 	float: left;
 	margin-left: 20px;
 }
-
+@include media-breakpoint-down(sm) {
+	.col-2-sidebar {
+		width: 100%;
+		float: none;
+		margin: 0 auto;
+	}
+}
 @import "tools";
