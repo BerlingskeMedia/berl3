@@ -53,13 +53,13 @@
 				
 				<div class="article-date">Onsdag <? dummy("text@date-long") ?> &mdash; kl. <? dummy("text@time") ?></div>
 				
-				<p class="article-summary relative"><? dummy("text@teaser") ?>
-					<a href="#" class="scroll-to-comments">
-						<span class="comments-count">
-							<? dummy("text@number") ?>
-						</span>
-					</a>
-				</p>
+				<a href="#" class="scroll-to-comments">
+					<span class="comments-count">
+						<? dummy("text@number") ?>
+					</span>
+				</a>
+
+				<p class="article-summary"><? dummy("text@teaser") ?></p>
 			</div>
 		</div>
 		
@@ -80,13 +80,13 @@
 			
 		<?php include('includes/article-embeds/rating.php'); ?>
 		
-		<p class="article-summary relative"><? dummy("text@teaser") ?>
-			<a href="#" class="scroll-to-comments">
-				<span class="comments-count">
-					<i><? dummy("text@number") ?></i>
-				</span>
-			</a>
-		</p>
+		<a href="#" class="scroll-to-comments">
+			<span class="comments-count">
+				<i><? dummy("text@number") ?></i>
+			</span>
+		</a>
+
+		<p class="article-summary relative"><? dummy("text@teaser") ?></p>
 		
 		
 

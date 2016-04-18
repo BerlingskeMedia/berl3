@@ -51,11 +51,9 @@
 
 	<div class="banner-wrapper">
 	
-	
-	
-	
 	<div class="container">
 		<div class="row">
+		
 		<div class="col-md-12">
 
 			<!-- <div class="article-badge-kronik">
@@ -73,11 +71,6 @@
 		<?php include('includes/article/header.php'); ?>
 
 		<div class="col-1-content">
-	
-		
-			
-				
-				
 
 				<div class="article-content">
 					
@@ -89,7 +82,6 @@
 					<?php elseif($imageSize == '3'): ?>
 
 						<?php include('includes/article-embeds/article-image.php'); ?>
-						<?php // include('includes/article-embeds/slider.php'); ?>
 
 					<?php elseif($imageSize == '5'): ?>
 
@@ -148,8 +140,6 @@
 							<?php include('includes/article-embeds/fact-default.php'); ?>
 
 							<?php include('includes/article-embeds/related.php'); ?>
-							
-							
 							
 							<?php include('includes/article-embeds/topics.php'); ?>
 
