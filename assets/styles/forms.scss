@@ -1,0 +1,35 @@
+.form-round {
+	line-height: normal!important;
+	input[type="email"]{
+		border: 0;
+		padding: .3rem .825rem;
+		background-color: #fff;
+		font-size: .9rem;
+		border-radius:  30rem  0 0 30rem;
+		float: left;
+		width: 75%;
+		height: 2rem;
+		&:focus {
+			outline: 0;
+			background-color: #fff;
+			border-color: #ddd;
+		}
+	}
+	.btn {
+		border-radius: 0 30rem 30rem 0;
+		padding-left: .5rem;
+		padding-right: 1rem;
+		padding-top: .17rem;
+		float: left;
+		width: 25%;
+		height: 2rem;
+	}
+	.checkbox {
+		margin-bottom: 0;
+	}
+	input[type="checkbox"] {
+		margin-top: .1rem;
+	}
+	
+}
+

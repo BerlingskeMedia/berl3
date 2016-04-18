@@ -512,11 +512,7 @@ a:hover {
 		font-size: .9rem;
 	}
 }
-.article-embed-pull-right,
-/*.article-newsletter,
-.article-theme-embedded,
-.article-timeline-embedded,
-.article-fact-embedded*/ {
+.article-embed-pull-right {
 	margin: 0 0 ($spacer * 2) $spacer;
 	clear: right;
 	background-color: darken($background-color, 5%);
@@ -651,12 +647,12 @@ a:hover {
 .img-gradient {
 	display: inline-block;
 	overflow: hidden;
-	border-radius: 50%;
 	@include gradient-directional( $col-blue-1, #fff, 45deg);
-
+	border-radius: 50%;
 	img {
 		filter: grayscale(100%) ;	
 		opacity: .7;
+		border-radius: 50%;
 	}
 }
 
@@ -971,39 +967,28 @@ blockquote {
 
 
 .article-newsletter {
-	@extend .article-embed-pull-right;
-	
-	margin-bottom: $spacer!important;
+	margin: 0  (-$col-1-width / 2) .8rem $spacer;
+	background-color: darken($background-color, 5%);
+	float: right;
+	padding: $spacer;
+	width: 14rem;
+	clear: right;
 	p {
 		line-height: 1;
+		@extend .font-sans-alt;
+		font-size: 1.2rem;
+	}
+	label {
+		@extend .clearfix;
+		display: block;
+		padding-top: 1rem;
+	}
+	span {
+		font-size: .9rem; 
 	}
 	
 
-		input[type="email"]{
-		border: 0;
-		padding: .4rem .3rem;
-		background-color: transparent;
-		border-bottom: $border-width solid #999;
-		font-size: .8rem;
-	&:focus {
-		outline: 0;
-		background-color: #fff;
-		border-color: #ddd;
-	}
-	}
-	input:focus + .btn {
-		background-color: $col-blue-1;
-		color: #fff;
-	}
-	span {
-		padding-top: .2rem;
-		font-size: .7rem; 
-		margin-top: .3rem;
-		display: none;
-	}
-	input:focus + btn + span {
-		display: block;
-	}
+	
 
 }
 .article-image-longread {
@@ -1181,6 +1166,7 @@ figure > .open-gallery {
 }
 
 @include media-breakpoint-down(lg) {
+	.article-newsletter,
 	.article-image-float-right {
 		margin-right: auto;
 	}
