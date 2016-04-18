@@ -7,7 +7,7 @@
 }
 .article-title {
 	@extend .font-header;
-	margin-bottom: $spacer;
+	margin-bottom: $spacer * 2;
 	font-size: 3rem;
 }
 
@@ -19,10 +19,8 @@
 	margin-left: -($col-1-width / 2);
 }
 .scroll-to-comments {
-	
 	display: inline-block;
 	float:right;
-	margin-left: .625rem;
 	position: relative;
 	padding-bottom: .9rem;
 	&:after {
@@ -63,40 +61,8 @@
 	
 	i {
 		font-style: normal;
-		opacity: 0;
+		opacity: 1;
 		display: block;
-		animation: fadeIn .9s;
-		animation-fill-mode:forwards;
-		animation-delay:0s;
-		animation-timing-function: ease-inout;
-		transform: translate3d(0, -100%, 0);
-	}
-
-	
-	
-	
-}
-@keyframes fadeIn {
-	0% {
-		opacity: 1;
-		transform: translate3d(0, -100%, 0);
-	}
-	75% {
-		opacity: 1;
-		transform: translate3d(0, 100%, 0);
-	}
-	75.1% {
-		opacity: 0;
-		transform: translate3d(0, 100%, 0);
-	}
-	76% {
-		opacity: 1;
-		transform: translate3d(0, -100%, 0);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translate3d(0, 0, 0);
 	}
 }
 
@@ -356,6 +322,7 @@ a:hover {
 	margin-bottom: $spacer;
 	margin-left: $spacer;
 	margin-right: -$col-1-width / 2;
+	margin-top: .2rem;
 	position: relative;
 	clear: right;
 	max-width: 21.75rem;
@@ -408,7 +375,7 @@ a:hover {
 .article-summary {
 	font-size: 1.4rem;
 	color: #666;
-	max-width: 930px;
+	max-width: 55.125rem;
 	@extend .font-g1;
 	font-weight: 400;
 	clear: left;
@@ -513,7 +480,7 @@ a:hover {
 	}
 }
 .article-embed-pull-right {
-	margin: 0 0 ($spacer * 2) $spacer;
+	margin: .2rem 0 .6rem  $spacer;
 	clear: right;
 	background-color: darken($background-color, 5%);
 	padding: $spacer;
@@ -716,8 +683,7 @@ $sharebutton: 2.6rem;
 	transition: all .2s ease;
 	color: #666;
 	i {
-		line-height: 1;
-		font-size: 1.5rem;
+		font-size: 1.3rem;
 		vertical-align: initial;
 	}
 	&:hover {
@@ -976,12 +942,15 @@ blockquote {
 	p {
 		line-height: 1;
 		@extend .font-sans-alt;
-		font-size: 1.2rem;
+		font-size: 1.1rem;
+		text-transform: uppercase;
 	}
 	label {
 		@extend .clearfix;
 		display: block;
-		padding-top: 1rem;
+		padding-top: .5rem;
+		@extend .font-s2;
+		color: rgba(0,0,0,.5);
 	}
 	span {
 		font-size: .9rem; 
@@ -1164,7 +1133,16 @@ figure > .open-gallery {
 	float: right;
 
 }
-
+@include media-breakpoint-only(xl) {
+	.scroll-to-comments {
+		margin-right: 17rem;
+	}
+}
+@include media-breakpoint-only(lg) {
+	.share-buttons {
+		margin-bottom: 2rem;
+	}
+}
 @include media-breakpoint-down(lg) {
 	.article-newsletter,
 	.article-image-float-right {
@@ -1180,13 +1158,17 @@ figure > .open-gallery {
 	}
 	.share-buttons {
 		display: block;
-		margin: 0 0 $spacer * 2 0;
+		margin: 0 0 1rem 0;
 		float: none;
 		.mb, 
 		.extra-buttons {
 			display: inline-block;
 			vertical-align: top;
 			margin-bottom: 0;
+		}
+		.mb + .mb,
+		.extra-buttons {
+			margin-left: .625rem;
 		}
 		.btn-label,
 		.social-toggle {
@@ -1197,11 +1179,15 @@ figure > .open-gallery {
 @include media-breakpoint-down(md) {
 	.article-summary {
 		max-width: none;
-		
 	}
 }
 
 @include media-breakpoint-down(sm) {
+	.article-body {
+		.article-image-float-right {
+			margin-top: 0;
+		}
+	}
 	.article-title {
 		font-size: 2rem;
 	}
@@ -1236,5 +1222,13 @@ figure > .open-gallery {
 	.article-avatar {
 		margin-right: .3rem;
 	}
+	
 
+}
+@include media-breakpoint-down(xs) {
+	.article-newsletter {
+		width: 100%;
+		margin: 0 0 $spacer 0;
+		clear: both;
+	}
 }

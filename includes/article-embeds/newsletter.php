@@ -1,10 +1,10 @@
 <?php if($showNewsletter): ?>
 <aside class="article-newsletter">	
 	<!-- <div class="aside-header text-center mb-sm">Bliv opdateret</div> -->
-	<p class="text-center">Berlingskes nyhedsbrev</p>	
+	<p class="text-center">Berlingskes Nyhedsbrev</p>	
 	<form action="" class="form-round">
 		<div class="clearfix">
-			<input type="email" placeholder="Din email" required>
+			<input type="email" placeholder="Din e-mail" required>
 			<button class="btn  btn-blue">OK</button>
 		</div>
 		
