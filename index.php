@@ -257,7 +257,8 @@ if(isset($_GET["business"])) {
 					<div class="col-lg-9">
 
 					<ul>
-						<li class="red"><a href="#">Pay wall sign</a></li>
+						<li class="red"><a href="#">Pay wall sign - Direct</a></li>
+						<li class="red"><a href="#">Pay wall sign - Open</a></li>
 					</ul>
 					</div>
 					
@@ -303,7 +304,8 @@ if(isset($_GET["business"])) {
 					
 						<div class="col-lg-9">
 							<ul>
-								<li class="red"><a href="#">Pay wall sign</a></li>
+								<li class="red"><a href="#">Pay wall sign - Direct</a></li>
+								<li class="red"><a href="#">Pay wall sign - Open</a></li>
 							</ul>
 						</div>
 					

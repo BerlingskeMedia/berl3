@@ -14,7 +14,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Berlingske LIVE</title>
 	<link rel="stylesheet" href="/dist/styles/main.css">
-	<link href='https://fonts.googleapis.com/css?family=Montserrat|Oswald:300' rel='stylesheet' type='text/css'>
+	
 </head>
 <body class=" <?php if($siteBusiness): ?>site-business<?php endif; ?> show-site-search tpl-article">
 
@@ -25,7 +25,7 @@
 <div class="hidden-menu" id="hidden-menu">
 	
 	<ul class="demo-menu">
-		HEJ
+		
 	</ul>
 </div>
 
@@ -33,10 +33,7 @@
 
 
 <div class="site-search-overlay">
-	<div class="warning">
-
-		<div class="text-center"><p><strong>Av av av</strong></p> <p>Dette website er ikke responsivt endnu - kan endnu kun ses på store skærme :-)</p>
-		</div>
+		
 	</div>	
 </div>
 
@@ -44,7 +41,7 @@
 <?php include('includes/offcanvas-menu.php'); ?>
 
 
-<?php include('includes/site-header.php'); ?>
+<?php // include('includes/site-header.php'); ?>
 
 
 
@@ -61,7 +58,7 @@
 		<div class="row">
 		<div class="col-md-12">
 
-			<div class="article-badge-kronik">
+			<!-- <div class="article-badge-kronik">
 			<?php if($templateBlog): ?>
 				KRONIKKEN
 			<?php elseif($templateEditorial): ?>
@@ -70,7 +67,7 @@
 				<? dummy("text@b-cat") ?>
 			<?php endif; ?>
 
-			</div>
+			</div> -->
 	
 		
 		<?php include('includes/article/header.php'); ?>
@@ -88,10 +85,6 @@
 					<?php if($imageSize == '1' || $imageSize == '4'): // large image ?>
 					
 						<?php include('includes/article-embeds/article-image.php'); ?>
-					
-					<?php elseif ($imageSize == '2'): ?>
-						<?php $portrait = true; ?>
-						<?php include('includes/article-embeds/article-image-float-right.php'); ?>
 
 					<?php elseif($imageSize == '3'): ?>
 
@@ -109,10 +102,15 @@
 
 					<div class="article-body">
 
-						
-						
+						<?php if ($imageSize == '2'): ?>
+							<?php $portrait = true; ?>
+							<?php include('includes/article-embeds/article-image-float-right.php'); ?>
+
+						 <?php endif; ?>
+
 						<?php include('includes/article-embeds/blog-bio.php'); ?>
-						
+						<?php include('includes/article-embeds/newsletter.php'); ?>
+
 						<? while (dumb_luck("2")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
 							
 						<?php if($showPaywall): ?>
@@ -123,7 +121,7 @@
 
 						
 						<?php if(!$showPaywall): ?>
-
+							
 							<? while (dumb_luck("2")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
 
 
@@ -151,7 +149,7 @@
 
 							<?php include('includes/article-embeds/related.php'); ?>
 							
-							<?php include('includes/article-embeds/newsletter.php'); ?>
+							
 							
 							<?php include('includes/article-embeds/topics.php'); ?>
 

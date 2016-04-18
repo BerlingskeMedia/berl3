@@ -1,14 +1,16 @@
 <?php if($showTimelineEmbedded): ?>
-<aside class="article-timeline-embedded article-embed-pull-right">
-	<div class="aside-header-sm">
-		Tidslinie
-	</div>
+<aside class="article-timeline-embedded article-embed-pull-right embed-collapsed-sm">
+	<div class="embed-content">
 
-	<div class="aside-subheader">
-		<? dummy("text@headline") ?>
-	</div>
+		<div class="aside-header-sm">
+			Tidslinie
+		</div>
+
+		<div class="aside-subheader">
+			<? dummy("text@headline") ?>
+		</div>
 	
-	<div class="fact-content">
+	
 
 		<dl>
 			<? while (dumb_luck("3-6")): ?>
@@ -41,7 +43,11 @@
 			</dd>
 
 		</dl>
-		
+
+	</div>
+
+	<div class="embed-fade text-center">
+		<button class="btn btn-blue toggle-embed btn-sm">Udvid tidslinie</button>
 	</div>
 </aside>
 

@@ -353,9 +353,12 @@ a:hover {
 .article-image-float-right {
 	margin-bottom: $spacer;
 	margin-left: $spacer;
+	margin-right: -$col-1-width / 2;
 	position: relative;
-	margin-top: .5rem;
 	clear: right;
+	max-width: 21.75rem;
+	float: right;
+
 	.gallery-counter {
 		font-size: 1.5rem;
 		padding: .4rem;
@@ -395,9 +398,7 @@ a:hover {
 	overflow: hidden;
 	clear: both;
 	margin-right: -$col-1-width;
-	* {
-		max-width: 100%;
-	}
+	
 	iframe {
 		margin: 0 auto;
 	}
@@ -412,12 +413,44 @@ a:hover {
 }
 
 
-.fact-content {
+.embed-fade {
+	display: none;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+	&:before {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: 3.5rem;
+		@include gradient-vertical(
+			fade-out(darken($background-color, 5%),1), 
+			darken($background-color, 5%), 
+			0%, 70%);
+
+		/*@include gradient-vertical(
+			fade-out(red,.5), 
+			red, 
+			0%, 100%);*/
+
+		
+		content: '';
+		z-index: 0;
+	}
+}
+.toggle-embed {
+	z-index: 2;
+	position: relative;
+	margin: 0 auto -.9rem;
+}
+.embed-content {
 	font-size: .7rem;
 	font-weight: 400;
-
 	@extend .font-g1;
-
+	max-height: none;
 	p, li {
 		font-size: .9rem;
 		@extend .font-g1;
@@ -476,23 +509,50 @@ a:hover {
 		font-size: .9rem;
 	}
 }
+.article-embed-pull-right,
+/*.article-newsletter,
 .article-theme-embedded,
 .article-timeline-embedded,
-.article-fact-embedded {
-	margin: 0 0 $spacer $spacer;
+.article-fact-embedded*/ {
+	margin: 0 0 ($spacer * 2) $spacer;
 	clear: right;
-	padding: $spacer;
 	background-color: darken($background-color, 5%);
+	padding: $spacer;
+	position: relative;
+}
+@include media-breakpoint-down(sm) {
+	.embed-collapsed-sm {
+		.embed-content {
+			max-height: 140px;
+			overflow: hidden;
+		}
+		.embed-fade {
+			display: block;
+		}
+	}
+	
+}
+
+.embed-collapsed {
+	.embed-content {
+		max-height: 140px;
+		overflow: hidden;
+	}
+	.embed-fade {
+		display: block;
+	}
 }
 
 .article-fact-default {
+	position: relative;
+	margin-bottom: $spacer * 3;
+	background-color: darken($background-color, 5%);
 	padding: $spacer;
-	background-color: darken($background-color, 5%);	
 }
 
 [class*="aside-header"] {
 	@extend .font-sans-alt;
-	color: $col-blue-1;
+	color: #222;
 	font-size: 1.5rem;
 	text-transform: uppercase;
 	font-weight: normal;
@@ -607,30 +667,6 @@ a:hover {
 
 
 
-.article-embed-right {
-	float: right;
-	margin: 0 0 $spacer $spacer;
-	max-width: 280px;
-
-}
-.embed-header {
-	font-family: arial;
-}
-
-.article-pull-left {
-	margin-left: -$col-1-width;
-}
-
-.article-embed-header {
-	font-size: .7rem;
-	text-transform: uppercase;
-	margin-bottom: .2rem;
-}
-.article-float-left {
-	margin-left: -$col-1-width;
-	float: left;
-	max-width: 200px;
-}
 .article-embedded-link {	
 
 	clear: left;
@@ -761,7 +797,6 @@ $sharebutton: 2.6rem;
 }
 
 .share-buttons {
-	
 	display: inline-block;
 	margin-left: -4rem;
 	text-align: center;
@@ -802,10 +837,7 @@ $sharebutton: 2.6rem;
 		color: #999;
 	}
 }
-.article-embed-right {
-	margin: 0 0 $spacer $spacer;
-	float: right;
-}
+
 
 
 .byline-blog {
@@ -934,16 +966,17 @@ blockquote {
 	}
 }
 
-.article-related + .article-newsletter {
-	padding-left: $spacer;
-	border-right: $border-width solid $border-color;
-}
+
 .article-newsletter {
-	width: 40%;
-	float: left;
-	@extend .mb;
-	margin-left: -$col-1-width / 2;
-	input[type="email"]{
+	@extend .article-embed-pull-right;
+	
+	margin-bottom: $spacer!important;
+	p {
+		line-height: 1;
+	}
+	
+
+		input[type="email"]{
 		border: 0;
 		padding: .4rem .3rem;
 		background-color: transparent;
@@ -959,6 +992,16 @@ blockquote {
 		background-color: $col-blue-1;
 		color: #fff;
 	}
+	span {
+		padding-top: .2rem;
+		font-size: .7rem; 
+		margin-top: .3rem;
+		display: none;
+	}
+	input:focus + btn + span {
+		display: block;
+	}
+
 }
 .article-image-longread {
 	background-size: cover;
@@ -1040,13 +1083,15 @@ figure > .open-gallery {
 .list-theme {
 	padding-left: 0;
 	list-style: none;
+	margin-top: 0;
 	li {
 		position: relative;
 		padding-bottom: .625rem; 
 		margin-bottom: .625rem;
 		border-bottom: $border-width solid $border-color;
 		&:first-child {
-			padding-top: $spacer;
+			padding-top: 0;
+
 		}
 		&:last-child {
 			// padding-bottom: 0;
@@ -1127,6 +1172,64 @@ figure > .open-gallery {
 }
 .article-embed-pull-right {
 	margin-right: -$col-1-width / 2;
-	width: 21.750rem;
+	width: 18.750rem;
 	float: right;
+
+}
+
+@include media-breakpoint-down(lg) {
+	.article-image-float-right {
+		margin-right: auto;
+	}
+	.article-content,
+	.article-image {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.article-embed-pull-right {
+		margin-right: auto;
+	}
+	.share-buttons {
+		display: block;
+		margin: 0 0 $spacer * 2 0;
+		float: none;
+		.mb, 
+		.extra-buttons {
+			display: inline-block;
+			vertical-align: top;
+			margin-bottom: 0;
+		}
+		.btn-label,
+		.social-toggle {
+			display: none;
+		}
+	}
+}
+@include media-breakpoint-down(md) {
+	.article-summary {
+		max-width: none;
+		padding-right: 5rem;
+	}
+	.scroll-to-comments {
+		right: 0;
+		top: 0;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.article-image-float-right,
+	.article-embed-pull-right {
+		float: none;
+		width: 100%;
+		margin: $spacer * 2 0;
+	}
+	.article-author {
+		display: block;
+		clear: left;
+		&+.article-author {
+			margin-top: .5rem;
+			margin-left: 0;
+		}
+	}
+
 }

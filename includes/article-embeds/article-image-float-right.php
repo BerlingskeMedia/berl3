@@ -2,7 +2,7 @@
 	$class = 'show-counter';
 } ?>
 
-<figure class="article-image-float-right article-embed-pull-right ">
+<figure class="article-image-float-right ">
 
 	<a href="#" class="open-gallery <?php echo $class ?> ">
 	<?php if($portrait) : ?>

@@ -9,7 +9,10 @@
 	});
 		
 	
-	
+	$('.toggle-embed').click(function(){
+		$(this).closest('aside').removeClass('embed-collapsed-sm');
+		$(this).closest('aside').removeClass('embed-collapsed');
+	});
 
 	var sticky_navigation = function()  {
 		var scroll_top = $(window).scrollTop(); 

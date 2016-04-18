@@ -98,6 +98,6 @@
 			<?php include('includes/article/byline.php') ?>
 		<?php endif; ?>
 	
-	<div class="demo-banner mb" style="width:930px; height: 60px" ></div>
+	<div class="demo-banner hidden-md-down mb" style="width:930px; height: 60px" ></div>
 		
 </header>
