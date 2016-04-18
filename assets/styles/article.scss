@@ -1217,11 +1217,21 @@ figure > .open-gallery {
 }
 
 @include media-breakpoint-down(sm) {
+	.article-title {
+		font-size: 2rem;
+	}
+	.article-summary {
+		font-size: 1.1rem;
+	}
+	.article-date {
+		font-size: .7rem;
+	}
 	.article-image-float-right,
 	.article-embed-pull-right {
 		float: none;
 		width: 100%;
 		margin: $spacer * 2 0;
+		max-width: none;
 	}
 	.article-author {
 		display: block;
@@ -1230,6 +1240,16 @@ figure > .open-gallery {
 			margin-top: .5rem;
 			margin-left: 0;
 		}
+		img {
+			max-width: 2rem;
+		}
+	}
+	.author-info {
+		font-size: .9rem;
+		margin-top: 0;
+	}
+	.article-avatar {
+		margin-right: .3rem;
 	}
 
 }
