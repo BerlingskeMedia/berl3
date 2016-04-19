@@ -28,7 +28,6 @@
 
 
 .comments-count {
-	border-radius: 50%;
 	height: 3.5rem;
 	width: 3.5rem;
 	text-align: center;
@@ -141,7 +140,7 @@ a:hover {
 	top: 0;
 	right: 0;
 	font-size: .6rem;
-	@extend .font-g1;
+	@extend .font-s2;
 }
 
 .author-username {
@@ -290,11 +289,11 @@ a:hover {
 }
 .image-caption {
 	font-size: .8rem;
-	font-weight: 500;
+	font-weight: 400;
 	color: rgba(0,0,0,.6);
 	padding: .4rem 0;
 	line-height: 1.4;
-	@extend .font-g1;
+	@extend .font-s2;
 
 	
 }
@@ -1230,6 +1229,20 @@ figure > .open-gallery {
 
 @include media-breakpoint-down(sm) {
 	
+	.comments-count {
+		height: 3rem;
+		width: 3rem;
+		line-height: 3rem;
+		font-size: 1.5rem;
+		
+		i {
+			margin-top: -.2rem;
+		}
+		&:before {
+			font-size: 3rem;
+		}
+	}
+
 	.article-header {
 		border: 0;
 	}
@@ -1246,8 +1259,7 @@ figure > .open-gallery {
 			margin-bottom: $spacer * 1.5;
 		}
 		&>h2 {
-			font-weight: 700;
-			font-size: 1.2rem
+			font-size: 1rem
 		}
 	}
 	.image-caption {
