@@ -7,7 +7,7 @@
 	</div>
 	<div class="col-xs-12 mt">
 		
-		<button class="btn  btn-border btn-block btn-round"><? dummy("text@number") ?> Kommentarer</button>
+		<button class="btn  btn-border btn-block btn-round"><i class="bicon-comment-inv-alt2"></i> <? dummy("text@number") ?> Kommentarer</button>
 		
 	</div>
 </div>

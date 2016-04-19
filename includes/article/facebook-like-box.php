@@ -1,2 +1,3 @@
-<div class="fb-page" data-href="https://www.facebook.com/berlingske" data-small-header="true" data-width="500" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><div class="fb-xfbml-parse-ignore">
+<div class="aside-header-sm ">Følg Berlingske på Facebook</div>
+<div class="fb-page" data-href="https://www.facebook.com/berlingske" data-small-header="true" data-width="300" data-adapt-container-width="false" data-hide-cover="true" data-show-facepile="true"><div class="fb-xfbml-parse-ignore">
 <blockquote cite="https://www.facebook.com/berlingske"><a href="https://www.facebook.com/berlingske">Berlingske</a></blockquote></div></div>

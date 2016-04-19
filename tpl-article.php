@@ -145,16 +145,21 @@
 						
 					</div><!-- article body -->
 					
-					<?php include('includes/article-embeds/topics.php'); ?>
 					
-					<?php include('includes/article-embeds/share-buttons-large.php'); ?>
+					
+					<div class=" border-bottom">
+						<?php $horizontalShareButtons = true; $showCounter = true; 	include('includes/article/social-buttons.php'); ?>
+					</div>
 
+					<?php include('includes/article-embeds/topics.php'); ?>
+
+					<?php // include('includes/article-embeds/share-buttons-large.php'); ?>
 
 					<div class="row article-bottom">
-						<div class="col-md-6">
+						<div class="col-md-6 mb-sm-1">
 							<?php include('includes/article-embeds/related.php'); ?>
 						</div>
-						<div class="col-md-6">
+						<div class="col-md-6 mb-sm-1">
 							<?php include('includes/article/facebook-like-box.php'); ?>
 						</div>
 					</div>

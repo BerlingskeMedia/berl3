@@ -1,6 +1,7 @@
 <?php if($horizontalShareButtons == true) {
 	$class = 'share-buttons-horizontal';
 } 
+
 ?>
 <div class="share-buttons collapsed <?php echo $class; ?>">
 	<div class="mb">
@@ -23,9 +24,14 @@
 			<div class="btn-label">Send</div>
 		</div>
 	</div>
-	
 
-	
 	<a href="#" class="social-toggle"><i class="bicon-angle-down"></i></a>
+
+<?php if($showCounter): ?>
+	<a href="#" class="btn-share btn-comment-counter"><i class="bicon-comment-inv-alt2"></i> <? dummy("text@number") ?> <span class="hidden-sm-down">kommentarer</span></a>
+<?php endif; ?>
 </div>
-<?php $horizontalShareButtons = false; ?>
+<?php 
+	$horizontalShareButtons = false;
+	$showCounter = false;
+?>

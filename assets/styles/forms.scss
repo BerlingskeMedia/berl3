@@ -12,6 +12,7 @@
 		height: 1.7rem;
 		&:focus {
 			outline: 0;
+			box-shadow: 0 0 6px fade-out($col-blue-1, .4), 0 2px 2px rgba(0,0,0,.25) inset;
 			background-color: #fff;
 			border-color: #ddd;
 		}

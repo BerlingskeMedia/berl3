@@ -5,9 +5,10 @@
 	margin-bottom: 0;
 }
 
-.mb-sm {
+.mb-05 {
 	margin-bottom: $spacer / 2;
 }
+
 
 .mb {
 	margin-bottom: $spacer;
@@ -213,6 +214,18 @@
 	font-size: .75rem;
 }
 
+/*.border-top {
+	padding-top: $spacer;
+	border-top: $border-width solid $border-color;
+	margin-top: $spacer;
+}
+*/
+
+.border-bottom {
+	padding-bottom: $spacer;
+	border-bottom: $border-width solid $border-color;
+	margin-bottom: $spacer;
+}
 
 .flex-row {
 	display:flex;
@@ -222,4 +235,18 @@
 
  .inline-block {
  	display: inline-block;
+ }
+
+@include media-breakpoint-down(sm) {
+ 	.fw-sm { 	
+		margin-left: -.625rem;
+		margin-right: -.625rem;
+	}
+ 
+	.mb-sm {
+		margin-bottom: $spacer;
+	}
+	.mb-sm-1 {
+	 	margin-bottom: $spacer * 2;
+	 }
  }

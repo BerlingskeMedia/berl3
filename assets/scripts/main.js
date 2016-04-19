@@ -17,11 +17,10 @@
 
 
 	// Expand list of related articles + show number of related articles 
-
 	var relatedCounter = $('.list-show-first-two li').length - 2;
 	// Show # of related articles in button
 	if (relatedCounter) {
-		$('#related-counter').prepend('Vis ' + relatedCounter + ' mere ');
+		$('#related-counter').prepend('Vis alle (' + relatedCounter + ') ');
 		$('#related-counter').click(function(){
 			$('.list-article-related').removeClass('list-show-first-two');
 		});
