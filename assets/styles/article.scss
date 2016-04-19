@@ -315,14 +315,16 @@ a:hover {
 }
 .article-image-float-right {
 	margin-bottom: $spacer;
+
 	margin-left: $spacer;
 	@extend .article-off-grid;
+
 	margin-top: .2rem;
 	position: relative;
 	clear: right;
 	max-width: 21.75rem;
 	float: right;
-	
+	@extend .fw-sm;
 	.gallery-counter {
 		font-size: 1.5rem;
 		padding: .4rem;
@@ -1251,8 +1253,9 @@ figure > .open-gallery {
 	.article-image-float-right,
 	.article-embed-pull-right {
 		float: none;
-		width: 100%;
-		margin: $spacer * 2 0;
+		width: inherit;
+		margin-top: $spacer * 2;
+		margin-bottom: $spacer * 2;
 		max-width: none;
 	}
 	.article-author {

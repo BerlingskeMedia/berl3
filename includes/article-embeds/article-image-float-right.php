@@ -8,7 +8,7 @@
 	<?php if($portrait) : ?>
 		<img src="<? dummy("image/portrait@640x,") ?>" width="" height="" alt="" />
 	<?php else : ?>
-		<img src="<? dummy("image@400x,") ?>" width="" height="" alt="" />
+		<img src="<? dummy("image@700x,") ?>" width="" height="" alt="" />
 	<?php endif; ?>
 		
 		<?php if($class): ?>

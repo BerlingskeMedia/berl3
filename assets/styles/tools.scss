@@ -237,12 +237,13 @@
  	display: inline-block;
  }
 
+
+
 @include media-breakpoint-down(sm) {
- 	.fw-sm { 	
+	.fw-sm { 	
 		margin-left: -.625rem;
 		margin-right: -.625rem;
 	}
- 
 	.mb-sm {
 		margin-bottom: $spacer;
 	}
