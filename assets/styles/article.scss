@@ -1229,14 +1229,31 @@ figure > .open-gallery {
 }
 
 @include media-breakpoint-down(sm) {
+	
+	.article-header {
+		border: 0;
+	}
+
 	.article-body {
+		font-size: 1rem;
+
 		.article-image-float-right {
 			margin-top: 0;
+		}
+		&> p {
+			font-size: .9rem;
+			line-height: 1.5;
+			margin-bottom: $spacer * 1.5;
+		}
+		&>h2 {
+			font-weight: 700;
+			font-size: 1.2rem
 		}
 	}
 	.image-caption {
 		padding-left: .625rem;
 		padding-right: .625rem;
+		font-size: .7rem;
 	}
 	.article-image {
 		@extend .fw-sm;
