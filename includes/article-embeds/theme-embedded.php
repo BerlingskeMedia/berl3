@@ -3,29 +3,29 @@
 	
 	<div class="embed-content">
 		
-		<div class="aside-header-sm">
+		<div class="aside-header-sm col-blue">
 			Tema
 		</div>
 		<div class="aside-subheader">
-			<? dummy("text@headline") ?>
+			<? dummy("text@headline-b") ?>
 		</div>	
 
 		<ul class="list-theme">
 			<? while (dumb_luck("2-5")): ?>
 				<li>
 					<article>
-					<a href="tpl-article.php"><? dummy("text@headline") ?></a>
+					<a href="tpl-article.php"><? dummy("text@headline-b") ?></a>
 					</article>
 				</li>
 			<? endwhile ?>
 			<li class="current">
 				<article>
-				<a href="tpl-article.php"><? dummy("text@headline") ?></a>
+				<a href="tpl-article.php"><? dummy("text@headline-b") ?></a>
 				</article>
 			</li>
 			<li>
 				<article>
-				<a href="tpl-article.php"><? dummy("text@headline") ?></a>
+				<a href="tpl-article.php"><? dummy("text@headline-b") ?></a>
 				</article>
 			</li>
 		</ul>

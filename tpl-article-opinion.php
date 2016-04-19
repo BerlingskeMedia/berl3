@@ -79,7 +79,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 		<header class="article-header" >
 			<div class="article-badge-kronik">Kronikken</div><br>
 			<h1 class="article-title">
-				<? dummy("text@headline") ?>
+				<? dummy("text@headline-b") ?>
 			</h1>
 			<div class="article-byline">Af: <? dummy("text@author") ?>, Filosof  <span class="divider">&mdash;</span> <i class="bicon-twitter"></i> <a href="#" class="author-username"><? dummy("text@username") ?></a></div>
 			<div class="article-date"><? dummy("text@date-long") ?></div>

@@ -15,7 +15,7 @@ $listCount = ($listCount ? $listCount : '10');
 				<?php if($showTime): ?>
 				<time><? dummy("text@time") ?></time>
 				<?php endif; ?>
-				<a href="#"><? dummy("text@headline-b2") ?></a>
+				<a href="#"><? dummy("text@headline-b") ?></a>
 			</div>
 		</li>
 		<? endwhile ?>

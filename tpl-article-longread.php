@@ -74,7 +74,7 @@
 						<? dummy("text@item") ?>
 					</span>
 					<?php endif; ?>
-					<? dummy("text@headline") ?>
+					<? dummy("text@headline-b") ?>
 				</h1>
 
 			</header>
@@ -136,7 +136,7 @@
 								
 								<p><? dummy("text@paragraph") ?></p>
 
-								<h2><? dummy("text@headline") ?></h2>
+								<h2><? dummy("text@headline-b") ?></h2>
 								
 								<p><? dummy("text@paragraph") ?></p>
 

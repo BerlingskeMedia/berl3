@@ -6,7 +6,7 @@
 		<? while (dumb_luck("2")): ?>
 		<li>
 			<h2><time><? dummy("text@time") ?></time>
-				<? dummy("text@headline") ?>
+				<? dummy("text@headline-b") ?>
 			</h2>
 		</li>
 		<? endwhile ?>

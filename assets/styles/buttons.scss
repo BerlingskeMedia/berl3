@@ -94,18 +94,29 @@ fieldset[disabled] a.btn {
   border-radius: 0!important;
 }
 
+@mixin button($background-color, $text-color) {
+  background-color: $background-color;
+  color: $text-color;
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: darken($background-color, 5%);
+    color: #fff;
+  }
+}
+.btn-facebook {
+  @include button($col-facebook, #fff);  
+}
 
-/*
 .btn-twitter {
-  @include btn($col-twitter, #fff, 1rem, 1, $col-counter:true);
+  @include button($col-twitter, #fff); 
 }
-.btn-black {
-  @include btn(#000, #fff, 16px, 1);
+
+.btn-border {
+  border-color: #222;
+  border-width: .15rem;
 }
-.btn-transparent {
-  @include btn(#fff, #666, 16px, 1);
-  box-shadow: none;
-}*/
+
 
 
 
@@ -213,10 +224,9 @@ button {
   color: #999; 
 }
 .btn-round {
-	border-radius: 50%;
+	border-radius: 30rem;
 	text-align: center;
   display: inline-block;
-  padding: 0;
   box-shadow: none;
 }
 
@@ -225,31 +235,4 @@ button {
 	text-align: center;
 	width: 100%;
 }
-
-.form-oneliner {
-  position: relative;
-  .btn,
-  .fake-btn {
-    top: 0;
-    right: 0;
-    bottom: 0;
-    position: absolute;
-    vertical-align: middle;
-    box-shadow: none;
-    border-bottom: 0;
-  }
-
-  input[type="text"] {
-    width: 100%;
-  }
-  .btn {
-      // font-size: 1.5rem;
-      line-height: 1;
-    }
-
-}
-
-
-
-
 

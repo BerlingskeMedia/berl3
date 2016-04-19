@@ -1,8 +1,9 @@
 <?php if($showNewsletter): ?>
-<aside class="article-newsletter">	
-	<!-- <div class="aside-header text-center mb-sm">Bliv opdateret</div> -->
-	<p class="text-center">Berlingskes Nyhedsbrev</p>	
-	<form action="" class="form-round">
+<aside class="article-newsletter ">	
+	
+	<div class="aside-header-sm mb-0">Berlingske Nyhedsbrev</div>
+	<p class="font-s2 mb-sm"><small >Udkommer hver morgen!</small></p>
+	<form action="" class="form-embedded-newsletter">
 		<div class="clearfix">
 			<input type="email" placeholder="Din e-mail" required>
 			<button class="btn  btn-blue">OK</button>

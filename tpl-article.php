@@ -18,6 +18,7 @@
 </head>
 <body class=" <?php if($siteBusiness): ?>site-business<?php endif; ?> show-site-search tpl-article">
 
+<?php include('includes/facebook.php'); ?>
 
 <a class="demo-trigger" href="#">
 	<i class="bicon-angle-right"></i>
@@ -120,7 +121,7 @@
 							<?php include('includes/article-embeds/link.php'); ?>
 							<? while (dumb_luck("1")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
 
-							<h2><? dummy("text@headline") ?></h2>
+							<h2><? dummy("text@headline-b") ?></h2>
 							<? while (dumb_luck("1")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
 							
 							<?php include('includes/article-embeds/blockquote.php'); ?>
@@ -138,19 +139,25 @@
 							<?php include('includes/article-embeds/tweet.php'); ?>
 							
 							<?php include('includes/article-embeds/fact-default.php'); ?>
-
-							<?php include('includes/article-embeds/related.php'); ?>
 							
-							<?php include('includes/article-embeds/topics.php'); ?>
-
-							
-
 
 						<?php endif; // End Paywall ?>
 						
 					</div><!-- article body -->
 					
+					<?php include('includes/article-embeds/topics.php'); ?>
 					
+					<?php include('includes/article-embeds/share-buttons-large.php'); ?>
+
+
+					<div class="row article-bottom">
+						<div class="col-md-6">
+							<?php include('includes/article-embeds/related.php'); ?>
+						</div>
+						<div class="col-md-6">
+							<?php include('includes/article/facebook-like-box.php'); ?>
+						</div>
+					</div>
 
 				</div><!-- article content -->
 

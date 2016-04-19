@@ -88,7 +88,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 						Terror i Bruxelles
 					</span>
 					<h1 class="article-title">
-						<? dummy("text@headline") ?>
+						<? dummy("text@headline-b") ?>
 					</h1>
 					<p class="article-summary">
 						<? dummy("text@teaser") ?>
@@ -98,7 +98,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 				<ul class="mb-1">
 						<? while (dumb_luck("4")): ?>
 						<li>
-							<? dummy("text@headline") ?>
+							<? dummy("text@headline-b") ?>
 						</li>
 						<? endwhile ?>	
 					</ul>
@@ -127,7 +127,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 						<ul>
 							<li>
 								<time>Lige nu...</time>
-								<h2><? dummy("text@headline") ?></h2>
+								<h2><? dummy("text@headline-b") ?></h2>
 								<? if (dumb_luck("25%")): ?>
 									<figure class="live-img">
 										<a href="#" class="widget-img"><img src="<? dummy("image@400x,") ?>" width="" height="" alt=""  /></a>
@@ -149,7 +149,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 							<? while (dumb_luck("5")): ?>
 							<li>
 								<time><? dummy("text@time") ?></time>
-								<h2><? dummy("text@headline") ?></h2>
+								<h2><? dummy("text@headline-b") ?></h2>
 								<? if (dumb_luck("25%")): ?>
 									<figure class="live-img">
 										<a href="#" class="widget-img"><img src="<? dummy("image@400x,") ?>" width="" height="" alt=""  /></a>
@@ -170,7 +170,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 							<? endwhile ?>
 							<li>
 								<time><? dummy("text@time") ?></time>
-								<h2><? dummy("text@headline") ?></h2>
+								<h2><? dummy("text@headline-b") ?></h2>
 								<p><? dummy("text@teaser") ?></p>
 								<blockquote class="twitter-tweet" data-lang="da"><p lang="en" dir="ltr">The only international number for general information and concerning the victims is 0032 78 15 1771 <a href="https://twitter.com/hashtag/Brussels?src=hash">#Brussels</a></p>&mdash; CrisisCenter Belgium (@CrisiscenterBE) <a href="https://twitter.com/CrisiscenterBE/status/712691530763472896">23. marts 2016</a></blockquote>
 								<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -180,7 +180,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 							<li>
 
 								<time><? dummy("text@time") ?></time>
-								<h2><? dummy("text@headline") ?></h2>
+								<h2><? dummy("text@headline-b") ?></h2>
 								<? if (dumb_luck("25%")): ?>
 									<figure class="live-img">
 										<a href="#" class="widget-img"><img src="<? dummy("image@400x,") ?>" width="" height="" alt=""  /></a>
@@ -200,14 +200,14 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 							</li>
 							<li>
 								<time><? dummy("text@time") ?></time>
-								<h2><? dummy("text@headline") ?></h2>
+								<h2><? dummy("text@headline-b") ?></h2>
 								<p><? dummy("text@teaser") ?></p>
 								<iframe width="560" height="315" class="video-youtube" src="https://www.youtube.com/embed/G7M3NSIfrcc" frameborder="0" allowfullscreen></iframe>
 							</li>
 
 							<li>
 								<time><? dummy("text@time") ?></time>
-								<h2><? dummy("text@headline") ?></h2>
+								<h2><? dummy("text@headline-b") ?></h2>
 								<p><? dummy("text@teaser") ?></p>
 								<blockquote class="twitter-tweet" data-lang="da"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/BruxellesAttacks?src=hash">#BruxellesAttacks</a> 2 DEADLY ISLAMIST ATTACKS IN <a href="https://twitter.com/hashtag/Europe?src=hash">#Europe</a> SINCE 2004, 34 KILLED, 128 WOUNDED <a href="https://t.co/VC5s18iT77">https://t.co/VC5s18iT77</a> <a href="https://t.co/qJLvD9hwH8">pic.twitter.com/qJLvD9hwH8</a></p>&mdash; Eta Centauri (η Cen) (@ECentauri) <a href="https://twitter.com/ECentauri/status/712275428887625728">22. marts 2016</a></blockquote>
 								<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -271,7 +271,7 @@ function notifyMe() {
   // Let's check if the user is okay to get some notification
   else if (Notification.permission === "granted") {
     // If it's okay let's create a notification
-    var notification = new Notification('<? dummy("text@headline") ?>', {
+    var notification = new Notification('<? dummy("text@headline-b") ?>', {
 			body: '<? dummy("text@short-teaser") ?>',
 			tag: 'My unique id',
 			icon: '/dist/images/bicon.png',
@@ -293,7 +293,7 @@ function notifyMe() {
 
       // If the user is okay, let's create a notification
       if (permission === "granted") {
-        var notification = new Notification('<? dummy("text@headline") ?>', {
+        var notification = new Notification('<? dummy("text@headline-b") ?>', {
 			body: '<? dummy("text@short-teaser") ?>',
 			tag: 'My unique id',
 			icon: '/dist/images/bicon.png',

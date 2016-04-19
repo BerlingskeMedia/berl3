@@ -14,7 +14,7 @@
 		<div class="mb">
 			<a href="#" class="btn-share-linkedin"><i class="bicon-linkedin"></i></a>
 		</div>
-		<div class="mb">
+		<div class="mb hidden-md-down">
 			<a href="#" class="btn-share-print"><i class="bicon-print"></i></a>
 			<div class="btn-label">Print</div>
 		</div>

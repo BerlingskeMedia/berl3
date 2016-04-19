@@ -81,7 +81,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 			
 			
 			<h1 class="article-title">
-				<? dummy("text@headline") ?>
+				<? dummy("text@headline-b") ?>
 			</h1>
 			
 			<p class="article-summary"><? dummy("text@teaser") ?></p>
@@ -154,7 +154,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 					<figure>
 						<a href="tpl-article-default.php"><img src="<? dummy("image@200x100,") ?>" width="" height="" alt="" /></a>
 					</figure>
-					<div class="header"><a href="tpl-article-default.php"><? dummy("text@headline") ?></a></div>
+					<div class="header"><a href="tpl-article-default.php"><? dummy("text@headline-b") ?></a></div>
 				</section>
 			<?php endif; ?>
 			<? while (dumb_luck("5")): ?>

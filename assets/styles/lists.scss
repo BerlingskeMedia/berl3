@@ -1,5 +1,21 @@
 .list {
 	@extend .font-g1;
+	.trumpet {
+		font-weight: 700;
+	}
+}
+.list-arrow {
+	li {
+		padding-left: .625rem;
+		&:before {
+			content: '\e801';
+			font-family: b-icons;
+			color: $col-blue-1;
+			float: left;
+			margin-left: -.625rem;
+			margin-top: -.1rem;
+		}
+	}
 }
 .list-news {
 	li {

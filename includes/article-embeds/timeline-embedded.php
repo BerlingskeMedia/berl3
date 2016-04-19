@@ -2,12 +2,12 @@
 <aside class="article-timeline-embedded article-embed-pull-right embed-collapsed-sm">
 	<div class="embed-content">
 
-		<div class="aside-header-sm">
+		<div class="aside-header-sm col-blue">
 			Tidslinie
 		</div>
 
 		<div class="aside-subheader">
-			<? dummy("text@headline") ?>
+			<? dummy("text@headline-b") ?>
 		</div>
 	
 	

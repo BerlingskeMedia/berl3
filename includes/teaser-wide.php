@@ -7,7 +7,7 @@
 			
 			<figcaption>
 				<span class="teaser-category">Terror i Bruxelles</span>
-				<h2 class="header mega-header" id="header"><span><? dummy("text@headline") ?></span></h2>
+				<h2 class="header mega-header" id="header"><span><? dummy("text@headline-b") ?></span></h2>
 			</figcaption>
 		</figure>
 	</article>
@@ -20,7 +20,7 @@
 					<ul class="teaser-related">
 						<? while (dumb_luck("4")): ?>
 						<li>
-							<a href="tpl-article.php"><? dummy("text@headline") ?></a>
+							<a href="tpl-article.php"><? dummy("text@headline-b") ?></a>
 						</li>
 						<? endwhile ?>	
 					</ul>
@@ -41,7 +41,7 @@
 				</figure>
 				<div class="teaser-body">
 					<h3 class="header">
-						<a href="tpl-article.php"><? dummy("text@headline") ?></a>
+						<a href="tpl-article.php"><? dummy("text@headline-b") ?></a>
 					</h3>
 				</div>
 			</article>

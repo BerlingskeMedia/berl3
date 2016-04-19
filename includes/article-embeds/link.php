@@ -7,7 +7,7 @@
 		</figure>
 		<div class="teaser-body">
 			<span>Læs også</span>
-			<h2 class="header"><a href="tpl-article.php"><? dummy("text@headline") ?></a></h2>
+			<h2 class="header"><a href="tpl-article.php"><? dummy("text@headline-b") ?></a></h2>
 		</div>
 	</article>
 </aside>

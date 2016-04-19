@@ -1,14 +1,15 @@
-.form-round {
+.form-embedded-newsletter {
 	line-height: normal!important;
 	input[type="email"]{
+		@extend .font-s2;
 		border: 0;
-		padding: .3rem .825rem;
+		padding: .15rem .825rem 0;
 		background-color: #fff;
 		font-size: .9rem;
-		border-radius:  30rem  0 0 30rem;
+		box-shadow: 0 2px 2px rgba(0,0,0,.25) inset;
 		float: left;
 		width: 75%;
-		height: 2rem;
+		height: 1.7rem;
 		&:focus {
 			outline: 0;
 			background-color: #fff;
@@ -16,13 +17,12 @@
 		}
 	}
 	.btn {
-		border-radius: 0 30rem 30rem 0;
-		padding-left: .5rem;
-		padding-right: 1rem;
-		padding-top: .17rem;
+		border-radius: 0;
+		padding: 0;
 		float: left;
 		width: 25%;
-		height: 2rem;
+		height: 1.7rem;
+		text-align: center;
 	}
 	.checkbox {
 		margin-bottom: 0;

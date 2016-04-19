@@ -121,7 +121,7 @@
 								<? dummy("text@item") ?>
 							</span>
 							<?php endif; ?>
-							<? dummy("text@headline") ?>
+							<? dummy("text@headline-b") ?>
 						</h1>
 							
 						
@@ -151,7 +151,7 @@
 							<? dummy("text@item") ?>
 						</span>
 						<?php endif; ?>
-						<? dummy("text@headline") ?>
+						<? dummy("text@headline-b") ?>
 					</h1>
 					
 				<?php include('includes/article-embeds/rating.php'); ?>
@@ -218,7 +218,7 @@
 						<?php include('includes/article-embeds/link.php'); ?>
 						<? while (dumb_luck("1")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
 
-						<h2><? dummy("text@headline") ?></h2>
+						<h2><? dummy("text@headline-b") ?></h2>
 						<? while (dumb_luck("1")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
 						
 						<?php include('includes/article-embeds/blockquote.php'); ?>

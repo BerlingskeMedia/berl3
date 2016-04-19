@@ -9,10 +9,25 @@
 	});
 		
 	
+	// Expand embedded elements in articles
 	$('.toggle-embed').click(function(){
 		$(this).closest('aside').removeClass('embed-collapsed-sm');
 		$(this).closest('aside').removeClass('embed-collapsed');
 	});
+
+
+	// Expand list of related articles + show number of related articles 
+
+	var relatedCounter = $('.list-show-first-two li').length - 2;
+	// Show # of related articles in button
+	if (relatedCounter) {
+		$('#related-counter').prepend('Vis ' + relatedCounter + ' mere ');
+		$('#related-counter').click(function(){
+			$('.list-article-related').removeClass('list-show-first-two');
+		});
+	}
+	
+
 
 	var sticky_navigation = function()  {
 		var scroll_top = $(window).scrollTop(); 
