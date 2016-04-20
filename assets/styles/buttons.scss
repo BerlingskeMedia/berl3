@@ -167,6 +167,12 @@ fieldset[disabled] a.btn {
 //
 // Button Sizes
 //
+
+.btn-xs {
+  @include button-size(0, .625rem, .7rem, 1rem, 30rem);
+  height: 1rem;
+}
+
 .btn-sm {
   // line-height: ensure proper height of button next to small input
   @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $font-size-sm, $line-height-sm, 30rem);
@@ -183,10 +189,7 @@ fieldset[disabled] a.btn {
   }
 }
 
-.btn-xs {
-  // line-height: ensure proper height of button next to small input
-  @include button-size(.2rem, .625rem, .7rem, 1, 30rem);
-}
+
 
 
 

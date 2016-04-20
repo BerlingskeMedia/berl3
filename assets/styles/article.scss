@@ -15,8 +15,8 @@
 .article-image {
 	margin-bottom: $spacer;
 	position: relative;
-	margin-right: -($col-1-width / 2); 
-	margin-left: -($col-1-width / 2);
+	/*margin-right: -($col-1-width / 2); 
+	margin-left: -($col-1-width / 2);*/
 }
 .scroll-to-comments {
 	display: inline-block;
@@ -24,6 +24,7 @@
 	margin-left: .625rem;
 	position: relative;
 	padding-bottom: .9rem;
+	margin-top: -1.5rem;
 }
 
 
@@ -156,16 +157,6 @@ a:hover {
 	display: inline-block;
 }
 .btn-follow-author {
-	@extend .btn;
-	@extend .btn-xs;
-	/*padding: .1rem .5rem;
-	font-style: normal;
-	@extend .font-s2;
-	font-weight: 500;*/
-	/*text-transform: uppercase;
-	font-size: .7rem;
-	vertical-align: middle;
-	display: inline-block;*/
 	line-height: 1;
 	background-color: #aaa;
 	margin-left: .2rem;
@@ -252,8 +243,6 @@ a:hover {
 
 }
 .article-byline {
-	
-	font-size: 1rem;
 	@extend .clearfix;
 	margin-bottom: $spacer;
 	.author-info {
@@ -263,12 +252,12 @@ a:hover {
 	}
 	a {
 		color: rgba(0,0,0,.7);
+		font-size: .8rem;
 	}
-	
 }
 .article-avatar {
 	float: left;
-	margin-right: $spacer;
+	margin-right: $spacer / 2;
 }
 .article-author {
 	display: inline-block;
@@ -482,18 +471,7 @@ a:hover {
 	padding: $spacer;
 	position: relative;
 }
-@include media-breakpoint-down(sm) {
-	.embed-collapsed-sm {
-		.embed-content {
-			max-height: 140px;
-			overflow: hidden;
-		}
-		.embed-fade {
-			display: block;
-		}
-	}
-	
-}
+
 
 .embed-collapsed {
 	.embed-content {
@@ -706,12 +684,19 @@ $sharebutton: 2.6rem;
   line-height: $sharebutton;
   padding:  .2rem 1.5rem 0;
   border: 0;
-  background-color: $col-blue-2;
+  background-color: transparent;
   font-size: .9rem;
-  color: #fff;
+  color: #666;
+  border: $border-width solid #ccc;
+  i {
+  	font-size: 1.2rem;
+  	/*margin-bottom: -1rem;
+  	margin-top: -1rem;*/
+  	vertical-align: middle;
+  }
   &:hover {
-    color: #fff;
-    background-color: lighten($col-blue-2, 10%);
+    color: #333;
+    background-color: darken(#fff, 10%);
     text-decoration: none;
   }
 }
@@ -924,7 +909,7 @@ blockquote {
 	li {
 		display: inline-block;
 		margin-right: .2rem;
-		margin-bottom: 0;
+		margin-bottom: .2rem;
 		font-weight: 500;
 		&:first-child {
 			font-weight: 500;
@@ -1228,18 +1213,30 @@ figure > .open-gallery {
 }
 
 @include media-breakpoint-down(sm) {
-	
+	.article-embed-pull-right {
+		margin-left: auto;
+	}
+
+	.embed-collapsed-sm {
+		.embed-content {
+			max-height: 140px;
+			overflow: hidden;
+		}
+		.embed-fade {
+			display: block;
+		}
+	}
+
 	.comments-count {
-		height: 3rem;
-		width: 3rem;
-		line-height: 3rem;
-		font-size: 1.5rem;
-		
+		height: 2.6rem;
+		width: 2.6rem;
+		line-height: 2.6rem;
+		font-size: 1.5rem;		
 		i {
-			margin-top: -.2rem;
+			margin-top: -.1rem;
 		}
 		&:before {
-			font-size: 3rem;
+			font-size: 2.7rem;
 		}
 	}
 
@@ -1274,10 +1271,15 @@ figure > .open-gallery {
 		font-size: 1.5rem;
 	}
 	.article-summary {
-		font-size: .9rem;
+		font-size: 1rem;
 	}
 	.article-date {
 		font-size: .7rem;
+	}
+	.article-byline {
+		a {
+			font-size: .6rem;
+		}
 	}
 	.article-image-float-right,
 	.article-embed-pull-right {
@@ -1311,11 +1313,11 @@ figure > .open-gallery {
 		
 	}
 
-	[class*=btn-share] {
-		height: 2.2rem;
-		width: 2.2rem;
-		line-height: 2.2rem;
-		font-size: 1.1rem;
+	[class*="btn-share"] {
+		height: 2rem;
+		width: 2rem;
+		line-height: 2rem;
+		font-size: 1rem;
 	}
 
 	.btn-comment-counter {

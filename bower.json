@@ -1,5 +1,5 @@
 {
-  "name": "BT",
+  "name": "berlingske.dk",
   "homepage": "https://marginmedia.dk/",
   "authors": [
     "Bo Skakke <bo@skakke.dk>"
@@ -7,9 +7,12 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "jquery": "^2.2.0"
+    "jquery": "^2.2.0",
+    "stickem": "jQuery-Stickem#^1.4.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    
+  },
   "description": "",
   "main": "",
   "moduleType": [

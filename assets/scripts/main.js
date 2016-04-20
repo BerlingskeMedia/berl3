@@ -26,6 +26,19 @@
 		});
 	}
 	
+	// Make sticky side cols
+	$('.stickem-container').stickem({
+		offset: '70',
+		item: '.sticky'
+
+	});
+	// Sticky example 2
+	$('.stickem-container-ex2').stickem({
+		offset: '70',
+		item: '.sticky-ex2',
+		stickClass: 'stickit-ex2',
+		container: '.stickem-container-ex2'
+	});
 
 
 	var sticky_navigation = function()  {

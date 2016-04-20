@@ -1,0 +1,45 @@
+.stickem-container {
+	position: relative;
+	@extend .clearfix;
+}
+@include media-breakpoint-only(xl) {
+	.stickit {	
+		margin-left: 58.750rem!important;
+		position: fixed;
+		top: 70px;
+	}
+	.stickit-end {
+		bottom: 0;
+		position: absolute;
+		right: 0;
+	}
+}
+
+@include media-breakpoint-only(lg) {
+	.stickit {
+		margin-left: 42.500px!important;
+		position: fixed;
+		top: 70px;
+	}	
+	.stickit-end {
+		bottom: 0;
+		position: absolute;
+		right: 0;
+	}
+}
+
+
+// Stsicky example 2
+.stickem-container-ex2 {
+	position: relative;
+	@extend .clearfix;
+	background-color: rgba(0,0,0,.05);
+}
+.stickit-ex2 {
+	position: fixed;
+	top: 70px;
+}	
+
+
+
+

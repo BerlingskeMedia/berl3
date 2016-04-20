@@ -7,7 +7,7 @@
 			<div class="author-info">
 				<a href="tpl-author.php" title="Se [AUTHOR NAME]'s profil"><? dummy("text@author") ?></a>
 				
-				<div class="author-follow"><button class="btn-follow-author" >Følg</button></div>
+				<div class="author-follow"><button class="btn btn-xs btn-follow-author" >Følg</button></div>
 				
 				<? if (dumb_luck("50%")): ?> 
 					<div class="author-username">
