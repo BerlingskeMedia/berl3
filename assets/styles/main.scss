@@ -8,6 +8,7 @@
 @import "animations";
 @import "fonts";
 @import "header";
+@import "footer";
 @import "teasers";
 @import "article";
 @import "buttons";
@@ -133,6 +134,11 @@ ul.list-reset {
 	margin-bottom: $spacer * 3;
 	@extend .clearfix;
 }
+.micro-title {
+	@extend .font-s2;
+	font-weight: 500;
+	font-size: .75rem;
+}
 .section-title {
 	@extend .font-sans-alt;
 	color: #333;
@@ -140,7 +146,7 @@ ul.list-reset {
 	font-size: 1.5rem;
 	display: block;
 	letter-spacing: .0rem;
-	margin: $spacer 0;
+	margin: 0 0 $spacer;
 	@extend .top-block;
 	text-transform: uppercase;
 
@@ -188,13 +194,14 @@ ul.list-reset {
 
 .top-block {
 	position: relative;
+	padding-top: 2rem;
 	&:before {
 		display: inline-block;
 		width: 2rem;
 		content: '';
 		height: 6px;
 		position: absolute;
-		top: -$spacer;
+		top: $spacer;
 		background-color: #222;
 	}
 }
@@ -345,6 +352,7 @@ $col-deck-label-width: 160px;
 }
 
 @include media-breakpoint-only(md) {
+	.article-footer,
 	.article-header,
 	.col-1-content {
 		max-width: 41.250rem;
@@ -369,12 +377,18 @@ $col-deck-label-width: 160px;
 	width: 300px;
 	float: left;
 	margin-left: 20px;
-}
-@include media-breakpoint-down(sm) {
-	.col-2-sidebar {
+	@include media-breakpoint-down(md) {
 		width: 100%;
+		max-width: 41.25rem;
 		float: none;
 		margin: 0 auto;
+	}
+}
+
+.teaser-buffet:nth-child(n+6) {
+	.teaser {
+		border-top: $border-width solid $border-color;
+		padding-top: $spacer;
 	}
 }
 @import "tools";

@@ -8,7 +8,7 @@ $showTime = true;
 $listClass = 'list list-time';
 $listTitle = 'Mest læste lige nu';
 $listCount = '10';
-$sectionClass = 'latest-news mb-2';
+$sectionClass = 'latest-news';
 $doc ="";
 
 include('includes/list-news.php');

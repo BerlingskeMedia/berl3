@@ -237,8 +237,66 @@
  	display: inline-block;
  }
 
+.header-float-left {
+	
+	float: left;
+	&+ div {
+		padding-left: ($col-1-width / 2);
+	}
+}
+@include media-breakpoint-down(md){
+	 .fs08 {
+	 	.header {
+	 		font-size: .8rem;
+	 	}
+	 }
+	 .fs09 {
+	 	.header {
+	 		font-size: .9rem;
+	 	}
+	 }
+	 .fs10 {
+	 	.header {
+	 		font-size: 1rem;
+	 	}
+	 }
+	 .fs12 {
+	 	.header {
+	 		font-size: 1rem;
+	 	}
+	 }
+	 .fs14 {
+	 	.header {
+	 		font-size: 1.4rem;
+	 	}
+	 }
+	 .fs16 {
+	 	.header {
+	 		font-size: 1.6rem;
+	 	}
+	 }
+	 .fs18 {
+	 	.header {
+	 		font-size: 1.8rem;
+	 	}
+	 }
+	 .fs20 {
+	 	.header {
+	 		font-size: 2.0rem;
+	 	}
+	 }
 
-
+	 .fs24 {
+	 	.header {
+	 		font-size: 2.4rem;
+	 	}
+	 }
+	 .fs26 {
+	 	.header {
+	 		font-size: 2.6rem;
+	 	}
+	 }
+}
 @include media-breakpoint-down(sm) {
 	.fw-sm { 	
 		margin-left: -.625rem;
@@ -250,4 +308,5 @@
 	.mb-sm-1 {
 	 	margin-bottom: $spacer * 2;
 	 }
+	
  }

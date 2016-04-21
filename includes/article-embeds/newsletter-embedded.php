@@ -1,6 +1,7 @@
-<aside class="article-newsletter ">	
+<?php if($showNewsletterEmbedded): ?>
+<aside class="article-newsletter-embedded ">	
 	
-	<div class="aside-header-sm">Abonnér på Nyhedsbrev</div>
+	<div class="aside-header-sm mb-0">Abonnér på Nyhedsbrev</div>
 	<p class="font-s2 mb-05"><small >Udkommer hver morgen!</small></p>
 	<form action="" class="form-embedded-newsletter">
 		<div class="clearfix">
@@ -19,3 +20,4 @@
 		<!-- <label><input type="checkbox" checked> Inkl. Breaking News</label> -->
 	</form>	
 </aside>
+<?php endif; ?>

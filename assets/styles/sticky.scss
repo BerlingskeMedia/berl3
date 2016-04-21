@@ -17,7 +17,7 @@
 
 @include media-breakpoint-only(lg) {
 	.stickit {
-		margin-left: 42.500px!important;
+		margin-left: 42.500rem!important;
 		position: fixed;
 		top: 70px;
 	}	
@@ -28,18 +28,15 @@
 	}
 }
 
+@include media-breakpoint-up(lg) {
+	// Sticky example 2
+	.stickem-container-ex2 {
+		position: relative;
+		// height: 1000px; 
+	}
+	.stickit-ex2 {
+		position: fixed;
+		top: 3.750rem;
+	}	
 
-// Stsicky example 2
-.stickem-container-ex2 {
-	position: relative;
-	@extend .clearfix;
-	background-color: rgba(0,0,0,.05);
 }
-.stickit-ex2 {
-	position: fixed;
-	top: 70px;
-}	
-
-
-
-

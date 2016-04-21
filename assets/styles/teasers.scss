@@ -23,10 +23,11 @@
 	display: block;
 	font-size: .7rem;
 	margin-bottom: .3rem;
-	font-weight: normal;
+	font-weight: 500;
 	text-transform: uppercase;
 	color: #000;
-
+	@extend .font-s2;
+	
 }
 img {
 	@extend .img-fluid;
@@ -66,6 +67,7 @@ img {
 	}
 	.header {
 		margin-bottom: 0;
+		@extend .font-s1;
 	}
 	.teaser-img {
 		img {
@@ -170,7 +172,7 @@ img {
 	}
 }
 
-.teaser-category {
+/*.teaser-category {
 	display: inline-block;
 	background-color: red;
 	color: #fff;
@@ -182,7 +184,7 @@ img {
 	position: relative;
 	margin-bottom: .3125rem;
 
-}
+}*/
 
 .teaser-well {
 	position: relative;
@@ -220,7 +222,7 @@ img {
 	}
 
 	.header {
-		@extend .font-header;
+		@extend .font-g2;
 		line-height: 1.1;
 		color: #fff;
 		font-size: 3.1rem;
@@ -296,9 +298,6 @@ img {
 		padding: .3rem .3rem;
 		background-color: #fff;
 		color: #000;
-		
-
-
 	}
 	.mega-header {
 		font-size: 3rem;

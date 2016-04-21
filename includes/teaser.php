@@ -24,6 +24,11 @@ $showrelated = ($showRelated ? $showrelated : '0');
 			<a href="tpl-article.php">
 			
 			<? dummy("text@headline-b2") ?>
+			<?php if($showKey): ?>
+				<? if (dumb_luck("25%")): ?>
+					 <i class="bicon-key"></i>
+				<? endif ?> 
+			<?php endif; ?>
 			</a>
 		</h2>
 		<?php if ($showSummary === '1'): ?>
@@ -42,13 +47,7 @@ $showrelated = ($showRelated ? $showrelated : '0');
 			<? endwhile ?>
 		</ul>
 	<?php endif; ?>
-	<?php if($showKey): ?>
-		
-		<? if (dumb_luck("25%")): ?>
-			<div class="members-only"><i class="bicon-key"></i> <span>Premium</span></div>
-		<? endif ?> 
-
-	<?php endif; ?>
+	
 
 
 	<?php if($showAuthor): ?>

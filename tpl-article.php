@@ -69,7 +69,7 @@
 		<?php include('includes/article/header.php'); ?>
 
 		
-		<div class="stickem-container">
+		
 			<div class="col-1-content">
 
 					<div class="article-content">
@@ -101,8 +101,10 @@
 
 							 <?php endif; ?>
 
+							 <?php include('includes/article-embeds/newsletter-embedded.php'); ?>
+
 							<?php include('includes/article-embeds/blog-bio.php'); ?>
-							<?php include('includes/article-embeds/newsletter.php'); ?>
+							
 
 							<? while (dumb_luck("2")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
 								
@@ -138,8 +140,11 @@
 
 								<?php include('includes/article-embeds/tweet.php'); ?>
 								
+								<?php include('includes/article-embeds/related.php'); ?>
+
 								<?php include('includes/article-embeds/fact-default.php'); ?>
 								
+								<?php include('includes/article-embeds/topics.php'); ?>
 
 							<?php endif; // End Paywall ?>
 							
@@ -147,21 +152,16 @@
 						
 						
 						
-						<div class=" border-bottom clearfix">
-							<?php $horizontalShareButtons = true; $showCounter = true; 	include('includes/article/social-buttons.php'); ?>
-						</div>
+						
 
-						<?php include('includes/article-embeds/topics.php'); ?>
+						
 
-						<?php // include('includes/article-embeds/share-buttons-large.php'); ?>
-
-						<div class="row article-bottom">
-							<div class="col-md-6 mb-sm-1">
-								<?php include('includes/article-embeds/related.php'); ?>
-							</div>
-							<div class="col-md-6 mb-sm-1">
-								<?php include('includes/article/facebook-like-box.php'); ?>
-							</div>
+						<?php include('includes/article-embeds/share-buttons-large.php'); ?>
+						<div class="article-bottom">
+							
+										<?php // $horizontalShareButtons = true; $showCounter = true; $hideLabels = true; 	include('includes/article/social-buttons.php'); ?>
+									
+							
 						</div>
 
 					</div><!-- article content -->
@@ -172,48 +172,56 @@
 			</div>
 			
 
-			<div class="col-2-sidebar sticky">
-				<?php include('includes/article/right-col-1.php'); ?>
+			<div class="col-2-sidebar">
+				<?php include('includes/article/right-col-2.php'); ?>
 			</div>
-		</div><!-- stickem container -->
+
 	</div>
 
-		<div class="article-below">
+		
+		
+	</div><!-- row -->
+
+		<div class="article-footer">
 			
-				<div class="col-md-12">
-				Footer
+			<div class="row flex-row">
+				<div class="col-xs-12">
+					<div class="section-title">
+						Tophistorier
+					</div>
 				</div>
+				
+					<? while (dumb_luck("8")): ?>
+						<div class="col-xs-6 col-md-3 col-lg-3 col-xl-3 teaser-buffet">
+							<?php 
+								$imgW='420'; 
+								$class = 'fs12 mb';
+								$showImg = '1';
+								$imgRatio = '16:9';
+								$showKey = true;
+								include('includes/teaser.php') ?>
+						</div>
+					<? endwhile ?>
+			</div>
+		</div>
+
+		<div class="article-comments">
 			
-		</div>
-		
-		</div><!-- row -->
+			<div class="flex-row">
+				<div class="col-1-content ">
 
-		
+					<div style="background: rgba(0,0,0,.04); height: 1500px; padding: 1rem;">Kommentarer</div>
 
-	
-		<div class="col-1-content" style="height: 3000px;">
-			<? while (dumb_luck("30")): ?>
-				<p><? dummy("text@paragraph") ?></p>
-			<? endwhile ?>
-		</div>
-
-		<div class="col-2-sidebar" >
-			<div style="height: 700px; position: relative;" class="stickem-container-ex2 skakke">
-				<div class="sticky-ex2" style="background: red; height: 250px; width: 300px;"></div>
+				</div>
+				<div class="col-2-sidebar">
+					<div class="stickem-container-ex2 mb-1 hidden-md-down" style="height: 1500px;">	
+						<div class="sticky-ex2">	
+							<div class="demo-banner" style="height: 250px; width: 300px;"></div>
+						</div>
+					</div>
+				</div>
 			</div>
 
-			<div class="mb">
-				<?php 
-				$showTime = true; 
-				$listClass = 'list list-time';
-				$listTitle = 'Mest læste lige nu';
-				$listCount = '10';
-				$sectionClass = 'latest-news mb-2';
-				$doc ="";
-
-				include('includes/list-news.php');
-				?>
-				</div>
 		</div>
 	</div>		
 		
@@ -227,6 +235,76 @@
 
 </div><!-- main-wrapper -->
 
+
+<div class="site-footer" style="height: 1000px;">
+		
+		<div class="container">
+		<div class="col-xs-12 header-bottom">
+			<ul class="list-reset list-sm mb-0 list-gray">
+				<li><a href="#"><b class="bicon-home"></b> Forside</a></li>
+				<!-- <li><a href="?business">Business</a></li> -->
+				<li><a href="#">Politiko</a></li>
+				<li class="active"><a href="#">Debat</a></li>
+				<li><a href="#">Global</a></li>
+				<li><a href="#">Tech</a></li>
+				<li><a href="#">Viden</a></li>
+				<li><a href="#">Kultur</a></li>
+				<li><a href="#">AoK</a></li>
+				<li><a href="#">Livsstil</a></li>
+				<li><a href="#">Rejseliv</a></li>
+				<li><a href="#">Sport</a></li>
+			</ul>
+		</div>
+			<div class="col-md-3">
+				Berlingske Media
+				Pilestræde 34
+				DK 1147 København K
+				Danmark
+
+				Tlf. 33 75 75 75
+				Fax: 33 75 20 20
+
+				Kontakt os på mail
+
+				CVR.nr.: 29 20 73 13
+			</div>
+			<div class="col-md-3">
+				<strong>Om os</strong>
+				<ul>
+					<li><a href="#" title="#">Kontakt os</a></li>
+					<li><a href="#" title="#">Redaktionelt regnskab</a></li>
+					<li><a href="#" title="#">Ledige stillinger</a></li>
+					<li><a href="#" title="#">Generelle handelsbetingelser</a></li>
+					<li><a href="#" title="#">Send pressemeddelelse</a></li>
+					<li><a href="#" title="#">Fejl og fakta</a></li>
+					<li><a href="#" title="#">Etiske regler</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<strong>Service</strong>
+				<ul>
+					<li><a href="#" title="#">Bestil abonnement</a></li>
+					<li><a href="#" title="#">Læs e-avisen</a></li>
+					<li><a href="#" title="#">Er avisen ikke kommet?</a></li>
+					<li><a href="#" title="#">Annoncesalg</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<strong>Tjenester</strong>
+				<ul>
+					<li><a href="#" title="#">RSS</a></li>
+					<li><a href="#" title="#">Nyhedsbreve</a></li>
+					<li><a href="#" title="#">Det Berlingske Arkiv</a></li>
+					<li><a href="#" title="#">Apps og mobile tjenester</a></li>
+					<li><a href="#" title="#">Foto privatsalg</a></li>
+					<li><a href="#" title="#">Få en historisk avisforside</a></li>
+					<li><a href="#" title="#">Sitemap</a></li>
+					<li><a href="#" title="#">Artikel arkiv indeks</a></li>
+				</ul>
+			</div>
+		</div>	
+
+</div>
 
 
 <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>

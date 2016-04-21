@@ -82,7 +82,14 @@ fieldset[disabled] a.btn {
 .btn-gray {
   @include button-variant(#333, rgba(0,0,0,.1), rgba(0,0,0,.01) );
   &:hover {
-    background-color: $col-blue-1;
+    background-color: rgba(0,0,0,.2);
+
+  }
+}
+.btn-dark-gray {
+  @include button-variant(#fff, rgba(0,0,0,.6), rgba(0,0,0,.0) );
+  &:hover {
+    background-color: #000;
     color: #fff;
   }
 }

@@ -1,9 +1,13 @@
-<?php if($horizontalShareButtons == true) {
+<?php 
+if($horizontalShareButtons == true) {
 	$class = 'share-buttons-horizontal';
 } 
+if($hideLabels == true) {
+	$class = $class . ' hide-labels';
+}
 
 ?>
-<div class="share-buttons collapsed <?php echo $class; ?>">
+<div class="share-buttons collapsed <?php echo $class; ?> ">
 	<div class="mb">
 		<a href="#" class="btn-share-facebook"><i class="bicon-facebook"></i></a>
 	</div>

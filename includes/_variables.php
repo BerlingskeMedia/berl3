@@ -73,6 +73,17 @@ if (isset($_GET['paywall'])) {
 if (isset($_GET['showNewsletter'])) {
 	$showNewsletter = true;
 }
+if (isset($_GET['showNewsletterEmbedded'])) {
+	$showNewsletterEmbedded = true;
+}
+
+if (isset($_GET['showRelated'])) {
+	$showRelated = $_GET['showRelated'];
+} else {
+	$showRelated = true; // Always show related articles unless set to false
+}
+
+
 if (isset($_GET['showRelated'])) {
 	$showRelated = true;
 }

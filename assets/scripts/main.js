@@ -20,8 +20,9 @@
 	var relatedCounter = $('.list-show-first-two li').length - 2;
 	// Show # of related articles in button
 	if (relatedCounter) {
-		$('#related-counter').prepend('Vis alle (' + relatedCounter + ') ');
-		$('#related-counter').click(function(){
+		$('#related-counter span').prepend('Vis alle (+' + relatedCounter + ') ');
+		$('#related-counter').click(function(e){
+			e.preventDefault();
 			$('.list-article-related').removeClass('list-show-first-two');
 		});
 	}
@@ -34,7 +35,7 @@
 	});
 	// Sticky example 2
 	$('.stickem-container-ex2').stickem({
-		offset: '70',
+		offset: '60',
 		item: '.sticky-ex2',
 		stickClass: 'stickit-ex2',
 		container: '.stickem-container-ex2'
