@@ -35,8 +35,8 @@
 			<div class="row">
 				<div class="col-md-3">
 					<div class="row">
-						<div class="col-md-12 col-sm-6 col-xs-12 ">
-							<div class="border-bottom-sm">
+						<div class="col-md-12 hidden-sm-down ">
+							
 							<p><strong>Få Berlingskes nyhedsbrev</strong></p>
 								<ul>
 									<li>
@@ -57,7 +57,7 @@
 									</li>
 									
 								</ul>		
-							</div>
+							
 						</div>
 						<div class="col-md-12 col-sm-6 col-xs-12 mb-sm">
 							<div class="border-bottom-sm">
