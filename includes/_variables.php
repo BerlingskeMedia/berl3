@@ -70,12 +70,13 @@ if (isset($_GET['event'])) {
 if (isset($_GET['paywall'])) {
 	$showPaywall = true;
 }
+$showNewsletterEmbedded = true;
+
 if (isset($_GET['showNewsletter'])) {
 	$showNewsletter = true;
+	$showNewsletterEmbedded = false;
 }
-if (isset($_GET['showNewsletterEmbedded'])) {
-	$showNewsletterEmbedded = true;
-}
+
 
 if (isset($_GET['showRelated'])) {
 	$showRelated = $_GET['showRelated'];

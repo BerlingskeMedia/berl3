@@ -21,7 +21,7 @@
 						</ul> -->
 					<?php endif; ?>
 						
-						<ul class="pull-right list-reset list-bullet list-bullet-not-first list-xs">
+						<ul class="pull-right list-reset list-bullet-sm list-bullet-not-first list-xs">
 							<li><a href="?well">Køb abonnement</a></li>
 							<li><a href="?oneliner">E-avisen</a></li>
 							<li><a href="?well&oneliner">Nyhedsbreve</a></li>

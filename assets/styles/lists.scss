@@ -21,6 +21,21 @@
 		}
 	}
 }
+.list-bullet-sm {
+	li {
+		padding-left: $spacer;
+		&:before {
+			display: inline-block;
+			
+			width: .2rem;
+			height: .2rem;
+			border-radius: 50%;
+			content: '';
+			background-color: #ccc;
+			vertical-align: middle;
+		}
+	}
+}
 .list-bullet {
 	li {
 		padding-left: $spacer;

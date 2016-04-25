@@ -234,6 +234,10 @@ a:hover {
 			}
 		}
 	}
+	&>ul li,
+	&>ol li {
+		margin-bottom: .6rem;
+	}
 	&>h2 {
 		font-weight: 700;
 		font-size: 1.2rem
@@ -275,9 +279,9 @@ a:hover {
 	margin-top: .625rem;
 }
 .image-caption {
-	font-size: .8rem;
-	font-weight: 400;
-	color: rgba(0,0,0,.6);
+	font-size: .7rem;
+	font-weight: 500;
+	color: rgba(0,0,0,.5);
 	padding: .4rem 0;
 	line-height: 1.4;
 	@extend .font-s2;
@@ -377,17 +381,9 @@ a:hover {
 		left: 0;
 		right: 0;
 		bottom: 0;
-		height: 3.5rem;
+		height: 5rem;
 		@include gradient-vertical(
-			fade-out(darken($background-color, 5%),1), 
-			// darken($background-color, 5%), 
-			$background-color, 
-			0%, 70%);
-
-		/*@include gradient-vertical(
-			fade-out(red,.5), 
-			red, 
-			0%, 100%);*/
+			fade-out(darken($background-color, 5%),1), $col-beige, 0%, 70%);
 
 		
 		content: '';
@@ -397,16 +393,16 @@ a:hover {
 .toggle-embed {
 	z-index: 2;
 	position: relative;
-	margin: 0 auto -.5rem;
+	margin: 0 auto -1rem;
 }
 .embed-content {
 	font-size: .7rem;
 	font-weight: 400;
-	@extend .font-g1;
+	@extend .font-s2;
 	max-height: none;
 	p, li {
 		font-size: .9rem;
-		@extend .font-g1;
+		@extend .font-s2;
 		line-height: 1.4;
 	}
 }
@@ -465,7 +461,7 @@ a:hover {
 .article-embed-pull-right {
 	margin: .2rem 0 .6rem  $spacer;
 	clear: right;
-	background-color: darken($background-color, 5%);
+	background-color: $col-beige;
 	padding: $spacer;
 	position: relative;
 }
@@ -484,7 +480,7 @@ a:hover {
 .article-fact-default {
 	position: relative;
 	margin-bottom: $spacer * 3;
-	background-color: darken($background-color, 5%);
+	background-color: $col-beige;
 	padding: $spacer;
 }
 
@@ -897,13 +893,12 @@ blockquote {
 	border-top: $border-width solid $border-color;*/
 	margin-left: -($col-1-width / 2);
 	font-size: .75rem;
-	// margin-right: -$col-1-width / 2;
 
 	@extend .font-s2;
 	clear: left;
 	color: #222;
 	ul {
-		padding-left: ($col-1-width / 2); 
+		padding-left: 0; 
 		margin: 0;
 	}	
 	li {
@@ -911,14 +906,7 @@ blockquote {
 		margin-left: .2rem;
 		margin-bottom: .4rem;
 		font-weight: 500;
-		
 		&:first-child {
-			font-weight: 500;
-			width: ($col-1-width / 2);
-			margin-left: 0;
-			margin-left: -($col-1-width / 2);
-		}
-		&:nth-child(2) {
 		 	margin-left: -.2rem;
 		}
 	}
@@ -943,8 +931,10 @@ blockquote {
 
 .article-related {
 	@extend .border-top;
+	@extend .border-dotted;
 	padding-top: 1rem;
 	@extend .mb;
+	clear: both;
 	margin-left: -($col-1-width / 2)
 	
 }
@@ -958,8 +948,11 @@ blockquote {
 	padding-left: 0;
 	margin: 0;
 	li {
-		padding: 0 0 .8rem 0;
+		padding: .8rem 0 0 0;
 		font-size: .9rem;
+		&:first-child {
+			padding-top: 0;
+		}
 	}
 }
 #related-counter {
@@ -978,6 +971,7 @@ blockquote {
 		@extend .link-blue;
 		font-weight: 500;
 		font-size: .8rem;
+		padding: .5rem 0;
 	}
 }
 
@@ -1005,6 +999,11 @@ blockquote {
 	span {
 		font-size: .7rem; 
 		text-transform: uppercase;
+	}
+	small {
+		font-size: .7rem;
+		font-weight: 500;
+		color: rgba(0,0,0,.5);
 	}
 }
 
@@ -1237,6 +1236,18 @@ figure > .open-gallery {
 		}
 	}
 
+	.article-related,
+	.article-topics {
+		margin-left: 0;
+		.header-float-left {
+			float: none;
+			margin-bottom: .625rem;
+			&+div {
+				padding-left: 0;
+			}
+		}
+	}
+
 }
 @include media-breakpoint-down(md) {
 	.article-summary {
@@ -1257,6 +1268,7 @@ figure > .open-gallery {
 		padding-top: 0;
 		font-size: .8rem;
 	}
+
 }
 
 @include media-breakpoint-down(sm) {
@@ -1330,11 +1342,24 @@ figure > .open-gallery {
 	}
 	.article-image-float-right,
 	.article-embed-pull-right {
+		@extend .continue-reading-fact;
 		float: none;
 		width: inherit;
 		margin-top: $spacer * 2;
 		margin-bottom: $spacer * 2;
 		max-width: none;
+	}
+	.article-body > .article-image-float-right {
+		&:before {
+			display: none;
+		}
+	}
+	.article-image-float-right {
+		@extend .continue-reading-img;
+	}
+	.article-newsletter-embedded {
+		width: 100%;
+		margin: 0 0 $spacer 0 ;
 	}
 	.article-author {
 		display: block;
@@ -1356,10 +1381,45 @@ figure > .open-gallery {
 	}
 
 
+	.continue-reading-fact {
+		margin-top: 3rem;
+		&:before {
+			display: block;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: -2rem;
+			content: 'Artiklen fortsætter efter faktaboksen';
+			font-size: .7rem;
+			text-align: center;
+			padding: .5rem 0;
+			@extend .font-s2;
+			color: rgba(0,0,0,.4);
+		}
+	}
+	.continue-reading-img {
+			margin-top: 3rem;
+			&:before {
+				display: block;
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: -2rem;
+				content: 'Artiklen fortsætter efter billedet';
+				font-size: .7rem;
+				text-align: center;
+				padding: .5rem 0;
+				@extend .font-s2;
+				color: rgba(0,0,0,.4);
+			}
+		}
 	
-	
-
 }
+
+	
+		
+
+
 @include media-breakpoint-down(xs) {
 	.article-newsletter {
 		width: 100%;

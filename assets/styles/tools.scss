@@ -122,6 +122,9 @@
 .border-top {
 	border-top: $border-width solid $border-color;
 }
+.border-dotted {
+	border-top: $border-width dotted $border-color;
+}
 .border-right-lg {
 	position: relative;
 	&:after {
@@ -305,8 +308,13 @@
 	.mb-sm {
 		margin-bottom: $spacer;
 	}
-	.mb-sm-1 {
+	.mb-1-sm {
 	 	margin-bottom: $spacer * 2;
+	 }
+	 .border-bottom-sm {
+	 	border-bottom: $border-width solid $border-color;
+	 	padding-bottom: $spacer;
+	 	margin-bottom : $spacer; 
 	 }
 	
  }

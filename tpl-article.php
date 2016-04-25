@@ -114,7 +114,11 @@
 
 							<?php endif; ?>
 
-							
+								
+								<ol>
+									<? while (dumb_luck("7")): ?><li><? dummy("text@headline") ?></li><? endwhile ?>
+								</ol>
+
 							<?php if(!$showPaywall): ?>
 								
 								<? while (dumb_luck("2")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
@@ -139,10 +143,11 @@
 								<?php include('includes/article-embeds/custom.php'); ?>
 
 								<?php include('includes/article-embeds/tweet.php'); ?>
+
+								<?php include('includes/article-embeds/fact-default.php'); ?>
 								
 								<?php include('includes/article-embeds/related.php'); ?>
 
-								<?php include('includes/article-embeds/fact-default.php'); ?>
 								
 								<?php include('includes/article-embeds/topics.php'); ?>
 
@@ -202,6 +207,11 @@
 								include('includes/teaser.php') ?>
 						</div>
 					<? endwhile ?>
+					<div class="col-xs-12">
+						<div class="text-center deck-footer mb-1 mt">
+							<button class="btn btn-round btn-blue btn-sm">Hent flere <i class="bicon-angle-down"></i></button>
+						</div>
+					</div>
 			</div>
 		</div>
 
@@ -236,75 +246,7 @@
 </div><!-- main-wrapper -->
 
 
-<div class="site-footer" style="height: 1000px;">
-		
-		<div class="container">
-		<div class="col-xs-12 header-bottom">
-			<ul class="list-reset list-sm mb-0 list-gray">
-				<li><a href="#"><b class="bicon-home"></b> Forside</a></li>
-				<!-- <li><a href="?business">Business</a></li> -->
-				<li><a href="#">Politiko</a></li>
-				<li class="active"><a href="#">Debat</a></li>
-				<li><a href="#">Global</a></li>
-				<li><a href="#">Tech</a></li>
-				<li><a href="#">Viden</a></li>
-				<li><a href="#">Kultur</a></li>
-				<li><a href="#">AoK</a></li>
-				<li><a href="#">Livsstil</a></li>
-				<li><a href="#">Rejseliv</a></li>
-				<li><a href="#">Sport</a></li>
-			</ul>
-		</div>
-			<div class="col-md-3">
-				Berlingske Media
-				Pilestræde 34
-				DK 1147 København K
-				Danmark
-
-				Tlf. 33 75 75 75
-				Fax: 33 75 20 20
-
-				Kontakt os på mail
-
-				CVR.nr.: 29 20 73 13
-			</div>
-			<div class="col-md-3">
-				<strong>Om os</strong>
-				<ul>
-					<li><a href="#" title="#">Kontakt os</a></li>
-					<li><a href="#" title="#">Redaktionelt regnskab</a></li>
-					<li><a href="#" title="#">Ledige stillinger</a></li>
-					<li><a href="#" title="#">Generelle handelsbetingelser</a></li>
-					<li><a href="#" title="#">Send pressemeddelelse</a></li>
-					<li><a href="#" title="#">Fejl og fakta</a></li>
-					<li><a href="#" title="#">Etiske regler</a></li>
-				</ul>
-			</div>
-			<div class="col-md-3">
-				<strong>Service</strong>
-				<ul>
-					<li><a href="#" title="#">Bestil abonnement</a></li>
-					<li><a href="#" title="#">Læs e-avisen</a></li>
-					<li><a href="#" title="#">Er avisen ikke kommet?</a></li>
-					<li><a href="#" title="#">Annoncesalg</a></li>
-				</ul>
-			</div>
-			<div class="col-md-3">
-				<strong>Tjenester</strong>
-				<ul>
-					<li><a href="#" title="#">RSS</a></li>
-					<li><a href="#" title="#">Nyhedsbreve</a></li>
-					<li><a href="#" title="#">Det Berlingske Arkiv</a></li>
-					<li><a href="#" title="#">Apps og mobile tjenester</a></li>
-					<li><a href="#" title="#">Foto privatsalg</a></li>
-					<li><a href="#" title="#">Få en historisk avisforside</a></li>
-					<li><a href="#" title="#">Sitemap</a></li>
-					<li><a href="#" title="#">Artikel arkiv indeks</a></li>
-				</ul>
-			</div>
-		</div>	
-
-</div>
+<?php include('includes/footer.php'); ?>
 
 
 <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>

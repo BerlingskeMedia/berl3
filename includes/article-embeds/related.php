@@ -2,10 +2,10 @@
 
 <aside class="article-related">
 	
-	<div class="micro-title header-float-left">Læs også:</div>
+	<div class="micro-title header-float-left">Relateret:</div>
 	<div>
 		<!-- DEVELOPER INFO: If more than 2 related articles, add the class "list-showfirst-two" to ul  -->
-		<ul class="list list-article-related list-bullet list-show-first-two mb-sm">
+		<ul class="list list-article-related list-bullet list-show-first-two ">
 			<? while (dumb_luck("5-10")): ?>
 			<li>
 				<div class="list-body">

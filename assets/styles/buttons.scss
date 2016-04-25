@@ -29,6 +29,7 @@ button {outline: 0!important}
     }
   }
 
+
   @include hover-focus {
     text-decoration: none;
   }
@@ -247,3 +248,8 @@ button {
 	width: 100%;
 }
 
+@include media-breakpoint-down(sm) {
+  .btn {
+    font-size: .8rem;
+  }
+}
