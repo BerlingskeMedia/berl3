@@ -32,7 +32,7 @@
 
 .form-round-oneliner {
 	position: relative;
-
+	border-bottom: $border-width solid $border-color;
 	input[type="email"] {
 		border-radius: 30rem 0 0 30rem;
 		font-size: 1rem;
@@ -56,3 +56,48 @@
 	}
 }
 
+.checkbox-styled {
+	margin-top: .5rem;
+	input[type="checkbox"] {
+		appearance: none;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		position: relative;
+		color: white;
+		display: inline-block;
+		cursor: pointer;
+		width: $spacer;
+		height: $spacer;
+		outline: 0;
+		vertical-align: middle;
+		&:before {
+			background: transparent;
+			position: absolute;
+			content: "";
+			display: block;
+			visibility: visible;
+			border: 1px solid #999;
+			width: $spacer;
+			height: $spacer;
+		}
+		&:checked:after {
+			background: transparent;
+			position: absolute;
+			left: 4px;
+			content: "";
+			display: block;
+			visibility: visible;
+			border-left: 3px solid #333;
+			border-bottom: 3px solid #333;
+			width: $spacer;
+			height: 7px;
+			transform: rotate(-50deg);
+		}
+	}
+	span {
+		display: inline-block;
+		margin-top: .35rem;
+		vertical-align: middle;
+		font-size: .8rem;
+	}
+}

@@ -41,17 +41,17 @@
 								<ul>
 									<li>
 										<form action="" class="form-round-oneliner ">
-											<div class="clearfix mb">
-											<input type="email" placeholder="Din email">
-											<button class="btn btn-gray">Tilmeld</button>
+											<div class="clearfix ">
+												<input type="email" placeholder="Din email">
+												<button class="btn btn-gray">Tilmeld</button>
 											</div>
-											
-											<div class="checkbox">
-										    <label>
-										      <input type="checkbox" checked> Inkl. Breaking News
-										    </label>
-										  </div>
-
+											<div class="checkbox-styled">
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" checked=""> <span>Inkl. Breaking News</span>
+													</label>
+												</div>
+											</div>
 										
 										</form>
 									</li>

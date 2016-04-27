@@ -29,16 +29,15 @@
 				$sectionClass = 'latest-news mb';
 				$premium = false;
 				$listDoc ="I'm the documentation";
-
 				include('includes/list-news.php');
 				?>
 			</div>	
 		</div>
 		<div class="col-md-6 col-lg-12">
-			<div class="mb hidden-md-down" style="background: #fff; padding: .5rem; text-align: center">
-				<?php // include('includes/article/facebook-like-box.php'); ?>
-				<?php include('includes/article/facebook-like-button.php'); ?>
-			</div>
+			
+				<?php  include('includes/article/facebook-like-box.php'); ?>
+				<?php // include('includes/article/facebook-like-button.php'); ?>
+			
 			<div class="mb">
 				<?php 
 				$showTime = false;

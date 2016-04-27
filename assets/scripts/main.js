@@ -1,3 +1,14 @@
+// function used to load Disqus comments
+function isScrolledIntoView(elem) {
+	var docViewTop = $(window).scrollTop();
+	var docViewBottom = docViewTop + $(window).height();
+
+	var elemTop = $(elem).offset().top;
+	var elemBottom = elemTop + $(elem).height();
+
+	return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
+
 (function($) {
 	// MISC VARS - STICKY HEADER ON SCROLL
 	var bodyClass = $('body');
@@ -39,6 +50,19 @@
 		item: '.sticky-ex2',
 		stickClass: 'stickit-ex2',
 		container: '.stickem-container-ex2'
+	});
+
+	$('#disqus_thread:not(.loaded)').each(function () {
+		if (isScrolledIntoView(this) === true) {
+			var disqus_shortname = 'btdkbond'; 
+			$.ajax({
+			type: "GET",
+			url: "http://" + disqus_shortname + ".disqus.com/embed.js",
+			dataType: "script",
+			cache: true
+		});
+		$(this).addClass('loaded'); // add class to prevent function from running again
+		}
 	});
 
 

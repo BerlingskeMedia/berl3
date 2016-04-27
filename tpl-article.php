@@ -12,7 +12,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Berlingske LIVE</title>
+	<title>Berlingske Article</title>
 	<link rel="stylesheet" href="/dist/styles/main.css">
 	
 </head>
@@ -105,8 +105,10 @@
 
 							<?php include('includes/article-embeds/blog-bio.php'); ?>
 							
-
-							<? while (dumb_luck("2")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
+							<p><? dummy("text@paragraph-first-letter") ?></p>
+							
+							<p><? dummy("text@paragraph") ?></p>
+							
 								
 							<?php if($showPaywall): ?>
 								
@@ -218,13 +220,17 @@
 		<div class="article-comments">
 			
 			<div class="flex-row">
-				<div class="col-1-content ">
-
-					<div style="background: rgba(0,0,0,.04); height: 1500px; padding: 1rem;">Kommentarer</div>
-
+				<div class="col-1-content">
+					<div class="article-content">
+						<div  style="min-height: 700px; padding: 1rem;">
+							<div class="article-comments" id="article-comments">
+								<div id="disqus_thread"></div>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="col-2-sidebar">
-					<div class="stickem-container-ex2 mb-1 hidden-md-down" style="height: 1500px;">	
+					<div class="stickem-container-ex2 mb-1 hidden-md-down" style="height: 700px;">	
 						<div class="sticky-ex2">	
 							<div class="demo-banner" style="height: 250px; width: 300px;"></div>
 						</div>

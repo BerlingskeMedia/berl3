@@ -6,12 +6,17 @@
       ],
       "main": true
     },
+    
     "main.css": {
       "files": [
         "styles/main.scss"
-      ],
-      "main": true
-    },    
+      ]
+    },
+    "demo.js": {
+      "files": [
+        "scripts/demo.js"
+      ]
+    },   
     "modernizr.js": {
       "bower": ["modernizr"]
     }

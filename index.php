@@ -67,6 +67,8 @@ if(isset($_GET["business"])) {
 		padding: .2rem;
 		color: #333;
 		transition: background-color .2s ease;
+		margin-bottom: .1rem;
+		
 	}
 	.emtpy {
 		color: #999;
@@ -77,18 +79,22 @@ if(isset($_GET["business"])) {
 	}
 	.span-red,
 	.red a {
-		background-color: rgba(255,0,0,.1);
+		background-color: rgba(255,0,0,.2);
+		
 	}
 	.red a:hover {
-		background-color: rgba(255,0,0,.15);
+		background-color: rgba(255,0,0,.3);
+		
 	}
 
 	.span-orange,
 	.orange a {
-		background-color: rgba(242,100,34,.2);
+		background-color: rgba(242,100,34,.3);
+		
 	}
 	.orange a:hover {
-		background-color: rgba(242,100,34,.3);
+		background-color: rgba(242,100,34,.4);
+
 	}
 
 	.span-green,
@@ -275,6 +281,7 @@ if(isset($_GET["business"])) {
 						</div>
 						<div class="col-lg-9">
 							<ul>
+								<li class="orange">Header position<a href="tpl-article-longread.php?textPosition=top">Top</a> <a href="tpl-article-longread.php?textPosition=bottom">Bottom</a> <a href="tpl-article-longread.php?textPosition=below">Below</a></li>
 								<li class="orange"><a href="tpl-article-longread.php?imgSize=4">Embedded images</a></li>
 								<li class="orange"><a href="tpl-article-longread.php?showCustom&amp;imgSize=1">Custom embed</a></li>
 								<li class="orange"><a href="tpl-article-longread.php?showTweet">Tweet embed</a></li>

@@ -60,7 +60,7 @@
 
 .header-top {
 	height: 40px;
-	@extend .border-bottom;
+	border-bottom: $border-width solid $border-color;
 	@extend .link-gray-dark;
 	@extend .font-s2;
 	font-weight: 500;

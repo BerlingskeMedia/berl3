@@ -89,6 +89,13 @@ if (isset($_GET['showRelated'])) {
 	$showRelated = true;
 }
 
+// Longreads
+if (isset($_GET['textPosition'])) {
+	$textPosition = $_GET['textPosition'];
+} else {
+	$textPosition = 'bottom'; 
+}
+
 $campaignId = 'campaign-' . mt_rand(1,3);
 
 ?>

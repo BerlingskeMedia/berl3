@@ -9,9 +9,9 @@
 			<button class="btn  btn-blue">OK</button>
 		</div>
 		
-		<div class="checkbox">
+		<div class="checkbox checkbox-styled">
 			<label>
-				<input type="checkbox" checked> <span>Inkl. Breaking News</span>
+				<input type="checkbox" class="" checked > <span>Inkl. Breaking News</span>
 			</label>
 		</div>
 

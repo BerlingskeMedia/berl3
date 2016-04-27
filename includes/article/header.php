@@ -1,5 +1,6 @@
 <header class="article-header">
 		<?php include('includes/article/event-headers.php'); ?>
+		
 		<?php if($templateBlog || $templateEditorial): ?>
 		<div class="row">
 			<div class="col-md-2">
@@ -7,32 +8,27 @@
 					
 
 					<?php if($templateBlog): ?>
-					
-					<figure class="article-avatar img-gradient">
-						<a href="tpl-author.php" title="Se [AUTHOR NAME]'s profil"><img src="<? dummy("image/!author@200x200,") ?>" width="" height="" alt="[AUTHOR NAME]" /></a>
-					</figure>
-
-					<div class="author-info">
-						<a href="tpl-author.php" title="Se [AUTHOR NAME]'s profil"><? dummy("text@author") ?></a>
 						
-						<div class="author-follow"><button class="btn-follow-author" title="Ophæv abonnement">Følg</button></div>
-						
-						<? if (dumb_luck("50%")): ?> 
-							<div class="author-username">
-								<a href="http://twitter.com" target="_blank"><i class="bicon-twitter col-twitter"></i> <? dummy("text@username") ?></a>
-							</div>
-						<? endif ?>
-					</div>
+						<figure class="article-avatar img-gradient">
+							<a href="tpl-author.php" title="Se [AUTHOR NAME]'s profil"><img src="<? dummy("image/!author@200x200,") ?>" width="" height="" alt="[AUTHOR NAME]" /></a>
+						</figure>
+						<div class="author-info">
+							<a href="tpl-author.php" title="Se [AUTHOR NAME]'s profil"><? dummy("text@author") ?></a>
+							<div class="author-follow"><button class="btn-follow-author" title="Ophæv abonnement">Følg</button></div>
+							<? if (dumb_luck("50%")): ?> 
+								<div class="author-username">
+									<a href="http://twitter.com" target="_blank"><i class="bicon-twitter col-twitter"></i> <? dummy("text@username") ?></a>
+								</div>
+							<? endif ?>
+						</div>
 					
 					<?php elseif($templateEditorial): ?>
 					
-					<figure class="article-avatar ">
-						<a href="tpl-author.php" title="Se [AUTHOR NAME]'s profil"><img src="/dist/images/logo.png" width="" height="" alt="[AUTHOR NAME]" /></a>
-					</figure>
+						<figure class="article-avatar ">
+							<a href="tpl-author.php" title="Se [AUTHOR NAME]'s profil"><img src="/dist/images/logo.png" width="" height="" alt="[AUTHOR NAME]" /></a>
+						</figure>
 					
 					<?php endif; ?>
-
-					
 					
 				</div>
 			</div>
@@ -62,7 +58,6 @@
 				<p class="article-summary"><? dummy("text@teaser") ?></p>
 			</div>
 		</div>
-		
 		
 		
 		<?php else: ?>
