@@ -14,6 +14,11 @@
 	}
 }
 
+.demo-banner-mobile {
+	&:after {
+		content: 'Mobile banner';
+	}
+}
 .banner-wrapper {
 	position: relative;
 }

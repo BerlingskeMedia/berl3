@@ -917,38 +917,17 @@ blockquote {
 	/*padding: $spacer 0;
 	border-top: $border-width solid $border-color;*/
 	@extend .border-top;
-	@extend .border-dotted;
 	padding-top: 1rem;
 	// margin-left: -($col-1-width / 2);
 	font-size: .75rem;
 	@extend .font-s2;
 	clear: left;
 	color: #222;
-	.fadeout {
-		content: '';
-		width: 2rem;
-		position: absolute;
-		right: 0;
-		height: 1.5rem;
-		bottom: 0;
-		display: inline-block;
-		@include gradient-horizontal(fade-out($background-color,1), $background-color, 0%, 70%);
-		z-index: 2;
-		line-height: 1;
-		margin: 0;
-	}
+	
+
 	ul {
 		padding-left: 0; 
 		margin: 0;
-		height: 1.5rem;
-		overflow: hidden;
-		overflow-x: scroll;
-		
-		white-space: nowrap;
-		-webkit-overflow-scrolling: touch;
-		-ms-overflow-style: -ms-autohiding-scrollbar;
-		position: relative;
-		
 	}	
 	li {
 		display: inline-block;
@@ -994,7 +973,6 @@ blockquote {
 }
 .article-related {
 	@extend .border-top;
-	@extend .border-dotted;
 	padding-top: .625rem;
 	@extend .mb;
 	clear: both;
@@ -1463,6 +1441,34 @@ $longreadPadding: 20rem;
 }
 
 @include media-breakpoint-down(sm) {
+	.article-topics {
+		.fadeout {
+			content: '';
+			width: 2rem;
+			position: absolute;
+			right: -.1rem;
+			height: 1.5rem;
+			bottom: 0;
+			display: inline-block;
+			@include gradient-horizontal(fade-out($background-color,1), $background-color, 0%, 70%);
+			z-index: 2;
+			line-height: 1;
+			margin: 0;
+		}
+		ul {
+			
+			
+			height: 1.5rem;
+			overflow: hidden;
+			overflow-x: scroll;
+			
+			white-space: nowrap;
+			-webkit-overflow-scrolling: touch;
+			-ms-overflow-style: -ms-autohiding-scrollbar;
+			
+			
+		}	
+	}
 	.byline-blog {
 		.img-gradient {
 			max-width: 3rem;
