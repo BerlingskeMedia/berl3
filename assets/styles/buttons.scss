@@ -185,8 +185,13 @@ fieldset[disabled] a.btn {
   @include button-size(0, .625rem, .7rem, 1rem, 30rem);
   height: 1rem;
   @include media-breakpoint-down(sm) {
-    @include button-size(0, .525rem, .6rem, .9rem, 30rem);
+    
+    line-height: .8rem;
     height: .8rem;
+    font-size: .5rem;
+    
+    padding: 0 .3rem;
+    vertical-align: middle;
 
   }
 }

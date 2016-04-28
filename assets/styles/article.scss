@@ -223,9 +223,15 @@ a:hover {
 			}
 		}
 	}
-	&>ul li,
-	&>ol li {
-		margin-bottom: .6rem;
+	
+	&>ul, > ol {
+
+		margin: 2rem 0;
+
+		li {
+			margin-bottom: 1rem;
+		}
+
 	}
 	&>h2 {
 		font-weight: 700;
@@ -1453,6 +1459,8 @@ $longreadPadding: 20rem;
 		&>h2 {
 			font-size: 1rem
 		}
+		
+
 	}
 	.image-caption {
 		padding-left: .625rem;
