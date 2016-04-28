@@ -42,10 +42,11 @@
 									<li>
 										<form action="" class="form-round-oneliner ">
 											<div class="clearfix ">
-												<input type="email" placeholder="Din email">
+												<!-- the class .newsletter-email is uded by js to slide down breaking cheackbox-->
+												<input type="email" placeholder="Din email" class="newsletter-email">
 												<button class="btn btn-gray">Tilmeld</button>
 											</div>
-											<div class="checkbox-styled">
+											<div class="checkbox-styled hidden">
 												<div class="checkbox">
 													<label>
 														<input type="checkbox" checked=""> <span>Inkl. Breaking News</span>

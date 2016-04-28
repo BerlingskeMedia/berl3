@@ -12,8 +12,9 @@ button {outline: 0!important}
   user-select: none;
   border: $border-width solid transparent;
   // border-bottom: rgba(0,0,0,.2) .15rem solid;
-  @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $line-height, $btn-border-radius);
+  @include button-size($btn-padding-y, $btn-padding-x, .9rem, $line-height, $btn-border-radius);
   transition: all .1s ease-in-out;
+
   text-transform: uppercase;
   @extend .font-s2;
   font-weight: 500;

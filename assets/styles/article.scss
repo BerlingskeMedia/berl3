@@ -382,10 +382,26 @@ a:hover {
 		height: 5rem;
 		@include gradient-vertical(
 			fade-out(darken($background-color, 5%),1), $col-beige, 0%, 70%);
-
-		
 		content: '';
 		z-index: 0;
+	}
+	.btn {
+		margin-bottom: -6rem;
+		z-index: 3;
+	}
+
+	&:after {
+		// background: radial-gradient(ellipse 50% 10px at 50% 100%,#dfdfdf 0,#f8f8f8 110%);
+		background: radial-gradient(ellipse 50% 10px at 50% 100%,fade-out(darken($background-color, 20%),.0) 0,fade-out(#dfdfdf,1) 110%);
+    	height: 2.5rem;
+    	content: '';
+    	display: block;
+    	left: 0;
+    	position: absolute;
+    	right: 0;
+    	position: relative;
+    	z-index: 2;
+
 	}
 }
 .toggle-embed {
@@ -600,8 +616,14 @@ a:hover {
 	color: #666;
 	font-size: .8rem;
 	margin-bottom: $spacer;
+	a {
+		color: #666;
+	}
 }
 
+.updated {
+	font-weight: 500;
+}
 
 
 .article-embedded-link {	
@@ -1460,7 +1482,8 @@ $longreadPadding: 20rem;
 			margin-bottom: $spacer * 1.5;
 		}
 		&>h2 {
-			font-size: 1rem
+			font-size: 1rem;
+			line-height: 1.5;
 		}
 		
 
@@ -1474,7 +1497,7 @@ $longreadPadding: 20rem;
 		@extend .fw-sm;
 	}
 	.article-title {
-		font-size: 1.5rem;
+		font-size: 1.7rem;
 	}
 	.article-summary {
 		font-size: 1rem;

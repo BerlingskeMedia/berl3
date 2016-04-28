@@ -52,9 +52,7 @@
 			</div>
 		</div>
 		
-		
 		<?php else: ?>
-
 		
 			<?php include('includes/article-embeds/rating.php'); ?>
 
@@ -67,15 +65,9 @@
 				<? dummy("text@headline") ?>
 			</h1>
 			
-		
-		
-		
-
-		<p class="article-summary relative"><? dummy("text@teaser") ?></p>
-		
+			<p class="article-summary relative"><? dummy("text@teaser") ?></p>
 		
 			<?php include('includes/article/date.php'); ?>
-		
 		
 			<?php include('includes/article/byline.php') ?>
 		<?php endif; ?>

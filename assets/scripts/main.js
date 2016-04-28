@@ -19,6 +19,11 @@ function isScrolledIntoView(elem) {
 		$(bodyClass).toggleClass('show-offcanvas');
 	});
 		
+	// Newsletter fold out breaking option
+	$('.newsletter-email').focus(function(){
+		$(this).closest('form').find('.hidden').slideDown('fast');
+	});
+	
 	
 	// Expand embedded elements in articles
 	$('.toggle-embed').click(function(){
