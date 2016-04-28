@@ -217,6 +217,12 @@
 	font-size: .75rem;
 }
 
+.hide-section-title {
+	.section-title {
+		@extend .hidden;
+	}
+}
+
 /*.border-top {
 	padding-top: $spacer;
 	border-top: $border-width solid $border-color;
@@ -240,13 +246,7 @@
  	display: inline-block;
  }
 
-.header-float-left {
-	
-	float: left;
-	&+ div {
-		padding-left: ($col-1-width / 2);
-	}
-}
+
 @include media-breakpoint-down(md){
 	 .fs08 {
 	 	.header {
@@ -300,7 +300,17 @@
 	 	}
 	 }
 }
+
+@include media-breakpoint-up(md) {
+	.col-md-up {
+		column-count: 2;
+	}
+}
+
 @include media-breakpoint-down(sm) {
+	.align-center-sm {
+		text-align: center;
+	}
 	.fw-sm { 	
 		margin-left: -.625rem;
 		margin-right: -.625rem;

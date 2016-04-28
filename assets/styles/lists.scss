@@ -62,6 +62,11 @@
 		padding-bottom: .425rem;
 	}
 }
+.list-font-2 {
+	li {
+		font-size: .95rem;
+	}
+}
 .list-inline-block {
 	margin: 0;
 	padding: 0;
@@ -207,5 +212,36 @@
 			content: '';
 		}
 
+	}
+}
+.small-title-left {
+	.section-title {
+		font-size: 1rem;
+		// margin-left: -($col-1-width / 2);
+		float: none;
+		padding: 0;
+
+		&:before {
+			display: none;
+		}
+
+	}
+	
+}
+
+@include media-breakpoint-up(md) {
+	.small-title-left {
+		.section-title {
+			font-size: 1rem;
+			// margin-left: -($col-1-width / 2);
+			float: left;
+			padding: 0;
+
+			
+
+		}
+		ul {
+			padding-left: ($col-1-width / 2)!important;
+		}
 	}
 }

@@ -10,7 +10,7 @@
 		</div>
 		<div class="col-md-6 hidden-lg-up">
 			<?php // include('includes/article/facebook-like-box.php'); ?>
-			<?php include('includes/article/facebook-like-button.php'); ?>
+			<?php // include('includes/article/facebook-like-button.php'); ?>
 		</div>	
 	</div>
 	
@@ -28,6 +28,9 @@
 				$listCount = '5';
 				$sectionClass = 'latest-news mb';
 				$premium = false;
+				$imgSrc = false;
+				$imgW = '80';
+				$imgRatio = '1:1';
 				$listDoc ="I'm the documentation";
 				include('includes/list-news.php');
 				?>
@@ -47,6 +50,9 @@
 				$listCount = '5';
 				$sectionClass = 'latest-news mb';
 				$premium = true;
+				$imgSrc = false;
+				$imgW = '80';
+				$imgRatio = '1:1';
 				$listDoc ="I'm the documentation";
 
 				include('includes/list-news.php');

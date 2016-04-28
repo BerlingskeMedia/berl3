@@ -27,16 +27,10 @@ function isScrolledIntoView(elem) {
 	});
 
 
-	// Expand list of related articles + show number of related articles 
-	var relatedCounter = $('.list-show-first-two li').length - 2;
-	// Show # of related articles in button
-	if (relatedCounter) {
-		$('#related-counter span').prepend('Vis alle (+' + relatedCounter + ') ');
-		$('#related-counter').click(function(e){
-			e.preventDefault();
-			$('.list-article-related').removeClass('list-show-first-two');
-		});
-	}
+	$('.toggle-xtra-related').click(function(){
+		$('#xtra-related').slideDown('fast');
+		$('.toggle-related-fade').fadeOut('fast');
+	});
 	
 	// Make sticky side cols
 	$('.stickem-container').stickem({

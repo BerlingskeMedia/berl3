@@ -18,13 +18,7 @@
 	margin-right: -($col-1-width / 2)
 	/*margin-left: -($col-1-width / 2);*/
 }
-.scroll-to-comments {
-	display: inline-block;
-	float:right;
-	margin-left: .625rem;
-	position: relative;
-	padding-bottom: .9rem;
-}
+
 
 
 /*.first-letter {
@@ -35,38 +29,7 @@
 	margin: -.2rem .4rem -0.7rem 0;
 
 }*/
-.comments-count {
-	height: 3.5rem;
-	width: 3.5rem;
-	text-align: center;
-	line-height: 3.7rem;
-	display: inline-block;
-	color: #fff;
-	font-size: 2rem;
-	font-weight: 300;
-	@extend .font-g2;
-	overflow: hidden;
-	i {
-		font-style: normal;
-		position: relative;
-		z-index: 2;
-		display: block;
-		margin-top: -.2rem;
 
-	}
-	&:before {
-		content: '\e81e';
-		font-family: b-icons;
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		color: $col-blue-2;
-		font-size: 4rem;
-		z-index: 0;
-	}
-}
 
 .star-txt {
 	font-size: .8rem;
@@ -107,7 +70,22 @@
 		color: $col-blue-1;
 	}
 }
-
+.large-share-buttons {
+	.btn-facebook,
+	.btn-twitter {
+		width: calc(40% - .3rem);
+		float: left;
+		margin-right: .3rem;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.btn-gray {
+		width: 20%;
+		float: left;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
 
 .open-gallery {
 	display: block;
@@ -256,8 +234,8 @@ a:hover {
 	@extend .clearfix;
 	margin-bottom: $spacer;
 	.author-info {
-		@extend .font-g1;
-		font-weight: 700;
+		@extend .font-s2;
+		font-weight: 500;
 
 	}
 	a {
@@ -287,9 +265,9 @@ a:hover {
 	margin-top: .625rem;
 }
 .image-caption {
-	font-size: .7rem;
+	font-size: .8rem;
 	font-weight: 500;
-	color: rgba(0,0,0,.5);
+	color: rgba(0,0,0,.6);
 	padding: .4rem 0;
 	line-height: 1.4;
 	@extend .font-s2;
@@ -302,9 +280,9 @@ a:hover {
 	display: block;
 	font-size: .6rem;
 	@extend .font-s2;
-	font-weight: bold;
-	text-transform: uppercase;
-	padding-top: .4rem;
+	
+	
+	padding-top: .2rem;
 	.byline {
 		padding-top: .2rem;
 		display: inline-block;
@@ -899,7 +877,10 @@ blockquote {
 .article-topics {
 	/*padding: $spacer 0;
 	border-top: $border-width solid $border-color;*/
-	margin-left: -($col-1-width / 2);
+	@extend .border-top;
+	@extend .border-dotted;
+	padding-top: 1rem;
+	// margin-left: -($col-1-width / 2);
 	font-size: .75rem;
 	
 	@extend .font-s2;
@@ -911,12 +892,10 @@ blockquote {
 	}	
 	li {
 		display: inline-block;
-		margin-left: .2rem;
+		margin-right: .2rem;
 		margin-bottom: .4rem;
 		font-weight: 500;
-		&:first-child {
-		 	margin-left: -.2rem;
-		}
+		
 	}
 	a {
 		/*@extend .btn;
@@ -936,16 +915,54 @@ blockquote {
 		
 	}
 }
+.toggle-related-fade {
+	display: block;
+	text-align: center;
+	margin-top: -3rem;
+	margin-bottom: 2rem;
+	z-index: 2;
+	background: radial-gradient(ellipse 50% 30px at 50% 100%, #ebebeb 0%, $background-color 110%);
+	height: 2.5rem;
+	.btn {
+		margin-top: 1.5rem;
+		background-color: #ddd;
+		&:hover {
+			background-color: darken(#ddd, 5%);
+		}
+	}
+}
 
+.xtra-related {
+	@extend .hidden;
+}
 .article-related {
 	@extend .border-top;
 	@extend .border-dotted;
-	padding-top: 1rem;
+	padding-top: .625rem;
 	@extend .mb;
 	clear: both;
-	margin-left: -($col-1-width / 2)
+	// margin-left: -($col-1-width / 2)
+	
+	li {
+		min-height: 3rem;
+	}
+	
 	
 }
+.border-first-item {
+	li:first-child {
+		border-top: $border-width solid $border-color;
+		padding-top: .425rem!important;
+		margin-top: .425rem;
+	}	
+}
+.no-border-last-item {
+	li:last-child {
+		border-bottom: 0;
+		padding-bottom: 0;
+	}	
+}
+
 .article-bottom {
 	@extend .mb;
 	// @extend .article-off-grid
@@ -956,7 +973,7 @@ blockquote {
 	padding-left: 0;
 	margin: 0;
 	li {
-		padding: .8rem 0 0 0;
+		
 		font-size: .9rem;
 		&:first-child {
 			padding-top: 0;
@@ -1185,9 +1202,7 @@ $longreadPadding: 20rem;
 		margin-left: -$longreadPadding / 2;
 		margin-right: -$longreadPadding / 2;
 	}
-	.scroll-to-comments {
-		padding-bottom: 0;
-	}
+	
 	.article-embed-pull-right {
 		margin-right: -10rem;
 	}
@@ -1263,14 +1278,8 @@ $longreadPadding: 20rem;
 			margin-top: .3rem;
 		}
 	}
-	.scroll-to-comments {
-		margin-right: 17rem;
-	}
-	.tpl-article-longread {
-		.scroll-to-comments {
-			margin-right: auto;
-		}
-	}
+	
+	
 	.article-off-grid {
 		margin-right: -$col-1-width / 2;
 	}
@@ -1411,18 +1420,7 @@ $longreadPadding: 20rem;
 		}
 	}
 
-	.comments-count {
-		height: 2.6rem;
-		width: 2.6rem;
-		line-height: 2.6rem;
-		font-size: 1.5rem;		
-		i {
-			margin-top: -.1rem;
-		}
-		&:before {
-			font-size: 2.7rem;
-		}
-	}
+	
 
 	.article-header {
 		border: 0;

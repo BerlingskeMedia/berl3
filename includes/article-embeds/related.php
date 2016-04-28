@@ -1,10 +1,51 @@
 <?php if($showRelated): ?>
 
 <aside class="article-related">
+
+<?php 
+$showTime = false;
+$showImage = true; 
+$listClass = 'list list-img-right list-article-related no-border-last-item list-font-2';
+$listTitle = 'Relaterede';
+$listCount = '2';
+$sectionClass = 'small-title-left';
+$premium = true;
+$imgSrc = false;
+$imgW = '60';
+$imgRatio = '1:1';
+
+$listDoc ="I'm the documentation";
+include('includes/list-news.php');
+?>
+
+
+
+<?php 
+$showTime = false;
+$showImage = true; 
+$listClass = 'list list-img-right list-article-related no-border-last-item border-first-item list-font-2 xtra-related ';
+$listId = 'xtra-related';
+$listTitle = '';
+$listCount = '3';
+$sectionClass = ' mb small-title-left hide-section-title';
+$premium = true;
+$imgSrc = false;
+$imgW = '60';
+$imgRatio = '1:1';
+
+$listDoc ="I'm the documentation";
+include('includes/list-news.php');
+?>
+
+
+<div class="toggle-related-fade">
+<button class="btn toggle-xtra-related btn-sm btn-gray">Vis alle</button>
+</div>
+
 	
-	<div class="micro-title header-float-left">Relateret:</div>
+	<!-- <div class="micro-title header-float-left">Relateret:</div>
 	<div>
-		<!-- DEVELOPER INFO: If more than 2 related articles, add the class "list-showfirst-two" to ul  -->
+	
 		<ul class="list list-article-related list-bullet list-show-first-two ">
 			<? while (dumb_luck("5-10")): ?>
 			<li>
@@ -15,13 +56,10 @@
 			<? endwhile ?>
 		</ul>
 
-		<!-- DEVELOPER INFO: If more than 2 related articles, show this button  -->
+	
 		
-			<a href="#" class="toggle-related" id="related-counter">
-				<span></span>
-				<i class="bicon-angle-down"></i>
-			</a>
+			
 		
-	</div>
+	</div> -->
 </aside>
 <?php endif; ?>

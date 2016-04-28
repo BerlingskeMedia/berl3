@@ -60,9 +60,10 @@
 							
 						</div>
 						<div class="col-md-12 col-sm-6 col-xs-12 mb-sm">
-							<div class="border-bottom-sm">
+							<div class="border-bottom-sm ">
 							<p class="hidden-sm-down"><strong >Følg Berlingske</strong></p>
-								<ul class="list-footer list-social-icons">
+
+								<ul class="list-footer list-social-icons columns-lg-up align-center-sm">
 									
 									<li>
 										<a href="#"><i class="bicon-facebook"></i> <span>Facebook</span></a>
@@ -70,10 +71,16 @@
 									<li>
 										<a href="#"><i class="bicon-twitter"></i> <span>Twitter</span></a>
 									</li>
+									
+						
 									<li>
 										<a href="#"><i class="bicon-instagram"></i> <span>Instagram</span></a>
 									</li>
+									<li>
+										<a href="#"><i class="bicon-mail"></i> <span>Nyhedsbreve</span></a>
+									</li>
 								</ul>
+								
 							</div>
 						</div>
 					</div>
@@ -104,7 +111,6 @@
 							<p><strong>Tjenester</strong></p>
 							<ul class="list-footer">
 								<li><a href="#" title="#">RSS</a></li>
-								<li><a href="#" title="#">Nyhedsbreve</a></li>
 								<li><a href="#" title="#">Det Berlingske Arkiv</a></li>
 								<li><a href="#" title="#">Apps og mobile tjenester</a></li>
 								<li><a href="#" title="#">Foto privatsalg</a></li>

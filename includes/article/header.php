@@ -46,14 +46,11 @@
 					
 				
 				<?php include('includes/article-embeds/rating.php'); ?>
+				<?php include('includes/article/date.php'); ?>
+
 				
-				<div class="article-date">Onsdag <? dummy("text@date-long") ?> &mdash; kl. <? dummy("text@time") ?></div>
 				
-				<a href="#" class="scroll-to-comments">
-					<span class="comments-count">
-						<? dummy("text@number") ?>
-					</span>
-				</a>
+				
 
 				<p class="article-summary"><? dummy("text@teaser") ?></p>
 			</div>
@@ -75,20 +72,13 @@
 			
 		<?php include('includes/article-embeds/rating.php'); ?>
 		
-		<a href="#" class="scroll-to-comments">
-			<span class="comments-count">
-				<i><? dummy("text@number") ?></i>
-			</span>
-		</a>
+		
 
 		<p class="article-summary relative"><? dummy("text@teaser") ?></p>
 		
 		
-
-		<div class="article-date">Onsdag d. <? dummy("text@date-long") ?>  kl. <? dummy("text@time") ?>
-			<? if (dumb_luck("50%")): ?><span class="updated">&mdash; <strong>Opdateret: kl. <? dummy("text@time") ?></strong>
-			</span><? endif ?>
-		</div>
+			<?php include('includes/article/date.php'); ?>
+		
 		
 			<?php include('includes/article/byline.php') ?>
 		<?php endif; ?>

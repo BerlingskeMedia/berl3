@@ -183,7 +183,7 @@ fieldset[disabled] a.btn {
 
 .btn-sm {
   // line-height: ensure proper height of button next to small input
-  @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $font-size-sm, $line-height-sm, 30rem);
+  @include button-size(.15rem, $btn-padding-x-sm, $font-size-sm, $line-height-sm, 30rem);
 }
 .btn-md {
   // line-height: ensure proper height of button next to small input

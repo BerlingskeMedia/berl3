@@ -3,9 +3,9 @@
 	input[type="email"]{
 		@extend .font-s2;
 		border: 0;
-		padding: .15rem .825rem 0;
+		padding: .15rem .625rem 0;
 		background-color: #fff;
-		font-size: .9rem;
+		font-size: .8rem;
 		box-shadow: 0 2px 2px rgba(0,0,0,.25) inset;
 		float: left;
 		width: 75%;
@@ -24,6 +24,7 @@
 		width: 25%;
 		height: 1.7rem;
 		text-align: center;
+		font-size: .8rem;
 	}
 	.checkbox {
 		margin-bottom: 0;
@@ -71,7 +72,7 @@
 		outline: 0;
 		vertical-align: middle;
 		&:before {
-			background: transparent;
+			background: #fff;
 			position: absolute;
 			content: "";
 			display: block;
@@ -79,6 +80,7 @@
 			border: 1px solid #999;
 			width: $spacer;
 			height: $spacer;
+			border-radius: 50%;
 		}
 		&:checked:after {
 			background: transparent;

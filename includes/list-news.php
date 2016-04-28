@@ -3,19 +3,20 @@ $listCount = ($listCount ? $listCount : '10');
 ?>
 
 
-
-<section class="<?php echo $sectionClass; ?>" >
+<div class="<?php echo $sectionClass; ?>" >
 	
 		<!-- <?php echo $listDoc ?> -->
 	
 	<div class="section-title "><?php echo $listTitle; ?></div>
 
-	<ul class="list-reset list-news <?php echo $listClass; ?> ">
+	<ul class="list-reset list-news <?php echo $listClass; ?> " <?php if($listId): ?>id="<?php echo $listId; ?>"<?php endif; ?>>
 		<? while (dumb_luck($listCount)): ?>
-		<li class="list-item-video">
+		<li class="">
 			<?php if($showImage): ?>
 			<figure>
-				<a href="tpl-article.php" title="[ARTICLE HEADER]"><img src="<? dummy("image@100x,3:2") ?>" width="" height="" alt="[ARTICLE HEADER]" /></a>
+				<a href="tpl-article.php" title="[ARTICLE HEADER]">
+					<img src="<? dummy("image". $imgSrc ."@". $imgW ."x,". $imgRatio ."") ?>" width="" height="" alt="" class="img" />
+				</a>				
 			</figure>
 			<?php endif; ?>
 			<div class="list-body">
@@ -33,9 +34,10 @@ $listCount = ($listCount ? $listCount : '10');
 		<? endwhile ?>
 	</ul>
 
-</section>
+</div>
 
 <?php 
+// Default values 
 $showTime = false; 
 $listCount = false;
 $listClass = false;
@@ -43,4 +45,8 @@ $sectionClass = false;
 $showImage = false;
 $listDoc = false;
 $premium = false;
+$imgSrc = false;
+$listId = false;
+$imgW = '620';
+$imgRatio = '16:9';
 ?>

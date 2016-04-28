@@ -149,7 +149,6 @@
 								<?php include('includes/article-embeds/fact-default.php'); ?>
 								
 								<?php include('includes/article-embeds/related.php'); ?>
-
 								
 								<?php include('includes/article-embeds/topics.php'); ?>
 
@@ -157,17 +156,9 @@
 							
 						</div><!-- article body -->
 						
-						
-						
-						
-
-						
-
-						<?php include('includes/article-embeds/share-buttons-large.php'); ?>
 						<div class="article-bottom">
-							
-										<?php // $horizontalShareButtons = true; $showCounter = true; $hideLabels = true; 	include('includes/article/social-buttons.php'); ?>
-									
+
+							<?php include('includes/article-embeds/share-buttons-large.php'); ?>
 							
 						</div>
 
