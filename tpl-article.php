@@ -182,7 +182,7 @@
 
 		<div class="article-footer">
 			
-			<div class="row flex-row">
+			<div class="row row-narrow-md flex-row">
 				<div class="col-xs-12">
 					<div class="section-title">
 						Tophistorier
