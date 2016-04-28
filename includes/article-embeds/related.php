@@ -39,7 +39,7 @@ include('includes/list-news.php');
 
 
 <div class="toggle-related-fade">
-<button class="btn toggle-xtra-related btn-sm btn-gray">Vis alle</button>
+<button class="btn toggle-xtra-related btn-sm btn-gray btn-round">Vis alle</button>
 </div>
 
 	

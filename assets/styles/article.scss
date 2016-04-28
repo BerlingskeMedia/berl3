@@ -72,7 +72,9 @@
 }
 .large-share-buttons {
 	@extend .border-top;
+	@extend .border-bottom;
 	@extend .border-dotted;
+
 	padding-top: 1rem;
 	.btn-facebook,
 	.btn-twitter {
@@ -478,27 +480,31 @@ a:hover {
 	margin-bottom: $spacer * 3;
 	background-color: $col-beige;
 	padding: $spacer;
+	.btn {
+		background-color: darken($col-beige, 50%);
+		color: #fff;
+	}
 }
 
 [class*="aside-header"] {
-	@extend .font-sans-alt;
-	color: #222;
-	font-size: 1.5rem;
+	@extend .font-g2;
+	color: darken($col-beige, 70%);
+	font-size: 1.9rem;
+	font-weight: 500;
 	text-transform: uppercase;
-	font-weight: normal;
 	margin-bottom: $spacer;
+
 }
 .aside-header-sm {
-	font-size: 1.2rem;
+	font-size: 1.4rem;
 	margin-bottom: .625rem;
 }
 
 
 .aside-subheader {
 	@extend .font-g2;
-	color: #222;
+	color: darken($col-beige, 70%);
 	font-size: 1.9rem;
-	font-weight: 400;
 	margin-bottom: .625rem;
 	text-transform: uppercase;
 	font-weight: 500;
@@ -803,11 +809,12 @@ $sharebutton: 2.6rem;
 
 .byline-blog {
 	margin-bottom: $spacer;
+	@extend .clearfix;
 	.btn-follow-author {
 		margin-left: 0;
 	}
 	.img-gradient {
-		border-radius: 50% 50% 50% 0;
+		border-radius: 50%;
 	}
 	.author-info {
 		@extend .font-s2;
@@ -892,7 +899,6 @@ blockquote {
 	padding-top: 1rem;
 	// margin-left: -($col-1-width / 2);
 	font-size: .75rem;
-	
 	@extend .font-s2;
 	clear: left;
 	color: #222;
@@ -904,23 +910,19 @@ blockquote {
 		display: inline-block;
 		margin-right: .2rem;
 		margin-bottom: .4rem;
-		font-weight: 500;
-		
+		font-weight: 400;
 	}
 	a {
-		/*@extend .btn;
-		@extend .btn-xs;
-		@extend .btn-gray;*/
-
 		display: inline-block;
 		border-radius: 40rem;
 		vertical-align: middle;
 		padding: .3rem .625rem .2rem; 
-		background-color: rgba(0,0,0,.05);
+		background-color: rgba(0,0,0,.1);
 		color: #666;
 		&:hover {
-			background-color: rgba(0,0,0,.1);
+			background-color: rgba(0,0,0,.15);
 			text-decoration: none;
+			color: #333;
 		}
 		
 	}
@@ -931,7 +933,7 @@ blockquote {
 	margin-top: -3rem;
 	margin-bottom: 2rem;
 	z-index: 2;
-	background: radial-gradient(ellipse 50% 30px at 50% 100%, #ebebeb 0%, $background-color 110%);
+	background: radial-gradient(ellipse 50% 10px at 50% 100%, darken($background-color, 10%) 0%, $background-color 110%);
 	height: 2.5rem;
 
 	.btn {
@@ -1349,9 +1351,7 @@ $longreadPadding: 20rem;
 		}
 	}
 	.article-image-longread {
-		.article-header {
-			// height: 30rem;
-		}
+		
 		.article-title {
 			font-size: 3rem;
 		}
@@ -1401,9 +1401,7 @@ $longreadPadding: 20rem;
 	}
 
 	.article-image-longread {
-		.article-header {
-			// height: 30rem;
-		}
+		
 		.article-title {
 			font-size: 3rem;
 		}
@@ -1421,6 +1419,11 @@ $longreadPadding: 20rem;
 }
 
 @include media-breakpoint-down(sm) {
+	.byline-blog {
+		.img-gradient {
+			max-width: 3rem;
+		}
+	}
 	.article-comments-top {
 		display: block;
 		margin-top: .3rem;
@@ -1504,6 +1507,7 @@ $longreadPadding: 20rem;
 	.article-newsletter-embedded {
 		width: 100%;
 		margin: 0 0 $spacer 0 ;
+		float: none;
 	}
 	.article-author {
 		display: block;

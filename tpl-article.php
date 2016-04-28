@@ -39,7 +39,7 @@
 <?php include('includes/offcanvas-menu.php'); ?>
 
 
-<?php include('includes/site-header.php'); ?>
+<?php // include('includes/site-header.php'); ?>
 
 
 
@@ -74,7 +74,7 @@
 
 					<div class="article-content">
 						
-						<?php include('includes/article/social-buttons.php'); ?>
+						<?php $class = 'hidden-lg-down'; include('includes/article/social-buttons.php'); $class = false;?>
 
 						<?php if($imageSize == '1' || $imageSize == '4'): // large image ?>
 						
@@ -90,8 +90,8 @@
 
 						<?php endif; ?>
 						
-						
-						
+				
+				<?php $class = 'hidden-xl-up'; include('includes/article/social-buttons.php'); $class = false;?>
 
 						<div class="article-body">
 
@@ -101,9 +101,9 @@
 
 							 <?php endif; ?>
 
-							 <?php include('includes/article-embeds/newsletter-embedded.php'); ?>
-
 							<?php include('includes/article-embeds/blog-bio.php'); ?>
+
+							<?php include('includes/article-embeds/newsletter-embedded.php'); ?>
 							
 							<p><? dummy("text@paragraph-first-letter") ?></p>
 							

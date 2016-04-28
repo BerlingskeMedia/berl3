@@ -353,7 +353,7 @@ $col-deck-label-width: 160px;
 
 @include media-breakpoint-only(md) {
 	.article-footer,
-	.article-header,
+	/*.article-header,*/
 	.col-1-content {
 		max-width: 41.250rem;
 		margin-left: auto;

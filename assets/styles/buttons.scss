@@ -29,11 +29,7 @@ button {outline: 0!important}
     }
   }
 
-@include media-breakpoint-down(sm) {
-  .btn {
-    font-size: .8rem;
-  }
-}
+
 
   @include hover-focus {
     text-decoration: none;
@@ -55,6 +51,18 @@ button {outline: 0!important}
     cursor: $cursor-disabled;
     opacity: .65;
     @include box-shadow(none);
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .btn {
+    font-size: .8rem;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .btn {
+    font-size: .8rem;
   }
 }
 
@@ -198,7 +206,11 @@ fieldset[disabled] a.btn {
 
 .btn-sm {
   // line-height: ensure proper height of button next to small input
-  @include button-size(.15rem, $btn-padding-x-sm, $font-size-sm, $line-height-sm, 30rem);
+  
+  font-size: .7rem;
+  height: 1.8rem;
+  line-height: 1.8rem;
+  padding: 0 1rem;
 }
 .btn-md {
   // line-height: ensure proper height of button next to small input

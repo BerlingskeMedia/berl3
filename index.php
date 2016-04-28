@@ -214,7 +214,7 @@ if(isset($_GET["business"])) {
 							<li class="orange"><a href="tpl-article.php?showTrumpet">Trumpet</a></li>
 							<li class="orange"><a href="tpl-article.php?blog">Blog</a></li>
 							<li class="orange"><a href="tpl-article.php?editorial">Editorial</a></li>
-							<li class="orange"><a href="tpl-article.php?showRating">Rating</a> (<a href="doc-article-elements.php?showRating&amp;blog">Blog template</a>)</li>
+							<li class="orange"><a href="tpl-article.php?showRating">Rating</a> (<a href="tpl-article.php?showRating&amp;blog">Blog template</a>)</li>
 							<li class="red"><a href="#">'Groft sagt'</a></li>
 						</ul>
 					</div>

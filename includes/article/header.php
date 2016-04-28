@@ -12,15 +12,15 @@
 						<figure class="article-avatar img-gradient">
 							<a href="tpl-author.php" title="Se [AUTHOR NAME]'s profil"><img src="<? dummy("image/!author@200x200,") ?>" width="" height="" alt="[AUTHOR NAME]" /></a>
 						</figure>
-						<div class="author-info">
+						<!-- <div class="author-info">
 							<a href="tpl-author.php" title="Se [AUTHOR NAME]'s profil"><? dummy("text@author") ?></a>
 							<div class="author-follow"><button class="btn-follow-author" title="Ophæv abonnement">Følg</button></div>
-							<? if (dumb_luck("50%")): ?> 
+							
 								<div class="author-username">
 									<a href="http://twitter.com" target="_blank"><i class="bicon-twitter col-twitter"></i> <? dummy("text@username") ?></a>
 								</div>
-							<? endif ?>
-						</div>
+							
+						</div> -->
 					
 					<?php elseif($templateEditorial): ?>
 					
@@ -34,7 +34,7 @@
 			</div>
 
 			<div class="col-md-10">
-				
+				<?php include('includes/article-embeds/rating.php'); ?>
 				<h1 class="article-title">
 					<?php if($trumpet == '1'): ?>
 					<span class="article-trumpet">
@@ -43,16 +43,12 @@
 					<?php endif; ?>
 					<? dummy("text@headline") ?>
 				</h1>
-					
+									
 				
-				<?php include('includes/article-embeds/rating.php'); ?>
-				<?php include('includes/article/date.php'); ?>
-
-				
-				
-				
+				<?php $showAuthor = true; include('includes/article/date.php'); ?>
 
 				<p class="article-summary"><? dummy("text@teaser") ?></p>
+
 			</div>
 		</div>
 		
@@ -60,7 +56,8 @@
 		<?php else: ?>
 
 		
-		
+			<?php include('includes/article-embeds/rating.php'); ?>
+
 			<h1 class="article-title">
 				<?php if($trumpet == '1'): ?>
 				<span class="article-trumpet">
@@ -70,7 +67,7 @@
 				<? dummy("text@headline") ?>
 			</h1>
 			
-		<?php include('includes/article-embeds/rating.php'); ?>
+		
 		
 		
 

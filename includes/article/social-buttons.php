@@ -1,6 +1,6 @@
 <?php 
 if($horizontalShareButtons == true) {
-	$class = 'share-buttons-horizontal';
+	$class = $class . 'share-buttons-horizontal';
 } 
 if($hideLabels == true) {
 	$class = $class . ' hide-labels';
