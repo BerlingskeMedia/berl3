@@ -68,8 +68,9 @@
 			<p class="article-summary relative"><? dummy("text@teaser") ?></p>
 		
 			<?php include('includes/article/date.php'); ?>
+			<?php $class = 'hidden-xl-up '; include('includes/article/social-buttons.php'); $class = false;?>
 		
-			<?php include('includes/article/byline.php') ?>
+			
 		<?php endif; ?>
 	
 	<?php include('includes/banners/topbanner.php'); ?>

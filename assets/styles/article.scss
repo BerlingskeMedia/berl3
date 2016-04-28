@@ -242,7 +242,8 @@ a:hover {
 
 }
 .article-byline {
-	@extend .clearfix;
+	width: 100%;
+	min-height: 3rem;
 	margin-bottom: $spacer;
 	.author-info {
 		@extend .font-s2;
@@ -789,7 +790,6 @@ $sharebutton: 2.6rem;
 .share-buttons {
 	display: inline-block;
 	margin-left: -4rem;
-	text-align: center;
 	float: left;
 } 
 .share-buttons-horizontal {

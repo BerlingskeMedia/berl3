@@ -74,7 +74,7 @@
 
 					<div class="article-content">
 						
-						<?php $class = 'hidden-lg-down'; include('includes/article/social-buttons.php'); $class = false;?>
+						<?php $class = 'hidden-lg-down text-center'; include('includes/article/social-buttons.php'); $class = false;?>
 
 						<?php if($imageSize == '1' || $imageSize == '4'): // large image ?>
 						
@@ -91,7 +91,7 @@
 						<?php endif; ?>
 						
 				
-				<?php $class = 'hidden-xl-up'; include('includes/article/social-buttons.php'); $class = false;?>
+						<?php include('includes/article/byline.php') ?>
 
 						<div class="article-body">
 
