@@ -924,15 +924,31 @@ blockquote {
 	@extend .font-s2;
 	clear: left;
 	color: #222;
+	.fadeout {
+		content: '';
+		width: 2rem;
+		position: absolute;
+		right: 0;
+		height: 1.5rem;
+		bottom: 0;
+		display: inline-block;
+		@include gradient-horizontal(fade-out($background-color,1), $background-color, 0%, 70%);
+		z-index: 2;
+		line-height: 1;
+		margin: 0;
+	}
 	ul {
 		padding-left: 0; 
 		margin: 0;
-		height: 2rem;
+		height: 1.5rem;
 		overflow: hidden;
 		overflow-x: scroll;
+		
 		white-space: nowrap;
 		-webkit-overflow-scrolling: touch;
 		-ms-overflow-style: -ms-autohiding-scrollbar;
+		position: relative;
+		
 	}	
 	li {
 		display: inline-block;
