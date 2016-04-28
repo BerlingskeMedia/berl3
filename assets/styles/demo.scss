@@ -1,4 +1,21 @@
 
+.demo-phone-banner {
+	@extend .fw-sm;
+	height: 200px;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	position: relative;
+	max-height: 200px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: relative;
+	.background-image {
+		padding-top: 60%;
+		background-attachment: fixed;
+		overflow-y: hidden; 
+	}
+
+}
 .demo-banner {
 	background: rgba(0,0,0,.1);
 	margin: 0 auto;

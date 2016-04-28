@@ -35,6 +35,9 @@
 	margin-top: $spacer * 3;
 }
 
+.pt {
+	padding-top: $spacer;
+}
 .bb:not(:last-of-type) {
 	border-bottom: $border-width solid $border-color;
 	padding-bottom: $spacer ;

@@ -124,7 +124,8 @@
 							<?php if(!$showPaywall): ?>
 								
 								<? while (dumb_luck("2")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
-
+								
+								<?php include('includes/banners/special-phone-banner.php'); ?>
 
 								<?php include('includes/article-embeds/link.php'); ?>
 								<? while (dumb_luck("1")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>

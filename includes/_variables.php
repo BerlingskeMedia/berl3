@@ -95,6 +95,10 @@ if (isset($_GET['textPosition'])) {
 } else {
 	$textPosition = 'bottom'; 
 }
+if (isset($_GET['specialBanner'])) {
+	$backgroundBanner = true;
+}
+
 
 $campaignId = 'campaign-' . mt_rand(1,3);
 
