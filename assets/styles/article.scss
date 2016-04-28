@@ -71,6 +71,9 @@
 	}
 }
 .large-share-buttons {
+	@extend .border-top;
+	@extend .border-dotted;
+	padding-top: 1rem;
 	.btn-facebook,
 	.btn-twitter {
 		width: calc(40% - .3rem);
@@ -923,6 +926,7 @@ blockquote {
 	z-index: 2;
 	background: radial-gradient(ellipse 50% 30px at 50% 100%, #ebebeb 0%, $background-color 110%);
 	height: 2.5rem;
+
 	.btn {
 		margin-top: 1.5rem;
 		background-color: #ddd;
@@ -942,6 +946,10 @@ blockquote {
 	@extend .mb;
 	clear: both;
 	// margin-left: -($col-1-width / 2)
+	
+	figure {
+		width: 60px;
+	}
 	
 	li {
 		min-height: 3rem;

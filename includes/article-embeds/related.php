@@ -11,7 +11,7 @@ $listCount = '2';
 $sectionClass = 'small-title-left';
 $premium = true;
 $imgSrc = false;
-$imgW = '60';
+$imgW = '120';
 $imgRatio = '1:1';
 
 $listDoc ="I'm the documentation";
@@ -30,7 +30,7 @@ $listCount = '3';
 $sectionClass = ' mb small-title-left hide-section-title';
 $premium = true;
 $imgSrc = false;
-$imgW = '60';
+$imgW = '120';
 $imgRatio = '1:1';
 
 $listDoc ="I'm the documentation";
