@@ -77,11 +77,9 @@
 			content: "";
 			display: block;
 			visibility: visible;
-			border: 1px solid #999;
+			border: 0;
 			width: $spacer;
 			height: $spacer;
-			border-radius: 50%;
-			border: 0;
 		}
 		&:checked:after {
 			background: transparent;

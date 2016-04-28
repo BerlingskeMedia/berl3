@@ -246,6 +246,7 @@ a:hover {
 		font-size: .8rem;
 	}
 }
+
 .article-avatar {
 	float: left;
 	margin-right: $spacer / 2;
@@ -1414,6 +1415,10 @@ $longreadPadding: 20rem;
 }
 
 @include media-breakpoint-down(sm) {
+	.article-comments-top {
+		display: block;
+		margin-top: .3rem;
+	}
 	.article-embed-pull-right {
 		margin-left: auto;
 	}
@@ -1464,7 +1469,7 @@ $longreadPadding: 20rem;
 		font-size: 1rem;
 	}
 	.article-date {
-		font-size: .7rem;
+		font-size: .6rem;
 	}
 	.article-byline {
 		a {

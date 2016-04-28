@@ -83,6 +83,8 @@
 			<?php include('includes/article/byline.php') ?>
 		<?php endif; ?>
 	
-	<div class="demo-banner hidden-md-down mb" style="width:930px; height: 180px" ></div>
+	<?php include('includes/banners/topbanner.php'); ?>
+	<?php include('includes/banners/ipad-banner.php'); ?>
+	
 		
 </header>

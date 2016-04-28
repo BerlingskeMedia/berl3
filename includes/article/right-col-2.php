@@ -1,5 +1,7 @@
 
 	
+	<?php include('includes/banners/ipad-banner.php'); ?>
+
 	<div class="row">
 		<div class="col-lg-12 col-md-6">
 			<div class="stickem-container-ex2 mb hidden-md-down" style="height: 1000px;">	
@@ -38,14 +40,14 @@
 		</div>
 		<div class="col-md-6 col-lg-12">
 			
-				<?php  include('includes/article/facebook-like-box.php'); ?>
+				<?php //  include('includes/article/facebook-like-box.php'); ?>
 				<?php // include('includes/article/facebook-like-button.php'); ?>
 			
 			<div class="mb">
 				<?php 
 				$showTime = false;
 				$showImage = true; 
-				$listClass = 'list list-time list-top-lg list-img-right';
+				$listClass = 'list list-img-right';
 				$listTitle = 'Vi anbefaler';
 				$listCount = '5';
 				$sectionClass = 'latest-news mb';
