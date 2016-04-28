@@ -3,6 +3,11 @@
 	<?php include('includes/banners/ipad-banner.php'); ?>
 
 	<div class="row">
+	<div class="col-xs-12 hidden-md-up">
+		<div class="fw-sm">
+			<div class="demo-banner" style="width: 300px; height: 250px; "></div>
+		</div>
+	</div>
 		<div class="col-lg-12 col-md-6">
 			<div class="stickem-container-ex2 mb hidden-md-down" style="height: 1000px;">	
 				<div class="sticky-ex2">	
