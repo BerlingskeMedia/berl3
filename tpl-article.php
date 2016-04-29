@@ -91,15 +91,16 @@
 						<?php endif; ?>
 						
 				
-						<?php include('includes/article/byline.php') ?>
+						<?php if(!$templateBlog): ?>
+							<?php include('includes/article/byline.php') ?>
+						<?php endif; ?>
 
 						<div class="article-body">
 
 							<?php if ($imageSize == '2'): ?>
 								<?php $portrait = true; ?>
 								<?php include('includes/article-embeds/article-image-float-right.php'); ?>
-
-							 <?php endif; ?>
+							<?php endif; ?>
 
 							<?php include('includes/article-embeds/blog-bio.php'); ?>
 

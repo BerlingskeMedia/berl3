@@ -287,7 +287,27 @@ a:hover {
 
 	
 }
+.blog-avatar {
+	max-width: 100px;
+	float: right;
+	margin: 0 0 $spacer $spacer;
+}
 
+
+.badge {
+	background: $col-blue-2;
+	border-radius: 50%;
+	width: $badge;
+	height: $badge;
+	line-height: $badge;
+	display: inline-block;
+	color: #fff;
+	text-align: center;
+	float: right;
+	font-size: 1.4rem;
+	@extend .font-sans-alt;
+	margin: 0 0 .625rem .625rem;
+}
 .image-meta {
 	color: rgba(0,0,0,.4);
 	display: block;
@@ -694,19 +714,19 @@ $sharebutton: 2.4rem;
 
 .btn-comment-counter {
   float: right;
-  border-radius: 30rem;
+  
   width: auto;
   @extend .font-s2;
   font-weight: 500;
   text-transform: uppercase;
   height: auto;
   line-height: $sharebutton;
-  padding:  .2rem 1.5rem 0;
+  padding:  .2rem 0 0;
   border: 0;
   background-color: transparent;
   font-size: .9rem;
   color: #666;
-  border: $border-width solid #ccc;
+  
   i {
   	font-size: 1.2rem;
   	/*margin-bottom: -1rem;
@@ -714,8 +734,8 @@ $sharebutton: 2.4rem;
   	vertical-align: middle;
   }
   &:hover {
-	background-color: #eee;
-	border-color: #ddd;
+
+
 	color: #333;
     text-decoration: none;
   }
@@ -1441,6 +1461,17 @@ $longreadPadding: 20rem;
 }
 
 @include media-breakpoint-down(sm) {
+	.badge {
+	width: $badge-sm;
+	height: $badge-sm;
+	line-height: $badge-sm;
+	font-size: 1.2rem;
+	margin: 0 0 .625rem .625rem;
+}
+
+	.article-byline {
+		@extend .clearfix;
+	}
 	.article-topics {
 		.fadeout {
 			content: '';

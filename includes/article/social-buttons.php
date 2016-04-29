@@ -6,6 +6,7 @@ if($hideLabels == true) {
 	$class = $class . ' hide-labels';
 }
 
+$showCounter = true;
 ?>
 <div class="share-buttons collapsed <?php echo $class; ?> ">
 	<div class="mb">
@@ -32,7 +33,7 @@ if($hideLabels == true) {
 	<a href="#" class="social-toggle"><i class="bicon-angle-down"></i></a>
 
 <?php if($showCounter): ?>
-	<a href="#" class="btn-share btn-comment-counter"><i class="bicon-comment-inv-alt2"></i> <? dummy("text@number") ?> <span class="hidden-sm-down">kommentarer</span></a>
+	<a href="#" class="btn-comment-counter hidden-xl-up"><i class="bicon-comment-inv-alt2"></i> <? dummy("text@number") ?> <span class="hidden-sm-down">kommentarer</span></a>
 <?php endif; ?>
 </div>
 <?php 
