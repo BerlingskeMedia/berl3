@@ -111,14 +111,14 @@ if(isset($_GET["business"])) {
 	<div class="row">
 		
 		
-		<div class="col-lg-8 col-lg-offset-2">
+		<div class="col-md-8 col-md-offset-2">
 			<div class="row">
 					
-				<div class="col-lg-12 text-center border-bottom mb pb" style="padding-top: 4rem" >
+				<div class="col-md-12 text-center border-bottom mb pb" style="padding-top: 4rem" >
 					<a href="/" class="site-logo" >Berlingske</a>
 				</div>
 
-				<div class="col-lg-9 col-lg-offset-3">
+				<div class="col-md-9 col-md-offset-3">
 					
 					<div style="margin-bottom: 1rem;">
 						<span class="span-red">Not started</span>
@@ -127,14 +127,14 @@ if(isset($_GET["business"])) {
 					</div>
 				</div>
 				
-				<div class="col-lg-12">
+				<div class="col-md-12">
 					<h4>Header / Footer / User pages</h4>
 				</div>
 				
-				<div class="col-lg-3">
+				<div class="col-md-3">
 					Header
 				</div>
-				<div class="col-lg-9">
+				<div class="col-md-9">
 					<ul>
 						<li class="red"><a href="#">Frontpage</a> - <a href="#">(Logged in)</a></li>
 						<li class="red"><a href="#">Section</a> - <a href="#">(Logged in)</a></li>
@@ -142,32 +142,32 @@ if(isset($_GET["business"])) {
 					</ul>
 				</div>
 
-				<div class="col-lg-3">
+				<div class="col-md-3">
 					Footer
 				</div>
-				<div class="col-lg-9">
+				<div class="col-md-9">
 					<ul>
 						
 						<li class="red"><a href="#">Footer</a></li>
 					</ul>
 				</div>
 
-				<div class="col-lg-3">
+				<div class="col-md-3">
 					User
 				</div>
-				<div class="col-lg-9">
+				<div class="col-md-9">
 					<ul>
 						<li class="red"><a href="#">User profile page</a></li>
 					</ul>
 				</div>
 
-				<div class="col-lg-12">
+				<div class="col-md-12">
 					<h4>Front page</h4>
 				</div>
 
-				<div class="col-lg-3">Variations</div>
+				<div class="col-md-3">Variations</div>
 			
-				<div class="col-lg-9">
+				<div class="col-md-9">
 					<ul>
 						<li class="red"><a href="#">Default</a></li>
 						<li class="red"><a href="#">Large top</a> </li>
@@ -179,8 +179,8 @@ if(isset($_GET["business"])) {
 					</ul>
 				</div>
 
-				<div class="col-lg-3">Oneliners</div>
-				<div class="col-lg-9">
+				<div class="col-md-3">Oneliners</div>
+				<div class="col-md-9">
 					<ul>
 						<li class="red"><a href="#">Breaking</a></li>
 						<li class="red"><a href="#">Live</a></li>
@@ -189,12 +189,12 @@ if(isset($_GET["business"])) {
 				</div>
 			
 				
-				<div class="col-lg-12">
+				<div class="col-md-12">
 					<h4>Article</h4>
 				</div>
 				
-				<div class="col-lg-3">Images</div>
-				<div class="col-lg-9">
+				<div class="col-md-3">Images</div>
+				<div class="col-md-9">
 					
 					<ul>
 						<li class="orange"><a href="tpl-article.php?imgSize=1">Large image (default)</a></li>
@@ -207,9 +207,9 @@ if(isset($_GET["business"])) {
 					</ul>
 					</div>
 					
-					<div class="col-lg-3">Header</div>
+					<div class="col-md-3">Header</div>
 
-					<div class="col-lg-9">
+					<div class="col-md-9">
 						<ul>
 							<li class="orange"><a href="tpl-article.php?showTrumpet">Trumpet</a></li>
 							<li class="orange"><a href="tpl-article.php?blog">Blog</a></li>
@@ -219,8 +219,8 @@ if(isset($_GET["business"])) {
 						</ul>
 					</div>
 
-				<div class="col-lg-3">Embeds</div>
-				<div class="col-lg-9">
+				<div class="col-md-3">Embeds</div>
+				<div class="col-md-9">
 
 					<ul>
 						
@@ -241,9 +241,9 @@ if(isset($_GET["business"])) {
 
 					
 
-					<div class="col-lg-3">Tags</div>
+					<div class="col-md-3">Tags</div>
 					
-					<div class="col-lg-9">
+					<div class="col-md-9">
 
 						<ul>
 							<li class="orange"><a href="tpl-article.php?event=breaking">Breaking</a> </li>
@@ -252,17 +252,17 @@ if(isset($_GET["business"])) {
 							<li class="orange"><a href="tpl-article.php?event=inawhile">In a while</a> </li>
 						</ul>
 					</div>
-					<div class="col-lg-3">
+					<div class="col-md-3">
 						Partner articles 
 					</div>
-					<div class="col-lg-9">
+					<div class="col-md-9">
 						<ul>
 							<li class="red"><a href="#">'Videnskab.dk'</a></li>
 						</ul>
 					</div>
-					<div class="col-lg-3">Paywall</div>
+					<div class="col-md-3">Paywall</div>
 
-					<div class="col-lg-9">
+					<div class="col-md-9">
 
 					<ul>
 						<li class="red"><a href="#">Pay wall sign - Direct</a></li>
@@ -272,16 +272,16 @@ if(isset($_GET["business"])) {
 					
 				
 
-				<div class="col-lg-12">
+				<div class="col-md-12">
 					<h4>Article Longread</h4>
 				</div>
 				
 				
 					
-						<div class="col-lg-3">
+						<div class="col-md-3">
 							Embeds
 						</div>
-						<div class="col-lg-9">
+						<div class="col-md-9">
 							<ul>
 								<li class="orange">Header position<a href="tpl-article-longread.php?textPosition=top">Top</a> <a href="tpl-article-longread.php?textPosition=bottom">Bottom</a> <a href="tpl-article-longread.php?textPosition=below">Below</a></li>
 								<li class="orange"><a href="tpl-article-longread.php?imgSize=4">Embedded images</a></li>
@@ -299,19 +299,19 @@ if(isset($_GET["business"])) {
 							
 						</div>
 				
-						<div class="col-lg-3">
+						<div class="col-md-3">
 							Header
 						</div>
-						<div class="col-lg-9">
+						<div class="col-md-9">
 							<ul>
 								<li class="orange"><a href="tpl-article-longread.php?showTrumpet">Trumpet</a></li>		
 							</ul>
 							
 						</div>
 					
-						<div class="col-lg-3">Paywall</div>
+						<div class="col-md-3">Paywall</div>
 					
-						<div class="col-lg-9">
+						<div class="col-md-9">
 							<ul>
 								<li class="red"><a href="#">Pay wall sign - Direct</a></li>
 								<li class="red"><a href="#">Pay wall sign - Open</a></li>
@@ -324,25 +324,25 @@ if(isset($_GET["business"])) {
 					
 				
 
-				<div class="col-lg-12">
+				<div class="col-md-12">
 					<h4>Article Large</h4>
 				</div>
-				<div class="col-lg-3">
+				<div class="col-md-3">
 					
 				</div>
-				<div class="col-lg-9">
+				<div class="col-md-9">
 					<ul>
 						<li class="orange"><a href="tpl-article-large.php">Article - Large</a></li>
 					</ul>
 				</div>
 
 
-				<div class="col-lg-12">
+				<div class="col-md-12">
 					<h4>Sections</h4>
 				</div>
 				
-				<div class="col-lg-3"></div>
-				<div class="col-lg-9">
+				<div class="col-md-3"></div>
+				<div class="col-md-9">
 					<ul>
 						<li class="red"><a href="#">Auto (default)</a></li>
 						<li class="red"><a href="#">Culture</a></li>
@@ -358,14 +358,14 @@ if(isset($_GET["business"])) {
 					</ul>
 				</div>
 
-				<div class="col-lg-12">
+				<div class="col-md-12">
 					<h4>Plus</h4>
 				</div>
 				
-				<div class="col-lg-3">
+				<div class="col-md-3">
 					
 				</div>
-				<div class="col-lg-9">
+				<div class="col-md-9">
 					<ul>
 						<li class="red"><a href="#">Front page</a></li>
 						<li class="red"><a href="#">Section</a></li>
@@ -375,32 +375,32 @@ if(isset($_GET["business"])) {
 					</ul>
 				</div>
 
-				<div class="col-lg-12">
+				<div class="col-md-12">
 					<h4>Singles</h4>
 				</div>
 				
-				<div class="col-lg-3"></div>
-				<div class="col-lg-9">
+				<div class="col-md-3"></div>
+				<div class="col-md-9">
 					<ul>
 						<li class="red"><a href="#">Front-page</a></li>
 						<li class="red"><a href="#">Single single-sale</a></li>
 					</ul>
 				</div>
 
-				<div class="col-lg-12">
+				<div class="col-md-12">
 					<h4>Advertorials</h4>
 				</div>
 				
-				<div class="col-lg-3">Section</div>
-				<div class="col-lg-9">
+				<div class="col-md-3">Section</div>
+				<div class="col-md-9">
 					<ul>
 						<li class="red"><a href="#">Example 1</a> <a href="#">Example 2</a></li>
 					</ul>
 				</div>
-				<div class="col-lg-3">
+				<div class="col-md-3">
 					Article
 				</div>
-				<div class="col-lg-9">
+				<div class="col-md-9">
 					<ul>
 						
 						<li class="red"><a href="#">Example 1</a> <a href="#">Example 2</a></li>
@@ -408,12 +408,12 @@ if(isset($_GET["business"])) {
 					</ul>
 				</div>
 
-				<div class="col-lg-12">
+				<div class="col-md-12">
 					<h4>Gallery</h4>
 				</div>
 				
-				<div class="col-lg-3"></div>
-				<div class="col-lg-9">
+				<div class="col-md-3"></div>
+				<div class="col-md-9">
 					<ul>
 						<li class="red"><a href="#">Teaser</a></li>
 						<li class="red"><a href="#">Overlay</a></li>
@@ -422,24 +422,24 @@ if(isset($_GET["business"])) {
 					</ul>
 				</div>
 
-				<div class="col-lg-12">
+				<div class="col-md-12">
 					<h4>Text pages</h4>
 				</div>
 				
-				<div class="col-lg-3"></div>
-				<div class="col-lg-9">
+				<div class="col-md-3"></div>
+				<div class="col-md-9">
 					<ul>
 						<li class="red"><a href="#">Contact</a></li>
 						<li class="red"><a href="#">Annoncering</a></li>
 					</ul>
 				</div>
 
-				<div class="col-lg-12">
+				<div class="col-md-12">
 					<h4>Misc</h4>
 				</div>
 				
-				<div class="col-lg-3"></div>
-				<div class="col-lg-9">
+				<div class="col-md-3"></div>
+				<div class="col-md-9">
 					<ul>
 						<li class="red"><a href="#">404</a></li>
 						<li class="red"><a href="#">Send tip</a></li>
@@ -450,12 +450,12 @@ if(isset($_GET["business"])) {
 				</div>
 
 
-				<div class="col-lg-12">
+				<div class="col-md-12">
 					<h4>Email templates</h4>
 				</div>
 				
-				<div class="col-lg-3"></div>
-				<div class="col-lg-9">
+				<div class="col-md-3"></div>
+				<div class="col-md-9">
 					<ul>
 						<li class="red"><a href="#">Newsletter</a></li>
 						<li class="red"><a href="#">Breaking</a></li>
@@ -464,15 +464,15 @@ if(isset($_GET["business"])) {
 					</ul>
 				</div>
 
-				<div class="col-lg-12">
+				<div class="col-md-12">
 					<h2 class=" border-bottom">BUSINESS</h2>
 				</div>
 
-				<div class="col-lg-3">
+				<div class="col-md-3">
 					<h4 >?</h4>
 				</div>
 
-				<div class="col-lg-9">
+				<div class="col-md-9">
 					<ul>
 						<li>?</li>
 					</ul>
@@ -480,7 +480,7 @@ if(isset($_GET["business"])) {
 			
 
 
-				<div class="col-lg-12 text-center" style="padding-top: 4rem;">
+				<div class="col-md-12 text-center" style="padding-top: 4rem;">
 					<footer class="small">Bo Skakke - 20 61 67 68 / <a href="mailto:bsk@berlingskemedia.dk">bsk@berlingskemedia.dk</a></footer>
 				</div>
 			</div>
