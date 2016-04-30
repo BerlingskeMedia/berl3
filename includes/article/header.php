@@ -43,15 +43,24 @@
 		<?php else: ?>
 		
 			<?php include('includes/article-embeds/rating.php'); ?>
-
+			
+			<?php if($templateBlog || $templateEssay): ?>
 			<div class="byline-blog">
+
 				<i>Af:</i> <? dummy("text@author") ?>
 				
+				<?php if($templateBlog): ?>
 				<div class="badge badge-blog">
 					<span>BLOG</span>
-				</div>	
-				
+				</div>
+				<?php elseif($templateEssay) : ?>
+				<div class="badge badge-essay">
+					<span>KRONIK</span>
+				</div>
+				<?php endif; ?>
+				<div class="badge-fade"></div>
 			</div>
+			<?php endif; ?>
 
 			<h1 class="article-title">
 				<?php if($trumpet == '1'): ?>

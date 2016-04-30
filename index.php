@@ -213,6 +213,7 @@ if(isset($_GET["business"])) {
 						<ul>
 							<li class="orange"><a href="tpl-article.php?showTrumpet">Trumpet</a></li>
 							<li class="orange"><a href="tpl-article.php?blog">Blog</a></li>
+							<li class="orange"><a href="tpl-article.php?essay">Kronikken</a></li>
 							<li class="orange"><a href="tpl-article.php?editorial">Editorial</a></li>
 							<li class="orange"><a href="tpl-article.php?showRating">Rating</a> (<a href="tpl-article.php?showRating&amp;blog">Blog template</a>)</li>
 							<li class="red"><a href="#">'Groft sagt'</a></li>
@@ -233,7 +234,7 @@ if(isset($_GET["business"])) {
 						<li class="orange"><a href="tpl-article.php?showTimeline">Timeline</a></li>
 						<li class="orange"><a href="tpl-article.php?showLink">Embedded links</a></li>
 						<li class="orange"><a href="tpl-article.php?showNewsletterEmbedded">Newsletter signup</a></li>
-						<li class="red"><a href="tpl-article.php?showRelated">Related articles</a></li>
+						
 						<li class="orange"><a href="tpl-article.php?specialBanner">Phone banner</a></li>
 						
 					</ul>
@@ -294,7 +295,7 @@ if(isset($_GET["business"])) {
 								<li class="orange"><a href="tpl-article-longread.php?showTimeline">Timeline</a></li>
 								<li class="orange"><a href="tpl-article-longread.php?showLink">Embedded links</a></li>	
 								<li class="red"><a href="tpl-article-longread.php?showNewsletter">Newsletter signup</a></li>
-								<li class="red"><a href="tpl-article-longread.php?showrelated">Related articles</a></li>
+								
 							</ul>
 							
 						</div>

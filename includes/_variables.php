@@ -54,6 +54,9 @@ if (isset($_GET['showTweet'])) {
 if (isset($_GET['blog'])) {
 	$templateBlog = true;
 }
+if (isset($_GET['essay'])) {
+	$templateEssay = true;
+}
 if (isset($_GET['editorial'])) {
 	$templateEditorial = true;
 }
