@@ -3,9 +3,7 @@
 <?php include('includes/_variables.php') ;?>
 
 
-<?php 
-	// $showWell = rand(1,1);
-?>
+
 <!DOCTYPE html>
 <html lang="da">
 <head>
@@ -29,17 +27,6 @@
 	</ul>
 </div>
 
-
-
-
-<div class="site-search-overlay">
-	<div class="warning">
-
-		<div class="text-center"><p><strong>Av av av</strong></p> <p>Dette website er ikke responsivt endnu - kan endnu kun ses på store skærme :-)</p>
-		</div>
-	</div>	
-</div>
-
 <div class="main-wrapper">
 <?php include('includes/offcanvas-menu.php'); ?>
 
@@ -47,82 +34,67 @@
 <?php include('includes/site-header.php'); ?>
 
 
-<?php //$textPosition = 'below'; ?>
+
 
 <div class="canvas-main ">
 
-
 	<div class="banner-wrapper">
 	
-	<div class="article-image-longread text-position-<?php echo $textPosition ?>" >
+		<figure class="longread-cover" >
 
-	<div class="background-image" style="background-image:url(<? dummy("image/!longread@1900x700,") ?>);"></div>
-		<span class="photo-byline">
-			Foto: <? dummy("text@author") ?>
-		</span>
-
-		
-
-
-			<header class="article-header ">
+			<div class="longread-fade">
 				<div class="container">
 					<div class="row">
-						<div class="col-lg-10 col-xl-9 <?php if($textPosition == 'below') : ?>) ?> col-lg-offset-1 text-center <?php endif; ?>">
-						
-						<!-- <div class="article-badge">
-							<? dummy("text@b-cat") ?>
-						</div> -->
-
-						<?php include('includes/article/event-headers.php'); ?>
-						
-						<h1 class="article-title">
-							<?php if($trumpet == '1'): ?>
-							<span class="article-trumpet">
-								<? dummy("text@item") ?>
-							</span>
-							<?php endif; ?>
-							<? dummy("text@headline-b") ?>
-						</h1>
-
+						<div class="col-xl-offset-1 col-xl-10 col-xs-12">
+							<h1 class="article-title">
+								<?php if($trumpet == '1'): ?>
+								<span class="article-trumpet">
+									<? dummy("text@item") ?>
+								</span>
+								<?php endif; ?>
+								<? dummy("text@headline-b") ?>
+							</h1>								
+						</div>
 					</div>
 				</div>
 			</div>
-		</header>
-		
-	</div>
+			
+			<div class="longread-image-wrapper">
+				<div class="longread-main-image">
+					<img src="<? dummy("image/!longread@1920x800,") ?>" width="" height="" alt="" class="" />
+				</div>	
+			</div>
+				
+			<span class="photo-byline">
+				Foto: <? dummy("text@author") ?>
+			</span>
+
+		</figure>
 	
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12 text-center">
-
-					<p class="article-summary relative" >
-						<a href="#" class="scroll-to-comments">
-							<span class="comments-count">
-								<i><? dummy("text@number") ?></i>
-							</span>
-						</a>
+			<div class="col-xl-offset-1 col-xl-10">
+				<p class="article-summary relative" >
 					<? dummy("text@teaser") ?>
-					</p>
+				</p>
 
-					<div class="article-date">Onsdag d. <? dummy("text@date-long") ?>  kl. <? dummy("text@time") ?>
-						<? if (dumb_luck("50%")): ?><span class="updated">&mdash; <strong>Opdateret: kl. <? dummy("text@time") ?></strong>
-						</span><? endif ?>
-					</div>
-					
-					<?php include('includes/article/byline.php') ?>
-
-
+				<div class="article-date">Onsdag d. <? dummy("text@date-long") ?>  kl. <? dummy("text@time") ?>
+					<? if (dumb_luck("50%")): ?><span class="updated">&mdash; <strong>Opdateret: kl. <? dummy("text@time") ?></strong>
+					</span><? endif ?>
+				</div>
 				
-					<div class="demo-banner hidden-md-down mb" style="width:930px; height: 180px" ></div>
+				
 
-					<div class="demo-banner hidden-lg-up hidden-sm-down mb" style="width:728px; height: 90px" ></div>
-						
-					<?php include('includes/article-embeds/rating.php'); ?>
+				<div class="demo-banner hidden-md-down mb" style="width:930px; height: 180px" ></div>
+
+				<div class="demo-banner hidden-lg-up hidden-sm-down mb" style="width:728px; height: 90px" ></div>
 					
-					
-					</div>
+				<?php include('includes/article-embeds/rating.php'); ?>
+				
+				
 				</div>
 			</div>
+		</div>
 					
 
 					
@@ -131,14 +103,13 @@
 			<div class="row">
 				<div class="col-md-12 ">
 					<article>
+						<?php $class = 'hidden-lg-down text-center'; include('includes/article/social-buttons.php'); $class = false;?>
 						
-						
-
 						<div class="article-content">
 
-						<?php include('includes/article/social-buttons.php'); ?>
-
 							<div class="article-body">
+
+							<?php include('includes/article/byline.php') ?>
 
 								<?php include('includes/article-embeds/blog-bio.php'); ?>
 								

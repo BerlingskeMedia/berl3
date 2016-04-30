@@ -1,40 +1,31 @@
 <header class="article-header">
 		<?php include('includes/article/event-headers.php'); ?>
 		
-		
-		
-		
-		
-			<?php include('includes/article-embeds/rating.php'); ?>
+		<?php include('includes/article-embeds/rating.php'); ?>
 			
 			<?php if($templateBlog || $templateEssay || $templateEditorial): ?>
-			<div class="byline-blog">
+			<div class="
+				<?php if($templateBlog || $templateEditorial ): ?>
+					super-byline-1
+				<?php elseif($templateEssay) : ?>
+					super-byline-2
+				<?php endif ?>">
+
 				<?php if(!$templateEditorial): ?>
-				<i>Af:</i> <? dummy("text@author") ?>
-			<?php endif; ?>
-			</div>
+					<span class="super-author"><i>Af:</i> <? dummy("text@author") ?></span>
+				<?php endif; ?>
 
-			<?php if($templateBlog): ?>
-			<div class="text-center badge-container">
-				<div class="badge badge-blog">
-					<span>BLOG</span>
-				</div>
-			</div>
-			<?php elseif($templateEssay) : ?>
-			<div class="text-center badge-container">
-				<div class="badge badge-essay">
-					<span>KRONIK</span>
-				</div>
-			</div>
-			<?php elseif($templateEditorial) : ?>
-			<div class="text-center badge-container">
-				<div class="badge badge-blog">
-					<span>LEDER</span>
-				</div>
-			</div>
-			<?php endif; ?>
+				<span class="badge">
+					<?php if($templateBlog): ?>
+						<span>BLOG</span>
+					<?php elseif($templateEssay) : ?>
+						<span>KRONIK</span>		
+					<?php elseif($templateEditorial) : ?>
+						<span>LEDER</span>
+					<?php endif; ?>
+				</span>
 
-
+			</div>
 			<?php endif; ?>
 
 			<h1 class="article-title">
@@ -46,14 +37,10 @@
 				<? dummy("text@headline") ?>
 			</h1>
 			
-			
 			<p class="article-summary relative"><? dummy("text@teaser") ?></p>
 		
 			<?php include('includes/article/date.php'); ?>
 			<?php $class = 'hidden-xl-up '; include('includes/article/social-buttons.php'); $class = false;?>
-		
-			
-		
 	
 	<?php include('includes/banners/topbanner.php'); ?>
 	<?php include('includes/banners/ipad-banner.php'); ?>
