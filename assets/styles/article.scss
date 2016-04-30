@@ -266,7 +266,7 @@ a:hover {
 	vertical-align: top;
 	line-height: 1.4;
 	img {
-		max-width: 3rem;
+		max-width: 2.5rem;
 		clear: both;
 	}
 	&+ .article-author {
@@ -275,7 +275,7 @@ a:hover {
 }
 .author-info {
 	display: inline-block;
-	margin-top: .625rem;
+	margin-top: .2rem;
 }
 .image-caption {
 	font-size: .8rem;
@@ -619,11 +619,11 @@ a:hover {
 .img-gradient {
 	display: inline-block;
 	overflow: hidden;
-	@include gradient-directional( $col-blue-1, #fff, 45deg);
+	// @include gradient-directional( $col-blue-2, #fff, 45deg);
 	border-radius: 50%;
 	img {
 		filter: grayscale(100%) ;	
-		opacity: .7;
+		// opacity: .7;
 		border-radius: 50%;
 	}
 }
@@ -634,6 +634,7 @@ a:hover {
 	color: #666;
 	font-size: .8rem;
 	margin-bottom: $spacer;
+	text-transform: uppercase;
 	a {
 		color: #666;
 	}
@@ -833,10 +834,12 @@ $sharebutton: 2.4rem;
 	}
 }
 
+.badge-container {
+	margin: -4.6rem 0 0; 
+}
 .badge {
-	@extend .text-center;
-	
-	
+	@extend .text-right;
+	padding-right: $spacer;
 	span {
 		background: $col-blue-2;
 		border-radius: 50%;
@@ -846,10 +849,11 @@ $sharebutton: 2.4rem;
 		margin: 0 auto ;
 		@extend .font-sans-alt;
 	}
+
 }
 
 .badge-blog {
-	margin-top: -1.5rem;
+	margin-top: -1.4rem;
 	span {
 		width: $badge-blog;
 		height: $badge-blog;
@@ -858,7 +862,7 @@ $sharebutton: 2.4rem;
 	}
 }
 .badge-essay {
-	margin-top: -1.6rem;
+	margin-top: -1.5rem;
 	span {
 		width: $badge-essay;
 		height: $badge-essay;
@@ -868,12 +872,11 @@ $sharebutton: 2.4rem;
 }
 
 .byline-blog {
-	margin-bottom: $spacer;
-	height: 3rem;
-
+	height: 2.4rem;
+	text-transform: uppercase;
 	@extend .font-g2;
 	font-weight: 500;
-	font-size: 2.5rem;
+	font-size: 1.6rem;
 	border-bottom: $border-width solid $border-color;
 	margin-bottom: 2.5rem;
 	
@@ -1075,14 +1078,12 @@ blockquote {
 
 
 .article-newsletter-embedded {
-	margin-top: .3rem;
-	margin-bottom: .8rem;
-	margin-left: $spacer;
+	
 	@extend .article-off-grid;
-	background-color: darken($background-color, 5%);
-	padding: $spacer;
-	float: right;
-	width: 12rem;
+	
+	&:before {
+		display: none;
+	};
 	clear: right;
 	
 	
@@ -1344,7 +1345,7 @@ $longreadPadding: 20rem;
 }
 .article-embed-pull-right {
 	margin-right: -$col-1-width / 2;
-	width: 18.750rem;
+	width: 16.250rem;
 	float: right;
 
 }
@@ -1430,6 +1431,28 @@ $longreadPadding: 20rem;
 }
 
 @include media-breakpoint-down(md) {
+
+	.byline-blog {
+		// margin-bottom: $spacer;
+		font-size: 1.5rem;
+		height: 2rem;
+	}
+	
+	.badge-container {
+		margin: -5rem 0 .3rem; 
+	}
+
+	.badge {
+		
+		span {
+			width: $badge-blog;
+			height: $badge-blog;
+			line-height: $badge-blog;
+			font-size: .9rem;
+		}
+	}
+
+
 	.article-summary {
 		max-width: none;
 	}
@@ -1479,15 +1502,16 @@ $longreadPadding: 20rem;
 
 @include media-breakpoint-down(sm) {
 	.byline-blog {
-		margin-bottom: $spacer;
-		font-size: 1.5rem;
-		height: 1.7rem;
+		// margin-bottom: $spacer;
+		font-size: 1rem;
+		height: 1.5rem;
+	}
+	
+	.badge-container {
+		margin: -4rem 0 .3rem; 
 	}
 
 	.badge {
-		text-align: right;
-	}
-	.badge-blog {
 		span {
 			width: $badge-blog-sm;
 			height: $badge-blog-sm;
@@ -1495,18 +1519,12 @@ $longreadPadding: 20rem;
 			font-size: .9rem;
 		}
 	}
+	
 	.badge-essay {
-		margin-top: -1.5rem;
 		span {
-			width: $badge-essay-sm;
-			height: $badge-essay-sm;
-			line-height: $badge-essay-sm;
-			font-size: .9rem;
+			font-size: .7rem;
 		}
 	}
-
-
-	
 
 	.article-byline {
 		clear:both;
@@ -1623,11 +1641,7 @@ $longreadPadding: 20rem;
 	.article-image-float-right {
 		@extend .continue-reading-img;
 	}
-	.article-newsletter-embedded {
-		width: 100%;
-		margin: 0 0 $spacer 0 ;
-		float: none;
-	}
+
 	.article-author {
 		display: block;
 		clear: left;
@@ -1665,27 +1679,30 @@ $longreadPadding: 20rem;
 		}
 	}
 	.continue-reading-img {
-			margin-top: 3rem;
-			&:before {
-				display: block;
-				position: absolute;
-				left: 0;
-				right: 0;
-				top: -2rem;
-				content: 'Artiklen fortsætter efter billedet';
-				font-size: .7rem;
-				text-align: center;
-				padding: .5rem 0;
-				@extend .font-s2;
-				color: rgba(0,0,0,.4);
-			}
+		margin-top: 3rem;
+		&:before {
+			display: block;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: -2rem;
+			content: 'Artiklen fortsætter efter billedet';
+			font-size: .7rem;
+			text-align: center;
+			padding: .5rem 0;
+			@extend .font-s2;
+			color: rgba(0,0,0,.4);
 		}
-	
+	}
+	.article-newsletter-embedded {
+		margin-top: 0;
+		margin-bottom: $spacer;
+		&:before {
+			display: none;
+		}
+	}	
 }
 
-
-
-	
 
 
 

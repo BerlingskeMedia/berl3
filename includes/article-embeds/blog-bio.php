@@ -1,4 +1,4 @@
-<?php if($templateBlog): ?>
+<?php if($templateBlog || $templateEssay): ?>
 <aside class="article-fact-embedded article-embed-pull-right article-embed-blog-bio embed-collapsed-sm">
 	
 	

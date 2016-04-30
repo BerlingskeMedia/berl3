@@ -1,5 +1,5 @@
 <?php if($showNewsletterEmbedded): ?>
-<aside class="article-newsletter-embedded ">	
+<aside class="article-embed-pull-right article-newsletter-embedded ">	
 	
 	<div class="aside-header-sm mb-0">Berlingske Nyhedsbrev</div>
 	<p class="font-s2 mb-05"><small >Udkommer hver morgen!</small></p>
@@ -9,12 +9,25 @@
 			<input type="email" placeholder="Din e-mail" required class="newsletter-email">
 			<button class="btn  btn-blue">OK</button>
 		</div>
-		
-		<div class="checkbox checkbox-styled hidden">
+		<div class="hidden">
+			<div class="checkbox checkbox-styled mb-05">
+				<label>
+					<input type="checkbox" class="" checked > <span>Berlingske Morgen</span>
+				</label>
+			</div>
+			<div class="checkbox checkbox-styled mb-05">
 			<label>
-				<input type="checkbox" class="" checked > <span>Inkl. Breaking News</span>
+				<input type="checkbox" class="" checked > <span>Berlingske Eftermiddag</span>
 			</label>
+			</div>
+
+			<div class="checkbox checkbox-styled mb-05">
+				<label>
+					<input type="checkbox" class="" checked > <span>Breaking News</span>
+				</label>
+			</div>	
 		</div>
+		
 
 
 

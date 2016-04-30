@@ -51,15 +51,25 @@ if (isset($_GET['showCustom'])) {
 if (isset($_GET['showTweet'])) {
 	$showTweet = true;
 }
+
+$showByline = true;
+
 if (isset($_GET['blog'])) {
 	$templateBlog = true;
+	$showByline = false;
 }
 if (isset($_GET['essay'])) {
 	$templateEssay = true;
+	$showByline = false;
 }
 if (isset($_GET['editorial'])) {
 	$templateEditorial = true;
+	$showByline = false;
 }
+
+
+
+
 if (isset($_GET['showLink'])) {
 	$showLink = true;
 }

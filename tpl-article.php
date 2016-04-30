@@ -90,8 +90,8 @@
 
 						<?php endif; ?>
 						
-				
-						<?php if(!$templateBlog): ?>
+
+						<?php if($showByline == true) : ?>
 							<?php include('includes/article/byline.php') ?>
 						<?php endif; ?>
 
