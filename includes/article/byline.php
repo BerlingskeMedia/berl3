@@ -1,9 +1,11 @@
 <div class="article-byline">
 	<? while (dumb_luck("1-2")): ?>
 		<div class="article-author">
+			
 			<figure class="article-avatar img-gradient">
 				<a href="tpl-author.php" title="Se [AUTHOR NAME]'s profil"><img src="<? dummy("image/!author@100x100,") ?>" width="" height="" alt="[AUTHOR NAME]" /></a>
 			</figure>
+
 			<div class="author-info">
 				<a href="tpl-author.php" title="Se [AUTHOR NAME]'s profil"><? dummy("text@author") ?></a>
 				

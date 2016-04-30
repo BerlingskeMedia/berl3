@@ -7,6 +7,7 @@
 			<div class="col-md-push-2 col-md-10">
 				<?php include('includes/article-embeds/rating.php'); ?>
 				
+
 				<h1 class="article-title">
 					<?php if($trumpet == '1'): ?>
 					<span class="article-trumpet">
@@ -25,12 +26,9 @@
 			<div class="col-md-pull-10 col-md-2">
 				<div class="byline-blog">
 					
-
-					<?php if($templateBlog): ?>
 						
-						BLOG BADGE
 					
-					<?php elseif($templateEditorial): ?>
+					<?php if($templateEditorial): ?>
 					
 						<figure class="article-avatar ">
 							<a href="tpl-author.php" title="Se [AUTHOR NAME]'s profil"><img src="/dist/images/logo.png" width="" height="" alt="[AUTHOR NAME]" /></a>
@@ -46,10 +44,15 @@
 		
 			<?php include('includes/article-embeds/rating.php'); ?>
 
-			<?php if($templateBlog): ?>
-						
-				<div class="badge badge-blog">BLOG</div>
-			<?php endif; ?>
+			<div class="byline-blog">
+				<i>Af:</i> <? dummy("text@author") ?>
+				
+				<div class="badge badge-blog">
+					<span>BLOG</span>
+				</div>	
+				
+			</div>
+
 			<h1 class="article-title">
 				<?php if($trumpet == '1'): ?>
 				<span class="article-trumpet">
@@ -58,6 +61,7 @@
 				<?php endif; ?>
 				<? dummy("text@headline") ?>
 			</h1>
+			
 			
 			<p class="article-summary relative"><? dummy("text@teaser") ?></p>
 		
@@ -72,3 +76,4 @@
 	
 		
 </header>
+

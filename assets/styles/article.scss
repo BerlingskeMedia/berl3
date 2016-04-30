@@ -148,11 +148,11 @@ a:hover {
 }
 .btn-follow-author {
 	line-height: 1;
-	background-color: #aaa;
+	background-color: #eee;
 	margin-left: .2rem;
-	color: #fff;
-	/*border-radius: 30rem;*/
-	margin-top: -$border-width;
+	color: rgba(0,0,0,.7);
+	font-size: .65rem!important;
+	margin-top: -$border-width * 2;
 	&:hover {
 		background-color: darken(#aaa, 10%);
 		color: #fff;
@@ -294,20 +294,7 @@ a:hover {
 }
 
 
-.badge {
-	background: $col-blue-2;
-	border-radius: 50%;
-	width: $badge;
-	height: $badge;
-	line-height: $badge;
-	display: inline-block;
-	color: #fff;
-	text-align: center;
-	float: right;
-	font-size: 1.4rem;
-	@extend .font-sans-alt;
-	margin: 0 0 .625rem .625rem;
-}
+
 .image-meta {
 	color: rgba(0,0,0,.4);
 	display: block;
@@ -425,6 +412,12 @@ a:hover {
 
 	}
 }
+.article-embed-blog-bio .embed-fade {
+	&:before {
+		@include gradient-vertical(fade-out(darken($col-coffee, 5%),1), $col-coffee, 0%, 70%);
+	}
+}
+
 .toggle-embed {
 	z-index: 2;
 	position: relative;
@@ -499,6 +492,10 @@ a:hover {
 	background-color: $col-beige;
 	padding: $spacer;
 	position: relative;
+}
+
+.article-embed-blog-bio {
+	background: $col-coffee;
 }
 
 
@@ -774,18 +771,7 @@ $sharebutton: 2.4rem;
 .social-toggle {
 	display: none;
 }
-.collapsed {
-	.extra-buttons {
-		display: none;
-	}
-	.social-toggle {
-		display: block;
-		&:hover {
-			transform: translateY(.3rem);
-			color: #666;
-		}
-	}
-}
+
 .hide-labels .btn-label {
 	display: none;
 }
@@ -847,27 +833,39 @@ $sharebutton: 2.4rem;
 	}
 }
 
+.badge {
+	@extend .text-center;
+	margin-top: -1.5rem;
+	
+	span {
+		background: $col-blue-2;
+		border-radius: 50%;
+		width: $badge;
+		height: $badge;
+		line-height: $badge;
+		display: inline-block;
+		color: #fff;
+		text-align: center;
+		margin: 0 auto ;
+		font-size: 1.2rem;
+		@extend .font-sans-alt;
+	}
 
+}
 
 .byline-blog {
 	margin-bottom: $spacer;
-	@extend .clearfix;
-	.btn-follow-author {
-		margin-left: 0;
-	}
-	.img-gradient {
-		border-radius: 50%;
-	}
-	.author-info {
-		@extend .font-s2;
-		font-weight: 700;
-	}
-	
-	.article-avatar {
-		margin:  0;
-		img {
-			margin: 0 auto;
-		}
+	height: 3rem;
+
+	@extend .font-g2;
+	font-weight: 500;
+	font-size: 2.5rem;
+	border-bottom: $border-width solid $border-color;
+	margin-bottom: 2.5rem;
+	i {
+		color: #999;
+		font-style: normal;
+		font-weight: 400;
 	}
 }
 
@@ -1466,12 +1464,13 @@ $longreadPadding: 20rem;
 	height: $badge-sm;
 	line-height: $badge-sm;
 	font-size: 1.2rem;
-	margin: 0 0 .625rem .625rem;
 }
 
 	.article-byline {
-		@extend .clearfix;
+		clear:both;
 	}
+
+	
 	.article-topics {
 		.fadeout {
 			content: '';
@@ -1500,11 +1499,7 @@ $longreadPadding: 20rem;
 			
 		}	
 	}
-	.byline-blog {
-		.img-gradient {
-			max-width: 3rem;
-		}
-	}
+	
 	.article-comments-top {
 		display: block;
 		margin-top: .3rem;

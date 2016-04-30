@@ -39,7 +39,7 @@
 <?php include('includes/offcanvas-menu.php'); ?>
 
 
-<?php // include('includes/site-header.php'); ?>
+<?php  include('includes/site-header.php'); ?>
 
 
 
@@ -94,6 +94,8 @@
 						<?php if(!$templateBlog): ?>
 							<?php include('includes/article/byline.php') ?>
 						<?php endif; ?>
+
+						
 
 						<div class="article-body">
 
