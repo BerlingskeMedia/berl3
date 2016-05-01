@@ -932,7 +932,7 @@ blockquote {
 	&:before {
 		position: absolute;
 		font-family: b-icons;
-		content: '\e816';
+		content: '\e815';
 		font-size: 4rem;
 		top: 0;
 	}
@@ -1212,8 +1212,8 @@ $longreadPadding: 20rem;
 .tpl-article-longread {
 
 	.article-embedded-custom {
-		margin-left: -$longreadPadding / 2;
-		margin-right: -$longreadPadding / 2;
+		// margin-left: -$longreadPadding / 2;
+		margin-right: 0;
 	}
 	
 	.article-embed-pull-right {
@@ -1246,10 +1246,10 @@ $longreadPadding: 20rem;
 		text-align: left;
 
 	}
-	.article-summary {
-		margin: 2rem 0 ;
-	}
 	
+	.article-summary {
+		margin-top: $spacer;
+	}
 	.article-body {
 		padding-left: (35.938rem / 2);
 		padding-right: (35.938rem / 2);
@@ -1263,7 +1263,7 @@ $longreadPadding: 20rem;
 	}
 	
 	.article-trumpet {
-		color: #fff;
+		color: #000;
 	}
 
 	.share-buttons {
@@ -1272,38 +1272,42 @@ $longreadPadding: 20rem;
 }
 
 
-
-.longread-cover {
+.longread-hero {
+	margin-top: -1rem;
 	position: relative;
-	margin-top: -$spacer;
+}
+.longread-image {
+	height: 1000px;
 	max-height: 70vh;
+	display: block;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
 	overflow: hidden;
-	.container {
-		background: transparent;
-	}
 }
 
-.longread-main-image {
-	padding-bottom: 66.6666666667%
-	img {
-		vertical-align: middle;
-	}
-}
 
 .longread-fade {
 	position: absolute;
-	bottom: 0;
+	bottom: -1px;
 	left: 0;
 	width: 100%;
-	@include gradient-vertical(fade-out(#000,1), fade-out(#000, .2), 0%, 100%);
+	z-index: 2;
+	// @include gradient-vertical(fade-out(#000,1), fade-out(#000, .2), 0%, 100%);
+	@include gradient-vertical(fade-out($background-color,1), fade-out($background-color, 0), 0%, 100%);
 	padding-top: 5rem;
 	h1 {
 		font-size: 3rem;
-		margin-bottom: 2rem;
-		color: #fff;
+		margin-bottom: 0rem;
+		color: #000;
 	}
-
+	.container {
+		background-color: transparent;
+	}
 }
+
+
+
 
 
 
@@ -1384,6 +1388,49 @@ $longreadPadding: 20rem;
 }
 
 @include media-breakpoint-down(md) {
+
+	.longread-hero {
+		.container {
+			max-width: 41.25rem;
+			margin: 0 auto;
+		}
+		.col-xs-12 {
+			padding: 0;
+		}
+	}
+	.article-summary {
+		max-width: 41.25rem!important;
+		margin: 1rem auto;
+	}
+	.tpl-article-longread {
+
+		.article-image-embed-longread {
+			margin-left: 0;
+			margin-right: 0;
+		}
+		.article-embedded-custom {
+			margin-left: 0;
+			margin-right: 0;
+		}
+
+		.article-embed-pull-right {
+			margin-right: 0;
+		}
+
+	}
+	.longread-image {
+		max-height: 50vh;
+	}
+
+	.longread-fade {
+	
+		h1 {
+			font-size: 2.2rem;
+			margin-bottom: 0rem;
+		}
+	}
+
+
 	.article-summary {
 		max-width: none;
 	}
@@ -1421,7 +1468,29 @@ $longreadPadding: 20rem;
 }
 
 
-@include media-breakpoint-down(sm) {	
+@include media-breakpoint-down(sm) {
+
+	 .longread-image {
+	 	max-height: 50vh;
+	 }
+	
+	
+	.longread-fade {
+		padding-top: 2rem;
+		h1 {
+			font-size: 1.5rem;
+			margin-bottom: 0rem;
+			color: #fff;
+		}
+	}
+
+	.tpl-article-longread {
+		.article-summary {
+			margin: $spacer 0;
+		}
+	}
+
+	
 	[class*="super-byline-"] {
 		font-size: 1.2rem;
 		margin-bottom: .5rem;

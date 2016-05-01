@@ -40,7 +40,47 @@
 
 	<div class="banner-wrapper">
 	
-		<figure class="longread-cover" >
+		
+
+
+
+	<div class="longread-hero">
+		<div class="longread-fade">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-offset-1 col-xl-10 col-xs-12">
+						<h1 class="article-title">
+							<?php if($trumpet == '1'): ?>
+							<span class="article-trumpet">
+								<? dummy("text@item") ?>
+							</span>
+							<?php endif; ?>
+							<? dummy("text@headline-b") ?>
+						</h1>								
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+
+			<figure class="longread-image" style="background-image: url(<? dummy("image/!longread@1920x,24:9") ?>);">
+				
+			</figure>
+		
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+		<!-- <figure class="longread-cover" >
 
 			<div class="longread-fade">
 				<div class="container">
@@ -69,7 +109,12 @@
 				Foto: <? dummy("text@author") ?>
 			</span>
 
-		</figure>
+		</figure> -->
+
+
+
+
+
 	
 	<div class="container">
 		<div class="row">
@@ -77,11 +122,9 @@
 				<p class="article-summary relative" >
 					<? dummy("text@teaser") ?>
 				</p>
-
-				<div class="article-date">Onsdag d. <? dummy("text@date-long") ?>  kl. <? dummy("text@time") ?>
-					<? if (dumb_luck("50%")): ?><span class="updated">&mdash; <strong>Opdateret: kl. <? dummy("text@time") ?></strong>
-					</span><? endif ?>
-				</div>
+					
+				<?php include('includes/article/date.php'); ?>
+				
 				
 				
 
