@@ -98,9 +98,19 @@ fieldset[disabled] a.btn {
   @include button-variant(#333, rgba(0,0,0,.1), rgba(0,0,0,.01) );
   &:hover {
     background-color: rgba(0,0,0,.2);
-
   }
 }
+
+.btn-fact {
+  @include button-variant(#fff, darken($col-beige, 50%), darken($col-beige, 50%) );
+  &:hover {
+    background-color: darken($col-beige, 60%);
+  }
+}
+
+
+
+
 .btn-dark-gray {
   @include button-variant(#fff, rgba(0,0,0,.6), rgba(0,0,0,.0) );
   &:hover {

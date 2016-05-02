@@ -18,7 +18,7 @@
 	</div>
 
 	<div class="embed-fade text-center">
-		<button class="btn  toggle-embed btn-sm btn-round">Udvid faktaboks</button>
+		<button class="btn btn-fact toggle-embed btn-sm btn-round">Udvid faktaboks</button>
 	</div>
 
 </aside>

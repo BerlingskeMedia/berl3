@@ -284,7 +284,7 @@ if(isset($_GET["business"])) {
 						</div>
 						<div class="col-md-9">
 							<ul>
-								<li class="orange">Header position<a href="tpl-article-longread.php?textPosition=top">Top</a> <a href="tpl-article-longread.php?textPosition=bottom">Bottom</a> <a href="tpl-article-longread.php?textPosition=below">Below</a></li>
+								<li class="orange"><a href="tpl-article-longread.php">Default</a></li>
 								<li class="orange"><a href="tpl-article-longread.php?imgSize=4">Embedded images</a></li>
 								<li class="orange"><a href="tpl-article-longread.php?showCustom&amp;imgSize=1">Custom embed</a></li>
 								<li class="orange"><a href="tpl-article-longread.php?showTweet">Tweet embed</a></li>

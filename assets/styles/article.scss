@@ -514,10 +514,6 @@ a:hover {
 	margin-bottom: $spacer * 3;
 	background-color: $col-beige;
 	padding: $spacer;
-	.btn {
-		background-color: darken($col-beige, 50%);
-		color: #fff;
-	}
 }
 
 [class*="aside-header"] {
@@ -1387,8 +1383,7 @@ $longreadPadding: 20rem;
 	}
 }
 
-@include media-breakpoint-down(md) {
-
+@include media-breakpoint-only(md) {
 	.longread-hero {
 		.container {
 			max-width: 41.25rem;
@@ -1398,12 +1393,27 @@ $longreadPadding: 20rem;
 			padding: 0;
 		}
 	}
+	.article-date,
 	.article-summary {
 		max-width: 41.25rem!important;
 		margin: 1rem auto;
 	}
+	.longread-fade {
+	
+		h1 {
+			font-size: 2.2rem;
+			margin-bottom: 0rem;
+		}
+	}
 	.tpl-article-longread {
+		.article-summary {
+			max-width: none;
+		}
+	}
+}
+@include media-breakpoint-down(md) {
 
+	.tpl-article-longread {
 		.article-image-embed-longread {
 			margin-left: 0;
 			margin-right: 0;
@@ -1416,24 +1426,12 @@ $longreadPadding: 20rem;
 		.article-embed-pull-right {
 			margin-right: 0;
 		}
-
 	}
+
 	.longread-image {
 		max-height: 50vh;
 	}
-
-	.longread-fade {
 	
-		h1 {
-			font-size: 2.2rem;
-			margin-bottom: 0rem;
-		}
-	}
-
-
-	.article-summary {
-		max-width: none;
-	}
 	.article-title {
 		font-size: 2.3rem;
 	}
@@ -1479,8 +1477,6 @@ $longreadPadding: 20rem;
 		padding-top: 2rem;
 		h1 {
 			font-size: 1.5rem;
-			margin-bottom: 0rem;
-			color: #fff;
 		}
 	}
 
