@@ -109,6 +109,10 @@
 							<?php include('includes/article-embeds/newsletter-embedded.php'); ?>
 							
 							<p><? dummy("text@paragraph-first-letter") ?></p>
+
+							<div class="hidden-md-up mb">
+								<div class="demo-banner demo-banner-mobile " style="width: 320px; height : 160px;"></div>
+							</div>
 							
 							<p><? dummy("text@paragraph") ?></p>
 							
@@ -184,33 +188,7 @@
 		
 	</div><!-- row -->
 
-		<div class="article-footer">
-			
-			<div class="row row-narrow-md flex-row">
-				<div class="col-xs-12">
-					<div class="section-title">
-						Tophistorier
-					</div>
-				</div>
-				
-					<? while (dumb_luck("8")): ?>
-						<div class="col-xs-6 col-md-3 col-lg-3 col-xl-3 teaser-buffet">
-							<?php 
-								$imgW='420'; 
-								$class = 'fs12 mb';
-								$showImg = '1';
-								$imgRatio = '16:9';
-								$showKey = true;
-								include('includes/teaser.php') ?>
-						</div>
-					<? endwhile ?>
-					<div class="col-xs-12">
-						<div class="text-center deck-footer mb-1 mt">
-							<button class="btn btn-round btn-blue btn-sm">Hent flere <i class="bicon-angle-down"></i></button>
-						</div>
-					</div>
-			</div>
-		</div>
+		<?php include('includes/article/footer.php'); ?>
 
 		<div class="article-comments">
 			

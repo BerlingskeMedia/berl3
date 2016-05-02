@@ -194,14 +194,14 @@ ul.list-reset {
 
 .top-block {
 	position: relative;
-	padding-top: 2rem;
+	padding-top: 1rem;
 	&:before {
 		display: inline-block;
 		width: 100%;
 		content: '';
 		height: 5px;
 		position: absolute;
-		top: $spacer;
+		top: 0;
 		background-color: #222;
 	}
 }

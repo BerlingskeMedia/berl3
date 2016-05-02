@@ -263,11 +263,23 @@ a:hover {
 	float: left;
 	margin-right: $spacer / 2;
 }
+.article-byline {
+	display: flex;
+	align-items: center;
+	// justify-content: center;
+}
 .article-author {
 	display: inline-block;
 	float: left;
 	vertical-align: top;
 	line-height: 1.4;
+	text-align: left;
+	display: flex;
+	align-items: center;
+	// justify-content: center;
+	height: 40px;
+	float: left;
+	margin-right: .4rem;
 	img {
 		max-width: 2.5rem;
 		clear: both;
@@ -657,7 +669,7 @@ a:hover {
 	.teaser-body {
 		overflow: hidden;
 	}
-	span {
+	.teaser-body > span {
 		font-size: .7rem;
 		color: $col-blue-1;
 		font-weight: 500;
@@ -1009,7 +1021,6 @@ blockquote {
 .toggle-loadmore-fade {
 	display: block;
 	text-align: center;
-	margin-top: -3rem;
 	margin-bottom: 2rem;
 	z-index: 2;
 	background: radial-gradient(ellipse 50% 10px at 50% 100%, darken($background-color, 10%) 0%, $background-color 110%);
@@ -1032,8 +1043,9 @@ blockquote {
 	padding-top: .625rem;
 	@extend .mb;
 	clear: both;
-	// margin-left: -($col-1-width / 2)
-	
+	.toggle-loadmore-fade {
+		margin-top: -3rem;
+	}
 	figure {
 		width: 60px;
 	}
@@ -1240,8 +1252,6 @@ $longreadPadding: 20rem;
 	}
 	.article-author {
 		float: none;
-		text-align: left;
-
 	}
 	
 	.article-summary {
@@ -1478,7 +1488,9 @@ $longreadPadding: 20rem;
 @include media-breakpoint-down(sm) {
 
 	 .longread-image {
-	 	max-height: 50vh;
+
+
+	 	max-height: calc(65vh - 3.5rem);
 	 }
 	
 	

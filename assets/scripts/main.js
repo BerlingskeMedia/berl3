@@ -32,7 +32,7 @@ function isScrolledIntoView(elem) {
 	});
 
 
-	$('.toggle-xtra-related').click(function(){
+	$('#toggle-xtra-related').click(function(){
 		$('#xtra-related').slideDown('fast');
 		$(this).closest('.toggle-loadmore-fade').fadeOut('fast');
 	});
