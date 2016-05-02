@@ -1,6 +1,13 @@
-<? require_once("../dummy/dummy.php") ?>
+<?php
 
-<?php include('includes/_variables.php') ;?>
+// Report serious running errors and ignoring notices
+error_reporting(E_ERROR | E_WARNING | E_PARSE);
+
+require_once("../dummy/dummy.php");
+
+include('includes/_variables.php');
+
+?>
 
 
 <?php 

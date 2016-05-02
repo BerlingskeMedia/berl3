@@ -1,3 +1,10 @@
+<?php
+
+// Report serious running errors and ignoring notices
+error_reporting(E_ERROR | E_WARNING | E_PARSE);
+
+?>
+
 <header class="site-header">
 	<div class="header-top hidden-md-down hidden">
 		<div class="container">
