@@ -1,5 +1,5 @@
 <header class="site-header">
-	<div class="header-top hidden-md-down">
+	<div class="header-top hidden-md-down hidden">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">

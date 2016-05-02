@@ -62,59 +62,11 @@
 			</div>
 		</div>
 
-		
-
-			<figure class="longread-image" style="background-image: url(<? dummy("image/!longread@1920x,24:9") ?>);">
-				
-			</figure>
+		<figure class="longread-image" style="background-image: url(<? dummy("image/!longread@1920x,24:9") ?>);">
+			
+		</figure>
 		
 	</div>
-
-
-
-
-
-
-
-
-
-
-
-		<!-- <figure class="longread-cover" >
-
-			<div class="longread-fade">
-				<div class="container">
-					<div class="row">
-						<div class="col-xl-offset-1 col-xl-10 col-xs-12">
-							<h1 class="article-title">
-								<?php if($trumpet == '1'): ?>
-								<span class="article-trumpet">
-									<? dummy("text@item") ?>
-								</span>
-								<?php endif; ?>
-								<? dummy("text@headline-b") ?>
-							</h1>								
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			<div class="longread-image-wrapper">
-				<div class="longread-main-image">
-					<img src="<? dummy("image/!longread@1920x800,") ?>" width="" height="" alt="" class="" />
-				</div>	
-			</div>
-				
-			<span class="photo-byline">
-				Foto: <? dummy("text@author") ?>
-			</span>
-
-		</figure> -->
-
-
-
-
-
 	
 	<div class="container">
 		<div class="row">
@@ -125,8 +77,7 @@
 					
 				<?php include('includes/article/date.php'); ?>
 				
-				
-				
+				<?php $class = 'hidden-xl-up '; include('includes/article/social-buttons.php'); $class = false;?>
 
 				<div class="demo-banner hidden-md-down mb" style="width:930px; height: 180px" ></div>
 

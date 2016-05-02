@@ -1532,30 +1532,29 @@ $longreadPadding: 20rem;
 	.article-topics {
 		.fadeout {
 			content: '';
-			width: 2rem;
+			width: 1rem;
 			position: absolute;
 			right: -.1rem;
-			height: 1.5rem;
-			bottom: 0;
+			height: 1.4rem;
+			bottom: -.1rem;
+			top: -.1rem;
 			display: inline-block;
-			@include gradient-horizontal(fade-out($background-color,1), $background-color, 0%, 70%);
+			@include gradient-horizontal(fade-out($background-color,1), darken($background-color, 20%), 0%, 70%);
 			z-index: 2;
 			line-height: 1;
 			margin: 0;
 		}
 		ul {
-			
-			
 			height: 1.5rem;
 			overflow: hidden;
 			overflow-x: scroll;
-			
 			white-space: nowrap;
 			-webkit-overflow-scrolling: touch;
 			-ms-overflow-style: -ms-autohiding-scrollbar;
-			
-			
 		}	
+		li {
+			margin-bottom: 0;
+		}
 	}
 	
 	.article-comments-top {
