@@ -34,7 +34,7 @@ function isScrolledIntoView(elem) {
 
 	$('.toggle-xtra-related').click(function(){
 		$('#xtra-related').slideDown('fast');
-		$('.toggle-related-fade').fadeOut('fast');
+		$(this).closest('.toggle-loadmore-fade').fadeOut('fast');
 	});
 	
 	// Make sticky side cols

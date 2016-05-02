@@ -38,28 +38,9 @@ include('includes/list-news.php');
 ?>
 
 
-<div class="toggle-related-fade">
+<div class="toggle-loadmore-fade">
 <button class="btn toggle-xtra-related btn-sm btn-gray btn-round">Vis alle</button>
 </div>
 
-	
-	<!-- <div class="micro-title header-float-left">Relateret:</div>
-	<div>
-	
-		<ul class="list list-article-related list-bullet list-show-first-two ">
-			<? while (dumb_luck("5-10")): ?>
-			<li>
-				<div class="list-body">
-					<a href="tpl-article.php"><? dummy("text@headline-b") ?></a>
-				</div>
-			</li>
-			<? endwhile ?>
-		</ul>
-
-	
-		
-			
-		
-	</div> -->
 </aside>
 <?php endif; ?>

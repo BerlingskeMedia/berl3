@@ -145,6 +145,9 @@ a:hover {
 
 .author-follow {
 	display: inline-block;
+	.btn {
+		vertical-align: baseline;
+	}
 }
 .btn-follow-author {
 	line-height: 1;
@@ -1003,7 +1006,7 @@ blockquote {
 		
 	}
 }
-.toggle-related-fade {
+.toggle-loadmore-fade {
 	display: block;
 	text-align: center;
 	margin-top: -3rem;
@@ -1521,11 +1524,30 @@ $longreadPadding: 20rem;
 			line-height: $badge-2-sm;
 		}
 	}
-
 	
-
+	.article-author {
+		margin-bottom: .5rem;
+		min-height: 32px;
+		display: inline-block;
+		clear: left;
+	
+		&+.article-author {
+			margin-left: 0;
+		}	
+		img {
+			max-width: 2rem;
+		}
+	}
+	
+	.article-author {
+		
+	}
 	.article-byline {
 		clear:both;
+		margin-bottom: .5rem;
+		&> div {
+			float: none;
+		}
 	}
 
 	
@@ -1535,7 +1557,7 @@ $longreadPadding: 20rem;
 			width: 1rem;
 			position: absolute;
 			right: -.1rem;
-			height: 1.4rem;
+			height: 1.5rem;
 			bottom: -.1rem;
 			top: -.1rem;
 			display: inline-block;
@@ -1639,17 +1661,7 @@ $longreadPadding: 20rem;
 		@extend .continue-reading-img;
 	}
 
-	.article-author {
-		display: block;
-		clear: left;
-		&+.article-author {
-			margin-top: .5rem;
-			margin-left: 0;
-		}
-		img {
-			max-width: 2rem;
-		}
-	}
+	
 	.author-info {
 		font-size: .9rem;
 		margin-top: 0;
@@ -1694,6 +1706,7 @@ $longreadPadding: 20rem;
 	.article-newsletter-embedded {
 		margin-top: 0;
 		margin-bottom: $spacer;
+		clear: both;
 		&:before {
 			display: none;
 		}
