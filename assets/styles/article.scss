@@ -1539,7 +1539,7 @@ $longreadPadding: 20rem;
 			bottom: -.1rem;
 			top: -.1rem;
 			display: inline-block;
-			@include gradient-horizontal(fade-out($background-color,1), darken($background-color, 20%), 0%, 70%);
+			@include gradient-horizontal(fade-out($background-color,1), darken($background-color, 0%), 0%, 70%);
 			z-index: 2;
 			line-height: 1;
 			margin: 0;
