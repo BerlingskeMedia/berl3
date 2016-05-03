@@ -83,12 +83,10 @@ if (isset($_GET['event'])) {
 if (isset($_GET['paywall'])) {
 	$showPaywall = true;
 }
-$showNewsletterEmbedded = false;
 
-if (isset($_GET['showNewsletter'])) {
-	$showNewsletter = true;
-	$showNewsletterEmbedded = false;
-}
+$showNewsletterEmbedded = rand(0,1);
+
+
 
 
 if (isset($_GET['showRelated'])) {
