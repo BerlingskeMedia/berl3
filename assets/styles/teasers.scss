@@ -439,9 +439,11 @@ img {
 
 .teaser-consumersales {
 	@extend .font-s2;
-	a:hover,
-	.teaser-cat {
+	a {
 		color: #ce4e00;
+		&:hover {
+			color: darken(#ce4e00, 10%);
+		}
 	}
 	.teaser-img {
 		margin-right: .5rem;
@@ -472,7 +474,7 @@ img {
 	}
 	&:hover {
 		a {
-			color: #ce4e00;
+			color: darken(#ce4e00, 10%);
 		}
 	}
 }

@@ -33,7 +33,7 @@
 
 <?php // include('includes/site-header.php'); ?>
 
-<div style="height: 3.5rem; background: red"></div>
+<div style="height: 2.5rem; background: #222; color: #fff; padding: 0 .4rem; line-height: 2.5rem;">Header</div>
 
 
 
@@ -47,7 +47,9 @@
 
 
 	<div class="longread-hero">
-		<figure class="longread-image" style="background-image: url(<? dummy("image/!longread@1920x,24:9") ?>);"></figure>
+		<figure class="longread-image" style="background-image: url(<? dummy("image/!longread@1920x,24:9") ?>);">
+			<figcaption>Foto: <? dummy("text@author") ?></figcaption>
+		</figure>
 		<div class="longread-fade">
 			<div class="container">
 				<div class="row">
@@ -172,6 +174,7 @@
 </div><!-- canvas main -->
 </div><!-- main-wrapper -->
 
+<?php include('includes/consumersales-row.php'); ?>
 
 <?php include('includes/footer.php'); ?>
 

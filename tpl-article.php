@@ -198,13 +198,16 @@
 
 <?php include('includes/consumersales-row.php'); ?>
 
-
-
 <?php include('includes/footer.php'); ?>
 
 
 <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
 <script src="/dist/scripts/main.js"></script>
+
+<script>
+	$('iframe.auto-height').iframeAutoHeight({minHeight: 50});	
+</script>
+
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

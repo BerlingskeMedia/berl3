@@ -90,7 +90,10 @@
 	});
 
 
+	$('#embedded-marketing').iframeAutoHeight({debug: true});
+	// $('iframe.auto-height').iframeAutoHeight({minHeight: 240});
 
+	// $("#embedded-marketing").height($("#embedded-marketing").contents().find("html").height());
 
 })(jQuery); 
 

@@ -243,18 +243,22 @@ a:hover {
 	}
 
 }
+
 .article-byline {
 	width: 100%;
 	min-height: 3rem;
 	margin-bottom: $spacer;
-	.author-info {
-		@extend .font-s2;
-		font-weight: 500;
-	}
 	a {
 		color: rgba(0,0,0,.7);
 		font-size: .8rem;
 	}
+}
+
+.author-info {
+	@extend .font-s2;
+	font-weight: 500;
+	display: inline-block;
+	margin-top: .45rem;
 }
 
 .article-avatar {
@@ -279,10 +283,7 @@ a:hover {
 		margin-left: 2rem; 
 	}
 }
-.author-info {
-	display: inline-block;
-	margin-top: .2rem;
-}
+
 .image-caption {
 	font-size: .8rem;
 	font-weight: 500;
@@ -791,6 +792,17 @@ $sharebutton-sm: 1.7rem;
 		border-color: darken($col-instagram, 10%);
 	}
 }
+.btn-share-sm-black,
+.btn-share-black {
+	background-color: #222;
+	border-color: #222;
+	color: #fff;
+	&:hover {
+		background-color: darken(#222, 10%);
+		color: #fff;
+		border-color: darken(#222, 10%);
+	}
+}
 
 
 .btn-share-linkedin {
@@ -1135,7 +1147,13 @@ $sharebutton-sm: 1.7rem;
 }
 
 
-
+.article-marketing-embedded {
+	padding: 0;
+	background-color: transparent;
+	iframe {
+		width: 100%;
+	}
+}
 .article-newsletter-embedded {
 	
 	@extend .article-off-grid;
@@ -1307,7 +1325,6 @@ $longreadPadding: 20rem;
 
 
 .longread-hero {
-	margin-top: -1rem;
 	position: relative;
 }
 .longread-image {
@@ -1318,6 +1335,17 @@ $longreadPadding: 20rem;
 	background-size: cover;
 	background-repeat: no-repeat;
 	overflow: hidden;
+	figcaption {
+		position: absolute;
+		bottom: 0rem;
+		right: .5rem;
+		color: rgba(0,0,0,.5);
+		font-size: .7rem;
+		@extend .font-s2;
+		
+		padding: 0 .2rem ;
+		z-index: 10;
+	}
 }
 
 
@@ -1532,6 +1560,13 @@ $longreadPadding: 20rem;
 
 	 .longread-image {
 	 	max-height: calc(65vh - 3.5rem);
+			figcaption {
+				top: .5rem;
+				bottom: auto;
+				color: rgba(0,0,0,.5);
+				background: transparent;				
+			}
+
 	 }
 	.longread-hero {
 		margin-top: 0;

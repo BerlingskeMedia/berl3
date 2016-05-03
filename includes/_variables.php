@@ -83,7 +83,7 @@ if (isset($_GET['event'])) {
 if (isset($_GET['paywall'])) {
 	$showPaywall = true;
 }
-$showNewsletterEmbedded = true;
+$showNewsletterEmbedded = false;
 
 if (isset($_GET['showNewsletter'])) {
 	$showNewsletter = true;

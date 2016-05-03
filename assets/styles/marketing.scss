@@ -1,0 +1,27 @@
+.marketing-embedded {
+	background-color: #fff;
+	text-align: center;
+	padding: .5rem;
+	@extend .font-s2;
+	h1 {
+		@extend .font-s1;
+		font-size: 1rem;
+		@extend .mb-05;
+	}
+	.packshot {
+		padding-top: 1.8rem;
+		background: url(/dist/images/packshot.jpg) center top no-repeat;
+		background-size: 50px;
+	}
+}
+.mofibo {
+	color: #db5645;
+	display: block;
+	font-size: 90%;
+}
+
+.disclaimer {
+	font-size: .7rem;
+	@extend .font-s2;
+	color: rgba(0,0,0,.5);
+}

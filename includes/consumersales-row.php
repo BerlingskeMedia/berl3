@@ -3,14 +3,14 @@
 		<div class="row ">
 			<div class="col-xs-12 ">
 				<div class="section-title ">Go shopping!
-					<span class="right"><a href="http://shop.berlingske.dk">Gå til Berlingske Shop</a></span>
+					<span class="right"><a href="http://shop.berlingske.dk">Gå til Berlingske Shop <i class="bicon-angle-right"></i></a></span>
 				</div>
 			</div>
 		</div>
 		<div class="row flex-row">
 		
 		<? while (dumb_luck("4")): ?>
-			<div class="col-xs-6 col-lg-3 col-md-3">
+			<div class="col-xs-6 col-lg-3 col-md-6">
 					
 					<?php 
 						$imgW='80'; 
