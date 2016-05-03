@@ -1,5 +1,5 @@
-<div class="consumersales-belt">
-	<div class="container">
+<div class="consumers ales-belt">
+	<div class="container mb-1">
 		<div class="row ">
 			<div class="col-xs-12 ">
 				<div class="section-title ">Go shopping!

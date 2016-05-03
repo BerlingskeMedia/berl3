@@ -65,7 +65,7 @@
 								</ul>		
 							
 						</div>
-						<div class="col-md-12 col-sm-6 col-xs-12 mb-sm">
+						<div class="col-md-12 col-sm-12 col-xs-12 mb-sm">
 							<div class="border-bottom-sm ">
 							<p class="hidden-sm-down"><strong >Følg Berlingske</strong></p>
 

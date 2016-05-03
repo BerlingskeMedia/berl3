@@ -56,11 +56,11 @@
 .footer-middle {
 	padding-bottom: $spacer;
 	padding-top: $spacer;
-	background-color: rgba(0,0,0,.1);
+	background-color: rgba(0,0,0,.05);
 }
 
 .footer-bottom {
-	background-color: rgba(0,0,0,.1);
+	background-color: rgba(0,0,0,.05);
 	.container {
 		padding-top: 1rem;
 		border-top: $border-width solid $border-color; 	
