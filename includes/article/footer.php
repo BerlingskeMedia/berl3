@@ -29,7 +29,7 @@
 
 	<div class="row">
 		<div class="col-lg-12 hidden-md-down mb">
-			<div class="demo-banner demo-banner" style="width: 930px; height: 180px; "></div>
+			<div class="demo-banner" style="width: 930px; height: 180px; "></div>
 		</div>
 	</div>
 

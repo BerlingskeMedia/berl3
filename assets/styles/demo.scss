@@ -36,6 +36,11 @@
 		content: 'Mobile banner';
 	}
 }
+.demo-banner-tablet {
+	&:after {
+		content: 'Tablet banner';
+	}
+}
 .banner-wrapper {
 	position: relative;
 }
