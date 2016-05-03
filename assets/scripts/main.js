@@ -1,14 +1,3 @@
-// function used to load Disqus comments
-function isScrolledIntoView(elem) {
-	var docViewTop = $(window).scrollTop();
-	var docViewBottom = docViewTop + $(window).height();
-
-	var elemTop = $(elem).offset().top;
-	var elemBottom = elemTop + $(elem).height();
-
-	return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-}
-
 (function($) {
 	// MISC VARS - STICKY HEADER ON SCROLL
 	var bodyClass = $('body');
@@ -31,18 +20,13 @@ function isScrolledIntoView(elem) {
 		$(this).closest('aside').removeClass('embed-collapsed');
 	});
 
-
+	// Toggle additional related articles
 	$('#toggle-xtra-related').click(function(){
 		$('#xtra-related').slideDown('fast');
 		$(this).closest('.toggle-loadmore-fade').fadeOut('fast');
 	});
 	
-	// Make sticky side cols
-	$('.stickem-container').stickem({
-		offset: '70',
-		item: '.sticky'
-
-	});
+	
 	// Sticky example 2
 	$('.stickem-container-ex2').stickem({
 		offset: '60',
@@ -51,25 +35,33 @@ function isScrolledIntoView(elem) {
 		container: '.stickem-container-ex2'
 	});
 
-	$('#disqus_thread:not(.loaded)').each(function () {
-		if (isScrolledIntoView(this) === true) {
-			var disqus_shortname = 'btdkbond'; 
-			$.ajax({
-			type: "GET",
-			url: "http://" + disqus_shortname + ".disqus.com/embed.js",
-			dataType: "script",
-			cache: true
-		});
-		$(this).addClass('loaded'); // add class to prevent function from running again
-		}
-	});
+	
+	// Load disquss comments
+	var ds_loaded = false, 
+	top = $("#disqus_thread").offset().top;
+	
+	window.disqus_shortname = 'btdkbond';
+
+	function check(){
+	    if ( !ds_loaded && $(window).scrollTop() + $(window).height() > top ) {
+	        $.ajax({
+	            type: "GET",
+	            url: "http://" + disqus_shortname + ".disqus.com/embed.js",
+	            dataType: "script",
+	            cache: true
+	        });
+	        ds_loaded = true;
+	    }
+	}
+	$(window).scroll(check);
+	check();
 
 
 	var sticky_navigation = function()  {
-		var scroll_top = $(window).scrollTop(); 
-		
-		// sticky_navigation_offset_top = $('.header-middle').offset().top;	
-		sticky_navigation_offset_top = 40;	
+	var scroll_top = $(window).scrollTop(); 
+
+	// sticky_navigation_offset_top = $('.header-middle').offset().top;	
+	sticky_navigation_offset_top = 40;	
 
 		if (scroll_top > sticky_navigation_offset_top &&  $(window).width() > 992) {
 			$(bodyClass).addClass('fixed-header');
@@ -84,6 +76,7 @@ function isScrolledIntoView(elem) {
 		sticky_navigation();
 	}).resize();	
 
+
 	$('.list-tabs').on('click', 'a:not(.active)', function(e){
 		var activeTab = $(this).data('menuid');
 		$('.list-tabs li').removeClass('active');
@@ -97,15 +90,7 @@ function isScrolledIntoView(elem) {
 	});
 
 
-	$('.social-toggle').click(function(e) {
-		e.preventDefault();
-		$(this).closest('.share-buttons').toggleClass('collapsed');
-	});
 
-	$('.demo-trigger').click(function(e){
-		e.preventDefault();
-		$('#hidden-menu').toggleClass('show-hidden-menu');
-	});
 
 })(jQuery); 
 

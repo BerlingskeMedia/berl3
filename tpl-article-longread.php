@@ -161,28 +161,7 @@
 		
 		<?php include('includes/article/footer.php'); ?>
 
-		<div class="article-comments">
-			
-			<div class="flex-row">
-				<div class="col-1-content">
-					<div class="article-content">
-						<div  style="min-height: 700px; padding: 1rem;">
-							<div class="article-comments" id="article-comments">
-								<div id="disqus_thread"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-2-sidebar">
-					<div class="stickem-container-ex2 mb-1 hidden-md-down" style="height: 700px;">	
-						<div class="sticky-ex2">	
-							<div class="demo-banner" style="height: 250px; width: 300px;"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</div>
+		<?php include('includes/article/comments.php'); ?>
 
 	</div>
 		

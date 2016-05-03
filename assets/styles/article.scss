@@ -72,8 +72,7 @@
 }
 .large-share-buttons {
 	@extend .border-top;
-	@extend .border-bottom;
-	@extend .border-dotted;
+	
 
 	padding-top: 1rem;
 	.btn-facebook,
@@ -687,7 +686,14 @@ a:hover {
 
 
 $sharebutton: 2.4rem;
+$sharebutton-sm: 1.7rem;
 
+.label-follow {
+	@extend .font-s2;
+	margin-right: .4rem;
+	line-height: $sharebutton-sm;
+	font-size: .8rem;
+}
 
 [class*="btn-share"] {
 	display: inline-block;
@@ -712,6 +718,15 @@ $sharebutton: 2.4rem;
 	&:active{
 		transform: scale(.95);
 	}
+}
+
+[class*="btn-share-sm"] {
+	
+	height: $sharebutton-sm;
+	width: $sharebutton-sm;
+	line-height: $sharebutton-sm;
+	font-size: .8rem;
+
 }
 
 .btn-comment-counter {
@@ -743,6 +758,7 @@ $sharebutton: 2.4rem;
   }
 }
 
+.btn-share-sm-facebook,
 .btn-share-facebook {
 	background-color: $col-facebook;
 	border-color:  $col-facebook;
@@ -753,6 +769,7 @@ $sharebutton: 2.4rem;
 		color: #fff;
 	}
 }
+.btn-share-sm-twitter,
 .btn-share-twitter {
 	background-color: $col-twitter;
 	border-color: $col-twitter;
@@ -763,6 +780,19 @@ $sharebutton: 2.4rem;
 		border-color: darken($col-twitter, 10%);
 	}
 }
+.btn-share-sm-instagram,
+.btn-share-instagram {
+	background-color: $col-instagram;
+	border-color: $col-instagram;
+	color: #fff;
+	&:hover {
+		background-color: darken($col-instagram, 10%);
+		color: #fff;
+		border-color: darken($col-instagram, 10%);
+	}
+}
+
+
 .btn-share-linkedin {
 	background-color: $col-linkedin;
 	 border-color: $col-linkedin;
@@ -1011,7 +1041,8 @@ $sharebutton: 2.4rem;
 		
 	}
 }
-.toggle-loadmore-fade {
+.toggle-loadmore-fade,
+.toggle-loadmore-fade-inv {
 	display: block;
 	text-align: center;
 	margin-bottom: 2rem;
@@ -1026,6 +1057,9 @@ $sharebutton: 2.4rem;
 			background-color: darken(#ddd, 5%);
 		}
 	}
+}
+.toggle-loadmore-fade-inv {
+	background: radial-gradient(ellipse 50% 10px at 50% 0%, darken($background-color, 10%) 0%, $background-color 110%);
 }
 
 .xtra-related {
@@ -1422,9 +1456,15 @@ $longreadPadding: 20rem;
 			margin: 1rem auto;
 		}
 	}
+	.large-share-buttons {
+		border-bottom: $border-width solid $border-color;
+		padding-bottom: $spacer;
+		margin-bottom: $spacer;
+	}
 }
 @include media-breakpoint-down(md) {
 	
+
 	.article-header {
 		max-width: 41.25rem;
 		margin-left: auto;

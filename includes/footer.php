@@ -22,13 +22,7 @@
 		</div>
 	</div>
 
-	<div class="footer-top-2">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12"><a href="#" target="_blank">Prøv Berlingske i 4 uger for KUN  99,- Ingen binding <button class="btn btn-xs btn-blue" target="#">Køb abonnement</button></a></div>
-			</div>
-		</div>
-	</div>
+	
 	
 	<div class="footer-middle ">
 		<div class="container">
@@ -46,12 +40,23 @@
 												<input type="email" placeholder="Din email" class="newsletter-email">
 												<button class="btn btn-gray">Tilmeld</button>
 											</div>
-											<div class="checkbox-styled hidden">
-												<div class="checkbox">
+											<div class="hidden">
+												<div class="checkbox checkbox-styled mb-05">
 													<label>
-														<input type="checkbox" checked=""> <span>Inkl. Breaking News</span>
+														<input type="checkbox" class="" checked > <span>Berlingske Morgen</span>
 													</label>
 												</div>
+												<div class="checkbox checkbox-styled mb-05">
+												<label>
+													<input type="checkbox" class="" checked > <span>Berlingske Eftermiddag</span>
+												</label>
+												</div>
+
+												<div class="checkbox checkbox-styled mb-05">
+													<label>
+														<input type="checkbox" class="" checked > <span>Breaking News</span>
+													</label>
+												</div>	
 											</div>
 										
 										</form>
@@ -103,6 +108,7 @@
 						<div class="col-md-4 col-sm-6 col-xs-6  mb-sm">
 							<p><strong>Service</strong></p>
 							<ul class="list-footer">
+								<li><a href="#" title="#">Køb abonnement</a></li>
 								<li><a href="#" title="#">Læs e-avisen</a></li>
 								<li><a href="#" title="#">Er avisen ikke kommet?</a></li>
 								<li><a href="#" title="#">Annoncesalg</a></li>
