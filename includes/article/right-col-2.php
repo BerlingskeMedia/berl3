@@ -23,7 +23,7 @@
 	</div>
 		<!-- Mobile banner -->
 		<div class="col-xs-12 hidden-md-up">
-			<div class="fw-sm">
+			<div class="fw-sm mb">
 				<div class="demo-banner demo-banner-mobile" style="width: 320px; height: 250px; "></div>
 			</div>
 		</div>
@@ -77,7 +77,7 @@
 
 		<!-- Mobile banner -->
 		<div class="col-xs-12 hidden-md-up">
-			<div class="fw-sm">
+			<div class="fw-sm mb">
 				<div class="demo-banner demo-banner-mobile" style="width: 320px; height: 250px; "></div>
 			</div>
 		</div>

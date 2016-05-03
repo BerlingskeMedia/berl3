@@ -47,6 +47,7 @@
 
 
 	<div class="longread-hero">
+		<figure class="longread-image" style="background-image: url(<? dummy("image/!longread@1920x,24:9") ?>);"></figure>
 		<div class="longread-fade">
 			<div class="container">
 				<div class="row">
@@ -64,9 +65,7 @@
 			</div>
 		</div>
 
-		<figure class="longread-image" style="background-image: url(<? dummy("image/!longread@1920x,24:9") ?>);">
-			
-		</figure>
+		
 		
 	</div>
 	
@@ -111,7 +110,7 @@
 								
 								<p><? dummy("text@paragraph-first-letter") ?></p>
 
-								<div class="hidden-md-up mb">
+								<div class="hidden-md-up mb fw-sm">
 									<div class="demo-banner demo-banner-mobile " style="width: 320px; height : 160px;"></div>
 								</div>
 								

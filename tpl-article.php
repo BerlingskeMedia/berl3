@@ -110,7 +110,7 @@
 							
 							<p><? dummy("text@paragraph-first-letter") ?></p>
 
-							<div class="hidden-md-up mb">
+							<div class="hidden-md-up mb fw-sm">
 								<div class="demo-banner demo-banner-mobile " style="width: 320px; height : 160px;"></div>
 							</div>
 							
