@@ -382,10 +382,7 @@ $col-deck-label-width: 160px;
 	padding-left: 0;
 
 }
-.like-berlingske {
-	padding-top: .5rem;
-	margin-top: -1rem;
-}
+
 .col-2-sidebar {
 	width: 300px;
 	float: left;
@@ -437,4 +434,9 @@ $col-deck-label-width: 160px;
 		right: 0;
 	}
 }
+.like-berlingske {
+	padding-top: .5rem;
+	margin-top: -1rem;
+}
+
 @import "tools";
