@@ -110,7 +110,7 @@ if (isset($_GET['specialBanner'])) {
 	$backgroundBanner = true;
 }
 
+$campaignId = 'campaign-' . mt_rand(1,4);
 
-$campaignId = 'campaign-' . mt_rand(1,3);
 
 ?>

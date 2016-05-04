@@ -4,7 +4,7 @@
 
 
 <?php 
-	// $showWell = rand(1,1);
+	$hideComments = true;
 ?>
 <!DOCTYPE html>
 <html lang="da">
@@ -12,7 +12,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Berlingske LIVE</title>
+	<title>Berlingske - Article Large</title>
 	<link rel="stylesheet" href="/dist/styles/main.css">
 	<link href='https://fonts.googleapis.com/css?family=Montserrat|Oswald:300' rel='stylesheet' type='text/css'>
 </head>
@@ -33,6 +33,7 @@
 
 <div class="main-wrapper">
 	<?php include('includes/offcanvas-menu.php'); ?>
+	
 
 	<?php include('includes/site-header.php'); ?>
 
@@ -43,7 +44,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-				
+						
 						<?php include('includes/article/header.php'); ?>
 
 						<div class="col-1-content">
@@ -54,7 +55,7 @@
 								</div><!-- article body -->
 								
 								<div class="article-bottom text-center ">
-									<?php $hideComments = true; include('includes/article-embeds/share-buttons-large.php'); ?>
+									<?php include('includes/article-embeds/share-buttons-large.php'); ?>
 								</div>
 							</div><!-- article content -->
 							

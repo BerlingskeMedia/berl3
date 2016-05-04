@@ -1,7 +1,7 @@
 <header class="article-header">
 		<?php include('includes/article/event-headers.php'); ?>
 		
-		<?php include('includes/article-embeds/rating.php'); ?>
+		
 			
 			<?php if($templateBlog || $templateEssay || $templateEditorial): ?>
 			<div class="
@@ -36,15 +36,17 @@
 				<?php endif; ?>
 				<? dummy("text@headline") ?>
 			</h1>
+
+			<?php include('includes/article-embeds/rating.php'); ?>
 			
 			<p class="article-summary relative"><? dummy("text@teaser") ?></p>
 		
 			<?php include('includes/article/date.php'); ?>
-			<?php $class = 'hidden-xl-up '; include('includes/article/social-buttons.php'); $class = false;?>
-	
-	<?php include('includes/banners/topbanner.php'); ?>
-	<?php include('includes/banners/ipad-banner.php'); ?>
-	
+			<?php $class = 'hiddxl-up '; include('includes/article/social-buttons.php'); $class = false;?>
+
 		
 </header>
+
+<?php include('includes/banners/topbanner.php'); ?>
+<?php include('includes/banners/ipad-banner.php'); ?>
 

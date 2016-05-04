@@ -4,7 +4,7 @@
 
 
 <?php 
-	// $showWell = rand(1,1);
+	$hideComments = false;
 ?>
 <!DOCTYPE html>
 <html lang="da">
@@ -13,7 +13,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- <meta name="viewport" content="width=960px"> -->
-	<title>Berlingske Article</title>
+	<title>Berlingske - Article</title>
 	<link rel="stylesheet" href="/dist/styles/main.css">
 	
 </head>
@@ -24,15 +24,6 @@
 <a class="demo-trigger" href="#">
 	<i class="bicon-angle-right"></i>
 </a>
-
-<!-- <div class="hidden-menu" id="hidden-menu">	
-	<ul class="demo-menu">
-		
-	</ul>
-</div> -->
-
-
-
 
 
 
@@ -45,12 +36,16 @@
 
 
 
-
-
+<div class="canvas-main <?php echo $campaignId; ?>">
 
 	<div class="banner-wrapper">
+	<div class="bg-banner"></div>
+	<div class="topbanner demo-banner hidden-sm-down" style="width: 930px; height: 180px;"></div>
+
+
 	
-	<div class="container">
+	
+	<div class="container site-content">
 		<div class="row">
 		
 		<div class="col-md-12 ">
@@ -64,7 +59,7 @@
 
 					<div class="article-content">
 						
-						<?php $class = 'hidden-lg-down text-center'; include('includes/article/social-buttons.php'); $class = false;?>
+						
 
 						<?php if($imageSize == '1' || $imageSize == '4'): // large image ?>
 						

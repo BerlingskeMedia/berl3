@@ -10,7 +10,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Berlingske Longread</title>
+	<title>Berlingske - Article Longread</title>
 	<link rel="stylesheet" href="/dist/styles/main.css">
 </head>
 <body class=" <?php if($siteBusiness): ?>site-business<?php endif; ?> show-site-search tpl-article tpl-article-longread">
@@ -41,42 +41,33 @@
 <div class="canvas-main ">
 
 	<div class="banner-wrapper">
-	
 		
 
-
-
-	<div class="longread-hero">
-		<figure class="longread-image" style="background-image: url(<? dummy("image/!longread@1920x,24:9") ?>);">
-			<figcaption>Foto: <? dummy("text@author") ?></figcaption>
-		</figure>
-		<div class="longread-fade">
-			<div class="container">
-				<div class="row">
-					<div class="col-xl-offset-1 col-xl-10 col-xs-12">
-						<h1 class="article-title">
-							<?php if($trumpet == '1'): ?>
-							<span class="article-trumpet">
-								<? dummy("text@item") ?>
-							</span>
-							<?php endif; ?>
-							<? dummy("text@headline-b") ?>
-						</h1>								
-					</div>
+		<figure class="longread-image" style="background-image: url(<? dummy("image/!longread@2200x,10:6") ?>);">
+			<figcaption><!-- Foto: <? dummy("text@author") ?> -->
+				<div class="longread-header">
+					<h1 class="article-title">
+						<?php if($trumpet == '1'): ?>
+						<span class="article-trumpet">
+							<? dummy("text@item") ?>
+						</span>
+						<?php endif; ?>
+						<? dummy("text@headline-b") ?>
+					</h1>								
+					<p class="article-summary relative" >
+						<? dummy("text@teaser") ?>
+					</p>
 				</div>
-			</div>
-		</div>
-
+			</figcaption>
+		</figure>
 		
 		
-	</div>
+	
 	
 	<div class="container">
 		<div class="row">
-			<div class="col-xl-offset-1 col-xl-10">
-				<p class="article-summary relative" >
-					<? dummy("text@teaser") ?>
-				</p>
+			<div class="col-xs-12">
+				
 					
 				<?php include('includes/article/date.php'); ?>
 				
@@ -100,13 +91,13 @@
 			<div class="row">
 				<div class="col-md-12 ">
 					<article>
-						<?php $class = 'hidden-lg-down text-center'; include('includes/article/social-buttons.php'); $class = false;?>
+						
 						
 						<div class="article-content">
 
 							<div class="article-body">
 
-							<?php include('includes/article/byline.php') ?>
+								<?php include('includes/article/byline.php') ?>
 
 								<?php include('includes/article-embeds/blog-bio.php'); ?>
 								
