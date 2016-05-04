@@ -216,7 +216,6 @@ if(isset($_GET["business"])) {
 							<li class="orange"><a href="tpl-article.php?essay">Kronikken</a></li>
 							<li class="orange"><a href="tpl-article.php?editorial">Editorial</a></li>
 							<li class="orange"><a href="tpl-article.php?showRating">Rating</a> (<a href="tpl-article.php?showRating&amp;blog">Blog template</a>)</li>
-							<li class="red"><a href="#">'Groft sagt'</a></li>
 						</ul>
 					</div>
 
@@ -233,10 +232,6 @@ if(isset($_GET["business"])) {
 						<li class="orange"><a href="tpl-article.php?showTheme">Theme</a></li>
 						<li class="orange"><a href="tpl-article.php?showTimeline">Timeline</a></li>
 						<li class="orange"><a href="tpl-article.php?showLink">Embedded links</a></li>
-						<li class="orange"><a href="tpl-article.php?showNewsletterEmbedded">Newsletter signup</a></li>
-						
-						<li class="orange"><a href="tpl-article.php?specialBanner">Phone banner</a></li>
-						
 					</ul>
 					</div>
 
@@ -245,7 +240,6 @@ if(isset($_GET["business"])) {
 					<div class="col-md-3">Tags</div>
 					
 					<div class="col-md-9">
-
 						<ul>
 							<li class="orange"><a href="tpl-article.php?event=breaking">Breaking</a> </li>
 							<li class="orange"><a href="tpl-article.php?event=live">Live</a> </li>
@@ -294,8 +288,6 @@ if(isset($_GET["business"])) {
 								<li class="orange"><a href="tpl-article-longread.php?showTheme">Theme</a></li>
 								<li class="orange"><a href="tpl-article-longread.php?showTimeline">Timeline</a></li>
 								<li class="orange"><a href="tpl-article-longread.php?showLink">Embedded links</a></li>	
-								<li class="red"><a href="tpl-article-longread.php?showNewsletter">Newsletter signup</a></li>
-								
 							</ul>
 							
 						</div>
@@ -311,7 +303,6 @@ if(isset($_GET["business"])) {
 						</div>
 					
 						<div class="col-md-3">Paywall</div>
-					
 						<div class="col-md-9">
 							<ul>
 								<li class="red"><a href="#">Pay wall sign - Direct</a></li>

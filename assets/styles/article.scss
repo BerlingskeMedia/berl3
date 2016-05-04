@@ -71,9 +71,9 @@
 	}
 }
 .large-share-buttons {
-	@extend .border-top;
 	
-
+	max-width: 41.250rem;
+	
 	padding-top: 1rem;
 	.btn-facebook,
 	.btn-twitter {
@@ -287,7 +287,7 @@ a:hover {
 .image-caption {
 	font-size: .8rem;
 	font-weight: 500;
-	color: rgba(0,0,0,.6);
+	color: rgba(0,0,0,.5);
 	padding: .4rem 0;
 	line-height: 1.4;
 	@extend .font-s2;
@@ -1723,9 +1723,7 @@ $longreadPadding: 20rem;
 	.article-body {
 		font-size: 1rem;
 
-		.article-image-float-right {
-			margin-top: 0;
-		}
+		
 		&> p {
 			font-size: 1rem;
 			line-height: 1.5;
@@ -1762,21 +1760,14 @@ $longreadPadding: 20rem;
 	}
 	.article-image-float-right,
 	.article-embed-pull-right {
-		@extend .continue-reading-fact;
 		float: none;
 		width: inherit;
 		margin-top: $spacer * 2;
 		margin-bottom: $spacer * 2;
 		max-width: none;
 	}
-	.article-body > .article-image-float-right {
-		&:before {
-			display: none;
-		}
-	}
-	.article-image-float-right {
-		@extend .continue-reading-img;
-	}
+	
+	
 
 	
 	.author-info {
@@ -1787,39 +1778,32 @@ $longreadPadding: 20rem;
 		margin-right: .3rem;
 	}
 
+	[class*="continue-reading-"] {
+		margin-top: 3rem;
+		position: relative;
 
+		&:before {
+			display: block;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: -2rem;
+			font-size: .7rem;
+			text-align: center;
+			padding: .5rem 0;
+			@extend .font-s2;
+			color: rgba(0,0,0,.4);
+		}
+	}
 	.continue-reading-fact {
-		margin-top: 3rem;
 		&:before {
-			display: block;
-			position: absolute;
-			left: 0;
-			right: 0;
-			top: -2rem;
 			content: 'Artiklen fortsætter efter faktaboksen';
-			font-size: .7rem;
-			text-align: center;
-			padding: .5rem 0;
-			@extend .font-s2;
-			color: rgba(0,0,0,.4);
 		}
 	}
-	.continue-reading-img {
-		margin-top: 3rem;
-		&:before {
-			display: block;
-			position: absolute;
-			left: 0;
-			right: 0;
-			top: -2rem;
-			content: 'Artiklen fortsætter efter billedet';
-			font-size: .7rem;
-			text-align: center;
-			padding: .5rem 0;
-			@extend .font-s2;
-			color: rgba(0,0,0,.4);
-		}
+	.continue-reading-image:before {
+		content: 'Artiklen fortsætter efter billedet';
 	}
+
 	.article-newsletter-embedded {
 		margin-top: 0;
 		margin-bottom: $spacer;

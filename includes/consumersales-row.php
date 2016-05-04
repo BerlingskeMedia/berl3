@@ -1,4 +1,4 @@
-<div class="consumers ales-belt">
+
 	<div class="container mb-1">
 		<div class="row ">
 			<div class="col-xs-12 ">
@@ -49,4 +49,3 @@
 			<? endwhile ?>
 		</div>
 	</div>
-</div>

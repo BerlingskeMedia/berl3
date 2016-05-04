@@ -31,93 +31,49 @@
 
 
 
-
-<div class="site-search-overlay">
-	<div class="warning">
-
-		<div class="text-center"><p><strong>Av av av</strong></p> <p>Dette website er ikke responsivt endnu - kan endnu kun ses på store skærme :-)</p>
-		</div>
-	</div>	
-</div>
-
 <div class="main-wrapper">
-<?php include('includes/offcanvas-menu.php'); ?>
+	<?php include('includes/offcanvas-menu.php'); ?>
 
+	<?php include('includes/site-header.php'); ?>
 
-<?php include('includes/site-header.php'); ?>
+	<div class="canvas-main ">
 
+		<div class="banner-wrapper">
+		
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+				
+						<?php include('includes/article/header.php'); ?>
 
+						<div class="col-1-content">
 
+							<div class="article-content">
+								<div class="article-body">
+									<img src="/dist/images/demo/infografik.jpg" width="" height="" alt="" />
+								</div><!-- article body -->
+								
+								<div class="article-bottom text-center ">
+									<?php $hideComments = true; include('includes/article-embeds/share-buttons-large.php'); ?>
+								</div>
+							</div><!-- article content -->
+							
+						</div><!-- col-1-content -->
+					</div><!-- col -->
+				</div><!-- row -->
 
-<div class="canvas-main ">
-
-
-	<div class="banner-wrapper">
-	
-	
-	
-	
-	<div class="container">
-		<div class="row">
-		<div class="col-md-12">
-
-			<div class="article-badge-kronik">
-			<?php if($templateBlog): ?>
-				KRONIKKEN
-			<?php elseif($templateEditorial): ?>
-				Leder
-			<?php else : ?>
-				<? dummy("text@b-cat") ?>
-			<?php endif; ?>
+				
+				<?php include('includes/article/footer.php'); ?>
 
 			</div>
-	
-		
-		<?php include('includes/article/header.php'); ?>
 
-		<div class="col-1-content">
-	
-		
-			
-				
-
-				<div class="article-content">
-					<div class="article-body">
-						<img src="/dist/images/demo/infografik.jpg" width="" height="" alt="" />
-					</div><!-- article body -->
-					<?php $horizontalShareButtons = true; ?>
-					<?php include('includes/article/social-buttons.php'); ?>
-				</div><!-- article content -->
-			
-
-		
-		</div>
-		
-
-		
-		</div>
-
-		<div class="row article-below">
-		<div class="col-md-12">
-		Footer
-		</div></div>
-		
-		
-		</div><!-- container -->
-
-		
-
-		
-		
-		
-		
-		
-
-	</div>
-
-</div><!-- banner-wrapper -->
-</div><!-- canvas main -->
+		</div><!-- banner-wrapper -->
+	</div><!-- canvas main -->
 </div><!-- main-wrapper -->
+
+<?php include('includes/consumersales-row.php'); ?>
+
+<?php include('includes/footer.php'); ?>
 
 
 

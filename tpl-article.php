@@ -180,9 +180,6 @@
 
 		<?php include('includes/article/footer.php'); ?>
 
-		
-		
-
 		<?php include('includes/article/comments.php'); ?>
 	</div>		
 		

@@ -2,7 +2,7 @@
 	$class = 'show-counter';
 } ?>
 
-<figure class="article-image-embed-longread">
+<figure class="article-image-embed-longread continue-reading-image">
 	<a href="#" class="open-gallery <?php echo $class; ?> ">
 		<img src="<? dummy("image@1200x,16:9") ?>" width="" height="" alt="" />
 		<?php if($class): ?>
