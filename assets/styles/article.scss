@@ -1540,6 +1540,11 @@ $longreadPadding: 20rem;
 	}
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
+	.longread-image {
+		height: 500px;
+	}
+}
 
 @include media-breakpoint-down(sm) {
 	
