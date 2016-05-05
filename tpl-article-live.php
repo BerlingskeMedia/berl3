@@ -54,9 +54,9 @@ if(isset($_GET["business"])) {
 
 <?php include('includes/site-header.php'); ?>
 
-<?php include('includes/banners.php'); ?>
+
 <?php 
-$campaignId = 'campaign-' . mt_rand(1,3);
+	$campaignId = 'campaign-' . mt_rand(1,3);
 ?>
 
 <div class="canvas-main <?php echo $campaignId; ?>">

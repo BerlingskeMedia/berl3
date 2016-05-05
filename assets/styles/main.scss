@@ -17,6 +17,7 @@
 @import "forms";
 @import "sticky";
 @import "demo";
+@import "marketing";
 
 
 
@@ -150,6 +151,15 @@ ul.list-reset {
 	@extend .top-block;
 	text-transform: uppercase;
 
+	.right {
+		
+		@extend .font-s2;
+		text-transform: none;
+		font-size: .8rem;
+		vertical-align: baseline;
+		display: inline-block;
+	}
+
 	/*transform: rotate(-90deg);
 	transform-origin: right top 0;*/
 }
@@ -194,14 +204,14 @@ ul.list-reset {
 
 .top-block {
 	position: relative;
-	padding-top: 2rem;
+	padding-top: 1rem;
 	&:before {
 		display: inline-block;
 		width: 100%;
 		content: '';
 		height: 5px;
 		position: absolute;
-		top: $spacer;
+		top: 0;
 		background-color: #222;
 	}
 }
@@ -358,13 +368,14 @@ $col-deck-label-width: 160px;
 		max-width: 41.250rem;
 		margin-left: auto;
 		margin-right: auto;
+		min-height: 1px;
 	}
 }
 @include media-breakpoint-up(lg) {
 	.col-1-content {
 		width: calc(100% - 320px);
 		float: left;
-		// padding-left: $col-1-width;
+		min-height: 1px;
 	}
 }
 .tpl-article-large .col-1-content {
@@ -391,4 +402,42 @@ $col-deck-label-width: 160px;
 		padding-top: $spacer;
 	}
 }
+
+.widget {
+	border-top: .3rem solid $border-color;
+	border-bottom: .3rem solid $border-color;
+	padding: .4rem 0;
+	text-align: center;
+}
+
+.consumersales-belt {
+	position: relative;
+	padding: $spacer 0;
+	border-top: .3rem solid #222;
+	.section-title {
+		padding-top: 0;
+		&:before {
+			display: none;
+		}
+	}
+
+	
+	.container {
+		background-color: transparent;
+	}
+	&:before {
+		content: '';
+		background-color: fade-out($col-sunyellow, .5);
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+}
+.like-berlingske {
+	padding-top: .5rem;
+	margin-top: -1rem;
+}
+
 @import "tools";

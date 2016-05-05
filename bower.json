@@ -8,11 +8,10 @@
   "private": true,
   "dependencies": {
     "jquery": "^2.2.0",
-    "stickem": "jQuery-Stickem#^1.4.1"
+    "stickem": "jQuery-Stickem#^1.4.1",
+    "jquery-iframe-auto-height": "^2.0.0"
   },
-  "devDependencies": {
-    
-  },
+  "devDependencies": {},
   "description": "",
   "main": "",
   "moduleType": [

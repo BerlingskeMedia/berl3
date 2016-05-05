@@ -1,16 +1,5 @@
-<?php 
-$imgW = ($imgW ? $imgW : '420');
-$showImg = ($showImg ? $showImg : '0');
-$imgRatio = ($imgRatio ? $imgRatio : '3:2');
-$showSummary = ($showSummary ? $showSummary : '0');
-$showrelated = ($showRelated ? $showrelated : '0');
-
-
-?>
-
-
 <article class="teaser teaser-sm <?= $class; ?>">
-	<?php if ($showImg === '1'): ?>
+	<?php if ($showImg): ?>
 	<figure class="teaser-img">
 		<a href="tpl-article.php"><img src="<? dummy("image". $imgSrc ."@". $imgW ."x,". $imgRatio ."") ?>" width="" height="" alt="" class="img" /></a>
 	</figure>
@@ -31,12 +20,12 @@ $showrelated = ($showRelated ? $showrelated : '0');
 			<?php endif; ?>
 			</a>
 		</h2>
-		<?php if ($showSummary === '1'): ?>
+		<?php if ($showSummary): ?>
 		<div class="teaser-summary">
 			<? dummy("text@teaser") ?>
 		</div>
 		<?php endif; ?>
-		<?php if ($showRelated === '1'): ?>
+		<?php if ($showRelated): ?>
 		<ul class="teaser-related">
 			<? while (dumb_luck("1-2")): ?>
 			<li>
@@ -58,7 +47,12 @@ $showrelated = ($showRelated ? $showrelated : '0');
 </article>
 
 <?php 
+$showSummary = false;
+$showRelated = false;
+$showImg = true;
 $showKey = false;
 $imgSrc = false;
 $showAuthor = false;
- ?>
+$imgH = '420';
+$imgRatio = 'false';
+?>

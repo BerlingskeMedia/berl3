@@ -3,9 +3,8 @@
 <div class="article-embed-right article-embed-quote article-embed-pull-right">
 	<blockquote>
 		<p><? dummy("text@quote") ?></p>
-		<cite>Formand<br>
-		Socialdemokraterne<br>
-		Mette Frederiksen</cite>
+		<cite>Mette Frederiksen, Formand Socialdemokraterne
+		</cite>
 	</blockquote>
 </div>
 

@@ -1,5 +1,5 @@
 <?php if($showThemeEmbedded): ?>
-<aside class="article-theme-embedded article-embed-pull-right embed-collapsed-sm">
+<aside class="article-theme-embedded article-embed-pull-right embed-collapsed-sm continue-reading-fact">
 	
 	<div class="embed-content">
 		

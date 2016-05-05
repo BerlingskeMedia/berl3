@@ -1,5 +1,5 @@
 <?php if($templateBlog || $templateEssay): ?>
-<aside class="article-fact-embedded article-embed-pull-right article-embed-blog-bio embed-collapsed-sm">
+<aside class="article-fact-embedded article-embed-pull-right article-embed-blog-bio embed-collapsed-sm continue-reading-fact">
 	
 	
 	

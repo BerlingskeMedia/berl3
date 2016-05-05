@@ -202,6 +202,7 @@
 	color: $col-blue-1;
 }
 
+
 .gray {
 	color: rgba(0,0,0,.5);
 }
@@ -306,6 +307,32 @@
 	 }
 }
 
+.like-berlingske {
+	padding-top: .5rem;
+	margin-top: -1rem;
+}
+
+.like-berlingske-tablet {
+
+}
+.like-berlingske-not-tablet {
+	display: none;
+}
+@include media-breakpoint-up(lg) {
+	.like-berlingske-not-tablet {
+		display: block;
+	}
+}
+@include media-breakpoint-down(sm) {
+	.like-berlingske-not-tablet {
+		display: block;
+	}
+	.like-berlingske-tablet {
+		display: none;
+	}
+}
+
+
 @include media-breakpoint-up(md) {
 	.col-md-up {
 		column-count: 2;
@@ -397,7 +424,7 @@
 	
  }
 
- .iPad-banner {
+ .tablet-banner {
  	margin-left: -3rem; 
  	margin-right: -3rem;
  }

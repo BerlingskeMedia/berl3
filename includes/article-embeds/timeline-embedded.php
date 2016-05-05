@@ -1,5 +1,5 @@
 <?php if($showTimelineEmbedded): ?>
-<aside class="article-timeline-embedded article-embed-pull-right embed-collapsed-sm">
+<aside class="article-timeline-embedded article-embed-pull-right embed-collapsed-sm continue-reading-fact">
 	<div class="embed-content">
 
 		<div class="aside-header-sm col-blue">

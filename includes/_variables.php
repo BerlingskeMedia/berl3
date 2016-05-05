@@ -83,12 +83,10 @@ if (isset($_GET['event'])) {
 if (isset($_GET['paywall'])) {
 	$showPaywall = true;
 }
-$showNewsletterEmbedded = true;
 
-if (isset($_GET['showNewsletter'])) {
-	$showNewsletter = true;
-	$showNewsletterEmbedded = false;
-}
+$showNewsletterEmbedded = rand(0,1);
+
+
 
 
 if (isset($_GET['showRelated'])) {
@@ -112,7 +110,7 @@ if (isset($_GET['specialBanner'])) {
 	$backgroundBanner = true;
 }
 
+$campaignId = 'campaign-' . mt_rand(1,4);
 
-$campaignId = 'campaign-' . mt_rand(1,3);
 
 ?>

@@ -36,6 +36,11 @@
 		content: 'Mobile banner';
 	}
 }
+.demo-banner-tablet {
+	&:after {
+		content: 'Tablet banner';
+	}
+}
 .banner-wrapper {
 	position: relative;
 }
@@ -50,7 +55,9 @@
 	padding: .625rem;
 	color: #fff;
 }
-
+.topbanner.demo-banner:after {
+	display: none
+}
 
 .campaign-1 {
 
@@ -84,6 +91,17 @@
 		background: url(/dist/images/banners/3/banner-sm.jpg) center top no-repeat ;
 		@include media-breakpoint-only(xl) {
 			background-image: url(/dist/images/banners/3/banner.jpg);
+		}
+	}
+}
+.campaign-4  {
+	.topbanner {
+		background: url(/dist/images/banners/4/topbanner.png) center top no-repeat ;
+	}
+	.bg-banner {
+		background: url(/dist/images/banners/4/banner-sm.jpg) center top no-repeat ;
+		@include media-breakpoint-only(xl) {
+			background-image: url(/dist/images/banners/4/banner.jpg);
 		}
 	}
 }

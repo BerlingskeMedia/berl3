@@ -10,7 +10,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Berlingske Longread</title>
+	<title>Berlingske - Article Longread</title>
 	<link rel="stylesheet" href="/dist/styles/main.css">
 </head>
 <body class=" <?php if($siteBusiness): ?>site-business<?php endif; ?> show-site-search tpl-article tpl-article-longread">
@@ -31,7 +31,9 @@
 <?php include('includes/offcanvas-menu.php'); ?>
 
 
-<?php include('includes/site-header.php'); ?>
+<?php // include('includes/site-header.php'); ?>
+
+<div style="height: 2.5rem; background: #222; color: #fff; padding: 0 .4rem; line-height: 2.5rem;">Header</div>
 
 
 
@@ -39,41 +41,33 @@
 <div class="canvas-main ">
 
 	<div class="banner-wrapper">
-	
 		
 
-
-
-	<div class="longread-hero">
-		<div class="longread-fade">
-			<div class="container">
-				<div class="row">
-					<div class="col-xl-offset-1 col-xl-10 col-xs-12">
-						<h1 class="article-title">
-							<?php if($trumpet == '1'): ?>
-							<span class="article-trumpet">
-								<? dummy("text@item") ?>
-							</span>
-							<?php endif; ?>
-							<? dummy("text@headline-b") ?>
-						</h1>								
-					</div>
+		<figure class="longread-image" style="background-image: url(<? dummy("image/!longread@2200x,10:6") ?>);">
+			<figcaption><!-- Foto: <? dummy("text@author") ?> -->
+				<div class="longread-header">
+					<h1 class="article-title">
+						<?php if($trumpet == '1'): ?>
+						<span class="article-trumpet">
+							<? dummy("text@item") ?>
+						</span>
+						<?php endif; ?>
+						<? dummy("text@headline-b") ?>
+					</h1>								
+					<p class="article-summary relative" >
+						<? dummy("text@teaser") ?>
+					</p>
 				</div>
-			</div>
-		</div>
-
-		<figure class="longread-image" style="background-image: url(<? dummy("image/!longread@1920x,24:9") ?>);">
-			
+			</figcaption>
 		</figure>
 		
-	</div>
+		
+	
 	
 	<div class="container">
 		<div class="row">
-			<div class="col-xl-offset-1 col-xl-10">
-				<p class="article-summary relative" >
-					<? dummy("text@teaser") ?>
-				</p>
+			<div class="col-xs-12">
+				
 					
 				<?php include('includes/article/date.php'); ?>
 				
@@ -97,17 +91,21 @@
 			<div class="row">
 				<div class="col-md-12 ">
 					<article>
-						<?php $class = 'hidden-lg-down text-center'; include('includes/article/social-buttons.php'); $class = false;?>
+						
 						
 						<div class="article-content">
 
 							<div class="article-body">
 
-							<?php include('includes/article/byline.php') ?>
+								<?php include('includes/article/byline.php') ?>
 
 								<?php include('includes/article-embeds/blog-bio.php'); ?>
 								
 								<p><? dummy("text@paragraph-first-letter") ?></p>
+
+								<div class="hidden-md-up mb fw-sm">
+									<div class="demo-banner demo-banner-mobile " style="width: 320px; height : 160px;"></div>
+								</div>
 								
 								<p><? dummy("text@paragraph") ?></p>
 
@@ -154,56 +152,9 @@
 		
 	<div class="container">
 		
-		<div class="article-footer">
-			
-			<div class="row flex-row">
-				<div class="col-xs-12">
-					<div class="section-title">
-						Tophistorier
-					</div>
-				</div>
-				
-					<? while (dumb_luck("8")): ?>
-						<div class="col-xs-6 col-md-3 col-lg-3 col-xl-3 teaser-buffet">
-							<?php 
-								$imgW='420'; 
-								$class = 'fs12 mb';
-								$showImg = '1';
-								$imgRatio = '16:9';
-								$showKey = true;
-								include('includes/teaser.php') ?>
-						</div>
-					<? endwhile ?>
-					<div class="col-xs-12">
-						<div class="text-center deck-footer mb-1 mt">
-							<button class="btn btn-round btn-blue btn-sm">Hent flere <i class="bicon-angle-down"></i></button>
-						</div>
-					</div>
-			</div>
-		</div>
+		<?php include('includes/article/footer.php'); ?>
 
-		<div class="article-comments">
-			
-			<div class="flex-row">
-				<div class="col-1-content">
-					<div class="article-content">
-						<div  style="min-height: 700px; padding: 1rem;">
-							<div class="article-comments" id="article-comments">
-								<div id="disqus_thread"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-2-sidebar">
-					<div class="stickem-container-ex2 mb-1 hidden-md-down" style="height: 700px;">	
-						<div class="sticky-ex2">	
-							<div class="demo-banner" style="height: 250px; width: 300px;"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</div>
+		<?php include('includes/article/comments.php'); ?>
 
 	</div>
 		
@@ -214,6 +165,7 @@
 </div><!-- canvas main -->
 </div><!-- main-wrapper -->
 
+<?php include('includes/consumersales-row.php'); ?>
 
 <?php include('includes/footer.php'); ?>
 
