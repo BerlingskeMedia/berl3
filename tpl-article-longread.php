@@ -33,7 +33,7 @@
 
 <?php // include('includes/site-header.php'); ?>
 
-<div style="height: 2.5rem; background: #222; color: #fff; padding: 0 .4rem; line-height: 2.5rem;">Header</div>
+<!-- <div style="height: 2.5rem; background: #222; color: #fff; padding: 0 .4rem; line-height: 2.5rem;">Header</div> -->
 
 
 
@@ -57,11 +57,11 @@
 	}
 
 	.longread-head-mobile {
-			background-image: url(<? dummy("image/!longread@2200x,10:6") ?>);
+			background-image: url(<? dummy("image/!longread@1500x,10:6") ?>);
 	}	
 	@media (max-width: 768px) {
 		.longread-head-mobile {
-			background-image: url(<? dummy("image/!longread@2200x,10:6") ?>);
+			background-image: url(<? dummy("image/!longread@1000x600,") ?>);
 		}	
 	}
 	</style>
@@ -79,7 +79,7 @@
 			<div class="longread-wrapper longread-wrapper-summary">
 				<div class="header-container">
 					<div class="">
-						<p class="article-summary"> <? dummy("text@teaser") ?></p>
+						<p class="article-summary"><? dummy("text@teaser") ?></p>
 					</div>
 				</div>
 			</div>
