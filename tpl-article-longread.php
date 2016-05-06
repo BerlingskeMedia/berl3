@@ -37,29 +37,56 @@
 
 
 
-
 <div class="canvas-main ">
 
 	<div class="banner-wrapper">
+	
 		
 
-		<figure class="longread-image" style="background-image: url(<? dummy("image/!longread@2200x,10:6") ?>);">
-			<figcaption><!-- Foto: <? dummy("text@author") ?> -->
-				<div class="longread-header">
-					<h1 class="article-title">
-						<?php if($trumpet == '1'): ?>
-						<span class="article-trumpet">
-							<? dummy("text@item") ?>
-						</span>
-						<?php endif; ?>
-						<? dummy("text@headline-b") ?>
-					</h1>								
-					<p class="article-summary relative" >
-						<? dummy("text@teaser") ?>
-					</p>
+
+
+	
+	<style>
+	.longread-head {
+		background-image: url(<? dummy("image/!longread@1300x,10:6") ?>);
+	}
+	@media (min-width: 1600px) {
+		.longread-head {
+			background-image: url(<? dummy("image/!longread@2200x,10:6") ?>);
+		}
+	}
+
+	.longread-head-mobile {
+			background-image: url(<? dummy("image/!longread@2200x,10:6") ?>);
+	}	
+	@media (max-width: 768px) {
+		.longread-head-mobile {
+			background-image: url(<? dummy("image/!longread@2200x,10:6") ?>);
+		}	
+	}
+	</style>
+
+	<header class="longread-head">
+		
+		<div class="longread-head-inner">
+			<div class="longread-head-mobile">
+				<div class="longread-wrapper">
+					<div class="header-container">
+						<h1 class="article-title"><? dummy("text@headline-b") ?></h1>
+					</div>
 				</div>
-			</figcaption>
-		</figure>
+			</div>
+			<div class="longread-wrapper longread-wrapper-summary">
+				<div class="header-container">
+					<div class="">
+						<p class="article-summary"> <? dummy("text@teaser") ?></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</header>	
+
 		
 		
 	
