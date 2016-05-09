@@ -1270,7 +1270,7 @@ figure > .open-gallery {
 			//border: 0;
 		}
 		&.current {
-			font-weight: 700;
+			font-weight: 500;
 		}
 	}
 
@@ -1399,7 +1399,7 @@ $longreadPadding: 20rem;
 }
 @include media-breakpoint-up(lg) {
 	.article-header {
-		border-top: .3rem solid #222;
+		border-top: .313rem solid #222;
 		margin-top: .5rem;		
 	}
 }

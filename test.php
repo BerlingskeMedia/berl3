@@ -19,58 +19,137 @@
 
 
 
+Features:
+Load more button
+Blogs; kommentarer, forfatter, billede
+Optiin: Url + txt felt i bunden af lister
+Kommnetarer
 
-<div style="height: 2.5rem; background: #222; color: #fff; padding: 0 .4rem; line-height: 2.5rem;">Header</div>
-
-<style>
-.longread-head {
-	background-image: url(<? dummy("image/!longread@1300x,10:6") ?>);
-}
-@media (min-width: 1600px) {
-	.longread-head {
-		background-image: url(<? dummy("image/!longread@2200x,10:6") ?>);
-	}
-}
-
-.longread-head-mobile {
-		background-image: url(<? dummy("image/!longread@2200x,10:6") ?>);
-}	
-@media (max-width: 768px) {
-	.longread-head-mobile {
-		background-image: url(<? dummy("image/!longread@2200x,10:6") ?>);
-	}	
-}
-</style>
-
-<header class="longread-head">
-	
-	<div class="longread-head-inner">
-		<div class="longread-head-mobile">
-			<div class="longread-wrapper">
-				<div class="header-container">
-					<h1 class="article-title"><? dummy("text@headline-b") ?></h1>
-				</div>
-			</div>
-		</div>
-		<div class="longread-wrapper longread-wrapper-first">
-			<div class="header-container">
-				<div class="content-standfirst">
-					<p class="article-summary"> <? dummy("text@teaser") ?></p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-</header>	
 
 
 <!--  -->
 
 <div class="container">
-	<div class="row">
-		<div class="col-md-12">
-			<? while (dumb_luck("12")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
+	<div class="row flex-row">
+		<div class="col-md-3">
+			
+			<?php 
+				$sectionClass = 'latest-news mb-05';
+				$imgRatio = '1:1';
+				$premium = false;
+				$imgSrc = false;
+				$imgW = '80';
+
+				$showTime = false;
+				$showImage = true; 
+				$listClass = 'list  list-img-right';
+				$listTitle = 'Mest læste lige nu';
+				$listCount = '5';
+				
+				
+				
+				
+				
+				$listDoc ="I'm the documentation";
+				include('includes/list-news.php');
+			?>
 		</div>
+
+		<div class="col-md-3">
+			
+			<?php 
+				$sectionClass = 'latest-news mb-05';
+				$imgRatio = '1:1';
+				$premium = false;
+				$imgSrc = false;
+				$imgW = '80';
+
+				$showTime = true;
+				$showImage = true; 
+				$listClass = 'list list-time  list-img-right';
+				$listTitle = 'Mest læste lige nu';
+				$listCount = '5';
+				
+				
+				
+				
+				
+				$listDoc ="I'm the documentation";
+				include('includes/list-news.php');
+			?>
+		</div>
+
+		<div class="col-md-3">
+			
+			<?php 
+				$sectionClass = 'latest-news mb-05';
+				$imgRatio = '1:1';
+				$premium = false;
+				$imgSrc = false;
+				$imgW = '80';
+
+				$showTime = false;
+				$showImage = false; 
+				$listClass = 'list list-time list-top-lg list-img-right fs14';
+				$listTitle = 'Mest læste lige nu';
+				$listCount = '5';
+				
+				
+				
+				
+				
+				$listDoc ="I'm the documentation";
+				include('includes/list-news.php');
+			?>
+		</div>
+
+		<div class="col-md-3">
+			
+			<?php 
+				$sectionClass = 'latest-news mb-05';
+				$imgRatio = '16:9';
+				$premium = false;
+				$imgSrc = false;
+				$imgW = '600';
+				$showTime = false;
+				$showImage = true; 
+				$listClass = 'list  list-img';
+				$listTitle = 'Large image';
+				$listCount = '5';
+				
+				
+				
+				
+				
+				$listDoc ="I'm the documentation";
+				include('includes/list-news.php');
+			?>
+		</div>
+
+		<div class="col-md-3">
+			
+			<?php 
+				$sectionClass = 'latest-news mb-05';
+				$imgRatio = '1:1';
+				$premium = false;
+				$imgSrc = false;
+				$imgW = false;
+
+				$showTime = false;
+				$showImage = false; 
+				$listClass = 'list ';
+				$listTitle = 'Kun rubrikker';
+				$listCount = '5';
+				
+				
+				
+				
+				
+				$listDoc ="I'm the documentation";
+				include('includes/list-news.php');
+			?>
+		</div>
+
 	</div>
 </div>
 
