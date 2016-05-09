@@ -84,10 +84,13 @@
 
 						<div class="article-body">
 
+							
+			
 							<?php if ($imageSize == '2'): ?>
 								<?php $portrait = true; ?>
 								<?php include('includes/article-embeds/article-image-float-right.php'); ?>
 							<?php endif; ?>
+							
 
 							<?php include('includes/article-embeds/blog-bio.php'); ?>
 
@@ -95,13 +98,14 @@
 							
 							<p><? dummy("text@paragraph-first-letter") ?></p>
 
-							<div class="hidden-md-up mb fw-sm">
+							<div class="hidden-md-up mb fw-sm continue-reading-banner">
 								<div class="demo-banner demo-banner-mobile " style="width: 320px; height : 160px;"></div>
 							</div>
 							
 							<p><? dummy("text@paragraph") ?></p>
 							
-								
+							
+
 							<?php if($showPaywall): ?>
 								
 								<?php include('includes/article/paywall.php'); ?>
@@ -109,11 +113,16 @@
 							<?php endif; ?>
 
 								
+
+							<?php if(!$showPaywall): ?>
+
+								<?php if ($showGalleryTeaser == '2'): ?>
+									<?php include('includes/gallery-teaser-large.php'); ?>
+								<?php endif; ?>
+
 								<ol>
 									<? while (dumb_luck("7")): ?><li><? dummy("text@headline") ?></li><? endwhile ?>
 								</ol>
-
-							<?php if(!$showPaywall): ?>
 								
 								<? while (dumb_luck("2")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
 								

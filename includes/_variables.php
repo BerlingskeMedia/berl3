@@ -99,6 +99,11 @@ if (isset($_GET['showRelated'])) {
 if (isset($_GET['showRelated'])) {
 	$showRelated = true;
 }
+if (isset($_GET['showGallery'])) {
+	$showGalleryTeaser = true;
+}
+
+
 
 // Longreads
 if (isset($_GET['textPosition'])) {

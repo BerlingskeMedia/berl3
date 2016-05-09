@@ -1759,13 +1759,14 @@ $longreadPadding: 20rem;
 			color: rgba(0,0,0,.4);
 		}
 	}
-	.continue-reading-fact {
-		&:before {
-			content: 'Artiklen fortsætter efter faktaboksen';
-		}
+	.continue-reading-fact:before {
+		content: 'Artiklen fortsætter efter faktaboksen';
 	}
 	.continue-reading-image:before {
 		content: 'Artiklen fortsætter efter billedet';
+	}
+	.continue-reading-banner:before {
+		content: 'Artiklen fortsætter efter annoncen';
 	}
 
 	.article-newsletter-embedded {
