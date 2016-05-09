@@ -9,7 +9,7 @@
 			<span class="gallery-counter">
 				<i class="bicon-camera"></i>
 				<span class="count">12</span>
-				<span class="show-all">Se alle</span>
+				<span class="show-all">Se alle <i class="bicon-angle-right"></i></span>
 			</span>
 		<?php endif; ?>
 	</a>

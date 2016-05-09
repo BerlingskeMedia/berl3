@@ -232,7 +232,7 @@ if(isset($_GET["business"])) {
 						<li class="orange"><a href="tpl-article.php?showTheme">Theme</a></li>
 						<li class="orange"><a href="tpl-article.php?showTimeline">Timeline</a></li>
 						<li class="orange"><a href="tpl-article.php?showLink">Embedded links</a></li>
-						<li class="orange"><a href="tpl-article.php?showgallery">Embedded gallery</a></li>
+						<li class="orange"><a href="tpl-article.php?showGallery">Embedded gallery</a></li>
 					</ul>
 					</div>
 
