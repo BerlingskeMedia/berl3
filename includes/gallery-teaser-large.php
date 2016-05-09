@@ -19,7 +19,7 @@
 		<figure>
 			<a href="#"></a>
 			<div class="gallery-items"><i class="bicon-camera"></i> +14
-				<span>Se alle <i class="bicon-angle-right"></i></span>
+				<span>Se galleri <i class="bicon-angle-right"></i></span>
 			</div>
 			
 		</figure>
