@@ -3,10 +3,21 @@
 	li {
 		@extend .clearfix;
 		font-weight: 500;
+		min-height: 3rem;
 	}
 	.trumpet {
 		font-weight: 700;
 	}
+}
+.list-comments {
+	@extend .font-s2;
+	color: #999;
+	font-size: 80%;
+	white-space: pre;
+	i {
+		color: #aaa;
+	}
+
 }
 .list-arrow {
 	li {
@@ -52,7 +63,26 @@
 		}
 	}
 }
+.list-fade,
+.list-footer {
+	@extend .toggle-loadmore-fade;
+	margin-top: -.4rem;
+	height: 1rem;
+	z-index: 2;
 
+	button, a {
+		margin-top: 0;
+		@extend .btn;
+		@extend .btn-sm;
+		@extend .btn-round;
+		@extend .btn-gray;
+		background: #ddd;
+		&:hover {
+			background-color: darken(#ddd, 5%);
+		}
+	}
+	
+}
 .list-news {
 	li {
 		margin-bottom: $spacer;
@@ -60,7 +90,13 @@
 		border-bottom: $border-width solid $border-color;
 		margin-bottom:  .425rem;
 		padding-bottom: .425rem;
+		&:last-child {
+			border-bottom: 0;
+			padding-bottom: 0;
+			margin-bottom: 0;
+		}
 	}
+
 }
 .list-font-2 {
 	li {
@@ -85,7 +121,7 @@
 		font-size: .8rem;
 		font-weight: 500;
 
-		padding-top: .15rem;
+		padding-top: .05rem;
 		@extend .font-s2;
 		display: block;
 		float: left;
@@ -93,6 +129,15 @@
 		color: rgba(0,0,0,.5);
 		
 	}
+}
+.list-time-block {
+	time {
+		font-size: .8rem;
+		font-weight: 500;
+		display: block;
+		@extend .font-s2;
+		color: rgba(0,0,0,.5);
+	}	
 }
 
 .teaser-related {
@@ -205,6 +250,10 @@
 	padding: 1rem;
 }
 
+.icon-premium {
+
+	@extend .bicon-key;
+}
 .list-item-video {
 	figure{
 		&:after {
@@ -229,7 +278,25 @@
 	}
 	
 }
+.list-author {
+	display: block;
+	@extend .font-s2;
+	color: $col-blue-1;
+	font-size: .8rem;
+}
+.list-blog {
+	figure {
+		/*max-width: 40px;*/
+	}
+	img {
+		filter: grayscale(100%);;
+		border-radius: 50%;
 
+	}
+}
+.list-footer {
+	@extend .text-center;
+}
 @include media-breakpoint-up(md) {
 	.small-title-left {
 		.section-title {

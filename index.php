@@ -458,16 +458,14 @@ if(isset($_GET["business"])) {
 				</div>
 
 				<div class="col-md-12">
-					<h2 class=" border-bottom">BUSINESS</h2>
+					<h4>Documentation</h4>
 				</div>
-
-				<div class="col-md-3">
-					<h4 >?</h4>
-				</div>
-
+				
+				<div class="col-md-3"></div>
 				<div class="col-md-9">
 					<ul>
-						<li>?</li>
+						<li class="red"><a href="doc-list.php">Lists</a></li>
+						
 					</ul>
 				</div>
 			
