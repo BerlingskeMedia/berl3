@@ -47,21 +47,24 @@
 
 	
 	<style>
+	/* Default background */
 	.longread-head {
-		background-image: url(<? dummy("image/!longread@1300x,10:6") ?>);
+		background-image: url(<? dummy("image/!longread@1300x,5:3") ?>);
 	}
+	/* Large displays */
 	@media (min-width: 1600px) {
 		.longread-head {
-			background-image: url(<? dummy("image/!longread@2200x,10:6") ?>);
+			background-image: url(<? dummy("image/!longread@2200x,5:3") ?>);
 		}
 	}
-
+	/* iPad portrait */
 	.longread-head-mobile {
-			background-image: url(<? dummy("image/!longread@1500x,10:6") ?>);
-	}	
+			background-image: url(<? dummy("image/!longread@1300x,5:3") ?>);
+	}
+	/* Phones */
 	@media (max-width: 768px) {
 		.longread-head-mobile {
-			background-image: url(<? dummy("image/!longread@1000x600,") ?>);
+			background-image: url(<? dummy("image/!longread@1000x,5:3") ?>);
 		}	
 	}
 	</style>
@@ -72,7 +75,13 @@
 			<div class="longread-head-mobile">
 				<div class="longread-wrapper">
 					<div class="header-container">
-						<h1 class="article-title"><? dummy("text@headline-b") ?></h1>
+						<h1 class="article-title">
+						<?php if($trumpet == '1'): ?>
+						<span class="article-trumpet">
+							<? dummy("text@item") ?>
+						</span>
+						<?php endif; ?>
+						<? dummy("text@headline-b") ?></h1>
 					</div>
 				</div>
 			</div>
@@ -192,7 +201,7 @@
 </div><!-- canvas main -->
 </div><!-- main-wrapper -->
 
-<?php include('includes/consumersales-row.php'); ?>
+<?php // include('includes/consumersales-row.php'); ?>
 
 <?php include('includes/footer.php'); ?>
 

@@ -72,7 +72,7 @@
 	</div><!-- canvas main -->
 </div><!-- main-wrapper -->
 
-<?php include('includes/consumersales-row.php'); ?>
+<?php // include('includes/consumersales-row.php'); ?>
 
 <?php include('includes/footer.php'); ?>
 
