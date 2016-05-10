@@ -150,9 +150,11 @@
 
 								<?php include('includes/article-embeds/fact-default.php'); ?>
 								
-								<?php include('includes/article-embeds/related.php'); ?>
+								<?php include('includes/article/related-partner.php'); ?>
+
+								<?php include('includes/article/related.php'); ?>
 								
-								<?php include('includes/article-embeds/topics.php'); ?>
+								<?php include('includes/article/topics.php'); ?>
 
 							<?php endif; // End Paywall ?>
 							
