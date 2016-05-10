@@ -31,7 +31,7 @@
 <?php include('includes/offcanvas-menu.php'); ?>
 
 
-<?php  include('includes/site-header.php'); ?>
+<?php  include('includes/site-header-section.php'); ?>
 
 
 
