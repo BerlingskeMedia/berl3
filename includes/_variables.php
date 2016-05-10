@@ -21,6 +21,11 @@ if (isset($_GET['imgSize'])) {
 	$imageSize = '1'; // 0 = no image. 1 = large image. 2 = small image. 3 = gallery. 4 = video, 5 = gallery + embedded images
 }
 
+
+if (isset($_GET['partner'])) {
+	$partner = $_GET['partner'];
+} 
+
 if (isset($_GET['showQuote'])) {
 	$showQuote = true;
 }

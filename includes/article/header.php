@@ -1,4 +1,7 @@
 <header class="article-header">
+		
+		<?php include('includes/article/partners.php'); ?>		
+
 		<?php include('includes/article/event-headers.php'); ?>
 		
 		

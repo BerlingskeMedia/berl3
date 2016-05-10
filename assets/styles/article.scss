@@ -34,6 +34,30 @@
 
 }*/
 
+.article-partner {
+	
+	font-size: .7rem;
+	@extend .font-s2;
+	text-align: right;
+	margin-bottom: $spacer;
+	a {
+		color: #999;
+		&:hover {
+			color: #666;
+		}
+	}
+	span {
+		display: inline-block;
+		
+		line-height: $spacer;	
+	}
+	img {
+		display: inline-block;
+		vertical-align: middle;
+		float: right;
+		margin-left: .6rem;
+	}
+}
 
 .star-txt {
 	font-size: .8rem;
