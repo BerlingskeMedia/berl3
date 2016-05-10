@@ -266,7 +266,7 @@
 
 				$showTime = false;
 				$showImage = true; 
-				$listClass = 'list list-img-right';
+				$listClass = 'list list-img-right no-border-last-item';
 				$listTitle = 'List title';
 				$listCount = '5';
 				$showButton = true;
@@ -298,7 +298,7 @@
 
 				$showTime = false;
 				$showImage = false; 
-				$listClass = 'list ';
+				$listClass = 'list no-border-last-item';
 				$listTitle = 'List title';
 				$listCount = '5';
 				$showButton = false;

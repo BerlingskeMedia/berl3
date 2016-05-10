@@ -38,7 +38,7 @@
 	
 	font-size: .7rem;
 	@extend .font-s2;
-	text-align: right;
+
 	margin-bottom: $spacer;
 	a {
 		color: #999;
@@ -54,7 +54,7 @@
 	img {
 		display: inline-block;
 		vertical-align: middle;
-		float: right;
+
 		margin-left: .6rem;
 	}
 }
@@ -1120,6 +1120,12 @@ $sharebutton-sm: 1.7rem;
 .xtra-related {
 	@extend .hidden;
 }
+.partner-related {
+	@extend .border-top;
+	padding-top: .625rem;
+	@extend .mb;
+	clear: both;
+}
 .article-related {
 	@extend .border-top;
 	padding-top: .625rem;
@@ -1138,19 +1144,7 @@ $sharebutton-sm: 1.7rem;
 	
 	
 }
-.border-first-item {
-	li:first-child {
-		border-top: $border-width solid $border-color;
-		padding-top: .425rem!important;
-		margin-top: .425rem;
-	}	
-}
-.no-border-last-item {
-	li:last-child {
-		border-bottom: 0;
-		padding-bottom: 0;
-	}	
-}
+
 
 .article-bottom {
 	@extend .mb;

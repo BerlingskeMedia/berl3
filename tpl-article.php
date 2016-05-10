@@ -75,10 +75,13 @@
 
 						<?php endif; ?>
 						
-
+						<?php include('includes/article/partners.php'); ?>		
+						
 						<?php if($showByline == true) : ?>
 							<?php include('includes/article/byline.php') ?>
 						<?php endif; ?>
+
+
 
 						
 

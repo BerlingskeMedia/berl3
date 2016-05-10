@@ -16,7 +16,7 @@ if ($listBlog) {
 <div class="<?php echo $sectionClass; ?>" >
 	
 	
-	<div class="section-title "><?php echo $listTitle; ?></div>
+	<div class="section-title"><?php echo $listTitle; ?></div>
 
 	<ul class="list-reset list-news <?php echo $listClass; ?> " <?php if($listId): ?>id="<?php echo $listId; ?>"<?php endif; ?>>
 		<? while (dumb_luck($listCount)): ?>

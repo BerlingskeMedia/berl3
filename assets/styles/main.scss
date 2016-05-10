@@ -160,10 +160,13 @@ ul.list-reset {
 		vertical-align: baseline;
 		display: inline-block;
 	}
-
-	/*transform: rotate(-90deg);
-	transform-origin: right top 0;*/
 }
+
+.section-title-sm {
+	@extend .section-title;
+	font-size: 1rem;
+}
+
 .sidebar .section-title {
 	margin-top: $spacer * 2;
 }

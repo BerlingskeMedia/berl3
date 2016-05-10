@@ -1,9 +1,9 @@
+
 .list {
 	@extend .font-g1;
 	li {
 		@extend .clearfix;
 		font-weight: 500;
-		min-height: 3rem;
 	}
 	.trumpet {
 		font-weight: 700;
@@ -66,7 +66,7 @@
 .list-fade,
 .list-footer {
 	@extend .toggle-loadmore-fade;
-	margin-top: -.4rem;
+	
 	height: 1rem;
 	z-index: 2;
 
@@ -90,10 +90,6 @@
 		border-bottom: $border-width solid $border-color;
 		margin-bottom:  .425rem;
 		padding-bottom: .425rem;
-		&:last-child {
-			border-bottom: 0;
-			margin-bottom: 0;
-		}
 	}
 
 }
@@ -266,8 +262,6 @@
 .small-title-left {
 	.section-title {
 		font-size: 1rem;
-		// margin-left: -($col-1-width / 2);
-		float: none;
 		padding: 0;
 
 		&:before {
@@ -299,9 +293,11 @@
 @include media-breakpoint-up(md) {
 	.small-title-left {
 		.section-title {
+			position: absolute;
+			left: 0;
+			max-width: ($col-1-width / 2);
 			font-size: 1rem;
-			// margin-left: -($col-1-width / 2);
-			float: left;
+			
 			padding: 0;
 
 			
@@ -311,4 +307,17 @@
 			padding-left: ($col-1-width / 2)!important;
 		}
 	}
+}
+
+.border-first-item {
+	li:first-child {
+		border-top: $border-width solid $border-color;
+		padding-top: .425rem!important;
+		margin-top: .425rem;
+	}	
+}
+.no-border-last-item {
+	li:last-child {
+		border-bottom: 0;
+	}	
 }
