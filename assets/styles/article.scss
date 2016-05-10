@@ -122,7 +122,11 @@
 
 .share-buttons {
 	display: block;
-	margin: 0 0 1rem 0;
+	
+	@extend .border-top;
+	border-bottom: $border-width solid $border-color;
+	margin: 0 0 0 0 ;
+	padding: .425rem 0;
 	float: none;
 	.mb, 
 	.extra-buttons {
@@ -132,7 +136,7 @@
 	}
 	.mb + .mb,
 	.extra-buttons {
-		margin-left: .225rem;
+		margin-left: .025rem;
 	}
 	.btn-label,
 	.social-toggle {
@@ -388,7 +392,6 @@ a:hover {
 
 .article-header {
 	margin-bottom: $spacer;	
-	border-bottom: $border-width solid $border-color;
 	padding-top: .5rem;
 }
 
@@ -686,7 +689,7 @@ a:hover {
 	clear: both;
 	color: #666;
 	font-size: .8rem;
-	margin-bottom: $spacer;
+	margin-bottom: .6rem;
 	text-transform: uppercase;
 	a {
 		color: #666;
@@ -735,7 +738,7 @@ a:hover {
 
 
 
-$sharebutton: 2.4rem;
+$sharebutton: 2rem;
 $sharebutton-sm: 1.7rem;
 
 .label-follow {
@@ -755,7 +758,7 @@ $sharebutton-sm: 1.7rem;
 	text-align: center;
 	transition: all .2s ease;
 	color: #666;
-	font-size: 1.1rem;
+	font-size: .9rem;
 	i {
 		vertical-align: initial;
 	}
@@ -771,17 +774,14 @@ $sharebutton-sm: 1.7rem;
 }
 
 [class*="btn-share-sm"] {
-	
 	height: $sharebutton-sm;
 	width: $sharebutton-sm;
 	line-height: $sharebutton-sm;
 	font-size: .8rem;
-
 }
 
 .btn-comment-counter {
   float: right;
-  
   width: auto;
   @extend .font-s2;
   font-weight: 500;
@@ -791,7 +791,7 @@ $sharebutton-sm: 1.7rem;
   padding:  .2rem 0 0;
   border: 0;
   background-color: transparent;
-  font-size: .9rem;
+  font-size: .8rem;
   color: #666;
   
   i {

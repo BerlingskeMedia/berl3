@@ -15,6 +15,6 @@
 		<a href="#" class="btn-share-envelope"><i class="bicon-mail"></i></a>
 	</div>
 	<?php if(!$hideComments): ?>
-	<a href="#" class="btn-comment-counter "><i class="bicon-comment-inv-alt2"></i> <? dummy("text@number") ?> <span class="hidden-sm-down">kommentarer</span></a>
+	<a href="#article-comments" class="btn-comment-counter "><i class="bicon-comment-inv-alt2"></i> <? dummy("text@number") ?> <span class="hidden-sm-down">kommentarer</span></a>
 	<?php endif; ?>
 </div>
