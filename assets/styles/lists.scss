@@ -125,15 +125,6 @@
 		
 	}
 }
-.list-time-block {
-	time {
-		font-size: .8rem;
-		font-weight: 500;
-		display: block;
-		@extend .font-s2;
-		color: rgba(0,0,0,.5);
-	}	
-}
 
 .teaser-related {
 	padding-left: $spacer;

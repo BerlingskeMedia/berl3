@@ -109,62 +109,7 @@
 			
 		</div>
 		</div>
-		<div class="row flex-row mb" >
-
-		<div class="col-md-3 ">
-			<div class="demo-header">Timestamp block</div>
-		</div>
-		<div class="col-md-3">
-			
-			
-			<?php 
-				$sectionClass = 'latest-news mb-05';
-				$imgRatio = '1:1';
-				$premium = true;
-				$imgSrc = false;
-				$imgW = '120';
-
-				$showTime = false;
-				$showTimeBlock = true;
-				$showImage = false; 
-				$listClass = 'list';
-				$listTitle = 'List title';
-				$listCount = '5';
-					
-				include('includes/list-news.php');
-			?>
-
-			
-		</div>
-		</div>
-		<div class="row flex-row mb" >
-
-		<div class="col-md-3 ">
-			<div class="demo-header">Timestamp block w/images </div>
-		</div>
-		<div class="col-md-3">
-			
-			
-			<?php 
-				$sectionClass = 'latest-news mb-05';
-				$imgRatio = '1:1';
-				$premium = true;
-				$imgSrc = false;
-				$imgW = '120';
-
-				$showTime = false;
-				$showTimeBlock = true;
-				$showImage = true; 
-				$listClass = 'list list-time-block list-img-right';
-				$listTitle = 'List title';
-				$listCount = '5';
-					
-				include('includes/list-news.php');
-			?>
-
-			
-		</div>
-		</div>
+		
 		<div class="row flex-row mb" >
 
 		<div class="col-md-3 ">
