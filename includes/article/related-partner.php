@@ -6,7 +6,7 @@
 	$showTime = true;
 	$showImage = false; 
 	$listClass = 'list list-img-right list-article-related list-font-2 no-border-last-item';
-	$listTitle = 'Videnskab.dk';
+	$listTitle = 'Mere fra';
 	$listCount = '10';
 	$sectionClass = 'list-title-sm';
 	$premium = false;
@@ -15,6 +15,7 @@
 	$imgRatio = '1:1';
 	$footerTxt = 'Gå til Videnskab.dk <i class="bicon-angle-right"></i>';
 	$footerLink = 'tpl-section.php';
+	$showPartner = true;
 
 	include('includes/list-news.php');
 	?>

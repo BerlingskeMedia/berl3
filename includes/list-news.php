@@ -16,7 +16,13 @@ if ($listBlog) {
 <div class="<?php echo $sectionClass; ?>" >
 	
 	
-	<div class="section-title"><?php echo $listTitle; ?></div>
+	<div class="section-title"><?php echo $listTitle; ?>
+		
+		<?php if($partner === 'videnskabdk' && $showPartner): ?>
+			<div class="partner-logo" style="background-image: url(/dist/images/partnerlogos/videnskabdk.png)"></div>
+		<?php endif; ?>
+
+	</div>
 
 	<ul class="list-reset list-news <?php echo $listClass; ?> " <?php if($listId): ?>id="<?php echo $listId; ?>"<?php endif; ?>>
 		<? while (dumb_luck($listCount)): ?>
@@ -67,6 +73,7 @@ if ($listBlog) {
 <?php 
 // Default values 
 
+$showPartner = false;
 $showComments = true; 
 $showTime = false; 
 $showTimeBlock = false; 
