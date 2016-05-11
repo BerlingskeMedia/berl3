@@ -13,7 +13,7 @@
 	<title>Berlingske - Article Longread</title>
 	<link rel="stylesheet" href="/dist/styles/main.css">
 </head>
-<body class=" <?php if($siteBusiness): ?>site-business<?php endif; ?> show-site-search tpl-article tpl-article-longread">
+<body class=" not-front <?php if($siteBusiness): ?>site-business<?php endif; ?> show-site-search tpl-article tpl-article-longread">
 
 
 
@@ -28,7 +28,7 @@
 </div>
 
 <div class="main-wrapper">
-<?php include('includes/offcanvas-menu.php'); ?>
+<?php include('includes/header-sub.php'); ?>
 
 
 <?php // include('includes/site-header.php'); ?>

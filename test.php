@@ -13,145 +13,24 @@
 	<title>Berlingske - Test</title>
 	<link rel="stylesheet" href="/dist/styles/main.css">
 </head>
-<body class=" <?php if($siteBusiness): ?>site-business<?php endif; ?> show-site-search tpl-article tpl-article-longread">
+<body class="not-front" >
 
 
+<?php include('includes/header-front.php'); ?>
 
 
+<?php // include('includes/header-sub.php'); ?>
 
-Features:
-Load more button
-Blogs; kommentarer, forfatter, billede
-Optiin: Url + txt felt i bunden af lister
-Kommnetarer
-
-
-
-<!--  -->
 
 <div class="container">
-	<div class="row flex-row">
-		<div class="col-md-3">
-			
-			<?php 
-				$sectionClass = 'latest-news mb-05';
-				$imgRatio = '1:1';
-				$premium = false;
-				$imgSrc = false;
-				$imgW = '80';
-
-				$showTime = false;
-				$showImage = true; 
-				$listClass = 'list  list-img-right';
-				$listTitle = 'Mest læste lige nu';
-				$listCount = '5';
-				
-				
-				
-				
-				
-				$listDoc ="I'm the documentation";
-				include('includes/list-news.php');
-			?>
-		</div>
-
-		<div class="col-md-3">
-			
-			<?php 
-				$sectionClass = 'latest-news mb-05';
-				$imgRatio = '1:1';
-				$premium = false;
-				$imgSrc = false;
-				$imgW = '80';
-
-				$showTime = true;
-				$showImage = true; 
-				$listClass = 'list list-time  list-img-right';
-				$listTitle = 'Mest læste lige nu';
-				$listCount = '5';
-				
-				
-				
-				
-				
-				$listDoc ="I'm the documentation";
-				include('includes/list-news.php');
-			?>
-		</div>
-
-		<div class="col-md-3">
-			
-			<?php 
-				$sectionClass = 'latest-news mb-05';
-				$imgRatio = '1:1';
-				$premium = false;
-				$imgSrc = false;
-				$imgW = '80';
-
-				$showTime = false;
-				$showImage = false; 
-				$listClass = 'list list-time list-top-lg list-img-right fs14';
-				$listTitle = 'Mest læste lige nu';
-				$listCount = '5';
-				
-				
-				
-				
-				
-				$listDoc ="I'm the documentation";
-				include('includes/list-news.php');
-			?>
-		</div>
-
-		<div class="col-md-3">
-			
-			<?php 
-				$sectionClass = 'latest-news mb-05';
-				$imgRatio = '16:9';
-				$premium = false;
-				$imgSrc = false;
-				$imgW = '600';
-				$showTime = false;
-				$showImage = true; 
-				$listClass = 'list  list-img';
-				$listTitle = 'Large image';
-				$listCount = '5';
-				
-				
-				
-				
-				
-				$listDoc ="I'm the documentation";
-				include('includes/list-news.php');
-			?>
-		</div>
-
-		<div class="col-md-3">
-			
-			<?php 
-				$sectionClass = 'latest-news mb-05';
-				$imgRatio = '1:1';
-				$premium = false;
-				$imgSrc = false;
-				$imgW = false;
-
-				$showTime = false;
-				$showImage = false; 
-				$listClass = 'list ';
-				$listTitle = 'Kun rubrikker';
-				$listCount = '5';
-				
-				
-				
-				
-				
-				$listDoc ="I'm the documentation";
-				include('includes/list-news.php');
-			?>
-		</div>
-
-	</div>
+  <div class="row">
+    <div class="col-xs-12">
+    <? while (dumb_luck("25")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>      
+    </div>
+  </div>
 </div>
+
+
 
 <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
 <script src="/dist/scripts/main.js"></script>
@@ -169,35 +48,6 @@ Kommnetarer
 </script>
 
 
-
-
-<!-- 
-
-<div class="longread-hero">
-	<figure class="longread-cover" style="background-image: url(<? dummy("image/!longread@2200x,10:6") ?>);">
-		<figcaption>
-			<div class="hero-content">
-				<div class="hero-container">
-					<div class="hero-header">
-						<h1 class="article-title">
-							<?php if($trumpet == '1'): ?>
-							<span class="article-trumpet">
-								<? dummy("text@item") ?>
-							</span>
-							<?php endif; ?>
-							<? dummy("text@headline-b") ?>
-						</h1>
-					</div>
-					<div class="hero-footer">
-						<p class="article-summary relative" >
-							<? dummy("text@teaser") ?>
-						</p>
-					</div>
-				</div>
-			</div>
-		</figcaption>
-	</figure>
-</div> -->
 
 
 

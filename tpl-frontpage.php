@@ -52,7 +52,7 @@ if(isset($_GET["business"])) {
 <?php include('includes/offcanvas-menu.php'); ?>
 
 
-<?php include('includes/site-header.php'); ?>
+<?php include('includes/header-front.php'); ?>
 
 <?php include('includes/banners.php'); ?>
 <?php 

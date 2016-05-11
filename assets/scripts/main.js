@@ -37,8 +37,12 @@
 
 	
 	// Load disquss comments
-	var ds_loaded = false, 
-	top = $("#disqus_thread").offset().top;
+	
+	var ds_loaded = false;
+	
+	if($('#disqus_thread').length) {
+		var top = $("#disqus_thread").offset().top;		
+	}
 	
 	window.disqus_shortname = 'btdkbond';
 
@@ -55,27 +59,6 @@
 	}
 	$(window).scroll(check);
 	check();
-
-
-	var sticky_navigation = function()  {
-	var scroll_top = $(window).scrollTop(); 
-
-	// sticky_navigation_offset_top = $('.header-middle').offset().top;	
-	sticky_navigation_offset_top = 40;	
-
-		if (scroll_top > sticky_navigation_offset_top &&  $(window).width() > 992) {
-			$(bodyClass).addClass('fixed-header');
-		} else {
-			$(bodyClass).removeClass('fixed-header');
-		}
-	};
-
-	sticky_navigation();
-		
-	$(window).on('resize scroll', function() {
-		sticky_navigation();
-	}).resize();	
-
 
 	$('.list-tabs').on('click', 'a:not(.active)', function(e){
 		var activeTab = $(this).data('menuid');
