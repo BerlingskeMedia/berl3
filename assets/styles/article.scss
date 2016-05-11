@@ -1360,42 +1360,6 @@ $longreadPadding: 20rem;
 }
 
 
-
-.longread-image {
-	height: calc(100vh - 2.5rem);
-	display: block;
-	background-position: center center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	overflow: hidden;
-	position: relative;
-	figcaption {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		background: rgba(0,0,0,.4);
-		font-size: .7rem;
-		@extend .font-s2;
-		padding: 0 .2rem ;
-		z-index: 10;
-	}
-	
-	.article-trumpet,
-	.article-title,
-	.article-summary {
-		color: #fff;
-	}
-}
-
-
-
-
-
-
-
-
-
 .article-embed-pull-right {
 	margin-right: -$col-1-width / 2;
 	width: 16.250rem;
@@ -1834,14 +1798,28 @@ $longreadPadding: 20rem;
 
 
 .longread-head {
-	height: 100vh;
+	height: calc(100vh - 2.5rem);
 	min-height: 32.5rem;
 	max-height: 50rem;
 	position: relative;
-	h1, .article-summary, .article-trumpet {
+	h1 {
+		padding-bottom:.625rem;
+		color: #fff;
+		margin: 0;
+	}
+	h1 {
+		padding-top: .625rem;
+	}
+	.article-trumpet {
 		margin: 0;
 		color: #fff;
-		padding: .3rem 0;
+	
+
+	}
+	.article-summary {
+		color: #fff;
+		padding: 0 0 .625rem;
+		margin: 0;
 	}
 }
 

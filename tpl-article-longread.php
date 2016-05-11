@@ -33,7 +33,7 @@
 
 <?php // include('includes/site-header.php'); ?>
 
-<!-- <div style="height: 2.5rem; background: #222; color: #fff; padding: 0 .4rem; line-height: 2.5rem;">Header</div> -->
+<div style="height: 2.5rem; background: #222; color: #fff; padding: 0 .4rem; line-height: 2.5rem;">Header comes here... TBA</div>
 
 
 
