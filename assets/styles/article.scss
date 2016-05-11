@@ -1035,7 +1035,8 @@ $sharebutton-sm: 1.7rem;
 	padding: .425rem .425rem .325rem;
 	font-weight: 500;
 	@extend .font-s2;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
+	margin-bottom: .4rem;
 	text-transform: uppercase;
 	line-height: 1;
 	display: inline-block;
@@ -1045,17 +1046,16 @@ $sharebutton-sm: 1.7rem;
 
 .event-header-breaking {
 	background-color: $col-breaking;
-	color: #000;
+	color: #222;
 }
 .event-header-live {
 	background-color: $col-live;
 	color: #fff;
-	transform: skew(-10deg,0);
+	// transform: skew(-10deg,0);
 }
-
 .event-header-inawhile {
 	color: #fff;
-	background-color: $col-blue-2;
+	background-color: $col-live;
 }
 .event-header-update {
 	color: #fff;
@@ -1500,6 +1500,11 @@ $longreadPadding: 20rem;
 }
 @include media-breakpoint-down(md) {
 	
+	[class*="event-header-"] {
+		font-size: .9rem;
+		padding: .225rem .325rem .225rem;
+
+	}
 
 	.article-header {
 		max-width: 41.25rem;
@@ -1561,6 +1566,12 @@ $longreadPadding: 20rem;
 
 @include media-breakpoint-down(sm) {
 	
+
+	[class*="event-header-"] {
+		font-size: .9rem;
+		padding: .225rem .325rem .225rem;
+
+	}
 	.article-trumpet {
 		font-size: .9rem;
 	}
