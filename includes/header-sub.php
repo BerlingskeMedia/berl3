@@ -7,8 +7,8 @@
 				<div class="col-xs-12">
 					<div class="skakke">
 						<ul class="list-reset list-sm tools-menu-left ">
-							<li><a href="#" class="site-menu toggle-offcanvas"><i class="bicon-menu"></i></a></li>
-							<li><a href="#" class="site-search"><i class="bicon-search"></i></a></li>
+							<li><a href="#" class="site-menu toggle-offcanvas"><i class="sprite-icon-menu"></i></a></li>
+							<li><a href="#" class="site-search"><i class="sprite-icon-user"></i></a></li>
 						</ul>
 						<a href="tpl-frontpage.php" class="site-logo">Berlingske</a>	
 					</div>
@@ -18,7 +18,7 @@
 					
 						<ul class="list-reset list-sm tools-menu-right ">
 							<li><a href="/" class=""> Køb abonnement</a></li>
-							<li><a href="/" class="site-login"><i class="bicon-user"></i> Log ind</a></li>
+							<li><a href="/" class="site-login"><i class="sprite-icon-user"></i> Log ind</a></li>
 						</ul>
 					</nav>
 
@@ -39,19 +39,16 @@
 				<div class="col-xs-12 ">
 					<nav class="main-navigation">
 						<ul>
-							<li class="active"><a href="#"><b class="bicon-home"></b> Forside</a></li>
-							<li><a href="?business">Business</a></li>
-							<li><a href="#">Politiko</a></li>
-							<li><a href="#">Debat</a></li>
-							<li><a href="#">Global</a></li>
-							<li><a href="#">Tech</a></li>
-							<li><a href="#">Viden</a></li>
-							<li><a href="#">Kultur</a></li>
-							<li><a href="#">AoK</a></li>
-							<li><a href="#">Livsstil</a></li>
-							<li><a href="#">Rejseliv</a></li>
-							<li><a href="#">Sport</a></li>
-							
+							<li><a href="tpl-section.php">Anmeldelser</a></li>
+							<li><a href="tpl-section.php">Vi anbefaler</a></li>
+							<li><a href="tpl-section.php">Musik</a></li>
+							<li><a href="tpl-section.php">Film</a></li>
+							<li><a href="tpl-section.php">Bøger</a></li>
+							<li><a href="tpl-section.php">Koncerter</a></li>
+							<li><a href="tpl-section.php">Scene</a></li>
+							<li><a href="tpl-section.php">Kunst</a></li>
+							<li><a href="tpl-section.php">Satiren</a></li>
+							<li><a href="tpl-section.php">TV</a></li>
 						</ul>
 					</nav>			
 				</div>

@@ -2,6 +2,27 @@ $headerHeight: 4rem;
 $subheaderHeight: 3rem;
 $headerButtomHeight: $headerHeight - 1rem;
 $border: .063rem;
+
+[class*="sprite-icon"] {
+	display: inline-block;
+	line-height: 0;
+	vertical-align: middle;
+	font-style: normal;	
+	background: url(/dist/images/sprite.svg) left top no-repeat; 
+	width: $spacer;
+	height: $spacer;
+}
+.sprite-icon-menu {
+	background-position: 0 0;
+}
+.sprite-icon-search {
+	background-position: 0 0;
+}
+.sprite-icon-user {
+	background-position: 0 0;
+}
+
+
 body {
 	padding-top: $headerHeight;
 }
@@ -30,7 +51,6 @@ body {
 	
 	i:before {
 		transform: scale(1.8);
-		margin-right: .35rem;
 	}
 	.site-login {
 		// box-shadow: 0 3px 2px 0 rgba(0,0,0,0.06), inset -1px -1px 1px 0 rgba(0,0,0,0.02);
@@ -68,6 +88,10 @@ body {
 			color: #000;
 			text-decoration: none;
 		}
+	}
+	.site-search i,
+	.site-menu i {
+			margin-right: .35rem;
 	}
 }
 
@@ -152,6 +176,8 @@ body {
 	font-size: 2rem;
 	color: $col-blue-1;
 	@extend .font-sans-alt;
+	line-height: $subheaderHeight;
+	text-transform: uppercase;
 }
 .site-header-sub {
 	.skakke {
