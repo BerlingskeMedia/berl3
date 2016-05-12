@@ -1,3 +1,4 @@
+
 .list {
 	@extend .font-g1;
 	li {
@@ -7,6 +8,16 @@
 	.trumpet {
 		font-weight: 700;
 	}
+}
+.list-comments {
+	@extend .font-s2;
+	color: #999;
+	font-size: 80%;
+	white-space: pre;
+	i {
+		color: #aaa;
+	}
+
 }
 .list-arrow {
 	li {
@@ -52,7 +63,26 @@
 		}
 	}
 }
+.list-fade,
+.list-footer {
+	@extend .toggle-loadmore-fade;
+	
+	height: 1rem;
+	z-index: 2;
 
+	button, a {
+		margin-top: 0;
+		@extend .btn;
+		@extend .btn-sm;
+		@extend .btn-round;
+		@extend .btn-gray;
+		background: #ddd;
+		&:hover {
+			background-color: darken(#ddd, 5%);
+		}
+	}
+	
+}
 .list-news {
 	li {
 		margin-bottom: $spacer;
@@ -61,6 +91,7 @@
 		margin-bottom:  .425rem;
 		padding-bottom: .425rem;
 	}
+
 }
 .list-font-2 {
 	li {
@@ -85,7 +116,7 @@
 		font-size: .8rem;
 		font-weight: 500;
 
-		padding-top: .15rem;
+		padding-top: .05rem;
 		@extend .font-s2;
 		display: block;
 		float: left;
@@ -205,6 +236,10 @@
 	padding: 1rem;
 }
 
+.icon-premium {
+
+	@extend .bicon-key;
+}
 .list-item-video {
 	figure{
 		&:after {
@@ -218,8 +253,6 @@
 .small-title-left {
 	.section-title {
 		font-size: 1rem;
-		// margin-left: -($col-1-width / 2);
-		float: none;
 		padding: 0;
 
 		&:before {
@@ -229,13 +262,34 @@
 	}
 	
 }
+.list-author {
+	display: block;
+	@extend .font-s2;
+	color: $col-blue-1;
+	font-size: .8rem;
+}
+.list-blog {
+	figure {
+		/*max-width: 40px;*/
+	}
+	img {
+		filter: grayscale(100%);;
+		border-radius: 50%;
 
+	}
+}
+.list-footer {
+	@extend .text-center;
+}
 @include media-breakpoint-up(md) {
 	.small-title-left {
 		.section-title {
+			position: absolute;
+			left: 0;
+			right: 0;
+			max-width: ($col-1-width / 2);
 			font-size: 1rem;
-			// margin-left: -($col-1-width / 2);
-			float: left;
+			
 			padding: 0;
 
 			
@@ -245,4 +299,23 @@
 			padding-left: ($col-1-width / 2)!important;
 		}
 	}
+}
+
+.border-first-item {
+	li:first-child {
+		border-top: $border-width solid $border-color;
+		padding-top: .425rem!important;
+		margin-top: .425rem;
+	}	
+}
+.no-border-last-item {
+	li:last-child {
+		border-bottom: 0;
+	}	
+}
+
+.partner-logo {
+	background-size: contain;
+	height: 1rem;
+	background-repeat: no-repeat;
 }

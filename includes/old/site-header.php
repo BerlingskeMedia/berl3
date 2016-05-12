@@ -1,3 +1,4 @@
+<<<<<<< HEAD:includes/site-header.php
 <?php
 
 // Report serious running errors and ignoring notices
@@ -6,6 +7,9 @@ error_reporting(E_ERROR | E_WARNING | E_PARSE);
 ?>
 
 <header class="site-header">
+=======
+<header class="site-header site-header-front">
+>>>>>>> master:includes/old/site-header.php
 	<div class="header-top hidden-md-down hidden">
 		<div class="container">
 			<div class="row">

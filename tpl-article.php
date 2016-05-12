@@ -24,7 +24,7 @@ include('includes/_variables.php');
 	<link rel="stylesheet" href="/dist/styles/main.css">
 	
 </head>
-<body class=" <?php if($siteBusiness): ?>site-business<?php endif; ?> show-site-search tpl-article">
+<body class=" not-front <?php if($siteBusiness): ?>site-business<?php endif; ?> show-site-search tpl-article">
 
 <?php include('includes/facebook.php'); ?>
 
@@ -38,10 +38,15 @@ include('includes/_variables.php');
 <?php include('includes/offcanvas-menu.php'); ?>
 
 
-<?php  include('includes/site-header.php'); ?>
+<?php include('includes/header-sub.php'); ?>
 
 
+<button type="button" class="btn btn-gray" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+  Popover on top
+</button>
 
+
+<a href="#" class="example-popover btn btn-gray" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Toggle popover</a>
 
 <div class="canvas-main <?php echo $campaignId; ?>">
 
@@ -82,19 +87,25 @@ include('includes/_variables.php');
 
 						<?php endif; ?>
 						
-
+						<?php include('includes/article/partners.php'); ?>		
+						
 						<?php if($showByline == true) : ?>
 							<?php include('includes/article/byline.php') ?>
 						<?php endif; ?>
+
+
 
 						
 
 						<div class="article-body">
 
+							
+			
 							<?php if ($imageSize == '2'): ?>
 								<?php $portrait = true; ?>
 								<?php include('includes/article-embeds/article-image-float-right.php'); ?>
 							<?php endif; ?>
+							
 
 							<?php include('includes/article-embeds/blog-bio.php'); ?>
 
@@ -102,13 +113,14 @@ include('includes/_variables.php');
 							
 							<p><? dummy("text@paragraph-first-letter") ?></p>
 
-							<div class="hidden-md-up mb fw-sm">
+							<div class="hidden-md-up mb fw-sm continue-reading-banner">
 								<div class="demo-banner demo-banner-mobile " style="width: 320px; height : 160px;"></div>
 							</div>
 							
 							<p><? dummy("text@paragraph") ?></p>
 							
-								
+							
+
 							<?php if($showPaywall): ?>
 								
 								<?php include('includes/article/paywall.php'); ?>
@@ -116,11 +128,16 @@ include('includes/_variables.php');
 							<?php endif; ?>
 
 								
+
+							<?php if(!$showPaywall): ?>
+
+								<?php if ($showGalleryTeaser == '2'): ?>
+									<?php include('includes/gallery-teaser-large.php'); ?>
+								<?php endif; ?>
+
 								<ol>
 									<? while (dumb_luck("7")): ?><li><? dummy("text@headline") ?></li><? endwhile ?>
 								</ol>
-
-							<?php if(!$showPaywall): ?>
 								
 								<? while (dumb_luck("2")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
 								
@@ -148,9 +165,11 @@ include('includes/_variables.php');
 
 								<?php include('includes/article-embeds/fact-default.php'); ?>
 								
-								<?php include('includes/article-embeds/related.php'); ?>
+								<?php include('includes/article/related-partner.php'); ?>
+
+								<?php include('includes/article/related.php'); ?>
 								
-								<?php include('includes/article-embeds/topics.php'); ?>
+								<?php include('includes/article/topics.php'); ?>
 
 							<?php endif; // End Paywall ?>
 							
@@ -195,12 +214,12 @@ include('includes/_variables.php');
 
 </div><!-- main-wrapper -->
 
-<?php include('includes/consumersales-row.php'); ?>
+<?php // include('includes/consumersales-row.php'); ?>
 
 <?php include('includes/footer.php'); ?>
 
-
 <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
 <script src="/dist/scripts/main.js"></script>
 
 <script>

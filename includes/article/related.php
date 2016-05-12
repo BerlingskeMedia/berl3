@@ -14,7 +14,6 @@ $imgSrc = false;
 $imgW = '120';
 $imgRatio = '1:1';
 
-$listDoc ="I'm the documentation";
 include('includes/list-news.php');
 ?>
 
@@ -33,7 +32,6 @@ $imgSrc = false;
 $imgW = '120';
 $imgRatio = '1:1';
 
-$listDoc ="I'm the documentation";
 include('includes/list-news.php');
 ?>
 

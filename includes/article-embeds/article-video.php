@@ -18,15 +18,8 @@ Insert video player and delete this demo code: -->
 </style>
 <div style="padding-top: 56.25%; background-color: rgba(0,0,0,.05);"></div>
 
-<!-- Dele until here -->
+<!-- Delete until here -->
 
-<figcaption class="image-caption">
-	<? dummy("text@teaser") ?>
-	
-		<div class="image-meta">
-			<span class="byline">Foto: <? dummy("text@author") ?></span>
-		</div>
-		
-</figcaption>
+
 
 </figure>

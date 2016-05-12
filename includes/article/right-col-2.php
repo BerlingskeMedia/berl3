@@ -4,16 +4,22 @@
 	<div class="col-md-6 col-lg-12 col-sm-12 col-xs-12">
 		
 			<?php 
+				$sectionClass = 'latest-news mb-05';
+				$imgRatio = '1:1';
+				$premium = false;
+				$imgSrc = false;
+				$imgW = '80';
+
 				$showTime = false;
 				$showImage = true; 
 				$listClass = 'list list-time list-top-lg list-img-right';
 				$listTitle = 'Mest læste lige nu';
 				$listCount = '5';
-				$sectionClass = 'latest-news mb-05';
-				$premium = false;
-				$imgSrc = false;
-				$imgW = '80';
-				$imgRatio = '1:1';
+				
+				
+				
+				
+				
 				$listDoc ="I'm the documentation";
 				include('includes/list-news.php');
 			?>

@@ -19,6 +19,7 @@ var runSequence  = require('run-sequence');
 var sass         = require('gulp-sass');
 var sourcemaps   = require('gulp-sourcemaps');
 var uglify       = require('gulp-uglify');
+var sassLint     = require('gulp-sass-lint');
 
 // See https://github.com/austinpray/asset-builder
 var manifest = require('asset-builder')('./assets/manifest.json');
@@ -173,6 +174,15 @@ gulp.task('styles', ['wiredep'], function() {
   });
   return merged
     .pipe(writeToManifest('styles'));
+});
+
+gulp.task('sass-lint', function () {
+  gulp.src('./assets/styles/*.s+(a|c)ss')
+      .pipe(sassLint({ options: {
+        'config-file': '.sass-lint.yml' 
+      }}))
+      .pipe(sassLint.format())
+      .pipe(sassLint.failOnError());
 });
 
 // ### Scripts

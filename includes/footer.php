@@ -69,7 +69,7 @@
 							<div class="border-bottom-sm ">
 							<p class="hidden-sm-down"><strong >Følg Berlingske</strong></p>
 
-								<ul class="list-footer list-social-icons columns-lg-up align-center-sm">
+								<ul class="footer-list list-social-icons columns-lg-up align-center-sm">
 									
 									<li>
 										<a href="#"><i class="bicon-facebook"></i> <span>Facebook</span></a>
@@ -97,7 +97,7 @@
 					<div class="row">
 						<div class="col-md-4 col-sm-6 col-xs-6 mb-sm">
 							<p><strong>Om os</strong></p>
-							<ul class="list-footer">
+							<ul class="footer-list">
 								<li><a href="#" title="#">Kontakt os</a></li>
 								<li><a href="#" title="#">Redaktionelt regnskab</a></li>
 								<li><a href="#" title="#">Ledige stillinger</a></li>
@@ -107,7 +107,7 @@
 						</div>
 						<div class="col-md-4 col-sm-6 col-xs-6  mb-sm">
 							<p><strong>Service</strong></p>
-							<ul class="list-footer">
+							<ul class="footer-list">
 								<li><a href="#" title="#">Køb abonnement</a></li>
 								<li><a href="#" title="#">Læs e-avisen</a></li>
 								<li><a href="#" title="#">Er avisen ikke kommet?</a></li>
@@ -116,7 +116,7 @@
 						</div>
 						<div class="col-md-4 hidden-sm-down">
 							<p><strong>Tjenester</strong></p>
-							<ul class="list-footer">
+							<ul class="footer-list">
 								<li><a href="#" title="#">RSS</a></li>
 								<li><a href="#" title="#">Det Berlingske Arkiv</a></li>
 								<li><a href="#" title="#">Apps og mobile tjenester</a></li>

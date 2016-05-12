@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="/dist/styles/main.css">
 	<link href='https://fonts.googleapis.com/css?family=Montserrat|Oswald:300' rel='stylesheet' type='text/css'>
 </head>
-<body class=" <?php if($siteBusiness): ?>site-business<?php endif; ?> show-site-search tpl-article tpl-article-large">
+<body class="not-front <?php if($siteBusiness): ?>site-business<?php endif; ?> show-site-search tpl-article tpl-article-large">
 
 
 <a class="demo-trigger" href="#">
@@ -35,7 +35,7 @@
 	<?php include('includes/offcanvas-menu.php'); ?>
 	
 
-	<?php include('includes/site-header.php'); ?>
+	<?php include('includes/header-sub.php'); ?>
 
 	<div class="canvas-main ">
 
@@ -72,7 +72,7 @@
 	</div><!-- canvas main -->
 </div><!-- main-wrapper -->
 
-<?php include('includes/consumersales-row.php'); ?>
+<?php // include('includes/consumersales-row.php'); ?>
 
 <?php include('includes/footer.php'); ?>
 

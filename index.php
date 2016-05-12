@@ -232,6 +232,7 @@ if(isset($_GET["business"])) {
 						<li class="orange"><a href="tpl-article.php?showTheme">Theme</a></li>
 						<li class="orange"><a href="tpl-article.php?showTimeline">Timeline</a></li>
 						<li class="orange"><a href="tpl-article.php?showLink">Embedded links</a></li>
+						<li class="orange"><a href="tpl-article.php?showGallery">Embedded gallery</a></li>
 					</ul>
 					</div>
 
@@ -252,7 +253,7 @@ if(isset($_GET["business"])) {
 					</div>
 					<div class="col-md-9">
 						<ul>
-							<li class="red"><a href="#">'Videnskab.dk'</a></li>
+							<li class="orange"><a href="tpl-article.php?partner=videnskabdk">'Videnskab.dk'</a></li>
 						</ul>
 					</div>
 					<div class="col-md-3">Paywall</div>
@@ -457,16 +458,14 @@ if(isset($_GET["business"])) {
 				</div>
 
 				<div class="col-md-12">
-					<h2 class=" border-bottom">BUSINESS</h2>
+					<h4>Documentation</h4>
 				</div>
-
-				<div class="col-md-3">
-					<h4 >?</h4>
-				</div>
-
+				
+				<div class="col-md-3"></div>
 				<div class="col-md-9">
 					<ul>
-						<li>?</li>
+						<li class="green"><a href="doc-list.php">Lists</a></li>
+						
 					</ul>
 				</div>
 			

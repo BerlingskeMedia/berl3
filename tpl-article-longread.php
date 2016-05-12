@@ -13,7 +13,7 @@
 	<title>Berlingske - Article Longread</title>
 	<link rel="stylesheet" href="/dist/styles/main.css">
 </head>
-<body class=" <?php if($siteBusiness): ?>site-business<?php endif; ?> show-site-search tpl-article tpl-article-longread">
+<body class=" not-front <?php if($siteBusiness): ?>site-business<?php endif; ?> show-site-search tpl-article tpl-article-longread">
 
 
 
@@ -28,38 +28,74 @@
 </div>
 
 <div class="main-wrapper">
-<?php include('includes/offcanvas-menu.php'); ?>
+<?php include('includes/header-sub.php'); ?>
 
 
 <?php // include('includes/site-header.php'); ?>
 
-<div style="height: 2.5rem; background: #222; color: #fff; padding: 0 .4rem; line-height: 2.5rem;">Header</div>
-
+<div style="height: 2.5rem; background: #222; color: #fff; padding: 0 .4rem; line-height: 2.5rem;">Header comes here... TBA</div>
 
 
 
 <div class="canvas-main ">
 
 	<div class="banner-wrapper">
+	
 		
 
-		<figure class="longread-image" style="background-image: url(<? dummy("image/!longread@2200x,10:6") ?>);">
-			<figcaption><!-- Foto: <? dummy("text@author") ?> -->
-				<div class="longread-header">
-					<h1 class="article-title">
+
+
+	
+	<style>
+	/* Default background */
+	.longread-head {
+		background-image: url(<? dummy("image/!longread@1300x,5:3") ?>);
+	}
+	/* Large displays */
+	@media (min-width: 1600px) {
+		.longread-head {
+			background-image: url(<? dummy("image/!longread@2200x,5:3") ?>);
+		}
+	}
+	/* iPad portrait */
+	.longread-head-mobile {
+			background-image: url(<? dummy("image/!longread@1300x,5:3") ?>);
+	}
+	/* Phones */
+	@media (max-width: 768px) {
+		.longread-head-mobile {
+			background-image: url(<? dummy("image/!longread@1000x,5:3") ?>);
+		}	
+	}
+	</style>
+
+	<header class="longread-head">
+		
+		<div class="longread-head-inner">
+			<div class="longread-head-mobile">
+				<div class="longread-wrapper">
+					<div class="header-container">
+						<h1 class="article-title">
 						<?php if($trumpet == '1'): ?>
 						<span class="article-trumpet">
 							<? dummy("text@item") ?>
 						</span>
 						<?php endif; ?>
-						<? dummy("text@headline-b") ?>
-					</h1>								
-					<p class="article-summary relative" >
-						<? dummy("text@teaser") ?>
-					</p>
+						<? dummy("text@headline-b") ?></h1>
+					</div>
 				</div>
-			</figcaption>
-		</figure>
+			</div>
+			<div class="longread-wrapper longread-wrapper-summary">
+				<div class="header-container">
+					<div class="">
+						<p class="article-summary"><? dummy("text@teaser") ?></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</header>	
+
 		
 		
 	
@@ -134,9 +170,9 @@
 								
 								<?php include('includes/article-embeds/fact-default.php'); ?>
 								
-								<?php include('includes/article-embeds/related.php'); ?>
+								<?php include('includes/article/related.php'); ?>
 
-								<?php include('includes/article-embeds/topics.php'); ?>
+								<?php include('includes/article/topics.php'); ?>
 								
 
 								
@@ -165,7 +201,7 @@
 </div><!-- canvas main -->
 </div><!-- main-wrapper -->
 
-<?php include('includes/consumersales-row.php'); ?>
+<?php // include('includes/consumersales-row.php'); ?>
 
 <?php include('includes/footer.php'); ?>
 

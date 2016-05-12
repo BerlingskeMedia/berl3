@@ -9,37 +9,55 @@
 		<div class="aside-subheader">
 			<? dummy("text@headline-b") ?>
 		</div>
-	
-	
 
 		<dl>
 			<? while (dumb_luck("3-6")): ?>
 			<? if (dumb_luck("50%")): ?>
+			<!-- Short date format -->
 			<dt><time><? dummy("text@time") ?></time></dt>
 			<? else: ?>
+			<!-- Long date format -->
 			<dt><time><? dummy("text@date") ?> kl. <? dummy("text@time") ?></time></dt>
 			<? endif ?>
 			<? if (dumb_luck("50%")): ?>
 			<dd><? dummy("text@short-teaser") ?></dd>
 			<? else: ?>
 			<dd>
-				<article class="teaser-float-left">
-					<figure>
-						<a href="tpl-article.php"><img src="<? dummy("image@60x,3:2") ?>" width="" height="" alt="" /></a>
+				<!-- Teaser with image -->
+				<article class="teaser">
+					<figure class="mb-05">
+						<a href="tpl-article.php"><img src="<? dummy("image@300x,16:9") ?>" width="" height="" alt="" /></a>
 					</figure>
-					<a href="tpl-article.php"><? dummy("text@short-teaser") ?></a>
+					<div class="list-body">
+						<a href="tpl-article.php"><? dummy("text@short-teaser") ?></a>
+					</div>
 				</article>
 			</dd>
+			
 			<? endif ?>
 			<? endwhile ?>
+			<!-- Teaser without image -->
 			<dt><time><? dummy("text@time") ?></time></dt>
 			<dd>
 				<article class="teaser">
-					<figure class="mb">
+					
+					<div class="list-body">
+						<a href="tpl-article.php"><? dummy("text@short-teaser") ?></a>
+					</div>
+				</article>
+			</dd>
+
+			<!-- Item with picture. No link -->
+			<dt><time><? dummy("text@time") ?></time></dt>
+			<dd>
+				<div class="teaser">
+					<figure class="mb-05">
 						<img src="<? dummy("image@300x,16:9") ?>" width="" height="" alt="" />
 					</figure>
-					<? dummy("text@short-teaser") ?>
-				</article>
+					<div class="list-body">
+						<? dummy("text@short-teaser") ?>	
+					</div>
+				</div>
 			</dd>
 
 		</dl>
