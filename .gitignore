@@ -15,3 +15,6 @@ Icon
 
 # Thumbnails
 ._*
+
+# PHP/Web Storm Project files
+.idea/
