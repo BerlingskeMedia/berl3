@@ -110,33 +110,7 @@
 		</div>
 		</div>
 		
-		<div class="row flex-row mb" >
-
-		<div class="col-md-3 ">
-			<div class="demo-header">Timestamp w/ image</div>
-		</div>
-		<div class="col-md-3">
-			
-			
-			<?php 
-				$sectionClass = 'latest-news mb-05';
-				$imgRatio = '1:1';
-				$premium = true;
-				$imgSrc = false;
-				$imgW = '120';
-
-				$showTime = true;
-				$showImage = true; 
-				$listClass = 'list list-time list-img-right  ';
-				$listTitle = 'List title';
-				$listCount = '5';
-					
-				include('includes/list-news.php');
-			?>
-
-			
-		</div>
-	</div>
+		
 		
 	<div class="row flex-row mb" >
 		<div class="col-md-3 ">
@@ -165,32 +139,7 @@
 		</div>
 	</div>
 	
-	<div class="row flex-row mb" >
-		<div class="col-md-3 ">
-			<div class="demo-header">Toplist w/thumbnail</div>
-		</div>
-		<div class="col-md-3">
-			
-			
-			<?php 
-				$sectionClass = 'latest-news mb-05';
-				$imgRatio = '1:1';
-				$premium = true;
-				$imgSrc = false;
-				$imgW = '120';
-
-				$showTime = false;
-				$showImage = true; 
-				$listClass = 'list list-img-right list-top-lg';
-				$listTitle = 'List title';
-				$listCount = '5';
-					
-				include('includes/list-news.php');
-			?>
-
-			
-		</div>
-	</div>
+	
 
 
 
