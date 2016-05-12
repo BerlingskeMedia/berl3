@@ -5,13 +5,16 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
-					<a href="tpl-frontpage.php" class="site-logo">Berlingske</a>
-					
-					<nav>
+					<div class="skakke">
 						<ul class="list-reset list-sm tools-menu-left ">
 							<li><a href="#" class="site-menu toggle-offcanvas"><i class="bicon-menu"></i></a></li>
 							<li><a href="#" class="site-search"><i class="bicon-search"></i></a></li>
 						</ul>
+						<a href="tpl-frontpage.php" class="site-logo">Berlingske</a>	
+					</div>
+					<a href="tpl-section.php" class="page-title"><? dummy("text@b-cat") ?></a>
+					<nav>
+						
 					
 						<ul class="list-reset list-sm tools-menu-right ">
 							<li><a href="/" class=""> Køb abonnement</a></li>

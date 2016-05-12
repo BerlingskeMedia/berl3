@@ -148,16 +148,27 @@ body {
 		box-shadow: 0 .3rem #222 inset;
 	}
 }
-
+.page-title {
+	font-size: 2rem;
+	color: $col-blue-1;
+	@extend .font-sans-alt;
+}
 .site-header-sub {
+	.skakke {
+		position: absolute;
+		left: 0;
+
+	}
+	
 	.site-logo {
 		font-size: 2rem;
 		line-height: $subheaderHeight;
-		float: left;
+		
 		margin-right: $spacer;
+		margin-left: $spacer;
 	}
 	.tools-menu-left {
-		position: relative;
+		position: relative!important;
 		float: left;
 	}
 	.header-sticky {
