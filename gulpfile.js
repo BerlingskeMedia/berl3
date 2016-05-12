@@ -182,7 +182,7 @@ gulp.task('sass-lint', function () {
         'config-file': '.sass-lint.yml' 
       }}))
       .pipe(sassLint.format())
-      .pipe(sassLint.failOnError())
+      .pipe(sassLint.failOnError());
 });
 
 // ### Scripts

@@ -35,6 +35,7 @@
 		container: '.stickem-container-ex2'
 	});
 
+
 	
 	// Load disquss comments
 	
@@ -77,6 +78,10 @@
 	// $('iframe.auto-height').iframeAutoHeight({minHeight: 240});
 
 	// $("#embedded-marketing").height($("#embedded-marketing").contents().find("html").height());
+
+	$('[data-toggle="popover"]').popover();
+
+	
 
 })(jQuery); 
 
