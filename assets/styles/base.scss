@@ -20,8 +20,11 @@ body {
 
 
 .site-business {
-
+	.header-sticky .container {
+		background: transparent;
+	}
 	background: $col-business;	
+	.header-sticky,
 	.site-header .header-bottom,
 	.container {
 		background: $col-business;

@@ -22,7 +22,7 @@
 			<button class="btn  btn-round btn-green btn-sm ">Bestil nu</button>
 		</div>
 
-		<div class="disclaimer">
+		<div class="banner-disclaimer">
 			Samlet pris 747,-
 			Abonnementet fortsætter til normalpris indtil det opsiges. 
 		</div>
