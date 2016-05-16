@@ -351,7 +351,7 @@ if(isset($_GET["business"])) {
 					</ul>
 				</div>
 
-				<div class="col-md-12">
+				<!-- <div class="col-md-12">
 					<h4>Plus</h4>
 				</div>
 				
@@ -378,7 +378,7 @@ if(isset($_GET["business"])) {
 						<li class="red"><a href="#">Front-page</a></li>
 						<li class="red"><a href="#">Single single-sale</a></li>
 					</ul>
-				</div>
+				</div> -->
 
 				<div class="col-md-12">
 					<h4>Advertorials</h4>

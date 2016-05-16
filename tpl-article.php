@@ -24,7 +24,7 @@ include('includes/_variables.php');
 	<link rel="stylesheet" href="/dist/styles/main.css">
 	
 </head>
-<body class=" not-front <?php if($siteBusiness): ?>site-business<?php endif; ?> show-site-search tpl-article">
+<body class=" <?php if($siteBusiness): ?>site-business<?php endif; ?> show-site-search tpl-article">
 
 <?php include('includes/facebook.php'); ?>
 
@@ -40,13 +40,6 @@ include('includes/_variables.php');
 
 <?php include('includes/header-sub.php'); ?>
 
-
-<button type="button" class="btn btn-gray" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-  Popover on top
-</button>
-
-
-<a href="#" class="example-popover btn btn-gray" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Toggle popover</a>
 
 <div class="canvas-main <?php echo $campaignId; ?>">
 

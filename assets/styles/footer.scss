@@ -77,6 +77,11 @@
 .list-footer {
 	margin: 0;
 }
+.list-footer-menu {
+	li {
+		display: inline-block;
+	}
+}
 @include media-breakpoint-down(md) {
 	
 	.list-footer-menu {
