@@ -1,6 +1,11 @@
 <? require_once("../dummy/dummy.php") ?>
 
-<?php 
+<?php
+
+// Error reporting settings
+error_reporting(E_ERROR | E_PARSE);
+
+
 if(isset($_GET["wide"])) {
 	$showWide = true;
 } 
