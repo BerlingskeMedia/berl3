@@ -1,5 +1,7 @@
 <? require_once("../dummy/dummy.php") ?>
 
+<?php include('includes/_variables.php') ;?>
+
 <?php 
 if(isset($_GET["wide"])) {
 	$showWide = true;
@@ -31,7 +33,6 @@ if(isset($_GET["business"])) {
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Berlingske - Front</title>
 	<link rel="stylesheet" href="/dist/styles/main.css">
-	<link href='https://fonts.googleapis.com/css?family=Montserrat|Oswald:300' rel='stylesheet' type='text/css'>
 </head>
 <body class="tpl-front <?php if($siteBusiness): ?>site-business<?php endif; ?> show-site-search">
 
@@ -50,11 +51,13 @@ if(isset($_GET["business"])) {
 
 <div class="main-wrapper">
 <?php include('includes/offcanvas-menu.php'); ?>
+
 <?php if($siteBusiness): ?>
-<?php include('includes/header-sub.php'); ?>
+	<?php include('includes/header-sub.php'); ?>
 <?php else: ?>
-<?php include('includes/header-front.php'); ?>
+	<?php include('includes/header-front.php'); ?>
 <?php endif; ?>
+
 <?php include('includes/banners.php'); ?>
 
 <?php 

@@ -79,9 +79,20 @@
 
 	// $("#embedded-marketing").height($("#embedded-marketing").contents().find("html").height());
 
-	$('[data-toggle="popover"]').popover();
+	// $('[data-toggle="popover"]').popover();
 
-	
+	// Toggle submenu on mobile 
+	$('.toggle-submenu').click(function(e){
+		e.preventDefault();
+		$(this).closest('ul').toggleClass('show-submenu');
+	});
+
+	// Toggle user menu when user is logged in
+	$('.toggle-user-menu').click(function(e){
+		e.preventDefault();
+		$(this).closest('li').toggleClass('show-usermenu');
+	});
+
 
 })(jQuery); 
 

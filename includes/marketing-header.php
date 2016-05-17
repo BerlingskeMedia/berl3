@@ -1,4 +1,4 @@
-<div class="header-marketing">
+<div class="header-marketing hidden-sm-down">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 text-center">
@@ -9,7 +9,7 @@
 		</div>
 	</div>	
 </div>
-<div class="header-marketing-2">
+<div class="header-marketing-2 hidden-sm-down">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 text-center">

@@ -1,7 +1,9 @@
 <? require_once("../dummy/dummy.php") ?>
 
 <?php include('includes/_variables.php') ;?>
-
+<?php 
+$templateLongread = true;
+?>
 
 
 <!DOCTYPE html>

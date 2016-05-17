@@ -119,6 +119,9 @@ if (isset($_GET['textPosition'])) {
 if (isset($_GET['specialBanner'])) {
 	$backgroundBanner = true;
 }
+if (isset($_GET['loggedIn'])) {
+	$loggedIn = true;
+}
 
 $campaignId = 'campaign-' . mt_rand(1,4);
 
