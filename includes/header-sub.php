@@ -90,10 +90,9 @@
 							</ul>
 							
 								<?php if($loggedIn): ?>
-									<ul class="mobile-user-nav hidden-md-up pull-right" style="float: right">
-										<li><a href="#" class="toggle-user-menu">Bo Skakke <i class="bicon-angle-down"></i></a>
-										<?php include('includes/user-menu.php'); ?>
-									</li>
+									<ul class="mobile-user-nav hidden-md-up pull-right" >
+										<li><a href="#" class="toggle-user-menu"><?php dummy("text@author") ?></a>
+										<?php include('includes/user-menu.php'); ?></li>
 									</ul>
 
 								<?php else: ?>

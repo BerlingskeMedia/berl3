@@ -1382,10 +1382,10 @@ $longreadPadding: 20rem;
 	.article-partner {
 		margin-right: -$col-1-width / 2;
 	}
-	.article-header {
+	/*.article-header {
 		padding-left: $col-1-width / 2;
 		padding-right: $col-1-width / 2;
-	}
+	}*/
 	
 	.article-off-grid {
 		margin-right: -$col-1-width / 2;
@@ -1546,8 +1546,6 @@ $longreadPadding: 20rem;
 	.article-trumpet {
 		font-size: .9rem;
 	}
-
-	 
 
 	.tpl-article-longread {
 		.article-trumpet {
@@ -1786,6 +1784,9 @@ $longreadPadding: 20rem;
 			display: none;
 		}
 	}	
+	.article-marketing-embedded {
+		margin: 0; 
+	}	 
 }
 
 

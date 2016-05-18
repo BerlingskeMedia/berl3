@@ -33,7 +33,6 @@ $menu-width: 18rem;
 }
 
 .show-offcanvas {
-	
 	.offcanvas-menu {
 		box-shadow: 0 3px 11px rgba(0,0,0,0.5);
 		transform: translate3d($menu-width,0,0);
@@ -44,73 +43,7 @@ $menu-width: 18rem;
 }
 
 
-.list-menu {
-	@extend .list-reset;
-	&> li {
-		&> a {
-			display: block;
-			padding: .625rem;
-			@extend .border-bottom;
-			position: relative;
-			&:after {
-				content: '\e80c';
-				width: 2rem;
-				display: inline-block;
-				position: absolute;
-				right: 0;
-				top: 0;
-				bottom: 0;
-				font-family: b-icons;
-				color: #999;
-				line-height: 2.75rem;
-			}
-		}
-	}
-}
 
-.list-tabs {
-	@extend .list-reset;
-	@extend .clearfix;
-	
-	li {
-		width: 50%;
-		float: left;
-		background: darken($background-color, 0%);
-		&> a {
-			display: block;
-			padding: .625rem;
-			
-			text-align: center;
-			font-weight: 700;
-		}		
-		&:not(:last-child) {
-			border-right: $border-width solid $border-color;
-		}
-		&:not(.active) {
-			background: #333;
-			a {
-				color: #999;
-			}
-		}
-	}
-}
-.tab-container {
-	position: relative;
-}
-.tab:not(.active) {
-	opacity: 0;
-	visibility: hidden;
-	
-}
-.tab {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	opacity: 1;
-	visibility: visible;
-	transition: opacity .2s ease;
-}
 
 
 
