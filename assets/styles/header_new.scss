@@ -470,8 +470,11 @@ ul .mobile-section-title {
 		&> ul:first-child {
 			position: absolute;
 			z-index: 99;
-			left: 0;
+			left: .625rem;
 			right: 0;
+			a {
+				padding-left: 0;
+			}
 		}
 		
 		ul:first-child li {
