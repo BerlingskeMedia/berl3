@@ -524,6 +524,7 @@ body {
 		text-transform: uppercase;
 		font-size: 1.5rem;
 		max-width: 48%;
+		line-height: 1.4;
 
 		a {
 			color: $col-blue-1!important;
@@ -538,8 +539,8 @@ body {
 			vertical-align: middle;
 			line-height: 1.5rem;
 		}
-		/*&+li {
+		&+li {
 			margin-top: -.4rem;
-		}*/
+		}
 	}
 }
