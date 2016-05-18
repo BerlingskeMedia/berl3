@@ -756,7 +756,7 @@ $sharebutton-sm: 1.7rem;
 	height: $sharebutton;
 	width: $sharebutton;
 	line-height: $sharebutton;
-	border: $border-width solid #ccc;
+	border: 0;
 	border-radius: 50%;
 	text-align: center;
 	transition: all .2s ease;
@@ -814,56 +814,51 @@ $sharebutton-sm: 1.7rem;
 .btn-share-sm-facebook,
 .btn-share-facebook {
 	background-color: $col-facebook;
-	border-color:  $col-facebook;
 	color: #fff;
 	&:hover {
 		background-color: darken($col-facebook, 10%);
-		border-color: darken($col-facebook, 10%);
 		color: #fff;
 	}
 }
 .btn-share-sm-twitter,
 .btn-share-twitter {
 	background-color: $col-twitter;
-	border-color: $col-twitter;
+	
 	color: #fff;
 	&:hover {
 		background-color: darken($col-twitter, 10%);
 		color: #fff;
-		border-color: darken($col-twitter, 10%);
 	}
 }
 .btn-share-sm-instagram,
 .btn-share-instagram {
 	background-color: $col-instagram;
-	border-color: $col-instagram;
 	color: #fff;
 	&:hover {
 		background-color: darken($col-instagram, 10%);
 		color: #fff;
-		border-color: darken($col-instagram, 10%);
 	}
 }
 .btn-share-sm-black,
 .btn-share-black {
 	background-color: #222;
-	border-color: #222;
 	color: #fff;
 	&:hover {
 		background-color: darken(#222, 10%);
 		color: #fff;
-		border-color: darken(#222, 10%);
 	}
 }
 
+.btn-share-envelope, 
+.btn-share-print {
+	box-shadow: 0 0 $border-width rgba(0,0,0,.4) inset;
+}
 
 .btn-share-linkedin {
 	background-color: $col-linkedin;
-	 border-color: $col-linkedin;
 	color: #fff;
 	&:hover {
 		background-color: darken($col-linkedin, 10%);
-		border-color: darken($col-linkedin, 10%);
 		color: #fff;
 	}
 }
@@ -1504,9 +1499,9 @@ $longreadPadding: 20rem;
 		font-size: 2.3rem;
 	}
 	[class*="btn-share"] {
-		height: 2rem;
-		width: 2rem;
-		line-height: 2rem;
+		height: 1.8rem;
+		width: 1.8rem;
+		line-height: 1.8rem;
 		font-size: 1rem;
 	}
 
