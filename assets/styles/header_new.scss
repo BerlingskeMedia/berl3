@@ -115,7 +115,7 @@ body {
 [class*="btn-topmenu-"] {
 	
 		padding: .5rem .6rem .5rem;
-		margin: .8rem 0 0 0;
+		margin: .9rem 0 0 0;
 		display: inline-block;
 		border-radius: .2rem;
 		border: transparent solid $border-width;
@@ -345,9 +345,20 @@ ul .mobile-section-title {
 	@extend .font-sans-alt;
 	text-transform: uppercase;
 	font-size: 1.5rem;
+	max-width: 50%;
 	a {
 		color: $col-blue-1!important;
 		text-decoration: none;
+		display: block;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+		padding: 0;
+	}
+	i {
+		font-size: .8rem;
+		vertical-align: middle;
+		line-height: 1.5rem;
 	}
 }
 
@@ -421,7 +432,7 @@ ul .mobile-section-title {
 	}
 }
 @include media-breakpoint-down(sm) {
-
+	
 	.site-header-mobile {
 		.site-logo {
 			font-size: 2rem;
@@ -442,6 +453,14 @@ ul .mobile-section-title {
 	}
 	.site-header-sub .tools-menu-left {
 		position: absolute;
+	}
+
+	.tools-menu-left {
+		left: 0;
+	}
+
+	.tools-menu-right {
+		right: 0;
 	}
 	[class*="tools-menu"],
 	.tpl-front .header-sticky,
@@ -472,9 +491,7 @@ ul .mobile-section-title {
 			z-index: 99;
 			left: .625rem;
 			right: 0;
-			a {
-				padding-left: 0;
-			}
+			
 		}
 		
 		ul:first-child li {
