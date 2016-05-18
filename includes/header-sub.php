@@ -33,6 +33,7 @@
 						</ul>
 					</nav>
 				</div>
+				
 				<div class="col-xs-12 hidden-md-up mobile-menu-sub">
 					<nav>
 						<a href="tpl-frontpage.php" class="site-logo">Berlingske</a>	
@@ -44,6 +45,7 @@
 						</ul>
 					</nav>
 				</div>
+				
 			</div>
 		</div>
 	</div>	

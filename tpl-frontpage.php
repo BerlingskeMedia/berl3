@@ -41,13 +41,7 @@ if(isset($_GET["business"])) {
 
 
 
-<div class="site-search-overlay">
-	<div class="warning">
 
-		<div class="text-center"><p><strong>Av av av</strong></p> <p>Dette website er ikke responsivt endnu - kan endnu kun ses på store skærme :-)</p>
-		</div>
-	</div>	
-</div>
 
 <div class="main-wrapper">
 <?php include('includes/offcanvas-menu.php'); ?>
@@ -58,7 +52,7 @@ if(isset($_GET["business"])) {
 	<?php include('includes/header-front.php'); ?>
 <?php endif; ?>
 
-<?php include('includes/banners.php'); ?>
+<?php // include('includes/banners.php'); ?>
 
 <?php 
 $campaignId = 'campaign-' . mt_rand(1,3);
@@ -69,7 +63,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 
 	<div class="banner-wrapper">
 	<div class="bg-banner"></div>
-	<div class="topbanner demo-banner" style="width: 930px; height: 180px;"></div>
+	<div class="topbanner demo-banner hidden-sm-down" style="width: 930px; height: 180px;"></div>
 	
 	
 
@@ -284,7 +278,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 	
 
 	<div class="row deck ">
-		<div class="text-center banner">
+		<div class="text-center banner hidden-sm-down">
 				<div class="demo-banner" style="width: 930px; height: 180px;"></div>
 		</div>
 	</div><!-- deck -->
@@ -394,7 +388,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 
 
 	<div class="row deck ">
-		<div class="text-center banner">
+		<div class="text-center banner hidden-sm-down">
 				<div class="demo-banner" style="width: 930px; height: 180px;"></div>
 		</div>
 	</div><!-- deck -->

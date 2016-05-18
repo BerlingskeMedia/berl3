@@ -62,7 +62,8 @@ body {
 
 }
 .site-logo {
-	&:hover {
+	&:hover, 
+	&:focus {
 		color: #000;
 		text-decoration: none;
 	}
@@ -226,16 +227,15 @@ body {
 			height: $subheaderHeight;
 		}
 	}
-	[class*="tools-menu"] {
+}
+[class*="tools-menu"] {
+	display: inline-block;
+	height: $headerHeight;
+	position: absolute;
+	top: 0;
+	margin: 0;
+	&> li {
 		display: inline-block;
-		height: $headerHeight;
-		position: absolute;
-		top: 0;
-		margin: 0;
-		&> li {
-			display: inline-block;
-		}
-		
 	}
 }
 
@@ -365,8 +365,19 @@ ul .mobile-section-title {
 	.site-header-sub .tools-menu-left {
 		position: absolute;
 	}
-	.header-sticky {
+	[class*="tools-menu"],
+	.header-sticky,
+	.header-sticky ul {
+		height: $subheaderHeight;
+	}
+	[class*="btn-topmenu"] {
+		padding: .5rem .8rem .4rem;
+		margin: .45rem 0 0 0;
+	}
 
+	.site-header-front .site-logo {
+		font-size: 2rem;
+		line-height: 3rem;
 	}
 	.header-bottom {
 		height: 2.5rem;

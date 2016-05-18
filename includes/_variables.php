@@ -1,4 +1,8 @@
 <?php 
+// Hide php "variable not set"-errors:
+error_reporting( error_reporting() & ~E_NOTICE );
+
+
 if(isset($_GET["wide"])) {
 	$showWide = true;
 } 

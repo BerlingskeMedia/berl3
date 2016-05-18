@@ -3,7 +3,7 @@
 	<div class="header-sticky">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12">
+				<div class="col-xs-12 hidden-sm-down">
 					<nav>
 					<a href="tpl-frontpage.php" class="site-logo">Berlingske</a>
 					
@@ -25,6 +25,17 @@
 						</ul>
 					</nav>
 
+				</div>
+				<div class="col-xs-12 hidden-md-up mobile-menu-sub">
+					<nav>
+						<a href="tpl-frontpage.php" class="site-logo">Berlingske</a>	
+						<ul class="list-reset list-sm tools-menu-left ">
+							<li><a href="#" class="btn-topmenu-menu toggle-offcanvas"><i class="bicon-menu"></i></a></li>
+						</ul>
+						<ul class="list-reset list-sm tools-menu-right ">
+							<li><a href="#" class="btn-topmenu-search"><i class="bicon-search"></i></a></li>
+						</ul>
+					</nav>
 				</div>
 			</div>
 		</div>
