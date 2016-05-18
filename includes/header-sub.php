@@ -1,10 +1,10 @@
 
-<header class="site-header site-header-sub">
+<header class="site-header">
 
 	<div class="header-sticky">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12 hidden-sm-down">
+				<div class="col-xs-12 hidden-sm-down site-header-sub-desktop">
 					<nav>
 						<div class="left-side">
 							<ul class="list-reset list-sm tools-menu-left ">
@@ -23,7 +23,7 @@
 					
 						<ul class="list-reset list-sm tools-menu-right ">
 							<?php if($loggedIn): ?>
-							<li><a href="#" class="btn-topmenu- toggle-user-menu">Bo Skakke <i class="bicon-angle-down"></i></a>
+							<li><a href="#" class="btn-topmenu- toggle-user-menu no-scale">Bo Skakke <i class="bicon-angle-down"></i></a>
 								<?php include('includes/user-menu.php'); ?>
 							</li>
 							<?php else: ?>
@@ -34,7 +34,7 @@
 					</nav>
 				</div>
 				
-				<div class="col-xs-12 hidden-md-up mobile-menu-sub">
+				<div class="col-xs-12 hidden-md-up site-header-mobile">
 					<nav>
 						<a href="tpl-frontpage.php" class="site-logo">Berlingske</a>	
 						<ul class="list-reset list-sm tools-menu-left ">
@@ -45,7 +45,7 @@
 						</ul>
 					</nav>
 				</div>
-				
+
 			</div>
 		</div>
 	</div>	
@@ -63,7 +63,7 @@
 				
 					<div class="col-xs-12 ">
 						<nav class="main-navigation">
-							<ul>
+							<ul class="section-nav">
 								<li class="mobile-section-title"><!-- Show section title - only visible on mobile -->
 									<a href="#" class="toggle-submenu"><? dummy("text@b-cat") ?> <i class="bicon-angle-down"></i></a>
 								</li>
@@ -88,14 +88,19 @@
 								<li><a href="tpl-section.php">Investor</a></li>
 								<?php endif; ?>
 							</ul>
-							<ul class="mobile-user-nav hidden-md-up">
+							
 								<?php if($loggedIn): ?>
-									<li><a href="#" class="toggle-user-menu">Bo Skakke <i class="bicon-angle-down"></i></a>
-									<?php include('includes/user-menu.php'); ?>
+									<ul class="mobile-user-nav hidden-md-up pull-right" style="float: right">
+										<li><a href="#" class="toggle-user-menu">Bo Skakke <i class="bicon-angle-down"></i></a>
+										<?php include('includes/user-menu.php'); ?>
 									</li>
+									</ul>
+
 								<?php else: ?>
-									<li><a href="#">Køb abonnement</a></li>
-									<li><a href="#">Log ind <i class="bicon-user"></i></a></li>
+									<ul class="mobile-user-nav hidden-md-up">
+										<li class="link-subscription"><a href="#">Køb abonnement</a></li>
+										<li class="link-login"><a href="#">Log ind <i class="bicon-user"></i></a></li>
+									</ul>
 								<?php endif; ?>
 							</ul>
 						</nav>			

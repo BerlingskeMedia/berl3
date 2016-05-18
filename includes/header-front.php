@@ -1,9 +1,10 @@
-<header class="site-header site-header-front">
+<header class="site-header">
 
 	<div class="header-sticky">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12 hidden-sm-down">
+				
+				<div class="col-xs-12 hidden-sm-down site-header-front-desktop">
 					<nav>
 					<a href="tpl-frontpage.php" class="site-logo">Berlingske</a>
 					
@@ -15,7 +16,7 @@
 						
 						<ul class="list-reset list-sm tools-menu-right ">
 							<?php if($loggedIn): ?>
-							<li><a href="#" class="btn-topmenu- toggle-user-menu">Bo Skakke <i class="bicon-angle-down"></i></a>
+							<li><a href="#" class="btn-topmenu- toggle-user-menu no-scale">Bo Skakke <i class="bicon-angle-down"></i></a>
 								<?php include('includes/user-menu.php'); ?>
 							</li>
 							<?php else: ?>
@@ -24,9 +25,9 @@
 							<?php endif; ?>
 						</ul>
 					</nav>
-
 				</div>
-				<div class="col-xs-12 hidden-md-up mobile-menu-sub">
+
+				<div class="col-xs-12 hidden-md-up site-header-mobile">
 					<nav>
 						<a href="tpl-frontpage.php" class="site-logo">Berlingske</a>	
 						<ul class="list-reset list-sm tools-menu-left ">
@@ -37,6 +38,7 @@
 						</ul>
 					</nav>
 				</div>
+
 			</div>
 		</div>
 	</div>	
@@ -51,7 +53,7 @@
 				<div class="header-desktop">
 					<div class="col-xs-12 ">
 						<nav class="main-navigation">
-							<ul>
+							<ul class="section-nav">
 								<li class="active"><a href="#"><b class="bicon-home"></b> Forside</a></li>
 								<li><a href="?business">Business</a></li>
 								<li><a href="#">Politiko</a></li>
@@ -65,17 +67,19 @@
 								<li><a href="#">Rejseliv</a></li>
 								<li><a href="#">Sport</a></li>
 							</ul>
-							<ul class="mobile-user-nav hidden-md-up">
-								<?php if($loggedIn): ?>
+							<?php if($loggedIn): ?>
+								<ul class="mobile-user-nav hidden-md-up pull-right">
 									<li><a href="#" class="toggle-user-menu">Bo Skakke <i class="bicon-angle-down"></i></a>
 									<?php include('includes/user-menu.php'); ?>
-									</li>
+								</li>
+								</ul>
 
-								<?php else: ?>
-									<li><a href="#">Køb abonnement</a></li>
-									<li><a href="#">Log ind <i class="bicon-user"></i></a></li>
-								<?php endif; ?>
-							</ul>
+							<?php else: ?>
+								<ul class="mobile-user-nav hidden-md-up">
+									<li class="link-subscription"><a href="#">Køb abonnement</a></li>
+									<li class="link-login"><a href="#">Log ind <i class="bicon-user"></i></a></li>
+								</ul>
+							<?php endif; ?>
 						</nav>			
 					</div>
 				</div>

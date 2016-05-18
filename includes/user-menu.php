@@ -1,10 +1,14 @@
 <div class="user-menu-container">
-	<div class="text-right">
+	
 		<a href="#" class="toggle-user-menu"><i class="bicon-cancel"></i></a>
-		<ul>
-			<li>Bo Skakke</li>
-			<li>Køb abonnement</li>
-			<li>Log ud</li>
+		<ul class="list-user-menu">
+			<li><i class="bicon-user"></i> Bo Skakke</li>
+			<li><a href="#"><i class="bicon-buy"></i> Mine oplysninger</a></li>
+			<li><a href="#"><i class="bicon-buy"></i> Mit Abonnement</a></li>
+			<li><a href="#"><i class="bicon-buy"></i> Mine nyhedsbreve</a></li>
+			<li>
+			<a href="" class="btn btn-block btn-sm btn-gray"><i class="bicon-logout"></i> Log ud</li></a>
+			
 		</ul>
-	</div>
+	
 </div>
