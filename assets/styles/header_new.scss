@@ -503,19 +503,32 @@ body {
 		ul:first-child li {
 			
 			&:not(:first-child) {
-				display: none;
+				/*display: none;*/
+				visibility: hidden;
+				opacity: 0;
+				transition: transform, opacity;
+				transition-duration: .2s;
+				//transform-origin: top center;
+				
 			}
 			a {
 				color: #333;
 			}
 		}
-		ul.show-submenu li:not(:first-child) {
-			display: block!important;
-			background: #000;
-			width: 100%;
-			a {
-				color: #fff;
-				border-bottom: $border-width solid rgba(255,255,255,.5);
+		ul.show-submenu {
+			li:not(:first-child) {
+				display: block!important;
+				background: #000;
+				width: 100%;
+				opacity: 1;
+				visibility: visible;
+				a {
+					color: #fff;
+					border-bottom: $border-width solid rgba(255,255,255,.5);
+				}
+			}
+			.bicon-angle-down:before {
+				transform: rotate(180deg);
 			}
 		}
 	}
