@@ -93,14 +93,25 @@
 		$(this).closest('li').toggleClass('show-usermenu');
 	});
 
+	
+	
+
 	// Show the author signup overlay
+
 	$('.btn-follow-author').click(function(){
-		$('.input-follow-author').focus();
-		$('body').toggleClass('show-author-overlay');
+		// Focus the input field. Only wotks with setTimeout when transition is used aparently
+		var focusAuthor = function(){
+			$('.input-follow-author').focus();
+		};
 		
+		$('body').toggleClass('show-author-overlay');
+		setTimeout(focusAuthor, 500);
 	});
 
-	// Removes the overlay again
+		
+
+
+	// Remove the follow author overlay
 	$('.overlay-author-signup .close-overlay, .overlay-author-signup > a').click(function(e){
 		e.preventDefault();
 		$('body').removeClass('show-author-overlay');
