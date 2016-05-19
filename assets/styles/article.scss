@@ -1624,13 +1624,7 @@ $longreadPadding: 20rem;
 
 @include media-breakpoint-down(sm) {
 	
-	.overlay-author-signup {
-		.form-round-oneliner {
-			input[type="email"] {
-				font-size: 16px;
-			}
-		}
-	}
+	
 
 	[class*="event-header-"] {
 		font-size: .9rem;
