@@ -204,15 +204,12 @@ a:hover {
 }
 .btn-follow-author {
 	line-height: 1;
-	background-color: #eee;
 	margin-left: .2rem;
-	color: rgba(0,0,0,.7);
 	font-size: .65rem!important;
 	margin-top: -$border-width * 2;
-	&:hover {
-		background-color: darken(#aaa, 10%);
-		color: #fff;
-	}
+	padding: 0.2rem .625rem .1rem;
+	height: auto;
+	
 }
 
 .btn-unfollow-author {
@@ -1627,6 +1624,13 @@ $longreadPadding: 20rem;
 
 @include media-breakpoint-down(sm) {
 	
+	.overlay-author-signup {
+		.form-round-oneliner {
+			input[type="email"] {
+				font-size: 16px;
+			}
+		}
+	}
 
 	[class*="event-header-"] {
 		font-size: .9rem;

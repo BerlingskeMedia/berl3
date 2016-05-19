@@ -52,9 +52,7 @@
 		
 	<?php // include('includes/oneliners-php') ?>
 			
-	<?php if(!$templateLongread): ?>
-		<?php include('includes/marketing-header.php'); ?>
-	<?php endif; ?>
+	
 	
 	<?php if(!$templateLongread): ?>
 	<div class="header-bottom">
@@ -110,6 +108,10 @@
 			</div>
 		</div>	
 	</div>
+<?php endif; ?>
+
+<?php if(!$templateLongread): ?>
+	<?php include('includes/marketing-header.php'); ?>
 <?php endif; ?>
 
 </header>

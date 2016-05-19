@@ -104,6 +104,9 @@ if(isset($_GET["business"])) {
 	.green a:hover {
 		background-color: rgba(0,166,81,.3);
 	}
+	.strike a {
+		text-decoration: line-through;
+	}
 </style>
 
 
@@ -212,10 +215,10 @@ if(isset($_GET["business"])) {
 					<div class="col-md-9">
 						<ul>
 							<li class="orange"><a href="tpl-article.php?showTrumpet">Trumpet</a></li>
-							<li class="orange"><a href="tpl-article.php?blog">Blog</a></li>
-							<li class="orange"><a href="tpl-article.php?essay">Kronikken</a></li>
-							<li class="orange"><a href="tpl-article.php?editorial">Editorial</a></li>
-							<li class="orange"><a href="tpl-article.php?showRating">Rating</a> (<a href="tpl-article.php?showRating&amp;blog">Blog template</a>)</li>
+							<li class="orange strike"><a href="tpl-article.php?blog">Blog</a></li>
+							<li class="orange strike"><a href="tpl-article.php?essay">Kronikken</a></li>
+							<li class="orange strike"><a href="tpl-article.php?editorial">Editorial</a></li>
+							<li class="orange"><a href="tpl-article.php?showRating">Rating</a></li>
 						</ul>
 					</div>
 
@@ -229,10 +232,10 @@ if(isset($_GET["business"])) {
 						<li class="orange"><a href="tpl-article.php?showQuote">Quote</a></li>
 						<li class="orange"><a href="tpl-article.php?showFactDefault">Factbox - Default</a></li>
 						<li class="orange"><a href="tpl-article.php?showFactEmbedded">Factbox - Embedded</a></li>
-						<li class="orange"><a href="tpl-article.php?showTheme">Theme</a></li>
-						<li class="orange"><a href="tpl-article.php?showTimeline">Timeline</a></li>
+						<li class="orange strike"><a href="tpl-article.php?showTheme">Theme</a></li>
+						<li class="orange strike"><a href="tpl-article.php?showTimeline">Timeline</a></li>
 						<li class="orange"><a href="tpl-article.php?showLink">Embedded links</a></li>
-						<li class="orange"><a href="tpl-article.php?showGallery">Embedded gallery</a></li>
+						<li class="orange strike"><a href="tpl-article.php?showGallery">Embedded gallery</a></li>
 					</ul>
 					</div>
 
@@ -286,8 +289,8 @@ if(isset($_GET["business"])) {
 								<li class="orange"><a href="tpl-article-longread.php?showQuote">Quote</a></li>	
 								<li class="orange"><a href="tpl-article-longread.php?showFactDefault">Factbox - Default</a></li>
 								<li class="orange"><a href="tpl-article-longread.php?showFactEmbedded">Factbox - Embedded</a></li>
-								<li class="orange"><a href="tpl-article-longread.php?showTheme">Theme</a></li>
-								<li class="orange"><a href="tpl-article-longread.php?showTimeline">Timeline</a></li>
+								<li class="orange strike"><a href="tpl-article-longread.php?showTheme">Theme</a></li>
+								<li class="orange strike"><a href="tpl-article-longread.php?showTimeline">Timeline</a></li>
 								<li class="orange"><a href="tpl-article-longread.php?showLink">Embedded links</a></li>	
 							</ul>
 							

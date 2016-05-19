@@ -44,8 +44,6 @@
 	</div>	
 		
 	<?php // include('includes/oneliners-php') ?>
-			
-	<?php include('includes/marketing-header.php'); ?>
 
 	<div class="header-bottom">
 		<div class="container">
@@ -85,6 +83,8 @@
 			</div>
 		</div>	
 	</div>
+
+	<?php include('includes/marketing-header.php'); ?>
 
 </header>
 
