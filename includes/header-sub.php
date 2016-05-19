@@ -68,7 +68,7 @@
 									<a href="#" class="toggle-submenu"><? dummy("text@b-cat") ?> <i class="bicon-angle-down"></i></a>
 								</li>
 							<?php if(!$siteBusiness): ?>
-								<li class="main-section-link hidden-md-up"><a href="tpl-section.php">Gå til <? dummy("text@b-cat") ?></a></li>
+								<li class="main-section-link hidden-md-up"><a href="tpl-section.php">Gå til <? dummy("text@b-cat") ?></a><a class="toggle-submenu close-icon"><i class="bicon-cancel"></i></a></li>
 								<li><a href="tpl-section.php">Anmeldelser</a></li>
 								<li><a href="tpl-section.php">Vi anbefaler</a></li>
 								<li><a href="tpl-section.php">Musik</a></li>
@@ -80,7 +80,7 @@
 								<li><a href="tpl-section.php">Satiren</a></li>
 								<li><a href="tpl-section.php">TV</a></li>
 								<?php else: ?>
-								<li class="main-section"><a href="tpl-section.php"><? dummy("text@b-cat") ?></a></li>
+								<li class="main-section"><a href="tpl-section.php">Gå til <? dummy("text@b-cat") ?></a></li>
 								<li><a href="tpl-section.php">Investor</a></li>
 								<li><a href="tpl-section.php">Virksomheder</a></li>
 								<li class="active"><a href="tpl-section.php">Privatøkonomi</a></li>
