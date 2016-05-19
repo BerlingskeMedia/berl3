@@ -27,7 +27,7 @@
 			<h1>Byline documentation</h1>
 			<p>Add class .follow-author-ok to form tag to show thank you message. Click on the blue Følg-button and see code examples</p>
 
-			<p><a href="#" class="btn btn-gray  testenhest" style="z-index:999999; position:relative">Toggle ".follow-author-ok"-class</a> <a href="#" class="btn btn-gray testenhest2" style="z-index:999999; position:relative">Toggle ewrror message</a></p>
+			<p><a href="#" class="btn btn-gray  testenhest" style="z-index:999999; position:relative">Toggle ".follow-author-ok"-class</a> <a href="#" class="btn btn-gray testenhest2" style="z-index:999999; position:relative">Toggle error message</a></p>
 			<p>Is it possible to remove the overlay efter 2 seconds after the user succesfully fills out the form?</p>
 			<?php include('includes/article/byline.php'); ?>
 		</div>
