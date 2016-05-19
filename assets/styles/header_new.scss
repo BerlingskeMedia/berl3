@@ -285,7 +285,7 @@ body {
 	display: inline-block;
 	position: relative;
 	z-index: 100;
-	max-width: 40%;
+	max-width: 50%;
 	li {
 		float: left;
 		margin: 0;
@@ -571,7 +571,7 @@ body {
 			@extend .font-sans-alt;
 			text-transform: uppercase;
 			font-size: 1.5rem;
-			max-width: 60%;
+			max-width: 50%;
 			line-height: 1.4;
 
 			a {
