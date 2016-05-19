@@ -93,6 +93,19 @@
 		$(this).closest('li').toggleClass('show-usermenu');
 	});
 
+	// Show the author signup overlay
+	$('.btn-follow-author').click(function(){
+		$('.input-follow-author').focus();
+		$('body').toggleClass('show-author-overlay');
+		
+	});
+
+	// Removes the overlay again
+	$('.overlay-author-signup .close-overlay, .overlay-author-signup > a').click(function(e){
+		e.preventDefault();
+		$('body').removeClass('show-author-overlay');
+	});
+
 
 })(jQuery); 
 

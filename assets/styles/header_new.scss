@@ -120,30 +120,7 @@ body {
 	border: transparent solid $border-width;
 	color: #222;
 }
-.btn-topmenu-login {
-	background: $col-blue-1;
-	color: #fff;
-	border-color: transparent;
-	i:before {
-		margin-right: .35rem;
-		margin-top: .1rem;
-	}
-	&:hover {
-		background: darken($col-blue-1, 5%);
-		color: #fff;
-		border-color: darken($col-blue-1, 10%);
-		box-shadow: 0 3px 2px 0 rgba(0,0,0,0.1), inset -1px -1px 1px 0 rgba(0,0,0,0.09);
-	}
-	&:active {
-		border-color: darken($col-blue-1, 10%);
-		box-shadow: 0 3px 2px 0 rgba(0,0,0,0.1) inset;
 
-	}
-	&:active, 
-	&:focus {
-		color: #fff;
-	}
-}
 .tools-menu-left {
 	left: .625rem;
 }
@@ -308,7 +285,7 @@ body {
 	display: inline-block;
 	position: relative;
 	z-index: 100;
-	max-width: 50%;
+	max-width: 40%;
 	li {
 		float: left;
 		margin: 0;
@@ -327,11 +304,10 @@ body {
 		overflow: hidden;
 		white-space: nowrap;
 		max-width: 150px;
-		padding-right: 10px;
+		padding-right: .7rem;
 		&:after {
-			content: '\e803';
+			content: '\e822';
 			font-family: b-icons;
-		
 		
 			position: absolute;
 			top: 0;
@@ -370,9 +346,13 @@ body {
 		color: #999;
 		font-size: 1rem;
 		position: absolute;
-		top: 0rem;
+		top: .6rem;
 		right: .6rem;
 		font-size: .7rem;
+		line-height: 1;
+		&:hover {
+			color: $col-blue-1;
+		}
 	}
 }
 
@@ -433,6 +413,30 @@ body {
 		&:focus{
 			color: #000;
 			text-decoration: none;
+		}
+	}
+	.btn-topmenu-login {
+		background: $col-blue-1;
+		color: #fff;
+		border-color: transparent;
+		i:before {
+			margin-right: .35rem;
+			margin-top: .1rem;
+		}
+		&:hover {
+			background: darken($col-blue-1, 5%);
+			color: #fff;
+			border-color: darken($col-blue-1, 10%);
+			box-shadow: 0 3px 2px 0 rgba(0,0,0,0.1), inset -1px -1px 1px 0 rgba(0,0,0,0.09);
+		}
+		&:active {
+			border-color: darken($col-blue-1, 10%);
+			box-shadow: 0 3px 2px 0 rgba(0,0,0,0.1) inset;
+
+		}
+		&:active, 
+		&:focus {
+			color: #fff;
 		}
 	}
 }
@@ -497,18 +501,13 @@ body {
 			z-index: 99;
 			right: 0;
 			left: 0;
-			
 		}
-		
 		ul:first-child li {
-			
 			&:not(:first-child) {
-				/*display: none;*/
 				visibility: hidden;
 				opacity: 0;
 				transition: transform, opacity;
 				transition-duration: .2s;
-				//transform-origin: top center;
 				
 			}
 			a {
@@ -516,21 +515,53 @@ body {
 			}
 		}
 		ul.show-submenu {
+
 			li:not(:first-child) {
 				display: block!important;
-				background: #000;
+				background: #f9f9f9;
 				width: 100%;
 				opacity: 1;
 				visibility: visible;
+				font-size: .9rem;
+				@extend .font-g1;
+				&.active {
+					a {
+						color: $col-blue-1;
+					}
+				}
 				a {
-					color: #fff;
-					border-bottom: $border-width solid rgba(255,255,255,.5);
+					color: #333;
+					padding-top: .4rem;
+					padding-bottom: .4rem;
+					border-bottom: $border-width solid $border-color;
+					&:before {
+						font-family: b-icons;
+						content: '\e801';
+						margin-right: .5rem;
+						color: #999;
+					}
+				}
+
+				&:nth-child(2) {
+					
+					font-weight: 600;
+					a {
+						background-color: darken(#f9f9f9, 5%);
+						&:before {
+							content: '\e800';
+						}			
+					}
+			
+		
 				}
 			}
+
+
 			.bicon-angle-down:before {
 				transform: rotate(180deg);
 			}
 		}
+
 	}
 	.section-nav {
 		a {
@@ -540,7 +571,7 @@ body {
 			@extend .font-sans-alt;
 			text-transform: uppercase;
 			font-size: 1.5rem;
-			max-width: 48%;
+			max-width: 60%;
 			line-height: 1.4;
 
 			a {
