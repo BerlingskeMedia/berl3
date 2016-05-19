@@ -1447,8 +1447,6 @@ $longreadPadding: 20rem;
 }	
 
 .show-author-overlay {
-	
-	/*overflow: hidden;*/
 	.overlay-author-signup {
 		opacity: 1;
 		visibility: visible;
@@ -1623,8 +1621,10 @@ $longreadPadding: 20rem;
 
 
 @include media-breakpoint-down(sm) {
-	
-	
+
+	.show-author-overlay { 
+		overflow: hidden;
+	}
 
 	[class*="event-header-"] {
 		font-size: .9rem;
