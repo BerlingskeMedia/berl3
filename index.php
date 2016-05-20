@@ -468,7 +468,7 @@ if(isset($_GET["business"])) {
 				<div class="col-md-9">
 					<ul>
 						<li class="green"><a href="doc-list.php">Lists</a></li>
-						<li class="green"><a href="doc-follow-author.php">Follow author</a></li>
+						<li class="green"><a href="doc-forms.php">Form messages</a></li>
 						
 					</ul>
 				</div>

@@ -1187,28 +1187,47 @@ $sharebutton-sm: 1.7rem;
 	}
 }
 .article-newsletter-embedded {
-	
+	position: relative;
+	overflow: hidden;
 	@extend .article-off-grid;
-	
 	&:before {
 		display: none;
-	};
+	}
 	clear: right;
-	
-	
 	label {
 		@extend .clearfix;
 		display: block;
-		
 		@extend .font-s2;
-		color: rgba(0,0,0,.5);
+		color: rgba(0,0,0,.8);
 	}
 	
 	small {
 		font-size: .8rem;
-		
 		color: rgba(0,0,0,.5);
 	}
+	.message {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 10;
+		background-color: $background-color;
+		text-align: center;
+		opacity: 0;
+		transform: translateX(50%);
+		transition: all .2s ease;
+		visibility: hidden;
+	}
+}
+.form-ok .message {
+	opacity: 1;
+	transform: translateY(0);
+	visibility: visible;
+}
+
+.newsletter-breaking {
+	background-color: $col-breaking;
 }
 
 .article-newsletter {
@@ -1410,7 +1429,7 @@ $longreadPadding: 20rem;
 		position: relative;
 		&:after {
 			position: absolute;
-			background-color: #c5de9e;
+			background-color: $brand-success;
 			top: 0;
 			bottom: 0;
 			left: 0;

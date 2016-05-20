@@ -10,7 +10,7 @@
 		
 	// Newsletter fold out breaking option
 	$('.newsletter-email').focus(function(){
-		$(this).closest('form').find('.hidden').slideDown('fast');
+		$(this).closest('form').find('.form-options').slideDown('fast');
 	});
 	
 	
@@ -99,7 +99,7 @@
 	// Show the author signup overlay
 
 	$('.btn-follow-author').click(function(){
-		// Focus the input field. Only wotks with setTimeout when transition is used aparently
+		// Focus the input field. Only works with setTimeout when transition is used 
 		var focusAuthor = function(){
 			$('.input-follow-author').focus();
 		};

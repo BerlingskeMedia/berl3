@@ -94,6 +94,13 @@ fieldset[disabled] a.btn {
   }
 }
 
+.btn-black {
+  @include button-variant(#fff, #000, #000 );
+  &:hover { 
+    background-color: #000;
+  }
+}
+
 .btn-gray {
   @include button-variant(#333, rgba(0,0,0,.1), rgba(0,0,0,.01) );
   &:hover {
