@@ -404,7 +404,7 @@ body {
 .site-search {
 	height: $subheaderHeight + 2.2rem;
 	background-color: $background-color;
-	transform: translateY(0);
+	transform: translateY(-100%);
 	transition: all .2s ease;
 	position: relative;
 	padding-top: .4rem;
@@ -435,7 +435,7 @@ body {
 		top: 0;
 		bottom: 0;
 		font-size: 2rem;
-		color: $col-blue-1;
+		color: #000;
 	}
 	.toggle-search {
 		position: absolute;
@@ -451,7 +451,7 @@ body {
 	}
 }
 .show-search .site-search {
-	transform: translateY(-100%);
+	transform: translateY(0);
 }
 @include media-breakpoint-up(md) {
 	.site-header-sub .tools-menu-left {
