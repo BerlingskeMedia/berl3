@@ -18,22 +18,25 @@
 			</div>
 			<div class="msg-error hidden"><i class="bicon-angle-up"></i> Du skal indtaste en email adresse</div>
 			<div class="hidden form-options">
-				<div class="checkbox checkbox-styled mb-05">
-					<label>
-						<input type="checkbox" class="" checked > <span>Berlingske Morgen</span>
-					</label>
-				</div>
-				<div class="checkbox checkbox-styled mb-05">
-				<label>
-					<input type="checkbox" class="" checked > <span>Berlingske Eftermiddag</span>
-				</label>
-				</div>
-
+				
 				<div class="checkbox checkbox-styled mb-05">
 					<label>
 						<input type="checkbox" class="" checked > <span>Breaking News</span>
 					</label>
 				</div>	
+
+				<div class="checkbox checkbox-styled mb-05">
+					<label>
+						<input type="checkbox" class=""  > <span>Berlingske Morgen</span>
+					</label>
+				</div>
+				<div class="checkbox checkbox-styled mb-05">
+				<label>
+					<input type="checkbox" class=""  > <span>Berlingske Eftermiddag</span>
+				</label>
+				</div>
+
+				
 			</div>
 		</form>	
 	</aside>

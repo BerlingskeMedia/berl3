@@ -4,7 +4,7 @@
 
 
 <?php 
-	$hideComments = true;
+	$hideComments = false;
 ?>
 <!DOCTYPE html>
 <html lang="da">
@@ -47,13 +47,24 @@
 						
 						<?php include('includes/article/header.php'); ?>
 
-						<div class="col-1-content">
+						<div class="article-large-content">
 
 							<div class="article-content">
+
+								<?php include('includes/article/byline.php') ?>
+								
 								<div class="article-body">
 									<img src="/dist/images/demo/infografik.jpg" width="" height="" alt="" />
+									
+									<?php include('includes/article/related.php'); ?>
+									
+									<?php include('includes/article/topics.php'); ?>
+									
 								</div><!-- article body -->
 								
+								
+								
+
 								<div class="article-bottom text-center ">
 									<?php include('includes/article-embeds/share-buttons-large.php'); ?>
 								</div>
@@ -64,21 +75,31 @@
 				</div><!-- row -->
 
 				
-				<?php include('includes/article/footer.php'); ?>
+				
 
-			</div>
+		<?php include('includes/article/footer.php'); ?>
 
-		</div><!-- banner-wrapper -->
-	</div><!-- canvas main -->
+		<?php include('includes/article/comments.php'); ?>
+	</div>		
+		
+		
+		
+		
+
+	</div><!-- container -->
+
+</div><!-- banner-wrapper -->
+
 </div><!-- main-wrapper -->
 
 <?php // include('includes/consumersales-row.php'); ?>
 
 <?php include('includes/footer.php'); ?>
 
+<?php include('includes/article/author-signup.php'); ?>
 
 
-
+<script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
 <script src="/dist/scripts/main.js"></script>
 
 <script>

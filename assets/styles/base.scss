@@ -349,7 +349,7 @@ $col-deck-label-width: 160px;
 
 @include media-breakpoint-only(md) {
 	.article-footer,
-	/*.article-header,*/
+	.article-large-content,
 	.col-1-content {
 		max-width: 41.250rem;
 		margin-left: auto;
@@ -364,10 +364,8 @@ $col-deck-label-width: 160px;
 		min-height: 1px;
 	}
 }
-.tpl-article-large .col-1-content {
+.article-large-content {
 	width: 100%;
-	padding-left: 0;
-
 }
 
 .col-2-sidebar {

@@ -1055,11 +1055,9 @@ $sharebutton-sm: 1.7rem;
 }
 
 .article-topics {
-	/*padding: $spacer 0;
-	border-top: $border-width solid $border-color;*/
 	@extend .border-top;
+	max-width: 41.25rem;
 	padding-top: 1rem;
-	// margin-left: -($col-1-width / 2);
 	font-size: .75rem;
 	@extend .font-s2;
 	clear: left;
@@ -1123,6 +1121,8 @@ $sharebutton-sm: 1.7rem;
 }
 .article-related {
 	@extend .border-top;
+	margin-top: $spacer;
+	max-width: 41.25rem;
 	padding-top: .625rem;
 	@extend .mb;
 	clear: both;
