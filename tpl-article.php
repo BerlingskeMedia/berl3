@@ -17,7 +17,7 @@
 	<link rel="stylesheet" href="/dist/styles/main.css">
 	
 </head>
-<body class=" <?php if($siteBusiness): ?>site-business<?php endif; ?> show-site-search tpl-article">
+<body class=" <?php if($siteBusiness): ?>site-business<?php endif; ?> tpl-article">
 
 <?php include('includes/facebook.php'); ?>
 

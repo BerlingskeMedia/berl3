@@ -117,6 +117,12 @@
 		$('body').removeClass('show-author-overlay');
 	});
 
+	$('.toggle-search').click(function(e){
+		e.preventDefault();
+		$('body').toggleClass('show-search');
+		$('#site-search').focus();
+	});
+
 
 })(jQuery); 
 

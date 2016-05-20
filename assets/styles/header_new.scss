@@ -50,7 +50,6 @@ body {
 	height: $subheaderHeight;
 	text-align: center;
 	z-index: 9999;
-	border-bottom: $border-width solid $border-color;
 	 [class*="btn-topmenu"] > i:before {
 		transform: scale(1.6);
 	}
@@ -121,6 +120,13 @@ body {
 	color: #222;
 }
 
+.link-topmenu-cookies {
+	color: #999;
+	margin-right: .625rem;
+	padding-left: $spacer;
+	background: url(/dist/images/cookies.png) left center no-repeat;
+	background-size: 13px;
+}
 .tools-menu-left {
 	left: .625rem;
 }
@@ -389,7 +395,64 @@ body {
 	}
 	
 }
-
+.sticky-inner {
+	background-color: $background-color; 
+	border-bottom: $border-width solid $border-color;
+	z-index: 10;
+	position: relative;
+}
+.site-search {
+	height: $subheaderHeight + 2.2rem;
+	background-color: $background-color;
+	transform: translateY(0);
+	transition: all .2s ease;
+	position: relative;
+	padding-top: .4rem;
+	text-align: right;
+	border-bottom: $border-color solid $border-width;
+	form {
+		position: relative;
+		margin: .5rem 0 0 auto;
+		width: calc(100% - 4.5rem);
+		text-align: left;
+	}
+	input[type="search"] {
+		border: 0;
+		color: #222;
+		border-bottom: .2rem solid rgba(0,0,0,.2);
+		padding-top: .2rem;
+		height: 3.1rem;
+		font-size: 1.6rem;
+		width: calc(100% - 5rem);
+		background-color: transparent;
+		&:focus {
+			outline: 0;
+		}
+	}
+	.btn {
+		position: absolute;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		font-size: 2rem;
+		color: $col-blue-1;
+	}
+	.toggle-search {
+		position: absolute;
+		left: .625rem;
+		top: 0;
+		display: inline-block;
+		padding: 1rem 1rem;
+		font-size: 2rem;
+		color: #999;
+		&:hover {
+			color: $col-blue-1;
+		}
+	}
+}
+.show-search .site-search {
+	transform: translateY(-100%);
+}
 @include media-breakpoint-up(md) {
 	.site-header-sub .tools-menu-left {
 		position: relative;

@@ -1,46 +1,54 @@
 <header class="site-header">
 
 	<div class="header-sticky">
-		<div class="container">
-			<div class="row">
-				
-				<div class="col-xs-12 hidden-sm-down site-header-front-desktop">
-					<nav>
-					<a href="tpl-frontpage.php" class="site-logo">Berlingske</a>
+		<div class="sticky-inner">
+			<div class="container">
+				<div class="row">
 					
-					
-						<ul class="list-reset list-sm tools-menu-left ">
-							<li><a href="#" class="btn-topmenu-menu toggle-offcanvas"><i class="bicon-menu"></i> Indhold</a></li>
-							<li><a href="#" class="btn-topmenu-search"><i class="bicon-search"></i> Søg</a></li>
-						</ul>
+					<div class="col-xs-12 hidden-sm-down site-header-front-desktop">
+						<nav>
+						<a href="tpl-frontpage.php" class="site-logo">Berlingske</a>
 						
-						<ul class="list-reset list-sm tools-menu-right ">
-							<?php if($loggedIn): ?>
-							<li><a href="#" class="btn-topmenu- toggle-user-menu no-scale">Bo Skakke <i class="bicon-cog"></i></a>
-								<?php include('includes/user-menu.php'); ?>
-							</li>
-							<?php else: ?>
-								<li><a href="/" class="btn-topmenu-subscription"> Køb abonnement</a></li>
-								<li><a href="/" class="btn-topmenu-login"><i class="bicon-user"></i> Log ind</a></li>							
-							<?php endif; ?>
-						</ul>
-					</nav>
-				</div>
+						
+							<ul class="list-reset list-sm tools-menu-left ">
+								<li><a href="#" class="btn-topmenu-menu toggle-offcanvas"><i class="bicon-menu"></i> Indhold</a></li>
+								<li><a href="#" class="btn-topmenu-search toggle-search"><i class="bicon-search"></i> Søg</a></li>
 
-				<div class="col-xs-12 hidden-md-up site-header-mobile">
-					<nav>
-						<a href="tpl-frontpage.php" class="site-logo">Berlingske</a>	
-						<ul class="list-reset list-sm tools-menu-left ">
-							<li><a href="#" class="btn-topmenu-menu toggle-offcanvas"><i class="bicon-menu"></i></a></li>
-						</ul>
-						<ul class="list-reset list-sm tools-menu-right ">
-							<li><a href="#" class="btn-topmenu-search"><i class="bicon-search"></i></a></li>
-						</ul>
-					</nav>
-				</div>
+							</ul>
+							
+							<ul class="list-reset list-sm tools-menu-right ">
+								<?php if($loggedIn): ?>
+								<li><a href="#" class="btn-topmenu- toggle-user-menu no-scale">Bo Skakke <i class="bicon-cog"></i></a>
+									<?php include('includes/user-menu.php'); ?>
+								</li>
+								<?php else: ?>
+									<li><a href="#" class="link-topmenu-cookies hidden-md-down">Privatlivspolitik</a></li>
+									<li><a href="/" class="btn-topmenu-subscription"> Køb abonnement</a></li>
+									<li><a href="/" class="btn-topmenu-login"><i class="bicon-user"></i> Log ind</a></li>							
+								<?php endif; ?>
+							</ul>
+						</nav>
+					</div>
 
+					<div class="col-xs-12 hidden-md-up site-header-mobile">
+						<nav>
+							<a href="tpl-frontpage.php" class="site-logo">Berlingske</a>	
+							<ul class="list-reset list-sm tools-menu-left ">
+								<li><a href="#" class="btn-topmenu-menu toggle-offcanvas"><i class="bicon-menu"></i></a></li>
+							</ul>
+							<ul class="list-reset list-sm tools-menu-right ">
+								<li><a href="#" class="btn-topmenu-search toggle-search"><i class="bicon-search"></i></a></li>
+							</ul>
+						</nav>
+					</div>
+
+					
+					
+
+				</div>
 			</div>
 		</div>
+		<?php include('includes/search.php'); ?>
 	</div>	
 		
 	<?php // include('includes/oneliners-php') ?>

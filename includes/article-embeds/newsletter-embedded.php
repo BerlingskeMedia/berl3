@@ -39,6 +39,8 @@
 				
 			</div>
 		</form>	
+
+		<p class="text-center">Breaking på sms: Send <strong>berlingske break</strong> til 1929</p>
 	</aside>
 
 <?php else: ?>

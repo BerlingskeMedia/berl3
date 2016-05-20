@@ -34,7 +34,7 @@ if(isset($_GET["business"])) {
 	<title>Berlingske - Front</title>
 	<link rel="stylesheet" href="/dist/styles/main.css">
 </head>
-<body class="tpl-front <?php if($siteBusiness): ?>site-business<?php endif; ?> show-site-search">
+<body class="tpl-front <?php if($siteBusiness): ?>site-business<?php endif; ?>">
 
 
 
