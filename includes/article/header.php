@@ -48,6 +48,6 @@
 		
 </header>
 
-<?php include('includes/banners/topbanner.php'); ?>
-<?php include('includes/banners/ipad-banner.php'); ?>
+<?php // include('includes/banners/topbanner.php'); ?>
+<?php // include('includes/banners/ipad-banner.php'); ?>
 

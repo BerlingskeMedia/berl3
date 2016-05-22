@@ -34,4 +34,9 @@
 
 
 
+<? while (dumb_luck("3")): ?>
+<p><? dummy("text@paragraph") ?></p>
+<? endwhile ?>
+
+
 <?php endif; ?>

@@ -27,12 +27,12 @@
 
 				<div class="checkbox checkbox-styled mb-05">
 					<label>
-						<input type="checkbox" class=""  > <span>Berlingske Morgen</span>
+						<input type="checkbox" class=""  checked> <span>Berlingske Morgen</span>
 					</label>
 				</div>
 				<div class="checkbox checkbox-styled mb-05">
 				<label>
-					<input type="checkbox" class=""  > <span>Berlingske Eftermiddag</span>
+					<input type="checkbox" class=""  checked> <span>Berlingske Eftermiddag</span>
 				</label>
 				</div>
 

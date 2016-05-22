@@ -49,23 +49,21 @@ $templateLongread = true;
 
 	
 	<style>
-	/* Default background */
-	.longread-head {
-		background-image: url(<? dummy("image/!longread@1300x,5:3") ?>);
+	/* iPad default */
+	.longread-head-image {
+			background-image: url(<? dummy("image/!longread@1300x,5:3") ?>);
 	}
+	
 	/* Large displays */
 	@media (min-width: 1600px) {
-		.longread-head {
+		.longread-head-image {
 			background-image: url(<? dummy("image/!longread@2200x,5:3") ?>);
 		}
 	}
-	/* iPad portrait */
-	.longread-head-mobile {
-			background-image: url(<? dummy("image/!longread@1300x,5:3") ?>);
-	}
+	
 	/* Phones */
 	@media (max-width: 768px) {
-		.longread-head-mobile {
+		.longread-head-image {
 			background-image: url(<? dummy("image/!longread@1000x,5:3") ?>);
 		}	
 	}
@@ -74,7 +72,7 @@ $templateLongread = true;
 	<header class="longread-head">
 		
 		<div class="longread-head-inner">
-			<div class="longread-head-mobile">
+			<div class="longread-head-image">
 				<div class="longread-wrapper">
 					<div class="header-container">
 						<h1 class="article-title">
@@ -89,9 +87,7 @@ $templateLongread = true;
 			</div>
 			<div class="longread-wrapper longread-wrapper-summary">
 				<div class="header-container">
-					<div class="">
 						<p class="article-summary"><? dummy("text@teaser") ?></p>
-					</div>
 				</div>
 			</div>
 		</div>

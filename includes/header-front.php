@@ -22,7 +22,7 @@
 									<?php include('includes/user-menu.php'); ?>
 								</li>
 								<?php else: ?>
-									<li><a href="#" class="link-topmenu-cookies hidden-md-down">Privatlivspolitik</a></li>
+									<li><a href="#" class="link-topmenu-cookies hidden-md-down"></a></li>
 									<li><a href="/" class="btn-topmenu-subscription"> Køb abonnement</a></li>
 									<li><a href="/" class="btn-topmenu-login"><i class="bicon-user"></i> Log ind</a></li>							
 								<?php endif; ?>

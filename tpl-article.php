@@ -105,6 +105,7 @@
 							
 							<p><? dummy("text@paragraph") ?></p>
 							
+							<div class="demo-banner hidden-sm-down" style="width: 300px; height: 250px; margin: 1rem -8rem 1rem 1rem; float: right; clear:right"></div>
 							
 
 							<?php if($showPaywall): ?>
