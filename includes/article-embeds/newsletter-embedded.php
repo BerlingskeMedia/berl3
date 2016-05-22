@@ -39,8 +39,8 @@
 				
 			</div>
 		</form>	
-
-		<p class="text-center">Breaking på sms: Send <strong>berlingske break</strong> til 1929</p>
+		<div class="aside-header-sm mt pt mb-05  border-top">Breaking på SMS</div>
+		<small>Send <strong>Berlingske break</strong> til 1929</small>
 	</aside>
 
 <?php else: ?>
@@ -55,7 +55,7 @@
 	</div>
 	
 	<div class="aside-header-sm mb-0">Berlingske Nyhedsbrev</div>
-	<p class="font-s2 mb-05"><small >Udkommer hver morgen!</small></p>
+	<p class="mb-05"><small >Udkommer hver morgen!</small></p>
 	<form action="" class="form-embedded-newsletter form-round-oneliner">
 		<div class="clearfix">
 			<!-- the class .newsletter-email is uded by js to slide down breaking cheackbox-->

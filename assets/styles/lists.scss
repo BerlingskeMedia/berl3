@@ -63,6 +63,9 @@
 		}
 	}
 }
+ul + .list-fade {
+	margin-top: -1.1rem;
+}
 .list-fade,
 .list-footer {
 	@extend .toggle-loadmore-fade;

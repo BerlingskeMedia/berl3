@@ -1230,6 +1230,9 @@ $sharebutton-sm: 1.7rem;
 
 .newsletter-breaking {
 	background-color: $col-breaking;
+	small {
+		color: #222;
+	}
 }
 
 .article-newsletter {
@@ -1505,17 +1508,16 @@ $longreadPadding: 20rem;
 			margin-top: .3rem;
 		}
 	}
+	.article-image {
+		margin-left: -$col-1-width / 2;
+	}
+	.article-off-grid,
 	.article-partner {
 		margin-right: -$col-1-width / 2;
 	}
-	/*.article-header {
-		padding-left: $col-1-width / 2;
-		padding-right: $col-1-width / 2;
-	}*/
 	
-	.article-off-grid {
-		margin-right: -$col-1-width / 2;
-	}
+	
+	
 }
 @include media-breakpoint-up(lg) {
 	.article-header {

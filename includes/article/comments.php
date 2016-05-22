@@ -14,7 +14,8 @@
 			<div class="col-2-sidebar">
 				<div class="stickem-container-ex2 mb-1 hidden-md-down" style="height: 700px;">	
 					<div class="sticky-ex2">	
-						<div class="demo-banner" style="height: 250px; width: 300px;"></div>
+						<div class="demo-banner mb" style="height: 250px; width: 300px;"></div>
+						<div class="demo-banner" style="height: 250px; width: 300px;">Advertorial</div>
 					</div>
 				</div>
 			</div>
