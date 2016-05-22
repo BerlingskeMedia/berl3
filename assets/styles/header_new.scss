@@ -506,7 +506,7 @@ body {
 @include media-breakpoint-down(sm) {
 	
 	.site-search {
-		height: $subheaderHeight + 2.2rem;
+		height: $subheaderHeight + 1.6rem;
 		padding-top: .4rem;
 		form {
 			position: relative;
