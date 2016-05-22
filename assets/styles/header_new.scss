@@ -443,7 +443,7 @@ body {
 		top: 0;
 		display: inline-block;
 		padding: 1rem 1rem;
-		font-size: 2rem;
+		font-size: 1.5rem;
 		color: #999;
 		&:hover {
 			color: $col-blue-1;
@@ -505,6 +505,33 @@ body {
 }
 @include media-breakpoint-down(sm) {
 	
+	.site-search {
+		height: $subheaderHeight + 2.2rem;
+		padding-top: .4rem;
+		form {
+			position: relative;
+			margin: .5rem auto 0 0;
+			width: calc(100% - 3rem);
+			text-align: left;
+		}
+		input[type="search"] {
+			font-size: 16px;
+			width: 100%;
+		}
+		.btn {
+			display: none;
+		}
+		.toggle-search {
+			left: auto;
+			right: 0;
+		}
+	}
+
+
+
+
+
+
 
 	.site-header-mobile {
 		.site-logo {
