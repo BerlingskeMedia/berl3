@@ -118,17 +118,15 @@
 	});
 
 	$('.toggle-search').click(function(e){
-		e.preventDefault();
+		// make sure to unfocus the form - otherwise it looks weird on mobile
 		if($('body').hasClass('show-search')) {
 			$('#site-search').blur();	
 		} else {
 			$('#site-search').focus();
 		}
+		e.preventDefault();
 		$('body').toggleClass('show-search');
-		
-		
 	});
-
 
 })(jQuery); 
 

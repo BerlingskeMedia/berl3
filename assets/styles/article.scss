@@ -15,10 +15,20 @@
 .article-image {
 	margin-bottom: $spacer;
 	position: relative;
-	margin-right: -($col-1-width / 2)
-	/*margin-left: -($col-1-width / 2);*/
+	margin-right: -($col-1-width / 2);
 }
 
+.inline-banner {
+	width: 300px; 
+	height: 250px; 
+	margin-top: 0;
+	margin-bottom: $spacer;
+	margin-right: -($col-1-width / 2);
+	margin-left: $spacer; 
+	float: right; 
+	clear:right;
+	background-color: #eee;
+}
 
 .border-banner {
 	border-bottom : $border-width solid $border-color; 
@@ -1536,6 +1546,9 @@ $longreadPadding: 20rem;
 }
 @include media-breakpoint-down(lg) {
 	
+	.inline-banner {
+		margin-right: 0;
+	}
 	.article-content,
 	.article-image {
 		margin-left: auto;
