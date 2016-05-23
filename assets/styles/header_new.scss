@@ -514,22 +514,30 @@ body {
 		form {
 			position: relative;
 			margin: .5rem auto 0 0;
-			width: calc(100% - 3rem);
+			width: calc(100%);
 			text-align: left;
 		}
 		input[type="search"] {
 			font-size: 16px;
 			width: 100%;
 		}
-		.btn {
+		
+		.toggle-search {
 			display: none;
 		}
-		.toggle-search {
-			left: auto;
-			right: 0;
+		.btn {
+			font-size: 1.4rem;
+			padding: .375rem .5rem;
+
 		}
 	}
 
+	.show-search .btn-topmenu-search {
+		.bicon-search:before {
+			content: '\e810';
+			transform: scale(1);
+		}
+	}
 
 
 
