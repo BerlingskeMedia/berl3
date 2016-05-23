@@ -1696,7 +1696,7 @@ $longreadPadding: 20rem;
 	
 	.longread-head {
 		height: calc(100vh - 7.3rem);	
-		min-height: none;
+		min-height: initial;
 	} 
 	.longread-wrapper-summary {
 		display: table-row-group;
