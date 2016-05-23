@@ -1695,7 +1695,7 @@ $longreadPadding: 20rem;
 @include media-breakpoint-down(md) {
 	
 	.longread-head {
-		height: calc(100vh - 5rem);	
+		height: calc(100vh - 7.3rem);	
 	} 
 	.longread-wrapper-summary {
 		display: table-row-group;
