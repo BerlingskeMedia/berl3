@@ -10,11 +10,9 @@
 @include media-breakpoint-only(md) {
 	.ipadHack {
 		max-width: $contentWidthTablet;
-		background-color: red;
 		margin-left: auto;
 		margin-right: auto;
 	}
-
 	.article-title {
 		font-size: 3rem;
 	}
@@ -27,8 +25,7 @@
 	}
 	.article-body {
 		font-size: 1.4rem;
-		&> p {
-			
+		&> p {		
 			font-size: 1.4rem;
 			line-height: 1.5;
 		}
@@ -37,7 +34,6 @@
 			font-size: 1.5rem
 		}
 	}
-
 	.article-header {
 		width: 100%; 
 		max-width: none;
@@ -46,11 +42,9 @@
 		margin-left: -5%;
 		margin-right: -5%;
 	}
-
 	.article-embed-pull-right {
 		width: 20rem;
 	}
-
 	// use this class on full width banners when they are placed inside a .row
 	.ipad-banner-article {
 		margin-left: calc(-5% - .625rem); 
