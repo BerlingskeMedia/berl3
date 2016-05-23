@@ -1620,6 +1620,9 @@ $longreadPadding: 20rem;
 }
 @include media-breakpoint-down(md) {
 	
+	.longread-head {
+		height: calc(100vh - 5rem);	
+	} 
 	.longread-wrapper-summary {
 		display: table-row-group;
 		height: 0.0625rem;
