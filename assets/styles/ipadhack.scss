@@ -10,8 +10,9 @@
 
 
 @include media-breakpoint-only(md) {
+
 	.col-1-content {
-		width: 90%;
+		width: $contentWidthTablet;
 		float: none;
 		margin-left: auto;
 		margin-right: auto;
@@ -45,5 +46,10 @@
 			font-size: 1.5rem
 		}
 	}
+	.article-image {
+		margin-left: -(6.125rem / 2);
+		margin-right: -(6.125rem / 2);
+	}
+	
 }
 

@@ -1598,7 +1598,10 @@ $longreadPadding: 20rem;
 
 @include media-breakpoint-only(md) {
 	
-	
+	.topbanner {
+		margin-top: .625rem!important;
+	}
+
 	.tpl-article-longread {
 		.article-summary {
 			max-width: none;
