@@ -119,8 +119,14 @@
 
 	$('.toggle-search').click(function(e){
 		e.preventDefault();
+		if($('body').hasClass('show-search')) {
+			$('#site-search').blur();	
+		} else {
+			$('#site-search').focus();
+		}
 		$('body').toggleClass('show-search');
-		$('#site-search').focus();
+		
+		
 	});
 
 
