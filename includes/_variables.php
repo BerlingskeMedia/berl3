@@ -8,7 +8,7 @@ if(isset($_GET["wide"])) {
 } 
 
 if(isset($_GET["ipadhack"])) {
-	$iPad = true;
+	$ipad = true;
 } 
 
 if(isset($_GET["well"])) {
