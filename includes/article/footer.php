@@ -32,6 +32,10 @@
 		<div class="col-lg-12 hidden-md-down mt mb-2">
 			<div class="demo-banner" style="width: 930px; height: 180px; "></div>
 		</div>
+
+		<div class="hidden-sm-down hidden-lg-up mb-2 mt text-center ipad-banner-article">
+			<div class="demo-banner" style="width: 930px; height: 180px; background: url(/dist/images/banners/1/topbanner.png) center center no-repeat;"></div>	
+		</div>
 	</div>
 
 
