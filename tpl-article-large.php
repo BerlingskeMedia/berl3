@@ -9,8 +9,8 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-	<?php include('/includes/head.php'); ?>
-	
+	<?php include('includes/head.php'); ?>
+
 	<title>Berlingske - Article Large</title>
 	<link rel="stylesheet" href="/dist/styles/main.css">
 	<link href='https://fonts.googleapis.com/css?family=Montserrat|Oswald:300' rel='stylesheet' type='text/css'>
