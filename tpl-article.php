@@ -9,7 +9,7 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-	<?php include('/includes/head.php'); ?>
+	<?php include('includes/head.php'); ?>
 	
 	<title>Berlingske - Article</title>
 	<link rel="stylesheet" href="/dist/styles/main.css">
