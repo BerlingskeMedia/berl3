@@ -4,7 +4,7 @@
 
 <figure class="article-image">
 	<a href="#" class="open-gallery  <?php echo $class ?>">
-	<img src="<? dummy("image@920x,16:9") ?>" width="" height="" alt="" />
+	<img src="<? dummy("image@1000x,16:9") ?>" width="" height="" alt="" />
 		
 		<?php if($class): ?>
 			<span class="gallery-counter">
