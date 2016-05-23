@@ -50,6 +50,17 @@
 		margin-left: -(6.125rem / 2);
 		margin-right: -(6.125rem / 2);
 	}
+
+	.tpl-article-longread {
+		.share-buttons,
+		.article-content,
+		.article-date {
+			max-width: $contentWidthTablet;	
+		}
+		.header-container {
+			max-width: $contentWidthTablet;
+		}
+	}
 	
 }
 
