@@ -12,11 +12,6 @@
         "styles/main.scss"
       ]
     },
-    "spilop.css": {
-      "files": [
-        "styles/spilop.scss"
-      ]
-    },
     "demo.js": {
       "files": [
         "scripts/demo.js"

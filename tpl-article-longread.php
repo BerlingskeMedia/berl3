@@ -171,9 +171,11 @@ $templateLongread = true;
 
 								<?php include('includes/article/topics.php'); ?>
 								
-
-								
 							</div><!-- article body -->
+
+							<div class="article-bottom">
+								<?php include('includes/article-embeds/share-buttons-large.php'); ?>
+							</div>
 							
 						</div><!-- article content -->
 

@@ -1,8 +1,0 @@
-.block {
-  @at-root #{&}__element {
-  	color: red;
-  }
-  @at-root #{&}--modifier {
-  	color: orange;
-  }
-}

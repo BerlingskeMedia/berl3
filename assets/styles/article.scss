@@ -1357,13 +1357,16 @@ $longreadPadding: 20rem;
 		padding-top: $spacer;
 	}
 	.share-buttons,
-	.article-date {
+	.article-date,
+	.article-bottom {
 		margin: $spacer auto;
-		@extend .ipadHack;
+		max-width: $contentWidthLG;
 	}
 	.article-author {
 		float: none;
 	}
+
+
 	
 	
 	.article-body {
@@ -1602,7 +1605,7 @@ $longreadPadding: 20rem;
 		}
 		.article-date,
 		.article-summary {
-			@extend .ipadHack;
+			
 			margin: 1rem auto;
 		}
 	}
@@ -1666,7 +1669,7 @@ $longreadPadding: 20rem;
 	}
 	.tpl-article-longread {
 		.article-content {
-			@extend .ipadHack;
+			
 			margin: 0 auto;
 		}
 		.article-body {
@@ -1991,7 +1994,7 @@ $longreadPadding: 20rem;
 
 .header-container {
 	margin: 0 auto; 
-	@extend .ipadHack;
+	max-width: $contentWidthLG;
 }
 .longread-head-image {
 	position: relative;

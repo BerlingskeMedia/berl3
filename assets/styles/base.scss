@@ -330,22 +330,8 @@ $col-deck-label-width: 160px;
 
 
 
-@include media-breakpoint-only(md) {
-	.article-footer,
-	.article-large-content,
-	.col-1-content {
-		margin-left: auto;
-		margin-right: auto;
-		min-height: 1px;
-	}
-}
-@include media-breakpoint-up(lg) {
-	.col-1-content {
-		width: calc(100% - 320px);
-		float: left;
-		min-height: 1px;
-	}
-}
+
+
 .article-large-content {
 	width: 100%;
 }
