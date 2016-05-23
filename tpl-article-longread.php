@@ -106,9 +106,13 @@ $templateLongread = true;
 				
 				<?php $class = 'hidden-xl-up '; include('includes/article/social-buttons.php'); $class = false;?>
 
+				<div class="hidden-sm-down hidden-lg-up mb text-center ipad-banner-article">
+					<div class="demo-banner" style="width: 930px; height: 180px; background: url(/dist/images/banners/1/topbanner.png) center center no-repeat;"></div>	
+				</div>
+
 				<div class="demo-banner hidden-md-down mb" style="width:930px; height: 180px" ></div>
 
-				<div class="demo-banner hidden-lg-up hidden-sm-down mb" style="width:728px; height: 90px" ></div>
+				
 					
 				<?php include('includes/article-embeds/rating.php'); ?>
 				
