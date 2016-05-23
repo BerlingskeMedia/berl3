@@ -127,9 +127,14 @@ if(isset($_GET["business"])) {
 						<span class="span-red">Not started</span>
 						<span class="span-orange">In progress...</span>
 						<span class="span-green">OK</span>
+
 					</div>
 				</div>
 				
+				<div class="col-md-12">
+					<p><strong>iPad Hack:</strong> Add "?ipad" to url to view iPad viewport hack</p>
+				</div>
+
 				<div class="col-md-12">
 					<h4>Header / Footer / User pages</h4>
 				</div>

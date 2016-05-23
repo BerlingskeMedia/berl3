@@ -9,9 +9,8 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<?php include('/includes/head.php'); ?>
+	
 	<title>Berlingske - Article Large</title>
 	<link rel="stylesheet" href="/dist/styles/main.css">
 	<link href='https://fonts.googleapis.com/css?family=Montserrat|Oswald:300' rel='stylesheet' type='text/css'>

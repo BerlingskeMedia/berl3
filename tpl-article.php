@@ -9,10 +9,8 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- <meta name="viewport" content="width=960px"> -->
+	<?php include('/includes/head.php'); ?>
+	
 	<title>Berlingske - Article</title>
 	<link rel="stylesheet" href="/dist/styles/main.css">
 	
@@ -37,7 +35,7 @@
 <div class="canvas-main <?php echo $campaignId; ?>">
 
 	<div class="banner-wrapper">
-	<div class="bg-banner"></div>
+	<div class="bg-banner hidden-md-down"></div>
 	<div class="topbanner demo-banner hidden-sm-down" style="width: 930px; height: 180px;"></div>
 
 

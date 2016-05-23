@@ -1,0 +1,57 @@
+/* This css is made to increase the font sizes on iPad because of stupid viewport hack on tablets  */
+
+@include media-breakpoint-up(lg) {
+	.ipadHack {
+		max-width: $contentWidthLG;
+	}
+}
+
+
+@include media-breakpoint-only(md) {
+	.ipadHack {
+		max-width: $contentWidthTablet;
+	}
+	.article-title {
+		font-size: 3rem;
+	}
+	.article-summary {
+		font-size: 1.5rem;
+	}
+	.embed-content li, 
+	.embed-content p {
+		font-size: 1.3rem;
+	}
+	.article-body {
+		font-size: 1.4rem;
+		&> p {
+			
+			font-size: 1.4rem;
+			line-height: 1.5;
+		}
+		&>h2 {
+			font-weight: 700;
+			font-size: 1.5rem
+		}
+
+	}
+
+	.article-header {
+		width: 100%; 
+		max-width: none;
+	}
+	.article-image {
+		margin-left: -5%;
+		margin-right: -5%;
+	}
+
+	.article-embed-pull-right {
+		width: 20rem;
+	}
+
+	// use this class on full width banners when they are placed inside a .row
+	.ipad-banner-article {
+		margin-left: calc(-5% - .625rem); 
+		margin-right: calc(-5% - .625rem); 
+		text-align: center; 
+	}
+}

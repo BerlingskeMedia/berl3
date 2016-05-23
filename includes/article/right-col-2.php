@@ -1,4 +1,12 @@
-<?php include('includes/banners/ipad-banner.php'); ?>
+
+<div class="hidden-sm-down hidden-lg-up mb text-center ipad-banner-article">
+	<div class="demo-banner" style="width: 930px; height: 180px; background: url(/dist/images/banners/1/topbanner.png) center center no-repeat;">
+		
+
+
+	</div>	
+</div>
+
 
 <div class="row">
 	<div class="col-md-6 col-lg-12 col-sm-12 col-xs-12">

@@ -7,6 +7,10 @@ if(isset($_GET["wide"])) {
 	$showWide = true;
 } 
 
+if(isset($_GET["ipadhack"])) {
+	$iPad = true;
+} 
+
 if(isset($_GET["well"])) {
 	$showWell = true;
 } 

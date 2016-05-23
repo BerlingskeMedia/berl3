@@ -113,7 +113,8 @@
 }
 .large-share-buttons {
 	
-	max-width: 41.250rem;
+	@extend .ipadHack;
+	
 	
 	padding-top: 1rem;
 	.btn-facebook,
@@ -1067,7 +1068,8 @@ $sharebutton-sm: 1.7rem;
 .article-topics {
 	position: relative;
 	@extend .border-top;
-	max-width: 41.25rem;
+	@extend .ipadHack;
+	
 	padding-top: 1rem;
 	font-size: .75rem;
 	@extend .font-s2;
@@ -1134,7 +1136,7 @@ $sharebutton-sm: 1.7rem;
 	@extend .border-top;
 	position: relative;
 	margin-top: $spacer;
-	max-width: 41.25rem;
+	@extend .ipadHack;
 	padding-top: .625rem;
 	@extend .mb;
 	clear: both;
@@ -1357,7 +1359,7 @@ $longreadPadding: 20rem;
 	.share-buttons,
 	.article-date {
 		margin: $spacer auto;
-		max-width: 41.25rem;
+		@extend .ipadHack;
 	}
 	.article-author {
 		float: none;
@@ -1529,7 +1531,7 @@ $longreadPadding: 20rem;
 	
 	
 }
-@include media-breakpoint-up(lg) {
+@include media-breakpoint-up(md) {
 	.article-header {
 		border-top: .313rem solid #222;
 		margin-top: .5rem;		
@@ -1600,7 +1602,7 @@ $longreadPadding: 20rem;
 		}
 		.article-date,
 		.article-summary {
-			max-width: 41.25rem!important;
+			@extend .ipadHack;
 			margin: 1rem auto;
 		}
 	}
@@ -1612,6 +1614,13 @@ $longreadPadding: 20rem;
 }
 @include media-breakpoint-down(md) {
 	
+	.longread-wrapper-summary {
+		display: table-row-group;
+		height: 0.0625rem;
+		background-color: #222;
+
+	}
+
 	[class*="event-header-"] {
 		font-size: .9rem;
 		padding: .225rem .325rem .225rem;
@@ -1619,7 +1628,7 @@ $longreadPadding: 20rem;
 	}
 
 	.article-header {
-		max-width: 41.25rem;
+		@extend .ipadHack;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -1658,7 +1667,7 @@ $longreadPadding: 20rem;
 	}
 	.tpl-article-longread {
 		.article-content {
-			max-width: 41.25rem;
+			@extend .ipadHack;
 			margin: 0 auto;
 		}
 		.article-body {
@@ -1936,19 +1945,13 @@ $longreadPadding: 20rem;
 
 
 
-@include media-breakpoint-down(xs) {
-	.article-newsletter {
-		width: 100%;
-		margin: 0 0 $spacer 0;
-		clear: both;
-	}
-}
+
 
 
 
 .tpl-article-longread {
 	.share-buttons {
-		max-width: 41.25rem;
+		@extend .ipadHack;
 	}
 }
 
@@ -1989,7 +1992,7 @@ $longreadPadding: 20rem;
 
 .header-container {
 	margin: 0 auto; 
-	max-width: 41.25rem;
+	@extend .ipadHack;
 }
 .longread-head-image {
 	position: relative;
@@ -2020,16 +2023,13 @@ $longreadPadding: 20rem;
 	
 }
 
-@include media-breakpoint-down(md) {
-		
-	
-	.longread-wrapper-summary {
-		display: table-row-group;
-		height: 0.0625rem;
-		background-color: #222;
 
+
+@include media-breakpoint-down(xs) {
+	.article-newsletter {
+		width: 100%;
+		margin: 0 0 $spacer 0;
+		clear: both;
 	}
-	
-	
-	
 }
+
