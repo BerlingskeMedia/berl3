@@ -28,7 +28,7 @@ if(isset($_GET["business"])) {
 <!DOCTYPE html>
 <html lang="da">
 <head>
-	<?php include('/includes/head.php'); ?>
+	<?php include('includes/head.php'); ?>
 	
 	<title>Berlingske - Front</title>
 	<link rel="stylesheet" href="/dist/styles/main.css">
@@ -97,6 +97,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 </div><!-- canvas-main -->
 </div><!-- banner-wrapper -->
 </div><!-- main-wrapper -->
+
 
 
 <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>

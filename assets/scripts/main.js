@@ -117,7 +117,7 @@
 		$('body').removeClass('show-author-overlay');
 	});
 
-	$('.toggle-search').click(function(e){
+	$('.toggle-search, .close-search').click(function(e){
 		// make sure to unfocus the form - otherwise it looks weird on mobile
 		if($('body').hasClass('show-search')) {
 			$('#site-search').blur();	
