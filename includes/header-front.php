@@ -17,12 +17,12 @@
 							</ul>
 							
 							<ul class="list-reset list-sm tools-menu-right ">
+								<li><a href="#" class="link-topmenu-cookies hidden-md-down"></a></li>
 								<?php if($loggedIn): ?>
 								<li><a href="#" class="btn-topmenu-user toggle-user-menu"><? dummy("text@author") ?> <i class="bicon-user"></i></a>
 									<?php include('includes/user-menu.php'); ?>
 								</li>
 								<?php else: ?>
-									<li><a href="#" class="link-topmenu-cookies hidden-md-down"></a></li>
 									<li><a href="/" class="btn-topmenu-subscription"> Køb abonnement</a></li>
 									<li><a href="/" class="btn-topmenu-login"><i class="bicon-user"></i> Log ind</a></li>							
 								<?php endif; ?>
