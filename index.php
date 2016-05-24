@@ -265,7 +265,7 @@ if(isset($_GET["business"])) {
 					</div>
 					<div class="col-md-9">
 						<ul>
-							<li class="orange"><a href="tpl-article.php?partner=videnskabdk">'Videnskab.dk'</a></li>
+							<li class="green"><a href="tpl-article.php?partner=videnskabdk">'Videnskab.dk'</a></li>
 						</ul>
 					</div>
 					<div class="col-md-3">Paywall</div>
