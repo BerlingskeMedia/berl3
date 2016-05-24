@@ -241,8 +241,8 @@ if(isset($_GET["business"])) {
 						<li class="green"><a href="tpl-article.php?showQuote">Quote</a></li>
 						<li class="green"><a href="tpl-article.php?showFactDefault">Factbox - Default</a></li>
 						<li class="green"><a href="tpl-article.php?showFactEmbedded">Factbox - Embedded</a></li>
-						<li class="green strike"><a href="tpl-article.php?showTheme">Theme</a></li>
-						<li class="green strike"><a href="tpl-article.php?showTimeline">Timeline</a></li>
+						<!-- <li class="green strike"><a href="tpl-article.php?showTheme">Theme</a></li> -->
+<!-- 						<li class="green strike"><a href="tpl-article.php?showTimeline">Timeline</a></li> -->
 						<li class="green"><a href="tpl-article.php?showLink">Embedded links</a></li>
 						<li class="green strike"><a href="tpl-article.php?showGallery">Embedded gallery</a></li>
 					</ul>
@@ -337,7 +337,7 @@ if(isset($_GET["business"])) {
 				</div>
 				<div class="col-md-9">
 					<ul>
-						<li class="orange"><a href="tpl-article-large.php">Article - Large</a></li>
+						<li class="green"><a href="tpl-article-large.php">Article - Large</a></li>
 					</ul>
 				</div>
 
