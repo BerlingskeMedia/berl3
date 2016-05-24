@@ -18,7 +18,7 @@
 							
 							<ul class="list-reset list-sm tools-menu-right ">
 								<?php if($loggedIn): ?>
-								<li><a href="#" class="btn-topmenu-user toggle-user-menu no-scale">Bo Skakke <i class="bicon-user"></i></a>
+								<li><a href="#" class="btn-topmenu-user toggle-user-menu"><? dummy("text@author") ?> <i class="bicon-user"></i></a>
 									<?php include('includes/user-menu.php'); ?>
 								</li>
 								<?php else: ?>

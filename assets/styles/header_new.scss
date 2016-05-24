@@ -127,6 +127,12 @@ body {
 	background: url(/dist/images/cookies.png) left center no-repeat;
 	background-size: 13px;
 }
+.btn-topmenu-user {
+	i:before {
+		transform: scale(1.2)!important;
+		margin-left: .2rem;
+	}
+}
 .tools-menu-left {
 	left: .625rem;
 }
@@ -378,6 +384,10 @@ body {
 		&:first-child {
 			padding: 0 0 .4rem .4rem;
 			border-bottom: $border-width solid $border-color;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			padding-right: 1rem;
 		}
 	}
 
