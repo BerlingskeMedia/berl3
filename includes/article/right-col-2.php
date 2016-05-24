@@ -1,9 +1,7 @@
 
 <div class="hidden-sm-down hidden-lg-up mb text-center ipad-banner-article">
-	<div class="demo-banner" style="width: 930px; height: 180px; background: url(/dist/images/banners/1/topbanner.png) center center no-repeat;">
-		
-
-
+	<div class="demo-banner" style="width: 930px; height: 180px;">
+		Leaderboard_2 (tablet)
 	</div>	
 </div>
 
@@ -40,14 +38,14 @@
 	<!-- Mobile banner -->
 	<div class="col-xs-12 hidden-md-up">
 		<div class="fw-sm mb clearfix">
-			<div class="demo-banner demo-banner-mobile" style="width: 320px; height: 250px; "></div>
+			<div class="demo-banner demo-banner-mobile" style="width: 320px; height: 320px; ">Leaderboard_2 (mobile)</div>
 		</div>
 	</div>
 
 	<div class="col-lg-12 col-md-6">
 		<div class="stickem-container-ex2 mb hidden-md-down" style="height: 1000px;">	
 			<div class="sticky-ex2">	
-				<div class="demo-banner" style="height: 600px; width: 300px;"></div>
+				<div class="demo-banner" style="height: 600px; width: 300px;">Square_1</div>
 			</div>
 		</div>
 	</div>
@@ -73,8 +71,8 @@
 		
 		<div class="stickem-container-ex2 mb-1 hidden-md-down" style="height: 1000px;">	
 			<div class="sticky-ex2">	
-				<div class="demo-banner mb" style="height: 250px; width: 300px;"></div>
-				<div class="demo-banner" style="height: 250px; width: 300px;">Advertorial</div>
+				<div class="demo-banner mb" style="height: 250px; width: 300px;">Square_2</div>
+				<div class="demo-banner" style="height: 250px; width: 300px;">Advertorial_1</div>
 			</div>
 		</div>
 
@@ -90,7 +88,7 @@
 	<!-- Mobile banner -->
 	<div class="col-xs-12 hidden-md-up">
 		<div class="fw-sm mb">
-			<div class="demo-banner demo-banner-mobile" style="width: 320px; height: 250px; "></div>
+			<div class="demo-banner demo-banner-mobile" style="width: 320px; height: 320px; ">Leaderboard_3 (mobile)</div>
 		</div>
 
 	</div>

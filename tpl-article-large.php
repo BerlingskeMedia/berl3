@@ -13,34 +13,35 @@
 
 	<title>Berlingske - Article Large</title>
 	<link rel="stylesheet" href="/dist/styles/main.css">
-	<link href='https://fonts.googleapis.com/css?family=Montserrat|Oswald:300' rel='stylesheet' type='text/css'>
 </head>
-<body class="not-front <?php if($siteBusiness): ?>site-business<?php endif; ?> show-site-search tpl-article tpl-article-large">
+<body class=" <?php if($siteBusiness): ?>site-business<?php endif; ?> show-site-search tpl-article tpl-article-large">
 
 
-<a class="demo-trigger" href="#">
-	<i class="bicon-angle-right"></i>
-</a>
-<div class="hidden-menu" id="hidden-menu">
-	
-	<ul class="demo-menu">
-		HEJ
-	</ul>
-</div>
+
+
 
 
 
 <div class="main-wrapper">
-	<?php include('includes/offcanvas-menu.php'); ?>
+<?php include('includes/offcanvas-menu.php'); ?>
+
+
+<?php include('includes/header-sub.php'); ?>
+
+
+<div class="canvas-main <?php echo $campaignId; ?>">
+
+	<div class="banner-wrapper">
+	<div class="bg-banner hidden-md-down"></div>
+
+	<div class="topbanner demo-banner hidden-sm-down" style="width: 930px; height: 180px;"></div>
+
+
 	
-
-	<?php include('includes/header-sub.php'); ?>
-
-	<div class="canvas-main ">
-
-		<div class="banner-wrapper">
+	
+	<div class="container site-content">
 		
-			<div class="container">
+			
 				<div class="row">
 					<div class="col-md-12">
 						
@@ -55,18 +56,17 @@
 								<div class="article-body">
 									<img src="/dist/images/demo/infografik.jpg" width="" height="" alt="" />
 									
-									<?php include('includes/article/related.php'); ?>
-									
-									<?php include('includes/article/topics.php'); ?>
-									
+									<div class="article-bottom">
+										<?php include('includes/article/related.php'); ?>
+										<?php include('includes/article/topics.php'); ?>
+										<?php include('includes/article-embeds/share-buttons-large.php'); ?>
+									</div>
 								</div><!-- article body -->
 								
 								
 								
 
-								<div class="article-bottom text-center ">
-									<?php include('includes/article-embeds/share-buttons-large.php'); ?>
-								</div>
+								
 							</div><!-- article content -->
 							
 						</div><!-- col-1-content -->
@@ -100,6 +100,7 @@
 
 <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
 <script src="/dist/scripts/main.js"></script>
+<script src="/dist/scripts/demo.js"></script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

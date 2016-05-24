@@ -14,19 +14,12 @@ $templateLongread = true;
 	<title>Berlingske - Article Longread</title>
 	<link rel="stylesheet" href="/dist/styles/main.css">
 </head>
-<body class=" not-front <?php if($siteBusiness): ?>site-business<?php endif; ?> tpl-article tpl-article-longread">
+<body class=" <?php if($siteBusiness): ?>site-business<?php endif; ?> tpl-article tpl-article-longread">
 
 
 
-<a class="demo-trigger" href="#">
-	<i class="bicon-angle-right"></i>
-</a>
-<div class="hidden-menu" id="hidden-menu">
-	
-	<ul class="demo-menu">
-		HEJ
-	</ul>
-</div>
+
+
 
 <div class="main-wrapper">
 <?php include('includes/header-sub.php'); ?>
@@ -110,7 +103,7 @@ $templateLongread = true;
 					<div class="demo-banner" style="width: 930px; height: 180px; background: url(/dist/images/banners/1/topbanner.png) center center no-repeat;"></div>	
 				</div>
 
-				<div class="demo-banner hidden-md-down mb" style="width:930px; height: 180px" ></div>
+				<div class="demo-banner hidden-md-down mb" style="width:930px; height: 180px" >Leaderboard_1</div>
 
 				
 					
@@ -140,9 +133,7 @@ $templateLongread = true;
 								
 								<p><? dummy("text@paragraph-first-letter") ?></p>
 
-								<div class="hidden-md-up mb fw-sm">
-									<div class="demo-banner demo-banner-mobile " style="width: 320px; height : 160px;"></div>
-								</div>
+								
 								
 								<p><? dummy("text@paragraph") ?></p>
 
@@ -171,15 +162,15 @@ $templateLongread = true;
 								
 								<?php include('includes/article-embeds/fact-default.php'); ?>
 								
-								<?php include('includes/article/related.php'); ?>
-
-								<?php include('includes/article/topics.php'); ?>
+								<div class="article-bottom">
+									<?php include('includes/article/related.php'); ?>
+									<?php include('includes/article/topics.php'); ?>
+									<?php include('includes/article-embeds/share-buttons-large.php'); ?>
+								</div>
 								
 							</div><!-- article body -->
 
-							<div class="article-bottom">
-								<?php include('includes/article-embeds/share-buttons-large.php'); ?>
-							</div>
+							
 							
 						</div><!-- article content -->
 

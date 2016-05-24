@@ -5,7 +5,7 @@
 	<?php 
 	$showTime = true;
 	$showImage = false; 
-	$listClass = 'list list-img-right list-article-related list-font-2 no-border-last-item';
+	$listClass = 'list list-img-right  list-font-2 no-border-last-item';
 	$listTitle = 'Mere fra';
 	$listCount = '10';
 	$sectionClass = 'list-title-sm';

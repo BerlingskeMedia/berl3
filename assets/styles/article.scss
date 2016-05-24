@@ -2,6 +2,10 @@
 .col-article-primary {
 	width: calc(100% - 400px);
 }
+.twitter-tweet {
+	margin-left: auto;
+	margin-right: auto;
+}
 .article-sidebar {
 	width: 380px;
 }
@@ -1039,7 +1043,7 @@ $sharebutton-sm: 1.7rem;
 	font-weight: 500;
 	@extend .font-s2;
 	font-size: 1.2rem;
-	margin-bottom: .4rem;
+	margin-bottom: .725rem;
 	text-transform: uppercase;
 	line-height: 1;
 	display: inline-block;
@@ -1067,7 +1071,6 @@ $sharebutton-sm: 1.7rem;
 
 .article-topics {
 	position: relative;
-	@extend .border-top;
 	@extend .ipadHack;
 	
 	padding-top: 1rem;
@@ -1157,6 +1160,7 @@ $sharebutton-sm: 1.7rem;
 
 .article-bottom {
 	@extend .mb;
+	margin-top: 2rem;
 	// @extend .article-off-grid
 }
 
@@ -1328,6 +1332,14 @@ figure > .open-gallery {
 	.article-content {
 		margin-left: 0;
 		margin-right: 0;
+	}
+}
+
+.tpl-article-large {
+	.article-bottom {
+		max-width: $contentWidthLG;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 
@@ -1593,6 +1605,16 @@ $longreadPadding: 20rem;
 
 	
 @include media-breakpoint-only(xl) {
+	.tpl-article-longread {	
+		.article-embedded-custom {
+			margin-left: -$col-1-width / 2;
+			margin-right: -$col-1-width / 2;
+		}
+	}
+	.article-video {
+		margin-left: -$col-1-width / 2;
+	}
+
 	.article-topics {
 		.micro-title {
 			margin-top: .3rem;
@@ -1601,8 +1623,7 @@ $longreadPadding: 20rem;
 	.article-image {
 		margin-left: -$col-1-width / 2;
 	}
-	.article-off-grid,
-	.article-partner {
+	.article-off-grid {
 		margin-right: -$col-1-width / 2;
 	}
 	

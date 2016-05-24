@@ -15,7 +15,7 @@
 	<link rel="stylesheet" href="/dist/styles/main.css">
 	
 </head>
-<body class=" <?php if($siteBusiness): ?>site-business<?php endif; ?> tpl-article">
+<body class="<?php if($siteBusiness): ?>site-business<?php endif; ?> tpl-article">
 
 <?php include('includes/facebook.php'); ?>
 
@@ -36,6 +36,7 @@
 
 	<div class="banner-wrapper">
 	<div class="bg-banner hidden-md-down"></div>
+
 	<div class="topbanner demo-banner hidden-sm-down" style="width: 930px; height: 180px;"></div>
 
 
@@ -98,12 +99,14 @@
 							<p><? dummy("text@paragraph-first-letter") ?></p>
 
 							<div class="hidden-md-up mb fw-sm continue-reading-banner">
-								<div class="demo-banner demo-banner-mobile " style="width: 320px; height : 160px;"></div>
+								<div class="demo-banner demo-banner-mobile " style="width: 320px; height : 160px;">Leaderboard_1 Mobile</div>
 							</div>
 							
 							<p><? dummy("text@paragraph") ?></p>
 							
-							<div class="hidden-sm-down inline-banner" style="width: 300px; height: 250px;">Inline banner</div>
+							
+							<div class="hidden-md-down inline-banner" style="width: 300px; height: 250px;">Square_4</div>
+							<div class=" inline-banner hidden-lg-up hidden-sm-down" style="width: 300px; height: 250px;">Square_1 Tablet</div>
 							
 
 							<?php if($showPaywall): ?>
@@ -115,11 +118,12 @@
 								
 
 							<?php if(!$showPaywall): ?>
-
+								<p><? dummy("text@paragraph") ?></p>
+								<p><? dummy("text@paragraph") ?></p>
 								<?php if ($showGalleryTeaser == '2'): ?>
 									<?php include('includes/gallery-teaser-large.php'); ?>
 								<?php endif; ?>
-
+					
 								<ol>
 									<? while (dumb_luck("7")): ?><li><? dummy("text@headline") ?></li><? endwhile ?>
 								</ol>
@@ -150,21 +154,20 @@
 
 								<?php include('includes/article-embeds/fact-default.php'); ?>
 								
-								<?php include('includes/article/related-partner.php'); ?>
-
-								<?php include('includes/article/related.php'); ?>
 								
-								<?php include('includes/article/topics.php'); ?>
+
+								<div class="article-bottom">
+									<?php include('includes/article/related-partner.php'); ?>
+									<?php include('includes/article/related.php'); ?>
+									<?php include('includes/article/topics.php'); ?>
+									<?php include('includes/article-embeds/share-buttons-large.php'); ?>
+								</div>
 
 							<?php endif; // End Paywall ?>
 							
 						</div><!-- article body -->
 						
-						<div class="article-bottom">
-
-							<?php include('includes/article-embeds/share-buttons-large.php'); ?>
-							
-						</div>
+						
 
 					</div><!-- article content -->
 
@@ -213,6 +216,7 @@
 
 <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
 <script src="/dist/scripts/main.js"></script>
+<script src="/dist/scripts/demo.js"></script>
 
 <script>
 	$('iframe.auto-height').iframeAutoHeight({minHeight: 50});	

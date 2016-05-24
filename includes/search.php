@@ -5,7 +5,7 @@
 				<a href="#" class="toggle-search"><i class="bicon-cancel"></i></a>
 				<form method="POST" class="global-search" action="tpl-search.php">
 					<input type="search" placeholder="Søg på Berlingske.dk" id="site-search">
-					<button class="btn btn-gray ">Søg <i class="bicon-search"></i></button>
+					<button class="btn btn-gray "><i class="bicon-search"></i> Søg</button>
 				</form>
 			</div>		
 		</div>

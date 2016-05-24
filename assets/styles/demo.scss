@@ -28,22 +28,13 @@
 		position: absolute;
 		top: .625rem;
 		left: .625rem;
-		content: 'Banner';
+		content: '';
 		@extend .small;
 		color: #999;
 	}
 }
 
-.demo-banner-mobile {
-	&:after {
-		content: 'Mobile banner';
-	}
-}
-.demo-banner-tablet {
-	&:after {
-		content: 'Tablet banner';
-	}
-}
+
 .banner-wrapper {
 	position: relative;
 }

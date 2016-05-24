@@ -1,5 +1,5 @@
 <?php if($event === 'breaking'): ?>
-	<aside class="article-embed-pull-right article-newsletter-embedded newsletter-breaking">	
+	<aside class="article-embed-pull-right article-newsletter-embedded newsletter-breaking mb-1">	
 		
 		<div class="aside-header-sm mb-05">Modtag Breaking News på e-mail</div>
 		
@@ -47,7 +47,7 @@
 
 	<?php if($showNewsletterEmbedded): ?>
 
-<aside class="article-embed-pull-right article-newsletter-embedded ">	
+<aside class="article-embed-pull-right article-newsletter-embedded mb-1">	
 
 	<div class="message">
 		<p><strong>Tak for din tilmelding.</strong>
@@ -111,7 +111,7 @@
 
 <?php else: ?>
 
-<aside class="article-embed-pull-right article-marketing-embedded ">	
+<aside class="article-embed-pull-right article-marketing-embedded mb-1 ">	
 	<iframe src="/includes/iframes/marketing-embedded.php" class="auto-height" scrolling="no" frameborder="0"></iframe>
 </aside>
 <!-- inline, after the iframe -->
