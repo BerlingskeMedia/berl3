@@ -7,7 +7,8 @@ if(isset($_GET["wide"])) {
 	$showWide = true;
 } 
 
-if(isset($_GET["ipadhack"])) {
+// add viewport tag to make
+if(isset($_GET["ipad"])) {
 	$ipad = true;
 } 
 
