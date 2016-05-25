@@ -152,6 +152,8 @@
 
 								<?php include('includes/article-embeds/tweet.php'); ?>
 
+								<?php include('includes/article-embeds/download-file.php'); ?>
+
 								<?php include('includes/article-embeds/fact-default.php'); ?>
 								
 								

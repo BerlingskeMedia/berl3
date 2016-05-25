@@ -39,6 +39,28 @@
 	margin-bottom: $spacer;
 }
 
+.embeddedd-file {
+	margin: $spacer 0;
+	padding: $spacer 0;
+	small {
+		display: block;
+		@extend .font-s2;
+		text-transform: uppercase;
+		margin-bottom: .4rem;
+		color: $col-blue-1;
+		font-size: .7rem;
+		font-weight: 500;
+	}
+	p {
+		font-size: 1rem;
+		font-weight: bold;
+	}
+	i {
+		color: $col-blue-1;
+		margin-right: .4rem;
+	}
+}
+
 /*.first-letter {
 	font-size: 5.7rem;
 	@extend .font-g2;

@@ -116,6 +116,9 @@ if (isset($_GET['showRelated'])) {
 if (isset($_GET['showGallery'])) {
 	$showGalleryTeaser = true;
 }
+if (isset($_GET['download'])) {
+	$downloadFile = true;
+}
 
 
 

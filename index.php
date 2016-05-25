@@ -242,6 +242,7 @@ if(isset($_GET["business"])) {
 						<!-- <li class="green strike"><a href="tpl-article.php?showTheme">Theme</a></li> -->
 <!-- 						<li class="green strike"><a href="tpl-article.php?showTimeline">Timeline</a></li> -->
 						<li class="green"><a href="tpl-article.php?showLink">Embedded links</a></li>
+						<li class="orange"><a href="tpl-article.php?download">Download file</a></li>
 						<li class="green strike"><a href="tpl-article.php?showGallery">Embedded gallery</a></li>
 					</ul>
 					</div>
