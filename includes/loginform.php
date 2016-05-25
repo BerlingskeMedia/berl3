@@ -11,9 +11,12 @@
 		<p class="text-center"><strong>Ikke adgang?</strong> Køb abonnement på Berlingske og få fuld adgang til alt indhold. <a href="#" class="link-blue">Køb abonnement</a> </p>
 		
 		<form action="" class="form ">
-
+			<div class="alert alert-danger">
+				<p>Kombinationen af email og adgangskode var forkert</p>
+			</div>
 			<fieldset class="form-group">
 				<input type="email" class="form-control" id="login-email" placeholder="E-mail" autocomplete="on" >
+				<div class="msg-error"><i class="bicon-angle-up"></i> Du skal indtaste en email adresse</div>
 			</fieldset>
 
 			<fieldset class="form-group">
@@ -46,6 +49,7 @@
 				<form action="" class="form">
 					<fieldset class="form-group">
 						<input type="email" class="form-control" id="login-email" placeholder="E-mail" autocomplete="on" >
+						<div class="msg-error"><i class="bicon-angle-up"></i> Du skal indtaste en email adresse</div>
 					</fieldset>
 					<button class="btn btn-round btn-blue btn-block mt mb">Send</button>
 				</form>
