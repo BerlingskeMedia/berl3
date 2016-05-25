@@ -60,7 +60,7 @@
 					<div class="col-xs-12 ">
 						<nav class="main-navigation">
 							<ul class="section-nav">
-								<li class="active"><a href="#"><b class="bicon-home"></b> Forside</a></li>
+								
 								<li><a href="?business">Business</a></li>
 								<li><a href="#">Politiko</a></li>
 								<li><a href="#">Debat</a></li>

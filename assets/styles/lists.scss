@@ -151,6 +151,9 @@ ul + .list-fade {
 		margin: 0 0 0 .625rem;
 		width: 3.75rem;
 	}
+	li:last-child {
+		border-bottom: 0;
+	}
 }
 
 .list-top {

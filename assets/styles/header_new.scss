@@ -388,6 +388,11 @@ body {
 			text-overflow: ellipsis;
 			white-space: nowrap;
 			padding-right: 1rem;
+			padding-top: .2rem;
+			i:before {
+				transform: scale(1.2);
+				margin-right: .2rem;
+			}
 		}
 	}
 
