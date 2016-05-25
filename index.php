@@ -222,9 +222,6 @@ if(isset($_GET["business"])) {
 					<div class="col-md-9">
 						<ul>
 							<li class="green"><a href="tpl-article.php?showTrumpet">Trumpet</a></li>
-							<li class="green strike"><a href="tpl-article.php?blog">Blog</a></li>
-							<li class="green strike"><a href="tpl-article.php?essay">Kronikken</a></li>
-							<li class="green strike"><a href="tpl-article.php?editorial">Editorial</a></li>
 							<li class="green"><a href="tpl-article.php?showRating">Rating</a></li>
 						</ul>
 					</div>
@@ -233,17 +230,13 @@ if(isset($_GET["business"])) {
 				<div class="col-md-9">
 
 					<ul>
-						
 						<li class="green"><a href="tpl-article.php?showCustom&amp;imgSize=1">Custom embed</a></li>
 						<li class="green"><a href="tpl-article.php?showTweet">Tweet</a></li>
 						<li class="green"><a href="tpl-article.php?showQuote">Quote</a></li>
 						<li class="green"><a href="tpl-article.php?showFactDefault">Factbox - Default</a></li>
 						<li class="green"><a href="tpl-article.php?showFactEmbedded">Factbox - Embedded</a></li>
-						<!-- <li class="green strike"><a href="tpl-article.php?showTheme">Theme</a></li> -->
-<!-- 						<li class="green strike"><a href="tpl-article.php?showTimeline">Timeline</a></li> -->
 						<li class="green"><a href="tpl-article.php?showLink">Embedded links</a></li>
 						<li class="orange"><a href="tpl-article.php?download">Download file</a></li>
-						<li class="green strike"><a href="tpl-article.php?showGallery">Embedded gallery</a></li>
 					</ul>
 					</div>
 
@@ -493,6 +486,11 @@ if(isset($_GET["business"])) {
 
 </div>
 
+<!-- <li class="green strike"><a href="tpl-article.php?blog">Blog</a></li>
+<li class="green strike"><a href="tpl-article.php?essay">Kronikken</a></li>
+<li class="green strike"><a href="tpl-article.php?editorial">Editorial</a></li> 
+<li class="green strike"><a href="tpl-article.php?showGallery">Embedded gallery</a></li>
+-->
 
 
 <script src="/dist/scripts/main.js"></script>

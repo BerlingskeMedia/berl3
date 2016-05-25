@@ -500,6 +500,7 @@ $col-deck-label-width: 160px;
 .alert {
 	padding: .625rem;
 	margin-bottom: 1rem;
+	border: $border-width solid transparent;
 	p {
 		font-size: 90%;
 	}
@@ -509,11 +510,12 @@ $col-deck-label-width: 160px;
 }
 
 .alert-success {
-	@include alert-variant($brand-success, darken($brand-success, 10%), rgba(0,0,0,.5));
+	@include alert-variant($brand-success, darken($brand-success, 10%), rgba(0,0,0,.7));
 }
 .alert-danger {
-	@include alert-variant(#f2dede, darken(#f2dede, 10%), rgba(0,0,0,.5));
+	@include alert-variant(#f2dede, fade-out($brand-danger, .8), $brand-danger);
 }
+
 
 
 
