@@ -1526,20 +1526,11 @@ $longreadPadding: 20rem;
 }
 
 
-.close-overlay {
-	position: absolute;
-	top: 1rem; 
-	right: 1rem;
-	font-size: 1rem;
-	color: #999;
-	&:hover {
-		color: $col-blue-1;
-	}
-}
+
 
 .overlay-author-signup {
 	
-	@extend .font-g1;
+	
 	
 	form {
 		margin-bottom: $spacer;
@@ -1587,17 +1578,7 @@ $longreadPadding: 20rem;
 	}
 }	
 
-.show-author-overlay {
-	.overlay-author-signup {
-		opacity: 1;
-		visibility: visible;
-		.overlay-inner {
-			transform: translateY(0);
-			opacity: 1;
-		}
-	}
-	
-}
+
 
 
 	

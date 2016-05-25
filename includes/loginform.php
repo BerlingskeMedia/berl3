@@ -1,8 +1,8 @@
 <div class="overlay overlay-login" id="site-login">
-	<a href="#" class="toggle-login"></a>
+	<a href="#" class="remove-overlay"></a>
 
 	<div class="overlay-inner">
-		<a href="#" class="close-overlay toggle-login"><i class="bicon-cancel"></i></a>		
+		<a href="#" class="close-overlay"><i class="bicon-cancel"></i></a>		
 		<div class="slide-1">
 
 		<div class="site-logo text-center mb">Berlingske</div>
@@ -12,7 +12,7 @@
 		
 		<form action="" class="form ">
 			<div class="alert alert-danger">
-				<p>Kombinationen af email og adgangskode var forkert</p>
+				<p>Kombinationen af e-mail og adgangskode var forkert</p>
 			</div>
 			<fieldset class="form-group">
 				<input type="email" class="form-control" id="login-email" placeholder="E-mail" autocomplete="on" >

@@ -1,6 +1,5 @@
 <div class="overlay overlay-author-signup flex-center">
-	<a href="#"></a>
-	
+	<a href="#" class="remove-overlay"></a>
 	<div class="overlay-inner ">
 		<a href="#" class="close-overlay"><i class="bicon-cancel"></i></a>
 		<i class="bicon-mail"></i>

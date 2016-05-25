@@ -225,6 +225,7 @@ $col-deck-label-width: 160px;
 
 
 .overlay {
+	@extend .font-g1;
 	position: fixed;
 	top: 0;
 	bottom: 0;
@@ -245,6 +246,9 @@ $col-deck-label-width: 160px;
 		border-radius: .2rem;
 		box-shadow: 0 0 .5rem rgba(0,0,0,.2);
 	}
+	.close-overlay {
+		z-index: 99;
+	}
 
 	&>a {
 		position: absolute;
@@ -264,19 +268,17 @@ $col-deck-label-width: 160px;
 }
 
 .overlay-login {
-	@extend .font-g1;
+	
 	.site-logo {
 		font-size: 3rem;
 	}
-	.close-overlay {
-		z-index: 99;
-	}
+	
 	.overlay-inner {
 		margin: 2rem auto auto;
 		padding-top: 2rem;
 		padding-bottom: 2rem;
 		width: 30rem;
-		background-color: $background-color;
+
 		overflow: hidden;
 		position: relative;
 	}
@@ -307,17 +309,39 @@ $col-deck-label-width: 160px;
 		}
 	}
 }
-
 .forgot-password-container {
 	padding: 2rem 1rem 1rem;
 	form {
 		position: relative;
-	}
-	
-	
+	}	
 }
 
-.show-login.overlay-login {
+.overlay-sendtoafriend {	
+	.overlay-inner {
+		margin: 2rem auto auto;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+		width: 30rem;
+		
+		overflow: hidden;
+		position: relative;
+	}
+}
+
+.close-overlay {
+	position: absolute;
+	top: 1rem; 
+	right: 1rem;
+	font-size: 1rem;
+	color: #999;
+	&:hover {
+		color: $col-blue-1;
+	}
+}
+
+.overlay-author-signup.show-me,
+.overlay-sendtoafriend.show-me,
+.overlay-login.show-me {
 	opacity: 1;
 	visibility: visible;
 	.overlay-inner {
@@ -524,8 +548,8 @@ $col-deck-label-width: 160px;
 		.site-logo {
 			font-size: 2rem;
 		}
-		.overlay-inner {
-			max-width: 90vw;
-		}
+	}
+	.overlay-inner {
+		max-width: 90vw;
 	}
 }

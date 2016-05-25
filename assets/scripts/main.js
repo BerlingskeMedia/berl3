@@ -96,26 +96,7 @@
 	
 	
 
-	// Show the author signup overlay
-
-	$('.btn-follow-author').click(function(){
-		// Focus the input field. Only works with setTimeout when transition is used 
-		var focusAuthor = function(){
-			$('.input-follow-author').focus();
-		};
-		
-		$('body').toggleClass('show-author-overlay');
-		setTimeout(focusAuthor, 500);
-	});
-
-	// Show the login
-	$('.toggle-login').click(function(){
-		$('#site-login').toggleClass('show-login');
-		setTimeout(function() {
-       		$('#site-login .overlay-inner').removeClass("switch-overlay");
-		}, 800);
-		
-	});
+	
 
 	// Slide in the password-reminder form in the login form
 	$('.toggle-forgot-password').click(function(e){
@@ -139,6 +120,56 @@
 		}
 		e.preventDefault();
 		$('body').toggleClass('show-search');
+	});
+
+	// Show author signup overlay
+
+	$('.btn-follow-author').click(function(){
+		var overlay = $('.overlay-author-signup');
+		var overlayForm = $(overlay).find('.input-follow-author');
+
+		// Focus the input field. Only works with setTimeout when transition is used 
+		var focusAuthor = function(){
+			$(overlayForm).focus();
+		};
+		
+		$(overlay).toggleClass('show-me');
+		setTimeout(focusAuthor, 500);
+		
+	});
+
+
+	
+
+	// Show login overlay
+
+	$('.toggle-login').click(function(){
+		$('#site-login').toggleClass('show-me');
+		setTimeout(function() {
+       		$('#site-login .overlay-inner').removeClass("switch-overlay");
+		}, 800);
+		
+	});
+
+	// Show send to a friend overlay
+
+	$('.toggle-sendtoafriend').click(function(e){
+		e.preventDefault();
+		$('#overlay-sendtoafriend').toggleClass('show-me');
+		if($('#overlay-sendtoafriend').hasClass('show-me')) {
+			$('#email-sendtoafriend').blur();	
+		} else {
+			$('#email-sendtoafriend').focus();
+		}
+
+		
+	});
+
+	// Global overlay remover
+
+	$('.close-overlay, .remove-overlay').click(function(e){
+		e.preventDefault();
+		$(this).closest('.overlay').removeClass('show-me');
 	});
 
 

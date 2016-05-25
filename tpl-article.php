@@ -209,10 +209,10 @@
 <?php include('includes/footer.php'); ?>
 
 
-<?php include('includes/article/author-signup.php'); ?>
 
 
-
+<?php include('includes/article/send-to-a-friend.php'); ?>
+<?php include('includes/article/author-signup.php'); ?>	
 
 <?php include('includes/footer-content.php'); ?>
 

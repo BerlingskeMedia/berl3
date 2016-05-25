@@ -12,8 +12,10 @@
 				<a href="tpl-author.php" title="Se [AUTHOR NAME]'s profil"><? dummy("text@author") ?><?php if($partner === 'videnskabdk'): ?>, Videnskab.dk<?php endif; ?></a>
 				
 	
-				<div class="author-follow"><button class="btn btn-xs btn-follow-author btn-blue" >Følg</button></div>
-	
+				<div class="author-follow">
+					<button class="btn btn-xs btn-follow-author btn-blue" >Følg</button>
+				</div>
+				
 				
 				<? if (dumb_luck("50%") &! $partner): ?> 
 					<div class="author-username">
@@ -22,6 +24,9 @@
 				<? endif ?>
 
 			</div>
+
+			
+
 		</div>
 	<? endwhile ?>
 </div>
