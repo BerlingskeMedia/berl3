@@ -28,9 +28,9 @@
 
 <?php else: ?>
 
-	<div class="article-byline">
+	<div class="article-byline freetext-byline">
 	
-			<div class="article-author freetext-byline">
+			
 				
 	
 			
@@ -40,7 +40,7 @@
 					<? dummy("text@author") ?><?php if($partner === 'videnskabdk'): ?>, Videnskab.dk<?php endif; ?>
 					
 				</div>
-			</div>
+			
 	
 	</div>
 
