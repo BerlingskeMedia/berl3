@@ -68,7 +68,7 @@
 				$imgSrc = false;
 				$imgW = '120';
 
-				$showTime = false;
+				$showTime = true;
 				$showImage = true; 
 				$listClass = 'list list-img-right';
 				$listTitle = 'List title';

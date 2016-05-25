@@ -1200,14 +1200,19 @@ $sharebutton-sm: 1.7rem;
 .article-marketing-embedded {
 	padding: 0;
 	background-color: transparent;
+	margin-bottom: 2rem;
 	iframe {
 		width: 100%;
 	}
+	
 }
+
 .article-newsletter-embedded {
 	position: relative;
 	overflow: hidden;
+	margin-bottom: 2rem;
 	@extend .article-off-grid;
+
 	&:before {
 		display: none;
 	}
@@ -1791,7 +1796,7 @@ $longreadPadding: 20rem;
 
 
 @include media-breakpoint-down(sm) {
-
+	
 	.show-author-overlay { 
 		overflow: hidden;
 	}
@@ -1993,7 +1998,7 @@ $longreadPadding: 20rem;
 		float: none;
 		width: inherit;
 		margin-top: $spacer * 2;
-		margin-bottom: $spacer * 2;
+		margin-bottom: $spacer;
 		max-width: none;
 	}
 	
