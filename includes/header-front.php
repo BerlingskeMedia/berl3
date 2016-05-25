@@ -24,7 +24,7 @@
 								</li>
 								<?php else: ?>
 									<li><a href="/" class="btn-topmenu-subscription"> Køb abonnement</a></li>
-									<li><a href="/" class="btn-topmenu-login"><i class="bicon-user"></i> Log ind</a></li>							
+									<li><a href="#" class="btn-topmenu-login toggle-login"><i class="bicon-user"></i> Log ind</a></li>							
 								<?php endif; ?>
 							</ul>
 						</nav>
@@ -82,7 +82,7 @@
 							<?php else: ?>
 								<ul class="mobile-user-nav hidden-md-up">
 									<li class="link-subscription"><a href="#">Køb abonnement</a></li>
-									<li class="link-login"><a href="#">Log ind <i class="bicon-user"></i></a></li>
+									<li class="link-login"><a href="#" class="toggle-login">Log ind <i class="bicon-user"></i></a></li>
 								</ul>
 							<?php endif; ?>
 						</nav>			

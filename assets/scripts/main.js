@@ -108,7 +108,20 @@
 		setTimeout(focusAuthor, 500);
 	});
 
+	// Show the login
+	$('.toggle-login').click(function(){
+		$('#site-login').toggleClass('show-login');
+		setTimeout(function() {
+       		$('#site-login .overlay-inner').removeClass("switch-overlay");
+		}, 800);
 		
+	});
+
+	// Slide in the password-reminder form in the login form
+	$('.toggle-forgot-password').click(function(e){
+		e.preventDefault();
+		$(this).closest('.overlay-inner').toggleClass('switch-overlay');
+	});	
 
 
 	// Remove the follow author overlay
@@ -127,6 +140,8 @@
 		e.preventDefault();
 		$('body').toggleClass('show-search');
 	});
+
+
 
 })(jQuery); 
 

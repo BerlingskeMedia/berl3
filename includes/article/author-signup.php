@@ -1,7 +1,7 @@
-<div class="overlay-author-signup">
+<div class="overlay overlay-author-signup flex-center">
 	<a href="#"></a>
 	
-	<div class="overlay-inner">
+	<div class="overlay-inner ">
 		<a href="#" class="close-overlay"><i class="bicon-cancel"></i></a>
 		<i class="bicon-mail"></i>
 		<p>Modtag en e-mail, når <? dummy("text@author") ?> har skrevet en ny artikel</p>

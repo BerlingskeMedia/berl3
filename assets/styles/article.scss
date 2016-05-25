@@ -58,6 +58,9 @@
 	i {
 		color: $col-blue-1;
 		margin-right: .4rem;
+		&:before {
+			font-size: 1.2rem;
+		}
 	}
 }
 
@@ -1530,51 +1533,18 @@ $longreadPadding: 20rem;
 }
 
 .overlay-author-signup {
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background: rgba(255,255,255,.5);
-	z-index: 9999;
-	display: flex;
-	align-items: center;	
-	position: fixed;
-	justify-content: center;
-	opacity: 0;
-	visibility: hidden;
-	transition: opacity .2s ease;
+	
 	@extend .font-g1;
-	&>a {
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		opacity: 0;
-		display: block;
-	}
+	
 	form {
 		margin-bottom: $spacer;
 		text-align: left;
 		overflow: hidden;
 		position: relative;
 		&:after {
-			position: absolute;
-			background-color: $brand-success;
-			top: 0;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			text-align: center;
-			line-height: 2rem;
-			color: rgba(0,0,0,.5);
-			opacity: 0;
-			transition: all .2s ease;
-			transform: translateY(-100%);
-			content: '';
-			
+			@extend .form-ok;
 		}
+
 		input[type=email] {
 			width: 70%;
 			box-shadow: 0 2px 2px rgba(0,0,0,.25) inset, 0 -1px 0 rgba(0,0,0,.1) inset;
@@ -1582,6 +1552,10 @@ $longreadPadding: 20rem;
 		.btn {
 			width: 30%;
 		}	
+	}
+	.overlay-inner {
+		width: 17.5rem;
+		text-align: center;
 	}
 	.bicon-mail {
 		line-height: 3rem;
@@ -1597,18 +1571,7 @@ $longreadPadding: 20rem;
 		border-radius: 50%;
 	}
 	
-	.overlay-inner {
-		width: 17.5rem;
-		text-align: center;
-		padding: 1rem;
-		border: $border-width solid $border-color;
-		background-color: #fff;
-		transition: all .3s ease-out;
-		opacity: 0;
-		transform: translateY(-2rem);
-		border-radius: .2rem;
-		box-shadow: 0 0 .5rem rgba(0,0,0,.2);
-	}
+	
 	small {
 		color: #999;
 	}
@@ -1623,12 +1586,17 @@ $longreadPadding: 20rem;
 	.overlay-author-signup {
 		opacity: 1;
 		visibility: visible;
+		.overlay-inner {
+			transform: translateY(0);
+			opacity: 1;
+		}
 	}
-	.overlay-inner {
-		transform: translateY(0);
-		opacity: 1;
-	}
+	
 }
+
+
+	
+
 
 	
 @include media-breakpoint-only(xl) {
