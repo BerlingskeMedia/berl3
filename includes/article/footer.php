@@ -7,7 +7,19 @@
 			</div>
 		</div>
 		
-			<? while (dumb_luck("8")): ?>
+			<? while (dumb_luck("2")): ?>
+				<div class="col-xs-6 col-md-3 col-lg-3 col-xl-3 teaser-buffet teaser-sm-start-large-items">
+					<?php 
+						$imgW='750'; 
+						$class = 'fs12 mb ';
+						$showImg = '1';
+						$imgRatio = '16:9';
+						$showKey = true;
+						$showRelated = false;
+						include('includes/teaser.php') ?>
+				</div>
+			<? endwhile ?>
+			<? while (dumb_luck("6")): ?>
 				<div class="col-xs-6 col-md-3 col-lg-3 col-xl-3 teaser-buffet teaser-sm-start-large-items">
 					<?php 
 						$imgW='420'; 

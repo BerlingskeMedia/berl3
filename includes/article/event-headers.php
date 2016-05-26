@@ -21,5 +21,9 @@ Om lidt...
 <div class="event-header-update">
 Opdateres
 </div>
+<?php elseif($event == 'topstory'): ?>
+<div class="event-header-topstory">
+Tophistorie
+</div>
 
 <?php endif; ?>

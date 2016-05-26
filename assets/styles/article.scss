@@ -1098,7 +1098,10 @@ $sharebutton-sm: 1.7rem;
 	color: #fff;
 	background-color: $col-live;
 }
-
+.event-header-topstory {
+	background-color: $col-blue-1;
+	color: #fff;
+}
 .article-topics {
 	position: relative;
 	@extend .ipadHack;
