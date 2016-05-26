@@ -21,12 +21,10 @@
 								<a href="tpl-frontpage.php" class="site-logo">Berlingske</a>	
 							</div>
 							
-							<?php if(!$hideSection): ?>
-								<?php if($siteBusiness): ?>
-									<a href="tpl-section.php" class="page-title logo-business">Business</a>
-								<?php else: ?>
-									<a href="tpl-section.php" class="page-title"><? dummy("text@b-cat") ?></a>
-								<?php endif; ?>
+							<?php if($siteBusiness): ?>
+								<a href="tpl-section.php" class="page-title logo-business">Business</a>
+							<?php else: ?>
+								<a href="tpl-section.php" class="page-title"><? dummy("text@b-cat") ?></a>
 							<?php endif; ?>
 						
 							<ul class="list-reset list-sm tools-menu-right ">

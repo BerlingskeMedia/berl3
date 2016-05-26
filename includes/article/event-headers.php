@@ -24,7 +24,7 @@ Tophistorie
 </div>
 
 <?php elseif($event == 'comingup'): ?>
-<div class="event-header-yellow">
+<div class="event-header-red">
 Nyhed på vej
 </div>
 

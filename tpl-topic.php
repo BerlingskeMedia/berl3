@@ -15,7 +15,7 @@
 	<link rel="stylesheet" href="/dist/styles/main.css">
 	
 </head>
-<body class="<?php if($siteBusiness): ?>site-business<?php endif; ?> tpl-article">
+<body class="<?php if($siteBusiness): ?>site-business<?php endif; ?> tpl-topic">
 
 <?php include('includes/facebook.php'); ?>
 
@@ -28,8 +28,8 @@
 <div class="main-wrapper">
 <?php include('includes/offcanvas-menu.php'); ?>
 
-<?php $hideSection = true; ?>
-<?php include('includes/header-sub.php'); ?>
+
+<?php include('includes/header-front.php'); ?>
 
 
 <div class="canvas-main <?php echo $campaignId; ?>">
