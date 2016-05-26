@@ -4,11 +4,11 @@
 	<div class="overlay-inner">
 		<a href="#" class="close-overlay"><i class="bicon-cancel"></i></a>		
 		
-		<div class="section-title">Send artiklen til en ven</div>
+		<div class="section-title">Send artiklen</div>
 		
 			
 		<div class="alert alert-success">
-			<strong>Succes!</strong> Vi har sendt en e-mail til den valgte modtager.
+			<strong>Succes!</strong> Vi har sendt artiklen til din valgte modtager.
 		</div>
 		<form action="" class="form form-oneliner">
 			
@@ -19,7 +19,7 @@
 			<fieldset class="form-group">
 				<label for="sendtoafriend-msg">Besked til modtager:</label>
 				<textarea class="form-control" id="sendtoafriend-msg" rows="3" placeholder="hej med dig">
-Jeg synes du skal læse denne artikel:</textarea>
+Du vil måske finde denne artikel interssant:</textarea>
 				<small class="text-muted"><strong>Link:</strong> http://www.berlingske.dk/article-link</small>
 			</fieldset>
 			<fieldset class="form-group">
