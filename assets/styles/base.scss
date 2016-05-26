@@ -236,7 +236,7 @@ $col-deck-label-width: 160px;
 	background: fade-out($background-color, .1);
 	z-index: 9999;
 	opacity: 0;
-	visibility: hidden;
+	visibility: auto;
 	transition: opacity .2s ease;
 	.overlay-inner {
 		padding: 1rem;
