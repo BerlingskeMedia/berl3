@@ -1081,24 +1081,16 @@ $sharebutton-sm: 1.7rem;
 	color: #fff;
 }
 
-.event-header-breaking {
+.event-header-yellow {
 	background-color: $col-breaking;
 	color: #222;
 }
-.event-header-live {
+.event-header-red {
 	background-color: $col-live;
 	color: #fff;
-	// transform: skew(-10deg,0);
 }
-.event-header-inawhile {
-	color: #fff;
-	background-color: $col-live;
-}
-.event-header-update {
-	color: #fff;
-	background-color: $col-live;
-}
-.event-header-topstory {
+
+.event-header-blue {
 	background-color: $col-blue-1;
 	color: #fff;
 }

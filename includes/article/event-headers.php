@@ -1,29 +1,31 @@
 <?php if($event == 'breaking'): ?>
-<div class="event-header-breaking">
+<div class="event-header-yellow">
 Breaking news
 </div>
+
 <?php elseif($event == 'live'): ?>
-<div class="event-header-live">
+<div class="event-header-red">
 Live
 </div>
 
 <?php elseif($event == 'now'): ?>
-<div class="event-header-now">
+<div class="event-header-red">
 Lige nu
 </div>
 
-<?php elseif($event == 'inawhile'): ?>
-<div class="event-header-inawhile">
-Om lidt...
-</div>
-
 <?php elseif($event == 'update'): ?>
-<div class="event-header-update">
+<div class="event-header-red">
 Opdateres
 </div>
+
 <?php elseif($event == 'topstory'): ?>
-<div class="event-header-topstory">
+<div class="event-header-blue">
 Tophistorie
+</div>
+
+<?php elseif($event == 'comingup'): ?>
+<div class="event-header-yellow">
+Nyhed på vej
 </div>
 
 <?php endif; ?>

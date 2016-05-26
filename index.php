@@ -251,6 +251,7 @@ if(isset($_GET["business"])) {
 							<li class="green"><a href="tpl-article.php?event=update">To be updated</a> </li>
 							<li class="green"><a href="tpl-article.php?event=inawhile">In a while</a> </li>
 							<li class="green"><a href="tpl-article.php?event=topstory">Topstory</a> </li>
+							<li class="green"><a href="tpl-article.php?event=comingup">Coming up</a> </li>
 						</ul>
 					</div>
 					<div class="col-md-3">
