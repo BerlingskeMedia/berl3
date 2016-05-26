@@ -156,6 +156,7 @@
 	$('.toggle-sendtoafriend').click(function(e){
 		e.preventDefault();
 		$('#overlay-sendtoafriend').toggleClass('show-me');
+		$('body').toggleClass('show-overlay');
 		if($('#overlay-sendtoafriend').hasClass('show-me')) {
 			$('#email-sendtoafriend').blur();	
 		} else {

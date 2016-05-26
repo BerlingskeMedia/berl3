@@ -223,7 +223,9 @@ $col-deck-label-width: 160px;
 	}
 }
 
-
+.show-overlay {
+	overflow: hidden;
+}
 .overlay {
 	@extend .font-g1;
 	position: fixed;
