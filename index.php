@@ -236,7 +236,7 @@ if(isset($_GET["business"])) {
 						<li class="green"><a href="tpl-article.php?showFactDefault">Factbox - Default</a></li>
 						<li class="green"><a href="tpl-article.php?showFactEmbedded">Factbox - Embedded</a></li>
 						<li class="green"><a href="tpl-article.php?showLink">Embedded links</a></li>
-						<li class="orange"><a href="tpl-article.php?download">Download file</a></li>
+						<li class="green"><a href="tpl-article.php?download">Download file</a></li>
 					</ul>
 					</div>
 

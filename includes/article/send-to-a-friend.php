@@ -14,7 +14,7 @@
 			
 			<fieldset class="form-group">
 				<input type="email" class="form-control" id="email-sendtoafriend-to" placeholder="Modtagers e-mail" autocomplete="on" >
-				<div class="msg-error"><i class="bicon-angle-up"></i> Du skal indtaste en email adresse</div>
+				<div class="msg-error"><i class="bicon-angle-up"></i> Du skal indtaste en e-mail adresse</div>
 			</fieldset>
 			<fieldset class="form-group">
 				<label for="sendtoafriend-msg">Besked til modtager:</label>
