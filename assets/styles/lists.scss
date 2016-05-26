@@ -325,3 +325,18 @@ ul + .list-fade {
 	height: 1rem;
 	background-repeat: no-repeat;
 }
+
+@include media-breakpoint-down(sm) {
+	.teaser-sm-start-large-items:nth-child(-n+3) {
+		width: 100%;
+			article {
+				padding-bottom: $spacer;
+				border-bottom: $border-width solid $border-color;	
+				
+				
+			}
+		.header {
+			font-size: 1.2rem;
+		}
+	}
+}
