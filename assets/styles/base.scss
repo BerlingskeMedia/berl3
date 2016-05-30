@@ -61,54 +61,7 @@ ul.list-reset {
 	}
 }
 
-.well-container + .row > .col-primary {
-	margin-top: -5rem;
-	min-height: 400px;
-	z-index: 5;
-	padding-top: 1.2rem;
-	padding-right: 1.2rem;
-	position: relative;
-	background-color: $background-color;
-	&:after {
-		left: .625rem;
-		right: (.625rem / 2);
-		top: 0;
-		bottom: 0;
-		background: $background-color;
-		content: '';
-		z-index: -1;
-	}
-}
-.site-business .well-container + .row > .col-primary {
-	background-color: $col-business;
-}
 
-.weather-of-the-day {
-	margin-top: $spacer ;
-	line-height: 1.4;
-	font-size: .8rem;
-	a {
-		font-size: 80%;
-		display: block;
-		padding: .3125rem 0;
-	}
-}
-[class*="weather-icon-"] {
-	background: url(/dist/images/icons-weather.png) left top no-repeat;
-	padding-left: 40px;
-	height: 34px;
-	line-height: 34px;
-	display: block;	
-}
-.weather-icon-2 {
-	background-position: 0 -34px;
-}
-.weather-icon-3 {
-	background-position: 0 -68px;
-}
-.weather-icon-4 {
-	background-position: 0 -102px;
-}
 
 
 .deck {
@@ -180,11 +133,17 @@ ul.list-reset {
 }
 
 .col-primary {
-	width: calc(100% - 320px);
+	width: calc(100% - 19.375rem);
+	padding-right: .625rem;
+	float: left;
+
 }
-.sidebar {
+.col-sidebar {
 	// padding-top: $spacer;
-	width: 320px;
+	width: 19.375rem;
+	float: left;
+	padding-left: .625rem;
+
 }
 .list-title {
 	@extend .font-sans;

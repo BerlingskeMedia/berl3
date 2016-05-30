@@ -1,7 +1,10 @@
+
+
 <article class="teaser teaser-sm <?= $class; ?>">
-	<?php if ($showImg): ?>
+	<?php if ($showImg  && !$smallImg): ?>
 	<figure class="teaser-img">
-		<a href="tpl-article.php"><img src="<? dummy("image". $imgSrc ."@". $imgW ."x,". $imgRatio ."") ?>" width="" height="" alt="" class="img" /></a>
+		<a href="tpl-article.php">
+		<img src="<? dummy("image". $imgSrc ."@". $imgW ."x,". $imgRatio ."") ?>" width="" height="" alt="" class="img" /></a>
 	</figure>
 	<?php endif; ?>
 	<div class="teaser-body">
@@ -14,7 +17,7 @@
 
 			<a href="tpl-article.php">
 			
-			<? dummy("text@headline-b2") ?>
+			<? dummy("text@headline-b") ?>
 			<?php if($showKey): ?>
 				<? if (dumb_luck("25%")): ?>
 					 <i class="bicon-key"></i>
@@ -22,11 +25,19 @@
 			<?php endif; ?>
 			</a>
 		</h2>
+		<?php if ($smallImg): ?>
+			<figure class="teaser-img teaser-img-small">
+				<a href="tpl-article.php">
+				<img src="<? dummy("image". $imgSrc ."@". $imgW ."x,". $imgRatio ."") ?>" width="" height="" alt="" class="img" /></a>
+			</figure>
+		<?php endif; ?>
 		<?php if ($showSummary): ?>
+
 		<div class="teaser-summary">
 			<? dummy("text@teaser") ?>
 		</div>
 		<?php endif; ?>
+
 		<?php if ($showRelated): ?>
 		<ul class="teaser-related">
 			<? while (dumb_luck("1-2")): ?>
@@ -58,4 +69,5 @@ $showAuthor = false;
 $imgH = '420';
 $imgRatio = 'false';
 $showCat = false;
+$smallImg = false;
 ?>

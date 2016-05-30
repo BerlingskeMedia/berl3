@@ -5,6 +5,9 @@
 				<div class="col-xs-12 ">
 					<ul class="list-footer-menu list-reset list-sm mb-0 ">
 						<li><a href="#"><b class="bicon-home"></b> Forside</a></li>
+						
+ 
+						<li><a href="#">Business</a></li>
 						<li><a href="#">Politiko</a></li>
 						<li class="active"><a href="#">Debat</a></li>
 						<li><a href="#">Global</a></li>
@@ -31,38 +34,18 @@
 					<div class="row">
 						<div class="col-md-12 hidden-sm-down ">
 							
-							<p><strong>Få Berlingskes nyhedsbrev</strong></p>
-								<ul>
-									<li>
-										<form action="" class="form-round-oneliner ">
-											<div class="clearfix ">
-												<!-- the class .newsletter-email is uded by js to slide down breaking cheackbox-->
-												<input type="email" placeholder="Din email" class="newsletter-email">
-												<button class="btn btn-gray">Tilmeld</button>
-											</div>
-											<div class="hidden">
-												<div class="checkbox checkbox-styled mb-05">
-													<label>
-														<input type="checkbox" class="" checked > <span>Berlingske Morgen</span>
-													</label>
-												</div>
-												<div class="checkbox checkbox-styled mb-05">
-												<label>
-													<input type="checkbox" class="" checked > <span>Berlingske Eftermiddag</span>
-												</label>
-												</div>
+Berlingske
+Pilestræde 34
+DK-1147 København K
+Danmark
 
-												<div class="checkbox checkbox-styled mb-05">
-													<label>
-														<input type="checkbox" class="" checked > <span>Breaking News</span>
-													</label>
-												</div>	
-											</div>
-										
-										</form>
-									</li>
-									
-								</ul>		
+Tlf: 33 75 75 75
+Fax: 33 75 20 20
+
+Kontakt os
+
+CVR.nr.: 29 20 73 13	
+								
 							
 						</div>
 						<div class="col-md-12 col-sm-12 col-xs-12 mb-sm">
@@ -99,10 +82,13 @@
 							<p><strong>Om os</strong></p>
 							<ul class="footer-list">
 								<li><a href="#" title="#">Kontakt os</a></li>
-								<li><a href="#" title="#">Redaktionelt regnskab</a></li>
-								<li><a href="#" title="#">Ledige stillinger</a></li>
+								<li><a href="#" title="#">Send pressemeddelelse</a></li>
 								<li><a href="#" title="#">Fejl og fakta</a></li>
+								<li><a href="#" title="#">Redaktionelt regnskab</a></li>
 								<li><a href="#" title="#">Etiske regler</a></li>
+								<li><a href="#" title="#">Ledige stillinger</a></li>
+								<li><a href="#" title="#">Generelle handelsbetingelser</a></li>
+								
 							</ul>
 						</div>
 						<div class="col-md-4 col-sm-6 col-xs-6  mb-sm">
@@ -118,10 +104,8 @@
 							<p><strong>Tjenester</strong></p>
 							<ul class="footer-list">
 								<li><a href="#" title="#">RSS</a></li>
-								<li><a href="#" title="#">Det Berlingske Arkiv</a></li>
 								<li><a href="#" title="#">Apps og mobile tjenester</a></li>
 								<li><a href="#" title="#">Foto privatsalg</a></li>
-								<li><a href="#" title="#">Få en historisk avisforside</a></li>
 								<li><a href="#" title="#">Sitemap</a></li>
 								<li><a href="#" title="#">Artikel arkiv indeks</a></li>
 							</ul>

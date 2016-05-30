@@ -143,6 +143,20 @@
 		content: '';
 	}
 }
+
+.col-border-right-lg-up {
+	position: relative;
+	&:after {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: auto;
+		right: 0;
+		width: $border-width;
+		background-color: $border-color;
+		content: '';
+	}	
+}
 .br-lg .flex-row:not(:last-child){
 	.teaser {
 		position: relative;

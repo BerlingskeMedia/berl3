@@ -1,5 +1,7 @@
 // BREAKING TAG
 
+
+
 .teaser-font-alt {
 	.header {
 		@extend .font-g1;
@@ -30,19 +32,18 @@
 }
 
 .teaser-summary {
-	@extend .font-s2;
+	@extend .font-g1;
 }
 
 img {
 	@extend .img-fluid;
 }
 
-.teaser.bb:last-child {
-	border-bottom: 0;
-	margin-bottom: 0;
-	padding-bottom: 0;
+.teaser-img-small {
+	float: right;
+	margin: 0 0 .6rem .6rem;
+	max-width: 6rem;
 }
-
 
 .site-business  {
 	.teaser:hover {
@@ -56,6 +57,8 @@ img {
 }
 .teaser {
 
+	margin-bottom: .625rem;
+
 	a {
 		color: #000;
 		transition: color .2s ease;
@@ -64,6 +67,7 @@ img {
 			color: $col-alt;
 		}
 	}
+
 	.header {
 		margin-bottom: 0;
 		@extend .font-s1;
@@ -84,19 +88,27 @@ img {
 			color: $col-alt;
 		}
 	}
+	&+ .teaser {
+		border-top: $border-color solid $border-width;
+		padding-top: .625rem;
+	}
+	&:last-child {
+		margin-bottom: 0;
+	}
 }
 .teaser-label {
 	@extend .teaser-cat;
 }
 
-.main-teaser {
-	padding-bottom: $spacer;
-
-	/*background-color: #fff;*/
-	/*.teaser-body {
-		padding: 0 .625rem .625rem;
-	}*/
+.col-small-teasers {
+	.teaser {
+		border-top: $border-color solid $border-width;
+		padding-top: .625rem;	
+		margin-top: .625rem;
+	}
 }
+
+
 
 .toggle-oneliner {
 	position: absolute;
@@ -171,19 +183,6 @@ img {
 	}
 }
 
-/*.teaser-category {
-	display: inline-block;
-	background-color: red;
-	color: #fff;
-	padding: .625rem $spacer;
-	line-height: 1;
-	font-size: .8rem;
-	text-transform: uppercase;
-	z-index: 2;
-	position: relative;
-	margin-bottom: .3125rem;
-
-}*/
 
 .teaser-well {
 	position: relative;
@@ -250,6 +249,8 @@ img {
 		font-weight: normal;
 	}
 }
+
+
 
 // teaser-bg
 
@@ -402,10 +403,10 @@ img {
 
 
 .teaser-summary {
-	margin-top: .425rem;
+	
 	color: #333;
-	line-height: 1.3;
-	font-size: .85rem;
+	line-height: 1.4;
+	font-size: .8rem;
 }
 
 // teaser-sm 
@@ -710,9 +711,9 @@ img {
 	}
 }
 
-/*.teaser-editorial {
-	background: url(/dist/images/vaabenskjold-2.png) center top no-repeat;
-	background-size: contain;
-	padding-top: 100px;
-	
-}*/
+@include media-breakpoint-only(xl) {
+	.teaser-no-border-xl {
+		border-top: none!important;
+		padding-top: 0!important;	
+	}
+}
