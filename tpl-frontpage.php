@@ -69,33 +69,14 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 
 	<div class="container">
 
-	
 
 
-	
-
-	
-	
+	<?php include('includes/deck-teaser-longread.php'); ?>
 
 	
-
-
+	</div>
 	
-
-
-	
-
-	
-
-
-
-
-	<?php // include('includes/deck-teaser-longread.php'); ?>
-
-	
-</div>
-</div><!-- canvas-main -->
-</div><!-- banner-wrapper -->
+	</div><!-- banner-wrapper -->
 </div><!-- main-wrapper -->
 
 

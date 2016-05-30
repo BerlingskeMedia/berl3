@@ -5,9 +5,11 @@
 	</figure>
 	<?php endif; ?>
 	<div class="teaser-body">
-		<span class="teaser-cat">
-			Nyheder
-		</span>
+		<?php if($showCat): ?>
+			<span class="teaser-cat">
+				<? dummy("text@topics") ?>
+			</span>
+		<?php endif; ?>
 		<h2 class="header">
 
 			<a href="tpl-article.php">
@@ -30,7 +32,7 @@
 			<? while (dumb_luck("1-2")): ?>
 			<li>
 				<h3 class="header-related">
-					<a href="tpl-article.php"><? dummy("text@headline-b2") ?></a>
+					<a href="tpl-article.php"><? dummy("text@headline-b") ?></a>
 				</h3>
 			</li>
 			<? endwhile ?>
@@ -55,4 +57,5 @@ $imgSrc = false;
 $showAuthor = false;
 $imgH = '420';
 $imgRatio = 'false';
+$showCat = false;
 ?>

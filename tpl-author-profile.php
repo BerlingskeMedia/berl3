@@ -48,45 +48,32 @@
 			<div class="col-1-content ">
 
 				<div class="page-content">
-					<h1 class="section-title"><? dummy("text@topics") ?></h1>
+					<h1 class="section-title-lg"><? dummy("text@author") ?></h1>
 				</div>		
+
+				<div class="row mb">
+					<div class="col-xs-4">
+						<figure>
+							<img src="<? dummy("image/!author@400x,1:1") ?>" width="" height="" alt="" />
+						</figure>
+					</div>
+				</div>
 			
-				<ul class="row flex-row list-unstyled">
-					
-						<li class="col-lg-8 col-md-12">
+				<div class="row flex-row">
+					<? while (dumb_luck("20")): ?>
+						<div class="col-xs-6 col-md-3 col-lg-3 col-xl-3  ">
 							<?php 
-								$imgW='900'; 
-								$class = 'fs26 mb  fs-xl-26 fx-lg-20 fs-md-26 fx-sm-20 ';
+								$imgW='420'; 
+								$class = 'fs12 mb ';
 								$showImg = '1';
 								$imgRatio = '16:9';
-								$showCat = false;
 								$showKey = true;
 								$showRelated = false;
 								include('includes/teaser.php') ?>
-						</li>
-
-						<li class="col-lg-4 col-md-12">
-							<ul class="row list-unstyled">
-
-								<? while (dumb_luck("2")): ?>
-								<li class="col-lg-12 col-md-6">
-								<?php 
-									$imgW='420'; 
-									$class = 'fs12 mb ';
-									$showImg = '1';
-									$showCat = false;
-									$imgRatio = '16:9';
-									$showKey = true;
-									$showRelated = false;
-									include('includes/teaser.php') ?>
-								<? endwhile ?>
-								</li>
-							</ul>
-							
-						</li>
-					
+						</div>
+					<? endwhile ?>
 				
-				</ul><!-- row -->
+				</div><!-- row -->
 			</div><!-- col -->
 
 			<div class="col-2-sidebar ">

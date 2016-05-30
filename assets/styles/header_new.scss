@@ -24,13 +24,14 @@ $border: .063rem;
 }*/
 
 body {
+	padding-top: $headerHeight;
+}
+
+body.tpl-article {
 	padding-top: $subheaderHeight;	
 }
 
 
-.tpl-front {
-	padding-top: $headerHeight;
-}
 
 .site-header {
 	.container {

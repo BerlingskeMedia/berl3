@@ -249,7 +249,7 @@ if(isset($_GET["business"])) {
 							<li class="green"><a href="tpl-article.php?event=breaking">Breaking</a> </li>
 							<li class="green"><a href="tpl-article.php?event=live">Live</a> </li>
 							<li class="green"><a href="tpl-article.php?event=update">To be updated</a> </li>
-							<li class="green"><a href="tpl-article.php?event=inawhile">In a while</a> </li>
+							<li class="green"><a href="tpl-article.php?event=now">Now</a> </li>
 							<li class="green"><a href="tpl-article.php?event=topstory">Topstory</a> </li>
 							<li class="green"><a href="tpl-article.php?event=comingup">Coming up</a> </li>
 						</ul>
@@ -352,7 +352,7 @@ if(isset($_GET["business"])) {
 						<li class="red"><a href="#">Blog</a></li>
 						<li class="orange"><a href="tpl-topic.php">Topic page</a></li>
 						<li class="red"><a href="#">Author overview</a></li>
-						<li class="red"><a href="#">Author profile</a></li>
+						<li class="orange"><a href="tpl-author-profile.php">Author profile</a></li>
 						<li class="red"><a href="#">Search result</a></li>
 					</ul>
 				</div>

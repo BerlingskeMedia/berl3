@@ -6,9 +6,9 @@
 				Tophistorier
 			</div>
 		</div>
-		
+			<ul class="flex-row list-unstyled">
 			<? while (dumb_luck("2")): ?>
-				<div class="col-xs-6 col-md-3 col-lg-3 col-xl-3 teaser-buffet teaser-sm-start-large-items">
+				<li class="col-xs-6 col-md-3 col-lg-3 col-xl-3 teaser-buffet teaser-sm-start-large-items">
 					<?php 
 						$imgW='750'; 
 						$class = 'fs12 mb ';
@@ -17,10 +17,10 @@
 						$showKey = true;
 						$showRelated = false;
 						include('includes/teaser.php') ?>
-				</div>
+				</li>
 			<? endwhile ?>
 			<? while (dumb_luck("6")): ?>
-				<div class="col-xs-6 col-md-3 col-lg-3 col-xl-3 teaser-buffet teaser-sm-start-large-items">
+				<li class="col-xs-6 col-md-3 col-lg-3 col-xl-3 teaser-buffet teaser-sm-start-large-items">
 					<?php 
 						$imgW='420'; 
 						$class = 'fs12 mb ';
@@ -29,8 +29,9 @@
 						$showKey = true;
 						$showRelated = false;
 						include('includes/teaser.php') ?>
-				</div>
+				</li>
 			<? endwhile ?>
+			</ul>
 			<div class="col-xs-12">
 
 				<div class="toggle-loadmore-fade">

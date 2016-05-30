@@ -120,6 +120,16 @@ ul.list-reset {
 	font-weight: 500;
 	font-size: .75rem;
 }
+
+.page-content {
+	margin-top: .5rem;
+}
+.section-title-lg {
+	@extend .font-sans-alt;
+	font-size: 3rem;
+	font-weight: normal;
+	text-transform: uppercase;
+}
 .section-title {
 	@extend .font-sans-alt;
 	color: #333;
@@ -128,6 +138,7 @@ ul.list-reset {
 	display: block;
 	letter-spacing: .0rem;
 	margin: 0 0 $spacer;
+	font-weight: normal;
 	@extend .top-block;
 	text-transform: uppercase;
 
