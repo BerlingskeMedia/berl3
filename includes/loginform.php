@@ -7,16 +7,16 @@
 
 		<div class="site-logo text-center mb">Berlingske</div>
 
-		
-		<p class="text-center"><strong>Ikke adgang?</strong> Køb abonnement på Berlingske og få fuld adgang til alt indhold. <a href="#" class="link-blue">Køb abonnement</a> </p>
+		  
+		<p class="text-center"><strong>Mangler du adgang?</strong> Køb abonnement på Berlingske og få fuld adgang til alt indhold på Berlingske.dk og Business.dk. <a href="#" class="link-blue">Køb abonnement</a> </p>
 		
 		<form action="" class="form ">
 			<div class="alert alert-danger">
-				<p>Kombinationen af e-mail og adgangskode var forkert</p>
+				<p>Forkert e-mailadresse og/eller adgangskode</p>
 			</div>
 			<fieldset class="form-group">
-				<input type="email" class="form-control" id="login-email" placeholder="E-mail" autocomplete="on" >
-				<div class="msg-error"><i class="bicon-angle-up"></i> Du skal indtaste en email adresse</div>
+				<input type="email" class="form-control" id="login-email" placeholder="E-mailadresse" autocomplete="on" >
+				<div class="msg-error"><i class="bicon-angle-up"></i> Du skal indtaste en gyldig e-mailadresse</div>
 			</fieldset>
 
 			<fieldset class="form-group">
@@ -39,13 +39,14 @@
 				
 			
 			<button class="btn btn-round btn-blue btn-block mt">Log ind</button>
-			<div class="msg-error hidden"><i class="bicon-angle-up"></i> Du skal indtaste en email adresse</div>
+			<div class="msg-error hidden"><i class="bicon-angle-up"></i> Du skal indtaste en gyldig e-mailadresse</div>
 		</form>
 		</div>
 		<div class="slide-2">
 			<div class="forgot-password-container">
 				<h2>Glemt adgangskode</h2>
-				<p>Indtast den e-mail, du har oprettet dig med på Berlingske.dk, så sender vi en mail med information om, hvordan du ændrer dit password.</p>
+
+				<p>Indtast den e-mailadresse, du har oprettet dig med på Berlingske.dk, så sender vi en mail med information om, hvordan du ændrer din adgangskode.</p>
 				<form action="" class="form">
 					<fieldset class="form-group">
 						<input type="email" class="form-control" id="login-email" placeholder="E-mail" autocomplete="on" >
@@ -54,9 +55,9 @@
 					<button class="btn btn-round btn-blue btn-block mt mb">Send</button>
 				</form>
 				<div class="alert alert-success">
-					<p><strong>Så godt, så langt!</strong> Vi har sendt dig en email med instruktioner om, hvordan du ændrer dit password.</p>
+					<p><strong>Så godt, så langt!</strong> Vi har nu sendt dig en e-mail med instruktioner om, hvordan du ændrer din adgangskode.</p>
 				</div>
-				<p><small><a href="#" class="close-reminder toggle-forgot-password"><i class="bicon-angle-left"></i> Tilbage til login</a></small></p>
+				<p><small><a href="#" class="close-reminder toggle-forgot-password"><i class="bicon-angle-left"></i> Tilbage til log ind</a></small></p>
 			</div>
 		</div>
 

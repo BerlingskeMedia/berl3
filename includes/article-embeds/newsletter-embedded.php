@@ -12,11 +12,11 @@
 		<form action="" class="form-embedded-newsletter  form-round-oneliner">
 			<div class="clearfix">
 				<!-- the class .newsletter-email is uded by js to slide down breaking cheackbox-->
-				<input type="email" placeholder="Din e-mail" required class="newsletter-email">
+				<input type="email" placeholder="Din e-mailadresse" required class="newsletter-email">
 				<button class="btn  btn-black">OK</button>
 
 			</div>
-			<div class="msg-error hidden"><i class="bicon-angle-up"></i> Du skal indtaste en email adresse</div>
+			<div class="msg-error hidden"><i class="bicon-angle-up"></i> Du skal indtaste en gyldig e-mailadresse</div>
 			<div class="hidden form-options">
 				
 				<div class="checkbox checkbox-styled mb-05">
@@ -59,10 +59,10 @@
 	<form action="" class="form-embedded-newsletter form-round-oneliner">
 		<div class="clearfix">
 			<!-- the class .newsletter-email is uded by js to slide down breaking cheackbox-->
-			<input type="email" placeholder="Din e-mail" required class="newsletter-email">
+			<input type="email" placeholder="Din e-mailadresse" required class="newsletter-email">
 			<button class="btn  btn-blue">OK</button>
 		</div>
-		<div class="msg-error hidden"><i class="bicon-angle-up"></i> Du skal indtaste en email adresse</div>
+		<div class="msg-error hidden"><i class="bicon-angle-up"></i> Du skal indtaste en gyldig e-mailadresse</div>
 		<div class="hidden form-options">
 			<div class="checkbox checkbox-styled mb-05">
 				<label>
