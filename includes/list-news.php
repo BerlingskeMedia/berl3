@@ -46,7 +46,7 @@ if ($listBlog) {
 					<time><? dummy("text@time") ?></time>
 				<?php endif; ?>
 				<a href="tpl-article.php" title="[ARTICLE HEADER]">
-
+					<? if (dumb_luck("20%")): ?><? if (dumb_luck("50%")): ?><i class="bicon-play-circled"></i> <? else: ?><i class="bicon-camera"></i> <? endif ?><? endif ?>
 					<? dummy("text@headline-b") ?>
 					<?php if($premium): ?>
 						<? if (dumb_luck("50%")): ?><i class="bicon-key"></i><? endif ?>
