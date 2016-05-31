@@ -1,6 +1,6 @@
 
 
-<article class="teaser teaser-sm <?= $class; ?>">
+<article class="teaser <?= $class; ?>">
 	<?php if ($showImg  && !$smallImg): ?>
 	<figure class="teaser-img">
 		<a href="tpl-article.php">
@@ -26,16 +26,36 @@
 			</a>
 		</h2>
 		<?php if ($smallImg): ?>
-			<figure class="teaser-img teaser-img-small">
+			<figure class="teaser-img-sm">
 				<a href="tpl-article.php">
 				<img src="<? dummy("image". $imgSrc ."@". $imgW ."x,". $imgRatio ."") ?>" width="" height="" alt="" class="img" /></a>
 			</figure>
 		<?php endif; ?>
-		<?php if ($showSummary): ?>
 
-		<div class="teaser-summary">
-			<? dummy("text@teaser") ?>
-		</div>
+		<?php if ($showSummary): ?>
+			<div class="teaser-summary">
+				<? dummy("text@teaser-b") ?>
+			</div>
+		<?php endif; ?>
+
+		<?php if($showAuthor): ?>
+			<span class="teaser-author">&mdash; <? dummy("text@author") ?></span>
+		<?php endif; ?>
+			
+		<?php if($showDate || $showCategory): ?>
+			<div class="teaser-footer">
+				<?php if($showDate): ?>
+				<span class="teaser-date">
+					<? dummy("text@time-ago") ?>
+				</span>	
+				<?php endif; ?>
+
+				<?php if($showCategory): ?>
+				<span class="teaser-category">
+					<? dummy("text@b-cat") ?>
+				</span>	
+				<?php endif; ?>
+			</div>
 		<?php endif; ?>
 
 		<?php if ($showRelated): ?>
@@ -48,13 +68,11 @@
 			</li>
 			<? endwhile ?>
 		</ul>
-	<?php endif; ?>
+		<?php endif; ?>
 	
 
 
-	<?php if($showAuthor): ?>
-		<span class="teaser-author">&mdash; <? dummy("text@author") ?></span>
-	<?php endif; ?>
+	
 
 	</div>
 </article>
@@ -66,8 +84,9 @@ $showImg = true;
 $showKey = false;
 $imgSrc = false;
 $showAuthor = false;
-$imgH = '420';
-$imgRatio = 'false';
+$imgRatio = false;
 $showCat = false;
 $smallImg = false;
+$showCategory = false;
+$showDate = false;
 ?>

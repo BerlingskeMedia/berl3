@@ -139,22 +139,7 @@ ul + .list-fade {
 	}
 }
 
-.teaser-related {
-	padding-left: $spacer;
-	font-size: .85rem;
-	margin: .625rem 0 0 0;
-	li {
-		margin-bottom: .3rem;
-		&:last-child {
-			margin-bottom: 0;
-		}
-	}
-	.header-related {
-		font-size: .75rem;
-		margin: 0;
-		font-weight: 400;
-	}
-}
+
 .list-img-right {
 	figure {
 		float:right;

@@ -81,6 +81,11 @@
 		font-size: 1.2rem;
 	}
 }
+.fs13 {
+	.header {
+		font-size: 1.3rem;
+	}
+}
 .fs14 {
 	.header {
 		font-size: 1.4rem;
@@ -101,7 +106,6 @@
 		font-size: 2.0rem;
 	}
 }
-
 .fs24 {
 	.header {
 		font-size: 2.4rem;
@@ -268,57 +272,7 @@
 
 
 @include media-breakpoint-down(md){
-	 .fs08 {
-	 	.header {
-	 		font-size: .8rem;
-	 	}
-	 }
-	 .fs09 {
-	 	.header {
-	 		font-size: .9rem;
-	 	}
-	 }
-	 .fs10 {
-	 	.header {
-	 		font-size: 1rem;
-	 	}
-	 }
-	 .fs12 {
-	 	.header {
-	 		font-size: 1rem;
-	 	}
-	 }
-	 .fs14 {
-	 	.header {
-	 		font-size: 1.4rem;
-	 	}
-	 }
-	 .fs16 {
-	 	.header {
-	 		font-size: 1.6rem;
-	 	}
-	 }
-	 .fs18 {
-	 	.header {
-	 		font-size: 1.8rem;
-	 	}
-	 }
-	 .fs20 {
-	 	.header {
-	 		font-size: 2.0rem;
-	 	}
-	 }
-
-	 .fs24 {
-	 	.header {
-	 		font-size: 2.4rem;
-	 	}
-	 }
-	 .fs26 {
-	 	.header {
-	 		font-size: 2.6rem;
-	 	}
-	 }
+	
 }
 
 .like-berlingske {
@@ -332,6 +286,8 @@
 .like-berlingske-not-tablet {
 	display: none;
 }
+
+
 @include media-breakpoint-up(lg) {
 	.like-berlingske-not-tablet {
 		display: block;
@@ -347,12 +303,6 @@
 }
 
 
-@include media-breakpoint-up(md) {
-	.col-md-up {
-		column-count: 2;
-	}
-}
-
 @include media-breakpoint-down(md) {
 	.row-narrow-md {
 		margin-left: -.25rem;
@@ -366,57 +316,7 @@
 }
 
 @include media-breakpoint-down(sm) {
-	.fs08 {
-		.header {
-			font-size: .8rem;
-		}
-	}
-	.fs09 {
-		.header {
-			font-size: .9rem;
-		}
-	}
-	.fs10 {
-		.header {
-			font-size: 1rem;
-		}
-	}
-	.fs12 {
-		.header {
-			font-size: .9rem;
-		}
-	}
-	.fs14 {
-		.header {
-			font-size: 1.4rem;
-		}
-	}
-	.fs16 {
-		.header {
-			font-size: 1.6rem;
-		}
-	}
-	.fs18 {
-		.header {
-			font-size: 1.8rem;
-		}
-	}
-	.fs20 {
-		.header {
-			font-size: 2.0rem;
-		}
-	}
-
-	.fs24 {
-		.header {
-			font-size: 2.4rem;
-		}
-	}
-	.fs26 {
-		.header {
-			font-size: 2.6rem;
-		}
-	}
+	
 	.align-center-sm {
 		text-align: center;
 	}
@@ -436,9 +336,4 @@
 	 	margin-bottom : $spacer; 
 	 }
 	
- }
-
- .tablet-banner {
- 	margin-left: -3rem; 
- 	margin-right: -3rem;
  }

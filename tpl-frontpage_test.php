@@ -89,142 +89,39 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 	
 	<?php endif; ?>
 
-	<div class=" deck">
+<?php if($deck === '1'): ?>
+	<?php include('includes/frontpage/deck1.php'); ?>
 
-		<div class="col-primary ">
-			
-			<div class="row flex-row">
-				<div class="col-xl-3 col-lg-4 col-border-right-lg-up">
-					<?php
-						$imgW='920'; 
-						$showImg = '0';
-						$class = ' fs22 main-teaser';
-						$imgRatio = '3:2';
-						$showSummary = '1';
-						$showRelated = '0';
-						include('includes/teaser.php') ?>
+<?php elseif($deck === '2'): ?>
 
-						<? while (dumb_luck("3")): ?>
-						<?php
-						
-						$showImg = '0';
-						$imgW='140'; 
-						$showImg = false;
-						$smallImg = false;
-						$class = ' fs12  ';
-						$imgRatio = '3:2';
-						$showSummary = '1';
-						$showRelated = '0';
-						include('includes/teaser.php') ?>
-					<? endwhile ?>
-				</div>
-					
-				<div class="col-xl-6 col-lg-8 col-border-right-lg-up ">
-						<?php
-						$imgW='920'; 
-						$showImg = '1';
-						$class = ' fs16 ';
-						$imgRatio = '16:9';
-						$imgSrc = '/landscape';
-						$showSummary = '1';
-						$showRelated = '1';
+	<?php include('includes/frontpage/deck2.php'); ?>
 
-						include('includes/teaser.php') ?>
+<?php elseif($deck === '3'): ?>
 
-						<? while (dumb_luck("3")): ?>
-							<?php
-							$imgW='220'; 
-							$showImg = '0';
-							$smallImg = true;
-							$class = ' fs12 clearfix';
-							$imgRatio = '3:2';
-							$imgSrc = '/landscape';
-							$showSummary = '1';
-							$showRelated = '0';
+	<?php include('includes/frontpage/deck3.php'); ?>
 
-							include('includes/teaser.php') ?>
-						<? endwhile ?>
-				</div>
+<?php elseif($deck === '4'): ?>
 
-				<div class="col-xl-3 col-lg-12 col-border-right-lg-up col-small-teasers">
-					<div class="row">
-						
-							
-							<div class="col-xl-12 col-lg-3">
-								<?php
-									$imgW='220'; 
-									$showImg = true;
-									$smallImg = false;
-									$class = ' fs10 teaser-no-border-xl';
-									$imgRatio = '16:9';
-									$showSummary = false;
-									$showRelated = '0';
+	<?php include('includes/frontpage/deck4.php'); ?>
 
-									include('includes/teaser.php') ?>		
-							</div>
-						
+<?php else: ?>
 
-						
-						<? while (dumb_luck("3")): ?>
-							
-							<div class="col-xl-12 col-lg-3">
-								<?php
-									$imgW='220'; 
-									$showImg = true;
-									$smallImg = false;
-									$class = ' fs10 ';
-									$imgRatio = '16:9';
-									$showSummary = '0';
-									$showRelated = '0';
-									include('includes/teaser.php') ?>		
-							</div>
-						<? endwhile ?>
-					</div>
-				</div>
-				
+	<div class="deck">
+		<div class="row">
+			<div class="col-xs-12 text-center" style="">
+				<div class="alert alert-danger">Dækket findes ikke!</div>
 			</div>
 		</div>
-
-		<div class="col-sidebar">
-
-			<div class="banner module ">
-				<div style="width: 300px; height: 250px;" class="demo-banner"></div>
-			</div>
-			
-			<?php 
-			$showTime = true; 
-			$listClass = 'list-time';
-			$listTitle = 'Seneste nyt';
-			$listCount = '10';
-			$sectionClass = 'latest-news mb-2';
-
-			include('includes/list-news.php');
-			?>
-			
-			
-			<section class="module">
-				<div class="section-title">
-					Børstal
-				</div>
-				<div class="test" style="height: 300px;">
-					TBA
-				</div>
-			</section>
-
-			
-
-			<div class="banner mb-2 ">
-				<div style="width: 300px; height: 250px;" class="demo-banner"></div>
-			</div>
-		</div>
-		
 	</div>
 	
 
+<?php endif; ?>
 	
 
-	<!-- <div class="row deck flex-row  ">
-		<div class="col-deck-label">
+	
+
+	<div class=" deck   ">
+		<div class="col-tags">
 			<div class="section-title">
 				Opinion
 			</div>
@@ -232,7 +129,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 				<a href="tpl-section.php">Se alle <i class="bicon-angle-right"></i></a>
 			</div>
 		</div>
-		<div class="col-deck-content">
+		<div class="col-primary-wide">
 			<div class="flex-row br-lg">
 
 			<div class="col-xs-1-5th flex-row">
@@ -278,7 +175,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 			<?php endwhile; ?>
 			</div>
 		</div>
-	</div> --><!-- deck -->
+	</div><!-- deck -->
 
 	
 
@@ -326,38 +223,24 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 	</div> --><!-- /deck -->
 
 
-	<div class="row deck ">
-		<div class="text-center banner hidden-sm-down">
-				<div class="demo-banner" style="width: 930px; height: 180px;"></div>
-		</div>
-	</div><!-- deck -->
+	
 
 
-	<div class="row deck hidden">
+	<div class="deck">
 
 		
-
-		<div class="col-lg-8 col-md-12 col-primary">
-			
-				
-				
-				
-			<div class="row flex-row">
-				<div class="col-deck-label">
+				<div class="col-tags">
 					<div class="section-title">Dagen i dag</div>
 					
 					<div class="small today gray mb-2">
-					<? while (dumb_luck("3")): ?>
-					<p><? dummy("text@dagenidag") ?></p>
-					<? endwhile ?>
+						<? while (dumb_luck("3")): ?>
+							<p><? dummy("text@dagenidag") ?></p>
+						<? endwhile ?>
 					</div>
-					
-				
-					
 				</div>
 
-				
-				<div class="col-deck-content ">
+
+				<div class="col-primary ">
 							
 						<div class="col-lg-8 col-md-8 border-right-lg">
 						
@@ -365,7 +248,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 									<?php
 										$imgW='920'; 
 										$showImg = '1';
-										$class = ' fs22 mb border-bottom main-teaser';
+										$class = ' fs22 mb  main-teaser';
 										$imgRatio = '16:9';
 										$showSummary = '1';
 										$showRelated = '1';
@@ -377,7 +260,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 							<?php 
 								$imgW='140'; 
 								$showImg = '1';
-								$class = 'teaser-float-left fs12 bb';
+								$class = 'teaser-float-left fs12 ';
 								$imgRatio = '3:2';
 								$showSummary = '0';
 								$showRelated = '0';
@@ -394,7 +277,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 							<?php 
 								$imgW='140'; 
 								$showImg = '1';
-								$class = 'teaser-float-left fs12 bb';
+								$class = 'teaser-float-left fs12 ';
 								$imgRatio = '3:2';
 								$showSummary = '0';
 								$showKey = true;
@@ -410,9 +293,9 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 							<?php 
 								$imgW='420'; 
 								// $class = 'fs10 teaser-bg teaser-bg-narrow teaser-font-alt';
-								$class = 'fs10 bb ';
+								$class = 'fs10  ';
 								$showImg = '1';
-								$imgRatio = '3:2';
+								$imgRatio = '16:9';
 								$sectionClass = 'mb';
 								$showKey = true;
 								include('includes/teaser.php') ?>
@@ -425,7 +308,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 							<?php 
 								$imgW='120'; 
 								// $class = 'fs10 teaser-bg teaser-bg-narrow teaser-font-alt';
-								$class = 'fs10 mb teaser-thumb bb-all';
+								$class = 'fs10 mb teaser-thumb ';
 								$showImg = '1';
 								$imgRatio = '1:1';
 								$imgSrc = '!b-tilstregen';
@@ -459,11 +342,11 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 						</div>
 					
 				</div>
-			</div>
 			
-		</div>
+			
+		
 
-		<div class="col-lg-4 col-md-12 sidebar hidden">
+		<div class="col-sidebar">
 
 			<div class="banner module ">
 				<div style="width: 300px; height: 250px;" class="demo-banner"></div>

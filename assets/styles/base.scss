@@ -77,6 +77,20 @@ ul.list-reset {
 .page-content {
 	margin-top: .5rem;
 }
+.top-block {
+	position: relative;
+	padding-top: 1rem;
+	&:before {
+		display: inline-block;
+		width: 100%;
+		content: '';
+		height: .313rem;
+		position: absolute;
+		top: 0;
+		background-color: #222;
+	}
+}
+
 .section-title-lg {
 	@extend .font-sans-alt;
 	font-size: 3rem;
@@ -105,6 +119,13 @@ ul.list-reset {
 	}
 }
 
+.section-title-no-border {
+	@extend .section-title;
+	padding-top: 0;
+	&:before {
+		display: none;
+	}
+}
 .section-title-sm {
 	@extend .section-title;
 	font-size: 1rem;
@@ -132,18 +153,38 @@ ul.list-reset {
 	border-bottom: $border-width solid $border-color;
 }
 
+
+$col-tag-width: 10rem;
+$col-sidebar-width: 19.375rem;
+
+
 .col-primary {
-	width: calc(100% - 19.375rem);
+	width: calc(100% - #{$col-sidebar-width});
+	padding-right: .625rem;
+	float: left;
+
+}
+.col-primary-wide {
+	width: calc(100% - #{$col-tag-width});
 	padding-right: .625rem;
 	float: left;
 
 }
 .col-sidebar {
 	// padding-top: $spacer;
-	width: 19.375rem;
+	width: $col-sidebar-width;
 	float: left;
 	padding-left: .625rem;
+}
 
+.col-tags {
+	width:  $col-tag-width;
+	float: left;
+	padding-right: .625rem;
+}
+
+.col-tags + .col-primary {
+	width: calc(100% - #{$col-tag-width + $col-sidebar-width});
 }
 .list-title {
 	@extend .font-sans;
@@ -155,19 +196,7 @@ ul.list-reset {
 	@extend .top-block;
 }
 
-.top-block {
-	position: relative;
-	padding-top: 1rem;
-	&:before {
-		display: inline-block;
-		width: 100%;
-		content: '';
-		height: .313rem;
-		position: absolute;
-		top: 0;
-		background-color: #222;
-	}
-}
+
 
 
 $col-deck-label-width: 160px;

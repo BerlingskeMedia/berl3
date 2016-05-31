@@ -137,5 +137,9 @@ if (isset($_GET['loggedIn'])) {
 
 $campaignId = 'campaign-' . mt_rand(1,4);
 
+if (isset($_GET['deck'])) {
+	$deck = $_GET['deck'];
+}
+
 
 ?>
