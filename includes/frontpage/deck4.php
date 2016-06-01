@@ -1,18 +1,24 @@
-<div class=" deck">
+<div class=" deck flex-row">
 
-	<div class="col-tags ">
-		<div class="section-title-no-border">Topnyheder</div>
+	<div class="col-tags">
+		
+			
+				<div class="section-title-no-border">Topnyheder</div>		
+			
+		
+		
 	</div>
+	
 	<div class="col-primary ">
 		
 		<div class="row flex-row">
 			
 				
-			<div class="col-xl-9 col-lg-8 col-border-right-lg-up ">
+			<div class="col-xl-8 col-lg-8  col-border-right-lg-up">
 					<?php
 					$imgW='920'; 
 					$showImg = '1';
-					$class = ' fs16 ';
+					$class = ' fs22 ';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = '1';
@@ -39,7 +45,7 @@
 					<? endwhile ?>
 			</div>
 
-			<div class="col-xl-3 col-lg-12 col-border-right-lg-up ">
+			<div class="col-xl-4 col-lg-12 col-border-right-lg-up ">
 				
 					
 						
@@ -51,7 +57,7 @@
 						
 						
 							<?php
-								$imgW='220'; 
+								$imgW='240'; 
 								$showImg = true;
 								$smallImg = false;
 								$class = ' fs10 ';
@@ -67,11 +73,12 @@
 						
 
 						<?php
-							$imgW='220'; 
+							
+							$imgW='120'; 
 							$showImg = true;
 							$smallImg = false;
 							$imgSrc = '/!author';
-							$class = ' fs18 teaser-feature';
+							$class = ' fs10 teaser-feature';
 							$imgRatio = '1:1';
 							$showSummary = '0';
 							$showRelated = '0';

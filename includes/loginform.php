@@ -49,13 +49,13 @@
 				<p>Indtast den e-mailadresse, du har oprettet dig med på Berlingske.dk, så sender vi en mail med information om, hvordan du ændrer din adgangskode.</p>
 				<form action="" class="form">
 					<fieldset class="form-group">
-						<input type="email" class="form-control" id="login-email" placeholder="E-mail" autocomplete="on" >
-						<div class="msg-error"><i class="bicon-angle-up"></i> Du skal indtaste en email adresse</div>
+						<input type="email" class="form-control" id="login-email" placeholder="E-mailadresse" autocomplete="on" >
+						<div class="msg-error"><i class="bicon-angle-up"></i> Du skal indtaste en gyldig e-mailadresse</div>
 					</fieldset>
 					<button class="btn btn-round btn-blue btn-block mt mb">Send</button>
 				</form>
 				<div class="alert alert-success">
-					<p><strong>Så godt, så langt!</strong> Vi har nu sendt dig en e-mail med instruktioner om, hvordan du ændrer din adgangskode.</p>
+					<p>Vi har nu sendt dig en e-mail med instruktioner om, hvordan du ændrer din adgangskode.</p>
 				</div>
 				<p><small><a href="#" class="close-reminder toggle-forgot-password"><i class="bicon-angle-left"></i> Tilbage til log ind</a></small></p>
 			</div>

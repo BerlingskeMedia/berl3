@@ -7,7 +7,7 @@
 				<?php
 					$imgW='920'; 
 					$showImg = '0';
-					$class = ' fs22 main-teaser';
+					$class = ' fs16 main-teaser';
 					$imgRatio = '3:2';
 					$showSummary = '1';
 					$showRelated = '0';
@@ -17,11 +17,11 @@
 					<?php
 					
 					$showImg = '0';
-					$imgW='140'; 
+					$imgW='60'; 
 					$showImg = false;
-					$smallImg = false;
-					$class = ' fs12 teaser-alt ';
-					$imgRatio = '3:2';
+					$smallImg = true;
+					$class = ' fs10 teaser-alt teaser-img-right';
+					$imgRatio = '1:1';
 					$showSummary = '1';
 					$showRelated = '0';
 					include('includes/teaser.php') ?>
@@ -42,11 +42,11 @@
 
 					<? while (dumb_luck("3")): ?>
 						<?php
-						$imgW='220'; 
-						$showImg = '0';
+						$imgW='140'; 
+						$showImg = false;
 						$smallImg = true;
-						$class = ' fs12 clearfix';
-						$imgRatio = '3:2';
+						$class = ' fs12 clearfix teaser-img-right';
+						$imgRatio = '16:9';
 						$imgSrc = '/landscape';
 						$showSummary = '1';
 						$showRelated = '0';
@@ -64,13 +64,14 @@
 								$imgW='220'; 
 								$showImg = true;
 								$smallImg = false;
-								$class = ' fs10 teaser-no-border-xl';
-								$imgRatio = '16:9';
-								$showSummary = false;
+								$class = 'fs18 teaser-feature teaser-no-border-xl';
+								$imgRatio = '1:1';
+								$showSummary = '0';
 								$showRelated = '0';
-
 								include('includes/teaser.php') ?>		
 						</div>
+
+						
 					
 
 					
@@ -88,6 +89,8 @@
 								include('includes/teaser.php') ?>		
 						</div>
 					<? endwhile ?>
+
+					
 				</div>
 			</div>
 			

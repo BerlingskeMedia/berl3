@@ -7,12 +7,14 @@
 				<?php
 					$imgW='940'; 
 					$showImg = true;
-					$class = ' fs16  clearfix teaser-bb mb';
-					$imgRatio = '16:7';
+					$class = ' fs24  clearfix teaser-bb mb teaser-bg';
+					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = '1';
 					$showRelated = '0';
 					$smallImg = false;
+					$showDate = true;
+					$showCategory = true;
 					include('includes/teaser.php') ?>
 			</div>
 		
@@ -32,6 +34,8 @@
 							$showSummary = '1';
 							$showRelated = '0';
 							$smallImg = false;
+							$showDate = true;
+							$showCategory = true;
 							include('includes/teaser.php') ?>
 					</div>
 
@@ -48,45 +52,53 @@
 						<?php
 							$imgW='940'; 
 							$showImg = false;
-							$class = ' fs16  clearfix  teaser-font-alt-2';
+							$class = ' fs10  clearfix  ';
 							$imgRatio = '16:9';
 							$imgSrc = '/landscape';
 							$showSummary = '1';
 							$showRelated = '0';
 							$smallImg = false;
+							$showDate = true;
+							$showCategory = true;
 							include('includes/teaser.php') ?>
 
 							<?php
 							$imgW='940'; 
 							$showImg = false;
-							$class = ' fs10  clearfix  teaser-font-alt';
+							$class = ' fs10  clearfix  ';
 							$imgRatio = '16:9';
 							$imgSrc = '/landscape';
 							$showSummary = '1';
 							$showRelated = '0';
 							$smallImg = false;
+							$showDate = true;
+							$showCategory = true;
+							include('includes/teaser.php') ?>
+
+							<?php
+							$imgW='220'; 
+							$showImg = true;
+							$smallImg = false;
+							$class = ' fs18  clearfix   teaser-feature';
+							$imgRatio = '1:1';
+							$imgSrc = '/!author';
+							$showSummary = '1';
+							$showRelated = '0';
+							$showDate = true;
+							$showCategory = true;
 							include('includes/teaser.php') ?>
 
 							<?php
 							$imgW='940'; 
 							$showImg = false;
-							$class = ' fs16  clearfix  teaser-font-alt-2';
+							$class = ' fs10  clearfix  ';
 							$imgRatio = '16:9';
 							$imgSrc = '/landscape';
 							$showSummary = '1';
 							$showRelated = '0';
 							$smallImg = false;
-							include('includes/teaser.php') ?>
-
-							<?php
-							$imgW='940'; 
-							$showImg = false;
-							$class = ' fs16  clearfix  teaser-font-alt-2';
-							$imgRatio = '16:9';
-							$imgSrc = '/landscape';
-							$showSummary = '1';
-							$showRelated = '0';
-							$smallImg = false;
+							$showDate = true;
+							$showCategory = true;
 							include('includes/teaser.php') ?>
 					</div>
 				</div>	

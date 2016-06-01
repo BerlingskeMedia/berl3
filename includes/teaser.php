@@ -8,7 +8,7 @@
 	</figure>
 	<?php endif; ?>
 	<div class="teaser-body">
-		<?php if($showCat): ?>
+		<?php if($showTrumpet): ?>
 			<span class="teaser-cat">
 				<? dummy("text@topics") ?>
 			</span>
@@ -34,7 +34,7 @@
 
 		<?php if ($showSummary): ?>
 			<div class="teaser-summary">
-				<? dummy("text@teaser-b") ?>
+				<a href=="tpl-article.php"><? dummy("text@teaser-b") ?></a>
 			</div>
 		<?php endif; ?>
 
@@ -89,4 +89,5 @@ $showCat = false;
 $smallImg = false;
 $showCategory = false;
 $showDate = false;
+$showTrumpet = false;
 ?>

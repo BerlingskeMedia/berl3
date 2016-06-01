@@ -45,7 +45,7 @@ body {
 		top: .5rem;
 		left: .625rem;
 		right: .625rem;
-		height: 6px;
+		height: .313rem;
 		background-color: #222;
 	}
 }
@@ -65,7 +65,7 @@ ul.list-reset {
 
 
 .deck {
-	margin-bottom: $spacer * 3;
+	margin-bottom: $spacer * 4;
 	@extend .clearfix;
 }
 .micro-title {
@@ -180,7 +180,18 @@ $col-sidebar-width: 19.375rem;
 .col-tags {
 	width:  $col-tag-width;
 	float: left;
-	padding-right: .625rem;
+	padding-right: (.625rem * 2);
+	position: relative;
+	&:after {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: auto;
+		right: .625rem;
+		width: $border-width;
+		background-color: $border-color;
+		content: '';
+	}	
 }
 
 .col-tags + .col-primary {

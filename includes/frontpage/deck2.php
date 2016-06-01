@@ -5,7 +5,7 @@
 		<div class="row flex-row">
 			<div class="col-xl-9 col-lg-4 col-border-right-lg-up">
 				<?php
-					$imgW='450'; 
+					$imgW='350'; 
 					$showImg = true;
 					$class = ' fs30 main-teaser img-float-right clearfix teaser-bb';
 					$imgRatio = '16:9';
@@ -13,22 +13,26 @@
 					$showSummary = '1';
 					$showRelated = '0';
 					$smallImg = false;
+					$showDate = true;
+					$showCategory = true;
 					include('includes/teaser.php') ?>
 
 					<div class="row">
 
 						
-							<? while (dumb_luck("3")): ?>
-							<div class="col-xl-4">
+							<? while (dumb_luck("4")): ?>
+							<div class="col-xl-6">
 							<?php
 								$imgW='920'; 
-								$showImg = false;
-								$class = ' fs10 main-teaser teaser-img-right ';
-								$imgRatio = '1:1';
+								$showImg = true;
+								$smallImg = false;
+								$class = ' fs10 main-teaser  ';
+								$imgRatio = '16:9';
 								$imgSrc = '/landscape';
 								$showSummary = '1';
 								$showRelated = '0';
-								$smallImg = true;
+								$showDate = true;
+								$showCategory = true;
 								include('includes/teaser.php') ?>
 								</div>
 							<? endwhile ?>
@@ -47,6 +51,8 @@
 						$imgRatio = '16:9';
 						$showSummary = '0';
 						$showRelated = '0';
+						$showDate = true;
+						$showCategory = true;
 						include('includes/teaser.php') ?>		
 				<? endwhile ?>
 			</div>

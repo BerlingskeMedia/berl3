@@ -120,8 +120,8 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 
 	
 
-	<div class=" deck   ">
-		<div class="col-tags">
+	<div class=" deck  flex-row ">
+		<div class="col-tags ">
 			<div class="section-title">
 				Opinion
 			</div>
@@ -130,10 +130,21 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 			</div>
 		</div>
 		<div class="col-primary-wide">
-			<div class="flex-row br-lg">
+			<div class="flex-row row ">
+		
+			<div class=" col-xs-1-5tsh  col-xl-3 flex-row  ">
+				
+				<?php 
+					$imgW='120'; 
+					$class = 'fs12 teaser-feature';
+					$showImg = '1';
+					$imgRatio = '1:1';
+					$showAuthor = true;
+					$showTrumpet = true;
+					$imgSrc = '/!b-kommentatorer';
+					include('includes/teaser.php') ?>
 
-			<div class="col-xs-1-5th flex-row">
-				<article class="teaser teaser-sm fs12">
+				<!-- <article class="teaser teaser-sm fs12 ">
 					
 					<figure class="teaser-img">
 						<a href="tpl-article.php">
@@ -143,13 +154,10 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 					</figure>
 					
 					<div class="teaser-body">
-						<span class="teaser-cat">
-							Leder
-						</span>
+						
 						<h2 class="header">
 
 							<a href="tpl-article.php">
-							
 							<? dummy("text@headline-b2") ?>
 							</a>
 						</h2>
@@ -159,20 +167,22 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 					
 
 					</div>
-				</article>
+				</article> -->
 			</div>
-			<? while (dumb_luck("4")): ?>
-			<div class="col-xs-1-5th flex-row">
+			<? while (dumb_luck("3")): ?>
+			<div class="col-xs-1-5sth  col-xl-3 flex-row ">
 				<?php 
 					$imgW='120'; 
-					$class = 'fs12 teaser-thumb';
+					$class = 'fs12 teaser-feature';
 					$showImg = '1';
 					$imgRatio = '1:1';
 					$showAuthor = true;
+					$showTrumpet = true;
 					$imgSrc = '/!b-kommentatorer';
 					include('includes/teaser.php') ?>
 			</div>
 			<?php endwhile; ?>
+			
 			</div>
 		</div>
 	</div><!-- deck -->
@@ -180,37 +190,30 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 	
 
 
-	<!-- 
-	<div class="row deck hidden">
-		
-		<div class="col-lg-8 col-md-12 col-primary">
-					
-			<div class="row flex-row">
-				<div class="col-deck-label">
-					<div class="section-title">
-						Verden i billeder
-					</div>						
-				</div>
-					
-				<div class="col-deck-content border-right-lg">
-					
-						<?php include('includes/teaser-gallery.php'); ?>
-					
-				</div>
-
-			</div>
+	 
+	<div class="deck flex-row ">
+		<div class="col-tags">
+			<div class="section-title">
+				Verden i billeder
+			</div>						
 		</div>
+		<div class="col-primary col-border-right-lg-up">
+			
+			<?php include('includes/teaser-gallery.php'); ?>
 
-		<div class="col-lg-4 col-md-12 sidebar">
+		</div>
+		
 
-			<div class="banner module ">
+		<div class=" col-sidebar">
+
+			<div class="banner mb">
 				<div style="width: 300px; height: 250px;" class="demo-banner"></div>
 			</div>
 			
 			<?php 
 			$showTime = true; 
 			$sectionClass = 'mb-0';
-			$listClass = 'list-top';
+			$listClass = 'list list-top';
 			$listTitle = 'Andre læser lige nu';
 			$listCount = '5';
 			$showTime = false; 
@@ -220,29 +223,31 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 
 		</div>
 
-	</div> --><!-- /deck -->
+	</div><!-- /deck -->
 
 
 	
 
 
-	<div class="deck">
+	<div class="deck flex-row">
 
 		
-				<div class="col-tags">
-					<div class="section-title">Dagen i dag</div>
+				<div class="col-tags ">
+					<div class="section-title mb-2">Flere nyheder</div>
 					
 					<div class="small today gray mb-2">
+						<strong>Dagen i dag</strong>
 						<? while (dumb_luck("3")): ?>
-							<p><? dummy("text@dagenidag") ?></p>
+							<p class="small"><? dummy("text@dagenidag") ?></p>
 						<? endwhile ?>
+
 					</div>
 				</div>
 
 
 				<div class="col-primary ">
-							
-						<div class="col-lg-8 col-md-8 border-right-lg">
+							<div class="row">
+						<div class="col-lg-8 col-md-8 col-border-right-lg-up">
 						
 							<?php // if(!$showWell) : ?>
 									<?php
@@ -260,7 +265,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 							<?php 
 								$imgW='140'; 
 								$showImg = '1';
-								$class = 'teaser-float-left fs12 ';
+								$class = 'teaser-img-left fs12 ';
 								$imgRatio = '3:2';
 								$showSummary = '0';
 								$showRelated = '0';
@@ -277,7 +282,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 							<?php 
 								$imgW='140'; 
 								$showImg = '1';
-								$class = 'teaser-float-left fs12 ';
+								$class = 'teaser-img-left fs12 ';
 								$imgRatio = '3:2';
 								$showSummary = '0';
 								$showKey = true;
@@ -285,7 +290,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 							<? endwhile ?>
 
 						</div>
-						<div class="col-lg-4 col-md-4">
+						<div class="col-lg-4 col-md-4 col-border-right-lg-up">
 							
 							
 
@@ -308,7 +313,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 							<?php 
 								$imgW='120'; 
 								// $class = 'fs10 teaser-bg teaser-bg-narrow teaser-font-alt';
-								$class = 'fs10 mb teaser-thumb ';
+								$class = 'fs12 mb teaser-feature ';
 								$showImg = '1';
 								$imgRatio = '1:1';
 								$imgSrc = '!b-tilstregen';
@@ -340,6 +345,8 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 								
 							
 						</div>
+
+					</div>
 					
 				</div>
 			
@@ -348,13 +355,13 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 
 		<div class="col-sidebar">
 
-			<div class="banner module ">
+			<div class="banner mb ">
 				<div style="width: 300px; height: 250px;" class="demo-banner"></div>
 			</div>
 			
 			<?php 
 			$showTime = true; 
-			$listClass = 'list-top ';
+			$listClass = 'list list-top-lg ';
 			$listTitle = 'Andre læser lige nu';
 			$showTime = false; 
 			
