@@ -14,7 +14,7 @@
 					
 					<?php 
 						$imgW='80'; 
-						$class = 'mb teaser-float-left teaser-consumersales';
+						$class = 'mb teaser-img-left teaser-consumersales';
 						$showImg = '1';
 						$imgRatio = '1:1';
 						$showKey = false;
