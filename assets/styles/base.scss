@@ -67,6 +67,7 @@ ul.list-reset {
 .deck {
 	margin-bottom: $spacer * 4;
 	@extend .clearfix;
+	@extend .flex-row;	
 }
 .micro-title {
 	@extend .font-s2;
@@ -136,11 +137,12 @@ ul.list-reset {
 }
 .section-link, 
 .section-date {
-	@extend .font-sans;
+	@extend .font-sans-alt;
 	display: block;
-	font-size: .8rem;
+	font-size: .9rem;
 	line-height: 1;
 	padding: .3rem 0;
+	text-transform: uppercase;
 	a {
 		@extend .link-blue;
 		display: block;
@@ -157,18 +159,24 @@ ul.list-reset {
 $col-tag-width: 10rem;
 $col-sidebar-width: 19.375rem;
 
+.col-wrapper {
+	width: calc(100% - 19.375rem);
+	float: left;
+	@extend .flex-row;
+}
 
 .col-primary {
-	width: calc(100% - #{$col-sidebar-width});
+	width: calc(100% - #{$col-tag-width});
 	padding-right: .625rem;
 	float: left;
-
 }
 .col-primary-wide {
 	width: calc(100% - #{$col-tag-width});
 	padding-right: .625rem;
 	float: left;
-
+}
+.col-wrapper > .col-primary-wide {
+	width: 100%;
 }
 .col-sidebar {
 	// padding-top: $spacer;
@@ -182,21 +190,31 @@ $col-sidebar-width: 19.375rem;
 	float: left;
 	padding-right: (.625rem * 2);
 	position: relative;
-	&:after {
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: auto;
-		right: .625rem;
-		width: $border-width;
-		background-color: $border-color;
-		content: '';
-	}	
+	.section-title {
+		margin-bottom: 0;
+	}
 }
 
-.col-tags + .col-primary {
-	width: calc(100% - #{$col-tag-width + $col-sidebar-width});
+.teaser-wide + .col-wrapper {
+	margin-top: -5rem;
+	background-color: $background-color;
+	padding-top: 1.313rem;
+	z-index: 2;
+	position: relative;
+	&:before {
+		position: absolute;
+		left: 0;
+		right: .625rem;
+		top: .625rem;
+		height: $border-width;
+		background-color: $border-color;
+		content: '';
+	}
+
 }
+/*.col-tags + .col-primary {
+	width: calc(100% - #{$col-tag-width + $col-sidebar-width});
+}*/
 .list-title {
 	@extend .font-sans;
 	font-weight: 700;

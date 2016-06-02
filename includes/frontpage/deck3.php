@@ -1,13 +1,13 @@
 <div class=" deck">
-
-	<div class="col-primary ">
+	<div class="col-wrapper">
+	<div class="col-primary-wide ">
 		
 		<div class="row flex-row">
 			<div class="col-xl-12">
 				<?php
 					$imgW='940'; 
 					$showImg = true;
-					$class = ' fs24  clearfix teaser-bb mb teaser-bg';
+					$class = ' fs24  clearfix teaser-bb mb teaser-bg ';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = '1';
@@ -76,17 +76,18 @@
 							include('includes/teaser.php') ?>
 
 							<?php
-							$imgW='220'; 
-							$showImg = true;
-							$smallImg = false;
-							$class = ' fs18  clearfix   teaser-feature';
-							$imgRatio = '1:1';
-							$imgSrc = '/!author';
-							$showSummary = '1';
-							$showRelated = '0';
-							$showDate = true;
-							$showCategory = true;
-							include('includes/teaser.php') ?>
+						$imgW='120'; 
+						$showImg = true;
+						$smallImg = false;
+						$imgSrc = '/!author';
+						$class = ' fs10 teaser-feature';
+						$imgRatio = '1:1';
+						$showSummary = '0';
+						$showRelated = '0';
+						$showDate = true;
+						$showCategory = true;
+						$showAuthor = true;
+						include('includes/teaser.php') ?>
 
 							<?php
 							$imgW='940'; 
@@ -109,8 +110,8 @@
 			
 		</div>
 	</div>
-
-	<div class="col-sidebar">
+	</div>
+	<div class="col-sidebar col-border-left-lg-up">
 
 		
 			<div style="width: 300px; height: 250px;" class="demo-banner mb">Banner</div>

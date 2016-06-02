@@ -1,6 +1,6 @@
-<div class=" deck">
-
-	<div class="col-primary ">
+<div class="deck">
+	<div class="col-wrapper">
+	<div class="col-primary-wide ">
 		
 		<div class="row flex-row">
 			<div class="col-xl-3 col-lg-4 col-border-right-lg-up">
@@ -96,7 +96,7 @@
 			
 		</div>
 	</div>
-
+</div>
 	<div class="col-sidebar">
 
 		

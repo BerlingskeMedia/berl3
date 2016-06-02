@@ -1,6 +1,6 @@
 <div class=" deck">
-
-	<div class="col-primary ">
+	<div class="col-wrapper">
+	<div class="col-primary-wide ">
 		
 		<div class="row flex-row">
 			<div class="col-xl-9 col-lg-4 col-border-right-lg-up">
@@ -62,7 +62,9 @@
 		</div>
 	</div>
 
-	<div class="col-sidebar">	
+	</div>
+
+	<div class="col-sidebar col-border-left-lg-up">	
 		<div style="width: 300px; height: 250px;" class="demo-banner mb">Banner</div>
 		
 		<?php 

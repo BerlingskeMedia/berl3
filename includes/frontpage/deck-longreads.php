@@ -1,10 +1,12 @@
-<div class="deck flex-row ">
-		<div class="col-tags">
+<div class="deck ">
+	<div class="col-wrapper">
+		<div class="col-tags ">
 			<div class="section-title">
 				Fortællinger
-			</div>						
+			</div>
+			<div class="section-link"><a href="tpl-section.php">Se alle <i class="bicon-angle-right"></i></a></div>			
 		</div>
-		<div class="col-primary col-border-right-lg-up">
+		<div class="col-primary ">
 			
 			<div class="row flex-row">
 				
@@ -29,9 +31,10 @@
 			</div>
 
 		</div>
+	</div><!-- col-wrapper -->
 		
 
-		<div class=" col-sidebar">
+		<div class=" col-sidebar col-border-left-lg-up">
 
 			<div class="banner mb">
 				<div style="width: 300px; height: 250px;" class="demo-banner">Banner</div>

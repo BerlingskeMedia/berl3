@@ -1,12 +1,12 @@
 <div class="deck">
 
-	<div class="col-wrapper">
+	
 		<div class="col-tags ">
 			<div class="section-title">Flere nyheder</div>
 		</div>
 
 
-		<div class="col-primary col-border-right-lg-up">
+		<div class="col-primary ">
 			<div class="row">
 				<!-- <div class="col-xl-12 ">
 					Jeg er et tema
@@ -58,7 +58,11 @@
 
 				</div>
 				<div class="col-lg-4 col-md-4 ">
-					
+					<div class="mb">
+						<div class="demo-banner" style="width:300px; height: 250px;">
+							Banner
+						</div>
+					</div>
 					<div class="section-title"><a href="tpl-section.php">AoK</a></div>
 
 					<? while (dumb_luck("3")): ?>
@@ -117,30 +121,8 @@
 			
 		</div>
 		
-		
-	</div>
+	
 
-	<div class="col-sidebar">
-
-		<div class="banner mb ">
-			<div style="width: 300px; height: 250px;" class="demo-banner">Banner</div>
-		</div>
-		
-		<?php 
-		$showTime = true; 
-		$listClass = 'list list-top-lg ';
-		$listTitle = 'Andre læser lige nu';
-		$showTime = false; 
-		
-		include('includes/list-news.php');
-		?>
-		
-
-		
-
-		<div class="banner mb-2 ">
-			<div style="width: 300px; height: 250px;" class="demo-banner">Banner</div>
-		</div>
-	</div>
+	
 	
 </div>

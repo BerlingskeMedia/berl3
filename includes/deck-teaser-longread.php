@@ -1,8 +1,7 @@
-<div  class="row deck flex-row">
+<div  class=" deck flex-row">
 	<div class="col-deck-label">
-		<span class="section-title">Fordybelse</span>
-		<span class="section-link"><a href="tpl-section.php">Se alle <i class="bicon-angle-right"></i></a>
-		</span>
+		<div class="section-title">Fordybelse</div>
+		<div class="section-link"><a href="tpl-section.php">Se alle <i class="bicon-angle-right"></i></a></div>
 	</div>
 
 	<div class="col-deck-content ">

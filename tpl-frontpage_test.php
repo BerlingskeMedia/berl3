@@ -70,24 +70,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 
 	<div class="container main-content">
 
-	<?php if($showWide): ?>
-		<div class="row">
-			<div class="col-md-12">
-				<?php include('includes/teaser-wide.php'); ?>
-			</div>
-		</div>
-	
-	<?php endif; ?>
 
-
-	<?php if($showWell): ?>
-		<div class="row well-container">
-			<div class="col-md-12">
-				<?php include('includes/teaser-well.php'); ?>
-			</div>
-		</div>
-	
-	<?php endif; ?>
 
 <?php if($deck === '1'): ?>
 	<?php include('includes/frontpage/deck1.php'); ?>
@@ -118,6 +101,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 <?php endif; ?>
 	
 
+
 	<?php include('includes/frontpage/deck-debate.php'); ?>
 
 	
@@ -134,53 +118,11 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 	
 
 	<?php include('includes/frontpage/deck-more-news.php'); ?>
+
+	<?php include('includes/frontpage/deck-more-news-2.php'); ?>
 	
-
-	<div class="deck flex-row">
-		<div class="col-tags ">
-			Hej
-		</div>
-		<div class="col-primary-wide">
-			<div class="row">
-					<? while (dumb_luck("3")): ?>
-					<div class="col-xl-4">
-						
-						<div class="tower">
-							<div class="tower-title">
-								<a href="#"><? dummy("text@b-cat") ?></a>
-							</div>
-							<?php
-								$imgW='400'; 
-								$showImg = true;
-								$smallImg = false;
-								$class = ' fs10 ';
-								$imgRatio = '16:9';
-								$showSummary = '0';
-								$showRelated = '0';
-								$showDate = false;
-								$showCategory = false;
-								include('includes/teaser.php') ?>		
-								
-								<? while (dumb_luck("3")): ?>
-									<?php
-									$imgW='240'; 
-									$showImg = false;
-									$smallImg = false;
-									$class = ' fs10 ';
-									$imgRatio = '16:9';
-									$showSummary = '0';
-									$showRelated = '0';
-									$showDate = false;
-									$showCategory = false;
-									include('includes/teaser.php') ?>
-								<? endwhile ?>
-						</div>
-
-					</div>	
-				<? endwhile ?>
-				</div>
-		</div>
-	</div>
+	<?php include('includes/frontpage/deck-towers.php'); ?>
+	
 	
 	
 
@@ -198,8 +140,8 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 
 
 <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.2/js/tether.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.2/js/tether.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script> -->
 <script src="/dist/scripts/main.js"></script>
 
 

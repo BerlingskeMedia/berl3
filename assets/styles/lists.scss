@@ -59,17 +59,25 @@
 	}
 }
 .list-bullet {
+	padding: 0;
+	list-style: none;
 	li {
-		padding-left: $spacer;
+		padding-left: .625rem;
+		position: relative;
 		&:before {
-			display: inline-block;
-			width: .6rem;
-			height: .6rem;
-			margin-top: .1rem;
+			margin-top: .0rem;
+			/*border-radius: 50%;*/
 			float: left;
 			content: '';
-			margin-left: -$spacer;
+			left: 0;
+			
+			position: absolute;
+			top: .313rem;
+			width: .313rem; 
+			height: .313rem;
+			border-radius: 50%;
 			background-color: $col-blue-1;
+		
 		}
 	}
 }

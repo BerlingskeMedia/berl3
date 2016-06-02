@@ -1,4 +1,4 @@
-<div class=" deck  flex-row ">
+<div class=" deck ">
 	<div class="col-tags ">
 		<div class="section-title">
 			Debat

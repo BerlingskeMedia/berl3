@@ -144,8 +144,8 @@ if(isset($_GET["business"])) {
 				</div>
 				<div class="col-md-9">
 					<ul>
-						<li class="orange"><a href="tpl-frontpage.php">Frontpage</a> - <a href="tpl-frontpage.php?loggedIn">(Logged in)</a></li>
-						<li class="orange"><a href="tpl-article.php">Not-frontpage</a> - <a href="tpl-article.php?loggedIn">(Logged in)</a></li>
+						<li class="green"><a href="tpl-frontpage.php">Frontpage</a> - <a href="tpl-frontpage.php?loggedIn">(Logged in)</a></li>
+						<li class="green"><a href="tpl-article.php">Not-frontpage</a> - <a href="tpl-article.php?loggedIn">(Logged in)</a></li>
 						<li class="red"><a href="#">Off-canvas menu</a></a></li>
 					</ul>
 				</div>
