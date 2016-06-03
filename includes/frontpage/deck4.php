@@ -18,16 +18,17 @@ if(isset($_GET["topLG"])) {
 				<div class="col-xs-12 col-xl-12">
 					<?php
 					$imgW='1240'; 
-					$showImg = '1';
-					$class = ' fs30 mb teaser-lg';
+					$showImg = true;
+					$class = 'fs30 mb teaser-lg';
 					$imgRatio = '16:8';
 					$imgSrc = '/!b-breaking';
 					$showSummary = '1';
 					$showRelated = false;
 					$showRelatedimg = true;
-					$relatedImg = true;
 					$showDate = false;
 					$showCategory = false;
+					$teaserLabel = 'breaking';
+					$labelText = 'Terror i Paris';
 
 
 					include('includes/teaser.php') ?>			
@@ -51,7 +52,8 @@ if(isset($_GET["topLG"])) {
 					$showRelated = '1';
 					$showDate = true;
 					$showCategory = true;
-
+					$teaserLabel = 'breaking';
+					$teaserLink = 'tpl-article.php?event=breaking';
 					include('includes/teaser.php') ?>			
 				</div>
 			</div>
@@ -61,10 +63,21 @@ if(isset($_GET["topLG"])) {
 	
 	
 		<div class="col-tags col-border-right-lg-up">
-			<div class="section-title-no-border">Topnyheder</div>		
+			<div class="section-title-no-border mb-2">Topnyheder</div>		
 
-			<div class="weather" style="height: 200px; background: rgba(0,0,0,.05); padding: .5rem;">Vejrudsigt</div>
-			<div class="epaper" style="height: 200px; background: rgba(0,0,0,.05); padding: .5rem; position: absolute; bottom: 0; right: 1.2rem; left: 0">E-avis</div>
+			<div class=" mt mb" style="">
+				<div class=" section-title-small-border">Mandag d. <? dummy("text@date") ?></div>
+			</div>
+			<div class="epaper" style=" ">
+				
+				<div class="section-title-sm section-title-small-border">Læs dagens e-avis</div>
+				<div class="row row-narrow mt">
+					<div class="col-xl-6"><a href="#"><img src="http://epaper.infomedia.dk/teaser/BMA" style="border: 1px solid #ddd" alt=""></a></div>
+					<div class="col-xl-6"><a href="#"><img src="http://www.b.dk/helpers/business_frontpage/business_frontpage.jpg" style="border: 1px solid #ddd" alt=""></a></div>
+				</div>
+				
+
+			</div>
 		</div>
 		
 		<div class="col-primary ">
@@ -83,6 +96,7 @@ if(isset($_GET["topLG"])) {
 					$showRelated = '1';
 					$showDate = true;
 					$showCategory = true;
+					$teaserLabel = 'breaking';
 
 					include('includes/teaser.php') ?>
 				</div>
@@ -171,11 +185,10 @@ if(isset($_GET["topLG"])) {
 			$premium = true;
 			$imgSrc = false;
 			$imgW = '120';
-
 			$showTime = false;
 			$showImage = false; 
 			$listClass = 'list list-top-lg';
-			$listTitle = 'Mest læste';
+			$listTitle = 'Mest læste lige nu';
 			$listCount = '5';
 				
 			include('includes/list-news.php'); ?>

@@ -115,15 +115,16 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 	
 
 	<?php include('includes/frontpage/deck-theme.php'); ?>
-	
+
+	<?php include('includes/frontpage/deck-image.php'); ?>
 
 	<?php include('includes/frontpage/deck-more-news.php'); ?>
 
-	<?php include('includes/frontpage/deck-more-news-2.php'); ?>
+	<?php // include('includes/frontpage/deck-more-news-2.php'); ?>
 	
 	<?php include('includes/frontpage/deck-towers.php'); ?>
 	
-	
+	<?php include('includes/frontpage/deck-consumersales.php'); ?>
 	
 
 
@@ -133,7 +134,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 	
 </div>
 
-<?php include('includes/consumersales-row.php'); ?>
+
 </div><!-- canvas-main -->
 </div><!-- banner-wrapper -->
 </div><!-- main-wrapper -->

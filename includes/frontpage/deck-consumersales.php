@@ -1,13 +1,16 @@
+<div class="deck ">
+	<div class="col-tags">
+			<div class="section-title">Go shopping</div>
+		
+		<span class="section-description"><a href="http://shop.berlingske.dk">Gå til Berlingske Shop <i class="bicon-angle-right"></i></a></span>
+	</div>
 
-	<div class="container mb-1">
-		<div class="row ">
-			<div class="col-xs-12 ">
-				<div class="section-title ">Go shopping!
-					<span class="right"><a href="http://shop.berlingske.dk">Gå til Berlingske Shop <i class="bicon-angle-right"></i></a></span>
-				</div>
-			</div>
-		</div>
+	
+	<div class="col-primary">
 		<div class="row flex-row">
+
+
+		
 		
 		<? while (dumb_luck("4")): ?>
 			<div class="col-xs-6 col-lg-3 col-md-6">
@@ -49,3 +52,4 @@
 			<? endwhile ?>
 		</div>
 	</div>
+</div>

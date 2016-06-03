@@ -17,13 +17,13 @@
 					
 					<div class="tower">
 						<div class="tower-title section-title">
-							<a href="#"><? dummy("text@b-cat") ?></a>
+							<a href="#">AOK</a>
 						</div>
 						<?php
 							$imgW='400'; 
 							$showImg = true;
 							$smallImg = false;
-							$class = ' fs10 ';
+							$class = ' fs12 ';
 							$imgRatio = '16:9';
 							$showSummary = '0';
 							$showRelated = '0';
@@ -31,13 +31,13 @@
 							$showCategory = false;
 							include('includes/teaser.php') ?>		
 							
-							<? while (dumb_luck("3")): ?>
+							<? while (dumb_luck("4")): ?>
 								<?php
-								$imgW='240'; 
+								$imgW='80'; 
 								$showImg = false;
 								$smallImg = false;
-								$class = ' fs10 ';
-								$imgRatio = '16:9';
+								$class = ' fs09  teaser-font-alt';
+								$imgRatio = '3:2';
 								$showSummary = '0';
 								$showRelated = '0';
 								$showDate = false;

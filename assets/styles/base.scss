@@ -69,6 +69,11 @@ ul.list-reset {
 	@extend .clearfix;
 	@extend .flex-row;	
 }
+
+.deck-border-bottom {
+	border-bottom: $border-width solid $border-color;
+	padding-bottom: $spacer;
+}
 .micro-title {
 	@extend .font-s2;
 	font-weight: 500;
@@ -91,7 +96,18 @@ ul.list-reset {
 		background-color: #222;
 	}
 }
-
+.section-title-small-border {
+	position: relative;
+	&:before {
+		display: inline-block;
+		width: 4rem;
+		content: '';
+		height: $border-width;
+		position: absolute;
+		top: 0;
+		background-color: $border-color	
+	}
+}
 .section-title-lg {
 	@extend .font-sans-alt;
 	font-size: 3rem;
@@ -109,9 +125,10 @@ ul.list-reset {
 	font-weight: normal;
 	@extend .top-block;
 	text-transform: uppercase;
-
+	small {
+		font-size: 70%;
+	}
 	.right {
-		
 		@extend .font-s2;
 		text-transform: none;
 		font-size: .8rem;
@@ -132,6 +149,11 @@ ul.list-reset {
 	font-size: 1rem;
 }
 
+.section-description {
+	@extend .font-s2;
+	font-size: .8rem;
+	color: #666;
+}
 .sidebar .section-title {
 	margin-top: $spacer * 2;
 }
@@ -147,6 +169,10 @@ ul.list-reset {
 		@extend .link-blue;
 		display: block;
 	}
+}
+.section-sponsor {
+	position: absolute;
+	bottom: 0;
 }
 .section-date {
 	line-height: 1.4;
@@ -431,6 +457,11 @@ $col-deck-label-width: 160px;
 .row-narrow {
 	margin-left: -.3125rem;
 	margin-right: -.3125rem;
+	&>[class*="col-"],
+	&>[class*="col-"] {
+		padding-left: .3125rem;
+		padding-right: .3125rem;
+	}
 }
 .gallery-item {
 	width: 33.333333333%;
