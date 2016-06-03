@@ -662,6 +662,11 @@ img {
 .teaser-gradient {
 	@include gradient-vertical(rgba(37,37,37,.0), rgba(37,37,37,.9), 0%, 100%);
 }
+
+.teaser-business {
+	background-color: $col-business;
+	padding: .413rem;
+}
 .teaser-bg {
 	position: relative;
 	padding-bottom: 0;

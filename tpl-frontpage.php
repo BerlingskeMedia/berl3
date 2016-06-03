@@ -72,20 +72,9 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 
 
 
-<?php if($deck === '1'): ?>
-	<?php include('includes/frontpage/deck1.php'); ?>
+<?php if($deck): ?>
+	<?php include('includes/frontpage/deck'.$deck.'.php'); ?>
 
-<?php elseif($deck === '2'): ?>
-
-	<?php include('includes/frontpage/deck2.php'); ?>
-
-<?php elseif($deck === '3'): ?>
-
-	<?php include('includes/frontpage/deck3.php'); ?>
-
-<?php elseif($deck === '4'): ?>
-
-	<?php include('includes/frontpage/deck4.php'); ?>
 
 <?php else: ?>
 
