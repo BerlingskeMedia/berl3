@@ -92,7 +92,7 @@ if(isset($_GET["topLG"])) {
 					$class = ' fs22 mb ';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
-					$showSummary = '1';
+					$showSummary = false;
 					$showRelated = '1';
 					$showDate = true;
 					$showCategory = true;
@@ -109,14 +109,14 @@ if(isset($_GET["topLG"])) {
 					$class = ' fs20';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
-					$showSummary = '1';
+					$showSummary = false;
 					$showRelated = '1';
 					$showDate = true;
 					$showCategory = true;
 
 					include('includes/teaser.php') ?>
 
-					<? while (dumb_luck("3")): ?>
+					<? while (dumb_luck("4")): ?>
 						<?php
 						$imgW='220'; 
 						$showImg = true;
@@ -124,7 +124,7 @@ if(isset($_GET["topLG"])) {
 						$class = ' fs13 clearfix img-w180 teaser-img-right ';
 						$imgRatio = '16:9';
 						$imgSrc = '/landscape';
-						$showSummary = '1';
+						$showSummary = false;
 						$showRelated = '0';
 						$showDate = true;
 						$showCategory = true;
