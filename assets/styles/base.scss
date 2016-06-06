@@ -191,6 +191,9 @@ $col-sidebar-width: 19.375rem;
 	@extend .flex-row;
 }
 
+.trade-contianer-wide {
+	padding-left: .625rem;
+}
 .col-primary {
 	width: calc(100% - #{$col-tag-width});
 	padding-right: .625rem;

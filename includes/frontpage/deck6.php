@@ -13,72 +13,16 @@ if(isset($_GET["topLG"])) {
 ?>
 <div class=" deck flex-row">
 
-	<?php if($topLG): ?>
-		<div class="teaser-wide">
-			<div class="row">
-				<div class="col-xs-12 col-xl-12">
-					<?php
-					$imgW='1240'; 
-					$showImg = true;
-					$class = 'mb teaser--xlarge';
-					$imgRatio = '16:8';
-					$imgSrc = '/!b-breaking';
-					$showSummary = '1';
-					$showRelated = true;
-					$showRelatedimg = true;
-					$showDate = false;
-					$showCategory = false;
-					$teaserLabel = 'breaking';
-					$labelText = 'Finanslov på plads';
-					$teaserPack = false;;
-
-					include('includes/teaser-2.php') ?>			
-				</div>
-			</div>
-		</div>
-	<?php endif; ?>
+	
 
 
 	<div class="col-wrapper flex-row">
-		<?php if($topMD): ?>
-			<div class="row">
-				<div class="col-xs-12 col-xl-12">
-					<?php
-					$imgW='920'; 
-					$showImg = '1';
-					$class = 'mb border-bottom teaser--medium';
-					$imgRatio = '16:9';
-					$imgSrc = '/landscape';
-					$showSummary = '1';
-					$showRelated = '1';
-					$showDate = true;
-					$showCategory = true;
-					$teaserLabel = 'breaking';
-					$teaserLink = 'tpl-article.php?event=breaking';
-					include('includes/teaser-2.php') ?>			
-				</div>
-			</div>
 		
-		<?php endif; ?>
 
 	
 	
 		<div class="col-tags col-border-right-lg-up">
-			<div class="section-title-no-border mb-2">Topnyheder</div>		
-
-			<div class=" mt mb" style="">
-				<!-- <div class=" section-title-small-border">Mandag d. <? dummy("text@date") ?></div> -->
-			</div>
-			<div class="epaper" style=" ">
-				
-				<!-- <div class="section-title-sm section-title-small-border">Læs dagens e-avis</div>
-				<div class="row row-narrow mt">
-					<div class="col-xl-6"><a href="#"><img src="http://epaper.infomedia.dk/teaser/BMA" style="border: 1px solid #ddd" alt=""></a></div>
-					<div class="col-xl-6"><a href="#"><img src="http://www.b.dk/helpers/business_frontpage/business_frontpage.jpg" style="border: 1px solid #ddd" alt=""></a></div>
-				</div> -->
-				
-
-			</div>
+			<div class="section-title-no-border mb-2">Title</div>		
 		</div>
 		
 		<div class="col-primary ">
@@ -90,7 +34,7 @@ if(isset($_GET["topLG"])) {
 					<?php
 					$imgW='920'; 
 					$showImg = '1';
-					$class = 'teaser--theme-business teaser--img-wide item--teaser teaser--big ';
+					$class = 'teaser--theme-business teaser--img-wide item--teaser teaser--big	 teaser--feature';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
@@ -98,7 +42,6 @@ if(isset($_GET["topLG"])) {
 					$showDate = true;
 					$showCategory = true;
 					$teaserLabel = false;
-					$teaserPack = '1';
 
 					include('includes/teaser-2.php') ?>
 

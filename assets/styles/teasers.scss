@@ -148,18 +148,19 @@ img {
 		border-top: $border-color solid $border-width;
 		padding-top: .4rem;
 		margin-top: $spacer;
+	}
+	.teaser-summary {
+		@extend .font-g1;
+		color: #333;
+		font-size: .9rem;
+		a {
+			color: #555;
+		}
 	}	
 }
 
 
-.teaser-summary {
-	@extend .font-g1;
-	color: #333;
-	font-size: .9rem;
-	a {
-		color: #555;
-	}
-}
+
 
 .teaser-related {
 	list-style: none;
@@ -227,6 +228,36 @@ img {
 	.teaser-img-sm {
 		float: right;
 		margin: 0 0 .625rem .625rem;
+	}
+	.teaser-body {
+		overflow: hidden;
+	}
+}
+
+
+.teaser--img-left {
+	@extend .clearfix;
+	.teaser-img,
+	.teaser-img-sm {
+		float: left;
+		margin: 0 .625rem .625rem 0;
+	}
+	.img {
+		max-width: 13.75rem;
+	}
+	.teaser-body {
+		overflow: hidden;
+	}
+}
+
+.teaser--img-right {
+	.teaser-img,
+	.teaser-img-sm {
+		float: right;
+		margin: 0 0 .625rem .625rem;
+	}
+	.img {
+		max-width: 13.75rem;
 	}
 	.teaser-body {
 		overflow: hidden;
@@ -663,10 +694,7 @@ img {
 	@include gradient-vertical(rgba(37,37,37,.0), rgba(37,37,37,.9), 0%, 100%);
 }
 
-.teaser-business {
-	background-color: $col-business;
-	padding: .413rem;
-}
+
 .teaser-bg {
 	position: relative;
 	padding-bottom: 0;
