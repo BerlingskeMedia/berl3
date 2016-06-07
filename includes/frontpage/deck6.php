@@ -34,7 +34,7 @@ if(isset($_GET["topLG"])) {
 					<?php
 					$imgW='920'; 
 					$showImg = '1';
-					$class = 'teaser--theme-business teaser--img-wide item--teaser teaser--big	 teaser--feature';
+					$class = 'teaser--img-wide item--teaser teaser--big	';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
@@ -46,9 +46,9 @@ if(isset($_GET["topLG"])) {
 					include('includes/teaser-2.php') ?>
 
 					<?php
-					$imgW='220'; 
+					$imgW='920'; 
 					$showImg = '1';
-					$class = 'teaser--img-left teaser--small item--teaser__bt';
+					$class = 'teaser--img-wide item--teaser teaser--big	 teaser--feature item--teaser__bt';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
@@ -59,27 +59,14 @@ if(isset($_GET["topLG"])) {
 
 					include('includes/teaser-2.php') ?>
 
-					<?php
-					$imgW='220'; 
-					$imgW='220'; 
-					$showImg = '1';
-					$class = 'teaser--img-right teaser--small item--teaser__bt';
-					$imgRatio = '16:9';
-					$imgSrc = '/landscape';
-					$showSummary = true;
-					$showRelated = false;
-					$showDate = true;
-					$showCategory = true;
-					$teaserLabel = false;
-
-					include('includes/teaser-2.php') ?>
+					
 
 
 					<?php
 					$imgW='220'; 
 					$imgW='220'; 
 					$showImg = '1';
-					$class = 'teaser--img-right teaser--small teaser--trade item--teaser__bt';
+					$class = 'teaser--img-right all teaser--trade item--teaser__bt';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
@@ -91,19 +78,7 @@ if(isset($_GET["topLG"])) {
 
 					include('includes/teaser-2.php') ?>
 					
-					<?php
-					$imgW='920'; 
-					$showImg = '1';
-					$class = 'teaser--img-left teaser--small item--teaser__bt ';
-					$imgRatio = '16:9';
-					$imgSrc = '/landscape';
-					$showSummary = true;
-					$showRelated = true;;
-					$showDate = true;
-					$showCategory = true;
-					$teaserLabel = false;
-
-					include('includes/teaser-2.php') ?>
+					
 
 					<?php
 					$imgW='220'; 
@@ -121,10 +96,9 @@ if(isset($_GET["topLG"])) {
 					include('includes/teaser-2.php') ?>
 					
 					<?php
-					$imgW='220'; 
-					$imgW='220'; 
+					$imgW='940'; 
 					$showImg = '1';
-					$class = 'teaser--img-right  teaser--small item--teaser__bt';
+					$class = 'teaser--img-wide   teaser--small item--teaser__bt';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
@@ -132,14 +106,14 @@ if(isset($_GET["topLG"])) {
 					$showDate = true;
 					$showCategory = true;
 					$teaserLabel = false;
-					$teaserPack = '1';
+					$teaserPack = false;
 
 					include('includes/teaser-2.php') ?>
 
 					<?php
 					$imgW='920'; 
 					$showImg = '1';
-					$class = 'teaser--theme-business teaser--img-wide teaser--big item--teaser__bt ';
+					$class = ' teaser--img-wide teaser--big item--teaser__bt ';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
@@ -147,13 +121,31 @@ if(isset($_GET["topLG"])) {
 					$showDate = true;
 					$showCategory = true;
 					$teaserLabel = false;
+					$teaserPack = '2';
 
 					include('includes/teaser-2.php') ?>
+					
+
+					<!-- SMALL TEASERS: -->
+					<?php
+					$imgW='920'; 
+					$showImg = '1';
+					$class = ' teaser--img-right teaser--small item--teaser__bt  all' ;
+					$imgRatio = '16:9';
+					$imgSrc = '/landscape';
+					$showSummary = true;
+					$showRelated = false;;
+					$showDate = true;
+					$showCategory = true;
+					$teaserLabel = false;
+
+					include('includes/teaser-2.php') ?>
+
 
 					<?php
 					$imgW='920'; 
 					$showImg = '1';
-					$class = ' teaser--img-right teaser--sm item--teaser__bt teaser--feature teaser--small' ;
+					$class = ' teaser--img-right  item--teaser__bt teaser--feature teaser--small' ;
 					$imgRatio = '1:1';
 					$imgSrc = '/!author';
 					$showSummary = true;
@@ -167,7 +159,7 @@ if(isset($_GET["topLG"])) {
 					<?php
 					$imgW='920'; 
 					$showImg = '1';
-					$class = ' teaser--img-right teaser--sm item--teaser__bt  teaser--small' ;
+					$class = ' teaser--img-right  item--teaser__bt  teaser--small' ;
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
@@ -192,7 +184,7 @@ if(isset($_GET["topLG"])) {
 	<div class="col-sidebar col-border-left-lg-up">
 
 		
-			<div style="width: 300px; height: 250px;" class="demo-banner mb">Banner</div>
+		
 		
 		
 		
@@ -202,10 +194,10 @@ if(isset($_GET["topLG"])) {
 			$premium = true;
 			$imgSrc = false;
 			$imgW = '120';
-			$showTime = false;
+			$showTime = true;
 			$showImage = false; 
-			$listClass = 'list list-top-lg';
-			$listTitle = 'Mest læste lige nu';
+			$listClass = 'list list-time';
+			$listTitle = 'Some list';
 			$listCount = '5';
 				
 			include('includes/list-news.php'); ?>
@@ -216,7 +208,7 @@ if(isset($_GET["topLG"])) {
 		
 
 		
-			<div style="width: 300px; height: 250px;" class="demo-banner">Banner</div>
+			<div style="width: 300px; height: 600px;" class="demo-banner">Sticky Banner</div>
 		
 	</div>
 	

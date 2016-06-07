@@ -93,13 +93,30 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 
 	<?php include('includes/frontpage/deck-ad.php'); ?>
 	
+	
+	<?php include('includes/frontpage/deck-longreads-3.php'); ?>
+	<?php include('includes/frontpage/deck-ad.php'); ?>
+	
 	<?php include('includes/frontpage/deck6.php'); ?>
 	
-	<?php //  include('includes/frontpage/deck-gallery.php'); ?>
+	<?php include('includes/frontpage/deck-debate-2.php'); ?>
+	<?php include('includes/frontpage/deck6.php'); ?>
+	
+	<?php  include('includes/frontpage/deck-image-2.php'); ?>
+
+	<?php include('includes/frontpage/deck6.php'); ?>
+
+	<?php include('includes/frontpage/deck-debate-3.php'); ?> <!-- Den politiske Puls -->
+
+	<?php include('includes/frontpage/deck6.php'); ?>
+
+	<?php include('includes/frontpage/deck-consumersales.php'); ?>
+
+	<?php include('includes/frontpage/deck-theme.php'); ?>
 
 	<?php //  include('includes/frontpage/deck-longreads.php'); ?>
 	
-	<?php // include('includes/frontpage/deck-theme.php'); ?>
+	
 
 	<?php // include('includes/frontpage/deck-image.php'); ?>
 

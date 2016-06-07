@@ -663,7 +663,10 @@ img {
 		margin-top: 0;
 		color: rgba(0,0,0,.6);
 		margin-bottom: .3rem;
-		@extend .font-s2;
+		font-weight: 500;
+		font-family: "Sanomat Sans Web",Helvetica,"Helvetica Neue",arial,sans-serif;
+		font-size: .8rem;
+		line-height: 1.2;
 	}
 	.header {
 		@extend .font-s2;

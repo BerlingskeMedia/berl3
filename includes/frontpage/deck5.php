@@ -29,8 +29,8 @@ if(isset($_GET["topLG"])) {
 					$showDate = false;
 					$showCategory = false;
 					$teaserLabel = 'breaking';
-					$labelText = 'Finanslov på plads';
-					$teaserPack = false;;
+					$labelText = 'Terror i Bruxelles';
+					$teaserPack = false;
 
 					include('includes/teaser-2.php') ?>			
 				</div>
@@ -103,9 +103,9 @@ if(isset($_GET["topLG"])) {
 					include('includes/teaser-2.php') ?>
 
 					<?php
-					$imgW='220'; 
+					$imgW='920'; 
 					$showImg = '1';
-					$class = 'teaser--img-left teaser--small item--teaser__bt';
+					$class = ' teaser--img-wide item--teaser teaser--big item--teaser__bt';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
@@ -113,14 +113,14 @@ if(isset($_GET["topLG"])) {
 					$showDate = true;
 					$showCategory = true;
 					$teaserLabel = false;
+					$teaserPack = '2';
 
 					include('includes/teaser-2.php') ?>
 
 					<?php
-					$imgW='220'; 
-					$imgW='220'; 
+					$imgW='920'; 
 					$showImg = '1';
-					$class = 'teaser--img-right teaser--small item--teaser__bt';
+					$class = ' teaser--img-wide item--teaser teaser--big item--teaser__bt';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
@@ -128,25 +128,11 @@ if(isset($_GET["topLG"])) {
 					$showDate = true;
 					$showCategory = true;
 					$teaserLabel = false;
+					$teaserPack = '3';
 
 					include('includes/teaser-2.php') ?>
 
-
-					<?php
-					$imgW='220'; 
-					$imgW='220'; 
-					$showImg = '1';
-					$class = 'teaser--img-right teaser--small teaser--trade item--teaser__bt';
-					$imgRatio = '16:9';
-					$imgSrc = '/landscape';
-					$showSummary = true;
-					$showRelated = false;
-					$showDate = false;
-					$showCategory = false;
-					$teaserLabel = false;
-					$teaserAd = true;
-
-					include('includes/teaser-2.php') ?>
+					
 					
 					<?php
 					$imgW='920'; 
@@ -189,7 +175,7 @@ if(isset($_GET["topLG"])) {
 					$showDate = true;
 					$showCategory = true;
 					$teaserLabel = false;
-					$teaserPack = '1';
+					$teaserPack = false;
 
 					include('includes/teaser-2.php') ?>
 
@@ -221,19 +207,8 @@ if(isset($_GET["topLG"])) {
 
 					include('includes/teaser-2.php') ?>
 
-					<?php
-					$imgW='920'; 
-					$showImg = '1';
-					$class = ' teaser--img-right teaser--sm item--teaser__bt  teaser--small' ;
-					$imgRatio = '16:9';
-					$imgSrc = '/landscape';
-					$showSummary = true;
-					$showRelated = false;;
-					$showDate = true;
-					$showCategory = true;
-					$teaserLabel = false;
+					
 
-					include('includes/teaser-2.php') ?>
 				</div>
 				
 
@@ -266,14 +241,8 @@ if(isset($_GET["topLG"])) {
 			$listCount = '5';
 				
 			include('includes/list-news.php'); ?>
-		
-		
-		
 
-		
-
-		
-			<div style="width: 300px; height: 250px;" class="demo-banner">Banner</div>
+			<div style="width: 300px; height: 600px;" class="demo-banner">Sticky Banner</div>
 		
 	</div>
 	

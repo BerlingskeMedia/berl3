@@ -8,13 +8,13 @@ $summary = substr($summary, 0, 60);
 
 ?>
 
-<div class="item-teaser <?= $class; ?>">
+<div class=" <?= $class; ?>">
 
 	<div class="teaser-2 ">
 		<!-- <article class="teaser-item"> -->
 
 		
-			<a href="tpl-article.php" class="teaser--link">
+			<a href="<?php echo $teaserLink; ?>" class="teaser--link">
 			<?php if($teaserAd): ?>
 				<div class="trade--header">
 					Annonce
@@ -116,14 +116,14 @@ $summary = substr($summary, 0, 60);
 				<div class="teaser--pack__pack1 ">
 					<ul class="teaser--pack--list">
 						
-						<? while (dumb_luck("2")): ?>
+						
 						<li class="item--teaser">
 							<a href="tpl-article.php" title="[ARTICLE HEADER]">
 								<figure>
-									<img src="<? dummy("image@100x,3:2") ?>" width="" height="" alt="[ARTICLE HEADER]" />
+									<img src="<? dummy("image/landscape@100x,3:2") ?>" width="" height="" alt="[ARTICLE HEADER]" />
 								</figure>
 								<div class="related-body">
-									<h3 class="related-header">
+									<h3 class="header-related">
 										<? dummy("text@headline-b3") ?>
 									</h3>
 									<div class="teaser-summary">
@@ -132,7 +132,19 @@ $summary = substr($summary, 0, 60);
 								</div>
 							</a>
 						</li>
+
+						<? while (dumb_luck("2")): ?>
+						<li class="item--teaser">
+							<a href="tpl-article.php" title="[ARTICLE HEADER]">
+								<div class="related-body">
+									<h3 class="header-related">
+										<? dummy("text@headline-b3") ?>
+									</h3>
+								</div>
+							</a>
+						</li>
 						<? endwhile ?>
+						
 						
 					</ul>
 				</div>
@@ -140,30 +152,96 @@ $summary = substr($summary, 0, 60);
 			<?php endif; ?>
 
 			<?php if($teaserPack === '2') :?>
-				<div class="teaser--pack__pack2">
-					<ul class="teaser-related-small-img">
+			
+				<div class="teaser--pack__pack2 ">
+					<ul class="teaser--pack--list">
 						
-						<li>
-							<figure><a href="tpl-article.php" title="[ARTICLE HEADER]"><img src="<? dummy("image@120x,3:2") ?>" width="" height="" alt="[ARTICLE HEADER]" /></a></figure>
-							<h3 class="header-related">
-								<a href="tpl-article.php" title="[ARTICLE HEADER]"><? dummy("text@headline-b3") ?></a>
-							</h3>
+						
+						<li class="item--teaser">
+							<a href="tpl-article.php" title="[ARTICLE HEADER]">
+								<figure>
+									<img src="<? dummy("image/landscape@140x,3:2") ?>" width="" height="" alt="[ARTICLE HEADER]" />
+								</figure>
+								<div class="related-body">
+									<h3 class="header-related">
+										<? dummy("text@headline-b3") ?>
+									</h3>
+									<div class="teaser-summary">
+										<?php echo $summary ?>
+									</div>
+								</div>
+							</a>
 						</li>
+
+						<? while (dumb_luck("3")): ?>
+						<li class="item--teaser">
+							<a href="tpl-article.php" title="[ARTICLE HEADER]">
+								<div class="related-body">
+									<h3 class="header-related">
+										<? dummy("text@headline-b3") ?>
+									</h3>
+								</div>
+							</a>
+						</li>
+						<? endwhile ?>
+						
 						
 					</ul>
 				</div>
+			
 			<?php endif; ?>
 
 			<?php if($teaserPack === '3') :?>
-				<div class="teaser--pack__pack3">
-					<ul class="teaser-related-small-img">
+				<div class="teaser--pack__pack3 ">
+					<ul class="teaser--pack--list">
 						
-						<li>
-							<figure><a href="tpl-article.php" title="[ARTICLE HEADER]"><img src="<? dummy("image@85x,3:2") ?>" width="" height="" alt="[ARTICLE HEADER]" /></a></figure>
-							<h3 class="header-related">
-								<a href="tpl-article.php" title="[ARTICLE HEADER]"><? dummy("text@headline-b3") ?></a>
-							</h3>
+						
+						<li class="item--teaser">
+							<a href="tpl-article.php" title="[ARTICLE HEADER]">
+								<figure>
+									<img src="<? dummy("image/landscape@100x,3:2") ?>" width="" height="" alt="[ARTICLE HEADER]" />
+								</figure>
+								<div class="related-body">
+									<h3 class="header-related">
+										<? dummy("text@headline-b3") ?>
+									</h3>
+									<div class="teaser-summary">
+										<?php echo $summary ?>
+									</div>
+								</div>
+							</a>
 						</li>
+
+						
+						<li class="item--teaser">
+							<a href="tpl-article.php" title="[ARTICLE HEADER]">
+								<div class="related-body">
+									<h3 class="header-related">
+										<? dummy("text@headline-b3") ?>
+									</h3>
+									<div class="teaser-summary">
+										<?php echo $summary ?>
+									</div>
+								</div>
+							</a>
+						</li>
+						
+						<li class="item--teaser">
+							<a href="tpl-article.php" title="[ARTICLE HEADER]">
+								<figure>
+									<img src="<? dummy("image/landscape@140x,3:2") ?>" width="" height="" alt="[ARTICLE HEADER]" />
+								</figure>
+								<div class="related-body">
+									<h3 class="header-related">
+										<? dummy("text@headline-b3") ?>
+									</h3>
+									<div class="teaser-summary">
+										<?php echo $summary ?>
+									</div>
+								</div>
+							</a>
+						</li>
+						
 						
 					</ul>
 				</div>

@@ -59,15 +59,15 @@ body.tpl-article {
 	height: $headerHeight;
 }
 
+
 .site-logo {
 	@extend .font-s1;
 	line-height: 1;
-
-}
-.site-logo {
+	font-weight: 900;
+	color: $col-blue-2;
 	&:hover, 
 	&:focus {
-		color: #000;
+		color: $col-blue-2;
 		text-decoration: none;
 	}
 }
@@ -76,7 +76,7 @@ body.tpl-article {
 		font-size: 2.5rem;
 		line-height: $headerHeight;
 		&:hover {
-			color: #000;
+			color: $col-blue-2;
 			text-decoration: none;
 		}
 	}
@@ -89,7 +89,6 @@ body.tpl-article {
 		font-size: 2.5rem;
 		line-height: $headerHeight;
 		&:hover {
-			color: #000;
 			text-decoration: none;
 		}
 	}

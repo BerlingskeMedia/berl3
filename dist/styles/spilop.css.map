@@ -1,1 +1,0 @@
-{"version":3,"sources":["../assets/styles/spilop.scss"],"names":[],"mappings":"AACU,gBACP,MAAA,IAEO,iBACP,MAAA","file":"spilop.css","sourcesContent":[".block {\n  @at-root #{&}__element {\n  \tcolor: red;\n  }\n  @at-root #{&}--modifier {\n  \tcolor: orange;\n  }\n}"],"sourceRoot":"/source/"}

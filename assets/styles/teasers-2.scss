@@ -37,7 +37,6 @@
 			color: rgba(0,0,0,.7);
 		}
 	}
-
 	.header {
 		@extend .font-s1;
 	}
@@ -55,6 +54,7 @@
 			backface-visibility: hidden;
 		}
 	}
+
 	&:hover {
 		.teaser-img {
 			img {
@@ -62,13 +62,17 @@
 			}
 		}
 	}
-	
 
 	.teaser--footer {
 		@extend .font-s2;
 		font-weight: 500;
 		text-transform: uppercase;
 		color: #999;
+		font-size: .9rem;
+	}
+
+	.teaser--category {
+		color: $col-blue-1;
 	}	
 }
 
@@ -115,6 +119,11 @@
 .teaser--small {
 	.header {
 		font-size: 30px;
+	}
+}
+.teaser--xsmall {
+	.header {
+		font-size: 20px;
 	}
 }
 
@@ -210,36 +219,7 @@
 
 /*DESIGNS*/
 
-.teaser--theme-business {
-	.teaser-2 {
-		padding: .625rem;
-		background-color: $col-business-light;	
-	}
-	.teaser--category {
-		color: $col-business-dark;
-	}		
-}
 
-
-//  Teaser feature
-.teaser--img-left, 
-.teaser--img-right {
-	&.teaser--feature {
-	.img {
-		border-radius: 50%;
-	}	
-	}
-}
-.teaser--feature {
-	.teaser-2 {
-		padding: .625rem;
-		background-color: $col-cappucino;
-	}
-	.header {
-		@extend .font-g2;
-	}
-	
-}
 
 
 
@@ -248,7 +228,7 @@
 /*TEASER ACCESORIES*/
 
 [class*='teaser--pack']{
-	.related-header {
+	.header-related {
 		@extend .font-s1;
 		font-size: 20px;
 	}
@@ -259,14 +239,112 @@
 	.related-body {
 		overflow: hidden;
 	}
-}
-.teaser--pack__pack1 {
-	li:nth-child(1) {
-		.related-header {
-			
+	ul {
+		margin-bottom: 0;
+	}
+	li {
+		padding: 0 0 0 .9rem;
+		margin: 0 0 $spacer;
+		position: relative;
+		&:before {
+			width: .5rem;
+			height: .5rem;
+			background-color: $col-blue-1;
+			position: absolute;
+			left: 0;
+			top: .4rem;
+			content: '';
+		}
+		&:last-child {
+			margin-bottom: 0;
 		}
 	}
 }
+
+.teaser--pack__pack1 {
+	li:nth-child(1) {
+		padding-left: 0;
+		&:before {
+			display: none;
+		}
+		.header-related {
+			font-size: 1.6rem;
+		}
+
+	}
+	li:nth-child(n+2) {
+		padding-left: .9rem;
+		margin-bottom: .5rem;
+		.header-related {
+			margin-bottom: 0;
+		}
+		&:before {
+			content: '';
+		}
+	}
+}
+
+.teaser--pack__pack2 {
+	li:nth-child(1) {
+		figure {
+			float: right;
+			margin: 0 0 0 .625rem;
+
+		}
+		.header-related {
+			font-size: 1.6rem;
+		}
+	}
+	li:nth-child(n+2) {
+		padding-left: .9rem;
+		margin-bottom: .5rem;
+		.header-related {
+			margin-bottom: 0;
+		}
+		&:before {
+			content: '';
+		}
+	}
+}
+
+.teaser--pack__pack3 {
+	li:nth-child(1) {
+		padding-left: 0;	
+		&:before {
+			display: none;
+		}
+		.header-related {
+			font-size: 1.6rem;
+		}
+	}
+	
+
+	li:nth-child(3) {
+		padding-left: 0!important;	
+		&:before {
+			display: none;
+		}
+		.header-related {
+			font-size: 2rem;
+		}
+		figure {
+			float: right;
+			margin: 0 0 0 .625rem;
+
+		}
+	}
+	li:nth-child(n+2) {
+		padding-left: .9rem;
+		margin-bottom: .5rem;
+		.header-related {
+			margin-bottom: 0;
+		}
+		&:before {
+			content: '';
+		}
+	}
+}
+
 
 .teaser--pack--list {
 	list-style: none;
@@ -312,8 +390,6 @@
 		background-color: lighten($col-blue-1, 50%);
 		z-index: 2;
 	}
-	
-	
 }
 .trade--header {
 	background-color: lighten($col-blue-1, 50%);
@@ -324,3 +400,110 @@
 	@extend .font-g1;
 	font-size: .9rem;
 }
+
+
+.teaser--theme-business {
+	.teaser-2 {
+		padding: .625rem;
+		background-color: $col-business-light;	
+	}
+	.header,
+	.header-related {
+		font-weight: 400;
+	}
+	.teaser--category {
+		color: $col-business-dark;
+	}
+
+	li:before {
+		background-color: $col-business-dark;
+	}
+}
+
+.teaser--longread {
+	.teaser-img {
+		margin-bottom: 0;
+	}
+	.teaser-body {
+		position: absolute;
+		z-index: 2;
+		bottom: 1rem;
+		left: 1rem;
+		
+		background-color: rgba(0,0,0,.5);
+		padding: .625rem;
+		max-width: 40rem;
+	}
+	.header {
+		color: #fff;
+		font-size: 1.8rem;
+	}
+	.teaser-summary {
+		color: rgba(255,255,255,.9);
+	}
+	&.teaser--xsmall .header {
+		font-size: 1.2rem
+	}
+}
+
+
+//  Teaser feature
+.teaser--img-left, 
+.teaser--img-right {
+	&.teaser--feature {
+	.img {
+		border-radius: 50%;
+		max-width: 10rem;
+	}	
+	}
+}
+.teaser--feature {
+	.teaser-2 {
+		padding: .625rem;
+		background-color: $col-cappucino;
+	}
+	.header {
+		@extend .font-g2;
+	}
+	
+}
+
+.teaser--roundimg {
+	.img {
+		border-radius: 50%;
+	}
+}
+
+// teaser: Image of the day
+
+.teaser--photo {
+	position: relative;
+	.teaser-img {
+		margin-bottom: 0;
+	}
+	.teaser-body {
+		position: absolute;
+		z-index: 2;
+		bottom: 1rem;
+		left: 1rem;
+		max-width: 40rem;
+		background-color: #222;
+		padding: .625rem;
+	}
+	.teaser-summary,
+	.header {
+		color: #fff;
+	}
+}
+
+
+.teaser--padding {
+	padding: $spacer .625rem .625rem;
+	background-color: $col-blue-3;
+	margin-bottom: $spacer;
+	margin-top: .625rem;
+	[class*=item--teaser] {
+		padding: 0;
+	}
+}
+
