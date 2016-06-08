@@ -1,5 +1,5 @@
 <div class=" deck ">
-	<div class="col-tags ">
+	<div class="col-tags col-border-right-lg-up ">
 		<div class="section-title">
 			Den Politiske Puls
 		</div>

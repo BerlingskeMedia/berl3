@@ -15,6 +15,12 @@ $summary = substr($summary, 0, 60);
 
 		
 			<a href="<?php echo $teaserLink; ?>" class="teaser--link">
+			<?php if($teaserTrumpet): ?>
+				<span class="teaser--pack-title">
+					<?php echo $teaserTrumpet; ?>
+				</span>
+			<?php endif; ?>
+
 			<?php if($teaserAd): ?>
 				<div class="trade--header">
 					Annonce
@@ -27,11 +33,7 @@ $summary = substr($summary, 0, 60);
 			<?php endif; ?>
 		
 			<div class="teaser-body">
-				<?php if($showTrumpet): ?>
-					<span class="teaser-cat">
-						<? dummy("text@topics") ?>
-					</span>
-				<?php endif; ?>
+				
 				
 
 				<?php if($showDate || $showCategory || $teaserAd): ?>
@@ -110,7 +112,7 @@ $summary = substr($summary, 0, 60);
 			</div><!-- .teaser-body -->	
 			</a><!-- .teaser-link -->
 
-
+				
 
 			<?php if($teaserPack === '1') :?>
 				<div class="teaser--pack__pack1 ">
@@ -250,6 +252,8 @@ $summary = substr($summary, 0, 60);
 		<!-- </article> -->
 		
 	</div>
+
+
 </div>
 
 <?php 
@@ -264,7 +268,7 @@ $showCat = false;
 $smallImg = false;
 $showCategory = false;
 $showDate = false;
-$showTrumpet = false;
+$teaserTrumpet = false;
 $relatedImg = false;
 $showRelatedimg = false;
 $showRating = false;

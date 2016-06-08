@@ -1,6 +1,6 @@
 <div class="deck">
 	<div class="col-tags ">
-		<div class="section-title"><i class="bicon-camera"></i><br>Dagens billede</div>
+		<div class="section-title">Dagens billede</div>
 
 		
 	</div>

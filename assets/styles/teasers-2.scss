@@ -39,10 +39,11 @@
 	}
 	.header {
 		@extend .font-s1;
+		margin-bottom: 0;
 	}
 	.teaser-summary {
 		@extend .font-g1;
-		color: #222;
+		color: rgba(0,0,0,.75);
 		font-size: 1.1rem;
 		&:after {
 			content:"…";
@@ -71,9 +72,28 @@
 		font-size: .9rem;
 	}
 
+
+
 	.teaser--category {
 		color: $col-blue-1;
 	}	
+}
+
+.teaser--pack-title {
+	
+	@extend .font-sans-alt;
+	display: block;
+	padding: 0 .625rem;
+	background-color: $col-blue-1;
+	color: #fff;
+	font-size: 1.2rem;
+	line-height: 1.8;
+	text-transform: uppercase;
+	z-index: 2;
+}
+
+[class*="teaser--theme"] .teaser--pack-title {
+	margin: -.625rem -.625rem .625rem;
 }
 
 /*TEASER VARIATIONS*/
@@ -127,14 +147,14 @@
 	}
 }
 
-.teaser--big.teaser--feature {
+.teaser--big.teaser--theme-feature {
 	.header {
 		font-size: 65px;
 		font-weight: 400;
 	}	
 }
 
-.teaser--small.teaser--feature {
+.teaser--small.teaser--theme-feature {
 	.header {
 		font-size: 50px;
 		font-weight: 400;
@@ -230,7 +250,8 @@
 [class*='teaser--pack']{
 	.header-related {
 		@extend .font-s1;
-		font-size: 20px;
+		font-size: 18px;
+		margin-bottom: 0;
 	}
 	figure {
 		float: left;
@@ -403,6 +424,9 @@
 
 
 .teaser--theme-business {
+	.teaser--pack-title {
+		background-color: $col-business-dark;	
+	}
 	.teaser-2 {
 		padding: .625rem;
 		background-color: $col-business-light;	
@@ -417,6 +441,27 @@
 
 	li:before {
 		background-color: $col-business-dark;
+	}
+}
+
+.teaser--theme-cappucino {
+	.teaser-2 {
+		padding: .625rem;
+		background-color: $col-cappucino;
+	}
+}
+.teaser--theme-fragileblue {
+	.teaser-2 {
+		padding: .625rem;
+		background-color: $col-blue-3;
+	}
+}
+
+
+.teaser--theme-gray {
+	.teaser-2 {
+		padding: .625rem;
+		background-color: darken($background-color, 4%);
 	}
 }
 
@@ -446,22 +491,74 @@
 	}
 }
 
+[class*="teaser--cartoon"] {
+	text-align: center;
+	background: #fff;
+	
+	.teaser-2 {
+		padding: .625rem 0;
+	}
+	a {
+		@extend .clearfix;
+	}
+	.teaser-img {
+		&:before {
+			display: block;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			content: '';
+			@include gradient-vertical(fade-out($background-color, .9), $background-color, 30%, 100%);
+			z-index: 2;
+		}
+	}
+	.teaser-body {
+		position: absolute;
+		height: 5rem;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		text-align: center;
+		padding-top: 2.4rem;
+		z-index: 2;
+	}
+	.btn {
+		margin: -2rem auto 0;
+	}
+}
+.teaser--cartoon-1 {
+	.teaser-body {
+		background: url(/dist/images/logo-hardtmodhardt.png) center top no-repeat;
+		background-size: auto 40px;
+	}
+}
+.teaser--cartoon-2 {
+	.teaser-body {
+		background: url(/dist/images/logo-nitilfem.png) center top no-repeat;
+		background-size: auto 40px;
+	}
+}
+.teaser--cartoon-3 {
+	.teaser-body {
+		background: url(/dist/images/logo-tilstregen.png) center top no-repeat;
+		background-size: auto 40px;
+	}
+}
 
 //  Teaser feature
 .teaser--img-left, 
 .teaser--img-right {
-	&.teaser--feature {
+	&.teaser--theme-feature {
 	.img {
 		border-radius: 50%;
 		max-width: 10rem;
 	}	
 	}
 }
-.teaser--feature {
-	.teaser-2 {
-		padding: .625rem;
-		background-color: $col-cappucino;
-	}
+.teaser--theme-feature {
+	@extend .teaser--theme-cappucino;
 	.header {
 		@extend .font-g2;
 	}

@@ -13,7 +13,7 @@
 		<div class="col-xl-6 flex-row  ">
 			<?php 
 				$imgW='100'; 
-				$class = ' teaser--img-right  teaser--small	item--teaser__bt ';
+				$class = ' teaser--img-right  teaser--xsmall	item--teaser__bt ';
 				$showImg = '1';
 				$imgRatio = '1:1';
 				$showAuthor = true;

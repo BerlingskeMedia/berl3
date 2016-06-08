@@ -99,13 +99,14 @@ if(isset($_GET["topLG"])) {
 					$showCategory = true;
 					$teaserLabel = false;
 					$teaserPack = '1';
+					$teaserTrumpet = 'Momssvindel';
 
 					include('includes/teaser-2.php') ?>
 
 					<?php
 					$imgW='920'; 
 					$showImg = '1';
-					$class = ' teaser--img-wide item--teaser teaser--big item--teaser__bt';
+					$class = ' teaser--img-wide item--teaser teaser--big item--teaser__bt teaser--theme-fragileblue';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
@@ -114,6 +115,7 @@ if(isset($_GET["topLG"])) {
 					$showCategory = true;
 					$teaserLabel = false;
 					$teaserPack = '2';
+					$teaserTrumpet = 'Danmark til valg';
 
 					include('includes/teaser-2.php') ?>
 
@@ -132,7 +134,22 @@ if(isset($_GET["topLG"])) {
 
 					include('includes/teaser-2.php') ?>
 
-					
+					<?php
+					$imgW='220'; 
+					$imgW='220'; 
+					$showImg = '1';
+					$class = 'teaser--img-right  teaser--small teaser--trade item--teaser__bt';
+					$imgRatio = '16:9';
+					$imgSrc = '/landscape';
+					$showSummary = true;
+					$showRelated = false;
+					$showDate = false;
+					$showCategory = false;
+					$teaserLabel = false;
+					$teaserAd = true;
+
+					include('includes/teaser-2.php') ?>
+
 					
 					<?php
 					$imgW='920'; 
@@ -196,7 +213,7 @@ if(isset($_GET["topLG"])) {
 					<?php
 					$imgW='920'; 
 					$showImg = '1';
-					$class = ' teaser--img-right teaser--sm item--teaser__bt teaser--feature teaser--small' ;
+					$class = ' teaser--img-right teaser--sm item--teaser__bt teaser--theme-feature teaser--small' ;
 					$imgRatio = '1:1';
 					$imgSrc = '/!author';
 					$showSummary = true;

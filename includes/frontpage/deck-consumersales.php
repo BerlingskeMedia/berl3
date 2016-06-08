@@ -1,8 +1,10 @@
 <div class="deck ">
-	<div class="col-tags">
-			<div class="section-title">Go shopping</div>
+	<div class="col-tags col-border-right-lg-up">
+			<div class="section-title">Go shopping!</div>
+			<div class="section-link">
+				<a href="tpl-section.php">Berlingske Shop<i class="bicon-angle-right"></i></a>
+			</div>
 		
-		<span class="section-description"><a href="http://shop.berlingske.dk">Gå til Berlingske Shop <i class="bicon-angle-right"></i></a></span>
 	</div>
 
 	
