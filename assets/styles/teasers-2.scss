@@ -72,7 +72,14 @@
 		font-size: .9rem;
 	}
 
-
+	.teaser--title {
+		@extend .font-sans-alt;
+		font-size: 1.4rem;
+		display: block;
+		text-align: left;
+		margin-bottom: .4rem;
+		text-transform: uppercase;
+	}
 
 	.teaser--category {
 		color: $col-blue-1;
@@ -518,7 +525,7 @@
 
 [class*="teaser--cartoon"] {
 	text-align: center;
-	background: #fff;
+	background: $background-color;
 	
 	.teaser-2 {
 		padding: .625rem 0;
@@ -535,7 +542,7 @@
 			top: 0;
 			bottom: 0;
 			content: '';
-			@include gradient-vertical(fade-out($background-color, .9), $background-color, 30%, 100%);
+			@include gradient-vertical(fade-out($background-color, 1), $background-color, 30%, 100%);
 			z-index: 2;
 		}
 	}
@@ -593,6 +600,11 @@
 .teaser--roundimg {
 	.img {
 		border-radius: 50%;
+	}
+}
+.teaser--squareimg {
+	.img {
+		border-radius: 0!important;
 	}
 }
 

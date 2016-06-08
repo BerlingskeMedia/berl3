@@ -53,6 +53,7 @@
 				<div class="col-xl-4">
 					<div class=" teaser--img-wide item--teaser teaser--xsmall teaser--big	teaser--cartoon-1">
 					<div class="teaser-2 ">
+						<span class="teaser--title">Hårdt mod hårdt</span>
 						<a href="#" class="teaser--link">
 						
 						<figure class="teaser-img">
@@ -73,6 +74,7 @@
 				<div class="col-xl-4">
 					<div class=" teaser--img-wide item--teaser teaser--xsmall teaser--big	teaser--cartoon-2">
 					<div class="teaser-2 ">
+					<span class="teaser--title">Ni til Fem</span>
 						<a href="#" class="teaser--link">
 						
 						<figure class="teaser-img">
@@ -91,6 +93,7 @@
 				<div class="col-xl-4">
 					<div class=" teaser--img-wide item--teaser teaser--xsmall teaser--big	teaser--cartoon-3">
 					<div class="teaser-2 ">
+						<span class="teaser--title">Til stregen</span>
 						<a href="#" class="teaser--link">
 						
 						<figure class="teaser-img">
