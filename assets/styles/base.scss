@@ -62,7 +62,9 @@ ul.list-reset {
 }
 
 
-
+.col-primary-wide .row + .row {
+	margin-top: 1rem;
+}
 
 .deck {
 	margin-bottom: $spacer * 4;

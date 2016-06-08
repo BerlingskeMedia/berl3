@@ -77,6 +77,25 @@
 	.teaser--category {
 		color: $col-blue-1;
 	}	
+	.teaser--author {
+		font-size: .8rem;
+		text-transform: uppercase;
+		display: block;
+		margin-top: .3rem;
+		@extend .font-s2;
+		font-weight: 500;
+		color: #222;
+		&:before {
+			content: '\2014 ';
+			margin-right: .2rem;
+		}
+	}	
+	.teaser-photo .teaser-author {
+		&:before {
+			content: '\e81a';
+			font-family: b-icons;
+		}
+	}
 }
 
 .teaser--pack-title {
@@ -157,6 +176,12 @@
 .teaser--small.teaser--theme-feature {
 	.header {
 		font-size: 50px;
+		font-weight: 400;
+	}	
+}
+.teaser--xsmall.teaser--theme-feature {
+	.header {
+		font-size: 40px;
 		font-weight: 400;
 	}	
 }

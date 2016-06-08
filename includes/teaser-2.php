@@ -104,7 +104,7 @@ $summary = substr($summary, 0, 60);
 				<?php endif; ?>
 
 				<?php if($showAuthor): ?>
-					<span class="teaser-author"><? dummy("text@author") ?></span>
+					<span class="teaser--author"><? dummy("text@author") ?></span>
 				<?php endif; ?>
 				
 				

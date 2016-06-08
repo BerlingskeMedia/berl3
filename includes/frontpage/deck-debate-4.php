@@ -17,7 +17,7 @@
 			<div class="  col-xl-6 flex-row ">
 				<?php 
 					$imgW='100'; 
-					$class = ' teaser--img-right  teaser--xsmall  item--teaser teaser--roundimg';
+					$class = ' teaser--img-right  teaser--xsmall  item--teaser teaser--theme-feature teaser--roundimg';
 					$showImg = '1';
 					$imgRatio = '1:1';
 					$showAuthor = true;
@@ -33,7 +33,7 @@
 			<div class="  col-xl-6 flex-row ">
 				<?php 
 					$imgW='100'; 
-					$class = ' teaser--img-right  teaser--xsmall  item--teaser__bt teaser--roundimg';
+					$class = ' teaser--img-right  teaser--xsmall  item--teaser__bt teaser--theme-feature teaser--roundimg';
 					$showImg = '1';
 					$imgRatio = '1:1';
 					$showAuthor = true;
