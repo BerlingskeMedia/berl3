@@ -51,8 +51,8 @@ if(isset($_GET["topLG"])) {
 					$imgSrc = '/landscape';
 					$showSummary = '1';
 					$showRelated = '1';
-					$showDate = true;
-					$showCategory = true;
+					$showDate = false;
+					$showCategory = false;
 					$teaserLabel = 'breaking';
 					$teaserLink = 'tpl-article.php?event=breaking';
 					include('includes/teaser-2.php') ?>			
@@ -95,8 +95,9 @@ if(isset($_GET["topLG"])) {
 					$imgSrc = '/landscape';
 					$showSummary = true;
 					$showRelated = false;
-					$showDate = true;
+					$showDate = false;
 					$showCategory = true;
+					$category = 'Business.dk';
 					$teaserLabel = false;
 					$teaserPack = '1';
 					$teaserTrumpet = 'Momssvindel';
@@ -106,13 +107,13 @@ if(isset($_GET["topLG"])) {
 					<?php
 					$imgW='920'; 
 					$showImg = '1';
-					$class = ' teaser--img-wide item--teaser teaser--big item--teaser__bt teaser--theme-fragileblue';
+					$class = ' teaser--img-wide item--teaser teaser--big item--teaser__bt';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
 					$showRelated = false;
-					$showDate = true;
-					$showCategory = true;
+					$showDate = false;
+					$showCategory = false;
 					$teaserLabel = false;
 					$teaserPack = '2';
 					$teaserTrumpet = 'Danmark til valg';
@@ -127,8 +128,8 @@ if(isset($_GET["topLG"])) {
 					$imgSrc = '/landscape';
 					$showSummary = true;
 					$showRelated = false;
-					$showDate = true;
-					$showCategory = true;
+					$showDate = false;
+					$showCategory = false;
 					$teaserLabel = false;
 					$teaserPack = '3';
 
@@ -159,8 +160,8 @@ if(isset($_GET["topLG"])) {
 					$imgSrc = '/landscape';
 					$showSummary = true;
 					$showRelated = true;;
-					$showDate = true;
-					$showCategory = true;
+					$showDate = false;
+					$showCategory = false;
 					$teaserLabel = false;
 
 					include('includes/teaser-2.php') ?>
@@ -174,8 +175,9 @@ if(isset($_GET["topLG"])) {
 					$imgSrc = '/landscape';
 					$showSummary = true;
 					$showRelated = false;
-					$showDate = true;
+					$showDate = false;
 					$showCategory = true;
+					$category = 'Business.dk';
 					$teaserLabel = false;
 
 					include('includes/teaser-2.php') ?>
@@ -189,8 +191,8 @@ if(isset($_GET["topLG"])) {
 					$imgSrc = '/landscape';
 					$showSummary = true;
 					$showRelated = false;
-					$showDate = true;
-					$showCategory = true;
+					$showDate = false;
+					$showCategory = false;
 					$teaserLabel = false;
 					$teaserPack = false;
 
@@ -204,8 +206,9 @@ if(isset($_GET["topLG"])) {
 					$imgSrc = '/landscape';
 					$showSummary = true;
 					$showRelated = true;;
-					$showDate = true;
+					$showDate = false;
 					$showCategory = true;
+					$category = 'Business.dk';
 					$teaserLabel = false;
 
 					include('includes/teaser-2.php') ?>
@@ -218,9 +221,10 @@ if(isset($_GET["topLG"])) {
 					$imgSrc = '/!author';
 					$showSummary = true;
 					$showRelated = false;;
-					$showDate = true;
-					$showCategory = true;
+					$showDate = false;
+					$showCategory = false;
 					$teaserLabel = false;
+					$showAuthor = true;
 
 					include('includes/teaser-2.php') ?>
 

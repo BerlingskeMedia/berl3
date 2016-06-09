@@ -55,6 +55,9 @@ if (isset($_GET['showTimeline'])) {
 if (isset($_GET['showTheme'])) {
 	$showThemeEmbedded = true;
 }
+if (isset($_GET['theme'])) {
+	$theme = $_GET['theme'];
+}
 
 if (isset($_GET['showFactDefault'])) {
 	$showFactboxDefault = true;

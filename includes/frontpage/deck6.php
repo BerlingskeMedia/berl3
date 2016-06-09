@@ -39,8 +39,8 @@ if(isset($_GET["topLG"])) {
 					$imgSrc = '/landscape';
 					$showSummary = true;
 					$showRelated = false;
-					$showDate = true;
-					$showCategory = true;
+					$showDate = false;
+					$showCategory = false;
 					$teaserLabel = false;
 
 					include('includes/teaser-2.php') ?>
@@ -53,8 +53,8 @@ if(isset($_GET["topLG"])) {
 					$imgSrc = '/landscape';
 					$showSummary = true;
 					$showRelated = false;
-					$showDate = true;
-					$showCategory = true;
+					$showDate = false;
+					$showCategory = false;
 					$teaserLabel = false;
 
 					include('includes/teaser-2.php') ?>
@@ -75,8 +75,8 @@ if(isset($_GET["topLG"])) {
 					$imgSrc = '/landscape';
 					$showSummary = true;
 					$showRelated = false;
-					$showDate = true;
-					$showCategory = true;
+					$showDate = false;
+					$showCategory = false;
 					$teaserLabel = false;
 
 					include('includes/teaser-2.php') ?>
@@ -89,8 +89,8 @@ if(isset($_GET["topLG"])) {
 					$imgSrc = '/landscape';
 					$showSummary = true;
 					$showRelated = false;
-					$showDate = true;
-					$showCategory = true;
+					$showDate = false;
+					$showCategory = false;
 					$teaserLabel = false;
 					$teaserPack = false;
 
@@ -127,8 +127,8 @@ if(isset($_GET["topLG"])) {
 					$imgSrc = '/landscape';
 					$showSummary = true;
 					$showRelated = true;;
-					$showDate = true;
-					$showCategory = true;
+					$showDate = false;
+					$showCategory = false;
 					$teaserLabel = false;
 					$teaserPack = false;
 
@@ -145,8 +145,8 @@ if(isset($_GET["topLG"])) {
 					$imgSrc = '/landscape';
 					$showSummary = true;
 					$showRelated = false;;
-					$showDate = true;
-					$showCategory = true;
+					$showDate = false;
+					$showCategory = false;
 					$teaserLabel = false;
 
 					include('includes/teaser-2.php') ?>
@@ -160,8 +160,8 @@ if(isset($_GET["topLG"])) {
 					$imgSrc = '/!author';
 					$showSummary = true;
 					$showRelated = false;;
-					$showDate = true;
-					$showCategory = true;
+					$showDate = false;
+					$showCategory = false;
 					$teaserLabel = false;
 
 					include('includes/teaser-2.php') ?>
@@ -174,8 +174,8 @@ if(isset($_GET["topLG"])) {
 					$imgSrc = '/landscape';
 					$showSummary = true;
 					$showRelated = false;;
-					$showDate = true;
-					$showCategory = true;
+					$showDate = false;
+					$showCategory = false;
 					$teaserLabel = false;
 
 					include('includes/teaser-2.php') ?>

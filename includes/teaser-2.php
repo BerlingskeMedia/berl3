@@ -4,7 +4,7 @@ if (!$teaserLink) {
 }
 $f_contents = file("includes/teaser-b.txt"); 
 $summary = $f_contents[rand(0, count($f_contents) - 1)];
-$summary = substr($summary, 0, 60);
+// $summary = substr($summary, 0, 60);
 
 ?>
 
@@ -15,11 +15,7 @@ $summary = substr($summary, 0, 60);
 
 		
 			<a href="<?php echo $teaserLink; ?>" class="teaser--link">
-			<?php if($teaserTrumpet): ?>
-				<span class="teaser--pack-title">
-					<?php echo $teaserTrumpet; ?>
-				</span>
-			<?php endif; ?>
+			
 
 			<?php if($teaserAd): ?>
 				<div class="trade--header">
@@ -43,11 +39,6 @@ $summary = substr($summary, 0, 60);
 							<div class="teaser--sponsor">Sponseret af <? dummy("text@company-names") ?></div>
 						<?php endif; ?>
 
-						<?php if($showCategory): ?>
-						<span class="teaser--category">
-							<? dummy("text@b-cat") ?>
-						</span>	
-						<?php endif; ?>
 
 						<?php if($showDate): ?>
 						<span class="teaser--date">
@@ -99,6 +90,12 @@ $summary = substr($summary, 0, 60);
 
 				<?php if ($showSummary): ?>
 					<div class="teaser-summary">
+						<?php if($showCategory): ?>
+						<span class="teaser--category">
+							<?php if($category){echo $category;} else {  dummy("text@b-cat"); } ?>
+						</span>	
+						<?php endif; ?>
+
 						<?php echo $summary ?>
 					</div>
 				<?php endif; ?>
@@ -198,6 +195,24 @@ $summary = substr($summary, 0, 60);
 					<ul class="teaser--pack--list">
 						
 						
+
+						<li class="item--teaser">
+							<a href="tpl-article.php" title="[ARTICLE HEADER]">
+								<figure>
+									<img src="<? dummy("image/landscape@140x,3:2") ?>" width="" height="" alt="[ARTICLE HEADER]" />
+								</figure>
+								<div class="related-body">
+									<h3 class="header-related">
+										<? dummy("text@headline-b3") ?>
+									</h3>
+									<div class="teaser-summary">
+										<? dummy("text@short-teaser") ?>
+									</div>
+								</div>
+							</a>
+						</li>
+
+
 						<li class="item--teaser">
 							<a href="tpl-article.php" title="[ARTICLE HEADER]">
 								<figure>
@@ -208,7 +223,7 @@ $summary = substr($summary, 0, 60);
 										<? dummy("text@headline-b3") ?>
 									</h3>
 									<div class="teaser-summary">
-										<?php echo $summary ?>
+										<? dummy("text@short-teaser") ?>
 									</div>
 								</div>
 							</a>
@@ -221,28 +236,11 @@ $summary = substr($summary, 0, 60);
 									<h3 class="header-related">
 										<? dummy("text@headline-b3") ?>
 									</h3>
-									<div class="teaser-summary">
-										<?php echo $summary ?>
-									</div>
 								</div>
 							</a>
 						</li>
 						
-						<li class="item--teaser">
-							<a href="tpl-article.php" title="[ARTICLE HEADER]">
-								<figure>
-									<img src="<? dummy("image/landscape@140x,3:2") ?>" width="" height="" alt="[ARTICLE HEADER]" />
-								</figure>
-								<div class="related-body">
-									<h3 class="header-related">
-										<? dummy("text@headline-b3") ?>
-									</h3>
-									<div class="teaser-summary">
-										<?php echo $summary ?>
-									</div>
-								</div>
-							</a>
-						</li>
+					
 						
 						
 					</ul>
@@ -275,4 +273,5 @@ $showRating = false;
 $teaserLabel = false;
 $teaserAd = false;
 $teaserPack = false;
+$teaserLink = false;
 ?>
