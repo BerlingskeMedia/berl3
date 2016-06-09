@@ -94,13 +94,16 @@ if(isset($_GET["topLG"])) {
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
+					$showComments = true;
 					$showRelated = false;
 					$showDate = false;
 					$showCategory = true;
+					$showPaywall = false;
+					$showComments = true;
 					$category = 'Business.dk';
-					$teaserLabel = false;
+					//$teaserLabel = 'breaking';
 					$teaserPack = '1';
-					$teaserTrumpet = 'Momssvindel';
+					$showTrumpet = 'Momssvindel';
 
 					include('includes/teaser-2.php') ?>
 
@@ -115,8 +118,9 @@ if(isset($_GET["topLG"])) {
 					$showDate = false;
 					$showCategory = false;
 					$teaserLabel = false;
+					$showComments = true;
 					$teaserPack = '2';
-					$teaserTrumpet = 'Danmark til valg';
+					$showTrumpet = 'Danmark til valg';
 
 					include('includes/teaser-2.php') ?>
 
@@ -132,6 +136,7 @@ if(isset($_GET["topLG"])) {
 					$showCategory = false;
 					$teaserLabel = false;
 					$teaserPack = '3';
+					$showTrumpet = 'Interview';
 
 					include('includes/teaser-2.php') ?>
 

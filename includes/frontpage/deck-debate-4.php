@@ -1,4 +1,4 @@
-<div class=" deck deck-cappucino">
+<div class=" deck ">
 	<div class="col-tags col-border-right-lg-up ">
 		<div class="section-title">Det&rsquo; satire!</div>
 
@@ -22,8 +22,9 @@
 					$imgRatio = '1:1';
 					$showAuthor = true;
 					$showTrumpet = false;
-					$showDate = true;
+					$showDate = false;
 					$showCategory = true;
+					$showComments = true;
 					$imgSrc = '/!b-tilstregen';
 					include('includes/teaser-2.php') ?>
 			</div>
@@ -38,8 +39,9 @@
 					$imgRatio = '1:1';
 					$showAuthor = true;
 					$showTrumpet = false;
-					$showDate = true;
+					$showDate = false;
 					$showCategory = true;
+					$showComments = true;
 					$imgSrc = '/!b-tilstregen';
 					include('includes/teaser-2.php') ?>
 			</div>
@@ -51,7 +53,7 @@
 				
 				
 				<div class="col-xl-4">
-					<div class=" teaser--img-wide item--teaser teaser--xsmall teaser--big	teaser--cartoon-1">
+					<div class=" teaser--img-wide item--teaser teaser--xsmall teaser--big	teaser--cartoon-1 teaser--theme-white">
 					<div class="teaser-2 ">
 						<span class="teaser--title">Hårdt mod hårdt</span>
 						<a href="#" class="teaser--link">
@@ -72,7 +74,7 @@
 				</div>	
 
 				<div class="col-xl-4">
-					<div class=" teaser--img-wide item--teaser teaser--xsmall teaser--big	teaser--cartoon-2">
+					<div class=" teaser--img-wide item--teaser teaser--xsmall teaser--big	teaser--cartoon-2 teaser--theme-white">
 					<div class="teaser-2 ">
 					<span class="teaser--title">Ni til Fem</span>
 						<a href="#" class="teaser--link">
@@ -91,7 +93,7 @@
 				</div>	
 
 				<div class="col-xl-4">
-					<div class=" teaser--img-wide item--teaser teaser--xsmall teaser--big	teaser--cartoon-3">
+					<div class=" teaser--img-wide item--teaser teaser--xsmall teaser--big	teaser--cartoon-3 teaser--theme-white">
 					<div class="teaser-2 ">
 						<span class="teaser--title">Til stregen</span>
 						<a href="#" class="teaser--link">

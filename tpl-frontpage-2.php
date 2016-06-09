@@ -107,8 +107,10 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 	<?php include('includes/frontpage/deck6.php'); ?>
 	
 	<?php include('includes/frontpage/deck-image-2.php'); ?>
-
+	
+	<?php $showBflow = true; ?>
 	<?php include('includes/frontpage/deck6.php'); ?>
+
 
 	<?php include('includes/frontpage/deck-debate-3.php'); ?> <!-- Den politiske Puls -->
 

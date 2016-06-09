@@ -21,12 +21,14 @@
 				$imgRatio = '1:1';
 				$showAuthor = true;
 				$showTrumpet = false;
-				$showDate = true;
-				$showCategory = true;
+				$showDate = false;
+				$showCategory = false;
+				$showComments = true;
+				$showTrumpet = 'Den politiske Puls';
 				$imgSrc = '/!b-kommentatorer';
 				include('includes/teaser-2.php') ?>
 		</div>
-		<?php endwhile; ?>
+		<? endwhile ?>
 		
 		</div>
 	</div>

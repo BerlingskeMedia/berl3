@@ -1,3 +1,5 @@
+
+<!-- Deck-debate-2 -->
 <div class=" deck ">
 	<div class="col-tags ">
 		<div class="section-title">
@@ -18,8 +20,11 @@
 				$imgRatio = '1:1';
 				$showAuthor = true;
 				$showTrumpet = false;
-				$showDate = true;
-				$showCategory = true;
+				$showDate = false;
+				$showTrumpet = 'Berlingske mener';
+				$showCategory = false;
+				$showComments = true;
+
 				$imgSrc = '/!b-vaabenskjold';
 				include('includes/teaser-2.php') ?>
 			
@@ -32,8 +37,10 @@
 				$imgRatio = '1:1';
 				$showAuthor = true;
 				$showTrumpet = false;
-				$showDate = true;
-				$showCategory = true;
+				$showDate = false;
+				$showCategory = false;
+				$showComments = true;
+				$showTrumpet = 'Kronikken';
 				$imgSrc = '/!b-kommentatorer';
 				include('includes/teaser-2.php') ?>
 		</div>
@@ -42,13 +49,15 @@
 		<div class="  col-xl-6 flex-row ">
 			<?php 
 				$imgW='100'; 
-				$class = ' teaser--img-right  teaser--xsmall	teaser--theme-feature  item--teaser__bt teaser--roundimg';
+				$class = ' teaser--img-right  teaser--xsmall	  item--teaser__bt teaser--roundimg';
 				$showImg = '1';
 				$imgRatio = '1:1';
 				$showAuthor = true;
 				$showTrumpet = false;
-				$showDate = true;
-				$showCategory = true;
+				$showDate = false;
+				$showCategory = false;
+				$showComments = true;
+				$showTrumpet = 'Læserbrev';
 				$imgSrc = '/!b-kommentatorer';
 				include('includes/teaser-2.php') ?>
 		</div>

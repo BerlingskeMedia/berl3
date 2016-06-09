@@ -42,6 +42,7 @@ if(isset($_GET["topLG"])) {
 					$showDate = false;
 					$showCategory = false;
 					$teaserLabel = false;
+					$showComments = true;
 
 					include('includes/teaser-2.php') ?>
 
@@ -56,6 +57,8 @@ if(isset($_GET["topLG"])) {
 					$showDate = false;
 					$showCategory = false;
 					$teaserLabel = false;
+					$showTrumpet = 'Jeg er en forrider';
+					$showComments = true;
 
 					include('includes/teaser-2.php') ?>
 
@@ -76,8 +79,10 @@ if(isset($_GET["topLG"])) {
 					$showSummary = true;
 					$showRelated = false;
 					$showDate = false;
-					$showCategory = false;
+					$showCategory = true;
 					$teaserLabel = false;
+					$showTrumpet = 'Børsnotering';
+					$showComments = true;
 
 					include('includes/teaser-2.php') ?>
 					
@@ -93,6 +98,7 @@ if(isset($_GET["topLG"])) {
 					$showCategory = false;
 					$teaserLabel = false;
 					$teaserPack = false;
+					$showComments = true;
 
 					include('includes/teaser-2.php') ?>
 					
@@ -126,11 +132,12 @@ if(isset($_GET["topLG"])) {
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
-					$showRelated = true;;
+					$showRelated = true;
 					$showDate = false;
 					$showCategory = false;
 					$teaserLabel = false;
 					$teaserPack = false;
+					$showComments = true;
 
 					include('includes/teaser-2.php') ?>
 					
@@ -144,10 +151,11 @@ if(isset($_GET["topLG"])) {
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
-					$showRelated = false;;
+					$showRelated = false;
 					$showDate = false;
 					$showCategory = false;
 					$teaserLabel = false;
+					$showComments = true;
 
 					include('includes/teaser-2.php') ?>
 
@@ -159,10 +167,11 @@ if(isset($_GET["topLG"])) {
 					$imgRatio = '1:1';
 					$imgSrc = '/!author';
 					$showSummary = true;
-					$showRelated = false;;
+					$showRelated = false;
 					$showDate = false;
 					$showCategory = false;
 					$teaserLabel = false;
+					$showComments = true;
 
 					include('includes/teaser-2.php') ?>
 
@@ -173,10 +182,12 @@ if(isset($_GET["topLG"])) {
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
-					$showRelated = false;;
+					$showRelated = false;
 					$showDate = false;
 					$showCategory = false;
 					$teaserLabel = false;
+					$showComments = true;
+					$showAuthor = true;
 
 					include('includes/teaser-2.php') ?>
 

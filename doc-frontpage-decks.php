@@ -3,22 +3,7 @@
 <?php include('includes/_variables.php') ;?>
 
 <?php 
-if(isset($_GET["wide"])) {
-	$showWide = true;
-} 
-
-if(isset($_GET["well"])) {
-	$showWell = true;
-} 
-if(isset($_GET["oneliner"])) {
-	$showOneliner = true;
-} 
-if(isset($_GET["top"])) {
-	$showTop = true;
-}
-if(isset($_GET["business"])) {
-	$siteBusiness = true;
-}
+$showBflow = true;
 ?>
 
 

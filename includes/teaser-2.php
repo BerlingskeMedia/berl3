@@ -32,14 +32,24 @@ $summary = $f_contents[rand(0, count($f_contents) - 1)];
 				
 				
 
-				<?php if($showDate || $showCategory || $teaserAd): ?>
+				<?php if($showDate || $showCategory || $teaserAd || $showTrumpet)  : ?>
 					<div class="teaser--footer">
 						
 						<?php if($teaserAd): ?>
 							<div class="teaser--sponsor">Sponseret af <? dummy("text@company-names") ?></div>
 						<?php endif; ?>
+						
+						<?php // if($showCategory): ?>
+							<!-- <span class="teaser--category">
+								<? dummy("text@item") ?>
+							</span> -->
+						<?php // endif; ?>
 
-
+						<?php if($showTrumpet): ?>
+							<span class="teaser--trumpet">
+								<?php echo $showTrumpet; ?>
+							</span>
+						<?php endif; ?>
 						<?php if($showDate): ?>
 						<span class="teaser--date">
 							<i class="bicon-clock-alt"></i>
@@ -69,7 +79,13 @@ $summary = $f_contents[rand(0, count($f_contents) - 1)];
 							 <i class="bicon-key"></i>
 						<? endif ?> 
 					<?php endif; ?>
-					
+					<?php if(!$showSummary && $showComments &! $showAuthor): ?>
+						
+							<span class="teaser--comments">
+								<i class="bicon-comment-inv-alt2"></i> <? dummy("text@number") ?>
+							</span>
+						
+					<?php endif; ?>
 				</h2>
 				<?php if($showRating): ?>
 					
@@ -96,12 +112,27 @@ $summary = $f_contents[rand(0, count($f_contents) - 1)];
 						</span>	
 						<?php endif; ?>
 
+						<?php if($showPaywall): ?>
+							<i class="icon-paywall"></i>
+						<?php endif; ?>
+
 						<?php echo $summary ?>
+						<?php if($showComments  ): ?>
+							<span class="teaser--comments">
+								<i class="bicon-comment-inv-alt2"></i> <? dummy("text@number") ?>
+							</span>
+						<?php endif; ?>
 					</div>
 				<?php endif; ?>
 
 				<?php if($showAuthor): ?>
-					<span class="teaser--author"><? dummy("text@author") ?></span>
+					<span class="teaser--author"><? dummy("text@author") ?>
+					<?php if($showComments &! $showSummary): ?>
+						<span class="teaser--comments">
+							<i class="bicon-comment-inv-alt2"></i> <? dummy("text@number") ?>
+						</span>
+					<?php endif; ?>
+					</span>
 				<?php endif; ?>
 				
 				
@@ -126,7 +157,12 @@ $summary = $f_contents[rand(0, count($f_contents) - 1)];
 										<? dummy("text@headline-b3") ?>
 									</h3>
 									<div class="teaser-summary">
-										<?php echo $summary ?>
+										<? dummy("text@short-teaser") ?>
+										<? if (dumb_luck("50%")): ?>
+										<span class="teaser--comments">
+											<i class="bicon-comment-inv-alt2"></i> <? dummy("text@number") ?>
+										</span>
+										<? endif; ?>
 									</div>
 								</div>
 							</a>
@@ -138,6 +174,11 @@ $summary = $f_contents[rand(0, count($f_contents) - 1)];
 								<div class="related-body">
 									<h3 class="header-related">
 										<? dummy("text@headline-b3") ?>
+										<? if (dumb_luck("20%")): ?>
+											<span class="teaser--comments">
+												<i class="bicon-comment-inv-alt2"></i> <? dummy("text@number") ?>
+											</span>
+										<? endif ?>
 									</h3>
 								</div>
 							</a>
@@ -164,6 +205,11 @@ $summary = $f_contents[rand(0, count($f_contents) - 1)];
 								<div class="related-body">
 									<h3 class="header-related">
 										<? dummy("text@headline-b3") ?>
+										<? if (dumb_luck("20%")): ?>
+											<span class="teaser--comments">
+												<i class="bicon-comment-inv-alt2"></i> <? dummy("text@number") ?>
+											</span>
+										<? endif ?>
 									</h3>
 									<div class="teaser-summary">
 										<?php echo $summary ?>
@@ -178,6 +224,11 @@ $summary = $f_contents[rand(0, count($f_contents) - 1)];
 								<div class="related-body">
 									<h3 class="header-related">
 										<? dummy("text@headline-b3") ?>
+										<? if (dumb_luck("20%")): ?>
+											<span class="teaser--comments">
+												<i class="bicon-comment-inv-alt2"></i> <? dummy("text@number") ?>
+											</span>
+										<? endif ?>
 									</h3>
 								</div>
 							</a>
@@ -204,9 +255,15 @@ $summary = $f_contents[rand(0, count($f_contents) - 1)];
 								<div class="related-body">
 									<h3 class="header-related">
 										<? dummy("text@headline-b3") ?>
+
 									</h3>
 									<div class="teaser-summary">
 										<? dummy("text@short-teaser") ?>
+										<? if (dumb_luck("20%")): ?>
+											<span class="teaser--comments">
+												<i class="bicon-comment-inv-alt2"></i> <? dummy("text@number") ?>
+											</span>
+										<? endif ?>
 									</div>
 								</div>
 							</a>
@@ -224,6 +281,11 @@ $summary = $f_contents[rand(0, count($f_contents) - 1)];
 									</h3>
 									<div class="teaser-summary">
 										<? dummy("text@short-teaser") ?>
+										<? if (dumb_luck("20%")): ?>
+											<span class="teaser--comments">
+												<i class="bicon-comment-inv-alt2"></i> <? dummy("text@number") ?>
+											</span>
+										<? endif ?>
 									</div>
 								</div>
 							</a>
@@ -235,6 +297,11 @@ $summary = $f_contents[rand(0, count($f_contents) - 1)];
 								<div class="related-body">
 									<h3 class="header-related">
 										<? dummy("text@headline-b3") ?>
+										<? if (dumb_luck("20%")): ?>
+											<span class="teaser--comments">
+												<i class="bicon-comment-inv-alt2"></i> <? dummy("text@number") ?>
+											</span>
+										<? endif ?>
 									</h3>
 								</div>
 							</a>
@@ -274,4 +341,6 @@ $teaserLabel = false;
 $teaserAd = false;
 $teaserPack = false;
 $teaserLink = false;
+$showTrumpet = false;
+$showComments = false;
 ?>

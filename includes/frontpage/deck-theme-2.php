@@ -48,8 +48,8 @@
 							$imgSrc = '/landscape';
 							$showSummary = true;
 							$showRelated = false;
-							$showDate = true;
-							$showCategory = true;
+							$showDate = false;
+							$showCategory = false;
 							$teaserLabel = false;
 
 							include('includes/teaser-2.php') ?>
@@ -64,9 +64,11 @@
 							$imgSrc = '/landscape';
 							$showSummary = true;
 							$showRelated = false;
-							$showDate = true;
-							$showCategory = true;
+							$showDate = false;
+							$showTrumpet = 'Koncert';
+							$showCategory = false;
 							$teaserLabel = false;
+							$showRating = true;
 
 							include('includes/teaser-2.php') ?>
 						</div>
@@ -80,8 +82,8 @@
 							$imgSrc = '/landscape';
 							$showSummary = true;
 							$showRelated = false;
-							$showDate = true;
-							$showCategory = true;
+							$showDate = false;
+							$showCategory = false;
 							$teaserLabel = false;
 
 							include('includes/teaser-2.php') ?>
