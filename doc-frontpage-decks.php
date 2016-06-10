@@ -71,7 +71,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 					<li><a href="?deck=-debate-2">Debate</a></li>
 					<li><a href="?deck=-debate-3">Puls</a></li>
 					<li><a href="?deck=-image-2">Image of the day</a></li>
-					<li><a href="?deck=-consumersales">Consumersales</a></li>
+					<li><a href="?deck=-consumersales-2">Consumersales</a></li>
 					<li>Theme: <a href="?deck=-theme-2&theme=roskilde">Roskilde</a>, <a href="?deck=-theme-2&theme=cannes">Cannes</a>, <a href="?deck=-theme-2&theme=berlinalen">Berlinalen</a></li>
 					<li><a href="?deck=-towers-2">Towers</a></li>
 					<li><a href="?deck=-debate-4">Houmor</a></li>

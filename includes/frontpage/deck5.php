@@ -90,17 +90,16 @@ if(isset($_GET["topLG"])) {
 					<?php
 					$imgW='920'; 
 					$showImg = '1';
-					$class = 'teaser--theme-business teaser--img-wide item--teaser teaser--big ';
+					$class = ' teaser--img-wide item--teaser teaser--big ';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
 					$showComments = true;
 					$showRelated = false;
 					$showDate = false;
-					$showCategory = true;
+					$showCategory = false;
 					$showPaywall = false;
 					$showComments = true;
-					$category = 'Business.dk';
 					//$teaserLabel = 'breaking';
 					$teaserPack = '1';
 					$showTrumpet = 'Momssvindel';
@@ -127,14 +126,15 @@ if(isset($_GET["topLG"])) {
 					<?php
 					$imgW='920'; 
 					$showImg = '1';
-					$class = ' teaser--img-wide item--teaser teaser--big item--teaser__bt';
+					$class = 'teaser--theme-business teaser--img-wide item--teaser teaser--big item--teaser__bt';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
 					$showRelated = false;
 					$showDate = false;
-					$showCategory = false;
+					$showCategory = true;
 					$teaserLabel = false;
+					$category = 'Business.dk';
 					$teaserPack = '3';
 					$showTrumpet = 'Interview';
 

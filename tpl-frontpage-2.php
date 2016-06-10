@@ -116,7 +116,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 
 	<?php include('includes/frontpage/deck6.php'); ?>
 
-	<?php include('includes/frontpage/deck-consumersales.php'); ?>
+	<?php include('includes/frontpage/deck-consumersales-2.php'); ?>
 
 	<?php $theme = 'roskilde'; include('includes/frontpage/deck-theme-2.php'); ?>
 

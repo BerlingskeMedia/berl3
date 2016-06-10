@@ -6,6 +6,16 @@ $f_contents = file("includes/teaser-b.txt");
 $summary = $f_contents[rand(0, count($f_contents) - 1)];
 // $summary = substr($summary, 0, 60);
 
+if(!$headerSrc) {
+	$headerSrc = 'headline-b3';
+}
+
+if(!$summarySrc) {
+	$summarySrc = 'short-teaser';
+}
+
+
+
 ?>
 
 <div class=" <?= $class; ?>">
@@ -59,7 +69,7 @@ $summary = $f_contents[rand(0, count($f_contents) - 1)];
 					</div>
 				<?php endif; ?>
 
-
+				
 				<h2 class="header">
 					<?php if($teaserLabel): ?>
 						
@@ -71,9 +81,10 @@ $summary = $f_contents[rand(0, count($f_contents) - 1)];
 
 					<?php endif; ?>
 
+							
+					<? dummy("text@".$headerSrc."") ?>
 					
 					
-					<? dummy("text@headline-b3") ?>
 					<?php if($showKey): ?>
 						<? if (dumb_luck("25%")): ?>
 							 <i class="bicon-key"></i>
@@ -116,7 +127,8 @@ $summary = $f_contents[rand(0, count($f_contents) - 1)];
 							<i class="icon-paywall"></i>
 						<?php endif; ?>
 
-						<?php echo $summary ?>
+						<? dummy("text@".$summarySrc."") ?>
+						
 						<?php if($showComments  ): ?>
 							<span class="teaser--comments">
 								<i class="bicon-comment-inv-alt2"></i> <? dummy("text@number") ?>
@@ -205,14 +217,15 @@ $summary = $f_contents[rand(0, count($f_contents) - 1)];
 								<div class="related-body">
 									<h3 class="header-related">
 										<? dummy("text@headline-b3") ?>
+										
+									</h3>
+									<div class="teaser-summary">
+										<?php echo $summary ?>
 										<? if (dumb_luck("20%")): ?>
 											<span class="teaser--comments">
 												<i class="bicon-comment-inv-alt2"></i> <? dummy("text@number") ?>
 											</span>
 										<? endif ?>
-									</h3>
-									<div class="teaser-summary">
-										<?php echo $summary ?>
 									</div>
 								</div>
 							</a>
