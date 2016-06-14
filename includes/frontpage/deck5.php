@@ -28,10 +28,10 @@ if(isset($_GET["topLG"])) {
 					$showRelatedimg = true;
 					$showDate = false;
 					$showCategory = false;
-					$teaserLabel = 'yellow';
-					$labelText = 'Terror i Bruxelles';
+					$teaserLabel = 'red';
+					$labelText = '<i class="bicon-record"></i> Live';
 					$teaserPack = false;
-					$teaserPack = '1';
+					// $teaserPack = '3';
 
 					include('includes/teaser-2.php') ?>			
 				</div>

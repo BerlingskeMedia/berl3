@@ -37,18 +37,11 @@ if(!$summarySrc) {
 
 				<?php if ($showImg  && !$smallImg): ?>
 					<figure class="teaser-img">
-						<?php if($teaserLabel): ?>
-							<?php if($teaserLabel === 'yellow'): ?>
-								<span class="teaser--label-yellow">
-									<span><?php if(!$labelText): echo 'Breaking'; else: echo $labelText; endif; ?></span>
-								</span>
-							<?php endif; ?>
 
-							<?php if($teaserLabel === 'red'): ?>
-								<span class="teaser--label-red">
-									<span><?php if(!$labelText): echo 'Live'; else: echo $labelText; endif; ?></span>
-								</span>
-							<?php endif; ?>
+
+						
+						<?php if($teaserLabel && !preg_match('/teaser--xlarge/',$class)): ?>
+							<?php include('includes/frontpage/teasers/labels.php'); ?>
 						<?php endif; ?>
 						<img src="<? dummy("image". $imgSrc ."@". $imgW ."x,". $imgRatio ."") ?>" width="" height="" alt="[ARTICLE HEADER]" class="img" />
 					</figure>
@@ -69,7 +62,7 @@ if(!$summarySrc) {
 						
 						<?php // if($showCategory): ?>
 							<!-- <span class="teaser--category">
-								<? dummy("text@item") ?>
+								<? //  dummy("text@item") ?>
 							</span> -->
 						<?php // endif; ?>
 
@@ -78,6 +71,7 @@ if(!$summarySrc) {
 								<?php echo $showTrumpet; ?>
 							</span>
 						<?php endif; ?>
+
 						<?php if($showDate): ?>
 						<span class="teaser--date">
 							<i class="bicon-clock-alt"></i>
@@ -87,8 +81,12 @@ if(!$summarySrc) {
 					</div>
 				<?php endif; ?>
 
-				
+				<?php if($teaserLabel && preg_match('/teaser--xlarge/',$class)): ?>
+					<?php include('includes/frontpage/teasers/labels.php'); ?>
+				<?php endif; ?>
+
 				<h2 class="header">
+					
 					<? dummy("text@".$headerSrc."") ?>
 					
 			
@@ -128,13 +126,9 @@ if(!$summarySrc) {
 						</span>	
 						<?php endif; ?>
 
-						<? if (dumb_luck("100%")): ?>
-							 <span class="subscriber-notice"><i class="subscriber-icon"></i> <em>Abonnement</em></span>
-						<? endif ?> 
+						
 
-						<?php if($showPaywall): ?>
-							<i class="icon-paywall"></i>
-						<?php endif; ?>
+						
 
 						<? dummy("text@".$summarySrc."") ?>
 						
@@ -143,6 +137,10 @@ if(!$summarySrc) {
 								<i class="bicon-comment-inv-alt2"></i> <? dummy("text@number") ?>
 							</span>
 						<?php endif; ?>
+
+						<? if (dumb_luck("100%")): ?>
+							 <span class="subscriber-notice"><i class="subscriber-icon"></i> <em>Abonnement</em></span>
+						<? endif ?> 
 					</div>
 				<?php endif; ?>
 
@@ -179,9 +177,7 @@ if(!$summarySrc) {
 									</h3>
 									<div class="teaser-summary">
 									
-									<? if (dumb_luck("100%")): ?>
-										 <span class="subscriber-notice"><i class="subscriber-icon"></i> <em>Abonnement</em></span>
-									<? endif ?> 
+									
 
 										<? dummy("text@short-teaser") ?>
 										<? if (dumb_luck("50%")): ?>
@@ -189,28 +185,33 @@ if(!$summarySrc) {
 											<i class="bicon-comment-inv-alt2"></i> <? dummy("text@number") ?>
 										</span>
 										<? endif; ?>
+
+										<? if (dumb_luck("100%")): ?>
+											 <span class="subscriber-notice"><i class="subscriber-icon"></i> <em>Abonnement</em></span>
+										<? endif ?> 
+
 									</div>
 								</div>
 							</a>
 						</li>
-						</ul>
-
-						<ul class="teaser--pack--list">
+						
 
 						<? while (dumb_luck("2")): ?>
 						<li class="item--teaser related--default">
 							<a href="tpl-article.php" title="[ARTICLE HEADER]">
 								<div class="related-body">
 									<h3 class="header-related">
-										<? if (dumb_luck("100%")): ?>
-											<span class="subscriber-notice"><i class="subscriber-icon"></i> <em>Abonnement</em></span>
-										<? endif ?> 
+										
 										<? dummy("text@headline-b3") ?>
 										<? if (dumb_luck("20%")): ?>
 											<span class="teaser--comments">
 												<i class="bicon-comment-inv-alt2"></i> <? dummy("text@number") ?>
 											</span>
 										<? endif ?>
+
+										<? if (dumb_luck("100%")): ?>
+											<span class="subscriber-notice"><i class="subscriber-icon"></i> <em>Abonnement</em></span>
+										<? endif ?> 
 									</h3>
 								</div>
 							</a>
@@ -239,9 +240,6 @@ if(!$summarySrc) {
 										
 									</h3>
 									<div class="teaser-summary">
-										<? if (dumb_luck("100%")): ?>
-											 <span class="subscriber-notice"><i class="subscriber-icon"></i> <em>Abonnement</em></span>
-										<? endif ?> 
 
 										<?php echo $summary ?>
 										<? if (dumb_luck("20%")): ?>
@@ -249,27 +247,32 @@ if(!$summarySrc) {
 												<i class="bicon-comment-inv-alt2"></i> <? dummy("text@number") ?>
 											</span>
 										<? endif ?>
+
+										<? if (dumb_luck("100%")): ?>
+											 <span class="subscriber-notice"><i class="subscriber-icon"></i> <em>Abonnement</em></span>
+										<? endif ?> 
 									</div>
 								</div>
 							</a>
 						</li>
-						</ul>
-						<ul class="teaser--pack--list">
+						
 
 						<? while (dumb_luck("3")): ?>
 						<li class="item--teaser related--default">
 							<a href="tpl-article.php" title="[ARTICLE HEADER]">
 								<div class="related-body">
 									<h3 class="header-related">
-										<? if (dumb_luck("100%")): ?>
-											 <span class="subscriber-notice"><i class="subscriber-icon"></i> <em>Abonnement</em></span>
-										<? endif ?> 
+										
 										<? dummy("text@headline-b3") ?>
 										<? if (dumb_luck("20%")): ?>
 											<span class="teaser--comments">
 												<i class="bicon-comment-inv-alt2"></i> <? dummy("text@number") ?>
 											</span>
 										<? endif ?>
+
+										<? if (dumb_luck("100%")): ?>
+											 <span class="subscriber-notice"><i class="subscriber-icon"></i> <em>Abonnement</em></span>
+										<? endif ?> 
 									</h3>
 								</div>
 							</a>
@@ -297,23 +300,21 @@ if(!$summarySrc) {
 									</h3>
 									<div class="teaser-summary">
 
-										<? if (dumb_luck("100%")): ?>
-											 <span class="subscriber-notice"><i class="subscriber-icon"></i> <em>Abonnement</em></span>
-										<? endif ?> 
-
 										<? dummy("text@short-teaser") ?>
 										<? if (dumb_luck("20%")): ?>
 											<span class="teaser--comments">
 												<i class="bicon-comment-inv-alt2"></i> <? dummy("text@number") ?>
 											</span>
 										<? endif ?>
+
+										<? if (dumb_luck("100%")): ?>
+											 <span class="subscriber-notice"><i class="subscriber-icon"></i> <em>Abonnement</em></span>
+										<? endif ?> 
 									</div>
 								</div>
 							</a>
 						</li>
-					</ul>
-
-					<ul class="teaser--pack--list">
+					
 						<li class="item--teaser related--image teaser--img-right">
 							<a href="tpl-article.php" title="[ARTICLE HEADER]">
 								<figure class="teaser-img">
@@ -324,9 +325,6 @@ if(!$summarySrc) {
 										<? dummy("text@headline-b3") ?>
 									</h3>
 									<div class="teaser-summary">
-										<? if (dumb_luck("100%")): ?>
-											 <span class="subscriber-notice"><i class="subscriber-icon"></i> <em>Abonnement</em></span>
-										<? endif ?> 
 
 										<? dummy("text@short-teaser") ?>
 										<? if (dumb_luck("20%")): ?>
@@ -334,6 +332,10 @@ if(!$summarySrc) {
 												<i class="bicon-comment-inv-alt2"></i> <? dummy("text@number") ?>
 											</span>
 										<? endif ?>
+
+										<? if (dumb_luck("100%")): ?>
+											 <span class="subscriber-notice"><i class="subscriber-icon"></i> <em>Abonnement</em></span>
+										<? endif ?> 
 									</div>
 								</div>
 							</a>
@@ -344,15 +346,16 @@ if(!$summarySrc) {
 							<a href="tpl-article.php" title="[ARTICLE HEADER]">
 								<div class="related-body">
 									<h3 class="header-related">
-										<? if (dumb_luck("100%")): ?>
-											 <span class="subscriber-notice"><i class="subscriber-icon"></i> <em>Abonnement</em></span>
-										<? endif ?> 
 										<? dummy("text@headline-b3") ?>
 										<? if (dumb_luck("20%")): ?>
 											<span class="teaser--comments">
 												<i class="bicon-comment-inv-alt2"></i> <? dummy("text@number") ?>
 											</span>
 										<? endif ?>
+
+										<? if (dumb_luck("100%")): ?>
+											 <span class="subscriber-notice"><i class="subscriber-icon"></i> <em>Abonnement</em></span>
+										<? endif ?> 
 									</h3>
 								</div>
 							</a>
