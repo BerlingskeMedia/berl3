@@ -45,7 +45,8 @@
 	<div class="col-lg-12 col-md-6">
 		<div class="stickem-container-ex2 mb hidden-md-down" style="height: 1000px;">	
 			<div class="sticky-ex2">	
-				<div class="demo-banner" style="height: 600px; width: 300px;">Square_1</div>
+				<div class="demo-banner mb" style="height: 600px; width: 300px;">Square_1</div>
+				<div class="demo-banner" style="height: 100px; width: 300px;">Square_Marketing</div>
 			</div>
 		</div>
 	</div>
@@ -72,7 +73,8 @@
 		<div class="stickem-container-ex2 mb-1 hidden-md-down" style="height: 1000px;">	
 			<div class="sticky-ex2">	
 				<div class="demo-banner mb" style="height: 250px; width: 300px;">Square_2</div>
-				<div class="demo-banner" style="height: 250px; width: 300px;">Advertorial_1</div>
+				<div class="demo-banner mb" style="height: 250px; width: 300px;">Advertorial_1</div>
+				<div class="demo-banner" style="height: 250px; width: 300px;">Square_Marketing_2</div>
 			</div>
 		</div>
 

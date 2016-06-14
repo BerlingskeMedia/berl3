@@ -1,0 +1,44 @@
+.teaser-img {
+	[class*="teaser--label"] {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		display: inline-block;
+		padding: .313rem 1rem;
+		z-index: 2;
+		opacity: 1!important;
+		@extend .font-s2;
+		font-weight: 500;
+		text-transform: uppercase;
+		font-size: 1.25rem;
+	}
+}
+.teaser--label-yellow {
+	background-color: $col-breaking;
+	color: #000;
+}
+.teaser--label-red {
+	background-color: $col-live;
+	color: #fff;
+}
+
+.teaser--xlarge {
+	.teaser-img {
+		[class*="teaser--label"] {
+			position: absolute;
+			bottom: auto;
+			top: .625rem;
+			left: .625rem;
+
+			span {
+				float: none;
+			}
+		}	
+	}
+	
+
+	.teaser--label-breaking {
+		font-size: 1.5rem;
+		text-transform: uppercase;
+	}	
+}

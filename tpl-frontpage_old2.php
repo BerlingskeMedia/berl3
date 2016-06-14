@@ -72,7 +72,6 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 
 
 
-
 <?php if($deck): ?>
 	<?php include('includes/frontpage/deck'.$deck.'.php'); ?>
 
@@ -92,55 +91,29 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 	
 
 
-	<?php include('includes/frontpage/deck-ad.php'); ?>
-	
-	
-	<?php include('includes/frontpage/deck-longreads-3.php'); ?>
-	<?php include('includes/frontpage/deck-ad.php'); ?>
+	<?php include('includes/frontpage/deck-debate.php'); ?>
+
 	
 
-	<?php 
-	$showBflow = false; 
-	include('includes/frontpage/deck6.php'); ?>
-	
-	<?php include('includes/frontpage/deck-debate-2.php'); ?>
-	<?php include('includes/frontpage/deck6.php'); ?>
-	
-	<?php include('includes/frontpage/deck-image-2.php'); ?>
-	
-	<?php $showBflow = true; ?>
-	<?php include('includes/frontpage/deck6.php'); ?>
-
-
-	<?php include('includes/frontpage/deck-debate-3.php'); ?> <!-- Den politiske Puls -->
-
-	<?php include('includes/frontpage/deck6.php'); ?>
-
-	<?php include('includes/frontpage/deck-consumersales-2.php'); ?>
-
-	<?php $theme = 'roskilde'; include('includes/frontpage/deck-theme-2.php'); ?>
-
-	<?php include('includes/frontpage/deck6.php'); ?>
-
-	<?php include('includes/frontpage/deck-towers-2.php'); ?>
-
-	<?php include('includes/frontpage/deck-debate-4.php'); ?> <!-- Groft sagt -->
-
-	<?php // include('includes/frontpage/deck-cartoons.php'); ?>
-
-	<?php //  include('includes/frontpage/deck-longreads.php'); ?>
-	
 	
 
-	<?php // include('includes/frontpage/deck-image.php'); ?>
+	<?php //  include('includes/frontpage/deck-gallery.php'); ?>
+	
 
-	<?php // include('includes/frontpage/deck-more-news.php'); ?>
+	<?php include('includes/frontpage/deck-longreads.php'); ?>
+	
+
+	<?php include('includes/frontpage/deck-theme.php'); ?>
+
+	<?php include('includes/frontpage/deck-image.php'); ?>
+
+	<?php include('includes/frontpage/deck-more-news.php'); ?>
 
 	<?php // include('includes/frontpage/deck-more-news-2.php'); ?>
 	
-	<?php // include('includes/frontpage/deck-towers.php'); ?>
+	<?php include('includes/frontpage/deck-towers.php'); ?>
 	
-	<?php // include('includes/frontpage/deck-consumersales.php'); ?>
+	<?php include('includes/frontpage/deck-consumersales.php'); ?>
 	
 
 

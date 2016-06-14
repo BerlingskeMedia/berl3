@@ -24,7 +24,7 @@ if(!$summarySrc) {
 		<!-- <article class="teaser-item"> -->
 
 		
-			<a href="<?php echo $teaserLink; ?>" class="teaser--link">
+			
 			
 
 			<?php if($teaserAd): ?>
@@ -32,16 +32,34 @@ if(!$summarySrc) {
 					Annonce
 				</div>
 			<?php endif; ?>
-			<?php if ($showImg  && !$smallImg): ?>
-			<figure class="teaser-img">
-				<img src="<? dummy("image". $imgSrc ."@". $imgW ."x,". $imgRatio ."") ?>" width="" height="" alt="[ARTICLE HEADER]" class="img" />
-			</figure>
-			<?php endif; ?>
-		
-			<div class="teaser-body">
-				
-				
 
+			<a href="<?php echo $teaserLink; ?>" class="teaser--link">	
+
+				<?php if ($showImg  && !$smallImg): ?>
+					<figure class="teaser-img">
+						<?php if($teaserLabel): ?>
+							<?php if($teaserLabel === 'yellow'): ?>
+								<span class="teaser--label-yellow">
+									<span><?php if(!$labelText): echo 'Breaking'; else: echo $labelText; endif; ?></span>
+								</span>
+							<?php endif; ?>
+
+							<?php if($teaserLabel === 'red'): ?>
+								<span class="teaser--label-red">
+									<span><?php if(!$labelText): echo 'Live'; else: echo $labelText; endif; ?></span>
+								</span>
+							<?php endif; ?>
+						<?php endif; ?>
+						<img src="<? dummy("image". $imgSrc ."@". $imgW ."x,". $imgRatio ."") ?>" width="" height="" alt="[ARTICLE HEADER]" class="img" />
+					</figure>
+				<?php endif; ?>
+
+			</a>
+
+			<div class="teaser--content">
+
+			<a href="<?php echo $teaserLink; ?>" class="teaser--link">	
+				<div class="teaser-body">
 				<?php if($showDate || $showCategory || $teaserAd || $showTrumpet)  : ?>
 					<div class="teaser--footer">
 						
@@ -71,25 +89,9 @@ if(!$summarySrc) {
 
 				
 				<h2 class="header">
-					<?php if($teaserLabel): ?>
-						
-						<?php if($teaserLabel === 'breaking'): ?>
-							<span class="teaser--label-breaking">
-								<span><?php if(!$labelText): echo 'Breaking'; else: echo $labelText; endif; ?></span>
-							</span>
-						<?php endif; ?>
-
-					<?php endif; ?>
-
-							
 					<? dummy("text@".$headerSrc."") ?>
 					
-					
-					<?php if($showKey): ?>
-						<? if (dumb_luck("25%")): ?>
-							 <i class="bicon-key"></i>
-						<? endif ?> 
-					<?php endif; ?>
+			
 					<?php if(!$showSummary && $showComments &! $showAuthor): ?>
 						
 							<span class="teaser--comments">
@@ -117,11 +119,18 @@ if(!$summarySrc) {
 
 				<?php if ($showSummary): ?>
 					<div class="teaser-summary">
+						
+						
+
 						<?php if($showCategory): ?>
 						<span class="teaser--category">
-							<?php if($category){echo $category;} else {  dummy("text@b-cat"); } ?>
+							<?php if($category){echo $category;} else {  dummy("text@b-cat"); } ?> <span class="pipe"> | </span> 
 						</span>	
 						<?php endif; ?>
+
+						<? if (dumb_luck("100%")): ?>
+							 <span class="subscriber-notice"><i class="subscriber-icon"></i> <em>Abonnement</em></span>
+						<? endif ?> 
 
 						<?php if($showPaywall): ?>
 							<i class="icon-paywall"></i>
@@ -155,20 +164,25 @@ if(!$summarySrc) {
 				
 
 			<?php if($teaserPack === '1') :?>
-				<div class="teaser--pack__pack1 ">
+				<div class="teaser--pack__pack1 clearfix">
 					<ul class="teaser--pack--list">
 						
 						
-						<li class="item--teaser">
+						<li class="item--teaser related--image teaser--img-left">
 							<a href="tpl-article.php" title="[ARTICLE HEADER]">
-								<figure>
-									<img src="<? dummy("image/landscape@100x,3:2") ?>" width="" height="" alt="[ARTICLE HEADER]" />
+								<figure class="teaser-img">
+									<img src="<? dummy("image/landscape@140x,3:2") ?>" width="" height="" alt="[ARTICLE HEADER]" />
 								</figure>
 								<div class="related-body">
 									<h3 class="header-related">
 										<? dummy("text@headline-b3") ?>
 									</h3>
 									<div class="teaser-summary">
+									
+									<? if (dumb_luck("100%")): ?>
+										 <span class="subscriber-notice"><i class="subscriber-icon"></i> <em>Abonnement</em></span>
+									<? endif ?> 
+
 										<? dummy("text@short-teaser") ?>
 										<? if (dumb_luck("50%")): ?>
 										<span class="teaser--comments">
@@ -179,12 +193,18 @@ if(!$summarySrc) {
 								</div>
 							</a>
 						</li>
+						</ul>
+
+						<ul class="teaser--pack--list">
 
 						<? while (dumb_luck("2")): ?>
-						<li class="item--teaser">
+						<li class="item--teaser related--default">
 							<a href="tpl-article.php" title="[ARTICLE HEADER]">
 								<div class="related-body">
 									<h3 class="header-related">
+										<? if (dumb_luck("100%")): ?>
+											<span class="subscriber-notice"><i class="subscriber-icon"></i> <em>Abonnement</em></span>
+										<? endif ?> 
 										<? dummy("text@headline-b3") ?>
 										<? if (dumb_luck("20%")): ?>
 											<span class="teaser--comments">
@@ -197,21 +217,20 @@ if(!$summarySrc) {
 						</li>
 						<? endwhile ?>
 						
-						
-					</ul>
+						</ul>
 				</div>
 
 			<?php endif; ?>
 
 			<?php if($teaserPack === '2') :?>
 			
-				<div class="teaser--pack__pack2 ">
+				<div class="teaser--pack__pack2 clearfix">
 					<ul class="teaser--pack--list">
 						
 						
-						<li class="item--teaser">
+						<li class="item--teaser related--image teaser--img-right">
 							<a href="tpl-article.php" title="[ARTICLE HEADER]">
-								<figure>
+								<figure class="teaser-img">
 									<img src="<? dummy("image/landscape@140x,3:2") ?>" width="" height="" alt="[ARTICLE HEADER]" />
 								</figure>
 								<div class="related-body">
@@ -220,6 +239,10 @@ if(!$summarySrc) {
 										
 									</h3>
 									<div class="teaser-summary">
+										<? if (dumb_luck("100%")): ?>
+											 <span class="subscriber-notice"><i class="subscriber-icon"></i> <em>Abonnement</em></span>
+										<? endif ?> 
+
 										<?php echo $summary ?>
 										<? if (dumb_luck("20%")): ?>
 											<span class="teaser--comments">
@@ -230,12 +253,17 @@ if(!$summarySrc) {
 								</div>
 							</a>
 						</li>
+						</ul>
+						<ul class="teaser--pack--list">
 
 						<? while (dumb_luck("3")): ?>
-						<li class="item--teaser">
+						<li class="item--teaser related--default">
 							<a href="tpl-article.php" title="[ARTICLE HEADER]">
 								<div class="related-body">
 									<h3 class="header-related">
+										<? if (dumb_luck("100%")): ?>
+											 <span class="subscriber-notice"><i class="subscriber-icon"></i> <em>Abonnement</em></span>
+										<? endif ?> 
 										<? dummy("text@headline-b3") ?>
 										<? if (dumb_luck("20%")): ?>
 											<span class="teaser--comments">
@@ -247,30 +275,32 @@ if(!$summarySrc) {
 							</a>
 						</li>
 						<? endwhile ?>
-						
-						
-					</ul>
+						</ul>
 				</div>
 			
 			<?php endif; ?>
 
 			<?php if($teaserPack === '3') :?>
-				<div class="teaser--pack__pack3 ">
+				<div class="teaser--pack__pack3 clearfix">
 					<ul class="teaser--pack--list">
 						
-						
-
-						<li class="item--teaser">
+						<li class="item--teaser related--image teaser--img-left">
 							<a href="tpl-article.php" title="[ARTICLE HEADER]">
-								<figure>
+								<figure class="teaser-img">
 									<img src="<? dummy("image/landscape@140x,3:2") ?>" width="" height="" alt="[ARTICLE HEADER]" />
 								</figure>
 								<div class="related-body">
 									<h3 class="header-related">
+
 										<? dummy("text@headline-b3") ?>
 
 									</h3>
 									<div class="teaser-summary">
+
+										<? if (dumb_luck("100%")): ?>
+											 <span class="subscriber-notice"><i class="subscriber-icon"></i> <em>Abonnement</em></span>
+										<? endif ?> 
+
 										<? dummy("text@short-teaser") ?>
 										<? if (dumb_luck("20%")): ?>
 											<span class="teaser--comments">
@@ -281,11 +311,12 @@ if(!$summarySrc) {
 								</div>
 							</a>
 						</li>
+					</ul>
 
-
-						<li class="item--teaser">
+					<ul class="teaser--pack--list">
+						<li class="item--teaser related--image teaser--img-right">
 							<a href="tpl-article.php" title="[ARTICLE HEADER]">
-								<figure>
+								<figure class="teaser-img">
 									<img src="<? dummy("image/landscape@100x,3:2") ?>" width="" height="" alt="[ARTICLE HEADER]" />
 								</figure>
 								<div class="related-body">
@@ -293,6 +324,10 @@ if(!$summarySrc) {
 										<? dummy("text@headline-b3") ?>
 									</h3>
 									<div class="teaser-summary">
+										<? if (dumb_luck("100%")): ?>
+											 <span class="subscriber-notice"><i class="subscriber-icon"></i> <em>Abonnement</em></span>
+										<? endif ?> 
+
 										<? dummy("text@short-teaser") ?>
 										<? if (dumb_luck("20%")): ?>
 											<span class="teaser--comments">
@@ -305,10 +340,13 @@ if(!$summarySrc) {
 						</li>
 
 						
-						<li class="item--teaser">
+						<li class="item--teaser related--default">
 							<a href="tpl-article.php" title="[ARTICLE HEADER]">
 								<div class="related-body">
 									<h3 class="header-related">
+										<? if (dumb_luck("100%")): ?>
+											 <span class="subscriber-notice"><i class="subscriber-icon"></i> <em>Abonnement</em></span>
+										<? endif ?> 
 										<? dummy("text@headline-b3") ?>
 										<? if (dumb_luck("20%")): ?>
 											<span class="teaser--comments">
@@ -320,17 +358,15 @@ if(!$summarySrc) {
 							</a>
 						</li>
 						
-					
-						
-						
 					</ul>
 				</div>
 			<?php endif; ?>
 
 		<!-- </article> -->
 		
-	</div>
+		</div>
 
+	</div>
 
 </div>
 

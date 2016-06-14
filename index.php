@@ -117,8 +117,8 @@ if(isset($_GET["business"])) {
 		<div class="col-md-8 col-md-offset-2">
 			<div class="row">
 					
-				<div class="col-md-12 text-center border-bottom mb pb" style="padding-top: 4rem" >
-					<a href="/" class="site-logo" >Berlingske</a>
+				<div class="col-md-12  border-bottom mb pb" style="padding-top: 4rem" >
+					<a href="/" class="site-logo" style="font-size: 3rem;" >Berlingske</a>
 				</div>
 
 				<div class="col-md-9 col-md-offset-3">
@@ -144,8 +144,9 @@ if(isset($_GET["business"])) {
 				</div>
 				<div class="col-md-9">
 					<ul>
-						<li class="green"><a href="tpl-frontpage.php">Frontpage</a> - <a href="tpl-frontpage.php?loggedIn">(Logged in)</a></li>
-						<li class="green"><a href="tpl-article.php">Not-frontpage</a> - <a href="tpl-article.php?loggedIn">(Logged in)</a></li>
+						<li class="green"><a href="tpl-frontpage.php">Static pages</a> - <a href="tpl-frontpage.php?loggedIn">(Logged in)</a></li>
+						<li class="green"><a href="tpl-article.php">Dynamic pages except longreads</a> - <a href="tpl-article.php?loggedIn">(Logged in)</a></li>
+						<li class="green"><a href="tpl-article-longread.php">Longreads</a> - <a href="tpl-article-longread.php?loggedIn">(Logged in)</a></li>
 						<li class="red"><a href="#">Off-canvas menu</a></a></li>
 					</ul>
 				</div>
@@ -180,7 +181,7 @@ if(isset($_GET["business"])) {
 				<div class="col-md-9">
 					<ul>
 						<li class="orange"><a href="tpl-frontpage.php?deck=4">Default</a></li>
-						<li class="orange"><a href="tpl-frontpage.php?deck=4&amp;topSM">Top SM</a> </li>
+						<!-- <li class="orange"><a href="tpl-frontpage.php?deck=4&amp;topSM">Top SM</a> </li> -->
 						<li class="orange"><a href="tpl-frontpage.php?deck=4&amp;topMD">Top MD</a> </li>
 						<li class="orange"><a href="tpl-frontpage.php?deck=4&amp;topLG">Top LG</a></li>
 						

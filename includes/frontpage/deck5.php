@@ -28,9 +28,10 @@ if(isset($_GET["topLG"])) {
 					$showRelatedimg = true;
 					$showDate = false;
 					$showCategory = false;
-					$teaserLabel = 'breaking';
+					$teaserLabel = 'yellow';
 					$labelText = 'Terror i Bruxelles';
 					$teaserPack = false;
+					$teaserPack = '1';
 
 					include('includes/teaser-2.php') ?>			
 				</div>
@@ -41,24 +42,25 @@ if(isset($_GET["topLG"])) {
 
 	<div class="col-wrapper flex-row">
 		<?php if($topMD): ?>
-			<div class="row">
-				<div class="col-xs-12 col-xl-12">
+			
+				<div class="col--full-width">
 					<?php
-					$imgW='920'; 
+					$imgW='910'; 
 					$showImg = '1';
-					$class = 'mb border-bottom teaser--medium';
+					$class = 'mb item--teaser__bb teaser--img-wide teaser--medium  ';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = '1';
 					$showRelated = '1';
 					$showDate = false;
 					$showCategory = false;
-					$teaserLabel = 'breaking';
+					$teaserLabel = 'yellow';
+					$labelText = 'Terror i Bruxelles';
 					$teaserLink = 'tpl-article.php?event=breaking';
+					$teaserPack = '1';
 					include('includes/teaser-2.php') ?>			
 				</div>
-			</div>
-		
+			
 		<?php endif; ?>
 
 	
@@ -100,6 +102,8 @@ if(isset($_GET["topLG"])) {
 					$showCategory = false;
 					$showPaywall = false;
 					$showComments = true;
+					$teaserLabel = 'yellow';
+					$labelText = 'Terror i Bruxelles';
 					//$teaserLabel = 'breaking';
 					$teaserPack = '1';
 					$showTrumpet = 'Momssvindel';
