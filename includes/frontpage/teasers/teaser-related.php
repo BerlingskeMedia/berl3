@@ -23,16 +23,17 @@
 					<?php if(!$showRelatedSummary): ?>
 						
 						<?php if($showRelatedComments): ?>
-						<? if (dumb_luck("20%")): ?>
+						
 							<span class="teaser--comments">
 								<i class="bicon-comment-inv-alt2"></i> <? dummy("text@number") ?>
 							</span>
-						<? endif ?>
+						
 						<?php endif; ?>
+
 						<?php if ($showRelatedPaywall): ?>
-							<? if (dumb_luck("100%")): ?>
-								 <span class="subscriber-notice"><i class="subscriber-icon"></i> <?php if($payIcon): ?><img src="<?php echo $payIcon; ?>" alt="" class="subscriber-icon-alt"><?php endif; ?> <em>Abonnement</em></span>
-							<? endif ?> 
+						
+								 <span class="subscriber-notice"><i class="subscriber-icon"></i> <em>Abonnement</em></span>
+						
 						<?php endif; ?>
 
 					<?php endif; ?>
@@ -44,16 +45,14 @@
 						<?php echo $summary ?>
 						
 						<?php if($showRelatedComments): ?>
-						<? if (dumb_luck("20%")): ?>
+						
 							<span class="teaser--comments">
 								<i class="bicon-comment-inv-alt2"></i> <? dummy("text@number") ?>
 							</span>
-						<? endif ?>
+						
 						<?php endif; ?>
 						<?php if ($showRelatedPaywall): ?>
-							<? if (dumb_luck("100%")): ?>
-								 <span class="subscriber-notice"><i class="subscriber-icon"></i> <?php if($payIcon): ?><img src="<?php echo $payIcon; ?>" alt="" class="subscriber-icon-alt"><?php endif; ?> <em>Abonnement</em></span>
-							<? endif ?> 
+							<span class="subscriber-notice"><i class="subscriber-icon"></i> <em>Abonnement</em></span>
 						<?php endif; ?>
 					</div>
 				<?php endif; ?>

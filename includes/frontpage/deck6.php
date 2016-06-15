@@ -43,6 +43,7 @@ if(isset($_GET["topLG"])) {
 					$showCategory = false;
 					$teaserLabel = false;
 					$showComments = true;
+					$showPaywall = true;
 
 					include('includes/teaser-2.php') ?>
 
@@ -138,6 +139,7 @@ if(isset($_GET["topLG"])) {
 					$teaserLabel = false;
 					$teaserPack = false;
 					$showComments = true;
+					$showPaywall = true;
 
 					include('includes/teaser-2.php') ?>
 					

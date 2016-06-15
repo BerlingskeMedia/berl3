@@ -14,7 +14,7 @@
 							<div class="well-category">
 							Indblik
 							</div>
-							<h2 class="header"><? dummy("text@headline-b2") ?></h2>
+							<h2 class="header"><? dummy("text@headline-b3") ?></h2>
 						</figcaption>
 					</figure>
 					</a>

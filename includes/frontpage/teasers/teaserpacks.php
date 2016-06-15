@@ -19,6 +19,7 @@
 				$showRelatedComments = true;
 				$showRelatedPaywall = true;
 				$relatedTrumpet = true;
+				
 
 				include('includes/frontpage/teasers/teaser-related.php'); 
 			?>
@@ -39,6 +40,7 @@
 				$showRelatedComments = true;
 				$showRelatedPaywall = true;
 				$relatedTrumpet = true;
+
 
 
 				include('includes/frontpage/teasers/teaser-related.php'); 

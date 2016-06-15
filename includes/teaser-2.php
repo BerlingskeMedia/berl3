@@ -25,7 +25,7 @@ if(!$summarySrc) {
 
 		
 			
-			
+		
 
 			<?php if($teaserAd): ?>
 				<div class="trade--header">
@@ -37,9 +37,6 @@ if(!$summarySrc) {
 
 				<?php if ($showImg  && !$smallImg): ?>
 					<figure class="teaser-img">
-
-
-						
 						<?php if($teaserLabel && !preg_match('/teaser--xlarge/',$class)): ?>
 							<?php include('includes/frontpage/teasers/labels.php'); ?>
 						<?php endif; ?>
@@ -68,7 +65,7 @@ if(!$summarySrc) {
 
 						<?php if($showTrumpet): ?>
 							<span class="teaser--trumpet">
-								<?php echo $showTrumpet; ?>
+								<? dummy("text@trumpet") ?>
 							</span>
 						<?php endif; ?>
 
@@ -88,15 +85,20 @@ if(!$summarySrc) {
 				<h2 class="header">
 					
 					<? dummy("text@".$headerSrc."") ?>
-					
-			
-					<?php if(!$showSummary && $showComments &! $showAuthor): ?>
-						
-							<span class="teaser--comments">
-								<i class="bicon-comment-inv-alt2"></i> <? dummy("text@number") ?>
-							</span>
+					<?php if (!$showSummary && !$showAuthor ): ?>
+							
+							<?php if($showComments) : ?>
+								<span class="teaser--comments">
+									<i class="bicon-comment-inv-alt2"></i> <? dummy("text@number") ?>
+								</span>
+							<?php endif; ?>
+
+							<?php if($showPaywall) : ?>
+								 <span class="subscriber-notice"><i class="subscriber-icon"></i> <em>Abonnement</em></span>
+							<?php endif; ?>
 						
 					<?php endif; ?>
+
 				</h2>
 				<?php if($showRating): ?>
 					
@@ -114,10 +116,9 @@ if(!$summarySrc) {
 						<img src="<? dummy("image". $imgSrc ."@". $imgW ."x,". $imgRatio ."") ?>" width="" height="" alt="[ARTICLE HEADER]" class="img" />
 					</figure>
 				<?php endif; ?>
-
+				
 				<?php if ($showSummary): ?>
 					<div class="teaser-summary">
-						
 						
 
 						<?php if($showCategory): ?>
@@ -137,10 +138,13 @@ if(!$summarySrc) {
 								<i class="bicon-comment-inv-alt2"></i> <? dummy("text@number") ?>
 							</span>
 						<?php endif; ?>
+						
+						<?php if($showPaywall): ?>
+							<? if (dumb_luck("100%")): ?>
+								 <span class="subscriber-notice"><i class="subscriber-icon"></i> <em>Abonnement</em></span>
+							<? endif ?> 
+						<?php endif; ?>
 
-						<? if (dumb_luck("100%")): ?>
-							 <span class="subscriber-notice"><i class="subscriber-icon"></i> <?php if($payIcon): ?><img src="<?php echo $payIcon; ?>" alt="" class="subscriber-icon-alt"><?php endif; ?> <em>Abonnement</em></span>
-						<? endif ?> 
 					</div>
 				<?php endif; ?>
 
@@ -193,4 +197,5 @@ $teaserPack = false;
 $teaserLink = false;
 $showTrumpet = false;
 $showComments = false;
+$showPaywall = false;
 ?>

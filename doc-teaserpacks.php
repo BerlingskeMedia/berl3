@@ -66,7 +66,7 @@ if(isset($_GET["business"])) {
 			$showRelated = false;
 			$showDate = false;
 			$showCategory = false;
-			$showPaywall = false;
+			$showPaywall = true;
 			$showComments = true;
 			$teaserLabel = 'yellow';
 			// // $labelText = 'Terror i Bruxelles';
@@ -97,12 +97,13 @@ if(isset($_GET["business"])) {
 			$showRelated = false;
 			$showDate = false;
 			$showCategory = false;
-			$showPaywall = false;
+			$showPaywall = true;
 			$showComments = true;
 			$teaserLabel = 'yellow';
 			// $labelText = 'Terror i Bruxelles';
 			//$teaserLabel = 'breaking';
 			$teaserPack = '2';
+
 			$showTrumpet = 'Teaser Pack 2';
 
 			include('includes/teaser-2.php') ?>
@@ -129,7 +130,7 @@ if(isset($_GET["business"])) {
 			$showRelated = false;
 			$showDate = false;
 			$showCategory = false;
-			$showPaywall = false;
+			$showPaywall = true;
 			$showComments = true;
 			$teaserLabel = 'yellow';
 			// $labelText = 'Terror i Bruxelles';
@@ -161,7 +162,7 @@ if(isset($_GET["business"])) {
 			$showRelated = false;
 			$showDate = false;
 			$showCategory = false;
-			$showPaywall = false;
+			$showPaywall = true;
 			$showComments = true;
 			$teaserLabel = 'yellow';
 			// $labelText = 'Terror i Bruxelles';

@@ -95,19 +95,19 @@ if(isset($_GET["topLG"])) {
 					$showImg = '1';
 					$class = ' teaser--img-wide item--teaser teaser--big ';
 					$imgRatio = '16:9';
-					$imgSrc = '/landscape';
+					$imgSrc = '/portrait';
 					$showSummary = true;
 					$showComments = true;
 					$showRelated = false;
 					$showDate = false;
 					$showCategory = false;
-					$showPaywall = false;
+					$showPaywall = true;
 					$showComments = true;
 					$teaserLabel = 'yellow';
 					$labelText = 'Terror i Bruxelles';
 					//$teaserLabel = 'breaking';
-					$teaserPack = '5';
-					$showTrumpet = 'Momssvindel';
+					// $teaserPack = '5';
+					$showTrumpet = true;
 
 					include('includes/teaser-2.php') ?>
 
@@ -124,7 +124,8 @@ if(isset($_GET["topLG"])) {
 					$teaserLabel = false;
 					$showComments = true;
 					$teaserPack = '2';
-					$showTrumpet = 'Danmark til valg';
+					$showTrumpet = true;
+					$showPaywall = true;
 
 					include('includes/teaser-2.php') ?>
 
@@ -141,7 +142,9 @@ if(isset($_GET["topLG"])) {
 					$teaserLabel = false;
 					$category = 'Business.dk';
 					$teaserPack = '3';
-					$showTrumpet = 'Interview';
+					$showTrumpet = true;
+					$showPaywall = true;
+					$showComments = true;
 
 					include('includes/teaser-2.php') ?>
 

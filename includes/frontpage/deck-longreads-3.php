@@ -21,6 +21,8 @@
 				$showCategory = false;
 				$teaserLabel = false;
 				$showComments = true;
+				$showTrumpet = true;
+				$showPaywall = true;
 				$teaserLink = 'tpl-article-longread.php';
 
 				include('includes/teaser-2.php') ?>
@@ -43,6 +45,7 @@
 				$showCategory = false;
 				$teaserLabel = false;
 				$showComments = true;
+				$showPaywall = true;
 				$teaserLink = 'tpl-article-longread.php';
 
 				include('includes/teaser-2.php') ?>
