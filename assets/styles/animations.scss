@@ -56,22 +56,22 @@
 		transform: scale(0);
 		opacity: 0;
 	}
-	50% {
+	25% {
 		transform: scale(0);
 		opacity: 0;
 	}
-	80% {
+	90% {
 		transform: scale(1.2);
 		opacity: 1;
 	}
 	100% {
-		transform: scale(.70);
+		transform: scale(.0);
 		opacity: 0;
 	}
 }
 
 .animate-live {
-	animation: live 2s infinite;
+	animation: live 1s infinite;
 	animation-fill-mode:forwards;
 	animation-timing-function: ease;
 }

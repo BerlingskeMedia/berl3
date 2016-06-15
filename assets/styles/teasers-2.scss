@@ -41,6 +41,7 @@
 	}	
 }
 
+
 .teaser-2 {
 	position: relative;
 	overflow: hidden;
@@ -153,11 +154,10 @@
 	.teaser-img,
 	.teaser-img-sm {
 		float: left;
-		margin: 0 .625rem .625rem 0;
+		margin-top: .2rem;
+		margin-right: .625rem;
 	}
-	.img {
-		max-width: 13.75rem;
-	}
+	
 	.teaser-body {
 		overflow: hidden;
 	}
@@ -168,11 +168,10 @@
 	.teaser-img,
 	.teaser-img-sm {
 		float: right;
-		margin: 0 0 .625rem .625rem;
+		margin-top: .2rem;
+		margin-left: .625rem;
 	}
-	.img {
-		max-width: 13.75rem;
-	}
+	
 	.teaser-body {
 		overflow: hidden;
 	}
@@ -230,28 +229,23 @@
 [class*='teaser--pack']{
 	.header-related {
 		@extend .font-s1;
-		font-size: 18px;
 		margin-bottom: 0;
-	}
-	
+	}	
 	.related-body {
 		overflow: hidden;
 	}
 	ul {
 		margin-bottom: 0;
 	}
-}
-.related--image {
-	padding-left: 0;
-	
-	.header-related {
-		font-size: 1.6rem;
+	.item--teaser:not(.related--default) {
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
 
+
 .related--default {
 	padding-left: .9rem;
-	
 	margin-bottom: 0rem;
 	position: relative;
 
@@ -259,7 +253,6 @@
 		@extend .font-s2;
 		font-weight: 500;
 		margin-bottom: 0;
-		font-size: 1rem;
 	}
 
 	&:before {
@@ -271,6 +264,22 @@
 		top: .3rem;
 		content: '';
 	}
+}
+
+.related--large .header-related {
+	font-size: 1.7rem;
+}
+
+.related--medium .header-related {
+	font-size: 1.4rem;	
+}
+
+.related--small .header-related {
+	font-size: 1.2rem;
+}
+
+.related--xsmall .header-related {
+	font-size: 1rem;
 }
 
 
@@ -326,11 +335,20 @@
 	color: #999;
 }
 .teaser--trumpet {
-	color: rgba(0,0,0,.5);
-	@extend .font-s1;
-	font-weight: normal;
-	font-size: 1.4rem;
+	color: $col-blue-1;
+	@extend .font-s2;
+	font-weight: 500;
+	font-size: .9rem;
+	text-transform: uppercase;
+	display: block;
 }
+.related--xsmall { 
+	.teaser--trumpet {
+		
+		display: inline
+	}
+}
+
 .teaser--trade  {
 	margin-bottom: 0;
 	padding-bottom: .625rem;
@@ -520,11 +538,7 @@
 		bottom: 0;
 		padding: 4rem $spacer;
 	}
-	.related--image {
-		.teaser-summary {
-			display: none;
-		}
-	}
+	
 	.teaser-img {
 		margin-bottom: 0;
 	}
@@ -563,7 +577,7 @@
 			top: -1.8rem;
 			line-height: 1.8rem;
 			background-color: #222;
-			color: $col-breaking;
+			color: #fff;
 			padding: 0 1rem;
 			font-size: .8rem;
 			font-weight: 500;
@@ -573,15 +587,7 @@
 			font-weight: 500;
 		}
 	}
-	.related--image {
-		.teaser-img {
-			max-width: 80px;
-			float: left;
-			margin: 0 .625rem 0 0;
-		}
-		
 	
-	}
 	.header-related {
 		// color: #fff;
 		@extend .font-s2;

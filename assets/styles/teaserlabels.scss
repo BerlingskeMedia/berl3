@@ -1,11 +1,15 @@
 [class*="teaser--label"] {
-		display: inline-block;
-		padding: .425rem .625rem;
-		@extend .font-s2;
-		font-weight: 500;
-		text-transform: uppercase;
-		font-size: .8rem;
+	display: inline-block;
+	padding: .425rem 0.625rem 0.425rem;
+	@extend .font-s2;
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 1rem;
+	.bicon-record:before {
+		@extend .animate-live;
+		padding: 0 .1rem;
 	}
+}
 
 .teaser-img {
 	[class*="teaser--label"] {
@@ -24,25 +28,11 @@
 	background-color: $col-live;
 	color: #fff;
 
-	.bicon-record:before {
-		@extend .animate-live;
-	}
+	
 }
 
 .teaser--xlarge {
-	.teaser-img {
-		[class*="teaser--label"] {
-			position: absolute;
-			bottom: auto;
-			top: .625rem;
-			left: .625rem;
 
-			span {
-				float: none;
-			}
-		}	
-	}
-	
 
 	.teaser--label-breaking {
 		font-size: 1.5rem;

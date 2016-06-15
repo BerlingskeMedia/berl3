@@ -30,7 +30,8 @@ if(isset($_GET["topLG"])) {
 					$showCategory = false;
 					$teaserLabel = 'red';
 					$labelText = '<i class="bicon-record"></i> Live';
-					$teaserPack = false;
+					// $labelText = 'Breaking';
+					$teaserPack = '1';
 					// $teaserPack = '3';
 
 					include('includes/teaser-2.php') ?>			
@@ -105,7 +106,7 @@ if(isset($_GET["topLG"])) {
 					$teaserLabel = 'yellow';
 					$labelText = 'Terror i Bruxelles';
 					//$teaserLabel = 'breaking';
-					$teaserPack = '1';
+					$teaserPack = '5';
 					$showTrumpet = 'Momssvindel';
 
 					include('includes/teaser-2.php') ?>

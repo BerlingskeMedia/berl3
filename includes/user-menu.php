@@ -5,7 +5,7 @@
 			<li><i class="bicon-user"></i> <? dummy("text@author") ?></li>
 			<li><a href="#"><i class="bicon-buy"></i> Mine oplysninger</a></li>
 			<li><a href="#"><i class="bicon-buy"></i> Mit abonnement</a></li>
-			<li><a href="#"><i class="bicon-buy"></i> Mine nyhedsbreve</a></li>
+			<!-- <li><a href="#"><i class="bicon-buy"></i> Mine nyhedsbreve</a></li> -->
 			<li>
 			<a href="" class="btn btn-block btn-sm btn-gray"><i class="bicon-logout"></i> Log ud</li></a>
 			
