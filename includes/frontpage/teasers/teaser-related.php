@@ -17,7 +17,7 @@
 							<? dummy("text@trumpet"); ?>
 						</span>
 					<?php endif; ?>
-					
+
 					<? dummy("text@headline-b3") ?>
 
 					<?php if(!$showRelatedSummary): ?>
@@ -31,7 +31,7 @@
 						<?php endif; ?>
 						<?php if ($showRelatedPaywall): ?>
 							<? if (dumb_luck("100%")): ?>
-								 <span class="subscriber-notice"><i class="subscriber-icon"></i> <em>Abonnement</em></span>
+								 <span class="subscriber-notice"><i class="subscriber-icon"></i> <?php if($payIcon): ?><img src="<?php echo $payIcon; ?>" alt="" class="subscriber-icon-alt"><?php endif; ?> <em>Abonnement</em></span>
 							<? endif ?> 
 						<?php endif; ?>
 
@@ -52,7 +52,7 @@
 						<?php endif; ?>
 						<?php if ($showRelatedPaywall): ?>
 							<? if (dumb_luck("100%")): ?>
-								 <span class="subscriber-notice"><i class="subscriber-icon"></i> <em>Abonnement</em></span>
+								 <span class="subscriber-notice"><i class="subscriber-icon"></i> <?php if($payIcon): ?><img src="<?php echo $payIcon; ?>" alt="" class="subscriber-icon-alt"><?php endif; ?> <em>Abonnement</em></span>
 							<? endif ?> 
 						<?php endif; ?>
 					</div>

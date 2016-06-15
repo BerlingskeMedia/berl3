@@ -1,7 +1,7 @@
 
 <?php if($teaserPack === '1') :?>
 <!-- teaser pack 1 -->
-	<div class="teaser--pack__pack1 clearfix">
+	<div class="teaser--pack clearfix">
 		<ul class="row teaser--pack--list">
 			
 			
@@ -53,7 +53,7 @@
 
 <!-- teaser pack 2 -->
 
-	<div class="teaser--pack__pack2 clearfix">
+	<div class="teaser--pack clearfix">
 		<ul class="row teaser--pack--list">
 			
 			<?php 
@@ -98,7 +98,7 @@
 <?php if($teaserPack === '3') :?>
 
 <!-- teaser pack 3 -->
-	<div class="teaser--pack__pack3 clearfix">
+	<div class="teaser--pack clearfix">
 		<ul class="row teaser--pack--list">
 			
 			<?php 
@@ -165,7 +165,7 @@
 <?php if($teaserPack === '4') :?>
 
 <!-- teaser pack 4 -->
-	<div class="teaser--pack__pack4 clearfix">
+	<div class="teaser--pack clearfix">
 		<ul class="row teaser--pack--list">
 			
 			<?php 
@@ -212,7 +212,7 @@
 
 
 <?php if($teaserPack === '5') :?>
-	<div class="teaser--pack__pack5 clearfix">
+	<div class="teaser--pack clearfix">
 <!-- teaser pack 5 -->
 		<ul class="row teaser--pack--list">
 			

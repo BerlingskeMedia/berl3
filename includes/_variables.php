@@ -1,4 +1,8 @@
 <?php 
+
+// $payIcon = '/dist/images/payicons/16_5.svg';
+$payIcon = false;
+
 // Hide php "variable not set"-errors:
 error_reporting( error_reporting() & ~E_NOTICE );
 

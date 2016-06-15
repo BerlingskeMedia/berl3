@@ -60,7 +60,11 @@
 		@extend .font-g1;
 		color: rgba(0,0,0,.75);
 		font-size: 1.1rem;
-		
+		.subscriber-notice {
+			&:after {
+				vertical-align: middle;
+			}
+		}
 	}
 	.teaser-img {
 		position: relative;
@@ -268,6 +272,9 @@
 
 .related--large .header-related {
 	font-size: 1.7rem;
+	
+	
+	
 }
 
 .related--medium .header-related {
@@ -375,9 +382,7 @@
 
 .subscriber-notice {
 	font-weight: 500;
-	color: darken(#999, 10%);
-	color: $col-blue-1;
-	// letter-spacing: .02rem;
+	color: $col-silvergray;
 	vertical-align: 8%;
 	@extend .font-s2;
 	text-transform: uppercase;
@@ -386,17 +391,23 @@
 		font-style: normal;
 		display: none;
 	}
-	.subscriber-icon {
-		
-		@extend [class^="bicon-"];
-		@extend .bicon-star;
-		// display: none;
+	.subscriber-icon {	
+		/*@extend [class^="bicon-"];
+		@extend .bicon-star;*/
+		display: none;
+	}
+	&:after {
+		content: '\e828';
+		font-size: 1rem;
+		font-family: b-icons;
 	}
 }
+
 .teaser--theme-business {
-	/*.teaser--trumpet {
+	.teaser--category,
+	.teaser--trumpet {
 		color: $col-business-dark;
-	}*/
+	}
 	/*.teaser-2 {
 		padding: .625rem;
 		background-color: $col-business-light;	

@@ -139,7 +139,7 @@ if(!$summarySrc) {
 						<?php endif; ?>
 
 						<? if (dumb_luck("100%")): ?>
-							 <span class="subscriber-notice"><i class="subscriber-icon"></i> <em>Abonnement</em></span>
+							 <span class="subscriber-notice"><i class="subscriber-icon"></i> <?php if($payIcon): ?><img src="<?php echo $payIcon; ?>" alt="" class="subscriber-icon-alt"><?php endif; ?> <em>Abonnement</em></span>
 						<? endif ?> 
 					</div>
 				<?php endif; ?>
