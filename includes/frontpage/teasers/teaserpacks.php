@@ -10,7 +10,7 @@
 				// ONELINERS
 				$relatedCount = '1';
 				$relatedGridClass = 'col-xs-12';
-				$relatedTeaserClass = 'item--teaser related--image teaser--img-left related--large';
+				$relatedTeaserClass = 'item--teaser related--image teaser--img-left related--large teaser--theme-business';
 				$relatedShowImg = true;
 				$relatedImgSize = '160';
 				$relatedImgRatio = '3:2';
@@ -19,6 +19,8 @@
 				$showRelatedComments = true;
 				$showRelatedPaywall = true;
 				$relatedTrumpet = true;
+				$showRelatedCategory = true;
+				$relatedCategory = 'Business.dk';
 				
 
 				include('includes/frontpage/teasers/teaser-related.php'); 
@@ -61,7 +63,7 @@
 			<?php 
 				$relatedCount = '1';
 				$relatedGridClass = 'col-xs-12';
-				$relatedTeaserClass = 'item--teaser  teaser--img-right related--large';
+				$relatedTeaserClass = 'item--teaser  teaser--img-right related--large teaser--theme-aok';
 				$relatedShowImg = true;
 				$relatedImgSize = '160';
 				$relatedImgRatio = '3:2';
@@ -70,13 +72,34 @@
 				$showRelatedComments = true;
 				$showRelatedPaywall = true;
 				$relatedTrumpet = true;
+				$showRelatedCategory = true;
+				$relatedCategory = 'Aok.dk';
 
 				include('includes/frontpage/teasers/teaser-related.php'); 
 			?>
 			
 			<?php 
 				// ONELINERS
-				$relatedCount = '3';
+				$relatedCount = '1';
+				$relatedGridClass = 'col-xs-12';
+				$relatedTeaserClass = 'item--teaser  related--xsmall teaser--theme-business';
+				$relatedShowImg = false;
+				$relatedImgSize = '160';
+				$relatedImgRatio = '3:2';
+				$relatedImgSrc = '/landscape';
+				$showRelatedSummary = false;
+				$showRelatedComments = true;
+				$showRelatedPaywall = true;
+				$relatedTrumpet = true;
+				$showRelatedCategory = true;
+				$relatedCategory = 'Business.dk';
+
+				include('includes/frontpage/teasers/teaser-related.php'); 
+			?>
+
+			<?php 
+				// ONELINERS
+				$relatedCount = '2';
 				$relatedGridClass = 'col-xs-12';
 				$relatedTeaserClass = 'item--teaser  related--xsmall';
 				$relatedShowImg = false;

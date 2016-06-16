@@ -47,9 +47,13 @@ if ($listBlog) {
 				<?php endif; ?>
 				<a href="tpl-article.php" title="[ARTICLE HEADER]">
 					<? if (dumb_luck("20%")): ?><? if (dumb_luck("50%")): ?><i class="bicon-play-circled"></i> <? else: ?><i class="bicon-camera"></i> <? endif ?><? endif ?>
-					<? dummy("text@headline-b") ?>
+					<? dummy("text@headline-b3") ?>
 					<?php if($premium): ?>
-						<? if (dumb_luck("50%")): ?><i class="bicon-key"></i><? endif ?>
+						<? if (dumb_luck("50%")): ?>
+							<span class="subscriber-notice">
+							<i class="bicon-bicon"></i>
+							</span>
+						<? endif ?>
 					<?php endif; ?>
 					<?php if($showComments): ?><span class="list-comments"><? dummy("text@number") ?> <i class="bicon-comment-inv-alt2"></i></span><?php endif;?>
 				</a>

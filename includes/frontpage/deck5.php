@@ -1,7 +1,5 @@
 <?php 
-if(isset($_GET["topSM"])) {
-	$topSM = true;
-} 
+
 if(isset($_GET["topMD"])) {
 	$topMD = true;
 } 
@@ -31,7 +29,7 @@ if(isset($_GET["topLG"])) {
 					$teaserLabel = 'red';
 					$labelText = '<i class="bicon-record"></i> Live';
 					// $labelText = 'Breaking';
-					$teaserPack = '1';
+					$teaserPack = '5';
 					// $teaserPack = '3';
 
 					include('includes/teaser-2.php') ?>			
@@ -97,12 +95,10 @@ if(isset($_GET["topLG"])) {
 					$imgRatio = '16:9';
 					$imgSrc = '/portrait';
 					$showSummary = true;
-					$showComments = true;
 					$showRelated = false;
 					$showDate = false;
 					$showCategory = false;
 					$showPaywall = true;
-					$showComments = true;
 					$teaserLabel = 'yellow';
 					$labelText = 'Breaking';
 					//$teaserLabel = 'breaking';
@@ -122,7 +118,6 @@ if(isset($_GET["topLG"])) {
 					$showDate = false;
 					$showCategory = false;
 					$teaserLabel = false;
-					$showComments = true;
 					$teaserPack = '2';
 					$showTrumpet = true;
 					$showPaywall = true;
@@ -144,7 +139,6 @@ if(isset($_GET["topLG"])) {
 					$teaserPack = '3';
 					$showTrumpet = true;
 					$showPaywall = true;
-					$showComments = true;
 
 					include('includes/teaser-2.php') ?>
 

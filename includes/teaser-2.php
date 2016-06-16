@@ -86,12 +86,7 @@ if(!$summarySrc) {
 					
 					<? dummy("text@".$headerSrc."") ?>
 					<?php if (!$showSummary && !$showAuthor ): ?>
-							<span class="footer-in-header">
-							<?php if($showComments) : ?>
-								<span class="teaser--comments">
-									<i class="bicon-comment-inv-alt2"></i> <? dummy("text@number") ?>
-								</span>
-							<?php endif; ?>
+							<span class="teaser-tools">
 
 							<?php if($showPaywall) : ?>
 								 <span class="subscriber-notice"><i class="subscriber-icon"></i> <em>Abonnement</em></span>
@@ -124,7 +119,7 @@ if(!$summarySrc) {
 
 							<?php if($showCategory): ?>
 								<span class="teaser--category">
-									<i class="bicon-record"></i> <?php if($category){echo $category;} else {  dummy("text@b-cat"); } ?> <span class="pipe"> | </span> 
+									 <?php if($category){echo $category;} else {  dummy("text@b-cat"); } ?> 
 								</span>	
 							<?php endif; ?>
 
@@ -132,11 +127,7 @@ if(!$summarySrc) {
 
 					
 						
-						<?php if($showComments  ): ?>
-							<span class="teaser--comments">
-								<i class="bicon-comment-inv-alt2"></i> <? dummy("text@number") ?>
-							</span>
-						<?php endif; ?>
+						
 						
 						<?php if($showPaywall): ?>
 							<? if (dumb_luck("100%")): ?>
@@ -150,12 +141,6 @@ if(!$summarySrc) {
 				<?php if($showAuthor): ?>
 					<span class="teaser--author"><? dummy("text@author") ?>
 					<?php if(!$showSummary) : ?>
-					
-						<?php if($showComments): ?>
-							<span class="teaser--comments">
-								<i class="bicon-comment-inv-alt2"></i> <? dummy("text@number") ?>
-							</span>
-						<?php endif; ?>
 
 						<?php if($showPaywall) : ?>
 							<span class="subscriber-notice"><i class="subscriber-icon"></i> <em>Abonnement</em></span>
@@ -205,7 +190,6 @@ $teaserAd = false;
 $teaserPack = false;
 $teaserLink = false;
 $showTrumpet = false;
-$showComments = false;
 $showPaywall = false;
 $headerSrc = 'headline-b3';
 $summarySrc = 'short-teaser';

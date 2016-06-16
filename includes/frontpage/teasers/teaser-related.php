@@ -13,7 +13,12 @@
 				
 				<h3 class="header-related">
 					
-					
+						<?php if(!$showRelatedSummary && $showRelatedCategory): ?>
+							<span class="teaser--category">
+								<?php if($relatedCategory){echo $relatedCategory;} else {  dummy("text@b-cat"); } ?> <i class="icon-external"></i> 
+							</span>	
+						<?php endif; ?>
+
 					
 						<?php if($relatedTrumpet): ?>
 							<span class="teaser--trumpet">
@@ -26,17 +31,8 @@
 
 					<?php if(!$showRelatedSummary): ?>
 						
-						<?php if($showRelatedComments || $showRelatedPaywall): ?>
-							<span class="footer-in-header">
-
-								<?php if($showRelatedComments): ?>
-						
-									<span class="teaser--comments">
-										<i class="bicon-comment-inv-alt2"></i> <? dummy("text@number") ?>
-									</span>
-						
-							<?php endif; ?>
-
+						<?php if( $showRelatedPaywall): ?>
+							<span class="teaser-tools">
 							<?php if ($showRelatedPaywall): ?>
 								 <span class="subscriber-notice"><i class="subscriber-icon"></i> <em>Abonnement</em></span>
 							<?php endif; ?>
@@ -52,20 +48,20 @@
 				<?php if($showRelatedSummary): ?>
 					<div class="teaser-summary">
 						
-						
+						<?php if($showRelatedCategory): ?>
+							<span class="teaser--category">
+								<?php if($relatedCategory){echo $relatedCategory;} else {  dummy("text@b-cat"); } ?> <i class="icon-external"></i> 
+							</span>	
+						<?php endif; ?>
+
 						<?php echo $summary ?>
-						
-							<?php if($showRelatedComments): ?>
 							
-								<span class="teaser--comments">
-									<i class="bicon-comment-inv-alt2"></i> <? dummy("text@number") ?>
-								</span>
-							
-							<?php endif; ?>
+							<span class="teaser-tools">
+								
 							<?php if ($showRelatedPaywall): ?>
 								<span class="subscriber-notice"><i class="subscriber-icon"></i> <em>Abonnement</em></span>
 							<?php endif; ?>
-						
+							</span>
 					</div>
 				<?php endif; ?>
 			</div>
@@ -84,4 +80,6 @@ $showRelatedSummary = false;
 $showRelatedComments = false;
 $showRelatedPaywall = false;
 $relatedTrumpet = false;
+$showRelatedCategory = false;
+$relatedCategory = 'Business.dk';
 ?>
