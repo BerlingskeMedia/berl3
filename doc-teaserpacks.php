@@ -194,12 +194,13 @@ if(isset($_GET["business"])) {
 			$showRelated = false;
 			$showDate = false;
 			$showCategory = false;
-			$showPaywall = false;
+			$showPaywall = true;
 			$showComments = true;
 			$teaserLabel = 'yellow';
 			// $labelText = 'Terror i Bruxelles';
 			//$teaserLabel = 'breaking';
 			$teaserPack = '5';
+
 			$showTrumpet = 'Momssvindel';
 
 			include('includes/teaser-2.php') ?>

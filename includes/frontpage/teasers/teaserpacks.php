@@ -31,7 +31,7 @@
 				// ONELINERS
 				$relatedCount = '2';
 				$relatedGridClass = 'col-xs-12';
-				$relatedTeaserClass = 'item--teaser related--default related--xsmall';
+				$relatedTeaserClass = 'item--teaser  related--xsmall';
 				$relatedShowImg = false;
 				$relatedImgSize = '160';
 				$relatedImgRatio = '3:2';
@@ -78,7 +78,7 @@
 				// ONELINERS
 				$relatedCount = '3';
 				$relatedGridClass = 'col-xs-12';
-				$relatedTeaserClass = 'item--teaser related--default related--xsmall';
+				$relatedTeaserClass = 'item--teaser  related--xsmall';
 				$relatedShowImg = false;
 				$relatedImgSize = '160';
 				$relatedImgRatio = '3:2';
@@ -145,7 +145,7 @@
 				// ONELINERS
 				$relatedCount = '1';
 				$relatedGridClass = 'col-xs-12';
-				$relatedTeaserClass = 'item--teaser related--default related--xsmall';
+				$relatedTeaserClass = 'item--teaser  related--xsmall';
 				$relatedShowImg = false;
 				$relatedImgSize = '160';
 				$relatedImgRatio = '3:2';
@@ -219,20 +219,36 @@
 		<ul class="row teaser--pack--list">
 			
 			<?php 
-							$relatedCount = '2';
-							$relatedGridClass = 'col-xs-6';
-							$relatedTeaserClass = 'item--teaser teaser--img-wide  related--small teaser--img-left teaser--theme-feature';
-							$relatedShowImg = true;
-							$relatedImgSize = '93';
-							$relatedImgRatio = '1:1';
-							$relatedImgSrc = '/!author';
-							$showRelatedSummary = false;
-							$showRelatedComments = true;
-							$showRelatedPaywall = true;
-							$relatedTrumpet = true;
+				$relatedCount = '1';
+				$relatedGridClass = 'col-xs-6';
+				$relatedTeaserClass = 'item--teaser teaser--img-wide  related--small teaser--img-left ';
+				$relatedShowImg = true;
+				$relatedImgSize = '140';
+				$relatedImgRatio = '3:2';
+				$relatedImgSrc = '/landscape';
+				$showRelatedSummary = false;
+				$showRelatedComments = true;
+				$showRelatedPaywall = true;
+				$relatedTrumpet = true;
 
-							include('includes/frontpage/teasers/teaser-related.php'); 
-						?>
+				include('includes/frontpage/teasers/teaser-related.php'); 
+			?>
+
+			<?php 
+				$relatedCount = '1';
+				$relatedGridClass = 'col-xs-6';
+				$relatedTeaserClass = 'item--teaser teaser--img-wide  related--small teaser--img-left teaser--theme-feature';
+				$relatedShowImg = true;
+				$relatedImgSize = '93';
+				$relatedImgRatio = '1:1';
+				$relatedImgSrc = '/!author';
+				$showRelatedSummary = false;
+				$showRelatedComments = true;
+				$showRelatedPaywall = true;
+				$relatedTrumpet = true;
+
+				include('includes/frontpage/teasers/teaser-related.php'); 
+			?>
 			
 			
 			

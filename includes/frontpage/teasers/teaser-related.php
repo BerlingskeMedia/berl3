@@ -12,48 +12,60 @@
 			<div class="related-body">
 				
 				<h3 class="header-related">
-					<?php if($relatedTrumpet): ?>
-						<span class="teaser--trumpet">
-							<? dummy("text@trumpet"); ?>
-						</span>
-					<?php endif; ?>
+					
+					
+					
+						<?php if($relatedTrumpet): ?>
+							<span class="teaser--trumpet">
+								<? dummy("text@trumpet"); ?>
+							</span>
+						<?php endif; ?>
 
-					<? dummy("text@headline-b3") ?>
+						<? dummy("text@headline-b3") ?>
+					
 
 					<?php if(!$showRelatedSummary): ?>
 						
-						<?php if($showRelatedComments): ?>
-						
-							<span class="teaser--comments">
-								<i class="bicon-comment-inv-alt2"></i> <? dummy("text@number") ?>
-							</span>
-						
-						<?php endif; ?>
+						<?php if($showRelatedComments || $showRelatedPaywall): ?>
+							<span class="footer-in-header">
 
-						<?php if ($showRelatedPaywall): ?>
+								<?php if($showRelatedComments): ?>
 						
+									<span class="teaser--comments">
+										<i class="bicon-comment-inv-alt2"></i> <? dummy("text@number") ?>
+									</span>
+						
+							<?php endif; ?>
+
+							<?php if ($showRelatedPaywall): ?>
 								 <span class="subscriber-notice"><i class="subscriber-icon"></i> <em>Abonnement</em></span>
-						
+							<?php endif; ?>
+							</span>
 						<?php endif; ?>
-
+						
 					<?php endif; ?>
 
 				</h3>
 
+
+
 				<?php if($showRelatedSummary): ?>
 					<div class="teaser-summary">
+						
+						
 						<?php echo $summary ?>
 						
-						<?php if($showRelatedComments): ?>
+							<?php if($showRelatedComments): ?>
+							
+								<span class="teaser--comments">
+									<i class="bicon-comment-inv-alt2"></i> <? dummy("text@number") ?>
+								</span>
+							
+							<?php endif; ?>
+							<?php if ($showRelatedPaywall): ?>
+								<span class="subscriber-notice"><i class="subscriber-icon"></i> <em>Abonnement</em></span>
+							<?php endif; ?>
 						
-							<span class="teaser--comments">
-								<i class="bicon-comment-inv-alt2"></i> <? dummy("text@number") ?>
-							</span>
-						
-						<?php endif; ?>
-						<?php if ($showRelatedPaywall): ?>
-							<span class="subscriber-notice"><i class="subscriber-icon"></i> <em>Abonnement</em></span>
-						<?php endif; ?>
 					</div>
 				<?php endif; ?>
 			</div>

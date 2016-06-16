@@ -104,7 +104,7 @@ if(isset($_GET["topLG"])) {
 					$showPaywall = true;
 					$showComments = true;
 					$teaserLabel = 'yellow';
-					$labelText = 'Terror i Bruxelles';
+					$labelText = 'Breaking';
 					//$teaserLabel = 'breaking';
 					// $teaserPack = '5';
 					$showTrumpet = true;

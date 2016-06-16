@@ -86,7 +86,7 @@ if(!$summarySrc) {
 					
 					<? dummy("text@".$headerSrc."") ?>
 					<?php if (!$showSummary && !$showAuthor ): ?>
-							
+							<span class="footer-in-header">
 							<?php if($showComments) : ?>
 								<span class="teaser--comments">
 									<i class="bicon-comment-inv-alt2"></i> <? dummy("text@number") ?>
@@ -96,7 +96,7 @@ if(!$summarySrc) {
 							<?php if($showPaywall) : ?>
 								 <span class="subscriber-notice"><i class="subscriber-icon"></i> <em>Abonnement</em></span>
 							<?php endif; ?>
-						
+							</span>
 					<?php endif; ?>
 
 				</h2>
@@ -120,18 +120,17 @@ if(!$summarySrc) {
 				<?php if ($showSummary): ?>
 					<div class="teaser-summary">
 						
+					
 
-						<?php if($showCategory): ?>
-						<span class="teaser--category">
-							<?php if($category){echo $category;} else {  dummy("text@b-cat"); } ?> <span class="pipe"> | </span> 
-						</span>	
-						<?php endif; ?>
+							<?php if($showCategory): ?>
+								<span class="teaser--category">
+									<i class="bicon-record"></i> <?php if($category){echo $category;} else {  dummy("text@b-cat"); } ?> <span class="pipe"> | </span> 
+								</span>	
+							<?php endif; ?>
 
-						
+							<? dummy("text@".$summarySrc."") ?>
 
-						
-
-						<? dummy("text@".$summarySrc."") ?>
+					
 						
 						<?php if($showComments  ): ?>
 							<span class="teaser--comments">
@@ -150,11 +149,21 @@ if(!$summarySrc) {
 
 				<?php if($showAuthor): ?>
 					<span class="teaser--author"><? dummy("text@author") ?>
-					<?php if($showComments &! $showSummary): ?>
-						<span class="teaser--comments">
-							<i class="bicon-comment-inv-alt2"></i> <? dummy("text@number") ?>
-						</span>
+					<?php if(!$showSummary) : ?>
+					
+						<?php if($showComments): ?>
+							<span class="teaser--comments">
+								<i class="bicon-comment-inv-alt2"></i> <? dummy("text@number") ?>
+							</span>
+						<?php endif; ?>
+
+						<?php if($showPaywall) : ?>
+							<span class="subscriber-notice"><i class="subscriber-icon"></i> <em>Abonnement</em></span>
+						<?php endif; ?>
+
 					<?php endif; ?>
+
+
 					</span>
 				<?php endif; ?>
 				
@@ -198,4 +207,6 @@ $teaserLink = false;
 $showTrumpet = false;
 $showComments = false;
 $showPaywall = false;
+$headerSrc = 'headline-b3';
+$summarySrc = 'short-teaser';
 ?>

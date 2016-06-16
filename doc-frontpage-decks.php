@@ -63,7 +63,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 		<div class="row">
 			<div class="col-xs-12 text-center" style="">
 				<ul>
-					<li><a href="tpl-frontpage-2.php?deck=5">Frontpage</a></li>
+					<li><a href="tpl-frontpage.php">Frontpage</a></li>
 					<li><a href="?deck=5">Deck 1</a></li>
 					<li><a href="?deck=6">Flow deck</a></li>
 					<li><a href="?deck=-ad">Ad</a></li>

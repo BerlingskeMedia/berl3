@@ -24,6 +24,7 @@
 				$showTrumpet = 'Berlingske mener';
 				$showCategory = false;
 				$showComments = true;
+				$showPaywall = true;
 
 				$imgSrc = '/!b-vaabenskjold';
 				include('includes/teaser-2.php') ?>
@@ -40,6 +41,7 @@
 				$showDate = false;
 				$showCategory = false;
 				$showComments = true;
+				$showPaywall = true;
 				$showTrumpet = 'Kronikken';
 				$imgSrc = '/!b-kommentatorer';
 				include('includes/teaser-2.php') ?>
@@ -47,6 +49,7 @@
 
 		<? while (dumb_luck("2")): ?>
 		<div class="  col-xl-6 flex-row ">
+		
 			<?php 
 				$imgW='100'; 
 				$class = ' teaser--img-right  teaser--xsmall	  item--teaser__bt teaser--roundimg';
@@ -57,6 +60,7 @@
 				$showDate = false;
 				$showCategory = false;
 				$showComments = true;
+				$showPaywall = true;
 				$showTrumpet = 'Læserbrev';
 				$imgSrc = '/!b-kommentatorer';
 				include('includes/teaser-2.php') ?>

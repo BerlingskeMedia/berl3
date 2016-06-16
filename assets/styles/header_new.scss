@@ -142,7 +142,7 @@ body.tpl-article {
 
 .header-bottom {
 	@extend .font-g1;
-	font-size: .95rem;
+	font-size: 1rem;
 	height: $headerButtomHeight;
 	border-bottom: $border-width solid $border-color;
 }
@@ -156,8 +156,8 @@ body.tpl-article {
 		display: inline-block;
 		line-height: $headerButtomHeight;
 		margin: 0 .5rem 0 0;
-		@extend .font-s2;
-		font-weight: 500;
+		/*@extend .font-s2;*/
+		font-weight: 400;
 		
 		&:last-child {
 			margin-right: 0;
