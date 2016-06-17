@@ -207,6 +207,75 @@ if(isset($_GET["business"])) {
 			
 		</div>
 	</div>
+
+
+	<div class="row">
+
+		<div class="col-xs-2 " >
+			<h3>Teaser pack 6</h3>
+		</div>
+
+		<div class="col-xs-8 " style="width:780px">
+
+			<?php
+			$imgW='920'; 
+			$showImg = '1';
+			$class = ' teaser--img-left item--teaser teaser--medium ';
+			$imgRatio = '16:9';
+			$imgSrc = '/landscape';
+			$showSummary = true;
+			$showComments = true;
+			$showRelated = false;
+			$showDate = false;
+			$showCategory = false;
+			$showPaywall = true;
+			$showComments = true;
+			$teaserLabel = 'yellow';
+			// $labelText = 'Terror i Bruxelles';
+			//$teaserLabel = 'breaking';
+			$teaserPack = '6';
+
+			$showTrumpet = 'Momssvindel';
+
+			include('includes/frontpage/teasers/teaser.php') ?>
+			
+		</div>
+	</div>
+
+	<div class="row">
+
+		<div class="col-xs-2 " >
+			<h3>Teaser pack 7</h3>
+		</div>
+
+		<div class="col-xs-8 " style="width:780px">
+
+			<?php
+			$imgW='920'; 
+			$showImg = '1';
+			$class = ' teaser--img-right item--teaser teaser--medium ';
+			$imgRatio = '16:9';
+			$imgSrc = '/landscape';
+			$showSummary = true;
+			$showComments = true;
+			$showRelated = false;
+			$showDate = false;
+			$showCategory = false;
+			$showPaywall = true;
+			$showComments = true;
+			$teaserLabel = 'yellow';
+			// $labelText = 'Terror i Bruxelles';
+			//$teaserLabel = 'breaking';
+			$teaserPack = '7';
+
+			$showTrumpet = 'Momssvindel';
+
+			include('includes/frontpage/teasers/teaser.php') ?>
+			
+		</div>
+	</div>
+
+
 </div>
 
 

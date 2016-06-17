@@ -16,7 +16,7 @@
 				$relatedImgRatio = '3:2';
 				$relatedImgSrc = '/landscape';
 				$showRelatedSummary = true;
-				$showRelatedComments = true;
+				
 				$showRelatedPaywall = true;
 				$relatedTrumpet = true;
 				$showRelatedCategory = true;
@@ -39,7 +39,7 @@
 				$relatedImgRatio = '3:2';
 				$relatedImgSrc = '/landscape';
 				$showRelatedSummary = false;
-				$showRelatedComments = true;
+				
 				$showRelatedPaywall = true;
 				$relatedTrumpet = true;
 
@@ -69,7 +69,7 @@
 				$relatedImgRatio = '3:2';
 				$relatedImgSrc = '/landscape';
 				$showRelatedSummary = true;
-				$showRelatedComments = true;
+				
 				$showRelatedPaywall = true;
 				$relatedTrumpet = true;
 				$showRelatedCategory = true;
@@ -88,7 +88,7 @@
 				$relatedImgRatio = '3:2';
 				$relatedImgSrc = '/landscape';
 				$showRelatedSummary = false;
-				$showRelatedComments = true;
+				
 				$showRelatedPaywall = true;
 				$relatedTrumpet = true;
 				$showRelatedCategory = true;
@@ -107,7 +107,7 @@
 				$relatedImgRatio = '3:2';
 				$relatedImgSrc = '/landscape';
 				$showRelatedSummary = false;
-				$showRelatedComments = true;
+				
 				$showRelatedPaywall = true;
 				$relatedTrumpet = true;
 
@@ -135,7 +135,7 @@
 				$relatedImgRatio = '3:2';
 				$relatedImgSrc = '/landscape';
 				$showRelatedSummary = true;
-				$showRelatedComments = true;
+				
 				$showRelatedPaywall = true;
 				$relatedTrumpet = true;
 
@@ -151,7 +151,7 @@
 				$relatedImgRatio = '3:2';
 				$relatedImgSrc = '/landscape';
 				$showRelatedSummary = true;
-				$showRelatedComments = true;
+				
 				$showRelatedPaywall = true;
 				$relatedTrumpet = true;
 
@@ -174,7 +174,7 @@
 				$relatedImgRatio = '3:2';
 				$relatedImgSrc = '/landscape';
 				$showRelatedSummary = false;
-				$showRelatedComments = true;
+				
 				$showRelatedPaywall = true;
 				$relatedTrumpet = true;
 
@@ -202,7 +202,7 @@
 				$relatedImgRatio = '3:2';
 				$relatedImgSrc = '/landscape';
 				$showRelatedSummary = false;
-				$showRelatedComments = true;
+				
 				$showRelatedPaywall = true;
 				$relatedTrumpet = true;
 
@@ -222,7 +222,7 @@
 				$relatedImgRatio = '3:2';
 				$relatedImgSrc = '/landscape';
 				$showRelatedSummary = false;
-				$showRelatedComments = true;
+				
 				$showRelatedPaywall = true;
 				$relatedTrumpet = true;
 
@@ -250,7 +250,7 @@
 				$relatedImgRatio = '3:2';
 				$relatedImgSrc = '/landscape';
 				$showRelatedSummary = false;
-				$showRelatedComments = true;
+				
 				$showRelatedPaywall = true;
 				$relatedTrumpet = true;
 
@@ -266,7 +266,7 @@
 				$relatedImgRatio = '1:1';
 				$relatedImgSrc = '/!author';
 				$showRelatedSummary = false;
-				$showRelatedComments = true;
+				
 				$showRelatedPaywall = true;
 				$relatedTrumpet = true;
 
@@ -287,9 +287,73 @@
 				$relatedImgRatio = '3:2';
 				$relatedImgSrc = '/landscape';
 				$showRelatedSummary = false;
-				$showRelatedComments = true;
+				
 				$showRelatedPaywall = true;
 				$relatedTrumpet = true;
+
+				include('includes/frontpage/teasers/teaser-related.php'); 
+			?>
+
+		
+			
+		</ul>
+	</div>
+<?php endif; ?>
+
+
+
+<?php if($teaserPack === '6') :?>
+	<div class="teaser--pack clearfix">
+<!-- teaser pack 5 -->
+		<ul class="row teaser--pack--list">
+			
+			
+
+			<?php 
+				// ONELINERS
+				$relatedCount = '1';
+				$relatedGridClass = 'col-xs-12';
+				$relatedTeaserClass = 'item--teaser  related--large';
+				$relatedShowImg = false;
+				$relatedImgSize = '160';
+				$relatedImgRatio = '3:2';
+				$relatedImgSrc = '/landscape';
+				$showRelatedSummary = true;
+				
+				$showRelatedPaywall = true;
+				$relatedTrumpet = true;
+
+				include('includes/frontpage/teasers/teaser-related.php'); 
+			?>
+
+		
+			
+		</ul>
+	</div>
+<?php endif; ?>
+
+
+
+<?php if($teaserPack === '7') :?>
+	<div class="teaser--pack clearfix">
+<!-- teaser pack 5 -->
+		<ul class="row teaser--pack--list">
+			
+			
+
+			<?php 
+				// ONELINERS
+				$relatedCount = '1';
+				$relatedGridClass = 'col-xs-12';
+				$relatedTeaserClass = 'item--teaser related--xsmall';
+				$relatedShowImg = false;
+				$relatedImgSize = '160';
+				$relatedImgRatio = '3:2';
+				$relatedImgSrc = '/landscape';
+				$showRelatedSummary = false;
+				
+				$showRelatedPaywall = true;
+				$relatedTrumpet = false;
 
 				include('includes/frontpage/teasers/teaser-related.php'); 
 			?>
