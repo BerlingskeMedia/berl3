@@ -1,10 +1,8 @@
 [class*="teaser--label"] {
 	display: inline-block;
-	padding: .425rem 0.625rem 0.425rem;
 	@extend .font-s2;
 	font-weight: 500;
 	text-transform: uppercase;
-	font-size: 1rem;
 	.bicon-record:before {
 		@extend .animate-live;
 		padding: 0 .1rem;
@@ -18,6 +16,12 @@
 		left: 0;
 		z-index: 2;
 		opacity: 1!important;
+		padding: .425rem 0.625rem 0.425rem;
+		font-size: 1rem;
+	}
+	.teaser--label-red {
+		background-color: $col-live;
+		color: #fff;
 	}
 }
 .teaser--label-yellow {
@@ -25,17 +29,32 @@
 	color: #000;
 }
 .teaser--label-red {
-	background-color: $col-live;
-	color: #fff;
-
-	
+	background-color: transparent;
+	color: $col-live;
 }
 
 .teaser--xlarge {
-
-
 	.teaser--label-breaking {
 		font-size: 1.5rem;
 		text-transform: uppercase;
 	}	
+}
+
+ .related--large {
+	[class*="teaser--label"] {
+		font-size: .9rem;
+		padding: 0 .3rem 0 0;
+	}
+}
+.related--xsmall {
+	[class*="teaser--label"] {
+		font-size: .9rem;
+		padding: 0 .3rem 0 0;
+	}
+}
+
+.teaser-summary {
+	[class*="teaser--label"] {
+		// margin-top: -.1rem;
+	}
 }

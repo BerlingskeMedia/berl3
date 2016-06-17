@@ -200,44 +200,40 @@
 
 .teaser--big {
 	.header {
-		font-size: 45px;
+		font-size: 2.813rem;
 	}
 }
 
 
 .teaser--small {
 	.header {
-		font-size: 30px;
+		font-size: 1.875rem;
 	}
 }
 .teaser--xsmall {
 	.header {
-		font-size: 20px;
+		font-size: 1.25rem;
 	}
 }
 
 .teaser--xxsmall {
 	.header {
-		font-size: 15px;
+		font-size: 0.938rem;
 	}
 }
 
 
 .teaser--medium {
 	.header {
-		font-size: 30px;
+		font-size: 1.875rem;
 	}
 	&.teaser--img-left,
-	&.teaser--img-left {
+	&.teaser--img-right {
 		.teaser-img {
-			max-width: 320px;
+			max-width: 20rem;
 		}
 	}
 }
-
-
-
-
 
 
 

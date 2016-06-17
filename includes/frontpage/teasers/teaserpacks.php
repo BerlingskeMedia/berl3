@@ -21,8 +21,10 @@
 				$relatedTrumpet = true;
 				$showRelatedCategory = true;
 				$relatedCategory = 'Business.dk';
-				
-
+				$relatedTeaserLabel = 'red';
+				$relatedLabelText = '<i class="bicon-record"></i> Live';
+				$teaserLabel = 'red';
+				$labelText = '<i class="bicon-record"></i> Live';
 				include('includes/frontpage/teasers/teaser-related.php'); 
 			?>
 
@@ -42,7 +44,8 @@
 				
 				$showRelatedPaywall = true;
 				$relatedTrumpet = true;
-
+				$teaserLabel = 'red';
+				$labelText = '<i class="bicon-record"></i> Live';
 
 
 				include('includes/frontpage/teasers/teaser-related.php'); 
@@ -69,7 +72,6 @@
 				$relatedImgRatio = '3:2';
 				$relatedImgSrc = '/landscape';
 				$showRelatedSummary = true;
-				
 				$showRelatedPaywall = true;
 				$relatedTrumpet = true;
 				$showRelatedCategory = true;
@@ -88,7 +90,6 @@
 				$relatedImgRatio = '3:2';
 				$relatedImgSrc = '/landscape';
 				$showRelatedSummary = false;
-				
 				$showRelatedPaywall = true;
 				$relatedTrumpet = true;
 				$showRelatedCategory = true;
@@ -107,7 +108,6 @@
 				$relatedImgRatio = '3:2';
 				$relatedImgSrc = '/landscape';
 				$showRelatedSummary = false;
-				
 				$showRelatedPaywall = true;
 				$relatedTrumpet = true;
 
@@ -135,7 +135,6 @@
 				$relatedImgRatio = '3:2';
 				$relatedImgSrc = '/landscape';
 				$showRelatedSummary = true;
-				
 				$showRelatedPaywall = true;
 				$relatedTrumpet = true;
 
@@ -151,7 +150,6 @@
 				$relatedImgRatio = '3:2';
 				$relatedImgSrc = '/landscape';
 				$showRelatedSummary = true;
-				
 				$showRelatedPaywall = true;
 				$relatedTrumpet = true;
 
@@ -174,7 +172,6 @@
 				$relatedImgRatio = '3:2';
 				$relatedImgSrc = '/landscape';
 				$showRelatedSummary = false;
-				
 				$showRelatedPaywall = true;
 				$relatedTrumpet = true;
 
@@ -202,7 +199,6 @@
 				$relatedImgRatio = '3:2';
 				$relatedImgSrc = '/landscape';
 				$showRelatedSummary = false;
-				
 				$showRelatedPaywall = true;
 				$relatedTrumpet = true;
 
@@ -222,7 +218,6 @@
 				$relatedImgRatio = '3:2';
 				$relatedImgSrc = '/landscape';
 				$showRelatedSummary = false;
-				
 				$showRelatedPaywall = true;
 				$relatedTrumpet = true;
 
@@ -250,7 +245,6 @@
 				$relatedImgRatio = '3:2';
 				$relatedImgSrc = '/landscape';
 				$showRelatedSummary = false;
-				
 				$showRelatedPaywall = true;
 				$relatedTrumpet = true;
 
@@ -266,7 +260,6 @@
 				$relatedImgRatio = '1:1';
 				$relatedImgSrc = '/!author';
 				$showRelatedSummary = false;
-				
 				$showRelatedPaywall = true;
 				$relatedTrumpet = true;
 
@@ -287,7 +280,6 @@
 				$relatedImgRatio = '3:2';
 				$relatedImgSrc = '/landscape';
 				$showRelatedSummary = false;
-				
 				$showRelatedPaywall = true;
 				$relatedTrumpet = true;
 
@@ -319,7 +311,6 @@
 				$relatedImgRatio = '3:2';
 				$relatedImgSrc = '/landscape';
 				$showRelatedSummary = true;
-				
 				$showRelatedPaywall = true;
 				$relatedTrumpet = true;
 
@@ -351,7 +342,6 @@
 				$relatedImgRatio = '3:2';
 				$relatedImgSrc = '/landscape';
 				$showRelatedSummary = false;
-				
 				$showRelatedPaywall = true;
 				$relatedTrumpet = false;
 
