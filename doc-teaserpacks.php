@@ -74,7 +74,7 @@ if(isset($_GET["business"])) {
 			$teaserPack = '1';
 			$showTrumpet = 'Teaser pack 1';
 
-			include('includes/teaser-2.php') ?>
+			include('includes/frontpage/teasers/teaser.php') ?>
 
 			</div>
 		</div>
@@ -106,7 +106,7 @@ if(isset($_GET["business"])) {
 
 			$showTrumpet = 'Teaser Pack 2';
 
-			include('includes/teaser-2.php') ?>
+			include('includes/frontpage/teasers/teaser.php') ?>
 			
 		</div>
 	</div>
@@ -138,7 +138,7 @@ if(isset($_GET["business"])) {
 			$teaserPack = '3';
 			$showTrumpet = 'Teaser Pack 3';
 
-			include('includes/teaser-2.php') ?>
+			include('includes/frontpage/teasers/teaser.php') ?>
 			
 		</div>
 	</div>
@@ -170,7 +170,7 @@ if(isset($_GET["business"])) {
 			$teaserPack = '4';
 			$showTrumpet = 'Teaser Pack 4';
 
-			include('includes/teaser-2.php') ?>
+			include('includes/frontpage/teasers/teaser.php') ?>
 			
 		</div>
 	</div>
@@ -203,7 +203,7 @@ if(isset($_GET["business"])) {
 
 			$showTrumpet = 'Momssvindel';
 
-			include('includes/teaser-2.php') ?>
+			include('includes/frontpage/teasers/teaser.php') ?>
 			
 		</div>
 	</div>
