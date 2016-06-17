@@ -30,7 +30,7 @@ if(isset($_GET["topLG"])) {
 					$labelText = '<i class="bicon-record"></i> Live';
 					$labelText = 'Opdateres';
 					// $labelText = 'Breaking';
-					$teaserPack = '5';
+					$teaserPack = '1';
 					// $teaserPack = '3';
 
 					include('includes/frontpage/teasers/teaser.php') ?>			
