@@ -21,7 +21,7 @@
 					$showRelatedimg = false;
 					$showAuthor = true;
 
-					include('includes/teaser-2.php') ?>
+					include('includes/frontpage/teasers/teaser.php') ?>
 			</div>					
 			
 				

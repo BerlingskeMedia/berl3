@@ -28,11 +28,12 @@ if(isset($_GET["topLG"])) {
 					$showCategory = false;
 					$teaserLabel = 'red';
 					$labelText = '<i class="bicon-record"></i> Live';
+					$labelText = 'Opdateres';
 					// $labelText = 'Breaking';
 					$teaserPack = '5';
 					// $teaserPack = '3';
 
-					include('includes/teaser-2.php') ?>			
+					include('includes/frontpage/teasers/teaser.php') ?>			
 				</div>
 			</div>
 		</div>
@@ -57,7 +58,7 @@ if(isset($_GET["topLG"])) {
 					$labelText = 'Terror i Bruxelles';
 					$teaserLink = 'tpl-article.php?event=breaking';
 					$teaserPack = '1';
-					include('includes/teaser-2.php') ?>			
+					include('includes/frontpage/teasers/teaser.php') ?>			
 				</div>
 			
 		<?php endif; ?>
@@ -105,7 +106,7 @@ if(isset($_GET["topLG"])) {
 					// $teaserPack = '5';
 					$showTrumpet = true;
 
-					include('includes/teaser-2.php') ?>
+					include('includes/frontpage/teasers/teaser.php') ?>
 
 					<?php
 					$imgW='920'; 
@@ -122,7 +123,7 @@ if(isset($_GET["topLG"])) {
 					$showTrumpet = true;
 					$showPaywall = true;
 
-					include('includes/teaser-2.php') ?>
+					include('includes/frontpage/teasers/teaser.php') ?>
 
 					<?php
 					$imgW='920'; 
@@ -140,7 +141,7 @@ if(isset($_GET["topLG"])) {
 					$showTrumpet = true;
 					$showPaywall = true;
 
-					include('includes/teaser-2.php') ?>
+					include('includes/frontpage/teasers/teaser.php') ?>
 
 					<?php
 					$imgW='220'; 
@@ -156,7 +157,7 @@ if(isset($_GET["topLG"])) {
 					$teaserLabel = false;
 					$teaserAd = true;
 
-					include('includes/teaser-2.php') ?>
+					include('includes/frontpage/teasers/teaser.php') ?>
 
 					
 					<?php
@@ -171,7 +172,7 @@ if(isset($_GET["topLG"])) {
 					$showCategory = false;
 					$teaserLabel = false;
 
-					include('includes/teaser-2.php') ?>
+					include('includes/frontpage/teasers/teaser.php') ?>
 
 					<?php
 					$imgW='220'; 
@@ -187,7 +188,7 @@ if(isset($_GET["topLG"])) {
 					$category = 'Business.dk';
 					$teaserLabel = false;
 
-					include('includes/teaser-2.php') ?>
+					include('includes/frontpage/teasers/teaser.php') ?>
 					
 					<?php
 					$imgW='220'; 
@@ -203,7 +204,7 @@ if(isset($_GET["topLG"])) {
 					$teaserLabel = false;
 					$teaserPack = false;
 
-					include('includes/teaser-2.php') ?>
+					include('includes/frontpage/teasers/teaser.php') ?>
 
 					<?php
 					$imgW='920'; 
@@ -218,7 +219,7 @@ if(isset($_GET["topLG"])) {
 					$category = 'Business.dk';
 					$teaserLabel = false;
 
-					include('includes/teaser-2.php') ?>
+					include('includes/frontpage/teasers/teaser.php') ?>
 
 					<?php
 					$imgW='920'; 
@@ -233,7 +234,7 @@ if(isset($_GET["topLG"])) {
 					$teaserLabel = false;
 					$showAuthor = true;
 
-					include('includes/teaser-2.php') ?>
+					include('includes/frontpage/teasers/teaser.php') ?>
 
 					
 

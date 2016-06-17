@@ -25,7 +25,7 @@
 				$showPaywall = true;
 				$teaserLink = 'tpl-article-longread.php';
 
-				include('includes/teaser-2.php') ?>
+				include('includes/frontpage/teasers/teaser.php') ?>
 
 				
 			</div>
@@ -48,7 +48,7 @@
 				$showPaywall = true;
 				$teaserLink = 'tpl-article-longread.php';
 
-				include('includes/teaser-2.php') ?>
+				include('includes/frontpage/teasers/teaser.php') ?>
 			</div>
 			<? endwhile ?>
 		</div>

@@ -26,7 +26,7 @@
 				$showComments = true;
 				$showTrumpet = 'Den politiske Puls';
 				$imgSrc = '/!b-kommentatorer';
-				include('includes/teaser-2.php') ?>
+				include('includes/frontpage/teasers/teaser.php') ?>
 		</div>
 		<? endwhile ?>
 		

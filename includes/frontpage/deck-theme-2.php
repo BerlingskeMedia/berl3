@@ -52,7 +52,7 @@
 							$showCategory = false;
 							$teaserLabel = false;
 
-							include('includes/teaser-2.php') ?>
+							include('includes/frontpage/teasers/teaser.php') ?>
 					</div>					
 					
 						<div class="col-xl-3 ">
@@ -70,7 +70,7 @@
 							$teaserLabel = false;
 							$showRating = true;
 
-							include('includes/teaser-2.php') ?>
+							include('includes/frontpage/teasers/teaser.php') ?>
 						</div>
 
 						<div class="col-xl-3">
@@ -86,7 +86,7 @@
 							$showCategory = false;
 							$teaserLabel = false;
 
-							include('includes/teaser-2.php') ?>
+							include('includes/frontpage/teasers/teaser.php') ?>
 						</div>
 					
 				</div>

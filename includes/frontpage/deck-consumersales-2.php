@@ -32,7 +32,7 @@
 							$showPrice = true;
 							
 
-							include('includes/teaser-2.php') ?>
+							include('includes/frontpage/teasers/teaser.php') ?>
 					</div>
 				</div>
 				
@@ -58,7 +58,7 @@
 							$showPrice = true;
 
 
-							include('includes/teaser-2.php') ?>
+							include('includes/frontpage/teasers/teaser.php') ?>
 
 					</div>
 
@@ -81,7 +81,7 @@
 							$summarySrc = 'consumersales-subtitle';
 							$showPrice = true;
 
-							include('includes/teaser-2.php') ?>
+							include('includes/frontpage/teasers/teaser.php') ?>
 
 					</div>
 				</div>
@@ -104,7 +104,7 @@
 							$showComments = false;
 							$showPrice = true;
 
-							include('includes/teaser-2.php') ?>
+							include('includes/frontpage/teasers/teaser.php') ?>
 					</div>
 				</div>
 			</div>

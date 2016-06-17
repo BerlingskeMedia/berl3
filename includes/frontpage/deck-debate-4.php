@@ -26,7 +26,7 @@
 					$showCategory = true;
 					$showComments = true;
 					$imgSrc = '/!b-tilstregen';
-					include('includes/teaser-2.php') ?>
+					include('includes/frontpage/teasers/teaser.php') ?>
 			</div>
 			<?php endwhile; ?>
 
@@ -43,7 +43,7 @@
 					$showCategory = true;
 					$showComments = true;
 					$imgSrc = '/!b-tilstregen';
-					include('includes/teaser-2.php') ?>
+					include('includes/frontpage/teasers/teaser.php') ?>
 			</div>
 			<?php endwhile; ?>
 			

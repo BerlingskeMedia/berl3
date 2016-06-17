@@ -89,7 +89,7 @@ if(!$summarySrc) {
 							<span class="teaser-tools">
 
 							<?php if($showPaywall) : ?>
-								 <span class="subscriber-notice"><i class="subscriber-icon"></i> <em>Abonnement</em></span>
+								 <span class="subscriber-notice"><em>Abonnement</em></span>
 							<?php endif; ?>
 							</span>
 					<?php endif; ?>
@@ -131,7 +131,7 @@ if(!$summarySrc) {
 						
 						<?php if($showPaywall): ?>
 							<? if (dumb_luck("100%")): ?>
-								 <span class="subscriber-notice"><i class="subscriber-icon"></i> <em>Abonnement</em></span>
+								 <span class="subscriber-notice"><em>Abonnement</em></span>
 							<? endif ?> 
 						<?php endif; ?>
 
@@ -143,7 +143,7 @@ if(!$summarySrc) {
 					<?php if(!$showSummary) : ?>
 
 						<?php if($showPaywall) : ?>
-							<span class="subscriber-notice"><i class="subscriber-icon"></i> <em>Abonnement</em></span>
+							<span class="subscriber-notice"><em>Abonnement</em></span>
 						<?php endif; ?>
 
 					<?php endif; ?>

@@ -34,7 +34,7 @@
 						<?php if( $showRelatedPaywall): ?>
 							<span class="teaser-tools">
 							<?php if ($showRelatedPaywall): ?>
-								 <span class="subscriber-notice"><i class="subscriber-icon"></i> <em>Abonnement</em></span>
+								 <span class="subscriber-notice"><em>Abonnement</em></span>
 							<?php endif; ?>
 							</span>
 						<?php endif; ?>
@@ -59,7 +59,7 @@
 							<span class="teaser-tools">
 								
 							<?php if ($showRelatedPaywall): ?>
-								<span class="subscriber-notice"><i class="subscriber-icon"></i> <em>Abonnement</em></span>
+								<span class="subscriber-notice"><em>Abonnement</em></span>
 							<?php endif; ?>
 							</span>
 					</div>

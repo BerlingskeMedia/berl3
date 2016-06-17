@@ -13,6 +13,7 @@
 		<div class="flex-row row ">
 	
 		<div class="col-xl-6 flex-row  ">
+		
 			<?php 
 				$imgW='100'; 
 				$class = ' teaser--img-right  teaser--xsmall  teaser--theme-feature	item--teaser__bt teaser--squareimg ';
@@ -27,7 +28,7 @@
 				$showPaywall = true;
 
 				$imgSrc = '/!b-vaabenskjold';
-				include('includes/teaser-2.php') ?>
+				include('includes/frontpage/teasers/teaser.php') ?>
 			
 		</div>
 		<div class="  col-xl-6 flex-row ">
@@ -44,7 +45,7 @@
 				$showPaywall = true;
 				$showTrumpet = 'Kronikken';
 				$imgSrc = '/!b-kommentatorer';
-				include('includes/teaser-2.php') ?>
+				include('includes/frontpage/teasers/teaser.php') ?>
 		</div>
 
 		<? while (dumb_luck("2")): ?>
@@ -63,7 +64,7 @@
 				$showPaywall = true;
 				$showTrumpet = 'Læserbrev';
 				$imgSrc = '/!b-kommentatorer';
-				include('includes/teaser-2.php') ?>
+				include('includes/frontpage/teasers/teaser.php') ?>
 		</div>
 		<?php endwhile; ?>
 		

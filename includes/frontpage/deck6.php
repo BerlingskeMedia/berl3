@@ -45,7 +45,7 @@ if(isset($_GET["topLG"])) {
 					$showComments = true;
 					$showPaywall = true;
 
-					include('includes/teaser-2.php') ?>
+					include('includes/frontpage/teasers/teaser.php') ?>
 
 					<?php
 					$imgW='920'; 
@@ -61,7 +61,7 @@ if(isset($_GET["topLG"])) {
 					$showTrumpet = 'Jeg er en forrider';
 					$showComments = true;
 
-					include('includes/teaser-2.php') ?>
+					include('includes/frontpage/teasers/teaser.php') ?>
 
 					
 
@@ -85,7 +85,7 @@ if(isset($_GET["topLG"])) {
 					$showTrumpet = 'Børsnotering';
 					$showComments = true;
 
-					include('includes/teaser-2.php') ?>
+					include('includes/frontpage/teasers/teaser.php') ?>
 					
 					<?php
 					$imgW='940'; 
@@ -101,7 +101,7 @@ if(isset($_GET["topLG"])) {
 					$teaserPack = false;
 					$showComments = true;
 
-					include('includes/teaser-2.php') ?>
+					include('includes/frontpage/teasers/teaser.php') ?>
 					
 					<? if (dumb_luck("50%")) {
 						$imgW='220'; 
@@ -122,7 +122,7 @@ if(isset($_GET["topLG"])) {
 					$teaserLabel = false;
 					$teaserAd = true;
 
-					include('includes/teaser-2.php') ?>
+					include('includes/frontpage/teasers/teaser.php') ?>
 
 
 					
@@ -141,7 +141,7 @@ if(isset($_GET["topLG"])) {
 					$showComments = true;
 					$showPaywall = true;
 
-					include('includes/teaser-2.php') ?>
+					include('includes/frontpage/teasers/teaser.php') ?>
 					
 					
 					<?php if($showBflow): ?>
@@ -159,7 +159,7 @@ if(isset($_GET["topLG"])) {
 					$teaserLabel = false;
 					$showComments = true;
 
-					include('includes/teaser-2.php') ?>
+					include('includes/frontpage/teasers/teaser.php') ?>
 
 
 					<?php
@@ -175,7 +175,7 @@ if(isset($_GET["topLG"])) {
 					$teaserLabel = false;
 					$showComments = true;
 
-					include('includes/teaser-2.php') ?>
+					include('includes/frontpage/teasers/teaser.php') ?>
 
 					<?php
 					$imgW='920'; 
@@ -191,7 +191,7 @@ if(isset($_GET["topLG"])) {
 					$showComments = true;
 					$showAuthor = true;
 
-					include('includes/teaser-2.php') ?>
+					include('includes/frontpage/teasers/teaser.php') ?>
 
 				<?php endif; ?>
 				</div>
