@@ -38,7 +38,7 @@
 						<?php if( $showRelatedPaywall): ?>
 							<span class="teaser-tools">
 							<?php if ($showRelatedPaywall): ?>
-								 <span class="subscriber-notice"><em>Abonnement</em></span>
+								 <span class="subscriber-notice"><span class="pipe"></span>Abonnement</span>
 							<?php endif; ?>
 							</span>
 						<?php endif; ?>
@@ -53,10 +53,10 @@
 					<div class="teaser-summary">
 						
 						<?php include('includes/frontpage/teasers/labels.php'); ?>
-						
+
 						<?php if($showRelatedCategory): ?>
 							<span class="teaser--category">
-								<?php if($relatedCategory){echo $relatedCategory;} else {  dummy("text@b-cat"); } ?> <i class="icon-external"></i> 
+								<?php  echo $relatedCategory; ?>  
 							</span>	
 						<?php endif; ?>
 
@@ -67,7 +67,7 @@
 							<span class="teaser-tools">
 								
 							<?php if ($showRelatedPaywall): ?>
-								<span class="subscriber-notice"><em>Abonnement</em></span>
+								<span class="subscriber-notice"><span class="pipe"></span>Abonnement</span>
 							<?php endif; ?>
 							</span>
 					</div>
@@ -91,6 +91,5 @@ $showRelatedPaywall = false;
 $relatedTrumpet = false;
 $showRelatedCategory = false;
 $relatedCategory = 'Business.dk';
-$relatedTeaserLabel = false;
-$labelText = false;
+
 ?>

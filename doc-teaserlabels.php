@@ -2,24 +2,6 @@
 
 <?php include('includes/_variables.php') ;?>
 
-<?php 
-if(isset($_GET["wide"])) {
-	$showWide = true;
-} 
-
-if(isset($_GET["well"])) {
-	$showWell = true;
-} 
-if(isset($_GET["oneliner"])) {
-	$showOneliner = true;
-} 
-if(isset($_GET["top"])) {
-	$showTop = true;
-}
-if(isset($_GET["business"])) {
-	$siteBusiness = true;
-}
-?>
 
 
 <?php 
@@ -36,9 +18,17 @@ if(isset($_GET["business"])) {
 </head>
 <body class="tpl-front <?php if($siteBusiness): ?>site-business<?php endif; ?> show-site-search">
 
+<?php 
 
+if (isset($_GET['labelText'])) {
+	$labelText = $_GET['labelText'];
+}
 
+if (isset($_GET['labelColor'])) {
+	$labelColor = $_GET['labelColor'];
+}
 
+?>
 <style>
 	.row {margin-bottom: 6rem;}
 </style>
@@ -46,14 +36,16 @@ if(isset($_GET["business"])) {
 <div class="container">
 	
 	<div class="row">
-		
+		<div class="col-xs-12">
+			<a href="?labelText=Breaking&labelColor=yellow">Breaking</a>
+			<a href="?labelText=<i%20class=bicon-record></i>%20Live&labelColor=red">Live</a>
+		</div>
 		<div class="col-xs-2 " >
-			<h3>Teaser pack 1</h3>
+			<h3>Teaser big</h3>
 		</div>
 		
 		<div class="col-xs-8 " style="width:780px">
 
-			
 
 			<?php
 			$imgW='920'; 
@@ -62,17 +54,10 @@ if(isset($_GET["business"])) {
 			$imgRatio = '16:9';
 			$imgSrc = '/landscape';
 			$showSummary = true;
-			$showComments = true;
-			$showRelated = false;
 			$showDate = false;
 			$showCategory = false;
 			$showPaywall = true;
-			$showComments = true;
-			$teaserPack = '1';
-			$showTrumpet = 'Teaser pack 1';
-			$teaserLabel = 'red';
-			$labelText = '<i class="bicon-record"></i> Live';
-
+			$teaserPack = false;
 			include('includes/frontpage/teasers/teaser.php') ?>
 
 			</div>
@@ -80,32 +65,24 @@ if(isset($_GET["business"])) {
 	<div class="row">
 
 		<div class="col-xs-2 " >
-			<h3>Teaser pack 2</h3>
+			<h3>Teaser small 1</h3>
 		</div>
 
 		<div class="col-xs-8 " style="width:780px">
 
 			<?php
-			$imgW='920'; 
+			$imgW='320'; 
 			$showImg = '1';
-			$class = ' teaser--img-wide item--teaser teaser--big ';
+			$class = ' teaser--img-left item--teaser teaser--small';
 			$imgRatio = '16:9';
 			$imgSrc = '/landscape';
 			$showSummary = true;
-			$showComments = true;
-			$showRelated = false;
 			$showDate = false;
 			$showCategory = false;
 			$showPaywall = true;
-			$showComments = true;
-			$teaserLabel = 'red';
-			$labelText = '<i class="bicon-record"></i> Live';
-			// $labelText = 'Terror i Bruxelles';
-			//$teaserLabel = 'breaking';
-			$teaserPack = '2';
-
-			$showTrumpet = 'Teaser Pack 2';
-
+			$teaserPack = false;
+			$showTrumpet = false;
+			
 			include('includes/frontpage/teasers/teaser.php') ?>
 			
 		</div>
@@ -114,94 +91,24 @@ if(isset($_GET["business"])) {
 	<div class="row">
 
 		<div class="col-xs-2 " >
-			<h3>Teaser pack 3</h3>
+			<h3>Teaser small 2</h3>
 		</div>
 
 		<div class="col-xs-8 " style="width:780px">
 
 			<?php
-			$imgW='920'; 
+			$imgW='320'; 
 			$showImg = '1';
-			$class = ' teaser--img-wide item--teaser teaser--big ';
+			$class = ' teaser--img-right item--teaser teaser--small';
 			$imgRatio = '16:9';
 			$imgSrc = '/landscape';
 			$showSummary = true;
-			$showComments = true;
-			$showRelated = false;
+			$showRelated = true;
 			$showDate = false;
 			$showCategory = false;
 			$showPaywall = true;
-			$showComments = true;
-			$teaserLabel = 'yellow';
-			// $labelText = 'Terror i Bruxelles';
-			//$teaserLabel = 'breaking';
-			$teaserPack = '3';
-			$showTrumpet = 'Teaser Pack 3';
-
-			include('includes/frontpage/teasers/teaser.php') ?>
+			$teaserPack = false;
 			
-		</div>
-	</div>
-
-	<div class="row">
-
-		<div class="col-xs-2 " >
-			<h3>Teaser pack 4</h3>
-		</div>
-
-		<div class="col-xs-8 " style="width:780px">
-
-			<?php
-			$imgW='920'; 
-			$showImg = '1';
-			$class = ' teaser--img-wide item--teaser teaser--big ';
-			$imgRatio = '16:9';
-			$imgSrc = '/landscape';
-			$showSummary = true;
-			$showComments = true;
-			$showRelated = false;
-			$showDate = false;
-			$showCategory = false;
-			$showPaywall = true;
-			$showComments = true;
-			$teaserLabel = 'yellow';
-			// $labelText = 'Terror i Bruxelles';
-			//$teaserLabel = 'breaking';
-			$teaserPack = '4';
-			$showTrumpet = 'Teaser Pack 4';
-
-			include('includes/frontpage/teasers/teaser.php') ?>
-			
-		</div>
-	</div>
-
-	<div class="row">
-
-		<div class="col-xs-2 " >
-			<h3>Teaser pack 5</h3>
-		</div>
-
-		<div class="col-xs-8 " style="width:780px">
-
-			<?php
-			$imgW='920'; 
-			$showImg = '1';
-			$class = ' teaser--img-wide item--teaser teaser--big ';
-			$imgRatio = '16:9';
-			$imgSrc = '/landscape';
-			$showSummary = true;
-			$showComments = true;
-			$showRelated = false;
-			$showDate = false;
-			$showCategory = false;
-			$showPaywall = true;
-			$showComments = true;
-			$teaserLabel = 'yellow';
-			// $labelText = 'Terror i Bruxelles';
-			//$teaserLabel = 'breaking';
-			$teaserPack = '5';
-
-			$showTrumpet = 'Momssvindel';
 
 			include('includes/frontpage/teasers/teaser.php') ?>
 			
@@ -212,71 +119,127 @@ if(isset($_GET["business"])) {
 	<div class="row">
 
 		<div class="col-xs-2 " >
-			<h3>Teaser pack 6</h3>
+			<h3>Teaser Related related-large</h3>
 		</div>
 
 		<div class="col-xs-8 " style="width:780px">
-
-			<?php
-			$imgW='920'; 
-			$showImg = '1';
-			$class = ' teaser--img-left item--teaser teaser--medium ';
-			$imgRatio = '16:9';
-			$imgSrc = '/landscape';
-			$showSummary = true;
-			$showComments = true;
-			$showRelated = false;
-			$showDate = false;
-			$showCategory = false;
-			$showPaywall = true;
-			$showComments = true;
-			$teaserLabel = 'yellow';
-			// $labelText = 'Terror i Bruxelles';
-			//$teaserLabel = 'breaking';
-			$teaserPack = '6';
-
-			$showTrumpet = 'Momssvindel';
-
-			include('includes/frontpage/teasers/teaser.php') ?>
-			
+			<div class="teaser-2">
+				<div class="teaser--pack">
+					<ul class="teaser--pack--list">
+						<li class="col-xs-12">
+						
+						<?php 
+						// ONELINERS
+						$relatedCount = '1';
+						$relatedGridClass = 'col-xs-12';
+						$relatedTeaserClass = 'item--teaser related--image teaser--img-left related--large ';
+						$relatedShowImg = true;
+						$relatedImgSize = '160';
+						$relatedImgRatio = '3:2';
+						$relatedImgSrc = '/landscape';
+						$showRelatedSummary = true;
+						$showRelatedPaywall = true;
+						$relatedTrumpet = false;
+						$showRelatedCategory = true;
+						
+						
+						include('includes/frontpage/teasers/teaser-related.php'); 
+						?>		
+						</li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</div>
+
+
 
 	<div class="row">
 
 		<div class="col-xs-2 " >
-			<h3>Teaser pack 7</h3>
+			<h3>Teaser Related related-small</h3>
 		</div>
 
 		<div class="col-xs-8 " style="width:780px">
-
-			<?php
-			$imgW='920'; 
-			$showImg = '1';
-			$class = ' teaser--img-right item--teaser teaser--medium ';
-			$imgRatio = '16:9';
-			$imgSrc = '/landscape';
-			$showSummary = true;
-			$showComments = true;
-			$showRelated = false;
-			$showDate = false;
-			$showCategory = false;
-			$showPaywall = true;
-			$showComments = true;
-			$teaserLabel = 'yellow';
-			// $labelText = 'Terror i Bruxelles';
-			//$teaserLabel = 'breaking';
-			$teaserPack = '7';
-
-			$showTrumpet = 'Momssvindel';
-
-			include('includes/frontpage/teasers/teaser.php') ?>
-			
+			<div class="teaser-2">
+				<div class="teaser--pack">
+					<ul class="teaser--pack--list">
+						<li class="col-xs-12">
+						
+						<?php 
+						// ONELINERS
+						$relatedCount = '1';
+						$relatedGridClass = 'col-xs-6';
+						$relatedTeaserClass = 'item--teaser related--image teaser--img-left related--small ';
+						$relatedShowImg = true;
+						$relatedImgSize = '160';
+						$relatedImgRatio = '3:2';
+						$relatedImgSrc = '/landscape';
+						$showRelatedSummary = false;
+						$showRelatedPaywall = true;
+						$relatedTrumpet = true;
+						$showRelatedCategory = false;
+						
+						// $relatedlabelColor = 'red';
+						include('includes/frontpage/teasers/teaser-related.php'); 
+						?>		
+						</li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</div>
+
+
+
+	
+	<div class="row">
+
+		<div class="col-xs-2 " >
+			<h3>Teaser Related related-xsmall</h3>
+		</div>
+
+		<div class="col-xs-8 " style="width:780px">
+			<div class="teaser-2">
+				<div class="teaser--pack">
+					<ul class="teaser--pack--list">
+						<li class="col-xs-12">
+						
+						<?php 
+							// ONELINERS
+							$relatedCount = '1';
+							$relatedGridClass = 'col-xs-12';
+							$relatedTeaserClass = 'item--teaser  related--xsmall';
+							$relatedShowImg = false;
+							$relatedImgSize = '160';
+							$relatedImgRatio = '3:2';
+							$relatedImgSrc = '/landscape';
+							$showRelatedSummary = false;
+							$showRelatedPaywall = true;
+							$relatedTrumpet = true;
+							include('includes/frontpage/teasers/teaser-related.php'); 
+						?>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
 
 
 </div>
+
+
+
+
+
+			
+			
+
+
+
+
 
 
 

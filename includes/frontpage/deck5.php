@@ -161,7 +161,7 @@ if(isset($_GET["topLG"])) {
 
 					
 					<?php
-					$imgW='920'; 
+					$imgW='320'; 
 					$showImg = '1';
 					$class = 'teaser--img-left teaser--small item--teaser__bt ';
 					$imgRatio = '16:9';
@@ -175,7 +175,6 @@ if(isset($_GET["topLG"])) {
 					include('includes/frontpage/teasers/teaser.php') ?>
 
 					<?php
-					$imgW='220'; 
 					$imgW='220'; 
 					$showImg = '1';
 					$class = 'teaser--img-right  teaser--small teaser--theme-business item--teaser__bt';
@@ -191,7 +190,6 @@ if(isset($_GET["topLG"])) {
 					include('includes/frontpage/teasers/teaser.php') ?>
 					
 					<?php
-					$imgW='220'; 
 					$imgW='220'; 
 					$showImg = '1';
 					$class = 'teaser--img-right  teaser--small item--teaser__bt';
@@ -222,7 +220,7 @@ if(isset($_GET["topLG"])) {
 					include('includes/frontpage/teasers/teaser.php') ?>
 
 					<?php
-					$imgW='920'; 
+					$imgW='320'; 
 					$showImg = '1';
 					$class = ' teaser--img-right teaser--sm item--teaser__bt teaser--theme-feature teaser--small' ;
 					$imgRatio = '1:1';

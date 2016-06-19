@@ -37,7 +37,7 @@ if(!$summarySrc) {
 
 				<?php if ($showImg  && !$smallImg): ?>
 					<figure class="teaser-img">
-						<?php if($teaserLabel && !preg_match('/teaser--xlarge/',$class)): ?>
+						<?php if($labelColor && !preg_match('/teaser--xlarge/',$class)): ?>
 							<?php include('includes/frontpage/teasers/labels.php'); ?>
 						<?php endif; ?>
 						<img src="<? dummy("image". $imgSrc ."@". $imgW ."x,". $imgRatio ."") ?>" width="" height="" alt="[ARTICLE HEADER]" class="img" />
@@ -78,7 +78,7 @@ if(!$summarySrc) {
 					</div>
 				<?php endif; ?>
 
-				<?php if($teaserLabel && preg_match('/teaser--xlarge/',$class)): ?>
+				<?php if($labelColor && preg_match('/teaser--xlarge/',$class)): ?>
 					<?php include('includes/frontpage/teasers/labels.php'); ?>
 				<?php endif; ?>
 
@@ -89,7 +89,7 @@ if(!$summarySrc) {
 							<span class="teaser-tools">
 
 							<?php if($showPaywall) : ?>
-								 <span class="subscriber-notice"><em>Abonnement</em></span>
+								 <span class="subscriber-notice"><span class="pipe"></span>Abonnement</span>
 							<?php endif; ?>
 							</span>
 					<?php endif; ?>
@@ -131,7 +131,7 @@ if(!$summarySrc) {
 						
 						<?php if($showPaywall): ?>
 							<? if (dumb_luck("100%")): ?>
-								 <span class="subscriber-notice"><em>Abonnement</em></span>
+								 <span class="subscriber-notice"><span class="pipe"></span>Abonnement</span>
 							<? endif ?> 
 						<?php endif; ?>
 
@@ -143,7 +143,7 @@ if(!$summarySrc) {
 					<?php if(!$showSummary) : ?>
 
 						<?php if($showPaywall) : ?>
-							<span class="subscriber-notice"><em>Abonnement</em></span>
+							<span class="subscriber-notice"><span class="pipe"></span>Abonnement</span>
 						<?php endif; ?>
 
 					<?php endif; ?>
@@ -185,7 +185,7 @@ $teaserTrumpet = false;
 $relatedImg = false;
 $showRelatedimg = false;
 $showRating = false;
-$teaserLabel = false;
+
 $teaserAd = false;
 $teaserPack = false;
 $teaserLink = false;

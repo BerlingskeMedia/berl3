@@ -65,6 +65,9 @@
 		.teaser-tools {
 			display: inline;
 		}
+		/*.pipe {
+			display: none;
+		}*/
 	}
 	.teaser-img {
 		position: relative;
@@ -420,9 +423,7 @@
 		font-style: normal;
 		vertical-align: middle;
 	}
-	&:before {
-		content: ' | ';
-	}
+	
 
 	.subscriber-icon {	
 		// @extend [class^="bicon-"];
@@ -879,7 +880,13 @@
 }
 
 .pipe {
-	padding: 0 .2rem;
-	color: #999;
+	&:before {
+		content: ' | ';
+	}
+}
+.header-related {
+	.pipe {
+		display: none;
+	}
 }
 
