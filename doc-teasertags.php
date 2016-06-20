@@ -50,6 +50,11 @@ if (isset($_GET['labelType'])) {
 	</div>
 	
 	<div class="row">
+		<div class="col-xs-12">
+			<h2>Teasers</h2>
+		</div>
+	</div>
+	<div class="row">
 		<div class="col-xs-2 " >
 			<h3>Teaser big default</h3>
 		</div>
@@ -76,7 +81,7 @@ if (isset($_GET['labelType'])) {
 
 	<div class="row">
 		<div class="col-xs-2 " >
-			<h3>Teaser big Business</h3>
+			<h3>Teaser big - Business</h3>
 		</div>
 		
 		<div class="col-xs-8 " style="width:780px">
@@ -102,7 +107,7 @@ if (isset($_GET['labelType'])) {
 	<div class="row">
 
 		<div class="col-xs-2 " >
-			<h3>Teaser small 1</h3>
+			<h3>Teaser small img-left</h3>
 		</div>
 
 		<div class="col-xs-8 " style="width:780px">
@@ -128,7 +133,7 @@ if (isset($_GET['labelType'])) {
 	<div class="row">
 
 		<div class="col-xs-2 " >
-			<h3>Teaser small 2</h3>
+			<h3>Teaser small img-right</h3>
 		</div>
 
 		<div class="col-xs-8 " style="width:780px">
@@ -152,11 +157,41 @@ if (isset($_GET['labelType'])) {
 		</div>
 	</div>
 
-
 	<div class="row">
 
 		<div class="col-xs-2 " >
-			<h3>Teaser Related related-large</h3>
+			<h3>Teaser small img-right - Business</h3>
+		</div>
+
+		<div class="col-xs-8 " style="width:780px">
+
+			<?php
+			$imgW='320'; 
+			$showImg = '1';
+			$class = ' teaser--img-right item--teaser teaser--small teaser--theme-business';
+			$imgRatio = '16:9';
+			$imgSrc = '/landscape';
+			$showSummary = true;
+			$showDate = false;
+			$category = 'Business.dk';
+			$showPaywall = true;
+			$teaserPack = false;
+			
+
+			include('includes/frontpage/teasers/teaser.php') ?>
+			
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-12">
+			<h2>Related teasers</h2>
+		</div>
+	</div>
+	<div class="row">
+
+		<div class="col-xs-2 " >
+			<h3> related-large</h3>
 		</div>
 
 		<div class="col-xs-8 " style="width:780px">
@@ -189,12 +224,49 @@ if (isset($_GET['labelType'])) {
 		</div>
 	</div>
 
+	<div class="row">
+
+		<div class="col-xs-2 " >
+			<h3>related-large - Business</h3>
+		</div>
+
+		<div class="col-xs-8 " style="width:780px">
+			<div class="teaser-2">
+				<div class="teaser--pack">
+					<ul class="teaser--pack--list">
+						<li class="col-xs-12">
+						
+						<?php 
+						// ONELINERS
+						$relatedCount = '1';
+						$relatedGridClass = 'col-xs-12';
+						$relatedTeaserClass = 'item--teaser related--image teaser--img-left related--large teaser--theme-business';
+						$relatedShowImg = true;
+						$relatedImgSize = '160';
+						$relatedImgRatio = '3:2';
+						$relatedImgSrc = '/landscape';
+						$showRelatedSummary = true;
+						$showRelatedPaywall = true;
+						$relatedTrumpet = false;
+						$showRelatedCategory = 'Business.dk';
+						
+						
+						
+						include('includes/frontpage/teasers/teaser-related.php'); 
+						?>		
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
 
 
 	<div class="row">
 
 		<div class="col-xs-2 " >
-			<h3>Teaser Related related-small</h3>
+			<h3>related-small</h3>
 		</div>
 
 		<div class="col-xs-8 " style="width:780px">
@@ -221,6 +293,27 @@ if (isset($_GET['labelType'])) {
 						include('includes/frontpage/teasers/teaser-related.php'); 
 						?>		
 						</li>
+
+						<li class="col-xs-12">
+						
+						<?php 
+						// ONELINERS
+						$relatedCount = '1';
+						$relatedGridClass = 'col-xs-6';
+						$relatedTeaserClass = 'item--teaser related--image teaser--img-left related--small teaser--theme-business';
+						$relatedShowImg = true;
+						$relatedImgSize = '160';
+						$relatedImgRatio = '3:2';
+						$relatedImgSrc = '/landscape';
+						$showRelatedSummary = false;
+						$showRelatedPaywall = true;
+						$relatedTrumpet = false;
+						$relatedCategory = 'Business.dk';
+						
+						// $relatedlabelType = 'red';
+						include('includes/frontpage/teasers/teaser-related.php'); 
+						?>		
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -233,7 +326,7 @@ if (isset($_GET['labelType'])) {
 	<div class="row">
 
 		<div class="col-xs-2 " >
-			<h3>Teaser Related related-xsmall</h3>
+			<h3>related-xsmall</h3>
 		</div>
 
 		<div class="col-xs-8 " style="width:780px">

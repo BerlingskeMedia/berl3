@@ -60,9 +60,7 @@
 							</span>	
 						<?php endif; ?>
 
-						
-
-						<?php echo $summary ?>
+							<? dummy("text@short-teaser") ?>
 							
 							<span class="teaser-tools">
 								
