@@ -7,6 +7,28 @@
 		padding-right: 0;
 	}
 }
+.theme-dark {
+
+	.section-title {
+		&:before {
+			background-color: rgba(255,255,255,.2);
+		}
+	}
+
+	background: rgba(0,0,0,.8);
+	.inner-theme {
+		background-color: rgba(255,255,255,.1);
+		padding: $spacer;
+	}
+	.teaser--category {
+		color: #e40421;
+	}
+	.section-title,
+	.section-description {
+		color: #fff;
+	}
+}
+
 .theme-berlinale {
 
 	background: #e40421;

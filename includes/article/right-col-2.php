@@ -12,10 +12,10 @@
 			<?php 
 				$sectionClass = 'latest-news mb-05';
 				$imgRatio = '1:1';
-				$premium = false;
 				$imgSrc = false;
 				$imgW = '80';
-
+				$showComments = true;
+				$premium = true;
 				$showTime = false;
 				$showImage = true; 
 				$listClass = 'list list-time list-top-lg list-img-right';
@@ -60,6 +60,7 @@
 			$listTitle = 'Vi anbefaler';
 			$listCount = '5';
 			$sectionClass = 'latest-news clearfix';
+			$showComments = true;
 			$premium = true;
 			$imgSrc = false;
 			$imgW = '80';

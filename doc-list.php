@@ -39,7 +39,6 @@
 				$premium = true;
 				$imgSrc = false;
 				$imgW = '120';
-
 				$showComments = true;
 				$showTime = false;
 				$showImage = false; 
@@ -125,7 +124,8 @@
 				$premium = true;
 				$imgSrc = false;
 				$imgW = '120';
-
+				$showComments = false; 
+				$premium = true;
 				$showTime = false;
 				$showImage = false; 
 				$listClass = 'list list-top-lg';
@@ -139,6 +139,34 @@
 		</div>
 	</div>
 	
+
+	<div class="row flex-row mb" >
+		<div class="col-md-3 ">
+			<div class="demo-header">Comments and Premium tag</div>
+		</div>
+		<div class="col-md-3">
+			
+			
+			<?php 
+				$sectionClass = 'latest-news mb-05';
+				$imgRatio = '1:1';
+				$premium = true;
+				$imgSrc = false;
+				$imgW = '120';
+				$showComments	= true; 
+				$premium = true;
+				$showTime = true;
+				$showImage = false; 
+				$listClass = 'list list-time';
+				$listTitle = 'List title';
+				$listCount = '5';
+					
+				include('includes/list-news.php');
+			?>
+
+			
+		</div>
+	</div>
 	
 
 

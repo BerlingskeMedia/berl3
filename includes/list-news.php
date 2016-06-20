@@ -48,14 +48,14 @@ if ($listBlog) {
 				<a href="tpl-article.php" title="[ARTICLE HEADER]">
 					<? if (dumb_luck("20%")): ?><? if (dumb_luck("50%")): ?><i class="bicon-play-circled"></i> <? else: ?><i class="bicon-camera"></i> <? endif ?><? endif ?>
 					<? dummy("text@headline-b3") ?>
+					
+					<?php if($showComments): ?><span class="list-comments"><? dummy("text@number") ?> <i class="bicon-comment-inv-alt2"></i></span><?php endif;?>
+
 					<?php if($premium): ?>
 						<? if (dumb_luck("50%")): ?>
-							<span class="subscriber-notice">
-							<i class="bicon-bicon"></i>
-							</span>
+							<span class="subscriber-notice"><span class="pipe"></span>Abonnement</span>
 						<? endif ?>
 					<?php endif; ?>
-					<?php if($showComments): ?><span class="list-comments"><? dummy("text@number") ?> <i class="bicon-comment-inv-alt2"></i></span><?php endif;?>
 				</a>
 			</div>
 
@@ -76,23 +76,23 @@ if ($listBlog) {
 
 <?php 
 // Default values 
-
-$showPartner = false;
-$showComments = true; 
-$showTime = false; 
-$showTimeBlock = false; 
-$listCount = false;
-$listClass = false;
-$sectionClass = false;
-$showImage = false;
-$listDoc = false;
-$premium = false;
-$imgSrc = false;
-$listId = false;
-$showButton = false;
-$btnTxt = '';
-$footerLink = '';
-$imgW = '620';
-$imgRatio = '16:9';
-$listBlog = false;
+$premium		= true;
+$showPartner	= false;
+$showComments	= true; 
+$showTime 		= false; 
+$showTimeBlock	= false; 
+$listCount 		= false;
+$listClass 		= false;
+$sectionClass 	= false;
+$showImage 		= false;
+$listDoc 		= false;
+$premium 		= false;
+$imgSrc 		= false;
+$listId 		= false;
+$showButton 	= false;
+$btnTxt 		= '';
+$footerLink 	= '';
+$imgW 			= '620';
+$imgRatio 		= '16:9';
+$listBlog 		= false;
 ?>

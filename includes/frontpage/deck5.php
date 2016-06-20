@@ -246,16 +246,17 @@ if(isset($_GET["topLG"])) {
 		
 		
 		<?php 
-			$sectionClass = 'latest-news mb-05';
-			$imgRatio = '1:1';
-			$premium = true;
-			$imgSrc = false;
-			$imgW = '120';
-			$showTime = false;
-			$showImage = false; 
-			$listClass = 'list list-top-lg';
-			$listTitle = 'Mest læste lige nu';
-			$listCount = '5';
+			$sectionClass 	= 'latest-news mb-05';
+			$imgRatio 		= '1:1';
+			$premium 		= true;
+			$showComments 	= true;
+			$imgSrc 		= false;
+			$imgW 			= '120';
+			$showTime 		= false;
+			$showImage 		= false; 
+			$listClass 		= 'list list-top-lg';
+			$listTitle 		= 'Mest læste lige nu';
+			$listCount 		= '5';
 				
 			include('includes/list-news.php'); ?>
 
