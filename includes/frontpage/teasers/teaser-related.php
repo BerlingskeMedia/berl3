@@ -18,9 +18,9 @@
 					<?php endif ?>
 
 
-						<?php if(!$showRelatedSummary && $showRelatedCategory): ?>
+						<?php if(!$showRelatedSummary && $relatedCategory): ?>
 							<span class="teaser--category">
-								<?php if($relatedCategory){echo $relatedCategory;} else {  dummy("text@b-cat"); } ?> <i class="icon-external"></i> 
+								<?php echo $relatedCategory; ?> <i class="icon-external"></i> 
 							</span>	
 						<?php endif; ?>
 
@@ -54,7 +54,7 @@
 						
 						<?php include('includes/frontpage/teasers/labels.php'); ?>
 
-						<?php if($showRelatedCategory): ?>
+						<?php if($relatedCategory): ?>
 							<span class="teaser--category">
 								<?php  echo $relatedCategory; ?>  
 							</span>	
@@ -89,7 +89,6 @@ $showRelatedSummary = false;
 $showRelatedComments = false;
 $showRelatedPaywall = false;
 $relatedTrumpet = false;
-$showRelatedCategory = false;
-$relatedCategory = 'Business.dk';
+$relatedCategory = false;
 
 ?>

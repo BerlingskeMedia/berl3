@@ -4,17 +4,15 @@
 
 ?>
 
-<?php if($labelColor === 'yellow'): ?>
-	<span class="teaser--label-yellow">
-		<span><?php if(!$labelText): echo 'Breaking'; else: echo $labelText; endif; ?></span>
+
+
+<?php if($labelType): ?>
+	<span class="teaser--label-<?php echo $labelType ?>">
+		<span><?php echo $labelText; ?></span>
 	</span>
 <?php endif; ?>
 
-<?php if($labelColor === 'red'): ?>
-	<span class="teaser--label-red">
-		<span><?php if(!$labelText): echo '<i class="bicon-record"></i> Live'; else: echo $labelText; endif; ?></span>
-	</span>
-<?php endif; ?>
+
 
 
 <?php 

@@ -190,6 +190,19 @@ if(isset($_GET["business"])) {
 					</ul>
 				</div>
 
+				<div class="col-md-3">Tags</div>
+				
+				<div class="col-md-9">
+					<ul>
+						<li class="orange"><a href="doc-teasertags.php?labelText=Breaking&labelType=yellow">Breaking</a> </li>
+						<li class="orange"><a href="doc-teasertags.php?labelText=<i%20class=bicon-record></i>%20Live&labelType=live">Live</a> </li>
+						<li class="orange"><a href="doc-teasertags.php?labelText=Opdateres&labelType=red">To be updated</a> </li>
+						<li class="orange"><a href="doc-teasertags.php?labelText=Lige%20nu&labelType=red">Now</a> </li>
+						<li class="orange"><a href="doc-teasertags.php?labelText=Nyhed på vej&labelType=red">Topstory</a> </li>
+						<li class="orange"><a href="doc-teasertags.php?labelText=Tophistorie&labelType=blue">Coming up</a> </li>
+					</ul>
+				</div>
+
 				<div class="col-md-3">Oneliners</div>
 				<div class="col-md-9">
 					<ul>

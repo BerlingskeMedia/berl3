@@ -1,16 +1,4 @@
-<?php 
-if(isset($_GET["topSM"])) {
-	$topSM = true;
-} 
-if(isset($_GET["topMD"])) {
-	$topMD = true;
-} 
-if(isset($_GET["topLG"])) {
-	$topLG = true;
-} 
 
-	
-?>
 <div class=" deck flex-row">
 
 	
@@ -38,10 +26,8 @@ if(isset($_GET["topLG"])) {
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
-					$showRelated = false;
-					$showDate = false;
-					$showCategory = false;
-					$teaserLabel = false;
+					
+					$labelType = false;
 					$showComments = true;
 					$showPaywall = true;
 
@@ -54,21 +40,13 @@ if(isset($_GET["topLG"])) {
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
-					$showRelated = false;
-					$showDate = false;
-					$showCategory = false;
-					$teaserLabel = false;
+					
+					
+					$labelType = false;
 					$showTrumpet = 'Jeg er en forrider';
 					$showComments = true;
 
 					include('includes/frontpage/teasers/teaser.php') ?>
-
-					
-
-
-					
-					
-					
 
 					<?php
 					$imgW='220'; 
@@ -78,10 +56,9 @@ if(isset($_GET["topLG"])) {
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
-					$showRelated = false;
-					$showDate = false;
-					$showCategory = true;
-					$teaserLabel = false;
+					$category = 'Business.dk';
+					
+					$labelType = false;
 					$showTrumpet = 'Børsnotering';
 					$showComments = true;
 
@@ -94,10 +71,9 @@ if(isset($_GET["topLG"])) {
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
-					$showRelated = false;
-					$showDate = false;
-					$showCategory = false;
-					$teaserLabel = false;
+					
+					
+					$labelType = false;
 					$teaserPack = false;
 					$showComments = true;
 
@@ -116,10 +92,8 @@ if(isset($_GET["topLG"])) {
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
-					$showRelated = false;
-					$showDate = false;
-					$showCategory = false;
-					$teaserLabel = false;
+					
+					$labelType = false;
 					$teaserAd = true;
 
 					include('includes/frontpage/teasers/teaser.php') ?>
@@ -133,10 +107,8 @@ if(isset($_GET["topLG"])) {
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
-					$showRelated = true;
-					$showDate = false;
-					$showCategory = false;
-					$teaserLabel = false;
+					
+					$labelType = false;
 					$teaserPack = false;
 					$showComments = true;
 					$showPaywall = true;
@@ -153,10 +125,9 @@ if(isset($_GET["topLG"])) {
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
-					$showRelated = false;
-					$showDate = false;
-					$showCategory = false;
-					$teaserLabel = false;
+					
+					
+					$labelType = false;
 					$showComments = true;
 
 					include('includes/frontpage/teasers/teaser.php') ?>
@@ -169,10 +140,9 @@ if(isset($_GET["topLG"])) {
 					$imgRatio = '1:1';
 					$imgSrc = '/!author';
 					$showSummary = true;
-					$showRelated = false;
-					$showDate = false;
-					$showCategory = false;
-					$teaserLabel = false;
+					
+					
+					$labelType = false;
 					$showComments = true;
 
 					include('includes/frontpage/teasers/teaser.php') ?>
@@ -184,10 +154,9 @@ if(isset($_GET["topLG"])) {
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
-					$showRelated = false;
-					$showDate = false;
-					$showCategory = false;
-					$teaserLabel = false;
+					
+					
+					$labelType = false;
 					$showComments = true;
 					$showAuthor = true;
 

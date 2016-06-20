@@ -24,8 +24,8 @@ if (isset($_GET['labelText'])) {
 	$labelText = $_GET['labelText'];
 }
 
-if (isset($_GET['labelColor'])) {
-	$labelColor = $_GET['labelColor'];
+if (isset($_GET['labelType'])) {
+	$labelType = $_GET['labelType'];
 }
 
 ?>
@@ -37,11 +37,21 @@ if (isset($_GET['labelColor'])) {
 	
 	<div class="row">
 		<div class="col-xs-12">
-			<a href="?labelText=Breaking&labelColor=yellow">Breaking</a>
-			<a href="?labelText=<i%20class=bicon-record></i>%20Live&labelColor=red">Live</a>
+			<p>Choose tag type: 
+			<a href="?labelText=Breaking&labelType=yellow"><span class="teaser--label-yellow"><span>Breaking</span></span></a>
+			<a href="?labelText=<i%20class=bicon-record></i>%20Live&labelType=live"><span class="teaser--label-live"><span>Live</span></span></a>
+			<a href="?labelText=Opdateres&labelType=red"><span class="teaser--label-red"><span>To be updated</span></span></a>
+			<a href="?labelText=Lige%20nu&labelType=red"><span class="teaser--label-red"><span>Now</span></span></a>
+			<a href="?labelText=Nyhed på vej&labelType=red"><span class="teaser--label-red"><span>Coming up</span></span></a>
+			<a href="?labelText=Tophistorie&labelType=blue"><span class="teaser--label-blue"><span>Topstory</span></span></a>
+			</p>
+
 		</div>
+	</div>
+	
+	<div class="row">
 		<div class="col-xs-2 " >
-			<h3>Teaser big</h3>
+			<h3>Teaser big default</h3>
 		</div>
 		
 		<div class="col-xs-8 " style="width:780px">
@@ -50,18 +60,45 @@ if (isset($_GET['labelColor'])) {
 			<?php
 			$imgW='920'; 
 			$showImg = '1';
-			$class = ' teaser--img-wide item--teaser teaser--big  ';
+			$class = ' teaser--img-wide item--teaser teaser--big';
 			$imgRatio = '16:9';
 			$imgSrc = '/landscape';
 			$showSummary = true;
 			$showDate = false;
 			$showCategory = false;
+			$category = false;
 			$showPaywall = true;
 			$teaserPack = false;
 			include('includes/frontpage/teasers/teaser.php') ?>
 
 			</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-2 " >
+			<h3>Teaser big Business</h3>
 		</div>
+		
+		<div class="col-xs-8 " style="width:780px">
+
+
+			<?php
+			$imgW='920'; 
+			$showImg = '1';
+			$class = ' teaser--img-wide item--teaser teaser--big  teaser--theme-business';
+			$imgRatio = '16:9';
+			$imgSrc = '/landscape';
+			$showSummary = true;
+			$showDate = false;
+			$showCategory = true;
+			$category = 'Business.dk';
+			$showPaywall = true;
+			$teaserPack = false;
+			include('includes/frontpage/teasers/teaser.php') ?>
+
+			</div>
+	</div>
+
 	<div class="row">
 
 		<div class="col-xs-2 " >
@@ -140,7 +177,7 @@ if (isset($_GET['labelColor'])) {
 						$showRelatedSummary = true;
 						$showRelatedPaywall = true;
 						$relatedTrumpet = false;
-						$showRelatedCategory = true;
+						
 						
 						
 						include('includes/frontpage/teasers/teaser-related.php'); 
@@ -177,10 +214,10 @@ if (isset($_GET['labelColor'])) {
 						$relatedImgSrc = '/landscape';
 						$showRelatedSummary = false;
 						$showRelatedPaywall = true;
-						$relatedTrumpet = true;
+						$relatedTrumpet = false;
 						$showRelatedCategory = false;
 						
-						// $relatedlabelColor = 'red';
+						// $relatedlabelType = 'red';
 						include('includes/frontpage/teasers/teaser-related.php'); 
 						?>		
 						</li>
@@ -219,6 +256,21 @@ if (isset($_GET['labelColor'])) {
 							$relatedTrumpet = true;
 							include('includes/frontpage/teasers/teaser-related.php'); 
 						?>
+						<?php 
+							// ONELINERS
+							$relatedCount = '1';
+							$relatedGridClass = 'col-xs-12';
+							$relatedTeaserClass = 'item--teaser  related--xsmall teaser--theme-business';
+							$relatedShowImg = false;
+							$relatedImgSize = '160';
+							$relatedImgRatio = '3:2';
+							$relatedImgSrc = '/landscape';
+							$showRelatedSummary = false;
+							$showRelatedPaywall = true;
+							$relatedTrumpet = true;
+							include('includes/frontpage/teasers/teaser-related.php'); 
+						?>
+						
 						</li>
 					</ul>
 				</div>

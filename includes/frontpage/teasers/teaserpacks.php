@@ -19,7 +19,7 @@
 				
 				$showRelatedPaywall = true;
 				$relatedTrumpet = true;
-				$showRelatedCategory = true;
+				
 				$relatedCategory = 'Business.dk';
 				$relatedTeaserLabel = 'red';
 				$relatedLabelText = '<i class="bicon-record"></i> Live';
@@ -74,7 +74,7 @@
 				$showRelatedSummary = true;
 				$showRelatedPaywall = true;
 				$relatedTrumpet = true;
-				$showRelatedCategory = true;
+				
 				$relatedCategory = 'Aok.dk';
 
 				include('includes/frontpage/teasers/teaser-related.php'); 
@@ -92,7 +92,6 @@
 				$showRelatedSummary = false;
 				$showRelatedPaywall = true;
 				$relatedTrumpet = true;
-				$showRelatedCategory = true;
 				$relatedCategory = 'Business.dk';
 
 				include('includes/frontpage/teasers/teaser-related.php'); 

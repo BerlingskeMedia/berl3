@@ -24,9 +24,8 @@ if(isset($_GET["topLG"])) {
 					$showSummary = '1';
 					$showRelated = true;
 					$showRelatedimg = true;
-					$showDate = false;
-					$showCategory = false;
-					$teaserLabel = 'red';
+					
+					$labelType = 'red';
 					$labelText = '<i class="bicon-record"></i> Live';
 					$labelText = 'Opdateres';
 					// $labelText = 'Breaking';
@@ -52,9 +51,8 @@ if(isset($_GET["topLG"])) {
 					$imgSrc = '/landscape';
 					$showSummary = '1';
 					$showRelated = '1';
-					$showDate = false;
-					$showCategory = false;
-					$teaserLabel = 'yellow';
+					
+					$labelType = 'yellow';
 					$labelText = 'Terror i Bruxelles';
 					$teaserLink = 'tpl-article.php?event=breaking';
 					$teaserPack = '1';
@@ -97,12 +95,11 @@ if(isset($_GET["topLG"])) {
 					$imgSrc = '/portrait';
 					$showSummary = true;
 					$showRelated = false;
-					$showDate = false;
-					$showCategory = false;
+					
 					$showPaywall = true;
-					$teaserLabel = 'yellow';
+					$labelType = 'yellow';
 					$labelText = 'Breaking';
-					//$teaserLabel = 'breaking';
+					//$labelType = 'breaking';
 					// $teaserPack = '5';
 					$showTrumpet = true;
 
@@ -116,9 +113,8 @@ if(isset($_GET["topLG"])) {
 					$imgSrc = '/landscape';
 					$showSummary = true;
 					$showRelated = false;
-					$showDate = false;
-					$showCategory = false;
-					$teaserLabel = false;
+					
+					$labelType = false;
 					$teaserPack = '2';
 					$showTrumpet = true;
 					$showPaywall = true;
@@ -133,9 +129,9 @@ if(isset($_GET["topLG"])) {
 					$imgSrc = '/landscape';
 					$showSummary = true;
 					$showRelated = false;
-					$showDate = false;
-					$showCategory = true;
-					$teaserLabel = false;
+					
+
+					$labelType = false;
 					$category = 'Business.dk';
 					$teaserPack = '3';
 					$showTrumpet = true;
@@ -152,9 +148,8 @@ if(isset($_GET["topLG"])) {
 					$imgSrc = '/landscape';
 					$showSummary = true;
 					$showRelated = false;
-					$showDate = false;
-					$showCategory = false;
-					$teaserLabel = false;
+					
+					$labelType = false;
 					$teaserAd = true;
 
 					include('includes/frontpage/teasers/teaser.php') ?>
@@ -168,9 +163,8 @@ if(isset($_GET["topLG"])) {
 					$imgSrc = '/landscape';
 					$showSummary = true;
 					$showRelated = true;;
-					$showDate = false;
-					$showCategory = false;
-					$teaserLabel = false;
+					
+					$labelType = false;
 
 					include('includes/frontpage/teasers/teaser.php') ?>
 
@@ -182,10 +176,9 @@ if(isset($_GET["topLG"])) {
 					$imgSrc = '/landscape';
 					$showSummary = true;
 					$showRelated = false;
-					$showDate = false;
-					$showCategory = true;
+					
 					$category = 'Business.dk';
-					$teaserLabel = false;
+					$labelType = false;
 
 					include('includes/frontpage/teasers/teaser.php') ?>
 					
@@ -197,9 +190,8 @@ if(isset($_GET["topLG"])) {
 					$imgSrc = '/landscape';
 					$showSummary = true;
 					$showRelated = false;
-					$showDate = false;
-					$showCategory = false;
-					$teaserLabel = false;
+					
+					$labelType = false;
 					$teaserPack = false;
 
 					include('includes/frontpage/teasers/teaser.php') ?>
@@ -212,10 +204,9 @@ if(isset($_GET["topLG"])) {
 					$imgSrc = '/landscape';
 					$showSummary = true;
 					$showRelated = true;;
-					$showDate = false;
-					$showCategory = true;
+					
 					$category = 'Business.dk';
-					$teaserLabel = false;
+					$labelType = false;
 
 					include('includes/frontpage/teasers/teaser.php') ?>
 
@@ -227,9 +218,8 @@ if(isset($_GET["topLG"])) {
 					$imgSrc = '/!author';
 					$showSummary = true;
 					$showRelated = false;;
-					$showDate = false;
-					$showCategory = false;
-					$teaserLabel = false;
+					
+					$labelType = false;
 					$showAuthor = true;
 
 					include('includes/frontpage/teasers/teaser.php') ?>

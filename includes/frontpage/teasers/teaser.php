@@ -2,9 +2,7 @@
 if (!$teaserLink) {
 	$teaserLink = 'tpl-article.php';
 }
-$f_contents = file("includes/teaser-b.txt"); 
-$summary = $f_contents[rand(0, count($f_contents) - 1)];
-// $summary = substr($summary, 0, 60);
+
 
 if(!$headerSrc) {
 	$headerSrc = 'headline-b3';
@@ -35,9 +33,9 @@ if(!$summarySrc) {
 
 			<a href="<?php echo $teaserLink; ?>" class="teaser--link">	
 
-				<?php if ($showImg  && !$smallImg): ?>
+				<?php if ($showImg ): ?>
 					<figure class="teaser-img">
-						<?php if($labelColor && !preg_match('/teaser--xlarge/',$class)): ?>
+						<?php if($labelType && !preg_match('/teaser--xlarge/',$class)): ?>
 							<?php include('includes/frontpage/teasers/labels.php'); ?>
 						<?php endif; ?>
 						<img src="<? dummy("image". $imgSrc ."@". $imgW ."x,". $imgRatio ."") ?>" width="" height="" alt="[ARTICLE HEADER]" class="img" />
@@ -78,7 +76,7 @@ if(!$summarySrc) {
 					</div>
 				<?php endif; ?>
 
-				<?php if($labelColor && preg_match('/teaser--xlarge/',$class)): ?>
+				<?php if($labelType && preg_match('/teaser--xlarge/',$class)): ?>
 					<?php include('includes/frontpage/teasers/labels.php'); ?>
 				<?php endif; ?>
 
@@ -106,20 +104,15 @@ if(!$summarySrc) {
 						</div>
 					<?php endif; ?>
 
-				<?php if ($smallImg): ?>
-					<figure class="teaser-img-sm">
-						<img src="<? dummy("image". $imgSrc ."@". $imgW ."x,". $imgRatio ."") ?>" width="" height="" alt="[ARTICLE HEADER]" class="img" />
-					</figure>
-				<?php endif; ?>
 				
 				<?php if ($showSummary): ?>
 					<div class="teaser-summary">
 						
 					
 
-							<?php if($showCategory): ?>
+							<?php if($category): ?>
 								<span class="teaser--category">
-									 <?php if($category){echo $category;} else {  dummy("text@b-cat"); } ?> 
+									 <?php echo $category; ?> 
 								</span>	
 							<?php endif; ?>
 
@@ -171,21 +164,13 @@ if(!$summarySrc) {
 
 <?php 
 $showSummary = false;
-$showRelated = false;
 $showImg = true;
-$showKey = false;
 $imgSrc = false;
 $showAuthor = false;
 $imgRatio = false;
-$showCat = false;
-$smallImg = false;
-$showCategory = false;
-$showDate = false;
+$category = false;
 $teaserTrumpet = false;
-$relatedImg = false;
-$showRelatedimg = false;
 $showRating = false;
-
 $teaserAd = false;
 $teaserPack = false;
 $teaserLink = false;

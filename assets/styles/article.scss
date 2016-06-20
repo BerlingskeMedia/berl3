@@ -1063,18 +1063,21 @@ $sharebutton-sm: 1.7rem;
 		&> p {
 			@extend .font-header;
 			font-size: 1.5rem;
+			font-weight: 900;
 		}
 		cite {
 			font-style: normal;
 			font-size: .8rem;
 			line-height: 1.2;
 			display: block;
-			@extend .font-52;
+			@extend .font-s2;
+
+
 		}
 		&:before {
 			position: absolute;
 			font-family: b-icons;
-			content: '\e815';
+			content: '\e814';
 			font-size: 4rem;
 			top: 0;
 		}
