@@ -22,7 +22,7 @@ if(isset($_GET["topLG"])) {
 					$imgRatio = '16:8';
 					$imgSrc = '/!b-breaking';
 					$showSummary = '1';
-					$showRelated = true;
+					
 					$showRelatedimg = true;
 					
 					$labelType = 'red';
@@ -94,7 +94,7 @@ if(isset($_GET["topLG"])) {
 					$imgRatio = '16:9';
 					$imgSrc = '/portrait';
 					$showSummary = true;
-					$showRelated = false;
+					
 					
 					$showPaywall = true;
 					$labelType = 'yellow';
@@ -112,7 +112,7 @@ if(isset($_GET["topLG"])) {
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
-					$showRelated = false;
+					
 					
 					$labelType = false;
 					$teaserPack = '2';
@@ -128,7 +128,7 @@ if(isset($_GET["topLG"])) {
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
-					$showRelated = false;
+					
 					
 
 					$labelType = false;
@@ -147,7 +147,7 @@ if(isset($_GET["topLG"])) {
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
-					$showRelated = false;
+					
 					
 					$labelType = false;
 					$teaserAd = true;
@@ -162,7 +162,7 @@ if(isset($_GET["topLG"])) {
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
-					$showRelated = true;;
+					
 					
 					$labelType = false;
 
@@ -175,7 +175,7 @@ if(isset($_GET["topLG"])) {
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
-					$showRelated = false;
+					
 					
 					$category = 'Business.dk';
 					$labelType = false;
@@ -189,7 +189,7 @@ if(isset($_GET["topLG"])) {
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
-					$showRelated = false;
+					
 					
 					$labelType = false;
 					$teaserPack = false;
@@ -203,7 +203,7 @@ if(isset($_GET["topLG"])) {
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
-					$showRelated = true;;
+					;
 					
 					$category = 'Business.dk';
 					$labelType = false;
@@ -217,7 +217,7 @@ if(isset($_GET["topLG"])) {
 					$imgRatio = '1:1';
 					$imgSrc = '/!author';
 					$showSummary = true;
-					$showRelated = false;;
+					;
 					
 					$labelType = false;
 					$showAuthor = true;

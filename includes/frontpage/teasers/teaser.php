@@ -1,14 +1,15 @@
 <?php 
-if (!$teaserLink) {
+if (!$teaserLink) { // Link to default article - could be longread or article with breaking tag
 	$teaserLink = 'tpl-article.php';
+
 }
 
 
-if(!$headerSrc) {
+if(!$headerSrc) { // if no header src, just show random dummy header from berlingske txt file (shop teasers use different header types)
 	$headerSrc = 'headline-b3';
 }
 
-if(!$summarySrc) {
+if(!$summarySrc) { // if no summary src, just show random dummy sumamry from berlingske txt file (shop teasers use different summaries)
 	$summarySrc = 'short-teaser';
 }
 
@@ -55,11 +56,6 @@ if(!$summarySrc) {
 							<div class="teaser--sponsor">Sponseret af <? dummy("text@company-names") ?></div>
 						<?php endif; ?>
 						
-						<?php // if($showCategory): ?>
-							<!-- <span class="teaser--category">
-								<? //  dummy("text@item") ?>
-							</span> -->
-						<?php // endif; ?>
 
 						<?php if($showTrumpet): ?>
 							<span class="teaser--trumpet">
@@ -107,8 +103,6 @@ if(!$summarySrc) {
 				
 				<?php if ($showSummary): ?>
 					<div class="teaser-summary">
-						
-					
 
 							<?php if($category): ?>
 								<span class="teaser--category">
@@ -117,10 +111,6 @@ if(!$summarySrc) {
 							<?php endif; ?>
 
 							<? dummy("text@".$summarySrc."") ?>
-
-					
-						
-						
 						
 						<?php if($showPaywall): ?>
 							<? if (dumb_luck("100%")): ?>
@@ -144,8 +134,6 @@ if(!$summarySrc) {
 
 					</span>
 				<?php endif; ?>
-				
-				
 
 			</div><!-- .teaser-body -->	
 			</a><!-- .teaser-link -->

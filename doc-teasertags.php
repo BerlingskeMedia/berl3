@@ -140,7 +140,7 @@ if (isset($_GET['labelType'])) {
 			$imgRatio = '16:9';
 			$imgSrc = '/landscape';
 			$showSummary = true;
-			$showRelated = true;
+			
 			$showDate = false;
 			$showCategory = false;
 			$showPaywall = true;
