@@ -41,16 +41,6 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 							<?php include('includes/frontpage/teasers/labels.php'); ?>
 						<?php endif; ?>
 
-						<?php if($showPrice): ?>
-							
-							<div class="teaser--price">
-								<span class="teaser--price__title">
-									<?  dummy("text@consumersales-title") ?>
-								</span>
-								<span class="teaser--price--price"><? dummy("text@prices") ?>,-</span>	
-							</div>
-						<?php endif; ?>
-
 						<img src="<? dummy("image". $imgSrc ."@". $imgW ."x,". $imgRatio ."") ?>" width="" height="" alt="[ARTICLE HEADER]" class="img" />
 					</figure>
 				<?php endif; ?>
@@ -104,7 +94,15 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 
 				</h2>
 				<?php endif; ?>
-				
+
+				<?php if($showPrice): ?>
+					
+					<div class="teaser--price">
+						<span class="teaser--price--price"><? dummy("text@prices") ?>,-</span>	
+						<button class="btn btn-xs">Køb</button>
+					</div>
+				<?php endif; ?>
+
 				<?php if($showRating): ?>
 					
 					<?php $rating = rand(0,6); ?>

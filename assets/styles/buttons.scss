@@ -93,6 +93,12 @@ fieldset[disabled] a.btn {
     background-color: darken($col-blue-1, 10%);
   }
 }
+.btn-dark-blue {
+  @include button-variant(#fff, $col-blue-2, $col-blue-2 );
+  &:hover {
+    background-color: darken($col-blue-2, 10%);
+  }
+}
 
 .btn-black {
   @include button-variant(#fff, #000, #000 );

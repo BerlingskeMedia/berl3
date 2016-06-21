@@ -18,8 +18,8 @@
 						$class = 'teaser--consumersales item--teaser ';
 						$imgRatio = '1:1';
 						$imgSrc = '/!consumersales';
-						$showSummary = true;
-						$showHeader = false;
+						$showSummary = false;
+						$showHeader = true;
 						$showRelated = false;
 						$showCategory = false;
 						$teaserLabel = false;
@@ -39,8 +39,8 @@
 						$class = 'teaser--consumersales item--teaser ';
 						$imgRatio = '1:1';
 						$imgSrc = '/!consumersales';
-						$showSummary = true;
-						$showHeader = false;
+						$showSummary = false;
+						$showHeader = true;
 						$showRelated = false;
 						$showCategory = false;
 						$teaserLabel = false;
@@ -54,7 +54,7 @@
 
 				<div class="col-xs-2 flex-row">
 					<div class="teaser--consumersales item--teaser teaser--consumersales-fixed" style="padding: 1rem;">
-						<h2 class="header mb text-center font-s1" style="font-weight: 400" >Vinreolen</h2>
+						<h2 class="header mb text-center font-s1" style="font-weight: 400; color: #fff;" >Vinreolen</h2>
 						<div class="text-center"><img src="/dist/images/wine.png" alt="" class="img-fluid" style="max-height: 200px; margin: 0 auto;"></div>
 
 
@@ -68,11 +68,11 @@
 					<?php
 						$imgW='538'; 
 						$showImg = '1';
-						$class = 'teaser--consumersales item--teaser mb ';
+						$class = 'teaser--consumersales item--teaser teaser--xxsmall mb ';
 						$imgRatio = '1:1';
 						$imgSrc = '/!consumersales';
-						$showSummary = true;
-						$showHeader = false;
+						$showSummary = false;
+						$showHeader = true;
 						$showRelated = false;
 						$showCategory = false;
 						$teaserLabel = false;
@@ -86,11 +86,11 @@
 					<?php
 						$imgW='538'; 
 						$showImg = '1';
-						$class = 'teaser--consumersales item--teaser ';
+						$class = 'teaser--consumersales item--teaser teaser--xxsmall ';
 						$imgRatio = '1:1';
 						$imgSrc = '/!consumersales';
-						$showSummary = true;
-						$showHeader = false;
+						$showSummary = false;
+						$showHeader = true;
 						$showRelated = false;
 						$showCategory = false;
 						$teaserLabel = false;
