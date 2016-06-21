@@ -33,12 +33,25 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 			<?php endif; ?>
 
 			<a href="<?php echo $teaserLink; ?>" class="teaser--link">	
+				
+				
 
 				<?php if ($showImg ): ?>
 					<figure class="teaser-img">
 						<?php if($labelType && !preg_match('/teaser--xlarge/',$class)): ?>
 							<?php include('includes/frontpage/teasers/labels.php'); ?>
 						<?php endif; ?>
+
+						<?php if($showPrice): ?>
+							
+							<div class="teaser--price">
+								<span class="teaser--price__title">
+									<?  dummy("text@consumersales-title") ?>
+								</span>
+								<span class="teaser--price--price"><? dummy("text@prices") ?>,-</span>	
+							</div>
+						<?php endif; ?>
+
 						<img src="<? dummy("image". $imgSrc ."@". $imgW ."x,". $imgRatio ."") ?>" width="" height="" alt="[ARTICLE HEADER]" class="img" />
 					</figure>
 				<?php endif; ?>
@@ -75,7 +88,9 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 				<?php if($labelType && preg_match('/teaser--xlarge/',$class)): ?>
 					<?php include('includes/frontpage/teasers/labels.php'); ?>
 				<?php endif; ?>
-
+				
+				
+				<?php if($showHeader): ?>
 				<h2 class="header">
 					
 					<? dummy("text@".$headerSrc."") ?>
@@ -89,6 +104,7 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 					<?php endif; ?>
 
 				</h2>
+				<?php endif; ?>
 				<?php if($showRating): ?>
 					
 					<?php $rating = rand(0,6); ?>
@@ -120,7 +136,7 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 
 					</div>
 				<?php endif; ?>
-
+				
 				<?php if($showAuthor): ?>
 					<span class="teaser--author"><? dummy("text@author") ?>
 					<?php if(!$showSummary) : ?>
@@ -151,19 +167,21 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 </div>
 
 <?php 
-$showSummary = false;
-$showImg = true;
-$imgSrc = false;
-$showAuthor = false;
-$imgRatio = false;
-$category = false;
-$teaserTrumpet = false;
-$showRating = false;
-$teaserAd = false;
-$teaserPack = false;
-$teaserLink = false;
-$showTrumpet = false;
-$showPaywall = false;
-$headerSrc = 'headline-b3';
-$summarySrc = 'short-teaser';
+$showSummary 	= false;
+$showImg 		= true;
+$imgSrc 		= false;
+$showAuthor 	= false;
+$imgRatio 		= false;
+$category 		= false;
+$teaserTrumpet 	= false;
+$showRating 	= false;
+$teaserAd 		= false;
+$teaserPack 	= false;
+$teaserLink 	= false;
+$showHeader 	= true;
+$showTrumpet 	= false;
+$showPaywall 	= false;
+$headerSrc 		= 'headline-b3';
+$summarySrc 	= 'short-teaser';
+$showPrice 		= false;
 ?>

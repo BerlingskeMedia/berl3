@@ -704,6 +704,8 @@
 				@extend .font-s2;
 				font-size: .9rem;	
 				display: inline;
+				color: #fff;
+				font-weight: 500;
 		}
 		.teaser-img {
 			margin-bottom: .2rem;
@@ -714,10 +716,7 @@
 		z-index: 2;
 	}
 	.header {
-		color: #fff;
-		@extend .font-s2;
-		font-size: .9rem;	
-		display: inline;
+		display: none;
 	}
 
 	
@@ -779,32 +778,58 @@
 	}
 
 }
-.teaser--consumersales {
-	.teaser-summary,
-	.header { 
-		// display: none; 
+
+
+
+.teaser--price {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 2;
+	padding: .4rem .626rem;
+	color: #000;
+	// background-color: rgba(255,255,255,.9);
+	// @include gradient-vertical(fade-out($background-color, 1), fade-out($background-color, .2), 0, 25px);
+}
+.teaser--price__title {
+	display: block;
+	@extend .font-s1;
+	font-weight: 500;
+	// font-size: .9rem;
+	line-height: 1;
+	text-shadow: 1px 1px 0 rgba(255,255,255,.2);
+}
+.teaser--price--price {
+	@extend .font-s1;
+	font-weight: 900;
+	&:before {
+		content: '\e829';
+		font-family: b-icons;
+		margin-right: .2rem;
 	}
+}
+
+
+.teaser--consumersales-fixed {
+	background-color: $col-blue-2;
+}
+
+.teaser--consumersales {	
+	overflow: hidden;
+	transition: all 0.5s;	
+	
 	.teaser-img {
 		margin-bottom: 0;
+		transition: all 0.5s!important;
 	}
 	.img {
-		max-width: none;
+	// 	max-width: none;
 	}
 	
 	&[class*="item--teaser"] {
 		padding: 0;
 	}
-}
-.teaser-low {
-	.teaser-2 {
-		max-height: 260px;
-	}
-}
-
-
-.teaser--consumersales {	
-	overflow: hidden;
-	transition: all 0.5s;	
 
 	.teaser--content {				
 		background-color: rgba(0,0,0,.8);
@@ -816,23 +841,18 @@
 		right: 0;
 		transform: translateY(100%);
 	}
+	
 	&:hover {
-		.img {					
+		.teaser-img {					
 			transform: translateY(-15%);			
 		}
 		
-		.teaser-body {
+		.teaser--content {
 			transform: translateY(0);					
 		}
 	}	
 
-	&.teaser--low {
-		.img {
-			transition: all 0.5s!important;
-		}
-
-			
-	}
+	
 	.header {
 		font-size: 1.3rem;
 		color: #fff;
@@ -844,7 +864,7 @@
 	}
 	
 
-	&.teaser--tall {
+	/*&.teaser--tall {
 		.img {
 			transition: all 0.5s!important;
 		}
@@ -859,7 +879,7 @@
 
 		
 		
-	}
+	}*/
 
 }
 

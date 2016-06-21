@@ -16,10 +16,7 @@
 	}
 
 	background: rgba(0,0,0,.8);
-	.inner-theme {
-		background-color: rgba(255,255,255,.1);
-		padding: $spacer;
-	}
+	
 	.teaser--category {
 		color: #e40421;
 	}
@@ -32,10 +29,7 @@
 .theme-berlinale {
 
 	background: #e40421;
-	.inner-theme {
-		background-color: $background-color;
-		padding: $spacer;
-	}
+	
 	.teaser--category {
 		color: #e40421;
 	}
@@ -48,16 +42,16 @@
 // orange: #ed7303
 // back: #262626
 .theme-roskilde {
-
+	
 	background: #262626;
-	.inner-theme {
-		background-color: #2e2e2e;
-		padding: $spacer;
-	}
+	
 	.section-title,
 	.teaser--trumpet,
 	.teaser--category {
 		color: #ed7303;
+	}
+	.section-title:before {
+		background-color: #ed7303;
 	}
 	
 	.section-description {
@@ -74,10 +68,7 @@
 .theme-cannes {
 
 	background: #fff;
-	.inner-theme {
-		background-color: #fff;
-		padding: $spacer;
-	}
+	
 	.teaser--category {
 		color: #d0b02e;
 	}

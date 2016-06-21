@@ -14,7 +14,7 @@
 		<div class="col-tags ">
 			<?php if ($theme === 'roskilde'): ?>
 
-				<div class="section-title-no-border"> Roskilde</div>
+				<div class="section-title"> Roskilde</div>
 
 				<img src="/dist/images/logo-roskilde.svg" width="" height="" alt="" class="mb" />
 				<p class="section-description">Berlingske dækker filmfestivalen, der varer frem til d. 21. februar.</p>
@@ -35,61 +35,60 @@
 
 		</div>
 		<div class="col-primary">
-			<div class="inner-theme">
-				<div class="row flex-row">
-					
+			
+			<div class="row flex-row">
+				
 
-					<div class="col-xl-6 ">
+				<div class="col-xl-6 ">
+					<?php
+						$imgW='920'; 
+						$showImg = '1';
+						$class = 'teaser--img-wide item--teaser teaser--small	';
+						$imgRatio = '16:9';
+						$imgSrc = '/landscape';
+						$showSummary = true;
+						$showRelated = false;
+						$showDate = false;
+						$showCategory = false;
+						$teaserLabel = false;
+
+						include('includes/frontpage/teasers/teaser.php') ?>
+				</div>					
+				
+					<div class="col-xl-3 ">
 						<?php
-							$imgW='920'; 
-							$showImg = '1';
-							$class = 'teaser--img-wide item--teaser teaser--small	';
-							$imgRatio = '16:9';
-							$imgSrc = '/landscape';
-							$showSummary = true;
-							$showRelated = false;
-							$showDate = false;
-							$showCategory = false;
-							$teaserLabel = false;
+						$imgW='920'; 
+						$showImg = '1';
+						$class = 'teaser--img-wide item--teaser teaser--xsmall	';
+						$imgRatio = '16:9';
+						$imgSrc = '/landscape';
+						$showSummary = true;
+						$showRelated = false;
+						$showDate = false;
+						$showTrumpet = 'Koncert';
+						$showCategory = false;
+						$teaserLabel = false;
+						$showRating = true;
 
-							include('includes/frontpage/teasers/teaser.php') ?>
-					</div>					
-					
-						<div class="col-xl-3 ">
-							<?php
-							$imgW='920'; 
-							$showImg = '1';
-							$class = 'teaser--img-wide item--teaser teaser--xsmall	';
-							$imgRatio = '16:9';
-							$imgSrc = '/landscape';
-							$showSummary = true;
-							$showRelated = false;
-							$showDate = false;
-							$showTrumpet = 'Koncert';
-							$showCategory = false;
-							$teaserLabel = false;
-							$showRating = true;
+						include('includes/frontpage/teasers/teaser.php') ?>
+					</div>
 
-							include('includes/frontpage/teasers/teaser.php') ?>
-						</div>
+					<div class="col-xl-3">
+						<?php
+						$imgW='920'; 
+						$showImg = '1';
+						$class = 'teaser--img-wide item--teaser teaser--xsmall	';
+						$imgRatio = '16:9';
+						$imgSrc = '/landscape';
+						$showSummary = true;
+						$showRelated = false;
+						$showDate = false;
+						$showCategory = false;
+						$teaserLabel = false;
 
-						<div class="col-xl-3">
-							<?php
-							$imgW='920'; 
-							$showImg = '1';
-							$class = 'teaser--img-wide item--teaser teaser--xsmall	';
-							$imgRatio = '16:9';
-							$imgSrc = '/landscape';
-							$showSummary = true;
-							$showRelated = false;
-							$showDate = false;
-							$showCategory = false;
-							$teaserLabel = false;
-
-							include('includes/frontpage/teasers/teaser.php') ?>
-						</div>
-					
-				</div>
+						include('includes/frontpage/teasers/teaser.php') ?>
+					</div>
+				
 			</div>
 		</div>
 	</div>
