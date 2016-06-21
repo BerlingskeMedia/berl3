@@ -1,7 +1,6 @@
 <?php 
 if (!$teaserLink) { // Link to default article - could be longread or article with breaking tag
 	$teaserLink = 'tpl-article.php';
-
 }
 
 
@@ -105,6 +104,7 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 
 				</h2>
 				<?php endif; ?>
+				
 				<?php if($showRating): ?>
 					
 					<?php $rating = rand(0,6); ?>
@@ -178,10 +178,10 @@ $showRating 	= false;
 $teaserAd 		= false;
 $teaserPack 	= false;
 $teaserLink 	= false;
-$showHeader 	= true;
 $showTrumpet 	= false;
 $showPaywall 	= false;
 $headerSrc 		= 'headline-b3';
 $summarySrc 	= 'short-teaser';
 $showPrice 		= false;
+$showHeader 	= true;
 ?>

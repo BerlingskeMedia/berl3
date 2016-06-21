@@ -388,6 +388,7 @@
 .teaser--trade  {
 	margin-bottom: 0;
 	padding-bottom: .625rem;
+	background-color: lighten($col-blue-1, 60%);
 	&:after {
 		position: absolute;
 		left: .625rem;
@@ -407,6 +408,7 @@
 	padding: .313rem .625rem;
 	@extend .font-g1;
 	font-size: .9rem;
+	display: none;
 }
 
 

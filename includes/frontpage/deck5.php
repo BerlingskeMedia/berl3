@@ -22,7 +22,7 @@ if(isset($_GET["topLG"])) {
 					$imgRatio = '16:8';
 					$imgSrc = '/!b-breaking';
 					$showSummary = '1';
-					
+					$showHeader 	= true;
 					$showRelatedimg = true;
 					
 					$labelType = 'red';
@@ -51,6 +51,7 @@ if(isset($_GET["topLG"])) {
 					$imgSrc = '/landscape';
 					$showSummary = '1';
 					$showRelated = '1';
+					$showHeader = true;
 					
 					$labelType = 'yellow';
 					$labelText = 'Terror i Bruxelles';

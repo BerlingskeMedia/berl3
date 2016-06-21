@@ -1,9 +1,9 @@
 <div class="deck deck-cappucino">
 	<div class="col-tags ">
-			<div class="section-title">Få Flere bedre oplevelser</div>
-			<div class="section-link">
-				<a href="tpl-section.php">Berlingske Shop <i class="bicon-angle-right"></i></a>
-			</div>
+			<div class="section-title">Shop</div>
+			
+				<a href="tpl-section.php" class="font-s1 mt" style="display: block; font-size: 1.8rem">Få flere bedre oplevelser.</a>
+		
 		
 	</div>
 
@@ -54,7 +54,7 @@
 
 				<div class="col-xs-2 flex-row">
 					<div class="teaser--consumersales item--teaser teaser--consumersales-fixed" style="padding: 1rem;">
-						<h2 class="header mb text-center" >Vinreolen</h2>
+						<h2 class="header mb text-center font-s1" style="font-weight: 400" >Vinreolen</h2>
 						<div class="text-center"><img src="/dist/images/wine.png" alt="" class="img-fluid" style="max-height: 200px; margin: 0 auto;"></div>
 
 
