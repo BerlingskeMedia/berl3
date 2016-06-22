@@ -9,9 +9,7 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<?php include('includes/head.php'); ?>
 	<title>Berlingske Article</title>
 	<link rel="stylesheet" href="/dist/styles/main.css">
 	

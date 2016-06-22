@@ -14,7 +14,7 @@
 		
 
 			<? while (dumb_luck("2")): ?>
-			<div class="  col-xl-6 flex-row ">
+			<div class="col-md-6 flex-row ">
 				<?php 
 					$imgW='100'; 
 					$class = ' teaser--img-right  teaser--xsmall  item--teaser teaser--theme-feature teaser--roundimg';
@@ -31,7 +31,7 @@
 			<?php endwhile; ?>
 
 			<? while (dumb_luck("2")): ?>
-			<div class="  col-xl-6 flex-row ">
+			<div class="col-md-6 flex-row ">
 				<?php 
 					$imgW='100'; 
 					$class = ' teaser--img-right  teaser--xsmall  item--teaser__bt teaser--theme-feature teaser--roundimg';
@@ -52,7 +52,7 @@
 		<div class="row">
 				
 				
-				<div class="col-xl-4">
+				<div class="col-md-4">
 					<div class=" teaser--img-wide item--teaser teaser--xsmall teaser--theme-cartoon-1 teaser--theme-white">
 					
 						<span class="teaser--title">Hårdt mod hårdt</span>
@@ -73,7 +73,7 @@
 
 				</div>	
 
-				<div class="col-xl-4">
+				<div class="col-md-4">
 					<div class=" teaser--img-wide item--teaser teaser--xsmall 	teaser--theme-cartoon-2 teaser--theme-white">
 					
 					<span class="teaser--title">Ni til Fem</span>
@@ -92,7 +92,7 @@
 					</div>
 				</div>	
 
-				<div class="col-xl-4">
+				<div class="col-md-4">
 					<div class=" teaser--img-wide item--teaser teaser--xsmall 	teaser--theme-cartoon-3 teaser--theme-white">
 					
 						<span class="teaser--title">Til stregen</span>

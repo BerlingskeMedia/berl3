@@ -7,10 +7,8 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Berlingske - Test</title>
+	<?php include('includes/head.php'); ?>
+	<title>Berlingske - Lists</title>
 	<link rel="stylesheet" href="/dist/styles/main.css">
 </head>
 <body class=" <?php if($siteBusiness): ?>site-business<?php endif; ?> show-site-search tpl-article tpl-article-longread">

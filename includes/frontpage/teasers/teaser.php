@@ -16,7 +16,7 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 
 ?>
 
-<div class=" <?= $class; ?> teaser-item ">
+<div class=" <?= $class; ?> item--teaser ">
 
 		<div class="teaser">
 
@@ -74,7 +74,7 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 				<?php endif; ?>
 				
 				
-				<?php if($showHeader): ?>
+				
 				<h2 class="header">
 					
 					<? dummy("text@".$headerSrc."") ?>
@@ -88,7 +88,7 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 					<?php endif; ?>
 
 				</h2>
-				<?php endif; ?>
+				
 
 				<?php if($showPrice): ?>
 					

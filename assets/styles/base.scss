@@ -255,7 +255,35 @@ $col-sidebar-width: 19.375rem;
 		background-color: $border-color;
 		content: '';
 	}
+}
 
+@include media-breakpoint-down(lg) {
+	.item--teaser {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.col-tags {
+		width: 100%;
+		padding-right: 0;
+	}
+	.col-primary {
+		width: 100%;
+	}
+	.col-primary-wide {
+		width: 100%;
+		padding-right: 0;
+	}
+
+	.item--teaser__bt:before {
+		left: 0;
+		right: 0;
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.col-wrapper {
+		width: 100%;
+	}
 }
 /*.col-tags + .col-primary {
 	width: calc(100% - #{$col-tag-width + $col-sidebar-width});

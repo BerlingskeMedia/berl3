@@ -12,7 +12,7 @@
 	<div class="col-primary-wide">
 		<div class="flex-row row ">
 	
-		<div class="col-xl-6 flex-row  ">
+		<div class="col-md-6 flex-row  ">
 		
 			<?php 
 				$imgW='100'; 
@@ -31,7 +31,7 @@
 				include('includes/frontpage/teasers/teaser.php') ?>
 			
 		</div>
-		<div class="  col-xl-6 flex-row ">
+		<div class="col-md-6 flex-row ">
 			<?php 
 				$imgW='100'; 
 				$class = ' teaser--img-right teaser--xsmall	item--teaser__bt teaser--theme-feature teaser--roundimg ';
@@ -49,7 +49,7 @@
 		</div>
 
 		<? while (dumb_luck("2")): ?>
-		<div class="  col-xl-6 flex-row ">
+		<div class=" col-md-6 flex-row ">
 		
 			<?php 
 				$imgW='100'; 

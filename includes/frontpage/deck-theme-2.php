@@ -16,20 +16,20 @@
 
 				<div class="section-title"> Roskilde</div>
 
-				<img src="/dist/images/logo-roskilde.svg" width="" height="" alt="" class="mb" />
+				<img src="/dist/images/logo-roskilde.svg" width="" height="" alt="" class="theme-illu mb" />
 				<p class="section-description">Berlingske dækker filmfestivalen, der varer frem til d. 21. februar.</p>
 
 			<?php elseif ($theme === 'cannes'): ?>
 
 				<div class="section-title-no-border"> Cannes</div>
 
-				<img src="/dist/images/logo-cannes.png" width="" height="" alt="" class="mb" />
+				<img src="/dist/images/logo-cannes.png" width="" height="" alt="" class="theme-illu mb" />
 				<p class="section-description">Berlingske dækker filmfestivalen, der varer frem til d. 21. februar.</p>
 
 			<?php else: ?>
-			<div class="section-title-no-border"><small>Tema:</small> Berlinalen</div>
+			<div class="section-title-no-border"> Berlinalen</div>
 
-			<img src="/dist/images/logo-berlinale-invert.png" width="" height="" alt="" />
+			<img src="/dist/images/logo-berlinale-invert.png" width="" height="" alt="" class="theme-illu" />
 			<p class="section-description">Berlingske dækker filmfestivalen, der varer frem til d. 21. februar.</p>
 			<?php endif; ?>
 
@@ -39,7 +39,7 @@
 			<div class="row flex-row">
 				
 
-				<div class="col-xl-6 ">
+				<div class="col-lg-6 col-md-12 col-xs-12">
 					<?php
 						$imgW='920'; 
 						$showImg = '1';
@@ -55,7 +55,7 @@
 						include('includes/frontpage/teasers/teaser.php') ?>
 				</div>					
 				
-					<div class="col-xl-3 ">
+					<div class="col-lg-3 col-xs-6">
 						<?php
 						$imgW='920'; 
 						$showImg = '1';
@@ -73,7 +73,7 @@
 						include('includes/frontpage/teasers/teaser.php') ?>
 					</div>
 
-					<div class="col-xl-3">
+					<div class="col-lg-3 col-xs-6">
 						<?php
 						$imgW='920'; 
 						$showImg = '1';

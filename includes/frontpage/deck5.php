@@ -18,16 +18,16 @@ if(isset($_GET["topLG"])) {
 					<?php
 					$imgW='1240'; 
 					$showImg = true;
-					$class = 'teaser--xlarge teaser--theme-img-top';
+					$class = 'teaser--xlarge teaser--theme-giant';
 					$imgRatio = '16:7';
 					$imgSrc = '/!b-breaking';
 					$showSummary = '1';
 					$showHeader 	= true;
 					$showRelatedimg = true;
-					$labelType = 'yellow';
-					// $labelText = '<i class="bicon-record"></i> Live';
-					$labelText = 'Breaking';
-					$teaserPack = '3';
+					$labelType = 'live';
+					$labelText = '<i class="bicon-record"></i> Live';
+					// $labelText = 'Breaking';
+					$teaserPack = '4';
 					include('includes/frontpage/teasers/teaser.php') ?>			
 				</div>
 			</div>

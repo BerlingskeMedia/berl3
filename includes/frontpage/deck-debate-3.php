@@ -13,7 +13,7 @@
 		
 
 		<? while (dumb_luck("4")): ?>
-		<div class="  col-xl-6 flex-row ">
+		<div class="col-md-6  flex-row ">
 			<?php 
 				$imgW='100'; 
 				$class = ' teaser--img-right  teaser--xsmall	teaser--theme-feature  item--teaser__bt teaser--roundimg';

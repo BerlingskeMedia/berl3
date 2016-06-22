@@ -10,10 +10,8 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Berlingske - Front</title>
+	<?php include('includes/head.php'); ?>
+	<title>Berlingske - Teaser tags</title>
 	<link rel="stylesheet" href="/dist/styles/main.css">
 </head>
 <body class="tpl-front <?php if($siteBusiness): ?>site-business<?php endif; ?> show-site-search">
@@ -49,14 +47,39 @@ if (isset($_GET['labelType'])) {
 		</div>
 	</div>
 	
+	
+
+	
 	<div class="row">
 		<div class="col-xs-12">
 			<h2>Teasers</h2>
 		</div>
+		<div class="col-xs-2 " >
+			<h3>Teaser Giant</h3>
+		</div>
+		<div class="col-xs-12 col-xl-12">
+			<?php
+			$imgW='1240'; 
+			$showImg = true;
+			$class = 'teaser--xlarge teaser--theme-giant';
+			$imgRatio = '16:7';
+			$imgSrc = '/!b-breaking';
+			$showSummary = '1';
+			$showHeader 	= true;
+			$showRelatedimg = true;
+			// $labelType = 'yellow';
+			// $labelText = '<i class="bicon-record"></i> Live';
+			// $labelText = 'Breaking';
+			$teaserPack = false;
+			include('includes/frontpage/teasers/teaser.php') ?>			
+		</div>
 	</div>
+
+
+
 	<div class="row">
 		<div class="col-xs-2 " >
-			<h3>Teaser big default</h3>
+			<h3>Teaser large default</h3>
 		</div>
 		
 		<div class="col-xs-8 " style="width:780px">
@@ -82,7 +105,7 @@ if (isset($_GET['labelType'])) {
 
 	<div class="row">
 		<div class="col-xs-2 " >
-			<h3>Teaser big - Business</h3>
+			<h3>Teaser large - Business</h3>
 		</div>
 		
 		<div class="col-xs-8 " style="width:780px">

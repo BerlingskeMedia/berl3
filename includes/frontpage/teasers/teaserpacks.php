@@ -1,8 +1,5 @@
 
-<?php 
-$labelType = false;
-$labelText = false; 
-?>
+
 <?php if($teaserPack === '1') :?>
 <!-- teaser pack 1 -->
 	<div class="teaser--pack clearfix">
@@ -14,7 +11,7 @@ $labelText = false;
 				// ONELINERS
 				$relatedCount = '1';
 				$relatedGridClass = 'col-xs-12';
-				$relatedTeaserClass = 'item--teaser related--image teaser--img-left related--large teaser--theme-business';
+				$relatedTeaserClass = 'item--teaser related--image teaser--img-left related--large teaser--theme-business ';
 				$relatedShowImg = true;
 				$relatedImgSize = '160';
 				$relatedImgRatio = '3:2';
@@ -23,10 +20,9 @@ $labelText = false;
 				$showRelatedPaywall = true;
 				$relatedTrumpet = true;
 				$relatedCategory = 'Business.dk';
-				// $relatedTeaserLabel = 'red';
-				//$relatedLabelText = '<i class="bicon-record"></i> Live';
-				// $teaserLabel = 'red';
-				// $labelText = '<i class="bicon-record"></i> Live';
+				$labelType = 'yellow';
+				//$labelText = '<i class="bicon-record"></i> Live';
+				$labelText = 'Breaking';
 				include('includes/frontpage/teasers/teaser-related.php'); 
 			?>
 
@@ -43,11 +39,10 @@ $labelText = false;
 				$relatedImgRatio = '3:2';
 				$relatedImgSrc = '/landscape';
 				$showRelatedSummary = false;
-				
 				$showRelatedPaywall = true;
 				$relatedTrumpet = true;
-				$teaserLabel = 'red';
-				$labelText = '<i class="bicon-record"></i> Live';
+				$labelType = 'yellow';
+				$labelText = 'Breaking';
 
 
 				include('includes/frontpage/teasers/teaser-related.php'); 
@@ -193,7 +188,7 @@ $labelText = false;
 			
 			<?php 
 				$relatedCount = '2';
-				$relatedGridClass = 'col-xs-6';
+				$relatedGridClass = 'col-md-6 ';
 				$relatedTeaserClass = 'item--teaser teaser--img-wide related--small teaser--img-left';
 				$relatedShowImg = true;
 				$relatedImgSize = '140';
@@ -239,7 +234,7 @@ $labelText = false;
 			
 			<?php 
 				$relatedCount = '1';
-				$relatedGridClass = 'col-xs-6';
+				$relatedGridClass = 'col-md-6 ';
 				$relatedTeaserClass = 'item--teaser teaser--img-wide  related--small teaser--img-left ';
 				$relatedShowImg = true;
 				$relatedImgSize = '140';
@@ -254,7 +249,7 @@ $labelText = false;
 
 			<?php 
 				$relatedCount = '1';
-				$relatedGridClass = 'col-xs-6';
+				$relatedGridClass = 'col-md-6 ';
 				$relatedTeaserClass = 'item--teaser teaser--img-wide  related--small teaser--img-left teaser--theme-feature';
 				$relatedShowImg = true;
 				$relatedImgSize = '93';

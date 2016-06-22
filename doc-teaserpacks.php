@@ -28,10 +28,8 @@ if(isset($_GET["business"])) {
 <!DOCTYPE html>
 <html lang="da">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Berlingske - Front</title>
+	<?php include('includes/head.php'); ?>
+	<title>Berlingske - Teaser packs</title>
 	<link rel="stylesheet" href="/dist/styles/main.css">
 </head>
 <body class="tpl-front <?php if($siteBusiness): ?>site-business<?php endif; ?> show-site-search">

@@ -7,7 +7,7 @@
 	<div class="col-primary-wide">
 		<div class="row">
 				<? while (dumb_luck("3")): ?>
-				<div class="col-xl-4">
+				<div class="col-md-6">
 					
 					<?php 
 						$sectionClass = 'latest-news mb-05';

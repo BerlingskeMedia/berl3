@@ -1,6 +1,6 @@
 
 <? while (dumb_luck($relatedCount)): ?>
-<li class="<?php echo $relatedGridClass; ?>">
+<li class="<?php echo $relatedGridClass; ?> <?php if($labelType): ?> has-label <?php endif; ?>">
 	<div class="<?php echo $relatedTeaserClass; ?>">
 		<a href="tpl-article.php" title="[ARTICLE HEADER]">
 			<?php if($relatedShowImg): ?>
@@ -53,7 +53,8 @@
 					<div class="teaser-summary">
 						
 						<?php include('includes/frontpage/teasers/labels.php'); ?>
-
+						
+						<div class="hide-on-xl">
 						<?php if($relatedCategory): ?>
 							<span class="teaser--category">
 								<?php  echo $relatedCategory; ?>  
@@ -68,6 +69,7 @@
 								<span class="subscriber-notice"><span class="pipe"></span>Abonnement</span>
 							<?php endif; ?>
 							</span>
+						</div>
 					</div>
 				<?php endif; ?>
 			</div>
