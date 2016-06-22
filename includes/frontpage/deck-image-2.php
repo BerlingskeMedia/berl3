@@ -11,7 +11,7 @@
 						<?php
 							$imgW='1070'; 
 							$showImg = '1';
-							$class = '  teaser--photo item--teaser teaser--small';
+							$class = '  teaser--theme-photo item--teaser teaser--small';
 							$imgRatio = '16:9';
 							$showSummary = '1';
 							$showRelated = false;

@@ -1,4 +1,8 @@
 
+<?php 
+$labelType = false;
+$labelText = false; 
+?>
 <?php if($teaserPack === '1') :?>
 <!-- teaser pack 1 -->
 	<div class="teaser--pack clearfix">
@@ -16,15 +20,13 @@
 				$relatedImgRatio = '3:2';
 				$relatedImgSrc = '/landscape';
 				$showRelatedSummary = true;
-				
 				$showRelatedPaywall = true;
 				$relatedTrumpet = true;
-				
 				$relatedCategory = 'Business.dk';
-				$relatedTeaserLabel = 'red';
-				$relatedLabelText = '<i class="bicon-record"></i> Live';
-				$teaserLabel = 'red';
-				$labelText = '<i class="bicon-record"></i> Live';
+				// $relatedTeaserLabel = 'red';
+				//$relatedLabelText = '<i class="bicon-record"></i> Live';
+				// $teaserLabel = 'red';
+				// $labelText = '<i class="bicon-record"></i> Live';
 				include('includes/frontpage/teasers/teaser-related.php'); 
 			?>
 

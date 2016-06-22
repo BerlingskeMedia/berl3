@@ -58,10 +58,11 @@ if(isset($_GET["business"])) {
 			<?php
 			$imgW='920'; 
 			$showImg = '1';
-			$class = ' teaser--img-wide item--teaser teaser--big  ';
+			$class = ' teaser--img-wide item--teaser teaser--large  ';
 			$imgRatio = '16:9';
 			$imgSrc = '/landscape';
 			$showSummary = true;
+			$showHeader = true;	
 			$showComments = true;
 			$showRelated = false;
 			$showDate = false;
@@ -89,7 +90,7 @@ if(isset($_GET["business"])) {
 			<?php
 			$imgW='920'; 
 			$showImg = '1';
-			$class = ' teaser--img-wide item--teaser teaser--big ';
+			$class = ' teaser--img-wide item--teaser teaser--large ';
 			$imgRatio = '16:9';
 			$imgSrc = '/landscape';
 			$showSummary = true;
@@ -122,7 +123,7 @@ if(isset($_GET["business"])) {
 			<?php
 			$imgW='920'; 
 			$showImg = '1';
-			$class = ' teaser--img-wide item--teaser teaser--big ';
+			$class = ' teaser--img-wide item--teaser teaser--large ';
 			$imgRatio = '16:9';
 			$imgSrc = '/landscape';
 			$showSummary = true;
@@ -154,7 +155,7 @@ if(isset($_GET["business"])) {
 			<?php
 			$imgW='920'; 
 			$showImg = '1';
-			$class = ' teaser--img-wide item--teaser teaser--big ';
+			$class = ' teaser--img-wide item--teaser teaser--large ';
 			$imgRatio = '16:9';
 			$imgSrc = '/landscape';
 			$showSummary = true;
@@ -186,7 +187,7 @@ if(isset($_GET["business"])) {
 			<?php
 			$imgW='920'; 
 			$showImg = '1';
-			$class = ' teaser--img-wide item--teaser teaser--big ';
+			$class = ' teaser--img-wide item--teaser teaser--large ';
 			$imgRatio = '16:9';
 			$imgSrc = '/landscape';
 			$showSummary = true;

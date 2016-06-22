@@ -19,7 +19,7 @@
 		z-index: 2;
 		opacity: 1!important;
 		padding: .425rem 0.625rem 0.425rem;
-		font-size: 1rem;
+		font-size: 1.4rem;
 	}
 	.teaser--label-red,
 	.teaser--label-live {
@@ -47,8 +47,9 @@
 
 .teaser--xlarge {
 	[class*="teaser--label"] {
-		font-size: 1.5rem;
+		font-size: 2rem;
 		text-transform: uppercase;
+		padding: .3rem 1rem .2rem;
 	}	
 }
 

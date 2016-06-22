@@ -12,7 +12,7 @@
 				<?php
 				$imgW='1050'; 
 				$showImg = '1';
-				$class = 'teaser--img-wide item--teaser teaser--small teaser--longread	 ';
+				$class = 'teaser--img-wide item--teaser teaser--small teaser--theme-longread	 ';
 				$imgRatio = '16:9';
 				$imgSrc = '/!longread';
 				$showSummary = true;

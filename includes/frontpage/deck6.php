@@ -22,7 +22,7 @@
 					<?php
 					$imgW='920'; 
 					$showImg = '1';
-					$class = 'teaser--img-wide item--teaser teaser--big	';
+					$class = 'teaser--img-wide item--teaser teaser--large	';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
@@ -36,7 +36,7 @@
 					<?php
 					$imgW='920'; 
 					$showImg = '1';
-					$class = 'teaser--img-wide item--teaser teaser--big	 teaser--theme-feature item--teaser__bt';
+					$class = 'teaser--img-wide item--teaser teaser--large	 teaser--theme-feature item--teaser__bt';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
@@ -67,7 +67,7 @@
 					<?php
 					$imgW='940'; 
 					$showImg = '1';
-					$class = 'teaser--img-wide teaser--big  item--teaser__bt';
+					$class = 'teaser--img-wide teaser--large  item--teaser__bt';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
@@ -81,10 +81,10 @@
 					
 					<? if (dumb_luck("50%")) {
 						$imgW='220'; 
-						$class = 'teaser--img-right  teaser--small teaser--trade item--teaser__bt';
+						$class = 'teaser--img-right  teaser--small teaser--theme-trade item--teaser__bt';
 					} else {
 						$imgW='940';
-						$class = 'teaser--img-wide  teaser--big teaser--trade item--teaser__bt';
+						$class = 'teaser--img-wide  teaser--large teaser--theme-trade item--teaser__bt';
 					}
 					
 

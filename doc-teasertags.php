@@ -65,12 +65,13 @@ if (isset($_GET['labelType'])) {
 			<?php
 			$imgW='920'; 
 			$showImg = '1';
-			$class = ' teaser--img-wide item--teaser teaser--big';
+			$class = ' teaser--img-wide item--teaser teaser--large';
 			$imgRatio = '16:9';
 			$imgSrc = '/landscape';
 			$showSummary = true;
 			$showDate = false;
 			$showCategory = false;
+			$showHeader = true;
 			$category = false;
 			$showPaywall = true;
 			$teaserPack = false;
@@ -90,7 +91,7 @@ if (isset($_GET['labelType'])) {
 			<?php
 			$imgW='920'; 
 			$showImg = '1';
-			$class = ' teaser--img-wide item--teaser teaser--big  teaser--theme-business';
+			$class = ' teaser--img-wide item--teaser teaser--large  teaser--theme-business';
 			$imgRatio = '16:9';
 			$imgSrc = '/landscape';
 			$showSummary = true;

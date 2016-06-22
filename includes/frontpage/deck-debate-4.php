@@ -53,8 +53,8 @@
 				
 				
 				<div class="col-xl-4">
-					<div class=" teaser--img-wide item--teaser teaser--xsmall teaser--big	teaser--cartoon-1 teaser--theme-white">
-					<div class="teaser-2 ">
+					<div class=" teaser--img-wide item--teaser teaser--xsmall teaser--theme-cartoon-1 teaser--theme-white">
+					
 						<span class="teaser--title">Hårdt mod hårdt</span>
 						<a href="#" class="teaser--link">
 						
@@ -67,15 +67,15 @@
 						</div><!-- .teaser-body -->	
 						</a><!-- .teaser-link -->
 		
-						</div>
+					
 						<button class="btn btn-sm btn-blue">Læs hele striben</button>
 					</div>
 
 				</div>	
 
 				<div class="col-xl-4">
-					<div class=" teaser--img-wide item--teaser teaser--xsmall teaser--big	teaser--cartoon-2 teaser--theme-white">
-					<div class="teaser-2 ">
+					<div class=" teaser--img-wide item--teaser teaser--xsmall 	teaser--theme-cartoon-2 teaser--theme-white">
+					
 					<span class="teaser--title">Ni til Fem</span>
 						<a href="#" class="teaser--link">
 						
@@ -87,14 +87,14 @@
 						</div><!-- .teaser-body -->	
 						</a><!-- .teaser-link -->
 				
-						</div>
+					
 						<button class="btn btn-sm btn-blue">Læs hele striben</button>
 					</div>
 				</div>	
 
 				<div class="col-xl-4">
-					<div class=" teaser--img-wide item--teaser teaser--xsmall teaser--big	teaser--cartoon-3 teaser--theme-white">
-					<div class="teaser-2 ">
+					<div class=" teaser--img-wide item--teaser teaser--xsmall 	teaser--theme-cartoon-3 teaser--theme-white">
+					
 						<span class="teaser--title">Til stregen</span>
 						<a href="#" class="teaser--link">
 						
@@ -106,7 +106,7 @@
 						</div><!-- .teaser-body -->	
 						</a><!-- .teaser-link -->
 				
-						</div>
+					
 						<button class="btn btn-sm btn-blue">Læs hele striben</button>
 					</div>
 

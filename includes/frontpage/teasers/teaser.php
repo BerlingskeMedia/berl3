@@ -16,14 +16,9 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 
 ?>
 
-<div class=" <?= $class; ?>">
+<div class=" <?= $class; ?> teaser-item ">
 
-	<div class="teaser-2 ">
-		<!-- <article class="teaser-item"> -->
-
-		
-			
-		
+		<div class="teaser">
 
 			<?php if($teaserAd): ?>
 				<div class="trade--header">
@@ -152,15 +147,12 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 			</div><!-- .teaser-body -->	
 			</a><!-- .teaser-link -->
 
-				
-
-			<?php include('includes/frontpage/teasers/teaserpacks.php'); ?>
-
-		<!-- </article> -->
 		
 		</div>
 
 	</div>
+
+	<?php include('includes/frontpage/teasers/teaserpacks.php'); ?>
 
 </div>
 

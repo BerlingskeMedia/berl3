@@ -12,30 +12,26 @@ if(isset($_GET["topLG"])) {
 <div class=" deck flex-row">
 
 	<?php if($topLG): ?>
-		<div class="teaser-wide">
+		
 			<div class="row">
 				<div class="col-xs-12 col-xl-12">
 					<?php
 					$imgW='1240'; 
 					$showImg = true;
-					$class = 'mb teaser--xlarge';
-					$imgRatio = '16:8';
+					$class = 'teaser--xlarge teaser--theme-img-top';
+					$imgRatio = '16:7';
 					$imgSrc = '/!b-breaking';
 					$showSummary = '1';
 					$showHeader 	= true;
 					$showRelatedimg = true;
-					
-					$labelType = 'red';
-					$labelText = '<i class="bicon-record"></i> Live';
-					$labelText = 'Opdateres';
-					// $labelText = 'Breaking';
-					$teaserPack = '1';
-					// $teaserPack = '3';
-
+					$labelType = 'yellow';
+					// $labelText = '<i class="bicon-record"></i> Live';
+					$labelText = 'Breaking';
+					$teaserPack = '3';
 					include('includes/frontpage/teasers/teaser.php') ?>			
 				</div>
 			</div>
-		</div>
+		
 	<?php endif; ?>
 
 
@@ -46,15 +42,14 @@ if(isset($_GET["topLG"])) {
 					<?php
 					$imgW='910'; 
 					$showImg = '1';
-					$class = 'mb item--teaser__bb teaser--img-wide teaser--medium  ';
+					$class = 'mb item--teaser__bb teaser--img-wide teaser--large  ';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = '1';
 					$showRelated = '1';
 					$showHeader = true;
 					
-					$labelType = 'yellow';
-					$labelText = 'Terror i Bruxelles';
+					
 					$teaserLink = 'tpl-article.php?event=breaking';
 					$teaserPack = '1';
 					include('includes/frontpage/teasers/teaser.php') ?>			
@@ -91,17 +86,16 @@ if(isset($_GET["topLG"])) {
 					<?php
 					$imgW='920'; 
 					$showImg = '1';
-					$class = ' teaser--img-wide item--teaser teaser--big ';
+					$class = ' teaser--img-wide item--teaser teaser--large ';
 					$imgRatio = '16:9';
 					$imgSrc = '/portrait';
 					$showSummary = true;
-					
-					
+					$showHeader = true;
 					$showPaywall = true;
-					$labelType = 'yellow';
-					$labelText = 'Breaking';
+					// $labelType = 'yellow';
+					// $labelText = 'Breaking';
 					//$labelType = 'breaking';
-					// $teaserPack = '5';
+					 $teaserPack = '4';
 					$showTrumpet = true;
 
 					include('includes/frontpage/teasers/teaser.php') ?>
@@ -109,7 +103,7 @@ if(isset($_GET["topLG"])) {
 					<?php
 					$imgW='920'; 
 					$showImg = '1';
-					$class = ' teaser--img-wide item--teaser teaser--big item--teaser__bt';
+					$class = ' teaser--img-wide item--teaser teaser--large item--teaser__bt';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
@@ -125,7 +119,7 @@ if(isset($_GET["topLG"])) {
 					<?php
 					$imgW='920'; 
 					$showImg = '1';
-					$class = 'teaser--theme-business teaser--img-wide item--teaser teaser--big item--teaser__bt';
+					$class = 'teaser--theme-business teaser--img-wide item--teaser teaser--large item--teaser__bt';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
@@ -144,7 +138,7 @@ if(isset($_GET["topLG"])) {
 					$imgW='220'; 
 					$imgW='220'; 
 					$showImg = '1';
-					$class = 'teaser--img-right  teaser--small teaser--trade item--teaser__bt';
+					$class = 'teaser--img-right  teaser--small teaser--theme-trade item--teaser__bt';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
@@ -200,7 +194,7 @@ if(isset($_GET["topLG"])) {
 					<?php
 					$imgW='920'; 
 					$showImg = '1';
-					$class = 'teaser--theme-business teaser--img-wide teaser--big item--teaser__bt ';
+					$class = 'teaser--theme-business teaser--img-wide teaser--large item--teaser__bt ';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
