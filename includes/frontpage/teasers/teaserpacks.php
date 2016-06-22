@@ -20,9 +20,9 @@
 				$showRelatedPaywall = true;
 				$relatedTrumpet = true;
 				$relatedCategory = 'Business.dk';
-				$labelType = 'yellow';
-				//$labelText = '<i class="bicon-record"></i> Live';
-				$labelText = 'Breaking';
+				$labelType = 'live';
+				$labelText = '<i class="bicon-record"></i> Live';
+				//$labelText = 'Opdateres';
 				include('includes/frontpage/teasers/teaser-related.php'); 
 			?>
 
@@ -41,8 +41,8 @@
 				$showRelatedSummary = false;
 				$showRelatedPaywall = true;
 				$relatedTrumpet = true;
-				$labelType = 'yellow';
-				$labelText = 'Breaking';
+				// $labelType = 'yellow';
+				// $labelText = 'Breaking';
 
 
 				include('includes/frontpage/teasers/teaser-related.php'); 

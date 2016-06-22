@@ -60,17 +60,7 @@
 		@extend .font-s1;
 		margin-bottom: 0;
 	}
-	.teaser-summary {
-		@extend .font-g1;
-		color: rgba(0,0,0,.75);
-		font-size: 1.1rem;
-		.teaser-tools {
-			display: inline;
-		}
-		/*.pipe {
-			display: none;
-		}*/
-	}
+	
 	.teaser-img {
 		position: relative;
 		margin-bottom: .625rem;
@@ -116,7 +106,19 @@
 			margin-left: .2rem;
 		}
 	}	
-	
+}
+
+.teaser-summary {
+	@extend .font-g1;
+	color: rgba(0,0,0,.75);
+	font-size: 1.1rem;
+	line-height: 1.2;
+	.teaser-tools {
+		display: inline;
+	}
+	/*.pipe {
+		display: none;
+	}*/
 }
 
 .teaser--title {
@@ -216,7 +218,7 @@
 /*TEASER ACCESORIES*/
 
 .teaser--pack {
-	.header-related {
+	.header--related {
 		@extend .font-s1;
 		margin-bottom: 0;
 	}	
@@ -252,7 +254,7 @@
 	padding-left: .5rem;
 	position: relative;
 
-	.header-related {
+	.header--related {
 		@extend .font-s2;
 		font-weight: 500;
 		margin-bottom: 0;
@@ -278,7 +280,7 @@
 
 
 .related--large {
-	.header-related {
+	.header--related {
 		font-size: 1.7rem;	
 	}
 	.teaser-tools {
@@ -287,13 +289,13 @@
 }
 
 .related--medium {
-	.header-related {
+	.header--related {
 		font-size: 1.4rem;	
 	}
 }
 
 .related--small {
-	.header-related {
+	.header--related {
 		font-size: 1.2rem;
 	}
 	.teaser-tools {
@@ -302,7 +304,7 @@
 }
 
 .related--xsmall {
-	.header-related {
+	.header--related {
 		font-size: 1rem;
 	}
 	.teaser-tools {
@@ -327,7 +329,7 @@
 		float: left;
 		margin: 0 .625rem 0 0;
 	}
-	.header-related {
+	.header--related {
 		@extend .font-s1;		
 		font-size: 25px;
 		margin-bottom: 0;
@@ -382,9 +384,7 @@
 	
 }
 
-.hide-on-xl {
-	display: none;
-}
+
 
 .icon-external {
 	// @extend [class^="bicon-"]:before;
@@ -449,7 +449,7 @@
 		background-color: $col-business-light;	
 	}*/
 	/*.header,
-	.header-related {
+	.header--related {
 		font-weight: 400;
 	}*/
 	/*.teaser--comments i,
@@ -619,7 +619,7 @@
 		}
 	}
 	
-	.header-related {
+	.header--related {
 		color: #fff;
 		@extend .font-s2;
 		font-size: .9rem;
@@ -663,14 +663,16 @@
 		bottom: 0;
 		padding: $spacer;
 	}
-	
+	.hide-on-giant {
+		display: none;
+	}
 	.teaser-img {
 		margin-bottom: 0;
 	}
 	
 	.teaser-summary,	
 	.header {
-		max-width: 56.4rem;
+		max-width: 55.4rem;
 	}
 	.subscriber-notice {
 		color: rgba(255,255,255,.5);
@@ -738,7 +740,7 @@
 		}
 
 	}
-	.header-related {
+	.header--related {
 		font-size: .95rem!important;
 		@extend .font-s2;
 		font-weight: 500;
@@ -1023,10 +1025,10 @@
 			font-size: 0.938rem;
 		}
 	}
-	.related--large .header-related {
+	.related--large .header--related {
 		font-size: 1.7rem * .8;
 	}
-	.related--small .header-related {
+	.related--small .header--related {
 		font-size: 1.2rem * .8;
 	}
 }

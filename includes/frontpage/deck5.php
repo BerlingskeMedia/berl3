@@ -24,10 +24,10 @@ if(isset($_GET["topLG"])) {
 					$showSummary = '1';
 					$showHeader 	= true;
 					$showRelatedimg = true;
-					$labelType = 'live';
-					$labelText = '<i class="bicon-record"></i> Live';
-					// $labelText = 'Breaking';
-					$teaserPack = '4';
+					$labelType = 'red';
+					// $labelText = '<i class="bicon-record"></i> Live';
+					$labelText = 'Opdateres';
+					$teaserPack = '1';
 					include('includes/frontpage/teasers/teaser.php') ?>			
 				</div>
 			</div>
