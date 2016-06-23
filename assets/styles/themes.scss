@@ -10,8 +10,15 @@
 .theme-dark {
 
 	.section-title {
+		@extend .mb;
 		&:before {
 			background-color: rgba(255,255,255,.2);
+		}
+		@include media-breakpoint-down(lg) {
+			padding-top: 0;
+			&:before {
+				display: none;
+			}
 		}
 	}
 
@@ -77,8 +84,13 @@
 	}
 }
 
+@include media-breakpoint-only (lg) {
 
-@include media-breakpoint-down(md) {
+}
+@include media-breakpoint-down(lg) {
+	.section-title {
+		display: inline-block;
+	}
 	.theme-illu {
 		max-width: 100px;
 		float: right;

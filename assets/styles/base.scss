@@ -465,7 +465,30 @@ $col-deck-label-width: 160px;
 		width: 100%;
 	}
 	.col-primary {
+		width: 100%;	
+	}
+}
+
+@include media-breakpoint-only(md) {
+	
+	.deck-theme,
+	.col-primary-wide,
+	.col-tags,
+	.col-sidebar,
+	.col-primary {
 		width: 100%;
+		padding-left: 5rem;
+		padding-right: 5rem;		
+	}
+	.deck-theme {
+		.col-tags,
+		.col-primary {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+	.col-wrapper {
+		margin-bottom: 2rem;
 	}
 }
 

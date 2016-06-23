@@ -1,4 +1,4 @@
-<div class="deck deck-cappucino">
+<div class="deck deck-theme">
 	<div class="col-tags ">
 			<div class="section-title">Shop</div>
 			

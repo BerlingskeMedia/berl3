@@ -9,7 +9,7 @@
 
 	
 	
-		<div class="col-tags col-border-right-lg-up">
+		<div class="col-tags col-border-right-lg-up hidden-lg-down">
 			<div class="section-title-no-border mb-2">Title</div>		
 		</div>
 		
@@ -20,7 +20,7 @@
 				
 				<div class="col-xs-12">
 					<?php
-					$imgW='920'; 
+					$imgW='930';  
 					$showImg = '1';
 					$class = 'teaser--img-wide item--teaser teaser--large	';
 					$imgRatio = '16:9';
@@ -34,7 +34,7 @@
 					include('includes/frontpage/teasers/teaser.php') ?>
 
 					<?php
-					$imgW='920'; 
+					$imgW='930';  
 					$showImg = '1';
 					$class = 'teaser--img-wide item--teaser teaser--large	 teaser--theme-feature item--teaser__bt';
 					$imgRatio = '16:9';
@@ -52,7 +52,7 @@
 					$imgW='220'; 
 					$imgW='220'; 
 					$showImg = '1';
-					$class = 'teaser--img-right  teaser--small teaser--theme-business item--teaser__bt';
+					$class = 'teaser--img-right  teaser--small teaser--theme__business item--teaser__bt';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
@@ -101,7 +101,7 @@
 
 					
 					<?php
-					$imgW='920'; 
+					$imgW='930';  
 					$showImg = '1';
 					$class = ' teaser--img-right teaser--small item--teaser__bt ';
 					$imgRatio = '16:9';
@@ -119,7 +119,7 @@
 					<?php if($showBflow): ?>
 					<!-- SMALL TEASERS: -->
 					<?php
-					$imgW='920'; 
+					$imgW='930';  
 					$showImg = '1';
 					$class = ' teaser--img-right teaser--small item--teaser__bt  all' ;
 					$imgRatio = '16:9';
@@ -134,7 +134,7 @@
 
 
 					<?php
-					$imgW='920'; 
+					$imgW='930';  
 					$showImg = '1';
 					$class = ' teaser--img-right  item--teaser__bt teaser--theme-feature teaser--small' ;
 					$imgRatio = '1:1';
@@ -148,7 +148,7 @@
 					include('includes/frontpage/teasers/teaser.php') ?>
 
 					<?php
-					$imgW='920'; 
+					$imgW='930';  
 					$showImg = '1';
 					$class = ' teaser--img-right  item--teaser__bt  teaser--small' ;
 					$imgRatio = '16:9';
@@ -181,20 +181,27 @@
 		
 		
 		
+		<div class="row">
+			<div class="col-lg-12 col-md-6 col-sm-12">
+				<?php 
+					$sectionClass = 'latest-news mb-05';
+					$imgRatio = '1:1';
+					$premium = true;
+					$imgSrc = false;
+					$imgW = '120';
+					$showTime = true;
+					$showImage = false; 
+					$listClass = 'list list-time';
+					$listTitle = 'Some list';
+					$listCount = '5';
+						
+					include('includes/list-news.php'); ?>
+			</div>
+			<div class="col-lg-12 col-md-6 col-sm-12">
+				<div style="width: 300px; height: 600px;" class="demo-banner">Sticky Banner</div>
+			</div>
+		</div>
 		
-		<?php 
-			$sectionClass = 'latest-news mb-05';
-			$imgRatio = '1:1';
-			$premium = true;
-			$imgSrc = false;
-			$imgW = '120';
-			$showTime = true;
-			$showImage = false; 
-			$listClass = 'list list-time';
-			$listTitle = 'Some list';
-			$listCount = '5';
-				
-			include('includes/list-news.php'); ?>
 		
 		
 		
@@ -202,7 +209,7 @@
 		
 
 		
-			<div style="width: 300px; height: 600px;" class="demo-banner">Sticky Banner</div>
+			
 		
 	</div>
 	

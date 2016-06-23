@@ -1,5 +1,5 @@
 <div class="deck flex-row">
-	<div class="col-tags col-border-right-lg-up">
+	<div class="col-tags col-border-right-lg-up hidden-lg-down">
 		<div class="section-title">Flere nyheder</div>
 		
 		
@@ -7,7 +7,7 @@
 	<div class="col-primary-wide">
 		<div class="row">
 				<? while (dumb_luck("3")): ?>
-				<div class="col-md-6">
+				<div class="col-lg-4 col-md-6">
 					
 					<?php 
 						$sectionClass = 'latest-news mb-05';

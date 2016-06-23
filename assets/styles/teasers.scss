@@ -650,7 +650,7 @@
 	.related--large .header--related [class*=teaser--label] {
 		display: inline-block;
 	}
-	
+
 	.has-label {
 		.related--large,
 		.related--small {
@@ -1024,7 +1024,7 @@
 
 	.teaser--small {
 		.header {
-			font-size: 1.875rem * .7;
+			font-size: 1.875rem * .85;
 		}
 	}
 	.teaser--xsmall {
@@ -1038,13 +1038,16 @@
 			font-size: 0.938rem;
 		}
 	}
-	.related--large .header--related {
+	.related--large .related--header__content {
 		font-size: 1.7rem * .8;
 	}
-	.related--small .header--related {
-		font-size: 1.2rem * .8;
+	.related--small .related--header__content {
+		font-size: 1.2rem * .9;
 	}
 }
+
+
+
 
 @include media-breakpoint-down(md) {
 	.teaser--xlarge {

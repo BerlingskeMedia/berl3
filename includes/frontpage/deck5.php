@@ -84,7 +84,7 @@ if(isset($_GET["topLG"])) {
 				
 				<div class="col-xs-12">
 					<?php
-					$imgW='920'; 
+					$imgW='930'; 
 					$showImg = '1';
 					$class = ' teaser--img-wide item--teaser teaser--large ';
 					$imgRatio = '16:9';
@@ -101,7 +101,7 @@ if(isset($_GET["topLG"])) {
 					include('includes/frontpage/teasers/teaser.php') ?>
 
 					<?php
-					$imgW='920'; 
+					$imgW='930';  
 					$showImg = '1';
 					$class = ' teaser--img-wide item--teaser teaser--large item--teaser__bt';
 					$imgRatio = '16:9';
@@ -117,7 +117,7 @@ if(isset($_GET["topLG"])) {
 					include('includes/frontpage/teasers/teaser.php') ?>
 
 					<?php
-					$imgW='920'; 
+					$imgW='930';  
 					$showImg = '1';
 					$class = 'teaser--theme-business teaser--img-wide item--teaser teaser--large item--teaser__bt';
 					$imgRatio = '16:9';
@@ -192,7 +192,7 @@ if(isset($_GET["topLG"])) {
 					include('includes/frontpage/teasers/teaser.php') ?>
 
 					<?php
-					$imgW='920'; 
+					$imgW='930';  
 					$showImg = '1';
 					$class = 'teaser--theme-business teaser--img-wide teaser--large item--teaser__bt ';
 					$imgRatio = '16:9';
@@ -235,28 +235,43 @@ if(isset($_GET["topLG"])) {
 
 	<div class="col-sidebar col-border-left-lg-up">
 
-		
-			<div style="width: 300px; height: 250px;" class="demo-banner mb">Banner</div>
-		
-		
-		
-		<?php 
-			$sectionClass 	= 'latest-news mb-05';
-			$imgRatio 		= '1:1';
-			$premium 		= true;
-			$showComments 	= true;
-			$imgSrc 		= false;
-			$imgW 			= '120';
-			$showTime 		= false;
-			$showImage 		= false; 
-			$listClass 		= 'list list-top-lg';
-			$listTitle 		= 'Mest læste lige nu';
-			$listCount 		= '5';
-				
-			include('includes/list-news.php'); ?>
+			
+		<div class="row">
+			<div class="col-lg-12 col-md-6 col-sm-12">
+				<div style="width: 300px; height: 250px;" class="demo-banner mb">Banner</div>
+			</div>
 
-			<div style="width: 300px; height: 600px;" class="demo-banner">Sticky Banner</div>
+			<div class="col-lg-12 col-md-6 col-sm-12">
+					<?php 
+						$sectionClass 	= 'latest-news mb-05';
+						$imgRatio 		= '1:1';
+						$premium 		= true;
+						$showComments 	= true;
+						$imgSrc 		= false;
+						$imgW 			= '120';
+						$showTime 		= false;
+						$showImage 		= false; 
+						$listClass 		= 'list list-top-lg';
+						$listTitle 		= 'Mest læste lige nu';
+						$listCount 		= '5';
+							
+						include('includes/list-news.php'); ?>
+
+						<div style="width: 300px; height: 600px;" class="demo-banner">Sticky Banner</div>
+			</div>
+
+			
+			
+
+		</div>
+
+			
 		
+		
+		
+		
+
+			
 	</div>
 	
 </div>
