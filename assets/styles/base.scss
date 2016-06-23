@@ -284,6 +284,14 @@ $col-sidebar-width: 19.375rem;
 	.col-wrapper {
 		width: 100%;
 	}
+	.col-primary {
+		padding-right: 0;
+	}
+	.col-sidebar {
+		width: 100%;
+		padding: 0;
+		float: none;
+	}
 }
 /*.col-tags + .col-primary {
 	width: calc(100% - #{$col-tag-width + $col-sidebar-width});

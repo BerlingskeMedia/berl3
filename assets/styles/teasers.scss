@@ -115,12 +115,15 @@
 	display: block;
 	line-height: 1;
 }
+.teaser--summary {
+	line-height: 1.2;
+}
 .related--summary__content,
-.teaser-summary {
+.teaser--summary__content {
 	@extend .font-g1;
 	color: rgba(0,0,0,.75);
 	font-size: 1.1rem;
-	line-height: 1.2;
+	
 	.teaser-tools {
 		display: inline;
 	}
@@ -216,6 +219,7 @@
 	.header--related {
 		@extend .font-s1;
 		margin-bottom: 0;
+		line-height: 1.1;
 	}	
 	.related-body {
 		overflow: hidden;
@@ -515,102 +519,7 @@
 	}
 }
 
-.teaser--theme-img-top-2 {
-	position: relative;
-	.teaser--content {
-		@include gradient-vertical(rgba(37,37,37,.0), rgba(37,37,37,.8), 0%, 50%);
-		position: absolute;
-		left: 0;
-		right: 0;
-		top:auto;
-		bottom: 0;
-		padding: 4rem $spacer 5rem;
-	}
-	
-	.teaser-img {
-		margin-bottom: 0;
-	}
-	
-	.teaser-summary,	
-	.header {
-		max-width: 56.4rem;
-	}
-	.subscriber-notice {
-		color: rgba(255,255,255,.5);
-		font-size: .7rem;
-	}
-	.teaser--pack {
-		@extend .clearfix;
-		background-color: fade-out(#222, .2);
-		padding: .625rem;
-		margin-top: .625rem;
-		position: absolute;
-		right: .625rem;
-		width: 290px;
-		bottom: .625rem;
-		@extend .font-s2;
-		.teaser--comments {
-			color: #000;
-		}
-		ul {
-			margin-top: 0;
-		}
-		
-		.col-xs-6 {
-			width: 100%;	
-		}
 
-		&:before {
-			content: 'LÆS OGSÅ:';
-			display: inline-block;
-			position: absolute;
-			left: 0;
-			top: -1.8rem;
-			line-height: 1.8rem;
-			background-color: #222;
-			color: #fff;
-			padding: 0 1rem;
-			font-size: .8rem;
-			font-weight: 500;
-		}
-		.teaser-summary {
-			font-size: .8rem;
-		}
-		.teaser-img {
-			float: right;
-			max-width: 80px;
-			margin: 0  0 0 .625rem;
-		}
-	}
-	
-	.header--related {
-		color: #fff;
-		@extend .font-s2;
-		font-size: .9rem;
-		font-weight: 500;
-	}
-	.teaser--comments,
-	.teaser-summary {
-		color: #fff;
-	}
-	
-	
-	.related-body {
-		overflow: visible;
-	}
-	
-
-
-	.teaser-related {
-		a {
-			color: #fff;
-		}
-		img {
-			border: $border-width solid rgba(255,255,255,.7);
-		}
-	}
-
-}
 
 
 .related--large .header--related  [class*="teaser--label"] {
@@ -637,7 +546,7 @@
 		margin-bottom: 0;
 	}
 	
-	.teaser-summary,	
+	.teaser--summary,	
 	.header {
 		max-width: 55.4rem;
 	}
@@ -647,7 +556,7 @@
 	}
 	
 	.teaser--comments,
-	.teaser-summary {
+	.teaser--summary {
 		color: #fff;
 	}
 	.related-body {
@@ -660,21 +569,7 @@
 		display: inline-block;
 	}
 
-	.has-label {
-		.related--large,
-		.related--small {
-			padding-top: 1.1rem;
-			[class*="teaser--label"] {
-				/*position: absolute;
-				top: 0;
-				left: .625rem;
-				font-size: .7rem;
-				padding: .05rem .3rem 0;
-				line-height: 1.4;*/
-			}
-		}
-		
-	}
+	
 	.related--header__content {
 		overflow: hidden;
 	}
@@ -698,12 +593,6 @@
 			}
 		}
 
-		.teaser-summary {
-			color: #222;
-			@extend .font-g1;
-			font-size: .9rem;
-			margin-top: .3rem;
-		}
 		.subscriber-notice {
 			color: rgba(0,0,0,.7);
 		}
@@ -748,7 +637,7 @@
 		width: 100%;
 		max-width: none;
 	}
-	.teaser-summary {
+	.teaser--summary__content {
 			color: rgba(255,255,255,.9);
 			@extend .font-s2;
 			font-size: .9rem;	
@@ -808,7 +697,7 @@
 	}
 	.teaser--comments i,
 	.teaser--comments,
-	.teaser-summary,
+	.teaser--summary__content,
 	.subscriber-notice{
 		color: rgba(255,255,255,.9);
 	}
@@ -894,11 +783,7 @@
 		color: #000;
 		@extend .font-s1;
 	}
-	.teaser-summary {
-		font-family: "Sanomat Sans Web", Helvetica, "Helvetica Neue", arial, sans-serif!important;
-		font-size: .9rem;
-		color: #222;
-	}
+	
 	&+ .teaser--consumersales {	
 		margin-top: .625rem * 2;
 	}
@@ -1011,6 +896,11 @@
 
 
 @include media-breakpoint-only(lg) {
+	.teaser--trumpet,
+	.related--header__category, 
+	.related--header__trumpet {
+		font-size: .8rem;
+	}
 	.teaser--xlarge {
 		.header {
 			font-size: 3.125rem * .7;
@@ -1073,7 +963,7 @@
 		}	
 	}
 	.teaser { 
-		.teaser-summary {
+		.teaser--summary__content {
 			font-size: .9rem;
 		} 
 	}
@@ -1084,14 +974,19 @@
 	}
 }
 
+
+
 @include media-breakpoint-down(sm) {
+	.subscriber-notice {
+		font-size: .6rem;
+	}
 	.related--header__trumpet,
 	.teaser--trumpet {
 		font-size: .7rem;
 	}
 	
 	.teaser { 
-		.teaser-summary {
+		.teaser--summary__content {
 			font-size: .9rem;
 		} 
 
@@ -1134,10 +1029,13 @@
 		.header {
 			font-size: 1rem;
 		}
+		.teaser--summary {
+			display: none;
+		}
 	}
 	.teaser--img-right .teaser-img,
 	.teaser--img-left .teaser-img {
-		max-width: 5rem;
+		max-width: 7rem;
 	}	
 	.teaser--xsmall {
 		.header {
@@ -1151,11 +1049,24 @@
 		}
 	}
 
+	.related--summary {
+		display: none;
+	}
+
 	.related--large .related--header__content {
 		font-size: .9rem;
 	}
 	.related--small .related--header__content {
 		font-size: .9rem;
 	}
+	.related--xsmall {
+		.header--related {
+			line-height: 1;
+		}
+		.related--header__content {
+				font-size: .8rem;
+			}
+	}
+	
 
 }

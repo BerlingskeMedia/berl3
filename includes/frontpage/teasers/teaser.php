@@ -46,26 +46,19 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 
 			<a href="<?php echo $teaserLink; ?>" class="teaser--link">	
 				<div class="teaser-body">
-				<?php if($showDate || $showCategory || $teaserAd || $showTrumpet)  : ?>
+				<?php if($showCategory || $teaserAd || $showTrumpet)  : ?>
 					<div class="teaser--footer">
 						
 						<?php if($teaserAd): ?>
 							<div class="teaser--sponsor">Sponseret af <? dummy("text@company-names") ?></div>
 						<?php endif; ?>
 						
-
 						<?php if($showTrumpet): ?>
 							<span class="teaser--trumpet">
 								<? dummy("text@trumpet") ?>
 							</span>
 						<?php endif; ?>
 
-						<?php if($showDate): ?>
-						<span class="teaser--date">
-							<i class="bicon-clock-alt"></i>
-							<? dummy("text@time-ago-hours") ?>
-						</span>	
-						<?php endif; ?>
 					</div>
 				<?php endif; ?>
 
@@ -78,14 +71,11 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 				<h2 class="header">
 					
 					<? dummy("text@".$headerSrc."") ?>
-					<?php if (!$showSummary && !$showAuthor ): ?>
-							<span class="teaser-tools">
-
+						<?php if (!$showSummary && !$showAuthor ): ?>
 							<?php if($showPaywall) : ?>
 								 <span class="subscriber-notice"><span class="pipe"></span>Abonnement</span>
 							<?php endif; ?>
-							</span>
-					<?php endif; ?>
+						<?php endif; ?>
 
 				</h2>
 				
@@ -114,15 +104,18 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 
 				
 				<?php if ($showSummary): ?>
-					<div class="teaser-summary">
+					<div class="teaser--summary">
 
 							<?php if($category): ?>
 								<span class="teaser--category">
 									 <?php echo $category; ?> 
 								</span>	
 							<?php endif; ?>
-
-							<? dummy("text@".$summarySrc."") ?>
+							
+							<span class="teaser--summary__content">
+								<? dummy("text@".$summarySrc."") ?>	
+							</span>
+							
 						
 						<?php if($showPaywall): ?>
 							<? if (dumb_luck("100%")): ?>

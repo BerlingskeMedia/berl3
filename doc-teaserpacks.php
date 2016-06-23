@@ -45,11 +45,11 @@ if(isset($_GET["business"])) {
 	
 	<div class="row">
 		
-		<div class="col-xs-2 " >
+		<div class="col-xs-12 col-md-2" >
 			<h3>Teaser pack 1</h3>
 		</div>
 		
-		<div class="col-xs-8 " style="width:780px">
+		<div class="col-xs-8 col-xs-12 " style="max-width:780px">
 
 			
 
@@ -78,11 +78,11 @@ if(isset($_GET["business"])) {
 		</div>
 	<div class="row">
 
-		<div class="col-xs-2 " >
+		<div class="col-xs-12 col-md-2" >
 			<h3>Teaser pack 2</h3>
 		</div>
 
-		<div class="col-xs-8 " style="width:780px">
+		<div class="col-md-8 col-xs-12 " style="max-width:780px">
 
 			<?php
 			$imgW='920'; 
@@ -112,11 +112,11 @@ if(isset($_GET["business"])) {
 
 	<div class="row">
 
-		<div class="col-xs-2 " >
+		<div class="col-xs-12 col-md-2" >
 			<h3>Teaser pack 3</h3>
 		</div>
 
-		<div class="col-xs-8 " style="width:780px">
+		<div class="col-md-8 col-xs-12 " style="max-width:780px">
 
 			<?php
 			$imgW='920'; 
@@ -143,11 +143,11 @@ if(isset($_GET["business"])) {
 
 	<div class="row">
 
-		<div class="col-xs-2 " >
+		<div class="col-xs-12 col-md-2" >
 			<h3>Teaser pack 4</h3>
 		</div>
 
-		<div class="col-xs-8 " style="width:780px">
+		<div class="col-md-8 col-xs-12 " style="max-width:780px">
 
 			<?php
 			$imgW='920'; 
@@ -175,11 +175,11 @@ if(isset($_GET["business"])) {
 
 	<div class="row">
 
-		<div class="col-xs-2 " >
+		<div class="col-xs-12 col-md-2" >
 			<h3>Teaser pack 5</h3>
 		</div>
 
-		<div class="col-xs-8 " style="width:780px">
+		<div class="col-md-8 col-xs-12 " style="max-width:780px">
 
 			<?php
 			$imgW='920'; 
@@ -209,11 +209,11 @@ if(isset($_GET["business"])) {
 
 	<div class="row">
 
-		<div class="col-xs-2 " >
+		<div class="col-xs-12 col-md-2" >
 			<h3>Teaser pack 6</h3>
 		</div>
 
-		<div class="col-xs-8 " style="width:780px">
+		<div class="col-md-8 col-xs-12 " style="max-width:780px">
 
 			<?php
 			$imgW='920'; 
@@ -242,11 +242,11 @@ if(isset($_GET["business"])) {
 
 	<div class="row">
 
-		<div class="col-xs-2 " >
+		<div class="col-xs-12 col-md-2" >
 			<h3>Teaser pack 7</h3>
 		</div>
 
-		<div class="col-xs-8 " style="width:780px">
+		<div class="col-md-8 col-xs-12 " style="max-width:780px">
 
 			<?php
 			$imgW='920'; 

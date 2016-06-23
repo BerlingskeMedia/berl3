@@ -38,11 +38,7 @@
 						<?php if(!$showRelatedSummary): ?>
 							
 							<?php if( $showRelatedPaywall): ?>
-								<span class="teaser-tools">
-								<?php if ($showRelatedPaywall): ?>
-									 <span class="subscriber-notice"><span class="pipe"></span>Abonnement</span>
-								<?php endif; ?>
-								</span>
+								<span class="subscriber-notice"><span class="pipe"></span>Abonnement</span>
 							<?php endif; ?>
 							
 						<?php endif; ?>

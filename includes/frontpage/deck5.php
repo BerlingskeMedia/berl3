@@ -119,7 +119,7 @@ if(isset($_GET["topLG"])) {
 					<?php
 					$imgW='930';  
 					$showImg = '1';
-					$class = 'teaser--theme-business teaser--img-wide item--teaser teaser--large item--teaser__bt';
+					$class = 'teaser--theme__business teaser--img-wide item--teaser teaser--large item--teaser__bt';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
@@ -166,7 +166,7 @@ if(isset($_GET["topLG"])) {
 					<?php
 					$imgW='220'; 
 					$showImg = '1';
-					$class = 'teaser--img-right  teaser--small teaser--theme-business item--teaser__bt';
+					$class = 'teaser--img-right  teaser--small teaser--theme__business item--teaser__bt';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
@@ -194,7 +194,7 @@ if(isset($_GET["topLG"])) {
 					<?php
 					$imgW='930';  
 					$showImg = '1';
-					$class = 'teaser--theme-business teaser--img-wide teaser--large item--teaser__bt ';
+					$class = 'teaser--theme__business teaser--img-wide teaser--large item--teaser__bt ';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
