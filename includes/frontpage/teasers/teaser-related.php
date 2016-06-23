@@ -13,40 +13,43 @@
 				
 				<h3 class="header--related">
 					
-					<?php  if(!$showRelatedSummary): ?>
-						<?php include('includes/frontpage/teasers/labels.php'); ?>
-					<?php endif ?>
-
-
-						<?php if(!$showRelatedSummary && $relatedCategory): ?>
-							<span class="header--related__category">
-								<?php echo $relatedCategory; ?> <i class="icon-external"></i> 
-							</span>	
-						<?php endif; ?>
-
-						<?php if($relatedTrumpet): ?>
-							<span class="header--related__trumpet">
-								<? dummy("text@trumpet"); ?>
-							</span>
-						<?php endif; ?>
-						
-						<span class="header--related__content">
-							<? dummy("text@headline-b3") ?>	
-						</span>
-						
+					<?php include('includes/frontpage/teasers/labels.php'); ?>
 					
 
-					<?php if(!$showRelatedSummary): ?>
-						
-						<?php if( $showRelatedPaywall): ?>
-							<span class="teaser-tools">
-							<?php if ($showRelatedPaywall): ?>
-								 <span class="subscriber-notice"><span class="pipe"></span>Abonnement</span>
-							<?php endif; ?>
-							</span>
-						<?php endif; ?>
-						
+					<?php if(!$showRelatedSummary && $relatedCategory): ?>
+						<span class="related--header__category">
+							<?php echo $relatedCategory; ?> <i class="icon-external"></i> 
+						</span>	
 					<?php endif; ?>
+
+					
+
+					<?php if($relatedTrumpet): ?>
+						<span class="related--header__trumpet">
+							<? dummy("text@trumpet"); ?>
+						</span>
+					<?php endif; ?>
+
+
+					
+					<span class="related--header__content">
+						<? dummy("text@headline-b3") ?>	
+
+						<?php if(!$showRelatedSummary): ?>
+							
+							<?php if( $showRelatedPaywall): ?>
+								<span class="teaser-tools">
+								<?php if ($showRelatedPaywall): ?>
+									 <span class="subscriber-notice"><span class="pipe"></span>Abonnement</span>
+								<?php endif; ?>
+								</span>
+							<?php endif; ?>
+							
+						<?php endif; ?>
+
+					</span>
+
+					
 
 				</h3>
 
@@ -55,15 +58,15 @@
 				<?php if($showRelatedSummary): ?>
 					<div class="related--summary">
 						
-						<?php include('includes/frontpage/teasers/labels.php'); ?>
 						
-						<span class="hide-on-giant">
-
 							<?php if($relatedCategory): ?>
 								<span class="related--summary__category">
 									<?php  echo $relatedCategory; ?>  
 								</span>	
 							<?php endif; ?>
+							
+							<?php include('includes/frontpage/teasers/labels.php'); ?>
+
 							<span class="related--summary__content">
 								<? dummy("text@short-teaser") ?>	
 							</span>
@@ -72,7 +75,7 @@
 								<span class="subscriber-notice"><span class="pipe"></span>Abonnement</span>
 							<?php endif; ?>
 							
-						</span>
+						
 					</div>
 				<?php endif; ?>
 			</div>

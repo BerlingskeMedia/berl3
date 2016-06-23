@@ -18,7 +18,7 @@ if(isset($_GET["topLG"])) {
 					<?php
 					$imgW='1240'; 
 					$showImg = true;
-					$class = 'teaser--xlarge teaser--theme-giant';
+					$class = 'teaser--xlarge teaser--theme__giant';
 					$imgRatio = '16:7';
 					$imgSrc = '/!b-breaking';
 					$showSummary = '1';
@@ -59,7 +59,7 @@ if(isset($_GET["topLG"])) {
 
 	
 	
-		<div class="col-tags col-border-right-lg-up">
+		<div class="col-tags col-border-right-lg-up hidden-lg-down">
 			<div class="section-title-no-border mb-2">Topnyheder</div>		
 
 			<div class=" mt mb" style="">

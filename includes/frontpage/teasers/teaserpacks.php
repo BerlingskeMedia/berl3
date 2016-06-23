@@ -11,7 +11,7 @@
 				// ONELINERS
 				$relatedCount = '1';
 				$relatedGridClass = 'col-xs-12';
-				$relatedTeaserClass = 'item--teaser related--image teaser--img-left related--large teaser--theme-business ';
+				$relatedTeaserClass = 'item--teaser related--image teaser--img-left related--large teaser--theme__business ';
 				$relatedShowImg = true;
 				$relatedImgSize = '160';
 				$relatedImgRatio = '3:2';
@@ -20,9 +20,9 @@
 				$showRelatedPaywall = true;
 				$relatedTrumpet = true;
 				$relatedCategory = 'Business.dk';
-				$labelType = 'live';
-				$labelText = '<i class="bicon-record"></i> Live';
-				//$labelText = 'Opdateres';
+				// $labelType = 'red';
+				// $labelText = '<i class="bicon-record"></i> Live';
+				// $labelText = 'Opdateres';
 				include('includes/frontpage/teasers/teaser-related.php'); 
 			?>
 
@@ -63,7 +63,7 @@
 			<?php 
 				$relatedCount = '1';
 				$relatedGridClass = 'col-xs-12';
-				$relatedTeaserClass = 'item--teaser  teaser--img-right related--large teaser--theme-aok';
+				$relatedTeaserClass = 'item--teaser  teaser--img-right related--large teaser--theme__aok';
 				$relatedShowImg = true;
 				$relatedImgSize = '160';
 				$relatedImgRatio = '3:2';
@@ -81,7 +81,7 @@
 				// ONELINERS
 				$relatedCount = '1';
 				$relatedGridClass = 'col-xs-12';
-				$relatedTeaserClass = 'item--teaser  related--xsmall teaser--theme-business';
+				$relatedTeaserClass = 'item--teaser  related--xsmall teaser--theme__business';
 				$relatedShowImg = false;
 				$relatedImgSize = '160';
 				$relatedImgRatio = '3:2';

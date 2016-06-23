@@ -36,12 +36,12 @@ if (isset($_GET['labelType'])) {
 	<div class="row">
 		<div class="col-xs-12">
 			<p>Choose tag type: 
-			<a href="?labelText=Breaking&labelType=yellow"><span class="teaser--label-yellow"><span>Breaking</span></span></a>
-			<a href="?labelText=<i%20class=bicon-record></i>%20Live&labelType=live"><span class="teaser--label-live"><span>Live</span></span></a>
-			<a href="?labelText=Opdateres&labelType=red"><span class="teaser--label-red"><span>To be updated</span></span></a>
-			<a href="?labelText=Lige%20nu&labelType=red"><span class="teaser--label-red"><span>Now</span></span></a>
-			<a href="?labelText=Nyhed på vej&labelType=red"><span class="teaser--label-red"><span>Coming up</span></span></a>
-			<a href="?labelText=Tophistorie&labelType=blue"><span class="teaser--label-blue"><span>Topstory</span></span></a>
+			<a href="?labelText=Breaking&labelType=yellow"><span class="teaser--label__yellow"><span>Breaking</span></span></a>
+			<a href="?labelText=<i%20class=bicon-record></i>%20Live&labelType=live"><span class="teaser--label__live"><span>Live</span></span></a>
+			<a href="?labelText=Opdateres&labelType=red"><span class="teaser--label__red"><span>To be updated</span></span></a>
+			<a href="?labelText=Lige%20nu&labelType=red"><span class="teaser--label__red"><span>Now</span></span></a>
+			<a href="?labelText=Nyhed på vej&labelType=red"><span class="teaser--label__red"><span>Coming up</span></span></a>
+			<a href="?labelText=Tophistorie&labelType=blue"><span class="teaser--label__blue"><span>Topstory</span></span></a>
 			</p>
 
 		</div>
@@ -61,7 +61,7 @@ if (isset($_GET['labelType'])) {
 			<?php
 			$imgW='1240'; 
 			$showImg = true;
-			$class = 'teaser--xlarge teaser--theme-giant';
+			$class = 'teaser--xlarge teaser--theme__giant';
 			$imgRatio = '16:7';
 			$imgSrc = '/!b-breaking';
 			$showSummary = '1';
@@ -70,7 +70,7 @@ if (isset($_GET['labelType'])) {
 			// $labelType = 'yellow';
 			// $labelText = '<i class="bicon-record"></i> Live';
 			// $labelText = 'Breaking';
-			$teaserPack = false;
+			$teaserPack = '1';
 			include('includes/frontpage/teasers/teaser.php') ?>			
 		</div>
 	</div>
@@ -114,7 +114,7 @@ if (isset($_GET['labelType'])) {
 			<?php
 			$imgW='920'; 
 			$showImg = '1';
-			$class = ' teaser--img-wide item--teaser teaser--large  teaser--theme-business';
+			$class = ' teaser--img-wide item--teaser teaser--large  teaser--theme__business';
 			$imgRatio = '16:9';
 			$imgSrc = '/landscape';
 			$showSummary = true;
@@ -192,7 +192,7 @@ if (isset($_GET['labelType'])) {
 			<?php
 			$imgW='320'; 
 			$showImg = '1';
-			$class = ' teaser--img-right item--teaser teaser--small teaser--theme-business';
+			$class = ' teaser--img-right item--teaser teaser--small teaser--theme__business';
 			$imgRatio = '16:9';
 			$imgSrc = '/landscape';
 			$showSummary = true;
@@ -264,7 +264,7 @@ if (isset($_GET['labelType'])) {
 						// ONELINERS
 						$relatedCount = '1';
 						$relatedGridClass = 'col-xs-12';
-						$relatedTeaserClass = 'item--teaser related--image teaser--img-left related--large teaser--theme-business';
+						$relatedTeaserClass = 'item--teaser related--image teaser--img-left related--large teaser--theme__business';
 						$relatedShowImg = true;
 						$relatedImgSize = '160';
 						$relatedImgRatio = '3:2';
@@ -272,7 +272,8 @@ if (isset($_GET['labelType'])) {
 						$showRelatedSummary = true;
 						$showRelatedPaywall = true;
 						$relatedTrumpet = false;
-						$showRelatedCategory = 'Business.dk';
+						$relatedCategory = 'Business.dk';
+
 						
 						
 						
@@ -297,7 +298,7 @@ if (isset($_GET['labelType'])) {
 			<div class="teaser-2">
 				<div class="teaser--pack">
 					<ul class="teaser--pack--list">
-						<li class="col-xs-12">
+						
 						
 						<?php 
 						// ONELINERS
@@ -316,15 +317,15 @@ if (isset($_GET['labelType'])) {
 						// $relatedlabelType = 'red';
 						include('includes/frontpage/teasers/teaser-related.php'); 
 						?>		
-						</li>
+						
 
-						<li class="col-xs-12">
+						
 						
 						<?php 
 						// ONELINERS
 						$relatedCount = '1';
 						$relatedGridClass = 'col-xs-6';
-						$relatedTeaserClass = 'item--teaser related--image teaser--img-left related--small teaser--theme-business';
+						$relatedTeaserClass = 'item--teaser related--image teaser--img-left related--small teaser--theme__business';
 						$relatedShowImg = true;
 						$relatedImgSize = '160';
 						$relatedImgRatio = '3:2';
@@ -337,7 +338,7 @@ if (isset($_GET['labelType'])) {
 						// $relatedlabelType = 'red';
 						include('includes/frontpage/teasers/teaser-related.php'); 
 						?>		
-						</li>
+						
 					</ul>
 				</div>
 			</div>
@@ -371,13 +372,14 @@ if (isset($_GET['labelType'])) {
 							$showRelatedSummary = false;
 							$showRelatedPaywall = true;
 							$relatedTrumpet = true;
+
 							include('includes/frontpage/teasers/teaser-related.php'); 
 						?>
 						<?php 
 							// ONELINERS
 							$relatedCount = '1';
 							$relatedGridClass = 'col-xs-12';
-							$relatedTeaserClass = 'item--teaser  related--xsmall teaser--theme-business';
+							$relatedTeaserClass = 'item--teaser  related--xsmall teaser--theme__business';
 							$relatedShowImg = false;
 							$relatedImgSize = '160';
 							$relatedImgRatio = '3:2';
@@ -385,6 +387,7 @@ if (isset($_GET['labelType'])) {
 							$showRelatedSummary = false;
 							$showRelatedPaywall = true;
 							$relatedTrumpet = true;
+							$relatedCategory = 'Business.dk';
 							include('includes/frontpage/teasers/teaser-related.php'); 
 						?>
 						
