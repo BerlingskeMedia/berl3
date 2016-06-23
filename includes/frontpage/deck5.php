@@ -208,7 +208,7 @@ if(isset($_GET["topLG"])) {
 					<?php
 					$imgW='320'; 
 					$showImg = '1';
-					$class = ' teaser--img-right teaser--sm item--teaser__bt teaser--theme-feature teaser--small' ;
+					$class = ' teaser--img-right teaser--sm item--teaser__bt teaser--theme__feature teaser--small' ;
 					$imgRatio = '1:1';
 					$imgSrc = '/!author';
 					$showSummary = true;

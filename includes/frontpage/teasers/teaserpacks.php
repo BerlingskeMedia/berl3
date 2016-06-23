@@ -250,7 +250,7 @@
 			<?php 
 				$relatedCount = '1';
 				$relatedGridClass = 'col-md-6 ';
-				$relatedTeaserClass = 'item--teaser teaser--img-wide  related--small teaser--img-left teaser--theme-feature';
+				$relatedTeaserClass = 'item--teaser teaser--img-wide  related--small teaser--img-left teaser--theme__feature';
 				$relatedShowImg = true;
 				$relatedImgSize = '93';
 				$relatedImgRatio = '1:1';
