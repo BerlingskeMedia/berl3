@@ -60,6 +60,9 @@
 		@extend .font-s1;
 		margin-bottom: 0;
 	}
+	[class*="teaser-rating"] {
+		margin-bottom: .5rem;
+	}
 	
 	.teaser-img {
 		position: relative;

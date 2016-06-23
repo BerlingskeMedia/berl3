@@ -3,8 +3,8 @@
 		<div class="col-tags col-border-right-lg-up">
 
 		</div>
-		<div class="col-primary-wide ">
-			<div class="trade-contianer-wide">
+		<div class="col-primary-wide banner ">
+			<div class="trade-container-wide">
 				<? dummy("ad@930x180") ?>				
 			</div>
 			

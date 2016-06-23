@@ -102,7 +102,7 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 					
 						<?php $rating = rand(0,6); ?>
 
-						<div class="teaser-rating-<?php echo $rating; ?> mb">
+						<div class="teaser-rating-<?php echo $rating; ?> ">
 							<? while (dumb_luck("6")): ?>
 								<i class="bicon-star"></i>
 							<? endwhile ?>
