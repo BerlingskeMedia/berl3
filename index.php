@@ -180,10 +180,10 @@ if(isset($_GET["business"])) {
 			
 				<div class="col-md-9">
 					<ul>
-						<li class="orange"><a href="tpl-frontpage.php?deck=4">Default</a></li>
+						<li class="orange"><a href="tpl-frontpage.php">Default</a></li>
 						<!-- <li class="orange"><a href="tpl-frontpage.php?deck=4&amp;topSM">Top SM</a> </li> -->
-						<li class="orange"><a href="tpl-frontpage.php?deck=4&amp;topMD">Top MD</a> </li>
-						<li class="orange"><a href="tpl-frontpage.php?deck=4&amp;topLG">Top LG</a></li>
+						<li class="orange"><a href="tpl-frontpage.php?topMD">Top MD</a> </li>
+						<li class="orange"><a href="tpl-frontpage.php?topLG">Top LG</a></li>
 						
 						
 						
