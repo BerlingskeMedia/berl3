@@ -61,76 +61,10 @@
 	padding-bottom: $spacer;
 }
 
-.fs08 {
-	.header {
-		font-size: .8rem;
-	}
+.margin125 {
+	margin-bottom: .625rem * 2;
 }
-.fs09 {
-	.header {
-		font-size: .9rem;
-	}
-}
-.fs10 {
-	.header {
-		font-size: 1rem;
-	}
-}
-.fs12 {
-	.header {
-		font-size: 1.2rem;
-	}
-}
-.fs13 {
-	.header {
-		font-size: 1.3rem;
-	}
-}
-.fs14 {
-	.header {
-		font-size: 1.4rem;
-	}
-}
-.fs16 {
-	.header {
-		font-size: 1.6rem;
-	}
-}
-.fs18 {
-	.header {
-		font-size: 1.8rem;
-	}
-}
-.fs20 {
-	.header {
-		font-size: 2.0rem;
-	}
-}
-.fs22 {
-	.header {
-		font-size: 2.2rem;
-	}
-}
-.fs24 {
-	.header {
-		font-size: 2.4rem;
-	}
-}
-.fs26 {
-	.header {
-		font-size: 2.6rem;
-	}
-}
-.fs28 {
-	.header {
-		font-size: 2.8rem;
-	}
-}
-.fs30 {
-	.header {
-		font-size: 3rem;
-	}
-}
+
 
 .display-block {
 	display: block;
@@ -165,37 +99,7 @@
 	}
 }
 
-.col-border-right-lg-up {
-	position: relative;
-	&:after {
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: auto;
-		right: 0;
-		width: $border-width;
-		background-color: $border-color;
-		content: '';
-	}	
-}
-.col-tags.col-border-right-lg-up {
-	&:after {
-		right: .625rem;
-	}
-}
-.col-border-left-lg-up {
-	position: relative;
-	&:after {
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: auto;
-		width: $border-width;
-		background-color: $border-color;
-		content: '';
-	}	
-}
+
 .br-lg .flex-row:not(:last-child){
 	.teaser {
 		position: relative;
@@ -323,6 +227,38 @@
 	.like-berlingske-not-tablet {
 		display: block;
 	}
+	.col-border-right-lg-up {
+		position: relative;
+		&:after {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: auto;
+			right: 0;
+			width: $border-width;
+			background-color: $border-color;
+			content: '';
+		}	
+	}
+	.col-tags.col-border-right-lg-up {
+		&:after {
+			right: .625rem;
+		}
+	}
+	.col-border-left-lg-up {
+		position: relative;
+		&:after {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: auto;
+			width: $border-width;
+			background-color: $border-color;
+			content: '';
+		}	
+	}
+
 }
 @include media-breakpoint-down(sm) {
 	.like-berlingske-not-tablet {
