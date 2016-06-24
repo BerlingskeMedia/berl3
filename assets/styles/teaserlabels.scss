@@ -87,3 +87,11 @@
 	background-color: $col-business-dark;
 }
 
+@include media-breakpoint-down(sm) {
+	.header--related,
+	.related--summary {
+		[class*="teaser--label"] {
+			padding-bottom: 1px;
+		}
+	}
+}
