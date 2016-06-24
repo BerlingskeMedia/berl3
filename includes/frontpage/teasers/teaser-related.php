@@ -13,7 +13,7 @@
 				
 				<h3 class="header--related">
 					
-					<div class="tools">
+					<div class="related--tools">
 					
 						<?php if($relatedCategory): ?>
 							<span class="related--header__category hidden-md-up">

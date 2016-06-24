@@ -81,16 +81,16 @@ $labelText = 'Breaking';
 				
 				<div class="col-xs-12">
 					<?php
-					$imgW='930'; 
+					$imgW='930';  
 					$showImg = '1';
-					$class = ' teaser--img-wide item--teaser teaser--large ';
+					$class = 'teaser--theme__business teaser--img-wide item--teaser teaser--large item--teaser__bt';
 					$imgRatio = '16:9';
-					$imgSrc = '/portrait';
+					$imgSrc = '/landscape';
 					$showSummary = true;
-					$showHeader = true;
-					$showPaywall = true;
-					$teaserPack = '2';
+					$category = 'Business.dk';
+					$teaserPack = '3';
 					$showTrumpet = true;
+					$showPaywall = true;
 
 					include('includes/frontpage/teasers/teaser.php') ?>
 
@@ -117,10 +117,6 @@ $labelText = 'Breaking';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
-					
-					
-
-					
 					$category = 'Business.dk';
 					$teaserPack = '3';
 					$showTrumpet = true;

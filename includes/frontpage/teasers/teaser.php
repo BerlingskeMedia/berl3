@@ -50,6 +50,12 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 							<div class="teaser--sponsor">Sponseret af <? dummy("text@company-names") ?></div>
 						<?php endif; ?>
 						
+						<?php if($category): ?>
+							<span class="teaser--category">
+								 <?php echo $category; ?> 
+							</span>	
+						<?php endif; ?>
+
 						<?php if($showTrumpet): ?>
 							<span class="teaser--trumpet">
 								<? dummy("text@trumpet") ?>
@@ -63,6 +69,7 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 					<?php include('includes/frontpage/teasers/labels.php'); ?>
 				<?php endif; ?>
 				
+
 				
 				
 				<h2 class="header">

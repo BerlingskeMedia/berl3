@@ -124,12 +124,7 @@
 	color: rgba(0,0,0,.75);
 	font-size: 1.1rem;
 	
-	.teaser-tools {
-		display: inline;
-	}
-	/*.pipe {
-		display: none;
-	}*/
+	
 }
 
 .teaser--title {
@@ -242,11 +237,7 @@
 	}
 }
 
-.teaser-tools {
-	
-	line-height: .8rem;
-	white-space: nowrap;
-}
+
 
 
 .item--teaser.related--xsmall {
@@ -269,9 +260,7 @@
 		top: .1rem;
 		content: '';
 	}
-	.teaser-tools {
-		line-height: 1.2;
-	}
+	
 }
 
 
@@ -792,9 +781,6 @@
 		@extend .font-s1;
 	}
 	
-	&+ .teaser--consumersales {	
-		margin-top: .625rem * 2;
-	}
 	
 	
 }
@@ -879,16 +865,11 @@
 
 .related--small {
 	@include relatedSize(1.2rem);
-	.teaser-tools {
-		line-height: .9;
-	}
 }
 
 .related--xsmall {
 	@include relatedSize(1rem);
-	.teaser-tools {
-		display: inline;
-	}
+	
 	.related--header__trumpet {
 		display: inline-block;
 	}
@@ -987,12 +968,25 @@
 			max-width: 4.5rem;
 		}
 	}
+	.teaser--footer .teaser--category {
+		display: none;
+	}
 }
 
 
 
 @include media-breakpoint-down(sm) {
-	.tools {
+	.teaser--trumpet {
+		display: inline-block;
+	}
+
+	.teaser--category {
+		font-size: .7rem;
+	}
+	.teaser--trumpet {
+		display: inline-block;
+	}
+	.related--tools {
 		line-height: 1;
 		display: inline-block;
 		font-size: .7rem; 
@@ -1064,6 +1058,9 @@
 	}
 	.teaser--img-right .teaser-img,
 	.teaser--img-left .teaser-img {
+		max-width: 7rem;
+	}
+	.teaser--small.teaser--theme__feature .teaser-img {
 		max-width: 7rem;
 	}	
 	.teaser--xsmall {
