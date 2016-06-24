@@ -1,18 +1,32 @@
 <?php 
 
-if(isset($_GET["topMD"])) {
-	$topMD = true;
-} 
-if(isset($_GET["topLG"])) {
-	$topLG = true;
-} 
 
 $labelType = 'yellow';
-$labelText = '<i class="bicon-record"></i> Live';
+//$labelText = '<i class="bicon-record"></i> Live';
 $labelText = 'Breaking';
 
 ?>
 <div class=" deck flex-row">
+
+	<?php if($topXL): ?>
+	
+		<div class="row">
+			<div class="col-xs-12 col-xl-12">
+				<?php
+				$imgW='1240'; 
+				$showImg = true;
+				$class = 'teaser--xxlarge teaser--theme__xtragiant';
+				$imgRatio = '16:7';
+				$imgSrc = '/!b-breaking';
+				$showSummary = '1';
+				$showRelatedimg = true;
+				$teaserPack = '1';
+				include('includes/frontpage/teasers/teaser.php') ?>			
+			</div>
+		</div>
+	
+	<?php endif; ?>
+
 
 	<?php if($topLG): ?>
 		
@@ -83,12 +97,12 @@ $labelText = 'Breaking';
 					<?php
 					$imgW='930';  
 					$showImg = '1';
-					$class = 'teaser--theme__business teaser--img-wide item--teaser teaser--large item--teaser__bt';
+					$class = 'teaser--theme__business teaser--img-wide item--teaser teaser--large item--teaser';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
 					$category = 'Business.dk';
-					$teaserPack = '3';
+					$teaserPack = '1';
 					$showTrumpet = true;
 					$showPaywall = true;
 

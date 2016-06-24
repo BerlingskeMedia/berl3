@@ -6,6 +6,17 @@ $payIcon = false;
 // Hide php "variable not set"-errors:
 error_reporting( error_reporting() & ~E_NOTICE );
 
+if(isset($_GET["topMD"])) {
+	$topMD = true;
+} 
+if(isset($_GET["topLG"])) {
+	$topLG = true;
+} 
+
+if(isset($_GET["topXL"])) {
+	$topXL = true;
+} 
+
 
 if(isset($_GET["wide"])) {
 	$showWide = true;

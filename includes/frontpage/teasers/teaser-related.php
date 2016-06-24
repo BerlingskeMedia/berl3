@@ -16,7 +16,7 @@
 					<div class="related--tools">
 					
 						<?php if($relatedCategory): ?>
-							<span class="related--header__category hidden-md-up">
+							<span class="related--header__category">
 								<?php echo $relatedCategory; ?> <i class="icon-external"></i> 
 							</span>	
 						<?php endif; ?>
