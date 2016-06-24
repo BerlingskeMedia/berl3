@@ -54,7 +54,7 @@ if (isset($_GET['labelType'])) {
 		<div class="col-xs-12">
 			<h2>Teasers</h2>
 		</div>
-		<div class="col-xs-2 " >
+		<div class="col-xs-12 col-md-2" >
 			<h3>Teaser Giant</h3>
 		</div>
 		<div class="col-xs-12 col-xl-12">
@@ -78,11 +78,11 @@ if (isset($_GET['labelType'])) {
 
 
 	<div class="row">
-		<div class="col-xs-2 " >
+		<div class="col-xs-12 col-md-2" >
 			<h3>Teaser large default</h3>
 		</div>
 		
-		<div class="col-xs-8 " style="width:780px">
+		<div class="col-xs-8 col-xs-12 " style="max-width:780px">
 
 
 			<?php
@@ -104,11 +104,11 @@ if (isset($_GET['labelType'])) {
 	</div>
 
 	<div class="row">
-		<div class="col-xs-2 " >
+		<div class="col-xs-12 col-md-2" >
 			<h3>Teaser large - Business</h3>
 		</div>
 		
-		<div class="col-xs-8 " style="width:780px">
+		<div class="col-xs-8 col-xs-12 " style="max-width:780px">
 
 
 			<?php
@@ -130,11 +130,11 @@ if (isset($_GET['labelType'])) {
 
 	<div class="row">
 
-		<div class="col-xs-2 " >
+		<div class="col-xs-12 col-md-2" >
 			<h3>Teaser small img-left</h3>
 		</div>
 
-		<div class="col-xs-8 " style="width:780px">
+		<div class="col-xs-8 col-xs-12 " style="max-width:780px">
 
 			<?php
 			$imgW='320'; 
@@ -156,11 +156,11 @@ if (isset($_GET['labelType'])) {
 
 	<div class="row">
 
-		<div class="col-xs-2 " >
+		<div class="col-xs-12 col-md-2" >
 			<h3>Teaser small img-right</h3>
 		</div>
 
-		<div class="col-xs-8 " style="width:780px">
+		<div class="col-xs-8 col-xs-12 " style="max-width:780px">
 
 			<?php
 			$imgW='320'; 
@@ -183,11 +183,11 @@ if (isset($_GET['labelType'])) {
 
 	<div class="row">
 
-		<div class="col-xs-2 " >
+		<div class="col-xs-12 col-md-2" >
 			<h3>Teaser small img-right - Business</h3>
 		</div>
 
-		<div class="col-xs-8 " style="width:780px">
+		<div class="col-xs-8 col-xs-12 " style="max-width:780px">
 
 			<?php
 			$imgW='320'; 
@@ -214,11 +214,11 @@ if (isset($_GET['labelType'])) {
 	</div>
 	<div class="row">
 
-		<div class="col-xs-2 " >
+		<div class="col-xs-12 col-md-2" >
 			<h3> related-large</h3>
 		</div>
 
-		<div class="col-xs-8 " style="width:780px">
+		<div class="col-xs-8 col-xs-12 " style="max-width:780px">
 			<div class="teaser-2">
 				<div class="teaser--pack">
 					<ul class="teaser--pack--list">
@@ -250,11 +250,11 @@ if (isset($_GET['labelType'])) {
 
 	<div class="row">
 
-		<div class="col-xs-2 " >
+		<div class="col-xs-12 col-md-2" >
 			<h3>related-large - Business</h3>
 		</div>
 
-		<div class="col-xs-8 " style="width:780px">
+		<div class="col-xs-8 col-xs-12 " style="max-width:780px">
 			<div class="teaser-2">
 				<div class="teaser--pack">
 					<ul class="teaser--pack--list">
@@ -290,11 +290,11 @@ if (isset($_GET['labelType'])) {
 
 	<div class="row">
 
-		<div class="col-xs-2 " >
+		<div class="col-xs-12 col-md-2" >
 			<h3>related-small</h3>
 		</div>
 
-		<div class="col-xs-8 " style="width:780px">
+		<div class="col-xs-8 col-xs-12 " style="max-width:780px">
 			<div class="teaser-2">
 				<div class="teaser--pack">
 					<ul class="teaser--pack--list">
@@ -350,11 +350,11 @@ if (isset($_GET['labelType'])) {
 	
 	<div class="row">
 
-		<div class="col-xs-2 " >
+		<div class="col-xs-12 col-md-2" >
 			<h3>related-xsmall</h3>
 		</div>
 
-		<div class="col-xs-8 " style="width:780px">
+		<div class="col-xs-8 col-xs-12 " style="max-width:780px">
 			<div class="teaser-2">
 				<div class="teaser--pack">
 					<ul class="teaser--pack--list">

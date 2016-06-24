@@ -1,6 +1,6 @@
 
 <? while (dumb_luck($relatedCount)): ?>
-<li class="<?php echo $relatedGridClass; ?> <?php if($labelType): ?> has-label <?php endif; ?>">
+<li class="<?php echo $relatedGridClass; ?>">
 	<div class="<?php echo $relatedTeaserClass; ?>">
 		<a href="tpl-article.php" title="[ARTICLE HEADER]">
 			<?php if($relatedShowImg): ?>
@@ -13,17 +13,18 @@
 				
 				<h3 class="header--related">
 					
-					<?php include('includes/frontpage/teasers/labels.php'); ?>
 					
-
-					<?php if(!$showRelatedSummary && $relatedCategory): ?>
+					
+					<span class="hidden-md-up">
+					<?php if($relatedCategory): ?>
 						<span class="related--header__category">
 							<?php echo $relatedCategory; ?> <i class="icon-external"></i> 
 						</span>	
 					<?php endif; ?>
 
-					
-
+					<?php include('includes/frontpage/teasers/labels.php'); ?>			
+					</span>
+		
 					<?php if($relatedTrumpet): ?>
 						<span class="related--header__trumpet">
 							<? dummy("text@trumpet"); ?>

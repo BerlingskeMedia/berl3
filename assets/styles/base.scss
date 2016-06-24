@@ -475,6 +475,10 @@ $col-deck-label-width: 160px;
 	.col-primary {
 		width: 100%;	
 	}
+	.col--full-width {
+		margin: 0;
+		width: 100%;
+	}
 }
 
 @include media-breakpoint-only(md) {
@@ -488,6 +492,7 @@ $col-deck-label-width: 160px;
 		padding-left: 5rem;
 		padding-right: 5rem;		
 	}
+	
 	.deck-theme {
 		.col-tags,
 		.col-primary {

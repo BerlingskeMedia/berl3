@@ -113,7 +113,7 @@
 
 .related--summary {
 	display: block;
-	line-height: 1;
+	line-height: 1.2;
 }
 .teaser--summary {
 	line-height: 1.2;
@@ -218,7 +218,7 @@
 .teaser--pack {
 	.header--related {
 		@extend .font-s1;
-		margin-bottom: 0;
+		margin-bottom: .2rem;
 		line-height: 1.1;
 	}	
 	.related-body {
@@ -522,9 +522,7 @@
 
 
 
-.related--large .header--related  [class*="teaser--label"] {
-	display: none;
-}
+
 .teaser--theme__giant {
 	border-bottom: $border-width solid $border-color;
 	padding: 0 0 .625rem;
@@ -546,7 +544,7 @@
 		margin-bottom: 0;
 	}
 	
-	.teaser--summary,	
+	.teaser--summary__content,	
 	.header {
 		max-width: 55.4rem;
 	}
@@ -554,9 +552,10 @@
 		color: rgba(255,255,255,.5);
 		font-size: .7rem;
 	}
-	
-	.teaser--comments,
-	.teaser--summary {
+	.teaser-img span {
+		display: none;
+	}
+	.teaser--summary__content {
 		color: #fff;
 	}
 	.related-body {
@@ -1053,8 +1052,14 @@
 		display: none;
 	}
 
-	.related--large .related--header__content {
-		font-size: .9rem;
+	.related--large {
+		.related--header__content {
+			font-size: 1.1rem;
+		}
+		.teaser-img {
+			float: left;
+			margin: 0 1rem 0 0;
+		}
 	}
 	.related--small .related--header__content {
 		font-size: .9rem;

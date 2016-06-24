@@ -7,7 +7,10 @@ if(isset($_GET["topLG"])) {
 	$topLG = true;
 } 
 
-	
+$labelType = 'yellow';
+$labelText = '<i class="bicon-record"></i> Live';
+$labelText = 'Breaking';
+
 ?>
 <div class=" deck flex-row">
 
@@ -24,9 +27,6 @@ if(isset($_GET["topLG"])) {
 					$showSummary = '1';
 					$showHeader 	= true;
 					$showRelatedimg = true;
-					$labelType = 'red';
-					// $labelText = '<i class="bicon-record"></i> Live';
-					$labelText = 'Opdateres';
 					$teaserPack = '1';
 					include('includes/frontpage/teasers/teaser.php') ?>			
 				</div>
@@ -48,9 +48,6 @@ if(isset($_GET["topLG"])) {
 					$showSummary = '1';
 					$showRelated = '1';
 					$showHeader = true;
-					
-					
-					$teaserLink = 'tpl-article.php?event=breaking';
 					$teaserPack = '1';
 					include('includes/frontpage/teasers/teaser.php') ?>			
 				</div>
@@ -92,10 +89,7 @@ if(isset($_GET["topLG"])) {
 					$showSummary = true;
 					$showHeader = true;
 					$showPaywall = true;
-					// $labelType = 'yellow';
-					// $labelText = 'Breaking';
-					//$labelType = 'breaking';
-					 $teaserPack = '4';
+					$teaserPack = '1';
 					$showTrumpet = true;
 
 					include('includes/frontpage/teasers/teaser.php') ?>
@@ -109,7 +103,7 @@ if(isset($_GET["topLG"])) {
 					$showSummary = true;
 					
 					
-					$labelType = false;
+					
 					$teaserPack = '2';
 					$showTrumpet = true;
 					$showPaywall = true;
@@ -126,7 +120,7 @@ if(isset($_GET["topLG"])) {
 					
 					
 
-					$labelType = false;
+					
 					$category = 'Business.dk';
 					$teaserPack = '3';
 					$showTrumpet = true;
@@ -144,7 +138,7 @@ if(isset($_GET["topLG"])) {
 					$showSummary = true;
 					
 					
-					$labelType = false;
+					
 					$teaserAd = true;
 
 					include('includes/frontpage/teasers/teaser.php') ?>
@@ -159,7 +153,7 @@ if(isset($_GET["topLG"])) {
 					$showSummary = true;
 					
 					
-					$labelType = false;
+					
 
 					include('includes/frontpage/teasers/teaser.php') ?>
 
@@ -173,7 +167,7 @@ if(isset($_GET["topLG"])) {
 					
 					
 					$category = 'Business.dk';
-					$labelType = false;
+					
 
 					include('includes/frontpage/teasers/teaser.php') ?>
 					
@@ -186,7 +180,7 @@ if(isset($_GET["topLG"])) {
 					$showSummary = true;
 					
 					
-					$labelType = false;
+					
 					$teaserPack = false;
 
 					include('includes/frontpage/teasers/teaser.php') ?>
@@ -198,10 +192,9 @@ if(isset($_GET["topLG"])) {
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
-					;
 					
 					$category = 'Business.dk';
-					$labelType = false;
+					
 
 					include('includes/frontpage/teasers/teaser.php') ?>
 
@@ -211,10 +204,8 @@ if(isset($_GET["topLG"])) {
 					$class = ' teaser--img-right teaser--sm item--teaser__bt teaser--theme__feature teaser--small' ;
 					$imgRatio = '1:1';
 					$imgSrc = '/!author';
-					$showSummary = true;
-					;
+					$showSummary = true;			
 					
-					$labelType = false;
 					$showAuthor = true;
 
 					include('includes/frontpage/teasers/teaser.php') ?>

@@ -32,10 +32,7 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 
 				<?php if ($showImg ): ?>
 					<figure class="teaser-img">
-						<?php if($labelType && !preg_match('/teaser--xlarge/',$class)): ?>
-							<?php include('includes/frontpage/teasers/labels.php'); ?>
-						<?php endif; ?>
-
+						<?php include('includes/frontpage/teasers/labels.php'); ?>
 						<img src="<? dummy("image". $imgSrc ."@". $imgW ."x,". $imgRatio ."") ?>" width="" height="" alt="[ARTICLE HEADER]" class="img" />
 					</figure>
 				<?php endif; ?>

@@ -213,7 +213,7 @@
 				$relatedImgSize = '140';
 				$relatedImgRatio = '3:2';
 				$relatedImgSrc = '/landscape';
-				$showRelatedSummary = false;
+				$showRelatedSummary = true;
 				$showRelatedPaywall = true;
 				$relatedTrumpet = true;
 
