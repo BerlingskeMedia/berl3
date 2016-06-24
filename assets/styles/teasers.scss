@@ -1053,12 +1053,13 @@
 		.teaser-img {
 			[class*="teaser--label"] {
 				font-size: .6rem;
+				padding: .2rem .2rem .1rem .2rem;
 			}
 		}
 	}
 	.teaser--img-right .teaser-img,
 	.teaser--img-left .teaser-img {
-		max-width: 7rem;
+		max-width: 6rem;
 	}
 	.teaser--small.teaser--theme__feature .teaser-img {
 		max-width: 7rem;
@@ -1081,11 +1082,11 @@
 
 	.related--large {
 		.related--header__content {
-			font-size: 1.1rem;
+			font-size: .9rem;
 		}
 		.teaser-img {
 			float: left;
-			margin: 0 1rem 0 0;
+			margin: 0 .625rem 0 0;
 		}
 	}
 	.related--small .related--header__content {

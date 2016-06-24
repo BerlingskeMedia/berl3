@@ -94,4 +94,11 @@
 			padding-bottom: 1px;
 		}
 	}
+	.teaser--large {
+		.teaser-img {
+			[class*="teaser--label"] {
+				font-size: .9rem;
+			}
+		}
+	}
 }
