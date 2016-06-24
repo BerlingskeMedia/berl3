@@ -13,25 +13,24 @@
 				
 				<h3 class="header--related">
 					
+					<div class="tools">
 					
-					
-					
-					<?php if($relatedCategory): ?>
-						<span class="related--header__category hidden-md-up">
-							<?php echo $relatedCategory; ?> <i class="icon-external"></i> 
-						</span>	
-					<?php endif; ?>
-					
-					<?php include('includes/frontpage/teasers/labels.php'); ?>			
+						<?php if($relatedCategory): ?>
+							<span class="related--header__category hidden-md-up">
+								<?php echo $relatedCategory; ?> <i class="icon-external"></i> 
+							</span>	
+						<?php endif; ?>
+						
+						<?php include('includes/frontpage/teasers/labels.php'); ?>			
 
-		
-					<?php if($relatedTrumpet): ?>
-						<span class="related--header__trumpet">
-							<? dummy("text@trumpet"); ?>
-						</span>
-					<?php endif; ?>
+			
+						<?php if($relatedTrumpet): ?>
+							<span class="related--header__trumpet">
+								<? dummy("text@trumpet"); ?>
+							</span>
+						<?php endif; ?>
 
-
+					</div>
 					
 					<span class="related--header__content">
 						<? dummy("text@headline-b3") ?>	

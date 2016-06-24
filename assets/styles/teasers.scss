@@ -992,6 +992,11 @@
 
 
 @include media-breakpoint-down(sm) {
+	.tools {
+		line-height: 1;
+		display: inline-block;
+		font-size: .7rem; 
+	}
 	.subscriber-notice {
 		font-size: .6rem;
 		display: inherit;
