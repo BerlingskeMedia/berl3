@@ -15,15 +15,15 @@
 					
 					
 					
-					<span class="hidden-md-up">
+					
 					<?php if($relatedCategory): ?>
-						<span class="related--header__category">
+						<span class="related--header__category hidden-md-up">
 							<?php echo $relatedCategory; ?> <i class="icon-external"></i> 
 						</span>	
 					<?php endif; ?>
-
+					
 					<?php include('includes/frontpage/teasers/labels.php'); ?>			
-					</span>
+
 		
 					<?php if($relatedTrumpet): ?>
 						<span class="related--header__trumpet">
@@ -35,14 +35,11 @@
 					
 					<span class="related--header__content">
 						<? dummy("text@headline-b3") ?>	
-
-						<?php if(!$showRelatedSummary): ?>
-							
-							<?php if( $showRelatedPaywall): ?>
-								<span class="subscriber-notice"><span class="pipe"></span>Abonnement</span>
-							<?php endif; ?>
-							
+	
+						<?php if( $showRelatedPaywall): ?>
+							<span class="subscriber-notice"><span class="pipe"></span>Abonnement</span>
 						<?php endif; ?>
+							
 
 					</span>
 

@@ -59,6 +59,8 @@
 
 	<div class="teaser--pack clearfix">
 		<ul class="row teaser--pack--list">
+
+		
 			
 			<?php 
 				$relatedCount = '1';

@@ -89,7 +89,7 @@ $labelText = 'Breaking';
 					$showSummary = true;
 					$showHeader = true;
 					$showPaywall = true;
-					$teaserPack = '1';
+					$teaserPack = '2';
 					$showTrumpet = true;
 
 					include('includes/frontpage/teasers/teaser.php') ?>

@@ -252,11 +252,12 @@
 .item--teaser.related--xsmall {
 	padding-left: .5rem;
 	position: relative;
-
+	
 	.header--related {
 		@extend .font-s2;
 		font-weight: 500;
 		margin-bottom: 0;
+		line-height: 1;
 	}
 
 	&:before {
@@ -930,11 +931,7 @@
 			font-size: 1.875rem * .85;
 		}
 	}
-	.teaser--xsmall {
-		.header {
-			// font-size: 1.25rem * .7;
-		}
-	}
+	
 
 	.teaser--xxsmall {
 		.header {
@@ -953,6 +950,14 @@
 
 
 
+@include media-breakpoint-up(md) {
+	.related--large {
+		.header--related [class*="teaser--label"],
+		.header--related .subscriber-notice {
+			display: none
+		}
+	}
+}
 
 @include media-breakpoint-only(md) {
 	.teaser--xlarge {
@@ -979,6 +984,7 @@
 	.subscriber-notice {
 		font-size: .6rem;
 	}
+
 	.related--header__trumpet,
 	.teaser--trumpet {
 		font-size: .7rem;
@@ -1031,6 +1037,11 @@
 		.teaser--summary {
 			display: none;
 		}
+		.teaser-img {
+			[class*="teaser--label"] {
+				font-size: .6rem;
+			}
+		}
 	}
 	.teaser--img-right .teaser-img,
 	.teaser--img-left .teaser-img {
@@ -1065,9 +1076,7 @@
 		font-size: .9rem;
 	}
 	.related--xsmall {
-		.header--related {
-			line-height: 1;
-		}
+		
 		.related--header__content {
 				font-size: .8rem;
 			}

@@ -68,7 +68,7 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 				<h2 class="header">
 					
 					<? dummy("text@".$headerSrc."") ?>
-						<?php if (!$showSummary && !$showAuthor ): ?>
+						<?php if (!$showAuthor ): ?>
 							<?php if($showPaywall) : ?>
 								 <span class="subscriber-notice"><span class="pipe"></span>Abonnement</span>
 							<?php endif; ?>
