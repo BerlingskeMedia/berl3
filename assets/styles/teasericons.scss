@@ -137,6 +137,8 @@ $iconRelatedDefeaultSM : 1.5rem;
 				height: $iconDefeaultSM;
 				line-height: $iconDefeaultSM;
 				font-size: $iconDefeaultSM * .75;
+				top: .2rem;
+				left: .2rem;
 			}
 			&:hover:before {
 				border-width: ($iconDefeaultSM/2);
