@@ -13,7 +13,7 @@
 				$relatedGridClass = 'col-xs-12';
 				$relatedTeaserClass = 'item--teaser related--image teaser--img-left related--large related--theme__business ';
 				$relatedShowImg = true;
-				$teaserIcon = 'gallery';
+				$teaserIcon = 'video';
 				$relatedImgSize = '160';
 				$relatedImgRatio = '3:2';
 				$relatedImgSrc = '/landscape';
@@ -87,7 +87,7 @@
 				$relatedCount = '1';
 				$relatedGridClass = 'col-xs-12';
 				$relatedTeaserClass = 'item--teaser  related--xsmall related--theme__business';
-				$teaserIcon = 'gallery';
+				$teaserIcon = 'video';
 				$relatedShowImg = false;
 				$relatedImgSize = '160';
 				$relatedImgRatio = '3:2';
@@ -133,7 +133,7 @@
 				$relatedCount = '1';
 				$relatedGridClass = 'col-xs-12';
 				$relatedTeaserClass = 'item--teaser  teaser--img-left related--large';
-				$teaserIcon = 'gallery';
+				$teaserIcon = 'video';
 				$relatedShowImg = true;
 				$relatedImgSize = '160';
 				$relatedImgRatio = '3:2';
@@ -149,7 +149,7 @@
 				$relatedCount = '1';
 				$relatedGridClass = 'col-xs-12';
 				$relatedTeaserClass = 'item--teaser  teaser--img-right related--large';
-				$teaserIcon = 'gallery';
+				$teaserIcon = 'video';
 				$relatedShowImg = true;
 				$relatedImgSize = '160';
 				$relatedImgRatio = '3:2';
@@ -172,7 +172,7 @@
 				$relatedCount = '1';
 				$relatedGridClass = 'col-xs-12';
 				$relatedTeaserClass = 'item--teaser  related--xsmall';
-				$teaserIcon = 'gallery';
+				$teaserIcon = 'video';
 				$relatedShowImg = false;
 				$relatedImgSize = '160';
 				$relatedImgRatio = '3:2';
@@ -200,7 +200,7 @@
 				$relatedCount = '2';
 				$relatedGridClass = 'col-md-6 ';
 				$relatedTeaserClass = 'item--teaser teaser--img-wide related--small teaser--img-left';
-				$teaserIcon = 'gallery';
+				$teaserIcon = 'video';
 				$relatedShowImg = true;
 				$relatedImgSize = '140';
 				$relatedImgRatio = '3:2';
@@ -220,7 +220,7 @@
 				$relatedCount = '1';
 				$relatedGridClass = 'col-xs-12';
 				$relatedTeaserClass = 'item--teaser teaser--img-right related--large';
-				$teaserIcon = 'gallery';
+				$teaserIcon = 'video';
 				$relatedShowImg = true;
 				$relatedImgSize = '140';
 				$relatedImgRatio = '3:2';
@@ -248,7 +248,7 @@
 				$relatedCount = '1';
 				$relatedGridClass = 'col-md-6 ';
 				$relatedTeaserClass = 'item--teaser teaser--img-wide  related--small teaser--img-left ';
-				$teaserIcon = 'gallery';
+				$teaserIcon = 'video';
 				$relatedShowImg = true;
 				$relatedImgSize = '140';
 				$relatedImgRatio = '3:2';
@@ -264,7 +264,7 @@
 				$relatedCount = '1';
 				$relatedGridClass = 'col-md-6 ';
 				$relatedTeaserClass = 'item--teaser teaser--img-wide  related--small teaser--img-left teaser--theme__feature';
-				$teaserIcon = 'gallery';
+				$teaserIcon = 'video';
 				$relatedShowImg = true;
 				$relatedImgSize = '93';
 				$relatedImgRatio = '1:1';
