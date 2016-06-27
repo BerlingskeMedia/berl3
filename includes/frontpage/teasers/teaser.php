@@ -180,5 +180,4 @@ $headerSrc 		= 'headline-b3';
 $summarySrc 	= 'short-teaser';
 $showPrice 		= false;
 $showHeader 	= true;
-$teaserIcon 	= false;
 ?>

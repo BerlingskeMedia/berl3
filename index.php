@@ -204,6 +204,15 @@ if(isset($_GET["business"])) {
 					</ul>
 				</div>
 
+				<div class="col-md-3">Icons</div>
+				
+				<div class="col-md-9">
+					<ul>
+						<li class="orange"><a href="tpl-frontpage.php?teaserIcon=video">Video</a></li>
+						<li class="orange"><a href="tpl-frontpage.php?teaserIcon=gallery">Gallery</a></li>
+					</ul>
+				</div>
+
 				<div class="col-md-3">Oneliners</div>
 				<div class="col-md-9">
 					<ul>

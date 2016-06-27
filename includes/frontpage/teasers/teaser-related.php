@@ -91,6 +91,5 @@ $showRelatedComments = false;
 $showRelatedPaywall = false;
 $relatedTrumpet 	= false;
 $relatedCategory 	= false;
-$teaserIcon 		= false;
 
 ?>

@@ -3,14 +3,7 @@
 		// $labelText = 'Breaking';
 		?>
 
-<?php 
 
-
-$labelType = 'yellow';
-//$labelText = '<i class="bicon-record"></i> Live';
-$labelText = 'Breaking';
-
-?>
 <div class=" deck flex-row">
 
 	<?php if($topXL): ?>
@@ -21,12 +14,14 @@ $labelText = 'Breaking';
 				$imgW='1240'; 
 				$showImg = true;
 				$class = 'item--teaser teaser--xxlarge teaser--theme__xtragiant';
-				$teaserIcon = 'gallery';
+				
 				$imgRatio = '16:7';
 				$imgSrc = '/!b-breaking';
 				$showSummary = '1';
 				$showRelatedimg = true;
 				$teaserPack = '8';
+				$labelType = 'yellow';
+				$labelText = 'Breaking';
 				include('includes/frontpage/teasers/teaser.php') ?>			
 			
 
@@ -47,19 +42,25 @@ $labelText = 'Breaking';
 					$imgW='1240'; 
 					$showImg = true;
 					$class = 'item--teaser teaser--xlarge teaser--theme__giant ';
-					$teaserIcon = 'video';
+					
 					$imgRatio = '16:7';
 					$imgSrc = '/!b-breaking';
 					$showSummary = '1';
 					$showHeader 	= true;
 					$showRelatedimg = true;
-					$teaserPack = '1';
+					$teaserPack = '8';
+					$labelType = 'yellow';
+					$labelText = 'Breaking';
 					include('includes/frontpage/teasers/teaser.php') ?>			
 				</div>
 			</div>
 		
 	<?php endif; ?>
 
+<?php 
+$labelType = false;
+$labelText = false;
+?>
 
 	<div class="col-wrapper flex-row">
 		<?php if($topMD): ?>
@@ -69,7 +70,7 @@ $labelText = 'Breaking';
 					$imgW='910'; 
 					$showImg = '1';
 					$class = 'mb item--teaser__bb teaser--img-wide teaser--large ';
-					$teaserIcon = 'gallery';
+					
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = '1';
@@ -111,7 +112,7 @@ $labelText = 'Breaking';
 					$imgW='930';  
 					$showImg = '1';
 					$class = 'item--teaser teaser--theme__business teaser--img-wide item--teaser teaser--large item--teaser ';
-					$teaserIcon = 'video';
+					
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
@@ -126,7 +127,7 @@ $labelText = 'Breaking';
 					$imgW='930';  
 					$showImg = '1';
 					$class = ' teaser--img-wide item--teaser teaser--large item--teaser__bt ';
-					$teaserIcon = 'gallery';
+					
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
@@ -143,7 +144,7 @@ $labelText = 'Breaking';
 					$imgW='930';  
 					$showImg = '1';
 					$class = 'teaser--theme__business teaser--img-wide item--teaser teaser--large item--teaser__bt ';
-					$teaserIcon = 'video';
+					
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
@@ -159,7 +160,7 @@ $labelText = 'Breaking';
 					$imgW='220'; 
 					$showImg = '1';
 					$class = 'teaser--img-right  teaser--small teaser--theme-trade item--teaser__bt ';
-					$teaserIcon = 'gallery';
+					
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
@@ -175,7 +176,7 @@ $labelText = 'Breaking';
 					$imgW='320'; 
 					$showImg = '1';
 					$class = 'teaser--img-left teaser--small item--teaser__bt ';
-					$teaserIcon = 'video';
+					
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
@@ -189,7 +190,7 @@ $labelText = 'Breaking';
 					$imgW='220'; 
 					$showImg = '1';
 					$class = 'teaser--img-right  teaser--small teaser--theme__business item--teaser__bt ';
-					$teaserIcon = 'gallery';
+					
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
@@ -204,7 +205,7 @@ $labelText = 'Breaking';
 					$imgW='220'; 
 					$showImg = '1';
 					$class = 'teaser--img-right  teaser--small item--teaser__bt ';
-					$teaserIcon = 'video';
+					
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
@@ -219,7 +220,7 @@ $labelText = 'Breaking';
 					$imgW='930';  
 					$showImg = '1';
 					$class = 'teaser--theme__business teaser--img-wide teaser--large item--teaser__bt';
-					$teaserIcon = 'gallery';
+					
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
