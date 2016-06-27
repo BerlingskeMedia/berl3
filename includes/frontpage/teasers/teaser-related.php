@@ -4,7 +4,7 @@
 	<div class="<?php echo $relatedTeaserClass; ?>">
 		<a href="tpl-article.php" title="[ARTICLE HEADER]">
 			<?php if($relatedShowImg): ?>
-			<figure class="teaser-img">
+			<figure class="teaser-img <?php if($teaserIcon === 'video'): ?> teaser--icon__video <?php endif; ?> <?php if($teaserIcon === 'gallery'): ?> teaser--icon__gallery <?php endif; ?>">
 				<img src="<? dummy("image/". $relatedImgSrc. "@". $relatedImgSize ."x,". $relatedImgRatio ."") ?>" width="" height="" alt="[ARTICLE HEADER]" class="img" />
 			</figure>
 			<?php endif; ?>
@@ -31,10 +31,9 @@
 					</div>
 					
 					<span class="related--header__content">
+						<?php if($teaserIcon === 'video'): ?> <i class="bicon-play-circled"></i> <?php endif; ?> 
+						<?php if($teaserIcon === 'gallery'): ?> <i class="bicon-camera"></i> <?php endif; ?>
 						
-						<?php if(preg_match('/teaser--icon__video/',$relatedTeaserClass)): ?>
-							<i class="bicon-play-circled"></i>
-						<?php endif; ?>
 
 						<? dummy("text@headline-b3") ?>	
 	
@@ -81,16 +80,17 @@
 <? endwhile ?>
 
 <?php 
-$relatedCount = '1';
-$gridClass = false;
-$teaserClass = false;
-$relatedImgSize = false;
-$relatedImgRatio = false;
-$relatedImgSrc = false;
+$relatedCount 		= '1';
+$gridClass 			= false;
+$teaserClass 		= false;
+$relatedImgSize 	= false;
+$relatedImgRatio 	= false;
+$relatedImgSrc 		= false;
 $showRelatedSummary = false;
 $showRelatedComments = false;
 $showRelatedPaywall = false;
-$relatedTrumpet = false;
-$relatedCategory = false;
+$relatedTrumpet 	= false;
+$relatedCategory 	= false;
+$teaserIcon 		= false;
 
 ?>

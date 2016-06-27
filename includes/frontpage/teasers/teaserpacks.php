@@ -11,8 +11,9 @@
 				// ONELINERS
 				$relatedCount = '1';
 				$relatedGridClass = 'col-xs-12';
-				$relatedTeaserClass = 'item--teaser related--image teaser--img-left related--large related--theme__business teaser--icon__video';
+				$relatedTeaserClass = 'item--teaser related--image teaser--img-left related--large related--theme__business ';
 				$relatedShowImg = true;
+				$teaserIcon = 'gallery';
 				$relatedImgSize = '160';
 				$relatedImgRatio = '3:2';
 				$relatedImgSrc = '/landscape';
@@ -33,7 +34,8 @@
 				// ONELINERS
 				$relatedCount = '2';
 				$relatedGridClass = 'col-xs-12';
-				$relatedTeaserClass = 'item--teaser  related--xsmall teaser--icon__video';
+				$relatedTeaserClass = 'item--teaser  related--xsmall';
+				$teaserIcon = 'gallery';
 				$relatedShowImg = false;
 				$relatedImgSize = '160';
 				$relatedImgRatio = '3:2';
@@ -65,7 +67,8 @@
 			<?php 
 				$relatedCount = '1';
 				$relatedGridClass = 'col-xs-12';
-				$relatedTeaserClass = 'item--teaser  teaser--img-right related--large teaser--theme__aok teaser--icon__video';
+				$relatedTeaserClass = 'item--teaser  teaser--img-right related--large teaser--theme__aok';
+				$teaserIcon = 'gallery';
 				$relatedShowImg = true;
 				$relatedImgSize = '160';
 				$relatedImgRatio = '3:2';
@@ -83,7 +86,8 @@
 				// ONELINERS
 				$relatedCount = '1';
 				$relatedGridClass = 'col-xs-12';
-				$relatedTeaserClass = 'item--teaser  related--xsmall related--theme__business teaser--icon__video';
+				$relatedTeaserClass = 'item--teaser  related--xsmall related--theme__business';
+				$teaserIcon = 'gallery';
 				$relatedShowImg = false;
 				$relatedImgSize = '160';
 				$relatedImgRatio = '3:2';
@@ -100,7 +104,8 @@
 				// ONELINERS
 				$relatedCount = '2';
 				$relatedGridClass = 'col-xs-12';
-				$relatedTeaserClass = 'item--teaser  related--xsmall teaser--icon__video';
+				$relatedTeaserClass = 'item--teaser  related--xsmall';
+				$teaserIcon = 'gallery';
 				$relatedShowImg = false;
 				$relatedImgSize = '160';
 				$relatedImgRatio = '3:2';
@@ -127,7 +132,8 @@
 			<?php 
 				$relatedCount = '1';
 				$relatedGridClass = 'col-xs-12';
-				$relatedTeaserClass = 'item--teaser  teaser--img-left related--large teaser--icon__video';
+				$relatedTeaserClass = 'item--teaser  teaser--img-left related--large';
+				$teaserIcon = 'gallery';
 				$relatedShowImg = true;
 				$relatedImgSize = '160';
 				$relatedImgRatio = '3:2';
@@ -142,7 +148,8 @@
 			<?php 
 				$relatedCount = '1';
 				$relatedGridClass = 'col-xs-12';
-				$relatedTeaserClass = 'item--teaser  teaser--img-right related--large teaser--icon__video';
+				$relatedTeaserClass = 'item--teaser  teaser--img-right related--large';
+				$teaserIcon = 'gallery';
 				$relatedShowImg = true;
 				$relatedImgSize = '160';
 				$relatedImgRatio = '3:2';
@@ -164,7 +171,8 @@
 				// ONELINERS
 				$relatedCount = '1';
 				$relatedGridClass = 'col-xs-12';
-				$relatedTeaserClass = 'item--teaser  related--xsmall teaser--icon__video';
+				$relatedTeaserClass = 'item--teaser  related--xsmall';
+				$teaserIcon = 'gallery';
 				$relatedShowImg = false;
 				$relatedImgSize = '160';
 				$relatedImgRatio = '3:2';
@@ -191,7 +199,8 @@
 			<?php 
 				$relatedCount = '2';
 				$relatedGridClass = 'col-md-6 ';
-				$relatedTeaserClass = 'item--teaser teaser--img-wide related--small teaser--img-left teaser--icon__video';
+				$relatedTeaserClass = 'item--teaser teaser--img-wide related--small teaser--img-left';
+				$teaserIcon = 'gallery';
 				$relatedShowImg = true;
 				$relatedImgSize = '140';
 				$relatedImgRatio = '3:2';
@@ -210,7 +219,8 @@
 			<?php 
 				$relatedCount = '1';
 				$relatedGridClass = 'col-xs-12';
-				$relatedTeaserClass = 'item--teaser teaser--img-right related--large teaser--icon__video';
+				$relatedTeaserClass = 'item--teaser teaser--img-right related--large';
+				$teaserIcon = 'gallery';
 				$relatedShowImg = true;
 				$relatedImgSize = '140';
 				$relatedImgRatio = '3:2';
@@ -237,7 +247,8 @@
 			<?php 
 				$relatedCount = '1';
 				$relatedGridClass = 'col-md-6 ';
-				$relatedTeaserClass = 'item--teaser teaser--img-wide  related--small teaser--img-left teaser--icon__video';
+				$relatedTeaserClass = 'item--teaser teaser--img-wide  related--small teaser--img-left ';
+				$teaserIcon = 'gallery';
 				$relatedShowImg = true;
 				$relatedImgSize = '140';
 				$relatedImgRatio = '3:2';
@@ -252,7 +263,8 @@
 			<?php 
 				$relatedCount = '1';
 				$relatedGridClass = 'col-md-6 ';
-				$relatedTeaserClass = 'item--teaser teaser--img-wide  related--small teaser--img-left teaser--theme__feature teaser--icon__video';
+				$relatedTeaserClass = 'item--teaser teaser--img-wide  related--small teaser--img-left teaser--theme__feature';
+				$teaserIcon = 'gallery';
 				$relatedShowImg = true;
 				$relatedImgSize = '93';
 				$relatedImgRatio = '1:1';

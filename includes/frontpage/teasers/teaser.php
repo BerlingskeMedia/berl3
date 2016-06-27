@@ -32,7 +32,8 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 				
 
 				<?php if ($showImg ): ?>
-					<figure class="teaser-img">
+					<figure class="teaser-img <?php if($teaserIcon === 'video'): ?> teaser--icon__video <?php endif; ?> <?php if($teaserIcon === 'gallery'): ?> teaser--icon__gallery <?php endif; ?>">
+
 						<?php include('includes/frontpage/teasers/labels.php'); ?>
 						<img src="<? dummy("image". $imgSrc ."@". $imgW ."x,". $imgRatio ."") ?>" width="" height="" alt="[ARTICLE HEADER]" class="img" />
 					</figure>
@@ -179,4 +180,5 @@ $headerSrc 		= 'headline-b3';
 $summarySrc 	= 'short-teaser';
 $showPrice 		= false;
 $showHeader 	= true;
+$teaserIcon 	= false;
 ?>
