@@ -28,7 +28,7 @@ $iconRelatedDefeaultSM : 1.5rem;
 		border-style: solid;
 	}
 	&:after {
-		margin-left: .6%;
+		// margin-left: .6%;
 		color: #fff;
 	}
 	&:hover:before {
@@ -39,10 +39,8 @@ $iconRelatedDefeaultSM : 1.5rem;
 
 
 .teaser--icon__gallery {
-	
 	&:after {
 		content: '\e819';
-		transform: scale(.6);
 		margin-left: 0;
 	}
 	&:hover:before {
@@ -57,7 +55,10 @@ $iconRelatedDefeaultSM : 1.5rem;
 .teaser--icon__video {
 	&:after {
 		content: '\e823';
+		transform: scale(1.4) translateX(1%);
+		-webkit-font-smoothing: antialiased;
 	}
+
 	&:hover:before {
 		background-color: $col-blue-1;
 		border-width: ($iconDefeault/2);
@@ -72,7 +73,7 @@ $iconRelatedDefeaultSM : 1.5rem;
 			width:	$iconDefeault;
 			height: $iconDefeault;
 			line-height: $iconDefeault;
-			font-size: $iconDefeault * .8;
+			font-size: $iconDefeault * .6;
 		}
 	}
 }
@@ -84,7 +85,7 @@ $iconRelatedDefeaultSM : 1.5rem;
 			width:	$iconRelatedDefeault;
 			height: $iconRelatedDefeault;
 			line-height: $iconRelatedDefeault;
-			font-size: $iconRelatedDefeault * .8;
+			font-size: $iconRelatedDefeault * .6;
 
 			top: .3125rem;
 			left: .3125rem;
@@ -103,7 +104,7 @@ $iconRelatedDefeaultSM : 1.5rem;
 			width:	$iconRelatedDefeault;
 			height: $iconRelatedDefeault;
 			line-height: $iconRelatedDefeault;
-			font-size: $iconRelatedDefeault * .8;
+			font-size: $iconRelatedDefeault * .6;
 			top: .3125rem;
 			left: .3125rem;
 		}
@@ -135,7 +136,7 @@ $iconRelatedDefeaultSM : 1.5rem;
 				width:	$iconDefeaultSM;
 				height: $iconDefeaultSM;
 				line-height: $iconDefeaultSM;
-				font-size: $iconDefeaultSM * .8;
+				font-size: $iconDefeaultSM * .6;
 			}
 			&:hover:before {
 				border-width: ($iconDefeaultSM/2);
@@ -153,7 +154,7 @@ $iconRelatedDefeaultSM : 1.5rem;
 				width:	$iconRelatedDefeaultSM;
 				height: $iconRelatedDefeaultSM;
 				line-height: $iconRelatedDefeaultSM;
-				font-size: $iconRelatedDefeaultSM * .8;
+				font-size: $iconRelatedDefeaultSM * .6;
 				top: .3125rem;
 				left: .3125rem;
 			}
