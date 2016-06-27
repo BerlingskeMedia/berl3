@@ -16,7 +16,7 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 
 ?>
 
-<div class=" <?= $class; ?> item--teaser ">
+<div class=" <?= $class; ?>  ">
 
 		<div class="teaser">
 

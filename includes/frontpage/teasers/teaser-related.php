@@ -21,8 +21,7 @@
 							</span>	
 						<?php endif; ?>
 						
-						<?php include('includes/frontpage/teasers/labels.php'); ?>			
-
+						<?php include('includes/frontpage/teasers/labels.php'); ?>
 			
 						<?php if($relatedTrumpet): ?>
 							<span class="related--header__trumpet">

@@ -1,4 +1,9 @@
 <?php 
+		// $labelType = false;
+		// $labelText = 'Breaking';
+		?>
+
+<?php 
 
 
 $labelType = 'yellow';
@@ -15,15 +20,20 @@ $labelText = 'Breaking';
 				<?php
 				$imgW='1240'; 
 				$showImg = true;
-				$class = 'teaser--xxlarge teaser--theme__xtragiant';
+				$class = 'item--teaser teaser--xxlarge teaser--theme__xtragiant';
 				$imgRatio = '16:7';
 				$imgSrc = '/!b-breaking';
 				$showSummary = '1';
 				$showRelatedimg = true;
-				$teaserPack = '1';
+				$teaserPack = '8';
 				include('includes/frontpage/teasers/teaser.php') ?>			
+			
+
 			</div>
 		</div>
+	
+		
+		
 	
 	<?php endif; ?>
 
@@ -35,7 +45,7 @@ $labelText = 'Breaking';
 					<?php
 					$imgW='1240'; 
 					$showImg = true;
-					$class = 'teaser--xlarge teaser--theme__giant';
+					$class = 'item--teaser teaser--xlarge teaser--theme__giant';
 					$imgRatio = '16:7';
 					$imgSrc = '/!b-breaking';
 					$showSummary = '1';
@@ -97,7 +107,7 @@ $labelText = 'Breaking';
 					<?php
 					$imgW='930';  
 					$showImg = '1';
-					$class = 'teaser--theme__business teaser--img-wide item--teaser teaser--large item--teaser';
+					$class = 'item--teaser teaser--theme__business teaser--img-wide item--teaser teaser--large item--teaser';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;

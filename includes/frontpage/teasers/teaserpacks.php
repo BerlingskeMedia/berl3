@@ -11,7 +11,7 @@
 				// ONELINERS
 				$relatedCount = '1';
 				$relatedGridClass = 'col-xs-12';
-				$relatedTeaserClass = 'item--teaser related--image teaser--img-left related--large teaser--theme__business ';
+				$relatedTeaserClass = 'item--teaser related--image teaser--img-left related--large related--theme__business ';
 				$relatedShowImg = true;
 				$relatedImgSize = '160';
 				$relatedImgRatio = '3:2';
@@ -83,7 +83,7 @@
 				// ONELINERS
 				$relatedCount = '1';
 				$relatedGridClass = 'col-xs-12';
-				$relatedTeaserClass = 'item--teaser  related--xsmall teaser--theme__business';
+				$relatedTeaserClass = 'item--teaser  related--xsmall related--theme__business';
 				$relatedShowImg = false;
 				$relatedImgSize = '160';
 				$relatedImgRatio = '3:2';
@@ -294,7 +294,7 @@
 
 <?php if($teaserPack === '6') :?>
 	<div class="teaser--pack clearfix">
-<!-- teaser pack 5 -->
+<!-- teaser pack 6 -->
 		<ul class="row teaser--pack--list">
 			
 			
@@ -325,7 +325,7 @@
 
 <?php if($teaserPack === '7') :?>
 	<div class="teaser--pack clearfix">
-<!-- teaser pack 5 -->
+<!-- teaser pack 6 -->
 		<ul class="row teaser--pack--list">
 			
 			
@@ -335,6 +335,53 @@
 				$relatedCount = '1';
 				$relatedGridClass = 'col-xs-12';
 				$relatedTeaserClass = 'item--teaser related--xsmall';
+				$relatedShowImg = false;
+				$relatedImgSize = '160';
+				$relatedImgRatio = '3:2';
+				$relatedImgSrc = '/landscape';
+				$showRelatedSummary = false;
+				$showRelatedPaywall = true;
+				$relatedTrumpet = false;
+
+				include('includes/frontpage/teasers/teaser-related.php'); 
+			?>
+
+		
+			
+		</ul>
+	</div>
+<?php endif; ?>
+
+
+<?php if($teaserPack === '8') :?>
+	<div class="teaser--pack clearfix">
+<!-- teaser pack 8 -->
+		<ul class="row flex-row teaser--pack--list">
+			
+			
+
+			<?php 
+				// ONELINERS
+				$relatedCount = '3';
+				$relatedGridClass = 'col-lg-4 col-xs-12';
+				$relatedTeaserClass = 'item--teaser teaser--img-left related--small';
+				$relatedShowImg = true;
+				$relatedImgSize = '160';
+				$relatedImgRatio = '3:2';
+				$relatedImgSrc = '/landscape';
+				$showRelatedSummary = false;
+				$showRelatedPaywall = true;
+				$relatedTrumpet = false;
+
+				include('includes/frontpage/teasers/teaser-related.php'); 
+			?>
+
+
+			<?php 
+				// ONELINERS
+				$relatedCount = '3';
+				$relatedGridClass = 'col-lg-4 col-xs-12';
+				$relatedTeaserClass = 'item--teaser  related--xsmall';
 				$relatedShowImg = false;
 				$relatedImgSize = '160';
 				$relatedImgRatio = '3:2';

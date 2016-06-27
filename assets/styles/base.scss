@@ -258,10 +258,7 @@ $col-sidebar-width: 19.375rem;
 }
 
 @include media-breakpoint-down(lg) {
-	.item--teaser {
-		padding-left: 0;
-		padding-right: 0;
-	}
+	
 	.col-tags {
 		width: 100%;
 		padding-right: 0;

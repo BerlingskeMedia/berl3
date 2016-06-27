@@ -44,7 +44,7 @@
 }
 
 
-.item--teaser
+[class*="item--teaser"] 
 	a {
 		color: #000;
 		&:hover {
@@ -328,6 +328,11 @@
 	display: block;
 }
 .related--xsmall { 
+	.header--related {
+		.related--header__category {
+			display: none;
+		}	
+	}
 	.teaser--trumpet {
 		
 		display: inline
@@ -404,34 +409,50 @@
 	display: none;
 }
 
-.teaser--theme__business {
+@mixin relatedTheme($color) {
 	.related--summary__category,
-	.teaser--trumpet,
-	.related--header__category,
-	.teaser--category {
-		color: $col-business-dark;
+	.related--header__trumpet {
+		color: $color;
 	}
-	
-	&.related--xsmall,
-	.related--xsmall {
+	&.related--xsmall {
 		&:before {
-			background-color: $col-business-dark;
+			background-color: $color;
 		}
 	}
 }
-.teaser--theme__aok {
+
+@mixin teaserTheme($color) {
 	.related--summary__category,
 	.teaser--trumpet,
 	.related--header__category,
 	.teaser--category {
-		color: #666;
+		color: $color;
 	}
 }
 
+
+.related--theme__business {
+	@include relatedTheme($col-business-dark);
+}
+.related--theme__aok {
+	@include relatedTheme($col-aok);
+}
+
+
+
+.teaser--theme__business {
+	@include teaserTheme($col-business-dark);
+}
+.teaser--theme__aok {
+	@include teaserTheme($col-aok);
+}
+
+
+
+
 [class*="teaser--theme-cartoon"] {
 	text-align: center;
-	padding-left: 0;
-	padding-right: 0;
+	padding: $spacer;
 	background-color: #fff;
 	border-radius: .25rem;
 	
@@ -521,13 +542,14 @@
 
 
 .teaser--theme__xtragiant {
+	border-bottom: $border-width solid $border-color;
 	padding: 0;
 	.teaser {
 		@extend .flex-row;
 		flex-direction: column-reverse;
 	}
 	.header {
-		font-size: 5rem;
+		font-size: 4rem;
 	}
 
 	.teaser-body {
@@ -919,6 +941,18 @@
 	.related--header__trumpet {
 		font-size: .8rem;
 	}
+	.teaser--theme__xtragiant {
+		.header {
+			font-size: 3rem;
+		}
+		.related--small {
+			.teaser-img {
+				max-width: 100px;
+			}
+		}
+	}
+
+
 	.teaser--xlarge {
 		.header {
 			font-size: 3.125rem * .7;
@@ -996,7 +1030,16 @@
 	}
 }
 
+@include media-breakpoint-down(lg) {
+	[class*="item--teaser"] {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
 @include media-breakpoint-only(md) {
+	
+
 	.teaser--xlarge {
 		.header {
 			font-size: 3.125rem * .7;
@@ -1021,7 +1064,6 @@
 @include media-breakpoint-down(sm) {
 
 	.teaser--theme__xtragiant {
-	
 	
 	.teaser-body {
 		text-align: center;
