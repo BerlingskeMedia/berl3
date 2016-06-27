@@ -87,7 +87,6 @@ $iconRelatedDefeaultSM : 1.5rem;
 			height: $iconRelatedDefeault;
 			line-height: $iconRelatedDefeault;
 			font-size: $iconRelatedDefeault * .75;
-
 			top: .3125rem;
 			left: .3125rem;
 		}
@@ -156,8 +155,8 @@ $iconRelatedDefeaultSM : 1.5rem;
 				height: $iconRelatedDefeaultSM;
 				line-height: $iconRelatedDefeaultSM;
 				font-size: $iconRelatedDefeaultSM * .75;
-				top: .3125rem;
-				left: .3125rem;
+				top: .2rem;
+				left: .2rem;
 			}
 			&:hover:before {
 				border-width: ($iconRelatedDefeaultSM/2);
