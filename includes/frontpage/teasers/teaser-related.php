@@ -12,7 +12,6 @@
 			<div class="related-body">
 				
 				<h3 class="header--related">
-					
 					<div class="related--tools">
 					
 						<?php if($relatedCategory): ?>
@@ -32,6 +31,11 @@
 					</div>
 					
 					<span class="related--header__content">
+						
+						<?php if(preg_match('/teaser--icon__video/',$relatedTeaserClass)): ?>
+							<i class="bicon-play-circled"></i>
+						<?php endif; ?>
+
 						<? dummy("text@headline-b3") ?>	
 	
 						<?php if( $showRelatedPaywall): ?>

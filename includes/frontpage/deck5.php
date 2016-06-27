@@ -20,7 +20,7 @@ $labelText = 'Breaking';
 				<?php
 				$imgW='1240'; 
 				$showImg = true;
-				$class = 'item--teaser teaser--xxlarge teaser--theme__xtragiant';
+				$class = 'item--teaser teaser--xxlarge teaser--theme__xtragiant teaser--icon__video';
 				$imgRatio = '16:7';
 				$imgSrc = '/!b-breaking';
 				$showSummary = '1';
@@ -45,7 +45,7 @@ $labelText = 'Breaking';
 					<?php
 					$imgW='1240'; 
 					$showImg = true;
-					$class = 'item--teaser teaser--xlarge teaser--theme__giant';
+					$class = 'item--teaser teaser--xlarge teaser--theme__giant teaser--icon__video';
 					$imgRatio = '16:7';
 					$imgSrc = '/!b-breaking';
 					$showSummary = '1';
@@ -66,7 +66,7 @@ $labelText = 'Breaking';
 					<?php
 					$imgW='910'; 
 					$showImg = '1';
-					$class = 'mb item--teaser__bb teaser--img-wide teaser--large  ';
+					$class = 'mb item--teaser__bb teaser--img-wide teaser--large teaser--icon__video ';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = '1';
@@ -107,7 +107,7 @@ $labelText = 'Breaking';
 					<?php
 					$imgW='930';  
 					$showImg = '1';
-					$class = 'item--teaser teaser--theme__business teaser--img-wide item--teaser teaser--large item--teaser';
+					$class = 'item--teaser teaser--theme__business teaser--img-wide item--teaser teaser--large item--teaser teaser--icon__video';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
@@ -121,7 +121,7 @@ $labelText = 'Breaking';
 					<?php
 					$imgW='930';  
 					$showImg = '1';
-					$class = ' teaser--img-wide item--teaser teaser--large item--teaser__bt';
+					$class = ' teaser--img-wide item--teaser teaser--large item--teaser__bt teaser--icon__video';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
@@ -137,7 +137,7 @@ $labelText = 'Breaking';
 					<?php
 					$imgW='930';  
 					$showImg = '1';
-					$class = 'teaser--theme__business teaser--img-wide item--teaser teaser--large item--teaser__bt';
+					$class = 'teaser--theme__business teaser--img-wide item--teaser teaser--large item--teaser__bt teaser--icon__video';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
@@ -152,7 +152,7 @@ $labelText = 'Breaking';
 					$imgW='220'; 
 					$imgW='220'; 
 					$showImg = '1';
-					$class = 'teaser--img-right  teaser--small teaser--theme-trade item--teaser__bt';
+					$class = 'teaser--img-right  teaser--small teaser--theme-trade item--teaser__bt teaser--icon__video';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
@@ -167,7 +167,7 @@ $labelText = 'Breaking';
 					<?php
 					$imgW='320'; 
 					$showImg = '1';
-					$class = 'teaser--img-left teaser--small item--teaser__bt ';
+					$class = 'teaser--img-left teaser--small item--teaser__bt teaser--icon__video';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
@@ -180,7 +180,7 @@ $labelText = 'Breaking';
 					<?php
 					$imgW='220'; 
 					$showImg = '1';
-					$class = 'teaser--img-right  teaser--small teaser--theme__business item--teaser__bt';
+					$class = 'teaser--img-right  teaser--small teaser--theme__business item--teaser__bt teaser--icon__video';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
@@ -194,7 +194,7 @@ $labelText = 'Breaking';
 					<?php
 					$imgW='220'; 
 					$showImg = '1';
-					$class = 'teaser--img-right  teaser--small item--teaser__bt';
+					$class = 'teaser--img-right  teaser--small item--teaser__bt teaser--icon__video';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
@@ -208,7 +208,7 @@ $labelText = 'Breaking';
 					<?php
 					$imgW='930';  
 					$showImg = '1';
-					$class = 'teaser--theme__business teaser--img-wide teaser--large item--teaser__bt ';
+					$class = 'teaser--theme__business teaser--img-wide teaser--large item--teaser__bt teaser--icon__video';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;

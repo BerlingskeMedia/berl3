@@ -1,0 +1,136 @@
+$iconDefeault : 3.5rem;
+$iconDefeaultSM : 2.8rem;
+
+$iconRelatedDefeault : 2.1rem;
+$iconRelatedDefeaultSM : 1.5rem;
+
+[class*="teaser--icon"] {
+	.teaser-img {
+		position: relative;
+		&:before,
+		&:after {
+			position: absolute;
+			text-align: center;
+			color: #fff;
+			z-index: 2;
+			font-family: b-icons;
+			top: .625rem;
+			left: .625rem;
+		}
+		&:before {
+			box-shadow: 0 0 1rem rgba(0,0,0,.4);
+		}
+		&:after {
+			margin-left: .6%;
+		}
+	}	
+
+}
+
+
+
+.teaser--icon__video {
+	.teaser-img {
+		&:before {
+			content: '';
+			background-color: rgba(0,0,0,.7);
+			border-radius: 50%;
+			transition: background-color .2s ease;
+		}
+		&:after {
+			content: '\e823';
+			color: #fff;
+		}
+		&:hover:before {
+			background-color: $col-blue-1;
+		}
+	}
+	 
+}
+.teaser--xxlarge,
+.teaser--xlarge,
+.teaser--large {
+	.teaser-img {
+		&:before,
+		&:after {				
+			width:	$iconDefeault;
+			height: $iconDefeault;
+			line-height: $iconDefeault;
+			font-size: $iconDefeault * .8;
+		}
+	}
+}
+
+.teaser--small {
+	.teaser-img {
+		&:before,
+		&:after {
+			width:	$iconRelatedDefeault;
+			height: $iconRelatedDefeault;
+			line-height: $iconRelatedDefeault;
+			font-size: $iconRelatedDefeault * .8;
+			top: .3125rem;
+			left: .3125rem;
+		}
+	}
+}
+
+.related--small,
+.related--large {
+	.teaser-img {
+		&:before,
+		&:after {
+			width:	$iconRelatedDefeault;
+			height: $iconRelatedDefeault;
+			line-height: $iconRelatedDefeault;
+			font-size: $iconRelatedDefeault * .8;
+			top: .3125rem;
+			left: .3125rem;
+		}
+	}
+}
+
+.item--teaser {
+	.bicon-play-circled	 {
+		display: none;
+	}
+}
+.related--xsmall .bicon-play-circled {
+	display: inline-block;
+}
+
+@include media-breakpoint-down(sm) {
+
+	.teaser--xxlarge,
+	.teaser--xlarge,
+	.teaser--large {
+		.teaser-img {
+			&:before,
+			&:after {				
+				width:	$iconDefeaultSM;
+				height: $iconDefeaultSM;
+				line-height: $iconDefeaultSM;
+				font-size: $iconDefeaultSM * .8;
+			}
+		}
+	}
+
+
+	.teaser--small,
+	.related--small,
+	.related--large {
+		.teaser-img {
+			&:before,
+			&:after {
+				width:	$iconRelatedDefeaultSM;
+				height: $iconRelatedDefeaultSM;
+				line-height: $iconRelatedDefeaultSM;
+				font-size: $iconRelatedDefeaultSM * .8;
+				top: .3125rem;
+				left: .3125rem;
+			}
+		}
+	}	
+}
+
+
