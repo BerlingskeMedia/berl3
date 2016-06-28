@@ -105,6 +105,9 @@
 			content: 'Af ';
 			
 		}
+		.subscriber-notice {
+			display: inline;
+		}
 		.teaser-comments {
 			margin-left: .2rem;
 		}
@@ -208,7 +211,7 @@
 
 .related-header-content {
 	.subscriber-notice {
-		margin-top: .2rem;
+		margin-top: .1rem;
 	}
 }
 
@@ -262,6 +265,9 @@
 		margin-bottom: 0;
 		// line-height: 1;
 		font-size: .8rem
+	}
+	.subscriber-notice {
+		margin-top: .1rem;
 	}
 
 	&:before {
@@ -874,6 +880,9 @@
 .teaser-large {
 	.header {
 		font-size: 2.813rem;
+		.subscriber-notice {
+			margin-top: .1rem;
+		}
 	}
 }
 
@@ -1150,6 +1159,9 @@
 		} 
 		.teaser-author {
 			font-size: .7rem;
+		}
+		.teaser-img {
+			margin-bottom: .3125rem;
 		}
 
 	}

@@ -116,7 +116,6 @@ $labelText = false;
 					$imgW='930';  
 					$showImg = '1';
 					$class = 'item-teaser teaser-theme-business teaser-img-wide item-teaser teaser-large item-teaser ';
-					
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
@@ -131,13 +130,9 @@ $labelText = false;
 					$imgW='930';  
 					$showImg = '1';
 					$class = ' teaser-img-wide item-teaser teaser-large item-teaser-bt ';
-					
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
-					
-					
-					
 					$teaserPack = '2';
 					$showTrumpet = true;
 					$showPaywall = true;
@@ -148,7 +143,6 @@ $labelText = false;
 					$imgW='930';  
 					$showImg = '1';
 					$class = 'teaser-theme-business teaser-img-wide item-teaser teaser-large item-teaser-bt ';
-					
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
@@ -164,18 +158,14 @@ $labelText = false;
 					$imgW='220'; 
 					$showImg = '1';
 					$class = 'teaser-img-right  teaser-small teaser-theme-trade item-teaser-bt ';
-					
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
-					
-					
-					
 					$teaserAd = true;
 
 					include('includes/frontpage/teasers/teaser.php') ?>
 
-BUSINESS
+Trumpet
 					<?php
 					$imgW='320'; 
 					$showImg = '1';
@@ -185,40 +175,27 @@ BUSINESS
 					$category = 'Business.dk';
 					$showPaywall = true;
 					$showSummary = true;
-					
-					
-					
-
+					$showTrumpet = true;
 					include('includes/frontpage/teasers/teaser.php') ?>
 
 					<?php
 					$imgW='220'; 
 					$showImg = '1';
 					$class = 'teaser-img-right  teaser-small teaser-theme-business item-teaser-bt ';
-					
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
-					
-					
 					$category = 'Business.dk';
-					
-
 					include('includes/frontpage/teasers/teaser.php') ?>
 					
 					<?php
 					$imgW='220'; 
 					$showImg = '1';
 					$class = 'teaser-img-right  teaser-small item-teaser-bt ';
-					
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
-					
-					
-					
 					$teaserPack = false;
-
 					include('includes/frontpage/teasers/teaser.php') ?>
 
 					<?php

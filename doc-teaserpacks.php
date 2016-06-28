@@ -56,7 +56,7 @@ if(isset($_GET["business"])) {
 			<?php
 			$imgW='920'; 
 			$showImg = '1';
-			$class = ' teaser--img-wide item--teaser teaser--large  ';
+			$class = ' teaser-img-wide item-teaser teaser-large  ';
 			$imgRatio = '16:9';
 			$imgSrc = '/landscape';
 			$showSummary = true;
@@ -87,7 +87,7 @@ if(isset($_GET["business"])) {
 			<?php
 			$imgW='920'; 
 			$showImg = '1';
-			$class = ' teaser--img-wide item--teaser teaser--large ';
+			$class = ' teaser-img-wide item-teaser teaser-large ';
 			$imgRatio = '16:9';
 			$imgSrc = '/landscape';
 			$showSummary = true;
@@ -121,7 +121,7 @@ if(isset($_GET["business"])) {
 			<?php
 			$imgW='920'; 
 			$showImg = '1';
-			$class = ' teaser--img-wide item--teaser teaser--large ';
+			$class = ' teaser-img-wide item-teaser teaser-large ';
 			$imgRatio = '16:9';
 			$imgSrc = '/landscape';
 			$showSummary = true;
@@ -152,7 +152,7 @@ if(isset($_GET["business"])) {
 			<?php
 			$imgW='920'; 
 			$showImg = '1';
-			$class = ' teaser--img-wide item--teaser teaser--large ';
+			$class = ' teaser-img-wide item-teaser teaser-large ';
 			$imgRatio = '16:9';
 			$imgSrc = '/landscape';
 			$showSummary = true;
@@ -184,7 +184,7 @@ if(isset($_GET["business"])) {
 			<?php
 			$imgW='920'; 
 			$showImg = '1';
-			$class = ' teaser--img-wide item--teaser teaser--large ';
+			$class = ' teaser-img-wide item-teaser teaser-large ';
 			$imgRatio = '16:9';
 			$imgSrc = '/landscape';
 			$showSummary = true;
@@ -218,7 +218,7 @@ if(isset($_GET["business"])) {
 			<?php
 			$imgW='920'; 
 			$showImg = '1';
-			$class = ' teaser--img-left item--teaser teaser--medium ';
+			$class = ' teaser-img-left item-teaser teaser-medium ';
 			$imgRatio = '16:9';
 			$imgSrc = '/landscape';
 			$showSummary = true;
@@ -251,7 +251,7 @@ if(isset($_GET["business"])) {
 			<?php
 			$imgW='920'; 
 			$showImg = '1';
-			$class = ' teaser--img-right item--teaser teaser--medium ';
+			$class = ' teaser-img-right item-teaser teaser-medium ';
 			$imgRatio = '16:9';
 			$imgSrc = '/landscape';
 			$showSummary = true;
@@ -279,8 +279,7 @@ if(isset($_GET["business"])) {
 
 
 <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.2/js/tether.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script> -->
+
 <script src="/dist/scripts/main.js"></script>
 
 
