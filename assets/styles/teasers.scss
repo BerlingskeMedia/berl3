@@ -284,8 +284,7 @@
 		bottom: 0;
 		top: 0;
 		content: '';
-	}
-	
+	}	
 }
 
 
@@ -1195,12 +1194,15 @@
 	.related-small .related-header-content {
 		font-size: .9rem;
 	}
-	.related-xsmall {
+	.item-teaser.related-xsmall {	
 		
-		.related-header-content {
-				font-size: .8rem;
-			}
+		.header-related {
+			font-size: .8rem;
+		}
 	}
-	
-
+	.item-teaser.related-xsmall {	
+		.related-header-trumpet {
+				font-size: .7rem;
+		}
+	}
 }
