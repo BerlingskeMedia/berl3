@@ -66,18 +66,22 @@ $labelText = false;
 		<?php if($topMD): ?>
 			
 				<div class="col--full-width">
-					<?php
-					$imgW='910'; 
-					$showImg = '1';
-					$class = 'mb item--teaser__bb teaser--img-wide teaser--large ';
-					
-					$imgRatio = '16:9';
-					$imgSrc = '/landscape';
-					$showSummary = '1';
-					$showRelated = '1';
-					$showHeader = true;
-					$teaserPack = '1';
-					include('includes/frontpage/teasers/teaser.php') ?>			
+					<div class="row flex-row teaser-flow">
+						<div class="col-xs-12">
+							<?php
+							$imgW='910'; 
+							$showImg = '1';
+							$class = 'mb item--teaser__bb teaser--img-wide teaser--large ';
+							
+							$imgRatio = '16:9';
+							$imgSrc = '/landscape';
+							$showSummary = '1';
+							$showRelated = '1';
+							$showHeader = true;
+							$teaserPack = '1';
+							include('includes/frontpage/teasers/teaser.php') ?>	
+						</div>
+					</div>
 				</div>
 			
 		<?php endif; ?>
