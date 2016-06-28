@@ -19,7 +19,7 @@
 
 					</span>
 					
-					<span class="_content">
+					
 						<?php if($teaserIcon === 'video'): ?> <i class="bicon-play-circled"></i> <?php endif; ?> 
 						<?php if($teaserIcon === 'gallery'): ?> <i class="bicon-camera"></i> <?php endif; ?>
 						
@@ -30,7 +30,6 @@
 							<span class="subscriber-notice">Abonnement</span>
 						<?php endif; ?>
 
-					</span>
 				</h3>
 			
 		</a>

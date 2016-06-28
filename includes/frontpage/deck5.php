@@ -165,7 +165,6 @@ $labelText = false;
 
 					include('includes/frontpage/teasers/teaser.php') ?>
 
-Trumpet
 					<?php
 					$imgW='320'; 
 					$showImg = '1';
