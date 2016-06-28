@@ -88,6 +88,10 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 						<?php endif; ?>
 
 				</h2>
+
+				<?php if($showAuthor): ?>
+					<span class="teaser-author"><? dummy("text@author") ?></span>
+				<?php endif; ?>
 				
 
 				<?php if($showPrice): ?>
@@ -136,7 +140,7 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 					</div>
 				<?php endif; ?>
 				
-				<?php if($showAuthor): ?>
+				<?php if($blogTeaser): ?>
 					<span class="teaser-author"><? dummy("text@author") ?>
 					<?php if(!$showSummary) : ?>
 
@@ -180,4 +184,5 @@ $headerSrc 		= 'headline-b3';
 $summarySrc 	= 'short-teaser';
 $showPrice 		= false;
 $showHeader 	= true;
+$blogTeaser 	= false;
 ?>

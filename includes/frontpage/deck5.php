@@ -78,7 +78,7 @@ $labelText = false;
 							$showSummary = '1';
 							$showRelated = '1';
 							$showHeader = true;
-							$teaserPack = '1';
+							$teaserPack = '3';
 							include('includes/frontpage/teasers/teaser.php') ?>	
 						</div>
 					</div>
@@ -120,7 +120,7 @@ $labelText = false;
 					$imgSrc = '/landscape';
 					$showSummary = true;
 					$category = 'Business.dk';
-					$teaserPack = '1';
+					$teaserPack = '4';
 					$showTrumpet = true;
 					$showPaywall = true;
 

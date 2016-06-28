@@ -80,12 +80,29 @@
 		.teaser-label-live {
 			padding-left: 0;
 		}
-	}
-	
+	}	
 }
 .teaser-theme-business .teaser-label-blue {
 	background-color: $col-business-dark;
 }
+
+
+@include media-breakpoint-down(lg) {
+	.teaser-theme-giant {
+		.teaser {
+			[class*="teaser-label"] {
+				font-size: 1rem;
+				padding: 4px .625rem 4px ;
+				line-height: 1;
+				margin-bottom: .4rem;
+			}
+			.teaser-label-live {
+				padding-left: 0;
+			}
+		}
+	}
+}
+
 
 @include media-breakpoint-down(sm) {
 	.header-related,
@@ -101,4 +118,6 @@
 			}
 		}
 	}
+	
+
 }

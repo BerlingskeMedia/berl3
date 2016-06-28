@@ -335,9 +335,9 @@
 
 
 
-<?php if($teaserPack === '7') :?>
+<?php if($teaserPack === '7') :?> 
 	<div class="teaser-pack clearfix">
-<!-- teaser pack 6 --> 
+<!-- teaser pack 7 - only to be used in teaser-giant and teaser-xtragiant --> 
 		<ul class="row teaser-pack-list">
 			
 			
@@ -366,8 +366,9 @@
 
 
 <?php if($teaserPack === '8') :?>
+	
 	<div class="teaser-pack clearfix">
-<!-- teaser pack 8 --> 
+<!-- teaser pack 8 - only to be used in teaser-giant and teaser-xtragiant --> 
 		<ul class="row flex-row teaser-pack-list">
 			
 			

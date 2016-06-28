@@ -19,7 +19,7 @@
 				$class = ' teaser-img-right  teaser-xsmall  teaser-theme-feature	item-teaser-bt teaser-squareimg ';
 				$showImg = '1';
 				$imgRatio = '1:1';
-				$showAuthor = true;
+				$blogTeaser = true;
 				$showTrumpet = false;
 				$showDate = false;
 				$showTrumpet = 'Berlingske mener';
@@ -37,7 +37,7 @@
 				$class = ' teaser-img-right teaser-xsmall	item-teaser-bt teaser-theme-feature teaser-roundimg ';
 				$showImg = '1';
 				$imgRatio = '1:1';
-				$showAuthor = true;
+				$blogTeaser = true;
 				$showTrumpet = false;
 				$showDate = false;
 				$showCategory = false;
@@ -56,7 +56,7 @@
 				$class = ' teaser-img-right  teaser-xsmall	  item-teaser-bt teaser-roundimg';
 				$showImg = '1';
 				$imgRatio = '1:1';
-				$showAuthor = true;
+				$blogTeaser = true;
 				$showTrumpet = false;
 				$showDate = false;
 				$showCategory = false;

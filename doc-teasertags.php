@@ -373,7 +373,7 @@ if (isset($_GET['labelType'])) {
 							$showRelatedPaywall = true;
 							$relatedTrumpet = true;
 
-							include('includes/frontpage/teasers/teaser-related.php'); 
+							include('includes/frontpage/teasers/teaser-related-xsmall.php'); 
 						?>
 						<?php 
 							// ONELINERS
@@ -388,7 +388,7 @@ if (isset($_GET['labelType'])) {
 							$showRelatedPaywall = true;
 							$relatedTrumpet = true;
 							$relatedCategory = 'Business.dk';
-							include('includes/frontpage/teasers/teaser-related.php'); 
+							include('includes/frontpage/teasers/teaser-related-xsmall.php'); 
 						?>
 						
 						</li>

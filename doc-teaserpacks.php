@@ -60,6 +60,7 @@ if(isset($_GET["business"])) {
 			$imgRatio = '16:9';
 			$imgSrc = '/landscape';
 			$showSummary = true;
+			$showAuthor = true;
 			$showHeader = true;	
 			$showComments = true;
 			$showRelated = false;
@@ -91,6 +92,7 @@ if(isset($_GET["business"])) {
 			$imgRatio = '16:9';
 			$imgSrc = '/landscape';
 			$showSummary = true;
+			$showAuthor = true;
 			$showComments = true;
 			$showRelated = false;
 			$showDate = false;
@@ -125,6 +127,7 @@ if(isset($_GET["business"])) {
 			$imgRatio = '16:9';
 			$imgSrc = '/landscape';
 			$showSummary = true;
+			$showAuthor = true;
 			$showComments = true;
 			$showRelated = false;
 			$showDate = false;
@@ -156,6 +159,7 @@ if(isset($_GET["business"])) {
 			$imgRatio = '16:9';
 			$imgSrc = '/landscape';
 			$showSummary = true;
+			$showAuthor = true;
 			$showComments = true;
 			$showRelated = false;
 			$showDate = false;
@@ -188,6 +192,7 @@ if(isset($_GET["business"])) {
 			$imgRatio = '16:9';
 			$imgSrc = '/landscape';
 			$showSummary = true;
+			$showAuthor = true;
 			$showComments = true;
 			$showRelated = false;
 			$showDate = false;
@@ -222,6 +227,7 @@ if(isset($_GET["business"])) {
 			$imgRatio = '16:9';
 			$imgSrc = '/landscape';
 			$showSummary = true;
+			$showAuthor = true;
 			$showComments = true;
 			$showRelated = false;
 			$showDate = false;
@@ -256,6 +262,7 @@ if(isset($_GET["business"])) {
 			$imgSrc = '/landscape';
 			$showSummary = true;
 			$showComments = true;
+			$showAuthor = true;
 			$showRelated = false;
 			$showDate = false;
 			$showCategory = false;
@@ -265,6 +272,40 @@ if(isset($_GET["business"])) {
 			// $labelText = 'Terror i Bruxelles';
 			//$teaserLabel = 'breaking';
 			$teaserPack = '7';
+
+			$showTrumpet = 'Momssvindel';
+
+			include('includes/frontpage/teasers/teaser.php') ?>
+			
+		</div>
+	</div>
+
+	<div class="row">
+
+		<div class="col-xs-12 " >
+			<h3>Teaser pack 8</h3>
+		</div>
+
+		<div class=" col-xs-12 " >
+
+			<?php
+			$imgW='1240'; 
+			$showImg = '1';
+			$class = ' teaser-img-wide item-teaser teaser-xlarge teaser-theme-giant';
+			$imgRatio = '16:8';
+			$imgSrc = '/landscape';
+			$showSummary = true;
+			$showAuthor = true;
+			$showComments = true;
+			$showRelated = false;
+			$showDate = false;
+			$showCategory = false;
+			$showPaywall = true;
+			$showComments = true;
+			$teaserLabel = 'yellow';
+			// $labelText = 'Terror i Bruxelles';
+			//$teaserLabel = 'breaking';
+			$teaserPack = '8';
 
 			$showTrumpet = 'Momssvindel';
 

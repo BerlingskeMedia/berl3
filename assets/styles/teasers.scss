@@ -59,6 +59,9 @@
 	.header {
 		@extend .font-s1;
 		margin-bottom: .2rem;
+		&+ .teaser-author {
+			margin: 0 0 .3rem 0;
+		}
 	}
 	[class*="teaser-rating"] {
 		margin-bottom: .5rem;
@@ -218,6 +221,12 @@
 .related-header-content {
 	.subscriber-notice {
 		margin-top: .1rem;
+	}
+}
+
+.related-small .related-header-content {
+	.subscriber-notice {
+		margin-top: .2rem;
 	}
 }
 
@@ -631,7 +640,11 @@
 		color: #fff;
 	}
 	
-	
+	.teaser-pack {
+		.subscriber-notice {
+			color: rgba(0,0,0,.5);
+		}	
+	}
 	.header {
 		color: #fff;
 	}
@@ -919,7 +932,7 @@
 
 	.teaser-xlarge {
 		.header {
-			font-size: 3.125rem * .7;
+			font-size: 3.125rem * .8;
 			color: #fff;
 		}	
 	}

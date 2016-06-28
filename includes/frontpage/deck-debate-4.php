@@ -20,7 +20,7 @@
 					$class = ' teaser-img-right  teaser-xsmall  item-teaser-bt teaser-theme-feature teaser-roundimg ';
 					$showImg = '1';
 					$imgRatio = '1:1';
-					$showAuthor = true;
+					$blogTeaser = true;
 					$showTrumpet = false;
 					$showDate = false;
 					$showCategory = true;
@@ -37,7 +37,7 @@
 					$class = ' teaser-img-right  teaser-xsmall  item-teaser-bt teaser-theme-feature teaser-roundimg';
 					$showImg = '1';
 					$imgRatio = '1:1';
-					$showAuthor = true;
+					$blogTeaser = true;
 					$showTrumpet = false;
 					$showDate = false;
 					$showCategory = true;
