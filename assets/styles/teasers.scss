@@ -188,9 +188,7 @@
 	.teaser-img {
 		float: left;
 		margin-right: .625rem;
-		margin-top: .2rem;
 		max-width: 13.75rem;
-
 	}
 	
 	.teaser-body {
@@ -706,7 +704,7 @@
 
 .teaser-theme-longread {
 	.teaser-img {
-		margin-bottom: 0;
+		margin-bottom: 0!important;
 	}
 	.teaser-content {
 		position: absolute;
@@ -751,6 +749,7 @@
 
 .teaser-price {
 	color: #000;
+	line-height: 1;
 	
 }
 
@@ -775,12 +774,15 @@
 	background-color: #fff;
 	margin: 0;
 	.teaser-img {
-		margin-bottom: 0;
+		margin-bottom: 0!important;
 		transition: all 0.5s!important;
 	}
 	
 	.btn {
 		@extend .btn-dark-blue;
+	}
+	.fixed-header {
+		font-size: 1.4rem;
 	}
 	
 	&[class*="item-teaser"] {
@@ -789,13 +791,14 @@
 
 	.teaser-content {						
 		transition: all 0.5s ease;
-		padding: 10px;
+		padding: .3125rem .625rem;
 		position: absolute;
 		bottom: 0;
 		left: 0;
 		right: 0;
-		@include gradient-vertical(fade-out($background-color, 1), fade-out($background-color, .2), 0, 25px);
+		// @include gradient-vertical(fade-out($background-color, 1), fade-out($background-color, .2), 0, 50%);
 		// transform: translateY(100%);
+		background: fade-out(#fff, .2);
 	}
 	
 	&:hover {
@@ -803,24 +806,22 @@
 			transform: translateY(-5%) scale(1.1);			
 		}
 		
-		.teaser-content {
-		// 	transform: translateY(0);					
-		}
 	}	
 
 	.header {
-		// font-size: 1.3rem;
+		font-size: .9rem;
 		color: #000;
-		@extend .font-s1;
+		margin-bottom: 0;
+		@extend .font-s2;
+		font-weight: 500;
 	}
-	
-	
-	
 }
 
 .teaser-consumersales-fixed {
-	background-color: $col-blue-2;
-}
+		background: $col-blue-2 url(/dist/images/wine-2.png) center center no-repeat ;
+		background-size: contain;
+	}
+
 
 .pipe {
 	padding: 0 .2rem;
@@ -994,6 +995,7 @@
 		}
 	}
 
+	.teaser-xsmall,
 	.teaser-small,
 	.teaser-large,
 	.teaser-xlarge {
@@ -1015,6 +1017,7 @@
 			display: inline-block;
 		}
 	}
+
 }
 
 @include media-breakpoint-down(lg) {
@@ -1055,6 +1058,14 @@
 			}
 		}
 	}
+	.teaser-theme-longread.teaser-xlarge {
+		.teaser-content {
+			padding: .625rem;
+		}
+		.header {
+			font-size: 2rem;
+		}
+	}
 	
 }
 
@@ -1081,6 +1092,22 @@
 	}
 	
 	
+	.teaser-consumersales {	
+		.teaser-content {
+			padding: .2rem .3125rem;
+		}
+		.fixed-header {
+			font-size: 1.3rem;
+		}
+		.header {
+			font-size: .8rem;
+		}
+		.teaser-price {
+			font-size: .9rem;
+			line-height: 1;
+		}
+	}
+
 
 	.teaser-sponsor {
 		font-size: .7rem;
@@ -1165,6 +1192,7 @@
 		}
 	}
 
+	
 	.teaser-small {
 		.header {
 			font-size: 1rem;
@@ -1179,16 +1207,9 @@
 			}
 		}
 	}
-	.teaser-img-right .teaser-img,
-	.teaser-img-left .teaser-img {
-		max-width: 6rem;
-	}
-	.teaser-small.teaser-theme-feature .teaser-img {
-		max-width: 7rem;
-	}	
 	.teaser-xsmall {
 		.header {
-			font-size: 1.25rem;
+			font-size: 1rem;
 		}
 	}
 
@@ -1197,6 +1218,15 @@
 			font-size: 0.938rem;
 		}
 	}
+
+	.teaser-img-right .teaser-img,
+	.teaser-img-left .teaser-img {
+		max-width: 6rem;
+	}
+	.teaser-small.teaser-theme-feature .teaser-img {
+		max-width: 7rem;
+	}	
+	
 	
 	.teaser-theme-giant {
 		.teaser-content {
@@ -1213,7 +1243,7 @@
 			padding: .3125rem;
 		}
 	}	
-	
+
 	.related-summary {
 		display: none;
 	}
@@ -1239,6 +1269,14 @@
 	.item-teaser.related-xsmall {	
 		.related-header-trumpet {
 				font-size: .7rem;
+		}
+	}
+	.teaser-theme-longread.teaser-xlarge {
+		.teaser-content {
+			padding: .3125rem;
+		}
+		.header {
+			font-size: 1.1rem;
 		}
 	}
 }

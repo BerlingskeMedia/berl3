@@ -1,5 +1,5 @@
 <div class="deck flex-row">
-	<div class="col-tags col-border-right-lg-up hidden-lg-down">
+	<div class="col-tags col-border-right-xl-up hidden-lg-down">
 		<div class="section-title">Flere nyheder</div>
 		
 		

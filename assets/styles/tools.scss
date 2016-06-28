@@ -222,12 +222,8 @@
 	display: none;
 }
 
-
-@include media-breakpoint-up(lg) {
-	.like-berlingske-not-tablet {
-		display: block;
-	}
-	.col-border-right-lg-up {
+@include media-breakpoint-only(xl) {
+	.col-border-right-xl-up {
 		position: relative;
 		&:after {
 			position: absolute;
@@ -240,12 +236,12 @@
 			content: '';
 		}	
 	}
-	.col-tags.col-border-right-lg-up {
+	.col-tags.col-border-right-xl-up {
 		&:after {
 			right: .625rem;
 		}
 	}
-	.col-border-left-lg-up {
+	.col-border-left-xl-up {
 		position: relative;
 		&:after {
 			position: absolute;
@@ -258,6 +254,14 @@
 			content: '';
 		}	
 	}
+}
+
+
+@include media-breakpoint-up(lg) {
+	.like-berlingske-not-tablet {
+		display: block;
+	}
+	
 
 }
 @include media-breakpoint-down(sm) {
@@ -266,6 +270,9 @@
 	}
 	.like-berlingske-tablet {
 		display: none;
+	}
+	.mb-sm-down {
+		margin-bottom: $spacer;
 	}
 }
 

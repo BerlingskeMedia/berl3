@@ -178,7 +178,9 @@ ul.list-reset {
 		@extend .link-blue;
 		display: block;
 	}
+
 }
+
 .section-sponsor {
 	position: absolute;
 	bottom: 0;
@@ -233,7 +235,7 @@ $col-sidebar-width: 19.375rem;
 	padding-right: (.625rem * 2);
 	position: relative;
 	.section-title {
-		margin-bottom: 0;
+		margin-bottom: .625rem;
 	}
 }
 
@@ -261,7 +263,10 @@ $col-sidebar-width: 19.375rem;
 }
 
 @include media-breakpoint-down(lg) {
-	
+	.section-link {
+		float: right;
+	}
+
 	.col-tags {
 		width: 100%;
 		padding-right: 0;

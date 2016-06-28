@@ -1,10 +1,12 @@
 <div class=" deck ">
-	<div class="col-tags col-border-right-lg-up ">
-		<div class="section-title">Det&rsquo; satire!</div>
-
-		<div class="section-link">
+	<div class="col-tags col-border-right-xl-up ">
+		<div class="section-title">Det&rsquo; satire!
+		<span class="section-link">
 			<a href="tpl-section.php">Se alle <i class="bicon-angle-right"></i></a>
+		</span>
 		</div>
+
+		
 	</div>
 	<div class="col-primary-wide">
 

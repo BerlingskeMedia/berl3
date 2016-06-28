@@ -1,7 +1,7 @@
 
 <div class=" deck flex-row">
-	<div class="col-tags col-border-right-lg-up">
-		<div class="section-title mb-2">Fortællinger</div>		
+	<div class="col-tags col-border-right-xl-up">
+		<div class="section-title">Fortællinger</div>		
 	</div>
 	
 	<div class="col-primary-wide ">
@@ -32,7 +32,7 @@
 
 
 			<? while (dumb_luck("3")): ?>
-			<div class="col-xs-4">
+			<div class="col-xs-12 col-md-4">
 				<?php
 				$imgW='160'; 
 				$showImg = '1';

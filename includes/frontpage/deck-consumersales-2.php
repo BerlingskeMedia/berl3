@@ -3,7 +3,7 @@
 		<div class="col-tags ">
 				<div class="section-title">Shop</div>
 				
-					<a href="tpl-section.php" class="font-s1 mt mb" style="display: block; font-size: 1.8rem">Få flere bedre oplevelser.</a>
+					<a href="tpl-section.php" class="font-s1 mb-sm-down" style="display: block; font-size: 1.8rem">Få flere bedre oplevelser.</a>
 			
 			
 		</div>
@@ -16,7 +16,7 @@
 						<?php
 							$imgW='538'; 
 							$showImg = '1';
-							$class = 'teaser-consumersales item-teaser teaser-xxsmall ';
+							$class = 'teaser-consumersales item-teaser  mb-sm-down';
 							$imgRatio = '1:1';
 							$imgSrc = '/!consumersales';
 							$showSummary = false;
@@ -37,7 +37,7 @@
 						<?php
 							$imgW='538'; 
 							$showImg = '1';
-							$class = 'teaser-consumersales item-teaser teaser-xxsmall';
+							$class = 'teaser-consumersales item-teaser ';
 							$imgRatio = '1:1';
 							$imgSrc = '/!consumersales';
 							$showSummary = false;
@@ -59,8 +59,7 @@
 						<div class="row flex-row">
 							<div class="col-xs-6 flex-row">
 								<div class="teaser-consumersales item-teaser teaser-consumersales-fixed" style="padding: 1rem;">
-									<h2 class="header mb text-center font-s1" style="font-weight: 400; color: #fff;" >Vinreolen</h2>
-									<div class="text-center"><img src="/dist/images/wine.png" alt="" class="img-fluid" style="max-height: 200px; margin: 0 auto;"></div>
+									<h2 class="fixed-header mb text-center font-s1" style="font-weight: 400; color: #fff;" >Vinreolen</h2>
 								</div>						
 							</div>
 
@@ -70,7 +69,7 @@
 									<?php
 										$imgW='538'; 
 										$showImg = '1';
-										$class = 'teaser-consumersales item-teaser  margin125 teaser-xxsmall ';
+										$class = 'teaser-consumersales item-teaser  margin125  ';
 										$imgRatio = '1:1';
 										$imgSrc = '/!consumersales';
 										$showSummary = false;
@@ -89,7 +88,7 @@
 										<?php
 											$imgW='538'; 
 											$showImg = '1';
-											$class = 'teaser-consumersales item-teaser teaser-xxsmall';
+											$class = 'teaser-consumersales item-teaser ';
 											$imgRatio = '1:1';
 											$imgSrc = '/!consumersales';
 											$showSummary = false;

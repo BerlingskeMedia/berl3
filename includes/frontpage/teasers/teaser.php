@@ -3,7 +3,6 @@ if (!$teaserLink) { // Link to default article - could be longread or article wi
 	$teaserLink = 'tpl-article.php';
 }
 
-
 if(!$headerSrc) { // if no header src, just show random dummy header from berlingske txt file (shop teasers use different header types)
 	$headerSrc = 'headline-b3';
 }
@@ -11,9 +10,6 @@ if(!$headerSrc) { // if no header src, just show random dummy header from berlin
 if(!$summarySrc) { // if no summary src, just show random dummy sumamry from berlingske txt file (shop teasers use different summaries)
 	$summarySrc = 'short-teaser';
 }
-
-
-
 ?>
 
 <div class=" <?= $class; ?>  ">

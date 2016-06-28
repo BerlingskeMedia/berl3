@@ -1,11 +1,12 @@
 <div class=" deck ">
-	<div class="col-tags col-border-right-lg-up ">
+	<div class="col-tags col-border-right-xl-up ">
 		<div class="section-title">
 			Den Politiske Puls
+			<span class="section-link">
+				<a href="tpl-section.php">Se alle <i class="bicon-angle-right"></i></a>
+			</span>
 		</div>
-		<div class="section-link">
-			<a href="tpl-section.php">Se alle <i class="bicon-angle-right"></i></a>
-		</div>
+		
 	</div>
 	<div class="col-primary-wide">
 		<div class="flex-row row ">

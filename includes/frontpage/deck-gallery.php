@@ -4,7 +4,7 @@
 				Verden i billeder
 			</div>						
 		</div>
-		<div class="col-primary col-border-right-lg-up">
+		<div class="col-primary col-border-right-xl-up">
 			
 			<?php include('includes/teaser-gallery.php'); ?>
 

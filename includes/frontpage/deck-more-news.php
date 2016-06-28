@@ -6,13 +6,13 @@
 		</div>
 
 
-		<div class="col-primary col-border-right-lg-up">
+		<div class="col-primary col-border-right-xl-up">
 			<div class="row">
 				<!-- <div class="col-xl-12 ">
 					Jeg er et tema
 				</div> --> 
 
-				<div class="col-lg-8  col-border-right-lg-up">
+				<div class="col-lg-8  col-border-right-xl-up">
 
 				
 				

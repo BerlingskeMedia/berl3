@@ -9,8 +9,8 @@
 
 	
 	
-		<div class="col-tags col-border-right-lg-up hidden-lg-down">
-			<div class="section-title-no-border mb-2">Title</div>		
+		<div class="col-tags col-border-right-xl-up hidden-lg-down">
+			<div class="section-title mb-2">Title</div>		
 		</div>
 		
 		<div class="col-primary ">
