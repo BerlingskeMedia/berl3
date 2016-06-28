@@ -10,7 +10,7 @@
 			<div class="row">
 				<!-- <div class="col-xl-12 ">
 					Jeg er et tema
-				</div> -->
+				</div> --> 
 
 				<div class="col-lg-8  col-border-right-lg-up">
 

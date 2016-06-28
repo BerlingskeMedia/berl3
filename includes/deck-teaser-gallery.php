@@ -20,4 +20,4 @@
 		</article>
 
 	</div>
-</div> <!-- deck -->
+</div> <!-- deck --> 

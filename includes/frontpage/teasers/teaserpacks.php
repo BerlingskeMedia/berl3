@@ -1,9 +1,9 @@
 
 
 <?php if($teaserPack === '1') :?>
-<!-- teaser pack 1 -->
-	<div class="teaser--pack clearfix">
-		<ul class="row teaser--pack--list">
+<!-- teaser pack 1 --> 
+	<div class="teaser-pack clearfix">
+		<ul class="row teaser-pack-list">
 			
 			
 			
@@ -11,7 +11,7 @@
 				// ONELINERS
 				$relatedCount = '1';
 				$relatedGridClass = 'col-xs-12';
-				$relatedTeaserClass = 'item--teaser related--image teaser--img-left related--large related--theme__business ';
+				$relatedTeaserClass = 'item-teaser related-image teaser-img-left related-large related-theme-business ';
 				$relatedShowImg = true;
 				
 				$relatedImgSize = '160';
@@ -34,7 +34,7 @@
 				// ONELINERS
 				$relatedCount = '2';
 				$relatedGridClass = 'col-xs-12';
-				$relatedTeaserClass = 'item--teaser  related--xsmall';
+				$relatedTeaserClass = 'item-teaser  related-xsmall';
 				
 				$relatedShowImg = false;
 				$relatedImgSize = '160';
@@ -47,7 +47,7 @@
 				// $labelText = 'Breaking';
 
 
-				include('includes/frontpage/teasers/teaser-related.php'); 
+				include('includes/frontpage/teasers/teaser-related-xsmall.php'); 
 			?>
 			
 			</ul>
@@ -57,17 +57,17 @@
 
 <?php if($teaserPack === '2') :?>
 
-<!-- teaser pack 2 -->
+<!-- teaser pack 2 --> 
 
-	<div class="teaser--pack clearfix">
-		<ul class="row teaser--pack--list">
+	<div class="teaser-pack clearfix">
+		<ul class="row teaser-pack-list">
 
 		
 			
 			<?php 
 				$relatedCount = '1';
 				$relatedGridClass = 'col-xs-12';
-				$relatedTeaserClass = 'item--teaser  teaser--img-right related--large teaser--theme__aok';
+				$relatedTeaserClass = 'item-teaser  teaser-img-right related-large teaser-theme-aok';
 				
 				$relatedShowImg = true;
 				$relatedImgSize = '160';
@@ -86,7 +86,7 @@
 				// ONELINERS
 				$relatedCount = '1';
 				$relatedGridClass = 'col-xs-12';
-				$relatedTeaserClass = 'item--teaser  related--xsmall related--theme__business';
+				$relatedTeaserClass = 'item-teaser  related-xsmall related-theme-business';
 				
 				$relatedShowImg = false;
 				$relatedImgSize = '160';
@@ -97,14 +97,14 @@
 				$relatedTrumpet = true;
 				$relatedCategory = 'Business.dk';
 
-				include('includes/frontpage/teasers/teaser-related.php'); 
+				include('includes/frontpage/teasers/teaser-related-xsmall.php'); 
 			?>
 
 			<?php 
 				// ONELINERS
 				$relatedCount = '2';
 				$relatedGridClass = 'col-xs-12';
-				$relatedTeaserClass = 'item--teaser  related--xsmall';
+				$relatedTeaserClass = 'item-teaser  related-xsmall';
 				
 				$relatedShowImg = false;
 				$relatedImgSize = '160';
@@ -114,7 +114,7 @@
 				$showRelatedPaywall = true;
 				$relatedTrumpet = true;
 
-				include('includes/frontpage/teasers/teaser-related.php'); 
+				include('includes/frontpage/teasers/teaser-related-xsmall.php'); 
 			?>
 
 			
@@ -125,14 +125,14 @@
 
 <?php if($teaserPack === '3') :?>
 
-<!-- teaser pack 3 -->
-	<div class="teaser--pack clearfix">
-		<ul class="row teaser--pack--list">
+<!-- teaser pack 3 --> 
+	<div class="teaser-pack clearfix">
+		<ul class="row teaser-pack-list">
 			
 			<?php 
 				$relatedCount = '1';
 				$relatedGridClass = 'col-xs-12';
-				$relatedTeaserClass = 'item--teaser  teaser--img-left related--large';
+				$relatedTeaserClass = 'item-teaser  teaser-img-left related-large';
 				
 				$relatedShowImg = true;
 				$relatedImgSize = '160';
@@ -148,7 +148,7 @@
 			<?php 
 				$relatedCount = '1';
 				$relatedGridClass = 'col-xs-12';
-				$relatedTeaserClass = 'item--teaser  teaser--img-right related--large';
+				$relatedTeaserClass = 'item-teaser  teaser-img-right related-large';
 				
 				$relatedShowImg = true;
 				$relatedImgSize = '160';
@@ -171,7 +171,7 @@
 				// ONELINERS
 				$relatedCount = '1';
 				$relatedGridClass = 'col-xs-12';
-				$relatedTeaserClass = 'item--teaser  related--xsmall';
+				$relatedTeaserClass = 'item-teaser  related-xsmall';
 				
 				$relatedShowImg = false;
 				$relatedImgSize = '160';
@@ -181,7 +181,7 @@
 				$showRelatedPaywall = true;
 				$relatedTrumpet = true;
 
-				include('includes/frontpage/teasers/teaser-related.php'); 
+				include('includes/frontpage/teasers/teaser-related-xsmall.php'); 
 			?>
 			
 		</ul>
@@ -192,14 +192,14 @@
 
 <?php if($teaserPack === '4') :?>
 
-<!-- teaser pack 4 -->
-	<div class="teaser--pack clearfix">
-		<ul class="row teaser--pack--list">
+<!-- teaser pack 4 --> 
+	<div class="teaser-pack clearfix">
+		<ul class="row teaser-pack-list">
 			
 			<?php 
 				$relatedCount = '2';
 				$relatedGridClass = 'col-md-6 ';
-				$relatedTeaserClass = 'item--teaser teaser--img-wide related--small teaser--img-left';
+				$relatedTeaserClass = 'item-teaser teaser-img-wide related-small teaser-img-left';
 				
 				$relatedShowImg = true;
 				$relatedImgSize = '140';
@@ -219,7 +219,7 @@
 			<?php 
 				$relatedCount = '1';
 				$relatedGridClass = 'col-xs-12';
-				$relatedTeaserClass = 'item--teaser teaser--img-right related--large';
+				$relatedTeaserClass = 'item-teaser teaser-img-right related-large';
 				
 				$relatedShowImg = true;
 				$relatedImgSize = '140';
@@ -240,14 +240,14 @@
 
 
 <?php if($teaserPack === '5') :?>
-	<div class="teaser--pack clearfix">
-<!-- teaser pack 5 -->
-		<ul class="row teaser--pack--list">
+	<div class="teaser-pack clearfix">
+<!-- teaser pack 5 --> 
+		<ul class="row teaser-pack-list">
 			
 			<?php 
 				$relatedCount = '1';
 				$relatedGridClass = 'col-md-6 ';
-				$relatedTeaserClass = 'item--teaser teaser--img-wide  related--small teaser--img-left ';
+				$relatedTeaserClass = 'item-teaser teaser-img-wide  related-small teaser-img-left ';
 				
 				$relatedShowImg = true;
 				$relatedImgSize = '140';
@@ -263,7 +263,7 @@
 			<?php 
 				$relatedCount = '1';
 				$relatedGridClass = 'col-md-6 ';
-				$relatedTeaserClass = 'item--teaser teaser--img-wide  related--small teaser--img-left teaser--theme__feature';
+				$relatedTeaserClass = 'item-teaser teaser-img-wide  related-small teaser-img-left teaser-theme-feature';
 				
 				$relatedShowImg = true;
 				$relatedImgSize = '93';
@@ -284,7 +284,7 @@
 				// ONELINERS
 				$relatedCount = '1';
 				$relatedGridClass = 'col-xs-12';
-				$relatedTeaserClass = 'item--teaser  related--large';
+				$relatedTeaserClass = 'item-teaser  related-large';
 				$relatedShowImg = false;
 				$relatedImgSize = '160';
 				$relatedImgRatio = '3:2';
@@ -305,9 +305,9 @@
 
 
 <?php if($teaserPack === '6') :?>
-	<div class="teaser--pack clearfix">
-<!-- teaser pack 6 -->
-		<ul class="row teaser--pack--list">
+	<div class="teaser-pack clearfix">
+<!-- teaser pack 6 --> 
+		<ul class="row teaser-pack-list">
 			
 			
 
@@ -315,7 +315,7 @@
 				// ONELINERS
 				$relatedCount = '1';
 				$relatedGridClass = 'col-xs-12';
-				$relatedTeaserClass = 'item--teaser  related--large';
+				$relatedTeaserClass = 'item-teaser  related-large';
 				$relatedShowImg = false;
 				$relatedImgSize = '160';
 				$relatedImgRatio = '3:2';
@@ -336,9 +336,9 @@
 
 
 <?php if($teaserPack === '7') :?>
-	<div class="teaser--pack clearfix">
-<!-- teaser pack 6 -->
-		<ul class="row teaser--pack--list">
+	<div class="teaser-pack clearfix">
+<!-- teaser pack 6 --> 
+		<ul class="row teaser-pack-list">
 			
 			
 
@@ -346,7 +346,7 @@
 				// ONELINERS
 				$relatedCount = '1';
 				$relatedGridClass = 'col-xs-12';
-				$relatedTeaserClass = 'item--teaser related--xsmall';
+				$relatedTeaserClass = 'item-teaser related-xsmall';
 				$relatedShowImg = false;
 				$relatedImgSize = '160';
 				$relatedImgRatio = '3:2';
@@ -355,7 +355,7 @@
 				$showRelatedPaywall = true;
 				$relatedTrumpet = false;
 
-				include('includes/frontpage/teasers/teaser-related.php'); 
+				include('includes/frontpage/teasers/teaser-related-xsmall.php'); 
 			?>
 
 		
@@ -366,9 +366,9 @@
 
 
 <?php if($teaserPack === '8') :?>
-	<div class="teaser--pack clearfix">
-<!-- teaser pack 8 -->
-		<ul class="row flex-row teaser--pack--list">
+	<div class="teaser-pack clearfix">
+<!-- teaser pack 8 --> 
+		<ul class="row flex-row teaser-pack-list">
 			
 			
 
@@ -376,7 +376,7 @@
 				// ONELINERS
 				$relatedCount = '3';
 				$relatedGridClass = 'col-lg-4 col-xs-12';
-				$relatedTeaserClass = 'item--teaser teaser--img-left related--small';
+				$relatedTeaserClass = 'item-teaser teaser-img-left related-small';
 				$relatedShowImg = true;
 				$relatedImgSize = '160';
 				$relatedImgRatio = '3:2';
@@ -393,7 +393,7 @@
 				// ONELINERS
 				$relatedCount = '3';
 				$relatedGridClass = 'col-lg-4 col-xs-12';
-				$relatedTeaserClass = 'item--teaser  related--xsmall';
+				$relatedTeaserClass = 'item-teaser  related-xsmall';
 				$relatedShowImg = false;
 				$relatedImgSize = '160';
 				$relatedImgRatio = '3:2';
@@ -402,7 +402,7 @@
 				$showRelatedPaywall = true;
 				$relatedTrumpet = false;
 
-				include('includes/frontpage/teasers/teaser-related.php'); 
+				include('includes/frontpage/teasers/teaser-related-xsmall.php'); 
 			?>
 
 		

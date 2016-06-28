@@ -9,5 +9,5 @@
 			</div>
 			
 		</div>
-	</div><!-- col-wrapper -->
+	</div><!-- col-wrapper --> 
 </div>

@@ -18,7 +18,7 @@
 									<?php if($stock == '0'){ echo '-';} ?><? dummy("text@stock-change-2") ?>% <? if ($stock == '1'): ?><i class="bicon-up"></i><?php else: ?><i class="bicon-down"></i><?php endif ?></span>
 							</span>
 						</li>
-						</ul> -->
+						</ul> --> 
 					<?php endif; ?>
 						
 						<ul class="pull-right list-reset list-bullet-sm list-bullet-not-first list-xs">
@@ -81,7 +81,7 @@
 						<?php if(!$siteBusiness): ?>
 						<ul class="list-reset list-sm mb-0 list-gray">
 							<li><a href="#"><b class="bicon-home"></b> Forside</a></li>
-							<!-- <li><a href="?business">Business</a></li> -->
+							<!-- <li><a href="?business">Business</a></li> --> 
 							<li><a href="#">Politiko</a></li>
 							<li  class="active"><a href="#">Debat</a></li>
 							<li><a href="#">Global</a></li>

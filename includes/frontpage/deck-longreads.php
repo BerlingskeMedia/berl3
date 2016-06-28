@@ -31,7 +31,7 @@
 			</div>
 
 		</div>
-	</div><!-- col-wrapper -->
+	</div><!-- col-wrapper --> 
 		
 
 		<div class=" col-sidebar col-border-left-lg-up">
@@ -44,4 +44,4 @@
 
 		</div>
 
-</div><!-- /deck -->
+</div><!-- /deck --> 

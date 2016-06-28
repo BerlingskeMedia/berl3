@@ -35,7 +35,7 @@
 			<?php include('includes/follow-berlingske-buttons.php'); ?>	
 	</div>
 	
-	<!-- Mobile banner -->
+	<!-- Mobile banner --> 
 	<div class="col-xs-12 hidden-md-up">
 		<div class="fw-sm mb clearfix">
 			<div class="demo-banner demo-banner-mobile" style="width: 320px; height: 320px; ">Leaderboard_2 (mobile)</div>
@@ -88,7 +88,7 @@
 
 <div class="row">
 	
-	<!-- Mobile banner -->
+	<!-- Mobile banner --> 
 	<div class="col-xs-12 hidden-md-up">
 		<div class="fw-sm mb">
 			<div class="demo-banner demo-banner-mobile" style="width: 320px; height: 320px; ">Leaderboard_3 (mobile)</div>

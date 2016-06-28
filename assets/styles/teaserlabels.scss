@@ -1,23 +1,23 @@
-.teaser--label__yellow {
+.teaser-label-yellow {
 	background-color: $col-breaking;
 	color: #000;
 }
-.teaser--label__red {
+.teaser-label-red {
 	background-color: $col-live;
 	color: #fff;
 }
 
-.teaser--label__live {
+.teaser-label-live {
 	background-color: transparent;
 	color: $col-live;
 }
-.teaser--label__blue {
+.teaser-label-blue {
 	background-color: $col-blue-1;
 	color: #fff;
 }
 
 
-[class*="teaser--label"] {
+[class*="teaser-label"] {
 	display: inline-block;
 	@extend .font-s2;
 	font-weight: 500;
@@ -31,7 +31,7 @@
 }
 
 .teaser-img {
-	[class*="teaser--label"] {
+	[class*="teaser-label"] {
 		position: absolute;
 		bottom: 0;
 		left: 0;
@@ -40,63 +40,63 @@
 		padding: .425rem 0.625rem 0.425rem;
 		font-size: 1.4rem;
 	}
-	.teaser--label__red,
-	.teaser--label__live {
+	.teaser-label-red,
+	.teaser-label-live {
 		background-color: $col-live;
 		color: #fff;
 	}
 }
 
-.header--related,
-.related--summary {
-	[class*="teaser--label"] {
+.header-related,
+.related-summary {
+	[class*="teaser-label"] {
 		font-size: .7rem;
 		padding: 3px .3rem 3px;
 		
 	}
-	.teaser--label__live {
+	.teaser-label-live {
 		font-size: .9rem;
 	}
 }
 
-.related--summary {
-	[class*="teaser--label"] {
+.related-summary {
+	[class*="teaser-label"] {
 		margin-top: -1px;
 	}
 }
 
-.teaser--small {
-	[class*="teaser--label"] {
+.teaser-small {
+	[class*="teaser-label"] {
 		font-size: 1rem;
 	}	
 }
-.teaser--theme__giant  {
+.teaser-theme-giant  {
 	.teaser {
-		[class*="teaser--label"] {
+		[class*="teaser-label"] {
 			font-size: 2rem;
 			padding: 8px 1rem 4px ;
 			line-height: 1;
 		}
-		.teaser--label__live {
+		.teaser-label-live {
 			padding-left: 0;
 		}
 	}
 	
 }
-.teaser--theme__business .teaser--label__blue {
+.teaser-theme-business .teaser-label-blue {
 	background-color: $col-business-dark;
 }
 
 @include media-breakpoint-down(sm) {
-	.header--related,
-	.related--summary {
-		[class*="teaser--label"] {
+	.header-related,
+	.related-summary {
+		[class*="teaser-label"] {
 			padding-bottom: 1px;
 		}
 	}
-	.teaser--large {
+	.teaser-large {
 		.teaser-img {
-			[class*="teaser--label"] {
+			[class*="teaser-label"] {
 				font-size: .9rem;
 			}
 		}

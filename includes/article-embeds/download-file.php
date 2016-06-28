@@ -1,5 +1,5 @@
 <?php if($downloadFile): ?>
-<!-- Download a PDF-file -->
+<!-- Download a PDF-file --> 
 <div class="embeddedd-file">
 	<p>
 		<small>Download</small>
@@ -10,7 +10,7 @@
 	</p>
 </div>
 
-<!-- Download a NON-PDF-file (doc, zip, etc...) -->
+<!-- Download a NON-PDF-file (doc, zip, etc...) --> 
 <div class="embeddedd-file">
 	<p>
 		<small>Download</small>

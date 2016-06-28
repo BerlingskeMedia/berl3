@@ -43,7 +43,7 @@
 					<?php
 						$imgW='920'; 
 						$showImg = '1';
-						$class = 'teaser--img-wide item--teaser teaser--small	';
+						$class = 'teaser-img-wide item-teaser teaser-small	';
 						$imgRatio = '16:9';
 						$imgSrc = '/landscape';
 						$showSummary = true;
@@ -59,7 +59,7 @@
 						<?php
 						$imgW='920'; 
 						$showImg = '1';
-						$class = 'teaser--img-wide item--teaser teaser--xsmall	';
+						$class = 'teaser-img-wide item-teaser teaser-xsmall	';
 						$imgRatio = '16:9';
 						$imgSrc = '/landscape';
 						$showSummary = true;
@@ -77,7 +77,7 @@
 						<?php
 						$imgW='920'; 
 						$showImg = '1';
-						$class = 'teaser--img-wide item--teaser teaser--xsmall	';
+						$class = 'teaser-img-wide item-teaser teaser-xsmall	';
 						$imgRatio = '16:9';
 						$imgSrc = '/landscape';
 						$showSummary = true;

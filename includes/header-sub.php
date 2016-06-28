@@ -73,7 +73,7 @@
 					<div class="col-xs-12 ">
 						<nav class="main-navigation">
 							<ul class="section-nav">
-								<li class="mobile-section-title"><!-- Show surrent section name (not main section, but sub section) - only visible on mobile -->
+								<li class="mobile-section-title"><!-- Show surrent section name (not main section, but sub section) - only visible on mobile --> 
 									<a href="#" class="toggle-submenu"><? dummy("text@b-cat") ?> <i class="bicon-angle-down"></i></a>
 								</li>
 							<?php if(!$siteBusiness): ?>

@@ -6,7 +6,7 @@ if (!$teaserLink) {
 
 
 <div class="teaser <?= $class; ?>">
-	<!-- <article class="teaser-item"> -->
+	<!-- <article class="teaser-item"> --> 
 
 	
 	
@@ -105,9 +105,9 @@ if (!$teaserLink) {
 			</ul>
 			<?php endif; ?>
 
-		</div><!-- .teaser-body -->	
+		</div><!-- .teaser-body --> 	
 
-	<!-- </article> -->
+	<!-- </article> --> 
 	
 </div>
 

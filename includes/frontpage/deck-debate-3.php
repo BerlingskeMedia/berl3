@@ -16,7 +16,7 @@
 		<div class="col-md-6 col-xs-12  flex-row ">
 			<?php 
 				$imgW='100'; 
-				$class = ' teaser--img-right  teaser--xsmall	teaser--theme-feature  item--teaser__bt teaser--roundimg';
+				$class = ' teaser-img-right  teaser-xsmall	teaser-theme-feature  item-teaser-bt teaser-roundimg';
 				$showImg = '1';
 				$imgRatio = '1:1';
 				$showAuthor = true;
@@ -32,4 +32,4 @@
 		
 		</div>
 	</div>
-</div><!-- deck -->
+</div><!-- deck --> 

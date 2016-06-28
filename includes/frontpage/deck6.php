@@ -22,7 +22,7 @@
 					<?php
 					$imgW='930';  
 					$showImg = '1';
-					$class = 'teaser--img-wide item--teaser teaser--large	';
+					$class = 'teaser-img-wide item-teaser teaser-large	';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
@@ -36,7 +36,7 @@
 					<?php
 					$imgW='930';  
 					$showImg = '1';
-					$class = 'teaser--img-wide item--teaser teaser--large	 teaser--theme__feature item--teaser__bt';
+					$class = 'teaser-img-wide item-teaser teaser-large	 teaser-theme-feature item-teaser-bt';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
@@ -52,7 +52,7 @@
 					$imgW='220'; 
 					$imgW='220'; 
 					$showImg = '1';
-					$class = 'teaser--img-right  teaser--small teaser--theme__business item--teaser__bt';
+					$class = 'teaser-img-right  teaser-small teaser-theme-business item-teaser-bt';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
@@ -67,7 +67,7 @@
 					<?php
 					$imgW='940'; 
 					$showImg = '1';
-					$class = 'teaser--img-wide teaser--large  item--teaser__bt';
+					$class = 'teaser-img-wide teaser-large  item-teaser-bt';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
@@ -81,10 +81,10 @@
 					
 					<? if (dumb_luck("50%")) {
 						$imgW='220'; 
-						$class = 'teaser--img-right  teaser--small teaser--theme-trade item--teaser__bt';
+						$class = 'teaser-img-right  teaser-small teaser-theme-trade item-teaser-bt';
 					} else {
 						$imgW='940';
-						$class = 'teaser--img-wide  teaser--large teaser--theme-trade item--teaser__bt';
+						$class = 'teaser-img-wide  teaser-large teaser-theme-trade item-teaser-bt';
 					}
 					
 
@@ -103,7 +103,7 @@
 					<?php
 					$imgW='930';  
 					$showImg = '1';
-					$class = ' teaser--img-right teaser--small item--teaser__bt ';
+					$class = ' teaser-img-right teaser-small item-teaser-bt ';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
@@ -117,11 +117,11 @@
 					
 					
 					<?php if($showBflow): ?>
-					<!-- SMALL TEASERS: -->
+					<!-- SMALL TEASERS: --> 
 					<?php
 					$imgW='930';  
 					$showImg = '1';
-					$class = ' teaser--img-right teaser--small item--teaser__bt  all' ;
+					$class = ' teaser-img-right teaser-small item-teaser-bt  all' ;
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
@@ -136,7 +136,7 @@
 					<?php
 					$imgW='930';  
 					$showImg = '1';
-					$class = ' teaser--img-right  item--teaser__bt teaser--theme__feature teaser--small' ;
+					$class = ' teaser-img-right  item-teaser-bt teaser-theme-feature teaser-small' ;
 					$imgRatio = '1:1';
 					$imgSrc = '/!author';
 					$showSummary = true;
@@ -150,7 +150,7 @@
 					<?php
 					$imgW='930';  
 					$showImg = '1';
-					$class = ' teaser--img-right  item--teaser__bt  teaser--small' ;
+					$class = ' teaser-img-right  item-teaser-bt  teaser-small' ;
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
@@ -170,7 +170,7 @@
 				
 			</div>
 		</div>
-	</div><!-- col-wrapper -->
+	</div><!-- col-wrapper --> 
 		
 
 	

@@ -3,7 +3,7 @@
 
 <!-- 
 Developer info:
-Insert video player and delete this demo code: -->
+Insert video player and delete this demo code: --> 
 
 <style>
 .article-video {
@@ -18,7 +18,7 @@ Insert video player and delete this demo code: -->
 </style>
 <div style="padding-top: 56.25%; background-color: rgba(0,0,0,.05);"></div>
 
-<!-- Delete until here -->
+<!-- Delete until here --> 
 
 
 

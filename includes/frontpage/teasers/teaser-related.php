@@ -4,18 +4,18 @@
 	<div class="<?php echo $relatedTeaserClass; ?>">
 		<a href="tpl-article.php" title="[ARTICLE HEADER]">
 			<?php if($relatedShowImg): ?>
-			<figure class="teaser-img <?php if($teaserIcon === 'video'): ?> teaser--icon__video <?php endif; ?> <?php if($teaserIcon === 'gallery'): ?> teaser--icon__gallery <?php endif; ?>">
+			<figure class="teaser-img <?php if($teaserIcon === 'video'): ?> teaser-icon-video <?php endif; ?> <?php if($teaserIcon === 'gallery'): ?> teaser-icon-gallery <?php endif; ?>">
 				<img src="<? dummy("image/". $relatedImgSrc. "@". $relatedImgSize ."x,". $relatedImgRatio ."") ?>" width="" height="" alt="[ARTICLE HEADER]" class="img" />
 			</figure>
 			<?php endif; ?>
 
 			<div class="related-body">
 				
-				<h3 class="header--related">
-					<div class="related--tools">
+				<h3 class="header-related">
+					<div class="related-tools">
 					
 						<?php if($relatedCategory): ?>
-							<span class="related--header__category">
+							<span class="related-header-category">
 								<?php echo $relatedCategory; ?> <i class="icon-external"></i> 
 							</span>	
 						<?php endif; ?>
@@ -23,14 +23,14 @@
 						<?php include('includes/frontpage/teasers/labels.php'); ?>
 			
 						<?php if($relatedTrumpet): ?>
-							<span class="related--header__trumpet">
+							<span class="related-header-trumpet">
 								<? dummy("text@trumpet"); ?>
 							</span>
 						<?php endif; ?>
 
 					</div>
 					
-					<span class="related--header__content">
+					<span class="related-header-content">
 						<?php if($teaserIcon === 'video'): ?> <i class="bicon-play-circled"></i> <?php endif; ?> 
 						<?php if($teaserIcon === 'gallery'): ?> <i class="bicon-camera"></i> <?php endif; ?>
 						
@@ -38,7 +38,7 @@
 						<? dummy("text@headline-b3") ?>	
 	
 						<?php if( $showRelatedPaywall): ?>
-							<span class="subscriber-notice"><span class="pipe"></span>Abonnement</span>
+							<span class="subscriber-notice">Abonnement</span>
 						<?php endif; ?>
 							
 
@@ -51,23 +51,23 @@
 
 
 				<?php if($showRelatedSummary): ?>
-					<div class="related--summary">
+					<div class="related-summary">
 						
 						
 							<?php if($relatedCategory): ?>
-								<span class="related--summary__category">
+								<span class="related-summary-category">
 									<?php  echo $relatedCategory; ?>  
 								</span>	
 							<?php endif; ?>
 							
 							<?php include('includes/frontpage/teasers/labels.php'); ?>
 
-							<span class="related--summary__content">
+							<span class="related-summary-content">
 								<? dummy("text@short-teaser") ?>	
 							</span>
 							
 							<?php if ($showRelatedPaywall): ?>
-								<span class="subscriber-notice"><span class="pipe"></span>Abonnement</span>
+								<span class="subscriber-notice">Abonnement</span>
 							<?php endif; ?>
 							
 						

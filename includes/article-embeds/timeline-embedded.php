@@ -13,17 +13,17 @@
 		<dl>
 			<? while (dumb_luck("3-6")): ?>
 			<? if (dumb_luck("50%")): ?>
-			<!-- Short date format -->
+			<!-- Short date format --> 
 			<dt><time><? dummy("text@time") ?></time></dt>
 			<? else: ?>
-			<!-- Long date format -->
+			<!-- Long date format --> 
 			<dt><time><? dummy("text@date") ?> kl. <? dummy("text@time") ?></time></dt>
 			<? endif ?>
 			<? if (dumb_luck("50%")): ?>
 			<dd><? dummy("text@short-teaser") ?></dd>
 			<? else: ?>
 			<dd>
-				<!-- Teaser with image -->
+				<!-- Teaser with image --> 
 				<article class="teaser">
 					<figure class="mb-05">
 						<a href="tpl-article.php"><img src="<? dummy("image@300x,16:9") ?>" width="" height="" alt="" /></a>
@@ -36,7 +36,7 @@
 			
 			<? endif ?>
 			<? endwhile ?>
-			<!-- Teaser without image -->
+			<!-- Teaser without image --> 
 			<dt><time><? dummy("text@time") ?></time></dt>
 			<dd>
 				<article class="teaser">
@@ -47,7 +47,7 @@
 				</article>
 			</dd>
 
-			<!-- Item with picture. No link -->
+			<!-- Item with picture. No link --> 
 			<dt><time><? dummy("text@time") ?></time></dt>
 			<dd>
 				<div class="teaser">

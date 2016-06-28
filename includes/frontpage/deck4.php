@@ -167,7 +167,7 @@ if(isset($_GET["topLG"])) {
 				
 			</div>
 		</div>
-	</div><!-- col-wrapper -->
+	</div><!-- col-wrapper --> 
 		
 
 	

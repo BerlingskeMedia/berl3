@@ -21,18 +21,18 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 		<div class="teaser">
 
 			<?php if($teaserAd): ?>
-				<div class="trade--header">
+				<div class="trade-header">
 					Annonce
 				</div>
 			<?php endif; ?>
 
 
-			<a href="<?php echo $teaserLink; ?>" class="teaser--link">	
+			<a href="<?php echo $teaserLink; ?>" class="teaser-link">	
 				
 				
 
 				<?php if ($showImg ): ?>
-					<figure class="teaser-img <?php if($teaserIcon === 'video'): ?> teaser--icon__video <?php endif; ?> <?php if($teaserIcon === 'gallery'): ?> teaser--icon__gallery <?php endif; ?>">
+					<figure class="teaser-img <?php if($teaserIcon === 'video'): ?> teaser-icon-video <?php endif; ?> <?php if($teaserIcon === 'gallery'): ?> teaser-icon-gallery <?php endif; ?>">
 
 						<?php include('includes/frontpage/teasers/labels.php'); ?>
 						<img src="<? dummy("image". $imgSrc ."@". $imgW ."x,". $imgRatio ."") ?>" width="" height="" alt="[ARTICLE HEADER]" class="img" />
@@ -41,25 +41,25 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 
 			</a>
 
-			<div class="teaser--content">
+			<div class="teaser-content">
 
-			<a href="<?php echo $teaserLink; ?>" class="teaser--link">	
+			<a href="<?php echo $teaserLink; ?>" class="teaser-link">	
 				<div class="teaser-body">
-				<?php if($showCategory || $teaserAd || $showTrumpet)  : ?>
-					<div class="teaser--footer">
+				<?php if($category || $teaserAd || $showTrumpet)  : ?>
+					<div class="teaser-footer">
 						
 						<?php if($teaserAd): ?>
-							<div class="teaser--sponsor">Sponseret af <? dummy("text@company-names") ?></div>
+							<div class="teaser-sponsor">Sponseret af <? dummy("text@company-names") ?></div>
 						<?php endif; ?>
 						
 						<?php if($category): ?>
-							<span class="teaser--category">
+							<span class="teaser-category">
 								 <?php echo $category; ?> 
 							</span>	
 						<?php endif; ?>
 
 						<?php if($showTrumpet): ?>
-							<span class="teaser--trumpet">
+							<span class="teaser-trumpet">
 								<? dummy("text@trumpet") ?>
 							</span>
 						<?php endif; ?>
@@ -67,11 +67,11 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 					</div>
 				<?php endif; ?>
 
-				<?php if($labelType && preg_match('/teaser--xlarge/',$class)): ?>
+				<?php if($labelType && preg_match('/teaser-xlarge/',$class)): ?>
 					<?php include('includes/frontpage/teasers/labels.php'); ?>
 				<?php endif; ?>
 
-				<?php if($labelType && preg_match('/teaser--xxlarge/',$class)): ?>
+				<?php if($labelType && preg_match('/teaser-xxlarge/',$class)): ?>
 					<?php include('includes/frontpage/teasers/labels.php'); ?>
 				<?php endif; ?>
 				
@@ -83,7 +83,7 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 					<? dummy("text@".$headerSrc."") ?>
 						<?php if (!$showAuthor ): ?>
 							<?php if($showPaywall) : ?>
-								 <span class="subscriber-notice"><span class="pipe"></span>Abonnement</span>
+								 <span class="subscriber-notice">Abonnement</span>
 							<?php endif; ?>
 						<?php endif; ?>
 
@@ -92,8 +92,8 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 
 				<?php if($showPrice): ?>
 					
-					<div class="teaser--price">
-						<span class="teaser--price--price"><? dummy("text@prices") ?>,-</span>	
+					<div class="teaser-price">
+						<span class="teaser-price-price"><? dummy("text@prices") ?>,-</span>	
 						<button class="btn btn-xs">Køb</button>
 					</div>
 				<?php endif; ?>
@@ -114,22 +114,22 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 
 				
 				<?php if ($showSummary): ?>
-					<div class="teaser--summary">
+					<div class="teaser-summary">
 
 							<?php if($category): ?>
-								<span class="teaser--category">
+								<span class="teaser-category">
 									 <?php echo $category; ?> 
 								</span>	
 							<?php endif; ?>
 							
-							<span class="teaser--summary__content">
+							<span class="teaser-summary-content">
 								<? dummy("text@".$summarySrc."") ?>	
 							</span>
 							
 						
 						<?php if($showPaywall): ?>
 							<? if (dumb_luck("100%")): ?>
-								 <span class="subscriber-notice"><span class="pipe"></span>Abonnement</span>
+								 <span class="subscriber-notice">Abonnement</span>
 							<? endif ?> 
 						<?php endif; ?>
 
@@ -137,7 +137,7 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 				<?php endif; ?>
 				
 				<?php if($showAuthor): ?>
-					<span class="teaser--author"><? dummy("text@author") ?>
+					<span class="teaser-author"><? dummy("text@author") ?>
 					<?php if(!$showSummary) : ?>
 
 						<?php if($showPaywall) : ?>
@@ -150,8 +150,8 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 					</span>
 				<?php endif; ?>
 
-			</div><!-- .teaser-body -->	
-			</a><!-- .teaser-link -->
+			</div><!-- .teaser-body --> 	
+			</a><!-- .teaser-link --> 
 
 		
 		</div>

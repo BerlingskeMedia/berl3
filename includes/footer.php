@@ -123,7 +123,7 @@ CVR.nr.: 29 20 73 13
 				<div class="col-xs-12">
 					
 					<!-- <p>Tlf. 33 75 75 75<br>
-									Fax: 33 75 20 20</p> -->
+									Fax: 33 75 20 20</p> --> 
 					<p>Copyright &copy; Berlingske Media. <a href="#" target="blank">Ophavsret og vilkår</a> <span class="hidden-md-down">|</span> <a href="#">Generelle handelsbetingelser</a> <span class="hidden-md-down">|</span> <a href="#" target="_blank">Cookie- og Privatlivspolitik</a></p>
 				</div>
 			</div>

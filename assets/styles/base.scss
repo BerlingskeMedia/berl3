@@ -213,7 +213,7 @@ $col-sidebar-width: 19.375rem;
 	padding-right: .625rem;
 	float: left;
 }
-.col--full-width {
+.col-full-width {
 	margin: 0 0 0 -.625rem;
 	width: 100%;
 }
@@ -254,7 +254,7 @@ $col-sidebar-width: 19.375rem;
 	}
 }
 @include media-breakpoint-only(lg) {
-	.col--full-width {
+	.col-full-width {
 		margin: 0;
 		padding-right: .625rem;
 	}
@@ -273,11 +273,11 @@ $col-sidebar-width: 19.375rem;
 		width: 100%;
 		padding-right: 0;
 	}
-	.col--full-width {
+	.col-full-width {
 		margin: 0;
 	}
 
-	.item--teaser__bt:before {
+	.item-teaser-bt:before {
 		left: 0;
 		right: 0;
 	}
@@ -485,7 +485,7 @@ $col-deck-label-width: 160px;
 	.col-primary {
 		width: 100%;	
 	}
-	.col--full-width {
+	.col-full-width {
 		margin: 0;
 		width: 100%;
 	}

@@ -29,7 +29,7 @@
 				</h3>
 			</li>
 			<? endwhile ?>
-		</ul> -->
+		</ul> --> 
 
 	</div>
 </article>

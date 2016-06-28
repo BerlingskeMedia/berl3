@@ -4,7 +4,7 @@ $iconDefeaultSM : 2.8rem;
 $iconRelatedDefeault : 2rem;
 $iconRelatedDefeaultSM : 1.5rem;
 
-[class*="teaser--icon"] {
+[class*="teaser-icon"] {
 	
 	position: relative;
 	&:before,
@@ -38,7 +38,7 @@ $iconRelatedDefeaultSM : 1.5rem;
 }
 
 
-.teaser--icon__gallery {
+.teaser-icon-gallery {
 	&:after {
 		content: '\e819';
 		margin-left: 0;
@@ -54,7 +54,7 @@ $iconRelatedDefeaultSM : 1.5rem;
 	 
 }
 
-.teaser--icon__video {
+.teaser-icon-video {
 	&:after {
 		content: '\e823';
 		transform: translateX(3%);
@@ -65,10 +65,10 @@ $iconRelatedDefeaultSM : 1.5rem;
 		border-width: ($iconDefeault/2);
 	}
 }
-.teaser--xxlarge,
-.teaser--xlarge,
-.teaser--large {
-	[class*="teaser--icon"] {
+.teaser-xxlarge,
+.teaser-xlarge,
+.teaser-large {
+	[class*="teaser-icon"] {
 		&:before,
 		&:after {				
 			width:	$iconDefeault;
@@ -79,8 +79,8 @@ $iconRelatedDefeaultSM : 1.5rem;
 	}
 }
 
-.teaser--small {
-	[class*="teaser--icon"] {
+.teaser-small {
+	[class*="teaser-icon"] {
 		&:before,
 		&:after {
 			width:	$iconRelatedDefeault;
@@ -96,9 +96,9 @@ $iconRelatedDefeaultSM : 1.5rem;
 	}
 }
 
-.related--small,
-.related--large {
-	[class*="teaser--icon"] {
+.related-small,
+.related-large {
+	[class*="teaser-icon"] {
 		&:before,
 		&:after {
 			width:	$iconRelatedDefeault;
@@ -114,23 +114,23 @@ $iconRelatedDefeaultSM : 1.5rem;
 	}
 }
 
-.item--teaser {
+.item-teaser {
 	.bicon-camera,	
 	.bicon-play-circled	 {
 		display: none;
 	}
 }
-.related--xsmall .bicon-camera,
-.related--xsmall .bicon-play-circled {
+.related-xsmall .bicon-camera,
+.related-xsmall .bicon-play-circled {
 	display: inline-block;
 }
 
 @include media-breakpoint-down(sm) {
 
-	.teaser--xxlarge,
-	.teaser--xlarge,
-	.teaser--large {
-	[class*="teaser--icon"] {
+	.teaser-xxlarge,
+	.teaser-xlarge,
+	.teaser-large {
+	[class*="teaser-icon"] {
 			&:before,
 			&:after {				
 				width:	$iconDefeaultSM;
@@ -147,10 +147,10 @@ $iconRelatedDefeaultSM : 1.5rem;
 
 	}
 
-	.teaser--small,
-	.related--small,
-	.related--large {
-		[class*="teaser--icon"] {
+	.teaser-small,
+	.related-small,
+	.related-large {
+		[class*="teaser-icon"] {
 			&:before,
 			&:after {
 				width:	$iconRelatedDefeaultSM;

@@ -47,7 +47,7 @@
 			</article>
 		</div>
 		<? endwhile ?>
-	</div> -->
+	</div> --> 
 	
 	
 </section>

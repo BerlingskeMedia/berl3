@@ -12,7 +12,7 @@
 				<?php
 				$imgW='1050'; 
 				$showImg = '1';
-				$class = 'teaser--img-wide item--teaser teaser--xlarge teaser--theme-longread	 ';
+				$class = 'teaser-img-wide item-teaser teaser-xlarge teaser-theme-longread	 ';
 				$imgRatio = '16:9';
 				$imgSrc = '/!longread';
 				$showSummary = true;
@@ -36,7 +36,7 @@
 				<?php
 				$imgW='160'; 
 				$showImg = '1';
-				$class = 'item--teaser teaser--xsmall teaser--xxsmall teaser--img-left teaser-img-left-md';
+				$class = 'item-teaser teaser-xsmall teaser-xxsmall teaser-img-left teaser-img-left-md';
 				$imgRatio = '3:2';
 				$imgSrc = '/!longread';
 				$showSummary = false;

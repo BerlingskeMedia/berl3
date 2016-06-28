@@ -11,7 +11,7 @@
 
 		<form action="" class="form-embedded-newsletter  form-round-oneliner">
 			<div class="clearfix">
-				<!-- the class .newsletter-email is uded by js to slide down breaking cheackbox-->
+				<!-- the class .newsletter-email is uded by js to slide down breaking cheackbox->
 				<input type="email" placeholder="Din e-mailadresse" required class="newsletter-email">
 				<button class="btn  btn-black">OK</button>
 
@@ -58,7 +58,7 @@
 	<p class="mb-05"><small >Udkommer hver morgen!</small></p>
 	<form action="" class="form-embedded-newsletter form-round-oneliner">
 		<div class="clearfix">
-			<!-- the class .newsletter-email is uded by js to slide down breaking cheackbox-->
+			<!-- the class .newsletter-email is uded by js to slide down breaking cheackbox->
 			<input type="email" placeholder="Din e-mailadresse" required class="newsletter-email">
 			<button class="btn  btn-blue">OK</button>
 		</div>
@@ -92,7 +92,7 @@
 <aside class="article-embed-pull-right article-marketing-embedded  ">	
 	<iframe src="/includes/iframes/marketing-embedded.php" class="auto-height" scrolling="no" frameborder="0"></iframe>
 </aside>
-<!-- inline, after the iframe -->
+<!-- inline, after the iframe --> 
 
 <?php endif; ?>
 

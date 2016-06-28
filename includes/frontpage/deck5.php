@@ -13,7 +13,7 @@
 				<?php
 				$imgW='1240'; 
 				$showImg = true;
-				$class = 'item--teaser teaser--xxlarge teaser--theme__xtragiant';
+				$class = 'item-teaser teaser-xxlarge teaser-theme-xtragiant';
 				
 				$imgRatio = '16:7';
 				$imgSrc = '/!b-breaking';
@@ -41,7 +41,7 @@
 					<?php
 					$imgW='1240'; 
 					$showImg = true;
-					$class = 'item--teaser teaser--xlarge teaser--theme__giant ';
+					$class = 'item-teaser teaser-xlarge teaser-theme-giant ';
 					
 					$imgRatio = '16:7';
 					$imgSrc = '/!b-breaking';
@@ -65,13 +65,13 @@ $labelText = false;
 	<div class="col-wrapper flex-row">
 		<?php if($topMD): ?>
 			
-				<div class="col--full-width">
+				<div class="col-full-width">
 					<div class="row flex-row teaser-flow">
 						<div class="col-xs-12">
 							<?php
 							$imgW='910'; 
 							$showImg = '1';
-							$class = 'mb item--teaser__bb teaser--img-wide teaser--large ';
+							$class = 'mb item-teaser-bb teaser-img-wide teaser-large ';
 							
 							$imgRatio = '16:9';
 							$imgSrc = '/landscape';
@@ -92,7 +92,7 @@ $labelText = false;
 			<div class="section-title-no-border mb-2">Topnyheder</div>		
 
 			<div class=" mt mb" style="">
-				<!-- <div class=" section-title-small-border">Mandag d. <? dummy("text@date") ?></div> -->
+				<!-- <div class=" section-title-small-border">Mandag d. <? dummy("text@date") ?></div> --> 
 			</div>
 			<div class="epaper" style=" ">
 				
@@ -100,7 +100,7 @@ $labelText = false;
 				<div class="row row-narrow mt">
 					<div class="col-xl-6"><a href="#"><img src="http://epaper.infomedia.dk/teaser/BMA" style="border: 1px solid #ddd" alt=""></a></div>
 					<div class="col-xl-6"><a href="#"><img src="http://www.b.dk/helpers/business_frontpage/business_frontpage.jpg" style="border: 1px solid #ddd" alt=""></a></div>
-				</div> -->
+				</div> --> 
 				
 
 			</div>
@@ -115,7 +115,7 @@ $labelText = false;
 					<?php
 					$imgW='930';  
 					$showImg = '1';
-					$class = 'item--teaser teaser--theme__business teaser--img-wide item--teaser teaser--large item--teaser ';
+					$class = 'item-teaser teaser-theme-business teaser-img-wide item-teaser teaser-large item-teaser ';
 					
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
@@ -130,7 +130,7 @@ $labelText = false;
 					<?php
 					$imgW='930';  
 					$showImg = '1';
-					$class = ' teaser--img-wide item--teaser teaser--large item--teaser__bt ';
+					$class = ' teaser-img-wide item-teaser teaser-large item-teaser-bt ';
 					
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
@@ -147,7 +147,7 @@ $labelText = false;
 					<?php
 					$imgW='930';  
 					$showImg = '1';
-					$class = 'teaser--theme__business teaser--img-wide item--teaser teaser--large item--teaser__bt ';
+					$class = 'teaser-theme-business teaser-img-wide item-teaser teaser-large item-teaser-bt ';
 					
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
@@ -163,7 +163,7 @@ $labelText = false;
 					$imgW='220'; 
 					$imgW='220'; 
 					$showImg = '1';
-					$class = 'teaser--img-right  teaser--small teaser--theme-trade item--teaser__bt ';
+					$class = 'teaser-img-right  teaser-small teaser-theme-trade item-teaser-bt ';
 					
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
@@ -175,14 +175,15 @@ $labelText = false;
 
 					include('includes/frontpage/teasers/teaser.php') ?>
 
-					
+BUSINESS
 					<?php
 					$imgW='320'; 
 					$showImg = '1';
-					$class = 'teaser--img-left teaser--small item--teaser__bt ';
-					
+					$class = 'teaser-img-left teaser-small item-teaser-bt teaser-theme-business ';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
+					$category = 'Business.dk';
+					$showPaywall = true;
 					$showSummary = true;
 					
 					
@@ -193,7 +194,7 @@ $labelText = false;
 					<?php
 					$imgW='220'; 
 					$showImg = '1';
-					$class = 'teaser--img-right  teaser--small teaser--theme__business item--teaser__bt ';
+					$class = 'teaser-img-right  teaser-small teaser-theme-business item-teaser-bt ';
 					
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
@@ -208,7 +209,7 @@ $labelText = false;
 					<?php
 					$imgW='220'; 
 					$showImg = '1';
-					$class = 'teaser--img-right  teaser--small item--teaser__bt ';
+					$class = 'teaser-img-right  teaser-small item-teaser-bt ';
 					
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
@@ -223,7 +224,7 @@ $labelText = false;
 					<?php
 					$imgW='930';  
 					$showImg = '1';
-					$class = 'teaser--theme__business teaser--img-wide teaser--large item--teaser__bt';
+					$class = 'teaser-theme-business teaser-img-wide teaser-large item-teaser-bt';
 					
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
@@ -237,7 +238,7 @@ $labelText = false;
 					<?php
 					$imgW='320'; 
 					$showImg = '1';
-					$class = ' teaser--img-right teaser--sm item--teaser__bt teaser--theme__feature teaser--small' ;
+					$class = ' teaser-img-right teaser-sm item-teaser-bt teaser-theme-feature teaser-small' ;
 					$imgRatio = '1:1';
 					$imgSrc = '/!author';
 					$showSummary = true;			
@@ -255,7 +256,7 @@ $labelText = false;
 				
 			</div>
 		</div>
-	</div><!-- col-wrapper -->
+	</div><!-- col-wrapper --> 
 		
 
 	
