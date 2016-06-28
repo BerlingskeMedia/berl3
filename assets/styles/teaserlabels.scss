@@ -93,18 +93,23 @@
 			[class*="teaser-label"] {
 				font-size: 1rem;
 				padding: 4px .625rem 4px ;
-				line-height: 1;
-				margin-bottom: .4rem;
 			}
-			.teaser-label-live {
-				padding-left: 0;
-			}
+			
 		}
 	}
 }
 
 
 @include media-breakpoint-down(sm) {
+	.teaser-theme-giant {
+		.teaser {
+			[class*="teaser-label"] {
+				font-size: .6rem;
+				padding: 3px .3125rem 2px ;
+			}
+		}
+	}
+
 	.header-related,
 	.related-summary {
 		[class*="teaser-label"] {

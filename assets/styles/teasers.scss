@@ -607,8 +607,8 @@
 }
 
 .teaser-theme-giant {
-	/*border-bottom: $border-width solid $border-color;*/
-	padding: 0 0 .625rem;
+	border-bottom: $border-width solid $border-color;
+	padding: 0;
 	/*margin-bottom: .625rem;*/
 	position: relative;
 	.teaser-content {
@@ -620,9 +620,11 @@
 		bottom: 0;
 		padding: $spacer;
 	}
-	
+	.teaser-author {
+		color: #fff;
+	}
 	.teaser-img {
-		margin-bottom: 0;
+		margin-bottom: 0!important;
 	}
 	
 	.teaser-summary-content,	
@@ -1137,6 +1139,17 @@
 	.teaser-xlarge {
 		.header {
 			font-size: 2rem;
+		}
+	}
+	
+	.teaser-theme-giant {
+		.teaser-content {
+			padding: .3125rem;
+		}
+		&.teaser-xlarge {
+			.header {
+				font-size: 1.2rem;
+			}
 		}
 	}
 

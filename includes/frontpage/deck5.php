@@ -15,13 +15,14 @@
 				$showImg = true;
 				$class = 'item-teaser teaser-xxlarge teaser-theme-xtragiant';
 				
-				$imgRatio = '16:7';
+				$imgRatio = '16:9';
 				$imgSrc = '/!b-breaking';
 				$showSummary = '1';
 				$showRelatedimg = true;
 				$teaserPack = '8';
 				$labelType = 'yellow';
 				$labelText = 'Breaking';
+				$showAuthor = true;
 				include('includes/frontpage/teasers/teaser.php') ?>			
 			
 
@@ -43,7 +44,7 @@
 					$showImg = true;
 					$class = 'item-teaser teaser-xlarge teaser-theme-giant ';
 					
-					$imgRatio = '16:7';
+					$imgRatio = '16:9';
 					$imgSrc = '/!b-breaking';
 					$showSummary = '1';
 					$showHeader 	= true;
@@ -51,6 +52,7 @@
 					$teaserPack = '8';
 					$labelType = 'yellow';
 					$labelText = 'Breaking';
+					$showAuthor = true;
 					include('includes/frontpage/teasers/teaser.php') ?>			
 				</div>
 			</div>
@@ -79,6 +81,7 @@ $labelText = false;
 							$showRelated = '1';
 							$showHeader = true;
 							$teaserPack = '3';
+							$showAuthor = true;
 							include('includes/frontpage/teasers/teaser.php') ?>	
 						</div>
 					</div>
@@ -123,6 +126,7 @@ $labelText = false;
 					$teaserPack = '4';
 					$showTrumpet = true;
 					$showPaywall = true;
+					$showAuthor = true;
 
 					include('includes/frontpage/teasers/teaser.php') ?>
 
