@@ -242,6 +242,39 @@ if (isset($_GET['labelType'])) {
 	</div>
 
 	<div class="row">
+		
+		<div class="col-xs-12 col-md-2" >
+					<h3>teaser cartoon</h3>
+				</div>
+
+		
+		<div class="col-md-4 col-xs-12"> 
+			<div class=" teaser-img-wide item-teaser teaser-xsmall teaser-theme-cartoon-1 teaser-theme-white ">
+			
+				<span class="teaser-title">Hårdt mod hårdt</span>
+				<a href="#" class="teaser-link">
+				
+				<figure class="teaser-img">
+					<img src="/dist/images/demo/hrdt_mod_hrdt.jpg" alt="" class="img">
+				</figure>
+				<div class="teaser-body">
+					
+					
+				</div><!-- .teaser-body --> 	
+				</a><!-- .teaser-link --> 
+
+			
+				<button class="btn btn-sm btn-blue">Læs hele striben</button>
+			</div>
+
+		</div>	
+
+	
+	</div>
+
+	
+
+	<div class="row">
 		<div class="col-xs-12">
 			<h2>Related teasers</h2>
 		</div>
@@ -431,8 +464,10 @@ if (isset($_GET['labelType'])) {
 			</div>
 		</div>
 	</div>
+	
+	
 
-
+	
 
 </div>
 

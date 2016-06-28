@@ -1064,24 +1064,22 @@
 
 	
 	.teaser-theme-xtragiant {
-	
-	.teaser-body {
-		text-align: center;
-		margin-bottom: 1rem;
-		& > [class*="teaser-label"] {
-			display: inline-block;
-			font-weight: 500;
-			text-transform: uppercase;
-			line-height: 1;
-			display: block;
-			font-size: 1rem;
-			margin: 0 0 1rem;
-			padding: .5rem 0 .4rem;
+		.teaser-body {
+			text-align: center;
+			margin-bottom: 1rem;
+			& > [class*="teaser-label"] {
+				display: inline-block;
+				font-weight: 500;
+				text-transform: uppercase;
+				line-height: 1;
+				display: block;
+				font-size: 1rem;
+				margin: 0 0 1rem;
+				padding: .5rem 0 .4rem;
+			}
 		}
 	}
 	
-	
-}	
 	
 
 	.teaser-sponsor {
@@ -1147,16 +1145,7 @@
 		}
 	}
 	
-	.teaser-theme-giant {
-		.teaser-content {
-			padding: .3125rem;
-		}
-		&.teaser-xlarge {
-			.header {
-				font-size: 1.2rem;
-			}
-		}
-	}
+
 
 	.teaser-large {
 		.header {
@@ -1208,7 +1197,23 @@
 			font-size: 0.938rem;
 		}
 	}
-
+	
+	.teaser-theme-giant {
+		.teaser-content {
+			padding: .3125rem;
+		}
+		&.teaser-xlarge {
+			.header {
+				font-size: 1.2rem;
+			}
+		}
+	}
+	.teaser-theme-trade {
+		.teaser {
+			padding: .3125rem;
+		}
+	}	
+	
 	.related-summary {
 		display: none;
 	}
