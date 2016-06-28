@@ -1,7 +1,8 @@
 
 <!-- Deck-debate-2 --> 
 <div class=" deck ">
-	<div class="col-tags ">
+	<div class="row">
+	<div class="col-tags col-xs-2">
 		<div class="section-title">
 			Debat
 		</div>
@@ -9,7 +10,8 @@
 			<a href="tpl-section.php">Se alle <i class="bicon-angle-right"></i></a>
 		</div>
 	</div>
-	<div class="col-primary-wide">
+
+	<div class="col-primary-wide col-xs-10">
 		<div class="flex-row row ">
 	
 		<div class="col-md-6 col-xs-12 flex-row  ">
@@ -70,4 +72,5 @@
 		
 		</div>
 	</div>
+	</div><!-- row -->
 </div><!-- deck --> 

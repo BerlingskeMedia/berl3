@@ -208,6 +208,40 @@ if (isset($_GET['labelType'])) {
 	</div>
 
 	<div class="row">
+
+		<div class="col-xs-12 col-md-2" >
+			<h3>Teaser xsmall </h3>
+		</div>
+
+		<div class="col-xs-8 col-xs-12 " style="max-width:780px">
+			
+			<div class="row">
+				<? while (dumb_luck("2")): ?>
+				<div class="col-xs-12 col-md-6">
+					<?php
+					$imgW='320'; 
+					$showImg = '1';
+					$class = ' teaser-img-right item-teaser-bt teaser-xsmall teaser-theme-feature';
+					$imgRatio = '1:1';
+					$imgSrc = '/!author';
+					$showSummary = false;
+					$showDate = false;
+					$category = false;
+					$showPaywall = true;
+					$teaserPack = false;
+					$teaserBlog = true;
+					
+
+					include('includes/frontpage/teasers/teaser.php') ?>
+				</div>
+				<? endwhile ?>
+			</div>
+			
+			
+		</div>
+	</div>
+
+	<div class="row">
 		<div class="col-xs-12">
 			<h2>Related teasers</h2>
 		</div>

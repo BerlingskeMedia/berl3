@@ -287,6 +287,7 @@ if(isset($_GET["business"])) {
 		</div>
 
 		<div class=" col-xs-12 " >
+			
 
 			<?php
 			$imgW='1240'; 
@@ -308,8 +309,9 @@ if(isset($_GET["business"])) {
 			$teaserPack = '8';
 
 			$showTrumpet = 'Momssvindel';
-
-			include('includes/frontpage/teasers/teaser.php') ?>
+			include('includes/frontpage/teasers/teaserpacks.php');
+			// include('includes/frontpage/teasers/teaser.php') 
+			?>
 			
 		</div>
 	</div>

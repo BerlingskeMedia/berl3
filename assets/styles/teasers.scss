@@ -823,6 +823,7 @@
 }
 
 .pipe {
+	padding: 0 .2rem;
 	&:before {
 		content: ' | ';
 	}
@@ -852,6 +853,10 @@
 		.teaser-img {
 			max-width: 20rem;
 		}
+	}
+	.subscriber-notice {
+		display: block;
+		margin-top: .2rem;
 	}
 }
 
