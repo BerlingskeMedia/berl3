@@ -268,8 +268,8 @@
 
 
 
-.item-teaser.related-xsmall {
-	padding-left: .5rem;
+.related-xsmall {
+	padding-left: .5rem!important;
 	position: relative;
 	.related-header-trumpet {
 		font-size: .9rem;
@@ -1275,17 +1275,16 @@
 	.related-small .related-header-content {
 		font-size: .9rem;
 	}
-	.item-teaser.related-xsmall {	
+	.related-xsmall {	
 		
 		.header-related {
 			font-size: .8rem;
 		}
-	}
-	.item-teaser.related-xsmall {	
 		.related-header-trumpet {
-				font-size: .7rem;
+			font-size: .7rem;
 		}
 	}
+	
 	.teaser-theme-longread.teaser-xlarge {
 		.teaser-content {
 			padding: .3125rem;

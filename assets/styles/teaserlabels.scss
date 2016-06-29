@@ -110,11 +110,12 @@
 		}
 	}
 
-	.header-related,
-	.related-summary {
+	.header-related {
 		[class*="teaser-label"] {
 			padding-bottom: 1px;
+			font-size: .7rem;
 		}
+		
 	}
 	.teaser-large {
 		.teaser-img {
