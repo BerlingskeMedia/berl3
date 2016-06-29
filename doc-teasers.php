@@ -108,8 +108,7 @@ if(isset($_GET["teaserPack"])) {
 							$showRelatedimg = true;
 							$teaserPack = false;
 							$showPaywall = true;
-							$labelType = 'live';
-							$labelText = '<i class="bicon-record"></i> Live';
+							
 
 							$showAuthor = true;
 							include('includes/frontpage/teasers/teaser.php') ?>			
@@ -134,8 +133,7 @@ if(isset($_GET["teaserPack"])) {
 							$showRelatedimg = true;
 							$teaserPack = false;
 							$showPaywall = true;
-							$labelType = 'live';
-							$labelText = '<i class="bicon-record"></i> Live';
+							
 							$showAuthor = true;
 							include('includes/frontpage/teasers/teaser.php') ?>			
 						</div>
@@ -167,8 +165,7 @@ if(isset($_GET["teaserPack"])) {
 									$showPaywall = true;
 									$showTrumpet = true;
 									$category = "Business.dk";
-									$labelType = 'live';
-									$labelText = '<i class="bicon-record"></i> Live';
+									
 									include('includes/frontpage/teasers/teaser.php') ?>	
 								</div>
 							</div>
@@ -199,8 +196,7 @@ if(isset($_GET["teaserPack"])) {
 									$showAuthor = true;
 									$showTrumpet = true;
 									$showRating = true;
-									$labelType = 'live';
-									$labelText = '<i class="bicon-record"></i> Live';
+									
 
 									include('includes/frontpage/teasers/teaser.php') ?>
 								</div>
@@ -222,8 +218,7 @@ if(isset($_GET["teaserPack"])) {
 									$showTrumpet = true;
 									$showRating = true;
 									$showAuthor = true;
-									$labelType = 'yellow';
-									$labelText = 'Breaking';
+									
 									include('includes/frontpage/teasers/teaser.php') ?>
 								</div>
 

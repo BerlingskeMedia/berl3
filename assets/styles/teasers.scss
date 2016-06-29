@@ -111,11 +111,21 @@
 	}	
 }
 
+.teaser-summary + .subsciber-notice {
+	margin-top: .1rem;
+}
+
 [class*="teaser-rating"] {
 	
 
 	.star-txt {
 		display: none;
+	}
+}
+
+.related-header {
+	.subscriber-notice {
+		display: none
 	}
 }
 
@@ -221,9 +231,18 @@
 .related-header-content {
 	.subscriber-notice {
 		margin-top: .1rem;
+		display: none;
 	}
+
 }
 
+.related-small {
+	.related-header-content {
+		.subscriber-notice {
+			display: block;
+		}
+	}
+}
 .related-small .related-header-content {
 	.subscriber-notice {
 		margin-top: .2rem;
@@ -234,15 +253,30 @@
 
 /*TEASER ACCESORIES*/
 
+.related-tools {
+	line-height: 1;
+	span {
+		vertical-align: middle;
+		display: inline-block;
+	}
+	[class*="teaser-label"]{
+		position: relative;
+		top: -2px;
+	}
+}
+.related-xsmall {
+	[class*="teaser-label"]{
+		position: inherit;
+		
+	}	
+}
 .teaser-pack {
 	.header-related {
 		@extend .font-s1;
 		margin-bottom: .2rem;
 		line-height: 1.1;
 		
-		.subscriber-notice {
-			display: block;
-		}
+		
 	}	
 	.related-body {
 		overflow: hidden;
@@ -281,9 +315,7 @@
 		// line-height: 1;
 		font-size: 1rem
 	}
-	.subscriber-notice {
-		margin-top: .1rem;
-	}
+	
 
 	&:before {
 		width: .2rem;
@@ -625,7 +657,6 @@
 	}
 	.subscriber-notice {
 		color: rgba(255,255,255,.5);
-		font-size: .7rem;
 	}
 	.teaser-img span {
 		display: none;
@@ -833,9 +864,6 @@
 .teaser-large {
 	.header {
 		font-size: 2.813rem;
-		.subscriber-notice {
-			margin-top: .1rem;
-		}
 	}
 }
 
@@ -849,10 +877,7 @@
 			max-width: 20rem;
 		}
 	}
-	.subscriber-notice {
-		display: block;
-		margin-top: .2rem;
-	}
+	
 }
 
 .teaser-small {
@@ -983,22 +1008,12 @@
 
 @include media-breakpoint-up(md) {
 	.related-large {
-		.header-related [class*="teaser-label"],
-		.header-related .subscriber-notice {
+		.header-related [class*="teaser-label"] {
 			display: none
 		}
 	}
 
-	.teaser-xsmall,
-	.teaser-small,
-	.teaser-large,
-	.teaser-xlarge {
-		.header {
-			.subscriber-notice {
-				display: none;
-			}
-		}	
-	}
+	
 
 	.teaser-footer .teaser-category {
 		display: none;
@@ -1130,9 +1145,16 @@
 		display: inline-block;
 		font-size: .7rem; 
 	}
+	.related-header {
+		.subscriber-notice {
+			display: block;
+		}
+	}
+
+	
+
 	.subscriber-notice {
-		font-size: .6rem;
-		display: inherit;
+		font-size: .5rem;
 	}
 	.teaser-summary {
 		display: none;

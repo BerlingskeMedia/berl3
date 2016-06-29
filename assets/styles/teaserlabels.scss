@@ -52,6 +52,7 @@
 	[class*="teaser-label"] {
 		font-size: .7rem;
 		padding: 3px .3rem 3px;
+		vertical-align: middle;
 		
 	}
 	.teaser-label-live {
@@ -134,6 +135,7 @@
 		.teaser-body {
 			& > [class*="teaser-label"] {
 				margin: 0 0 .5rem;
+				font-size: 1rem;
 			}
 		}
 	}
