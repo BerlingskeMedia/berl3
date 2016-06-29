@@ -141,8 +141,10 @@
 	}
 	.header-related {
 		[class*="teaser-label"] {
-			padding-bottom: 0;
-			font-size: .6rem;
+			padding:  1px .3rem;
+			font-size: 8px;
+			position: relative;
+			top: -1px;
 		}
 		.teaer-label-live {
 			font-size: .7rem;
