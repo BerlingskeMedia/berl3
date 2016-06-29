@@ -1104,6 +1104,7 @@
 	}
 	
 	
+
 	.teaser-consumersales {	
 		.teaser-content {
 			padding: .2rem .3125rem;
@@ -1144,6 +1145,10 @@
 		line-height: 1;
 		display: inline-block;
 		font-size: .7rem; 
+		[class*="teaser-label"]{
+			position: inherit;
+		}
+		
 	}
 	.related-header {
 		.subscriber-notice {
