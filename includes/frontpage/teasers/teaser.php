@@ -77,13 +77,27 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 				<h2 class="header">
 					
 					<? dummy("text@".$headerSrc."") ?>
-						<?php if (!$blogTeaser ): ?>
-							<?php if($showPaywall) : ?>
-								 <span class="subscriber-notice">Abonnement</span>
-							<?php endif; ?>
-						<?php endif; ?>
+						
+						<!-- <?php // if($showPaywall) : ?>
+							 <span class="subscriber-notice">Abonnement</span>
+						<?php // endif; ?> -->
+						
 
 				</h2>
+
+				<?php if($showRating): ?>
+					
+					<?php $rating = rand(0,6); ?>
+
+					<div class="teaser-rating-<?php echo $rating; ?> ">
+						<? while (dumb_luck("6")): ?>
+							<i class="bicon-star"></i>
+						<? endwhile ?>
+						<?php if($rating == '0'): ?><span class="star-txt"> &mdash; <?php echo $rating; ?>  stjerner </span><?php endif; ?>
+					</div>
+					<?php $rating = false; ?>
+				
+				<?php endif; ?>
 
 				<?php if($showAuthor): ?>
 					<span class="teaser-author"><? dummy("text@author") ?></span>
@@ -98,19 +112,6 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 					</div>
 				<?php endif; ?>
 
-				<?php if($showRating): ?>
-					
-						<?php $rating = rand(0,6); ?>
-
-						<div class="teaser-rating-<?php echo $rating; ?> ">
-							<? while (dumb_luck("6")): ?>
-								<i class="bicon-star"></i>
-							<? endwhile ?>
-							<?php if($rating == '0'): ?><span class="star-txt"> &mdash; <?php echo $rating; ?>  stjerner </span><?php endif; ?>
-						</div>
-						<?php $rating = false; ?>
-				
-				<?php endif; ?>
 
 				
 				<?php if ($showSummary): ?>
@@ -127,28 +128,17 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 							</span>
 							
 						
-						<?php if($showPaywall): ?>
-							<? if (dumb_luck("100%")): ?>
-								 <span class="subscriber-notice">Abonnement</span>
-							<? endif ?> 
-						<?php endif; ?>
+
 
 					</div>
 				<?php endif; ?>
 				
-				<?php if($blogTeaser): ?>
-					<span class="teaser-author"><? dummy("text@author") ?>
-					<?php if(!$showSummary) : ?>
-
-						<?php if($showPaywall) : ?>
-							<span class="subscriber-notice"><span class="pipe"></span>Abonnement</span>
-						<?php endif; ?>
-
-					<?php endif; ?>
-
-
-					</span>
-				<?php endif; ?>
+				<?php if($showPaywall): ?>
+					
+						 <span class="subscriber-notice">Abonnement</span>
+					
+				<?php endif; ?>				
+				
 
 			</div><!-- .teaser-body --> 	
 			</a><!-- .teaser-link --> 

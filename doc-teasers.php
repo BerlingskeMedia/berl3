@@ -64,6 +64,7 @@ if(isset($_GET["business"])) {
 							$showSummary = '1';
 							$showRelatedimg = true;
 							$teaserPack = false;
+							$showPaywall = true;
 							$labelType = 'live';
 							$labelText = '<i class="bicon-record"></i> Live';
 
@@ -85,6 +86,7 @@ if(isset($_GET["business"])) {
 							$showHeader 	= true;
 							$showRelatedimg = true;
 							$teaserPack = false;
+							$showPaywall = true;
 							$labelType = 'live';
 							$labelText = '<i class="bicon-record"></i> Live';
 							$showAuthor = true;
@@ -138,6 +140,7 @@ if(isset($_GET["business"])) {
 									$showPaywall = true;
 									$showAuthor = true;
 									$showTrumpet = true;
+									$showRating = true;
 									$labelType = 'live';
 									$labelText = '<i class="bicon-record"></i> Live';
 
@@ -153,6 +156,7 @@ if(isset($_GET["business"])) {
 									$showPaywall = true;
 									$showSummary = true;
 									$showTrumpet = true;
+									$showRating = true;
 									$labelType = 'yellow';
 									$labelText = 'Breaking';
 									include('includes/frontpage/teasers/teaser.php') ?>
@@ -204,6 +208,7 @@ if(isset($_GET["business"])) {
 									$class = 'teaser-img-right  teaser-small teaser-theme-trade-cs item-teaser-bt ';
 									$imgRatio = '16:9';
 									$imgSrc = '/landscape';
+
 									$showSummary = true;
 									$teaserAd = true;
 
@@ -225,11 +230,12 @@ if(isset($_GET["business"])) {
 										$class = ' teaser-img-right  teaser-xsmall  teaser-theme-feature item-teaser-bt teaser-squareimg ';
 										$showImg = '1';
 										$imgRatio = '1:1';
-										$blogTeaser = true;
+										$showAuthor = true;
 										$showTrumpet = false;
 										$showTrumpet = 'Berlingske mener';
 										$showCategory = false;
 										$showPaywall = true;
+										$showRating = true;
 										$imgSrc = '/!b-vaabenskjold';
 										include('includes/frontpage/teasers/teaser.php') ?>
 								</div>
@@ -241,7 +247,7 @@ if(isset($_GET["business"])) {
 										$class = ' teaser-img-right  teaser-xsmall  item-teaser-bt teaser-theme-feature teaser-roundimg ';
 										$showImg = '1';
 										$imgRatio = '1:1';
-										$blogTeaser = true;
+										$showAuthor = true;
 										$showTrumpet = false;
 										$showCategory = true;
 										$showPaywall = true;

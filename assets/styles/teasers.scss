@@ -59,9 +59,7 @@
 	.header {
 		@extend .font-s1;
 		margin-bottom: .2rem;
-		&+ .teaser-author {
-			margin: 0 0 .3rem 0;
-		}
+		
 	}
 	[class*="teaser-rating"] {
 		margin-bottom: .5rem;
@@ -108,12 +106,10 @@
 			content: 'Af ';
 			
 		}
-		.subscriber-notice {
-			display: inline;
+		&+ .teaser-summary {
+			margin-top: .2rem;
 		}
-		.teaser-comments {
-			margin-left: .2rem;
-		}
+		
 	}	
 }
 
@@ -126,9 +122,9 @@
 }
 .teaser-summary {
 	line-height: 1.2;
-	.subscriber-notice {
+	/*.subscriber-notice {
 		display: block;
-	}
+	}*/
 }
 .related-summary-content,
 .teaser-summary-content {
@@ -374,6 +370,7 @@
 
 .subscriber-notice {
 	font-weight: 400;
+	display: block;
 	color: rgba(0,0,0,.5);
 	white-space: nowrap;
 	// vertical-align: middle;
