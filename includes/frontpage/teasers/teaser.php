@@ -157,7 +157,10 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 		</div>
 
 	</div>
-
+<?php 
+$labelType = false;
+$labelText = false;
+?>
 	<?php include('includes/frontpage/teasers/teaserpacks.php'); ?>
 
 </div>

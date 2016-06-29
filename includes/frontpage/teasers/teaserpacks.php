@@ -337,7 +337,7 @@
 
 <?php if($teaserPack === '7') :?> 
 	<div class="teaser-pack clearfix">
-<!-- teaser pack 7 - only to be used in teaser-giant and teaser-xtragiant --> 
+
 		<ul class="row teaser-pack-list">
 			
 			
@@ -396,7 +396,7 @@
 				$relatedGridClass = 'col-lg-4 col-xs-12';
 				$relatedTeaserClass = 'item-teaser  related-xsmall';
 				$relatedShowImg = false;
-				$relatedImgSize = '160';
+				$relatedImgSize = '140';
 				$relatedImgRatio = '3:2';
 				$relatedImgSrc = '/landscape';
 				$showRelatedSummary = false;
