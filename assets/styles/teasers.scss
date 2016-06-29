@@ -1251,9 +1251,15 @@
 		}
 	}
 
-	.related-small .teaser-img {
-		max-width: 6rem;
-		margin-top: .3rem;
+	.related-small,
+	.related-large {
+		.teaser-img {
+			max-width: 6rem;
+			margin-top: .3rem;
+			float: left;
+			margin-left: 0;
+			margin-right: .625rem;
+		}
 	}
 	.teaser-small.teaser-theme-feature .teaser-img {
 		max-width: 7rem;
@@ -1286,10 +1292,7 @@
 		.related-header-content {
 			font-size: .9rem;
 		}
-		.teaser-img {
-			float: left;
-			margin: 0 .625rem 0 0;
-		}
+		
 	}
 	.related-small .related-header-content {
 		font-size: .9rem;
