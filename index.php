@@ -185,9 +185,17 @@ if(isset($_GET["business"])) {
 						<li class="orange"><a href="tpl-frontpage.php?topMD">Top MD</a> </li>
 						<li class="orange"><a href="tpl-frontpage.php?topLG">Top LG</a></li>
 						<li class="orange"><a href="tpl-frontpage.php?topXL">Top XL</a></li>
-						
-						
-						
+					</ul>
+				</div>
+
+				<div class="col-md-3">
+					Teasers
+				</div>
+				<div class="col-md-9">
+					<ul>
+						<li class="orange"><a href="doc-teasers.php">Teaser types</a> </li>
+						<li class="orange"><a href="doc-teasertags.php">Teaser tags</a> </li>
+						<li class="orange"><a href="doc-teaserpacks.php">Teaser packs</a> </li>
 					</ul>
 				</div>
 

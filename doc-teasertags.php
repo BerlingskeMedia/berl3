@@ -55,6 +55,27 @@ if (isset($_GET['labelType'])) {
 			<h2>Teasers</h2>
 		</div>
 		<div class="col-xs-12 col-md-2" >
+			<h3>Teaser Xtragiant</h3>
+		</div>
+		<div class="col-xs-12">
+			
+			<?php
+			$imgW='1240'; 
+			$showImg = true;
+			$class = 'item-teaser teaser-xxlarge teaser-theme-xtragiant';
+			$imgRatio = '16:9';
+			$imgSrc = '/!b-breaking';
+			$showSummary = '1';
+			$showRelatedimg = true;
+			$teaserPack = false;
+			$showPaywall = true;
+			
+
+			$showAuthor = true;
+			include('includes/frontpage/teasers/teaser.php') ?>
+
+		</div>
+		<div class="col-xs-12 col-md-2" >
 			<h3>Teaser Giant</h3>
 		</div>
 		<div class="col-xs-12 col-xl-12">
@@ -70,7 +91,7 @@ if (isset($_GET['labelType'])) {
 			// $labelType = 'yellow';
 			// $labelText = '<i class="bicon-record"></i> Live';
 			// $labelText = 'Breaking';
-			$teaserPack = '1';
+			$teaserPack = false;
 			include('includes/frontpage/teasers/teaser.php') ?>			
 		</div>
 	</div>

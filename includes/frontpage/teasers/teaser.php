@@ -148,8 +148,8 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 
 	</div>
 <?php 
-$labelType = false;
-$labelText = false;
+// $labelType = false;
+// $labelText = false;
 ?>	
 	
 		
