@@ -1,6 +1,6 @@
 
 
-<?php if($teaserPack === '1') :?>
+<?php if($teaserPack === '1' || $docTeaserPack === '1') :?>
 <!-- teaser pack 1 --> 
 	<div class="teaser-pack clearfix">
 		<ul class="row teaser-pack-list">
@@ -55,7 +55,7 @@
 
 <?php endif; ?>
 
-<?php if($teaserPack === '2') :?>
+<?php if($teaserPack === '2' || $docTeaserPack === '2') :?>
 
 <!-- teaser pack 2 --> 
 
@@ -123,7 +123,7 @@
 
 <?php endif; ?>
 
-<?php if($teaserPack === '3') :?>
+<?php if($teaserPack === '3' || $docTeaserPack === '3') :?>
 
 <!-- teaser pack 3 --> 
 	<div class="teaser-pack clearfix">
@@ -190,7 +190,7 @@
 
 
 
-<?php if($teaserPack === '4') :?>
+<?php if($teaserPack === '4' || $docTeaserPack === '4') :?>
 
 <!-- teaser pack 4 --> 
 	<div class="teaser-pack clearfix">
@@ -239,7 +239,7 @@
 
 
 
-<?php if($teaserPack === '5') :?>
+<?php if($teaserPack === '5' || $docTeaserPack === '5') :?>
 	<div class="teaser-pack clearfix">
 <!-- teaser pack 5 --> 
 		<ul class="row teaser-pack-list">
@@ -304,7 +304,7 @@
 
 
 
-<?php if($teaserPack === '6') :?>
+<?php if($teaserPack === '6' || $docTeaserPack === '6') :?>
 	<div class="teaser-pack clearfix">
 <!-- teaser pack 6 --> 
 		<ul class="row teaser-pack-list">
@@ -335,7 +335,7 @@
 
 
 
-<?php if($teaserPack === '7') :?> 
+<?php if($teaserPack === '7' || $docTeaserPack === '7') :?> 
 	<div class="teaser-pack clearfix">
 
 		<ul class="row teaser-pack-list">
@@ -365,7 +365,7 @@
 <?php endif; ?>
 
 
-<?php if($teaserPack === '8') :?>
+<?php if($teaserPack === '8' || $docTeaserPack === '8') :?>
 	
 	<div class="teaser-pack clearfix">
 <!-- teaser pack 8 - only to be used in teaser-giant and teaser-xtragiant --> 

@@ -73,7 +73,7 @@ $labelText = false;
 							<?php
 							$imgW='910'; 
 							$showImg = '1';
-							$class = 'mb item-teaser-bb teaser-img-wide teaser-large ';
+							$class = 'item-teaser-bb teaser-img-wide teaser-large ';
 							
 							$imgRatio = '16:9';
 							$imgSrc = '/landscape';
@@ -118,7 +118,7 @@ $labelText = false;
 					<?php
 					$imgW='930';  
 					$showImg = '1';
-					$class = 'item-teaser teaser-theme-business teaser-img-wide item-teaser teaser-large item-teaser ';
+					$class = 'item-teaser teaser-theme-business teaser-img-wide teaser-large  ';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
@@ -133,7 +133,7 @@ $labelText = false;
 					<?php
 					$imgW='930';  
 					$showImg = '1';
-					$class = ' teaser-img-wide item-teaser teaser-large item-teaser-bt ';
+					$class = ' teaser-img-wide teaser-large item-teaser-bt ';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
@@ -146,7 +146,7 @@ $labelText = false;
 					<?php
 					$imgW='930';  
 					$showImg = '1';
-					$class = 'teaser-theme-business teaser-img-wide item-teaser teaser-large item-teaser-bt ';
+					$class = 'teaser-theme-business teaser-img-wide teaser-large item-teaser-bt ';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;

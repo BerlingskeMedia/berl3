@@ -61,9 +61,7 @@
 		margin-bottom: .2rem;
 		
 	}
-	[class*="teaser-rating"] {
-		margin-bottom: .5rem;
-	}
+	
 	
 	.teaser-img {
 		position: relative;
@@ -111,6 +109,14 @@
 		}
 		
 	}	
+}
+
+[class*="teaser-rating"] {
+	
+
+	.star-txt {
+		display: none;
+	}
 }
 
 .related-summary {
@@ -1071,7 +1077,10 @@
 
 @include media-breakpoint-down(sm) {
 
-	
+	[class*="teaser-rating"] {
+		font-size: .8rem;
+		margin-bottom: 0;
+	}
 	.teaser-theme-xtragiant {
 		.teaser-body {
 			text-align: center;
@@ -1105,7 +1114,12 @@
 			line-height: 1;
 		}
 	}
-
+	
+	.teaser-category + .teaser-trumpet {
+		&:before {
+			content: '\2013';
+		}
+	}
 
 	.teaser-sponsor {
 		font-size: .7rem;
@@ -1147,6 +1161,9 @@
 		}
 		.teaser-img {
 			margin-bottom: .3125rem;
+		}
+		.header {
+			margin-bottom: 0;
 		}
 
 	}
