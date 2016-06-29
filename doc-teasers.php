@@ -157,6 +157,7 @@ if(isset($_GET["business"])) {
 									$showSummary = true;
 									$showTrumpet = true;
 									$showRating = true;
+									$showAuthor = true;
 									$labelType = 'yellow';
 									$labelText = 'Breaking';
 									include('includes/frontpage/teasers/teaser.php') ?>
@@ -172,6 +173,7 @@ if(isset($_GET["business"])) {
 									$showSummary = true;
 									$showTrumpet = true;
 									$showAuthor = true;
+									$showRating = true;
 									$labelType = 'yellow';
 									$labelText = 'Breaking';
 									include('includes/frontpage/teasers/teaser.php') ?>
@@ -185,6 +187,7 @@ if(isset($_GET["business"])) {
 									$showSummary = true;			
 									$showPaywall = true;
 									$showAuthor = true;
+									$showRating = true;
 
 									include('includes/frontpage/teasers/teaser.php') ?>
 
