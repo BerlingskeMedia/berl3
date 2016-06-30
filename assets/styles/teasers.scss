@@ -976,7 +976,7 @@
 	}
 	.teaser-theme-feature {
 		.img {
-			max-height: 10rem;
+			max-width: 56.25%;
 			margin: 0 auto;
 		}
 	}
@@ -1090,12 +1090,6 @@
 			border-top: $border-width solid $border-color;
 			padding-top: .625rem;
 		}
-		.teaser-theme-feature {
-			.img {
-				max-height: 10rem;
-				margin: 0 auto;
-			}
-		}
 	}
 
 	.teaser-xlarge {
@@ -1145,12 +1139,7 @@
 			border-top: $border-width solid $border-color;
 			padding-top: .625rem;
 		}
-		.teaser-theme-feature {
-			.img {
-				max-height: 6rem;
-				margin: 0 auto;
-			}
-		}
+		
 	}
 
 
