@@ -18,13 +18,14 @@
 					<?php
 						$imgW='750';  
 						$showImg = '1';
-						$class = ' teaser-img-wide teaser-xsmall item-teaser-narrow ';
+						$class = ' teaser-img-wide teaser-xsmall item-teaser-narrow teaser-theme-business';
 						$imgRatio = '16:9';
 						$imgSrc = '/landscape';
 						$showSummary = false;
 						$teaserPack = false;
 						$showTrumpet = true;
 						$showPaywall = true;
+						$category = 'Business.dk';
 						$labelType = 'live';
 						$labelText = '<i class="bicon-record"></i> Live';
 						include('includes/frontpage/teasers/teaser.php') ?>

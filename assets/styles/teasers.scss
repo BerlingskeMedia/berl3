@@ -947,6 +947,7 @@
 
 
 .list-buffet {
+	margin: 0;
 	li:nth-child(n+5) .teaser {
 		border-top: $border-width solid $border-color;
 		padding-top: .625rem;
