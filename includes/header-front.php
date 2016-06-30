@@ -66,12 +66,13 @@
 								<li><a href="#">Debat</a></li>
 								<li><a href="#">Global</a></li>
 								<li><a href="#">Tech</a></li>
-								<li><a href="#">Viden</a></li>
-								<li><a href="#">Kultur</a></li>
+								<!-- <li><a href="#">Viden</a></li>
+								<li><a href="#">Kultur</a></li> -->
 								<li><a href="#">AoK</a></li>
 								<li><a href="#">Livsstil</a></li>
 								<li><a href="#">Rejseliv</a></li>
 								<li><a href="#">Sport</a></li>
+								<li><a href="http://shop.berlingske.dk">Shop</a></li>
 							</ul>
 							<?php if($loggedIn): ?>
 								<ul class="mobile-user-nav hidden-md-up pull-right" >

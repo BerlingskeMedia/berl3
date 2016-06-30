@@ -139,11 +139,9 @@
 					$class = ' teaser-img-right  item-teaser-bt teaser-theme-feature teaser-small' ;
 					$imgRatio = '1:1';
 					$imgSrc = '/!author';
+					$showAuthor = true;
 					$showSummary = true;
-					
-					
 					$labelType = false;
-					$showComments = true;
 
 					include('includes/frontpage/teasers/teaser.php') ?>
 
@@ -158,7 +156,7 @@
 					
 					$labelType = false;
 					$showComments = true;
-					$showAuthor = true;
+					$showAuthor = false;
 
 					include('includes/frontpage/teasers/teaser.php') ?>
 

@@ -55,7 +55,7 @@ if(isset($_GET["teaserPack"])) {
 <div class="container">
 	<div class="row">
 		<div class="col-xs-12">
-			<div class="demo">
+			<div class="demo hidden">
 	<p><strong>Choose teaser pack:</strong>
 		
 			<a href="?">None</a>
@@ -106,7 +106,7 @@ if(isset($_GET["teaserPack"])) {
 							$imgSrc = '/!b-breaking';
 							$showSummary = '1';
 							$showRelatedimg = true;
-							$teaserPack = false;
+							$teaserPack = '8';
 							$showPaywall = true;
 							
 
@@ -131,7 +131,7 @@ if(isset($_GET["teaserPack"])) {
 							$showSummary = '1';
 							$showHeader 	= true;
 							$showRelatedimg = true;
-							$teaserPack = false;
+							$teaserPack = '8';
 							$showPaywall = true;
 							
 							$showAuthor = true;

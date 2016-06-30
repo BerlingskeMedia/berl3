@@ -524,7 +524,6 @@
 [class*="teaser-theme-cartoon"] {
 	text-align: center;
 	padding: $spacer;
-	background-color: #fff;
 	border-radius: .25rem;
 	
 	a {
@@ -536,12 +535,12 @@
 		&:before {
 			display: block;
 			position: absolute;
-			left: 0;
-			right: 0;
+			left: .625rem;
+			right: .625rem;
 			top: 0;
 			bottom: -1px;
 			content: '';
-			@include gradient-vertical(fade-out($background-color, 1), #fff, 0, 100%);
+			@include gradient-vertical(fade-out(#222, 1), #222, 70%, 100%);
 			z-index: 2;
 		}
 	}
@@ -551,6 +550,7 @@
 		margin: -4rem auto .625rem auto;
 		position: relative;
 		z-index: 2;
+		box-shadow: 0 0 4px rgba(255,255,255,.3)!important;
 	}
 }
 
