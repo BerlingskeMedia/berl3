@@ -343,7 +343,7 @@ if(isset($_GET["teaserPack"])) {
 											<?php
 												$imgW='750';  
 												$showImg = '1';
-												$class = ' teaser-img-wide teaser-xsmall  teaser-theme-business';
+												$class = ' teaser-img-wide teaser-xsmall  teaser-theme-business item-teaser';
 												$imgRatio = '16:9';
 												$imgSrc = '/landscape';
 												$showSummary = false;
@@ -361,16 +361,15 @@ if(isset($_GET["teaserPack"])) {
 											<?php
 												$imgW='750';  
 												$showImg = '1';
-												$class = ' teaser-img-wide teaser-xsmall ';
+												$class = ' teaser-img-wide teaser-xsmall item-teaser ';
 												$imgRatio = '16:9';
 												$imgSrc = '/landscape';
 												$showSummary = false;
 												$teaserPack = false;
 												$showTrumpet = true;
 												$showPaywall = true;
-												$category = 'Business.dk';	
-												$labelType = 'live';
-												$labelText = '<i class="bicon-record"></i> Live';
+												$labelType = false;
+												
 												include('includes/frontpage/teasers/teaser.php') ?>
 
 										</li>
@@ -379,7 +378,7 @@ if(isset($_GET["teaserPack"])) {
 											<?php
 												$imgW='750';  
 												$showImg = '1';
-												$class = ' teaser-img-wide teaser-xsmall  teaser-theme-feature ';
+												$class = ' teaser-img-wide teaser-xsmall  teaser-theme-feature item-teaser';
 												$imgRatio = '1:1';
 												$imgSrc = '/!author';
 												$showSummary = false;
