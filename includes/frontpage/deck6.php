@@ -36,7 +36,7 @@
 					<?php
 					$imgW='930';  
 					$showImg = '1';
-					$class = 'teaser-img-wide item-teaser teaser-large	 teaser-theme-feature item-teaser-bt';
+					$class = 'teaser-img-wide item-teaser teaser-large item-teaser-bt';
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;

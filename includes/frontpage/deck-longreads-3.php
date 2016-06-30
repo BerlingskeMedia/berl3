@@ -36,7 +36,7 @@
 				<?php
 				$imgW='160'; 
 				$showImg = '1';
-				$class = 'item-teaser teaser-xsmall teaser-xxsmall teaser-img-left teaser-img-left-md';
+				$class = 'item-teaser teaser-xxsmall teaser-img-left teaser-img-left-md';
 				$imgRatio = '3:2';
 				$imgSrc = '/!longread';
 				$showSummary = false;

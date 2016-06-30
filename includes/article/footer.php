@@ -18,22 +18,37 @@
 					<?php
 						$imgW='750';  
 						$showImg = '1';
-						$class = ' teaser-img-wide teaser-xsmall item-teaser-narrow teaser-theme-business';
+						$class = ' teaser-img-wide teaser-xsmall item-teaser-narrow ';
 						$imgRatio = '16:9';
 						$imgSrc = '/landscape';
 						$showSummary = false;
 						$teaserPack = false;
 						$showTrumpet = true;
 						$showPaywall = true;
-						$category = 'Business.dk';
+						
 						$labelType = 'live';
 						$labelText = '<i class="bicon-record"></i> Live';
 						include('includes/frontpage/teasers/teaser.php') ?>
 
 				</li>
 				<? endwhile ?>
+				<li class="col-xs-6 col-md-6 col-lg-3">
+					<?php
+						$imgW='750';  
+						$showImg = '1';
+						$class = ' teaser-img-wide teaser-xsmall item-teaser-narrow teaser-theme-feature teaser-img-round';
+						$imgRatio = '1:1';
+						$imgSrc = '/!author';
+						$showSummary = false;
+						$teaserPack = false;
+						$showTrumpet = true;
+						$showPaywall = true;
+						$labelType = false;
+						include('includes/frontpage/teasers/teaser.php') ?>
 
-				<? while (dumb_luck("6")): ?>
+				</li>
+
+				<? while (dumb_luck("4")): ?>
 				<li class="col-xs-6 col-md-6 col-lg-3">
 					<?php
 						$imgW='750';  
@@ -45,12 +60,32 @@
 						$teaserPack = false;
 						$showTrumpet = true;
 						$showPaywall = true;
-						$labelType = 'live';
-						$labelText = '<i class="bicon-record"></i> Live';
+						$labelType = false;
+						
 						include('includes/frontpage/teasers/teaser.php') ?>
 
 				</li>
 				<? endwhile ?>
+
+				<li class="col-xs-6 col-md-6 col-lg-3">
+					<?php
+						$imgW='750';  
+						$showImg = '1';
+						$class = ' teaser-img-wide teaser-xsmall item-teaser-narrow teaser-theme-business';
+						$imgRatio = '16:9';
+						$imgSrc = '/landscape';
+						$category = 'Business.dk';
+						$showSummary = false;
+						$teaserPack = false;
+						$showTrumpet = true;
+						$showPaywall = true;
+						$labelType = 'yellow';
+						$labelText = 'Breaking';
+						
+						include('includes/frontpage/teasers/teaser.php') ?>
+
+				</li>
+
 			</ul>
 
 			

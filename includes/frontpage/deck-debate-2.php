@@ -19,7 +19,7 @@
 		
 			<?php 
 				$imgW='100'; 
-				$class = ' teaser-img-right  teaser-xsmall  teaser-theme-feature	item-teaser-bt teaser-squareimg ';
+				$class = ' teaser-img-right  teaser-xsmall  	item-teaser-bt teaser-squareimg ';
 				$showImg = '1';
 				$imgRatio = '1:1';
 				$blogTeaser = true;
@@ -37,7 +37,7 @@
 		<div class="col-md-6 col-xs-12  flex-row ">
 			<?php 
 				$imgW='100'; 
-				$class = ' teaser-img-right teaser-xsmall	item-teaser-bt teaser-theme-feature teaser-roundimg ';
+				$class = ' teaser-img-right teaser-xsmall	item-teaser-bt teaser-theme-feature  ';
 				$showImg = '1';
 				$imgRatio = '1:1';
 				$blogTeaser = true;
@@ -56,7 +56,7 @@
 		
 			<?php 
 				$imgW='100'; 
-				$class = ' teaser-img-right  teaser-xsmall	  item-teaser-bt teaser-roundimg';
+				$class = ' teaser-img-right  teaser-xsmall	  item-teaser-bt teaser-theme-feature';
 				$showImg = '1';
 				$imgRatio = '1:1';
 				$blogTeaser = true;
