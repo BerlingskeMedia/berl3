@@ -19,7 +19,7 @@
 			<div class="col-md-6 col-xs-12 flex-row ">
 				<?php 
 					$imgW='100'; 
-					$class = ' teaser-img-right  teaser-xsmall  item-teaser-bt teaser-theme-feature teaser-roundimg ';
+					$class = ' teaser-img-right  teaser-xsmall  item-teaser-bt teaser-theme-feature  ';
 					$showImg = '1';
 					$imgRatio = '1:1';
 					$blogTeaser = true;
@@ -36,7 +36,7 @@
 			<div class="col-md-6 col-xs-12 flex-row ">
 				<?php 
 					$imgW='100'; 
-					$class = ' teaser-img-right  teaser-xsmall  item-teaser-bt teaser-theme-feature teaser-roundimg';
+					$class = ' teaser-img-right  teaser-xsmall  item-teaser-bt teaser-theme-feature ';
 					$showImg = '1';
 					$imgRatio = '1:1';
 					$blogTeaser = true;
@@ -61,7 +61,8 @@
 						<a href="#" class="teaser-link">
 						
 						<figure class="teaser-img">
-							<img src="/dist/images/demo/hrdt_mod_hrdt.jpg" alt="" class="img">
+							<img src="<? dummy("image/!cartoons@400,16:9") ?>" width="" height="" alt="" />
+							
 						</figure>
 						<div class="teaser-body">
 							
@@ -82,7 +83,7 @@
 						<a href="#" class="teaser-link">
 						
 						<figure class="teaser-img">
-							<img src="/dist/images/demo/nitilfem.jpg" alt="" class="img">
+							<img src="<? dummy("image/!cartoons@400,16:9") ?>" width="" height="" alt="" />
 						</figure>
 						<div class="teaser-body">
 							
@@ -101,7 +102,7 @@
 						<a href="#" class="teaser-link">
 						
 						<figure class="teaser-img">
-						<img src="/dist/images/demo/til_stregen_400x225.jpg" alt="" class="img">
+						<img src="<? dummy("image/!cartoons@400,16:9") ?>" width="" height="" alt="" />
 						</figure>
 						<div class="teaser-body">
 							

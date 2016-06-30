@@ -72,7 +72,7 @@
 								<li><a href="#">Livsstil</a></li>
 								<li><a href="#">Rejseliv</a></li>
 								<li><a href="#">Sport</a></li>
-								<li><a href="http://shop.berlingske.dk">Shop</a></li>
+								<li class="menu-shop"><a href="http://shop.berlingske.dk">Shop <i class="bicon-arrow"></i></a></li>
 							</ul>
 							<?php if($loggedIn): ?>
 								<ul class="mobile-user-nav hidden-md-up pull-right" >

@@ -375,7 +375,7 @@
 
 			<?php 
 				// ONELINERS
-				$relatedCount = '3';
+				$relatedCount = '2';
 				$relatedGridClass = 'col-lg-4 col-xs-12';
 				$relatedTeaserClass = 'item-teaser teaser-img-left related-small';
 				$relatedShowImg = true;
@@ -385,6 +385,22 @@
 				$showRelatedSummary = false;
 				$showRelatedPaywall = true;
 				$relatedTrumpet = false;
+				$labelType = false;
+
+				include('includes/frontpage/teasers/teaser-related.php'); 
+
+				$relatedCount = '1';
+				$relatedGridClass = 'col-lg-4 col-xs-12';
+				$relatedTeaserClass = 'item-teaser teaser-img-left related-small';
+				$relatedShowImg = true;
+				$relatedImgSize = '160';
+				$relatedImgRatio = '3:2';
+				$relatedImgSrc = '/landscape';
+				$showRelatedSummary = false;
+				$showRelatedPaywall = true;
+				$relatedTrumpet = false;
+				$labelType = 'live';
+				$labelText = '<i class="bicon-record"></i> Live';
 
 				include('includes/frontpage/teasers/teaser-related.php'); 
 			?>
@@ -392,7 +408,7 @@
 
 			<?php 
 				// ONELINERS
-				$relatedCount = '3';
+				$relatedCount = '1';
 				$relatedGridClass = 'col-lg-4 col-xs-12';
 				$relatedTeaserClass = 'item-teaser  related-xsmall';
 				$relatedShowImg = false;
@@ -402,6 +418,23 @@
 				$showRelatedSummary = false;
 				$showRelatedPaywall = true;
 				$relatedTrumpet = false;
+				$labelType = 'red';
+				$labelText = 'Lige nu';
+
+				include('includes/frontpage/teasers/teaser-related-xsmall.php'); 
+
+				$relatedCount = '2';
+				$relatedGridClass = 'col-lg-4 col-xs-12';
+				$relatedTeaserClass = 'item-teaser  related-xsmall';
+				$relatedShowImg = false;
+				$relatedImgSize = '140';
+				$relatedImgRatio = '3:2';
+				$relatedImgSrc = '/landscape';
+				$showRelatedSummary = false;
+				$showRelatedPaywall = true;
+				$relatedTrumpet = false;
+				$labelType = false;
+				// $labelText = 'Lige nu';
 
 				include('includes/frontpage/teasers/teaser-related-xsmall.php'); 
 			?>

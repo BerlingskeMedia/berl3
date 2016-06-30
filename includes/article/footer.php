@@ -18,7 +18,7 @@
 					<?php
 						$imgW='750';  
 						$showImg = '1';
-						$class = ' teaser-img-wide teaser-xsmall item-teaser-narrow ';
+						$class = ' teaser-img-wide teaser-xsmall item-teaser ';
 						$imgRatio = '16:9';
 						$imgSrc = '/landscape';
 						$showSummary = false;
@@ -36,7 +36,7 @@
 					<?php
 						$imgW='750';  
 						$showImg = '1';
-						$class = ' teaser-img-wide teaser-xsmall item-teaser-narrow teaser-theme-feature teaser-img-round';
+						$class = ' teaser-img-wide teaser-xsmall item-teaser teaser-theme-feature ';
 						$imgRatio = '1:1';
 						$imgSrc = '/!author';
 						$showSummary = false;
@@ -53,7 +53,7 @@
 					<?php
 						$imgW='750';  
 						$showImg = '1';
-						$class = ' teaser-img-wide teaser-xsmall item-teaser-narrow ';
+						$class = ' teaser-img-wide teaser-xsmall item-teaser';
 						$imgRatio = '16:9';
 						$imgSrc = '/landscape';
 						$showSummary = false;
@@ -71,7 +71,7 @@
 					<?php
 						$imgW='750';  
 						$showImg = '1';
-						$class = ' teaser-img-wide teaser-xsmall item-teaser-narrow teaser-theme-business';
+						$class = ' teaser-img-wide teaser-xsmall item-teaser teaser-theme-business';
 						$imgRatio = '16:9';
 						$imgSrc = '/landscape';
 						$category = 'Business.dk';

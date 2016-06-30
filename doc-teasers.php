@@ -40,11 +40,17 @@ if(isset($_GET["teaserPack"])) {
 <body class="tpl-front <?php if($siteBusiness): ?>site-business<?php endif; ?> show-site-search">
 
 <style>
-	.demoheader {
+	h1.demoheader {
+		
+		font-size: 19px;
+		
+		margin-top: 4rem;
+
+	}
+	h2.demoheader {
 		background: #eee;
 		font-size: 14px;
 		padding: .3rem;
-		margin-top: 4rem;
 
 	}
 </style>
@@ -95,7 +101,9 @@ if(isset($_GET["teaserPack"])) {
 			
 					<div class="row">
 					<div class="col-xs-12 col-xl-12">
+					<h1 class="demoheader">Teaser xtragiant</h1>
 					<h2 class="demoheader">.teaser-theme-xtragiant</h2>
+
 					</div>
 						<div class="col-xs-12 col-xl-12">
 							<?php
@@ -108,6 +116,7 @@ if(isset($_GET["teaserPack"])) {
 							$showRelatedimg = true;
 							$teaserPack = '8';
 							$showPaywall = true;
+							$showRating = true;
 							
 
 							$showAuthor = true;
@@ -117,6 +126,7 @@ if(isset($_GET["teaserPack"])) {
 					
 					<div class="row">
 						<div class="col-xs-12 col-xl-12">
+							<h1 class="demoheader">Teaser giant</h1>
 							<h2 class="demoheader">.teaser-theme-giant</h2>
 						</div>
 						<div class="col-xs-12 col-xl-12">
@@ -133,6 +143,7 @@ if(isset($_GET["teaserPack"])) {
 							$showRelatedimg = true;
 							$teaserPack = '8';
 							$showPaywall = true;
+							$showRating = true;
 							
 							$showAuthor = true;
 							include('includes/frontpage/teasers/teaser.php') ?>			
@@ -146,6 +157,7 @@ if(isset($_GET["teaserPack"])) {
 							<div class="row flex-row teaser-flow">
 								
 								<div class="col-xs-12 col-xl-12">
+									<h1 class="demoheader">Teaser large Business</h1>
 									<h2 class="demoheader">.teaser-large .teaser-img-wide</h2>
 								</div>
 
@@ -176,6 +188,7 @@ if(isset($_GET["teaserPack"])) {
 							<div class="row flex-row teaser-flow">
 								
 								<div class="col-xs-12">
+									<h1 class="demoheader">Teaser large </h1>
 									<h2 class="demoheader">.item-teaser .teaser-img-wide .teaser-large</h2>	
 								</div>
 								
@@ -202,6 +215,7 @@ if(isset($_GET["teaserPack"])) {
 								</div>
 
 								<div class="col-xs-12">
+									<h1 class="demoheader">Teaser small </h1>
 									<h2 class="demoheader">.item-teaser-bt .teaser-img-left .teaser-small .teaser-theme-business</h2>	
 								</div>
 								<div class="col-xs-12">
@@ -223,6 +237,7 @@ if(isset($_GET["teaserPack"])) {
 								</div>
 
 								<div class="col-xs-12">
+									<h1 class="demoheader">Teaser small business</h1>
 									<h2 class="demoheader">.teaser-img-right .teaser-small .item-teaser-bt .teaser-theme-business</h2>	
 								</div>
 
@@ -247,6 +262,7 @@ if(isset($_GET["teaserPack"])) {
 								</div>
 
 								<div class="col-xs-12">
+									<h1 class="demoheader">Teaser small feature</h1>
 									<h2 class="demoheader">.teaser-img-right .item-teaser-bt .teaser-theme-feature .teaser-small</h2>	
 								</div>
 								<div class="col-xs-12">
@@ -265,8 +281,10 @@ if(isset($_GET["teaserPack"])) {
 									include('includes/frontpage/teasers/teaser.php') ?>
 								</div>
 
+
 								<div class="col-xs-12">
-									<h2 class="demoheader">Advertorial: .teaser-img-right  .teaser-small .teaser-theme-trade .item-teaser-bt</h2>	
+									<h1 class="demoheader">Teaser small Advertorial</h1>
+									<h2 class="demoheader"> .teaser-img-right  .teaser-small .teaser-theme-trade .item-teaser-bt</h2>	
 								</div>
 
 								<div class="col-xs-12">
@@ -285,7 +303,8 @@ if(isset($_GET["teaserPack"])) {
 								</div>
 
 								<div class="col-xs-12">
-									<h2 class="demoheader">Advertorial Consumer sales: .teaser-img-right  .teaser-small .teaser-theme-trade-cs .item-teaser-bt</h2>	
+									<h1 class="demoheader">Teaser small Advertorial Consumer sales</h1>
+									<h2 class="demoheader">.teaser-img-right  .teaser-small .teaser-theme-trade-cs .item-teaser-bt</h2>	
 								</div>
 
 								<div class="col-xs-12">									
@@ -305,16 +324,88 @@ if(isset($_GET["teaserPack"])) {
 
 
 								</div>
-							</div>
+								
+
+
+
+
+								<div class="col-xs-12">
+									<h1 class="demoheader">Teaser xsmall used on "Tophistorier" (on articles template)</h1>
+									<h2 class="demoheader">.teaser-img-wide .teaser-xsmall .item-teaser-narrow (.teaser-theme-feature)</h2>
+								</div>
+									
+
+								<div class="col-xs-12">
+									
+									<ul class=" flex-row list-unstyled list-buffet">
+										
+										<li class="col-xs-12 col-md-6 col-lg-3">
+											<?php
+												$imgW='750';  
+												$showImg = '1';
+												$class = ' teaser-img-wide teaser-xsmall  teaser-theme-business';
+												$imgRatio = '16:9';
+												$imgSrc = '/landscape';
+												$showSummary = false;
+												$teaserPack = false;
+												$showTrumpet = true;
+												$showPaywall = true;
+												$category = 'Business.dk';	
+												$labelType = 'live';
+												$labelText = '<i class="bicon-record"></i> Live';
+												include('includes/frontpage/teasers/teaser.php') ?>
+
+										</li>
+
+										<li class="col-xs-12 col-md-6 col-lg-3">
+											<?php
+												$imgW='750';  
+												$showImg = '1';
+												$class = ' teaser-img-wide teaser-xsmall ';
+												$imgRatio = '16:9';
+												$imgSrc = '/landscape';
+												$showSummary = false;
+												$teaserPack = false;
+												$showTrumpet = true;
+												$showPaywall = true;
+												$category = 'Business.dk';	
+												$labelType = 'live';
+												$labelText = '<i class="bicon-record"></i> Live';
+												include('includes/frontpage/teasers/teaser.php') ?>
+
+										</li>
+										
+										<li class="col-xs-6 col-md-6 col-lg-3">
+											<?php
+												$imgW='750';  
+												$showImg = '1';
+												$class = ' teaser-img-wide teaser-xsmall  teaser-theme-feature ';
+												$imgRatio = '1:1';
+												$imgSrc = '/!author';
+												$showSummary = false;
+												$teaserPack = false;
+												$showTrumpet = true;
+												$showPaywall = true;
+												$labelType = false;
+												include('includes/frontpage/teasers/teaser.php') ?>
+
+										</li>
+									</ul>
+								</div>
+
+
+							
 						</div><!-- col-primary -->
+						</div>
 
 						<div class="col-primary-wide">
 
 							<div class="flex-row row ">
 								
-								<div class=" col-xs-12 flex-row ">
+								<div class=" col-xs-12  ">
+									<h1 class="demoheader">Teaser xsmall</h1>
 									<h2 class="demoheader">
-										.teaser-img-right  .teaser-xsmall  .teaser-theme-feature .item-teaser-bt .teaser-squareimg
+										.teaser-img-right  .teaser-xsmall  .item-teaser-bt 
 									</h2>
 								</div>
 
@@ -322,7 +413,7 @@ if(isset($_GET["teaserPack"])) {
 									
 									<?php 
 										$imgW='100'; 
-										$class = ' teaser-img-right  teaser-xsmall  teaser-theme-feature item-teaser-bt teaser-squareimg ';
+										$class = ' teaser-img-right  teaser-xsmall   item-teaser-bt ';
 										$showImg = '1';
 										$imgRatio = '1:1';
 										$showAuthor = true;
@@ -338,9 +429,11 @@ if(isset($_GET["teaserPack"])) {
 							</div>
 
 							<div class="flex-row row ">
-								<div class="col-xs-12 flex-row ">
+								
+								<div class="col-xs-12 ">
+									<h1 class="demoheader">Teaser xsmall feature</h1>
 									<h2 class="demoheader">
-										.teaser-img-right  .teaser-xsmall  .item-teaser-bt .teaser-theme-feature .teaser-roundimg
+										.teaser-img-right  .teaser-xsmall  .item-teaser-bt .teaser-theme-feature 
 									</h2>
 								</div>
 
@@ -348,7 +441,7 @@ if(isset($_GET["teaserPack"])) {
 								
 									<?php 
 										$imgW='100'; 
-										$class = ' teaser-img-right  teaser-xsmall  item-teaser-bt teaser-theme-feature teaser-roundimg ';
+										$class = ' teaser-img-right  teaser-xsmall  item-teaser-bt teaser-theme-feature  ';
 										$showImg = '1';
 										$imgRatio = '1:1';
 										$showAuthor = true;
