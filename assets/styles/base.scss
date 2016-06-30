@@ -647,12 +647,7 @@ $col-deck-label-width: 160px;
 	}
 }
 
-.teaser-buffet:nth-child(n+6) {
-	.teaser {
-		border-top: $border-width solid $border-color;
-		padding-top: $spacer;
-	}
-}
+
 
 .widget {
 	border-top: .3rem solid $border-color;

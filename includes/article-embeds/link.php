@@ -165,7 +165,7 @@
 		</figure>
 		<div class="teaser-body">
 			<span class="read-also">Se video</span>
-			<h2 class="header"><a href="tpl-article.php"><i class="bicon-play"></i> <? dummy("text@headline-b") ?></a></h2>
+			<h2 class="header"><a href="tpl-article.php"><i class="bicon-play-circled"></i> <? dummy("text@headline-b") ?></a></h2>
 		</div>
 	</article>
 </aside>

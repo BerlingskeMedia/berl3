@@ -47,6 +47,13 @@
 	}
 }
 
+.teaser-xsmall .teaser-img {
+	[class*="teaser-label"] {
+		padding: .225rem 0.3125rem 0.225rem;
+		font-size: 1.1rem;
+	}
+}
+
 .header-related,
 .related-summary {
 	[class*="teaser-label"] {

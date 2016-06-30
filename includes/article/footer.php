@@ -1,3 +1,5 @@
+
+
 <div class="article-footer">
 	
 	<div class="row row-narrow-md flex-row">
@@ -6,40 +8,60 @@
 				Tophistorier
 			</div>
 		</div>
-			<ul class="flex-row list-unstyled">
-			<? while (dumb_luck("2")): ?>
-				<li class="col-xs-6 col-md-3 col-lg-3 col-xl-3 teaser-buffet teaser-sm-start-large-items">
-					<?php 
-						$imgW='750'; 
-						$class = 'fs12 mb ';
-						$showImg = '1';
-						$imgRatio = '16:9';
-						$showKey = true;
-						$showRelated = false;
-						include('includes/teaser.php') ?>
-				</li>
-			<? endwhile ?>
-			<? while (dumb_luck("6")): ?>
-				<li class="col-xs-6 col-md-3 col-lg-3 col-xl-3 teaser-buffet teaser-sm-start-large-items">
-					<?php 
-						$imgW='420'; 
-						$class = 'fs12 mb ';
-						$showImg = '1';
-						$imgRatio = '16:9';
-						$showKey = true;
-						$showRelated = false;
-						include('includes/teaser.php') ?>
-				</li>
-			<? endwhile ?>
-			</ul>
-			<div class="col-xs-12">
-
-				<div class="toggle-loadmore-fade">
-					<button class="btn load-more btn-sm btn-gray btn-round">Hent flere <i class="bicon-angle-down"></i></button>
-				</div>
-
-			</div>
 	</div>
+
+		<div class="row">
+
+			<ul class=" flex-row list-unstyled list-buffet">
+				<? while (dumb_luck("2")): ?> <!-- MOBILE: Two first teasers are 100% width - the rest are side by side -->
+				<li class="col-xs-12 col-md-6 col-lg-3">
+					<?php
+						$imgW='750';  
+						$showImg = '1';
+						$class = ' teaser-img-wide teaser-xsmall item-teaser-narrow ';
+						$imgRatio = '16:9';
+						$imgSrc = '/landscape';
+						$showSummary = false;
+						$teaserPack = false;
+						$showTrumpet = true;
+						$showPaywall = true;
+						$labelType = 'live';
+						$labelText = '<i class="bicon-record"></i> Live';
+						include('includes/frontpage/teasers/teaser.php') ?>
+
+				</li>
+				<? endwhile ?>
+
+				<? while (dumb_luck("6")): ?>
+				<li class="col-xs-6 col-md-6 col-lg-3">
+					<?php
+						$imgW='750';  
+						$showImg = '1';
+						$class = ' teaser-img-wide teaser-xsmall item-teaser-narrow ';
+						$imgRatio = '16:9';
+						$imgSrc = '/landscape';
+						$showSummary = false;
+						$teaserPack = false;
+						$showTrumpet = true;
+						$showPaywall = true;
+						$labelType = 'live';
+						$labelText = '<i class="bicon-record"></i> Live';
+						include('includes/frontpage/teasers/teaser.php') ?>
+
+				</li>
+				<? endwhile ?>
+			</ul>
+
+			
+		<div class="col-xs-12">
+
+			<div class="toggle-loadmore-fade">
+				<button class="btn load-more btn-sm btn-gray btn-round">Hent flere <i class="bicon-angle-down"></i></button>
+			</div>
+
+		</div>
+			
+	</div><!-- row -->
 
 	<div class="row">
 		<div class="col-lg-12 hidden-md-down mt mb-2">

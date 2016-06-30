@@ -34,7 +34,7 @@
 	</div><!-- col-wrapper --> 
 		
 
-		<div class=" col-sidebar col-border-left-lg-up">
+		<div class=" col-sidebar col-border-left-xl-up">
 
 			<div class="banner mb">
 				<div style="width: 300px; height: 250px;" class="demo-banner">Banner</div>

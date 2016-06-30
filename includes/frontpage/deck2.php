@@ -64,7 +64,7 @@
 
 	</div>
 
-	<div class="col-sidebar col-border-left-lg-up">	
+	<div class="col-sidebar col-border-left-xl-up">	
 		<div style="width: 300px; height: 250px;" class="demo-banner mb">Banner</div>
 		
 		<?php 

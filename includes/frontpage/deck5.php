@@ -241,7 +241,7 @@ $labelText = false;
 
 	
 
-	<div class="col-sidebar col-border-left-lg-up">
+	<div class="col-sidebar col-border-left-xl-up">
 
 			
 		<div class="row">
