@@ -51,6 +51,7 @@
 						$showDate = false;
 						$showCategory = false;
 						$teaserLabel = false;
+						$showAuthor = true;
 
 						include('includes/frontpage/teasers/teaser.php') ?>
 				</div>					
@@ -69,6 +70,7 @@
 						$showCategory = false;
 						$teaserLabel = false;
 						$showRating = true;
+						$showAuthor = true;
 
 						include('includes/frontpage/teasers/teaser.php') ?>
 					</div>
@@ -85,6 +87,7 @@
 						$showDate = false;
 						$showCategory = false;
 						$teaserLabel = false;
+						$showAuthor = true;
 
 						include('includes/frontpage/teasers/teaser.php') ?>
 					</div>

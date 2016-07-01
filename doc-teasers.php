@@ -229,6 +229,7 @@ if(isset($_GET["teaserPack"])) {
 									$showPaywall = true;
 									$showAuthor = true;
 									$showRating = true;
+									$showTrumpet = true;
 
 									include('includes/frontpage/teasers/teaser.php') ?>
 								</div>

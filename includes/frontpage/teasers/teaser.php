@@ -50,7 +50,7 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 						
 						<?php if($category): ?>
 							<span class="teaser-category">
-								 <?php echo $category; ?> 
+								 <?php echo $category; ?> - 
 							</span>	
 						<?php endif; ?>
 
@@ -119,7 +119,7 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 
 							<?php if($category): ?>
 								<span class="teaser-category">
-									 <?php echo $category; ?> 
+									 <?php echo $category; ?> - 
 								</span>	
 							<?php endif; ?>
 							

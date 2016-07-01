@@ -270,7 +270,7 @@ if (isset($_GET['labelType'])) {
 
 		
 		<div class="col-md-4 col-xs-12"> 
-			<div class=" teaser-img-wide item-teaser teaser-xsmall teaser-theme-cartoon-1 teaser-theme-white ">
+			<div class=" teaser-img-wide item-teaser teaser-xsmall teaser-theme-cartoon-1 ">
 			
 				<span class="teaser-title">Hårdt mod hårdt</span>
 				<a href="#" class="teaser-link">
@@ -359,7 +359,7 @@ if (isset($_GET['labelType'])) {
 						$relatedImgSrc = '/landscape';
 						$showRelatedSummary = true;
 						$showRelatedPaywall = true;
-						$relatedTrumpet = false;
+						$relatedTrumpet = true;
 						$relatedCategory = 'Business.dk';
 
 						
@@ -399,7 +399,7 @@ if (isset($_GET['labelType'])) {
 						$relatedImgSrc = '/landscape';
 						$showRelatedSummary = false;
 						$showRelatedPaywall = true;
-						$relatedTrumpet = false;
+						$relatedTrumpet = true;
 						$showRelatedCategory = false;
 						
 						// $relatedlabelType = 'red';
@@ -420,7 +420,7 @@ if (isset($_GET['labelType'])) {
 						$relatedImgSrc = '/landscape';
 						$showRelatedSummary = false;
 						$showRelatedPaywall = true;
-						$relatedTrumpet = false;
+						$relatedTrumpet = true;
 						$relatedCategory = 'Business.dk';
 						
 						// $relatedlabelType = 'red';

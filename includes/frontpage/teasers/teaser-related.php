@@ -18,7 +18,7 @@
 
 						<?php if($relatedCategory): ?>
 							<span class="related-header-category">
-								<?php echo $relatedCategory; ?> <i class="icon-external"></i> 
+								<?php echo $relatedCategory; ?> <i class="icon-external"></i> - 
 							</span>	
 						<?php endif; ?>
 			
@@ -57,7 +57,7 @@
 
 							<?php if($relatedCategory): ?>
 								<span class="related-summary-category">
-									<?php  echo $relatedCategory; ?>  
+									<?php  echo $relatedCategory; ?>  -
 								</span>	
 							<?php endif; ?>
 							

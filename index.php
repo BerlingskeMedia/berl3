@@ -185,6 +185,7 @@ if(isset($_GET["business"])) {
 						<li class="orange"><a href="tpl-frontpage.php?topMD">Top MD</a> </li>
 						<li class="orange"><a href="tpl-frontpage.php?topLG">Top LG</a></li>
 						<li class="orange"><a href="tpl-frontpage.php?topXL">Top XL</a></li>
+						<li class="green"><a href="doc-teasers.php">Teaser types</a></li>
 					</ul>
 				</div>
 
@@ -198,10 +199,10 @@ if(isset($_GET["business"])) {
 						<li class="orange"><a href="doc-frontpage-decks.php?deck=-longreads-3">Longreads</a></li>
 						<li class="orange"><a href="doc-frontpage-decks.php?deck=-debate-2">Debate</a></li>
 						<li class="orange"><a href="doc-frontpage-decks.php?deck=-debate-3">Puls</a></li>
-						<li class="orange"><a href="doc-frontpage-decks.php?deck=-image-2">Image of the day</a></li>
-						<li class="orange"><a href="doc-frontpage-decks.php?deck=-consumersales-2">Consumersales</a></li>
-						<li class="orange">Theme: <a href="doc-frontpage-decks.php?deck=-theme-2&theme=roskilde">Roskilde</a>, <a href="doc-frontpage-decks.php?deck=-theme-2&theme=cannes">Cannes</a>, <a href="doc-frontpage-decks.php?deck=-theme-2&theme=berlinalen">Berlinalen</a></li>
-						<li class="orange"><a href="doc-frontpage-decks.php?deck=-towers-2">Towers</a></li>
+						<li class="green"><a href="doc-frontpage-decks.php?deck=-image-2">Image of the day</a></li>
+						<li class="green"><a href="doc-frontpage-decks.php?deck=-consumersales-2">Consumersales</a></li>
+						<li class="green">Theme: <a href="doc-frontpage-decks.php?deck=-theme-2&theme=roskilde">Roskilde</a>, <a href="doc-frontpage-decks.php?deck=-theme-2&theme=cannes">Cannes</a>, <a href="doc-frontpage-decks.php?deck=-theme-2&theme=berlinalen">Berlinalen</a></li>
+						<li class="green"><a href="doc-frontpage-decks.php?deck=-towers-2">Towers</a></li>
 						<li class="orange"><a href="doc-frontpage-decks.php?deck=-debate-4">Houmor</a></li>
 					</ul>
 				</div>
