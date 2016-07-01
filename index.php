@@ -356,7 +356,18 @@ if(isset($_GET["business"])) {
 							<ul>
 								<li class="green"><a href="tpl-article-longread.php?showTrumpet">Trumpet</a></li>		
 							</ul>
-							
+						</div>
+						<div class="col-md-3">Tags</div>
+						
+						<div class="col-md-9">
+							<ul>
+								<li class="orange"><a href="tpl-article-longread.php?event=breaking">Breaking</a> </li>
+								<li class="orange"><a href="tpl-article-longread.php?event=live">Live</a> </li>
+								<li class="orange"><a href="tpl-article-longread.php?event=update">To be updated</a> </li>
+								<li class="orange"><a href="tpl-article-longread.php?event=now">Now</a> </li>
+								<li class="orange"><a href="tpl-article-longread.php?event=topstory">Topstory</a> </li>
+								<li class="orange"><a href="tpl-article-longread.php?event=comingup">Coming up</a> </li>
+							</ul>
 						</div>
 					
 						<div class="col-md-3">Paywall</div>

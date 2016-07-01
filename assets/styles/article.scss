@@ -1461,16 +1461,22 @@ $longreadPadding: 20rem;
 	.article-trumpet {
 		color: #000;
 	}
-}
-
-
-
-
-.tpl-article-longread {
 	.share-buttons {
 		@extend .ipadHack;
 	}
+
+	[class*="article-rating"] {
+		text-align: center;
+		margin-top: 1rem;
+	}
+	.article-date {
+		text-align: center;
+	}
+	
 }
+
+
+
 
 
 .longread-head {
@@ -1492,7 +1498,9 @@ $longreadPadding: 20rem;
 	.article-summary {
 		color: #fff;
 		margin: 1rem 0;
-		
+	}
+	[class*="event-header-"] {
+		margin: .625rem 0;
 	}
 }
 

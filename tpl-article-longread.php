@@ -67,6 +67,7 @@ $templateLongread = true;
 			<div class="longread-head-image">
 				<div class="longread-wrapper">
 					<div class="header-container">
+						<?php include('includes/article/event-headers.php'); ?>
 						<h1 class="article-title">
 						<?php if($trumpet == '1'): ?>
 						<span class="article-trumpet">
@@ -94,8 +95,8 @@ $templateLongread = true;
 		<div class="row">
 			<div class="col-xs-12">
 				
-					
 				<?php include('includes/article/date.php'); ?>
+				<?php include('includes/article-embeds/rating.php'); ?>
 				
 				<?php $class = 'hidden-xl-up '; include('includes/article/social-buttons.php'); $class = false;?>
 
@@ -107,7 +108,7 @@ $templateLongread = true;
 
 				
 					
-				<?php include('includes/article-embeds/rating.php'); ?>
+				
 				
 				
 				</div>
