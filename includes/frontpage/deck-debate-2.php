@@ -46,6 +46,7 @@
 				$showCategory = false;
 				$showComments = true;
 				$showPaywall = true;
+				$showAuthor = true;
 				$showTrumpet = 'Kronikken';
 				$imgSrc = '/!b-kommentatorer';
 				include('includes/frontpage/teasers/teaser.php') ?>
@@ -65,6 +66,7 @@
 				$showCategory = false;
 				$showComments = true;
 				$showPaywall = true;
+				$showAuthor = true;
 				$showTrumpet = 'Læserbrev';
 				$imgSrc = '/!b-kommentatorer';
 				include('includes/frontpage/teasers/teaser.php') ?>
