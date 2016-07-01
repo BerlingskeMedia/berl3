@@ -99,56 +99,8 @@ if(isset($_GET["teaserPack"])) {
 
 				<div class=" deck flex-row">
 			
-					<div class="row">
-					<div class="col-xs-12 col-xl-12">
-					<h1 class="demoheader">Teaser xtragiant</h1>
-					<h2 class="demoheader">.teaser-theme-xtragiant</h2>
-
-					</div>
-						<div class="col-xs-12 col-xl-12">
-							<?php
-							$imgW='1240'; 
-							$showImg = true;
-							$class = 'item-teaser teaser-xxlarge teaser-theme-xtragiant';
-							$imgRatio = '16:9';
-							$imgSrc = '/!b-breaking';
-							$showSummary = '1';
-							$showRelatedimg = true;
-							$teaserPack = '8';
-							$showPaywall = true;
-							$showRating = true;
-							
-
-							$showAuthor = true;
-							include('includes/frontpage/teasers/teaser.php') ?>			
-						</div>
-					</div>
 					
-					<div class="row">
-						<div class="col-xs-12 col-xl-12">
-							<h1 class="demoheader">Teaser giant</h1>
-							<h2 class="demoheader">.teaser-theme-giant</h2>
-						</div>
-						<div class="col-xs-12 col-xl-12">
-						
-							<?php
-							$imgW='1240'; 
-							$showImg = true;
-							$class = 'item-teaser teaser-xlarge teaser-theme-giant ';
-							
-							$imgRatio = '16:9';
-							$imgSrc = '/!b-breaking';
-							$showSummary = '1';
-							$showHeader 	= true;
-							$showRelatedimg = true;
-							$teaserPack = '8';
-							$showPaywall = true;
-							$showRating = true;
-							
-							$showAuthor = true;
-							include('includes/frontpage/teasers/teaser.php') ?>			
-						</div>
-					</div>						
+										
 
 					<div class="col-wrapper flex-row">
 						

@@ -283,36 +283,49 @@ if(isset($_GET["business"])) {
 	<div class="row">
 
 		<div class="col-xs-12 " >
-			<h3>Teaser pack 8</h3>
+			<h3>Teaser pack 8 with teaser xtragiant</h3>
 		</div>
 
 		<div class=" col-xs-12 " >
 			
-
 			<?php
 			$imgW='1240'; 
-			$showImg = '1';
-			$class = ' teaser-img-wide item-teaser teaser-xlarge teaser-theme-giant';
-			$imgRatio = '16:8';
-			$imgSrc = '/landscape';
-			$showSummary = true;
-			$showAuthor = true;
-			$showComments = true;
-			$showRelated = false;
-			$showDate = false;
-			$showCategory = false;
-			$showPaywall = true;
-			$showComments = true;
-			$teaserLabel = 'yellow';
-			// $labelText = 'Terror i Bruxelles';
-			//$teaserLabel = 'breaking';
+			$showImg = true;
+			$class = 'item-teaser teaser-xxlarge teaser-theme-xtragiant';
+			$imgRatio = '16:9';
+			$imgSrc = '/!b-breaking';
+			$showSummary = '1';
+			$showRelatedimg = true;
 			$teaserPack = '8';
-
-			$showTrumpet = 'Momssvindel';
-			include('includes/frontpage/teasers/teaserpacks.php');
-			// include('includes/frontpage/teasers/teaser.php') 
-			?>
+			$showPaywall = true;
+			$showRating = true;
 			
+
+			$showAuthor = true;
+			include('includes/frontpage/teasers/teaser.php') ?>			
+
+			
+		</div>
+
+		<div class="col-xs-12">
+			<h3>Teaser pack 8 with teaser-giant</h3>
+		</div>
+		<div class="col-xs-12">
+			<?php
+			$imgW='1240'; 
+			$showImg = true;
+			$class = 'item-teaser teaser-xlarge teaser-theme-giant ';
+			
+			$imgRatio = '16:9';
+			$imgSrc = '/!b-breaking';
+			$showSummary = '1';
+			$showHeader 	= true;
+			$showRelatedimg = true;
+			$teaserPack = '8';
+			$labelType = 'yellow';
+			$labelText = 'Breaking';
+			$showAuthor = true;
+			include('includes/frontpage/teasers/teaser.php') ?>			
 		</div>
 	</div>
 

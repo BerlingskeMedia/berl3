@@ -345,6 +345,7 @@ if(isset($_GET["business"])) {
 								<!-- <li class="green strike"><a href="tpl-article-longread.php?showTheme">Theme</a></li>
 								<li class="green strike"><a href="tpl-article-longread.php?showTimeline">Timeline</a></li> -->
 								<li class="green"><a href="tpl-article-longread.php?showLink">Embedded links</a></li>	
+								<li class="orange"><a href="tpl-article-longread.php?showRating">Rating</a></li>
 							</ul>
 							
 						</div>
