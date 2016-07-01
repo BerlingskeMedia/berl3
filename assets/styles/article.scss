@@ -1109,6 +1109,10 @@ $sharebutton-sm: 1.7rem;
 	display: inline-block;
 	background-color: $col-live;
 	color: #fff;
+	.bicon-record:before {
+		@extend .animate-live;
+		padding: 0 .1rem;
+	}
 }
 
 .event-header-yellow {
@@ -1124,6 +1128,7 @@ $sharebutton-sm: 1.7rem;
 	background-color: $col-blue-1;
 	color: #fff;
 }
+
 .article-topics {
 	position: relative;
 	@extend .ipadHack;

@@ -5,7 +5,7 @@ Breaking news
 
 <?php elseif($event == 'live'): ?>
 <div class="event-header-red">
-Live
+<i class="bicon-record"></i> Live 
 </div>
 
 <?php elseif($event == 'now'): ?>
