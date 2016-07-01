@@ -185,9 +185,9 @@ if(isset($_GET["business"])) {
 						<li class="orange"><a href="tpl-frontpage.php?topMD">Top MD</a> </li>
 						<li class="orange"><a href="tpl-frontpage.php?topLG">Top LG</a></li>
 						<li class="orange"><a href="tpl-frontpage.php?topXL">Top XL</a></li>
-						<li class="green"><a href="doc-teasers.php">Teaser types</a></li>
 					</ul>
 				</div>
+
 
 				<div class="col-md-3">
 					Decks
@@ -196,9 +196,9 @@ if(isset($_GET["business"])) {
 					<ul>
 						<!-- <li class="orange"><a href="doc-frontpage-decks.php?deck=5">Top deck</a></li>
 						<li class="orange"><a href="doc-frontpage-decks.php?deck=6">Flow deck</a></li> -->
-						<li class="orange"><a href="doc-frontpage-decks.php?deck=-longreads-3">Longreads</a></li>
-						<li class="orange"><a href="doc-frontpage-decks.php?deck=-debate-2">Debate</a></li>
-						<li class="orange"><a href="doc-frontpage-decks.php?deck=-debate-3">Puls</a></li>
+						<li class="green"><a href="doc-frontpage-decks.php?deck=-longreads-3">Longreads</a></li>
+						<li class="green"><a href="doc-frontpage-decks.php?deck=-debate-2">Debate</a></li>
+						<li class="green"><a href="doc-frontpage-decks.php?deck=-debate-3">Puls</a></li>
 						<li class="green"><a href="doc-frontpage-decks.php?deck=-image-2">Image of the day</a></li>
 						<li class="green"><a href="doc-frontpage-decks.php?deck=-consumersales-2">Consumersales</a></li>
 						<li class="green">Theme: <a href="doc-frontpage-decks.php?deck=-theme-2&theme=roskilde">Roskilde</a>, <a href="doc-frontpage-decks.php?deck=-theme-2&theme=cannes">Cannes</a>, <a href="doc-frontpage-decks.php?deck=-theme-2&theme=berlinalen">Berlinalen</a></li>
@@ -208,35 +208,30 @@ if(isset($_GET["business"])) {
 				</div>
 
 				<div class="col-md-3">
-					Teasers
-				</div>
-				<div class="col-md-9">
-					<ul>
-						<li class="orange"><a href="doc-teasers.php">Teaser types</a> </li>
-						<li class="orange"><a href="doc-teasertags.php">Teaser tags</a> </li>
-						<li class="orange"><a href="doc-teaserpacks.php">Teaser packs</a> </li>
-					</ul>
-				</div>
+									Documentation
+								</div>
+								<div class="col-md-9">
+									<ul>
+									<li class="green"><a href="doc-teasers.php">Teaser types</a></li>
+									<li class="green"><a href="doc-teaserpacks.php">Teaser packs</a></li>
+									<li class="green"><a href="doc-teasertags.php">Teaser tags</a></li>
+									<li class="green"><a href="tpl-frontpage.php?teaserIcon=video">Icon video</a></li>
+									<li class="green"><a href="tpl-frontpage.php?teaserIcon=gallery">Icon gallery</a></li>
+									</ul>
+								</div>
 
 				
 
-				<div class="col-md-3">Icons</div>
 				
-				<div class="col-md-9">
-					<ul>
-						<li class="orange"><a href="tpl-frontpage.php?teaserIcon=video">Video</a></li>
-						<li class="orange"><a href="tpl-frontpage.php?teaserIcon=gallery">Gallery</a></li>
-					</ul>
-				</div>
 
-				<div class="col-md-3">Oneliners</div>
+				<!-- <div class="col-md-3">Oneliners</div>
 				<div class="col-md-9">
 					<ul>
 						<li class="red"><a href="#">Breaking</a></li>
 						<li class="red"><a href="#">Live</a></li>
 						<li class="red"><a href="#">Comming up</a></li>
 					</ul>
-				</div>
+				</div> -->
 			
 				
 				<div class="col-md-12">

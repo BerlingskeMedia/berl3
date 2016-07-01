@@ -374,7 +374,7 @@
 			
 
 			<?php 
-				// ONELINERS
+				
 				$relatedCount = '2';
 				$relatedGridClass = 'col-lg-4 col-xs-12';
 				$relatedTeaserClass = 'item-teaser teaser-img-left related-small';
@@ -384,8 +384,9 @@
 				$relatedImgSrc = '/landscape';
 				$showRelatedSummary = false;
 				$showRelatedPaywall = true;
-				$relatedTrumpet = false;
+				$relatedTrumpet = true;
 				$labelType = false;
+				
 
 				include('includes/frontpage/teasers/teaser-related.php'); 
 
@@ -398,7 +399,7 @@
 				$relatedImgSrc = '/landscape';
 				$showRelatedSummary = false;
 				$showRelatedPaywall = true;
-				$relatedTrumpet = false;
+				$relatedTrumpet = true;
 				$labelType = 'live';
 				$labelText = '<i class="bicon-record"></i> Live';
 
