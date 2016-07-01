@@ -15,13 +15,14 @@
 				$class = 'teaser-img-wide item-teaser teaser-xlarge teaser-theme-longread	 ';
 				$imgRatio = '16:9';
 				$imgSrc = '/!longread';
-				$showSummary = true;
+				$showSummary = false;
 				$showRelated = false;
 				$showDate = false;
 				$showCategory = false;
 				$teaserLabel = false;
 				$showComments = true;
 				$showTrumpet = true;
+				$showAuthor = true;
 				$showPaywall = true;
 				$teaserLink = 'tpl-article-longread.php';
 
@@ -46,6 +47,8 @@
 				$teaserLabel = false;
 				$showComments = true;
 				$showPaywall = true;
+				$showTrumpet = true;
+				$showAuthor = true;
 				$teaserLink = 'tpl-article-longread.php';
 
 				include('includes/frontpage/teasers/teaser.php') ?>

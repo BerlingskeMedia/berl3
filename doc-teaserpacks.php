@@ -223,7 +223,7 @@ if(isset($_GET["business"])) {
 			<?php
 			$imgW='920'; 
 			$showImg = '1';
-			$class = ' teaser-img-left item-teaser teaser-medium ';
+			$class = ' teaser-img-left item-teaser teaser-small ';
 			$imgRatio = '16:9';
 			$imgSrc = '/landscape';
 			$showSummary = true;
@@ -257,7 +257,7 @@ if(isset($_GET["business"])) {
 			<?php
 			$imgW='920'; 
 			$showImg = '1';
-			$class = ' teaser-img-right item-teaser teaser-medium ';
+			$class = ' teaser-img-right item-teaser teaser-small ';
 			$imgRatio = '16:9';
 			$imgSrc = '/landscape';
 			$showSummary = true;

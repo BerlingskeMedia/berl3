@@ -399,6 +399,7 @@ if(isset($_GET["teaserPack"])) {
 										$showTrumpet = false;
 										$showCategory = true;
 										$showPaywall = true;
+										$showTrumpet = true;
 										$imgSrc = '/!b-tilstregen';
 										include('includes/frontpage/teasers/teaser.php') ?>
 								</div>

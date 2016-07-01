@@ -1100,7 +1100,7 @@ $sharebutton-sm: 1.7rem;
 
 [class*="event-header-"] {
 	padding: .425rem .425rem .325rem;
-	font-weight: 700;
+	font-weight: 500;
 	@extend .font-s2;
 	font-size: 1.2rem;
 	margin-bottom: .725rem;
@@ -1500,7 +1500,7 @@ $longreadPadding: 20rem;
 		margin: 1rem 0;
 	}
 	[class*="event-header-"] {
-		margin: .625rem 0;
+		margin: .625rem 0 0;
 	}
 }
 

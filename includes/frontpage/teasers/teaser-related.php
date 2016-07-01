@@ -13,14 +13,14 @@
 				
 				<h3 class="header-related">
 					<div class="related-tools">
-					
+						
+						<?php include('includes/frontpage/teasers/labels.php'); ?>
+
 						<?php if($relatedCategory): ?>
 							<span class="related-header-category">
 								<?php echo $relatedCategory; ?> <i class="icon-external"></i> 
 							</span>	
 						<?php endif; ?>
-						
-						<?php include('includes/frontpage/teasers/labels.php'); ?>
 			
 						<?php if($relatedTrumpet): ?>
 							<span class="related-header-trumpet">
@@ -53,14 +53,15 @@
 				<?php if($showRelatedSummary): ?>
 					<div class="related-summary">
 						
-						
+							<?php include('includes/frontpage/teasers/labels.php'); ?>
+
 							<?php if($relatedCategory): ?>
 								<span class="related-summary-category">
 									<?php  echo $relatedCategory; ?>  
 								</span>	
 							<?php endif; ?>
 							
-							<?php include('includes/frontpage/teasers/labels.php'); ?>
+							
 
 							<span class="related-summary-content">
 								<? dummy("text@short-teaser") ?>	

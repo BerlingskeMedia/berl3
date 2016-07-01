@@ -602,7 +602,6 @@
 	}
 	.img {
 		border-radius: 50%;
-		filter: grayscale(100%);
 		border: .2rem solid #fff;
 		box-shadow: 2px 2px 0 rgba(0,0,0,.1);
 		transition: all .2s ease!important;
@@ -733,8 +732,7 @@
 		color: #ccc;
 		text-transform: none;
 		&:before {
-			content: '\e819 ';
-			font-family: b-icons;
+			content: 'Fotograf: ';
 			margin-right: .2rem;
 		}
 
@@ -747,6 +745,7 @@
 	.teaser-img {
 		margin-bottom: 0!important;
 	}
+
 	.teaser-content {
 		position: absolute;
 		z-index: 2;
@@ -764,14 +763,13 @@
 		color: #fff;
 		font-size: 3rem;
 	}
+	.teaser-author,
 	.teaser-comments i,
 	.teaser-comments,
 	.teaser-summary-content,
 	.subscriber-notice{
 		color: rgba(255,255,255,.9);
 	}
-
-	
 }
 
 
@@ -785,8 +783,6 @@
 	}
 
 }
-
-
 
 .teaser-price {
 	color: #000;

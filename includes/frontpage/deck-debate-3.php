@@ -23,6 +23,7 @@
 				$blogTeaser = true;
 				$showTrumpet = false;
 				$showDate = false;
+				$showAuthor = true;
 				$showCategory = false;
 				$showComments = true;
 				$showTrumpet = 'Den politiske Puls';

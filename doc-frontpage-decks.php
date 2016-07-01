@@ -21,6 +21,7 @@ $showBflow = true;
 
 
 
+<a href="doc-frontpage-decks.php" class="">Decks</a>
 
 
 
@@ -49,19 +50,11 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 	<div class="container ">
 
 
-
-
-<?php if($deck): ?>
-	<?php include('includes/frontpage/deck'.$deck.'.php'); ?>
-
-
-<?php else: ?>
-
 	<div class="deck">
 		<div class="row">
 			<div class="col-xs-12 text-center" style="">
-				<ul>
-					<li><a href="tpl-frontpage.php">Frontpage</a></li>
+				<ul style="text-align:left">
+					
 					<li><a href="?deck=5">Deck 1</a></li>
 					<li><a href="?deck=6">Flow deck</a></li>
 					<li><a href="?deck=-ad">Ad</a></li>
@@ -78,7 +71,10 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 			</div>
 		</div>
 	</div>
-	
+
+
+<?php if($deck): ?>
+	<?php include('includes/frontpage/deck'.$deck.'.php'); ?>
 
 <?php endif; ?>
 	

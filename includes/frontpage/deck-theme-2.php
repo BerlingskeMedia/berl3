@@ -46,7 +46,7 @@
 						$class = 'teaser-img-wide item-teaser teaser-small	';
 						$imgRatio = '16:9';
 						$imgSrc = '/landscape';
-						$showSummary = true;
+						$showSummary = false;
 						$showRelated = false;
 						$showDate = false;
 						$showCategory = false;

@@ -27,27 +27,13 @@
 					$showDate = false;
 					$showCategory = true;
 					$showComments = true;
+					$showAuthor = true;
 					$imgSrc = '/!b-tilstregen';
 					include('includes/frontpage/teasers/teaser.php') ?>
 			</div>
 			<?php endwhile; ?>
 
-			<? while (dumb_luck("2")): ?>
-			<div class="col-md-6 col-xs-12 flex-row ">
-				<?php 
-					$imgW='100'; 
-					$class = ' teaser-img-right  teaser-xsmall  item-teaser-bt teaser-theme-feature ';
-					$showImg = '1';
-					$imgRatio = '1:1';
-					$blogTeaser = true;
-					$showTrumpet = false;
-					$showDate = false;
-					$showCategory = true;
-					$showComments = true;
-					$imgSrc = '/!b-tilstregen';
-					include('includes/frontpage/teasers/teaser.php') ?>
-			</div>
-			<?php endwhile; ?>
+			
 			
 		</div>
 
