@@ -79,13 +79,13 @@
 
 					include('includes/frontpage/teasers/teaser.php') ?>
 					
-					<? if (dumb_luck("50%")) {
+						<?php 
 						$imgW='220'; 
 						$class = 'teaser-img-right  teaser-small teaser-theme-trade item-teaser-bt';
-					} else {
-						$imgW='940';
-						$class = 'teaser-img-wide  teaser-large teaser-theme-trade item-teaser-bt';
-					}
+					
+						// $imgW='940';
+						// $class = 'teaser-img-wide  teaser-large teaser-theme-trade item-teaser-bt';
+				
 					
 
 					$showImg = '1';

@@ -189,6 +189,24 @@ if(isset($_GET["business"])) {
 				</div>
 
 				<div class="col-md-3">
+					Decks
+				</div>
+				<div class="col-md-9">
+					<ul>
+						<!-- <li class="orange"><a href="doc-frontpage-decks.php?deck=5">Top deck</a></li>
+						<li class="orange"><a href="doc-frontpage-decks.php?deck=6">Flow deck</a></li> -->
+						<li class="orange"><a href="doc-frontpage-decks.php?deck=-longreads-3">Longreads</a></li>
+						<li class="orange"><a href="doc-frontpage-decks.php?deck=-debate-2">Debate</a></li>
+						<li class="orange"><a href="doc-frontpage-decks.php?deck=-debate-3">Puls</a></li>
+						<li class="orange"><a href="doc-frontpage-decks.php?deck=-image-2">Image of the day</a></li>
+						<li class="orange"><a href="doc-frontpage-decks.php?deck=-consumersales-2">Consumersales</a></li>
+						<li class="orange">Theme: <a href="doc-frontpage-decks.php?deck=-theme-2&theme=roskilde">Roskilde</a>, <a href="doc-frontpage-decks.php?deck=-theme-2&theme=cannes">Cannes</a>, <a href="doc-frontpage-decks.php?deck=-theme-2&theme=berlinalen">Berlinalen</a></li>
+						<li class="orange"><a href="doc-frontpage-decks.php?deck=-towers-2">Towers</a></li>
+						<li class="orange"><a href="doc-frontpage-decks.php?deck=-debate-4">Houmor</a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-3">
 					Teasers
 				</div>
 				<div class="col-md-9">
