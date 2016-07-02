@@ -1056,7 +1056,7 @@
 			content: ' \2013 '
 		}
 	}
-	
+
 	.related-large {
 		.header-related [class*="teaser-label"] {
 			display: none
@@ -1138,6 +1138,7 @@
 
 @include media-breakpoint-down(sm) {
 
+	.related-header-category + .related-header-trumpet,
 	.teaser-category + .teaser-trumpet {
 		&:before {
 			content: ' \2013 '

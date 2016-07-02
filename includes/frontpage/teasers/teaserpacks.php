@@ -67,7 +67,7 @@
 			<?php 
 				$relatedCount = '1';
 				$relatedGridClass = 'col-xs-12';
-				$relatedTeaserClass = 'item-teaser  teaser-img-right related-large teaser-theme-aok';
+				$relatedTeaserClass = 'item-teaser  teaser-img-right related-large related-theme-aok';
 				
 				$relatedShowImg = true;
 				$relatedImgSize = '160';
