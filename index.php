@@ -330,7 +330,7 @@ if(isset($_GET["business"])) {
 								<!-- <li class="green strike"><a href="tpl-article-longread.php?showTheme">Theme</a></li>
 								<li class="green strike"><a href="tpl-article-longread.php?showTimeline">Timeline</a></li> -->
 								<li class="green"><a href="tpl-article-longread.php?showLink">Embedded links</a></li>	
-								<li class="orange"><a href="tpl-article-longread.php?showRating">Rating</a></li>
+								<li class="green"><a href="tpl-article-longread.php?showRating">Rating</a></li>
 							</ul>
 							
 						</div>
@@ -347,12 +347,12 @@ if(isset($_GET["business"])) {
 						
 						<div class="col-md-9">
 							<ul>
-								<li class="orange"><a href="tpl-article-longread.php?event=breaking">Breaking</a> </li>
-								<li class="orange"><a href="tpl-article-longread.php?event=live">Live</a> </li>
-								<li class="orange"><a href="tpl-article-longread.php?event=update">To be updated</a> </li>
-								<li class="orange"><a href="tpl-article-longread.php?event=now">Now</a> </li>
-								<li class="orange"><a href="tpl-article-longread.php?event=topstory">Topstory</a> </li>
-								<li class="orange"><a href="tpl-article-longread.php?event=comingup">Coming up</a> </li>
+								<li class="green"><a href="tpl-article-longread.php?event=breaking">Breaking</a> </li>
+								<li class="green"><a href="tpl-article-longread.php?event=live">Live</a> </li>
+								<li class="green"><a href="tpl-article-longread.php?event=update">To be updated</a> </li>
+								<li class="green"><a href="tpl-article-longread.php?event=now">Now</a> </li>
+								<li class="green"><a href="tpl-article-longread.php?event=topstory">Topstory</a> </li>
+								<li class="green"><a href="tpl-article-longread.php?event=comingup">Coming up</a> </li>
 							</ul>
 						</div>
 					
