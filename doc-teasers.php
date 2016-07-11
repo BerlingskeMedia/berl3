@@ -235,48 +235,6 @@ if(isset($_GET["teaserPack"])) {
 								</div>
 
 
-								<div class="col-xs-12">
-									<h1 class="demoheader">Teaser small Advertorial</h1>
-									<h2 class="demoheader"> .teaser-img-right  .teaser-small .teaser-theme-trade .item-teaser-bt</h2>	
-								</div>
-
-								<div class="col-xs-12">
-
-									<?php
-									$imgW='220'; 
-									$imgW='220'; 
-									$showImg = '1';
-									$class = 'teaser-img-right  teaser-small teaser-theme-trade item-teaser-bt ';
-									$imgRatio = '16:9';
-									$imgSrc = '/landscape';
-									$showSummary = true;
-									$teaserAd = true;
-
-									include('includes/frontpage/teasers/teaser.php') ?>
-								</div>
-
-								<div class="col-xs-12">
-									<h1 class="demoheader">Teaser small Advertorial Consumer sales</h1>
-									<h2 class="demoheader">.teaser-img-right  .teaser-small .teaser-theme-trade-cs .item-teaser-bt</h2>	
-								</div>
-
-								<div class="col-xs-12">									
-
-									<?php
-									$imgW='220'; 
-									$imgW='220'; 
-									$showImg = '1';
-									$class = 'teaser-img-right  teaser-small teaser-theme-trade-cs item-teaser-bt ';
-									$imgRatio = '16:9';
-									$imgSrc = '/landscape';
-
-									$showSummary = true;
-									$teaserAd = true;
-
-									include('includes/frontpage/teasers/teaser.php') ?>
-
-
-								</div>
 								
 
 
