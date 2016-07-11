@@ -62,6 +62,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 	<div class="banner-wrapper">
 		<div class="bg-banner"></div>
 			<div class="topbanner demo-banner hidden-sm-down" style="width: 930px; height: 180px;"></div>
+			<div class=" demo-banner hidden-md-up" style="width: 100%; height: 160px;">Leaderboard_1 320 x 320/160</div>
 			<!-- <div class="hidden-lg-up hidden-sm-down"><img src="/dist/images/banners/ipad930x180.png" width="" height="" alt="" style="margin: 0 auto"/></div> -->
 		
 		
@@ -71,10 +72,13 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 			
 
 			<?php include('includes/frontpage/deck-topics-1.php'); ?>
-			<?php $bannerLabel = 'Leaderboard_2 930x180' ; include('includes/frontpage/deck-ad.php'); ?>
+			<?php $bannerLabel = 'Leaderboard_2 930 x 180' ; include('includes/frontpage/deck-ad.php'); ?>
+			<?php $bannerLabel = 'Leaderboard_2 320 x 320/160'; include('includes/frontpage/deck-ad-mobile.php'); ?>
+
 			<?php include('includes/frontpage/deck-topics-2.php'); ?>
 
-			<?php $bannerLabel = 'Leaderboard_3 930x180'; include('includes/frontpage/deck-ad.php'); ?>
+			<?php $bannerLabel = 'Leaderboard_3 930 x 180'; include('includes/frontpage/deck-ad.php'); ?>
+			<?php $bannerLabel = 'Leaderboard_3 320 x 320/160'; include('includes/frontpage/deck-ad-mobile.php'); ?>
 			
 			</div>
 
@@ -84,6 +88,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 
 </div><!-- main-wrapper -->
 
+<?php include('includes/footer.php'); ?>
 
 <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.2/js/tether.min.js"></script>

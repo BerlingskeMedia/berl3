@@ -130,7 +130,7 @@ $labelText = false;
 			
 		<div class="row">
 			<div class="col-lg-12 col-md-6 col-sm-12">
-				<div style="width: 300px; height: 250px;" class="demo-banner mb">Square_3 sticky</div>
+				<div style="width: 300px; height: 250px;" class="demo-banner hidden-sm-down mb">Square_3 sticky</div>
 			</div>
 
 			

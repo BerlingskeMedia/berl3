@@ -125,7 +125,7 @@ $labelText = false;
 			
 		<div class="row">
 			<div class="col-lg-12 col-md-6 col-sm-12">
-				<div style="width: 300px; height: 600px;" class="demo-banner mb">Square_1</div>
+				<div style="width: 300px; height: 600px;" class="demo-banner mb hidden-sm-down">Square_1</div>
 			</div>
 
 			<div class="col-lg-12 col-md-6 col-sm-12">
@@ -144,7 +144,7 @@ $labelText = false;
 							
 						include('includes/list-news.php'); ?>
 
-						<div style="width: 300px; height: 250px;" class="demo-banner">Square_2 sticky</div>
+						<div style="width: 300px; height: 250px;" class="demo-banner hidden-sm-down">Square_2 sticky</div>
 			</div>
 
 			
