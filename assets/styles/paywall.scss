@@ -65,7 +65,7 @@
 	position: relative;
 	margin-top: -2rem;
 	background-color: darken($background-color, 4%);
-	padding: 1rem;
+	padding: 1rem!important;
 	border-radius: .2rem;
 	box-shadow: 0 3px 3px rgba(0,0,0,.2);
 	&:before {

@@ -128,13 +128,25 @@ $templateLongread = true;
 
 							<div class="article-body">
 
+								<?php if($paywall === 'soft'): ?>
+									<?php include('includes/article/paywall.php'); ?>
+								<?php endif; ?>
+
 								<?php include('includes/article/byline.php') ?>
+
 
 								<?php include('includes/article-embeds/blog-bio.php'); ?>
 								
 								<p><? dummy("text@paragraph-first-letter") ?></p>
 
 								
+								<?php if($paywall === 'hard'): ?>
+								<?php include('includes/article/paywall.php'); ?>
+							<?php endif; ?>
+
+								
+
+							<?php if($paywall !== 'hard'): ?>
 								
 								<p><? dummy("text@paragraph") ?></p>
 
@@ -168,6 +180,7 @@ $templateLongread = true;
 									<?php include('includes/article/topics.php'); ?>
 									<?php include('includes/article-embeds/share-buttons-large.php'); ?>
 								</div>
+							<?php endif; ?>
 								
 							</div><!-- article body -->
 
