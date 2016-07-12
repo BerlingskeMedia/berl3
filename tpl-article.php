@@ -57,7 +57,7 @@
 					<div class="article-content">
 						
 						
-
+					
 						<?php if($imageSize == '1' || $imageSize == '4'): // large image ?>
 						
 							<?php include('includes/article-embeds/article-image.php'); ?>
@@ -72,6 +72,10 @@
 
 						<?php endif; ?>
 						
+						<?php if($paywall === 'soft'): ?>
+							<?php include('includes/article/paywall.php'); ?>
+						<?php endif; ?>
+						
 						<?php include('includes/article/partners.php'); ?>		
 						
 						<?php if($showByline == true) : ?>
@@ -82,8 +86,8 @@
 
 						
 
-						<div class="article-body">
-
+							<div class="article-body">
+							
 							
 			
 							<?php if ($imageSize == '2'): ?>
@@ -109,15 +113,14 @@
 							<div class=" inline-banner hidden-lg-up hidden-sm-down" style="width: 300px; height: 250px;">Square_1 Tablet</div>
 							
 
-							<?php if($showPaywall): ?>
-								
+							<?php if($paywall === 'hard'): ?>
 								<?php include('includes/article/paywall.php'); ?>
-
 							<?php endif; ?>
 
 								
 
-							<?php if(!$showPaywall): ?>
+							<?php if($paywall !== 'hard'): ?>
+
 								<p><? dummy("text@paragraph") ?></p>
 								<p><? dummy("text@paragraph") ?></p>
 								<?php if ($showGalleryTeaser == '2'): ?>
@@ -155,8 +158,6 @@
 								<?php include('includes/article-embeds/download-file.php'); ?>
 
 								<?php include('includes/article-embeds/fact-default.php'); ?>
-								
-								
 
 								<div class="article-bottom">
 									<?php include('includes/article/related-partner.php'); ?>
@@ -168,8 +169,6 @@
 							<?php endif; // End Paywall ?>
 							
 						</div><!-- article body -->
-						
-						
 
 					</div><!-- article content -->
 

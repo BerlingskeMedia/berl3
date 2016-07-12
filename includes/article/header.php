@@ -1,50 +1,46 @@
 <header class="article-header">
-
-		<?php include('includes/article/event-headers.php'); ?>
+	<?php include('includes/article/event-headers.php'); ?>
 		
-		
-			
-			<?php if($templateBlog || $templateEssay || $templateEditorial): ?>
-			<div class="
-				<?php if($templateBlog || $templateEditorial ): ?>
-					super-byline-1
-				<?php elseif($templateEssay) : ?>
-					super-byline-2
-				<?php endif ?>">
+	<?php if($templateBlog || $templateEssay || $templateEditorial): ?>
+	<div class="
+		<?php if($templateBlog || $templateEditorial ): ?>
+			super-byline-1
+		<?php elseif($templateEssay) : ?>
+			super-byline-2
+		<?php endif ?>">
 
-				<?php if(!$templateEditorial): ?>
-					<span class="super-author"><i>Af:</i> <? dummy("text@author") ?></span>
-				<?php endif; ?>
+		<?php if(!$templateEditorial): ?>
+			<span class="super-author"><i>Af:</i> <? dummy("text@author") ?></span>
+		<?php endif; ?>
 
-				<span class="badge">
-					<?php if($templateBlog): ?>
-						<span>BLOG</span>
-					<?php elseif($templateEssay) : ?>
-						<span>KRONIK</span>		
-					<?php elseif($templateEditorial) : ?>
-						<span>LEDER</span>
-					<?php endif; ?>
-				</span>
-
-			</div>
+		<span class="badge">
+			<?php if($templateBlog): ?>
+				<span>BLOG</span>
+			<?php elseif($templateEssay) : ?>
+				<span>KRONIK</span>		
+			<?php elseif($templateEditorial) : ?>
+				<span>LEDER</span>
 			<?php endif; ?>
+		</span>
 
-			<h1 class="article-title">
-				<?php if($trumpet == '1'): ?>
-				<span class="article-trumpet">
-					<? dummy("text@item") ?>
-				</span>
-				<?php endif; ?>
-				<? dummy("text@headline") ?>
-			</h1>
+	</div>
+	<?php endif; ?>
 
-			<?php include('includes/article-embeds/rating.php'); ?>
-			
-			<p class="article-summary relative"><? dummy("text@teaser") ?></p>
-		
-			<?php include('includes/article/date.php'); ?>
-			<?php $class = 'hiddxl-up '; include('includes/article/social-buttons.php'); $class = false;?>
+	<h1 class="article-title">
+		<?php if($trumpet == '1'): ?>
+		<span class="article-trumpet">
+			<? dummy("text@item") ?>
+		</span>
+		<?php endif; ?>
+		<? dummy("text@headline") ?>
+	</h1>
 
+	<?php include('includes/article-embeds/rating.php'); ?>
+	
+	<p class="article-summary relative"><? dummy("text@teaser") ?></p>
+
+	<?php include('includes/article/date.php'); ?>
+	<?php $class = 'hiddxl-up '; include('includes/article/social-buttons.php'); $class = false;?>
 		
 </header>
 

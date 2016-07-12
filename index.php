@@ -359,8 +359,8 @@ if(isset($_GET["business"])) {
 						<div class="col-md-3">Paywall</div>
 						<div class="col-md-9">
 							<ul>
-								<li class="red"><a href="#">Pay wall sign - Direct</a></li>
-								<li class="red"><a href="#">Pay wall sign - Open</a></li>
+								<li class="orange"><a href="tpl-article.php?paywall=soft">Pay wall sign - Soft</a></li>
+								<li class="orange"><a href="tpl-article.php?paywall=hard">Pay wall sign - Hard</a></li>
 							</ul>
 						</div>
 					
@@ -390,7 +390,7 @@ if(isset($_GET["business"])) {
 				<div class="col-md-3"></div>
 				<div class="col-md-9">
 					<ul>
-						<li class="red"><a href="#">Auto (default)</a></li>
+						<li class="orange"><a href="tpl-section.php">Auto (default)</a></li>
 						<li class="red"><a href="#">Culture</a></li>
 						<li class="red"><a href="#">Politiko</a></li>
 						<li class="red"><a href="#">Opinion</a></li>
@@ -398,7 +398,7 @@ if(isset($_GET["business"])) {
 						<li class="red"><a href="#">Corrections ('Fejl og fakta')</a></li>
 						<li class="red"><a href="#">Blog</a></li>
 						<li class="orange"><a href="tpl-topic.php">Topic page</a></li>
-						<li class="red"><a href="#">Author overview</a></li>
+						<li class="red"><a href="tpl-author-overview.php">Author overview</a></li>
 						<li class="orange"><a href="tpl-author-profile.php">Author profile</a></li>
 						<li class="red"><a href="#">Search result</a></li>
 					</ul>

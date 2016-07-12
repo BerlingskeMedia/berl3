@@ -29,7 +29,7 @@ if(isset($_GET["business"])) {
 <html lang="da">
 <head>
 	<?php include('includes/head.php'); ?>
-	<title>Berlingske - Topic</title>
+	<title>Berlingske - Section</title>
 	<link rel="stylesheet" href="/dist/styles/main.css">
 </head>
 <body class="tpl-section <?php if($siteBusiness): ?>site-business<?php endif; ?> show-site-search">
@@ -66,12 +66,11 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 			<!-- <div class="hidden-lg-up hidden-sm-down"><img src="/dist/images/banners/ipad930x180.png" width="" height="" alt="" style="margin: 0 auto"/></div> -->
 		
 		
-			
+
 
 			<div class="container main-content">
 			
-			
-			<?php $authorProfile = true; ?>
+
 			<?php include('includes/frontpage/deck-topics-1.php'); ?>
 			<?php $bannerLabel = 'Leaderboard_2 930 x 180' ; include('includes/frontpage/deck-ad.php'); ?>
 			<?php $bannerLabel = 'Leaderboard_2 320 x 320/160'; include('includes/frontpage/deck-ad-mobile.php'); ?>

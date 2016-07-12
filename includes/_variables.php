@@ -116,7 +116,7 @@ if (isset($_GET['event'])) {
 }
 
 if (isset($_GET['paywall'])) {
-	$showPaywall = true;
+	$paywall = $_GET['paywall'];
 }
 
 $showNewsletterEmbedded = rand(0,1);

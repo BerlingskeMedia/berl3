@@ -1,0 +1,25 @@
+.paywall {
+	h2 {
+		font-size: 2.5rem;
+		@extend .font-g1;
+		font-weight: 400;
+		margin: 0;
+		&+ p {
+			font-size: 1rem;
+		}
+	}
+	button.btn {
+		@extend .btn-blue;
+	}
+
+	@include media-breakpoint-down(sm) {
+		h2 {
+			font-size: 2rem;
+		}
+		.img {
+			max-width: 18rem;
+			margin: 0 auto;
+		}
+	}
+	
+}

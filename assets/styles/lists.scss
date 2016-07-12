@@ -67,6 +67,26 @@
 		}
 	}
 }
+.list-check {
+	padding-left: 0;
+	list-style: none;
+	li {
+		padding-left: 2rem;
+		position: relative;
+		margin-bottom: .5rem;
+		&:before {
+			content: '\e82a';
+			font-family: b-icons;
+			margin-left: -2rem;
+			float: left;
+			color: $col-blue-1;
+			font-size: 140%;
+			margin-top: -.2rem;
+
+		}
+	}
+
+}
 .list-bullet {
 	padding: 0;
 	list-style: none;

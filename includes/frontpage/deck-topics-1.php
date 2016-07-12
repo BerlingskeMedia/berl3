@@ -3,15 +3,21 @@
 
 	
 
-
-	
-
-<?php 
-$labelType = false;
-$labelText = false;
-?>
-
 	<div class="col-wrapper flex-row">
+
+	<?php if($authorProfile): ?>
+
+		<div class="col-full-width">
+			<div class="row flex-row teaser-flow">
+				<div class="col-xs-12">
+					
+					Her kommer til at stå en forfatter profil
+
+				</div>
+			</div>
+		</div>
+
+	<?php endif; ?>
 	
 		<div class="col-tags col-border-right-xl-up  text-center">
 			<div class="section-title-no-border mb-1 ">Følg emnet</div>		
