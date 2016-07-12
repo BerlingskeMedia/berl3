@@ -1,6 +1,6 @@
 <?php if($paywall === 'soft'): ?>
 
-	<section class="paywall premium-buy-options mb-2">
+	<section class="paywall paywall-soft premium-buy-options mb-1">
 		
 		<div class="row">
 			<div class="col-xs-12">
@@ -19,7 +19,7 @@
 				
 				
 				<div class="text-center hidden-md-up">
-					<button class="btn btn-blue btn-md mb-2">Prøv gratis i 30 dage <i class="bicon-angle-right"></i></button>
+					<button class="btn btn-blue btn-md mb">Prøv gratis i 30 dage <i class="bicon-angle-right"></i></button>
 				</div>
 
 			</div>
@@ -63,7 +63,7 @@
 			</div>
 			
 			</div>
-			<div class="row">
+			<div class="row sm-text-center">
 			<div class="col-sm-6 col-xs-12 mb">
 			<p class="small mb-05 gray">Ikke abonnent?</p>
 				<button class="btn btn-md btn-blue">

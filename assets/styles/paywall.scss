@@ -33,13 +33,23 @@
 			}
 		}
 		.img {
-			 max-width: 8rem;
+			 max-width: 6rem;
 		}
 	}
 	
 }
 
-
+.paywall-soft {
+	.img {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	@include media-breakpoint-down(sm) {
+		.img {
+			 max-width: 14rem;
+		}
+	}
+}
 .fade {
 	&:after {
 		background: radial-gradient(ellipse 50% 10px at 50% 100%,fade-out(darken($background-color, 20%),.0) 0,fade-out(#dfdfdf,1) 110%);
