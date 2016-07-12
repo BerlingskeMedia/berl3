@@ -479,6 +479,9 @@ $col-deck-label-width: 160px;
 	}
 }
 
+.img-round {
+	border-radius: 50%;
+}
 
 
 @include media-breakpoint-down(md) {
