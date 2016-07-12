@@ -4,7 +4,7 @@
 		
 		<div class="row">
 			<div class="col-xs-12">
-				<h2>Denne artikel er en gave</h2>
+				<h2>Denne artikel er en gave!</h2>
 				<p class="font-g1">Vil du prøve Berlingske.dk gratis i 30 dage?</p>
 			</div>
 			<div class="col-md-7 col-xs-12">
@@ -74,7 +74,7 @@
 			
 				<div class="col-sm-6 col-xs-12">
 				<p class="small mb-05 gray">Allerede abonnent?</p>
-					<button class="btn btn-md btn-blue">
+					<button class="btn btn-md btn-blue toggle-login">
 						Log ind <i class="bicon-angle-right"></i>
 					</button>
 				</div>
