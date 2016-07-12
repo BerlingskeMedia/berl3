@@ -110,7 +110,7 @@ if(isset($_GET["teaserPack"])) {
 								
 								<div class="col-xs-12 col-xl-12">
 									<h1 class="demoheader">Teaser large Business</h1>
-									<h2 class="demoheader">.teaser-large .teaser-img-wide</h2>
+									<h2 class="demoheader">.teaser-large .teaser-img-wide .teaser-theme-business</h2>
 								</div>
 
 								<div class="col-xs-12">
@@ -209,6 +209,31 @@ if(isset($_GET["teaserPack"])) {
 									$showRating = true;
 									$labelType = 'yellow';
 									$labelText = 'Breaking';
+									include('includes/frontpage/teasers/teaser.php') ?>
+								
+								</div>
+
+								<div class="col-xs-12">
+									<h1 class="demoheader">Teaser small AOK</h1>
+									<h2 class="demoheader">.teaser-img-right .teaser-small .item-teaser-bt .teaser-theme-aok</h2>	
+								</div>
+
+								<div class="col-xs-12">
+
+									<?php
+									$imgW='320'; 
+									$showImg = '1';
+									$class = 'teaser-img-right teaser-small item-teaser-bt teaser-theme-aok ';
+									$imgRatio = '16:9';
+									$imgSrc = '/landscape';
+									$category = 'AOK.dk';
+									$showPaywall = true;
+									$showSummary = true;
+									$showTrumpet = true;
+									$showAuthor = true;
+									$showRating = true;
+									// $labelType = 'yellow';
+									// $labelText = 'Breaking';
 									include('includes/frontpage/teasers/teaser.php') ?>
 								
 								</div>

@@ -583,7 +583,7 @@ body.tpl-front {
 			line-height: $subheaderHeight;
 		}
 	}
-	.tpl-front {
+	body.tpl-front {
 		padding-top: $subheaderHeight;
 		.section-nav {
 			display: none;

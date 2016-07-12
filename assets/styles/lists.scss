@@ -70,17 +70,18 @@
 .list-check {
 	padding-left: 0;
 	list-style: none;
+	margin-top: 0;
 	li {
-		padding-left: 2rem;
+		padding-left: 1.5rem;
 		position: relative;
 		margin-bottom: .5rem;
 		&:before {
 			content: '\e82a';
 			font-family: b-icons;
-			margin-left: -2rem;
+			margin-left: -1.5rem;
 			float: left;
 			color: $col-blue-1;
-			font-size: 140%;
+			font-size: 120%;
 			margin-top: -.2rem;
 
 		}

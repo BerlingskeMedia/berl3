@@ -75,7 +75,7 @@
 						<?php if($paywall === 'soft'): ?>
 							<?php include('includes/article/paywall.php'); ?>
 						<?php endif; ?>
-						
+
 						<?php include('includes/article/partners.php'); ?>		
 						
 						<?php if($showByline == true) : ?>
@@ -109,8 +109,7 @@
 							<p><? dummy("text@paragraph") ?></p>
 							
 							
-							<div class="hidden-md-down inline-banner" style="width: 300px; height: 250px;">Square_4</div>
-							<div class=" inline-banner hidden-lg-up hidden-sm-down" style="width: 300px; height: 250px;">Square_1 Tablet</div>
+							
 							
 
 							<?php if($paywall === 'hard'): ?>
@@ -120,6 +119,9 @@
 								
 
 							<?php if($paywall !== 'hard'): ?>
+
+								<div class="hidden-md-down inline-banner" style="width: 300px; height: 250px;">Square_4</div>
+								<div class=" inline-banner hidden-lg-up hidden-sm-down" style="width: 300px; height: 250px;">Square_1 Tablet</div>
 
 								<p><? dummy("text@paragraph") ?></p>
 								<p><? dummy("text@paragraph") ?></p>
