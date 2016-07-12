@@ -49,7 +49,7 @@
 		
 		<div class="row">
 			<div class="col-xs-12">
-				<h2>Ubegrænset adgang?</h2>		
+				<h2>Ubegrænset adgang!</h2>		
 				<p>Vil du prøve Berlingske.dk gratis i 30 dage?</p>
 			</div>
 			<div class="col-xs-7">
