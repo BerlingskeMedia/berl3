@@ -12,6 +12,15 @@
 	button.btn {
 		@extend .btn-blue;
 	}
+	.img {
+		 max-width: 16rem;
+	}
+
+	@include media-breakpoint-only(md) {
+		.img {
+			 max-width: 16rem;
+		}
+	}
 
 	@include media-breakpoint-down(sm) {
 		font-size: .9rem;
@@ -24,9 +33,7 @@
 			}
 		}
 		.img {
-			// max-width: 18rem;
-			margin-left: auto;
-			margin-right: auto;
+			 max-width: 8rem;
 		}
 	}
 	

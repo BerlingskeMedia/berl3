@@ -52,7 +52,8 @@
 				<h2>Ubegrænset adgang!</h2>		
 				<p>Vil du prøve Berlingske.dk gratis i 30 dage?</p>
 			</div>
-			<div class="col-xs-7">
+			<div class="col-xs-12">
+				<img src="/dist/images/platforms.png" alt="" class="img mb pull-right">
 				<ul class="list-check font-g1">
 					<li>Alt fra Berlingske.dk</li>
 					<li>Alt fra Business.dk</li>
@@ -60,9 +61,7 @@
 					<li>Skarpe debatindlæg </li>
 				</ul>
 			</div>
-			<div class="col-xs-5">
-				<img src="/dist/images/platforms.png" alt="" class="img mb">
-			</div>
+			
 			</div>
 			<div class="row">
 			<div class="col-sm-6 col-xs-12 mb">
