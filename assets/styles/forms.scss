@@ -28,7 +28,24 @@
 		font-size: .8rem;
 	}
 }
-
+.search-oneliner-result {
+	input[type='search'], .btn {
+		display: block;
+		padding: .375rem .75rem;
+		font-size: 1rem;
+		line-height: 1.5;
+		border: $border-width solid $border-color;
+		position: relative;
+		width: 75%;
+		float: left;
+	}
+	.btn {
+		width: 25%;		
+		@extend .btn;
+		@extend .btn-blue;
+		border-color: darken($col-blue-1, 10%);
+	}
+}
 label {
 	font-weight: 600;
 	font-size: 80%;

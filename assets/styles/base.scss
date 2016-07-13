@@ -22,6 +22,9 @@ body {
 }
 
 .page-description {
+	
+	@extend [class*="item-teaser"];
+	@extend .item-teaser;
 	a {
 		@extend .link-blue;
 	}

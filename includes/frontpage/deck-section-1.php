@@ -21,32 +21,52 @@
 			<?php if($template === 'author'): ?>
 			
 				<h1 class="section-title-no-border">Profil</h1>
-						
+		
+			<?php elseif($template === 'searchresult'): ?>
 			
-
 			<?php elseif($template === 'corrections'): ?>
 
-			<h1 class="section-title-no-border">Fejl og fakta</h1>
+				<h1 class="section-title-no-border">Fejl og fakta</h1>
 					
 			<?php elseif($template === 'topic'):  ?>
 			
-			<h1 class="section-title-no-border">Barack Obama</h1>
+				<h1 class="section-title-no-border">Barack Obama</h1>
 
 			<?php else:  ?>
 			
-			<h1 class="section-title-no-border">Section title</h1>
+				<h1 class="section-title-no-border">Section title</h1>
 
 			<?php endif; ?>
 
 		</div>
 		
 		<div class="col-primary ">
-			
+			<?php if($template === 'searchresult'): ?>
+				<div class="page-description border-bottom ">
+					<h1 class="article-title">Søgeresultat</h1>
 					
+					<p>Viser 49 resultater for <strong>"Brexit"</strong>.</p>
+					<form action="" class=" mb search-oneliner-result">
+					<fieldset class="form-group  ">
+					    <input type="search" class="form-control" placeholder="Søg på Berlingske.dk" value="Brexit" autocomplete="off">
+					    <button class="btn btn-gray "><i class="bicon-search"></i> Søg</button>
+					  </fieldset>
+					</form>
+
+
+					
+					<button class="btn btn-xs btn-blue">Alle</button>
+					<button class="btn btn-xs btn-gray">I dag</button>
+					<button class="btn btn-xs btn-gray">I går</button>
+					<button class="btn btn-xs btn-gray">Sidste uge</button>
+					<button class="btn btn-xs btn-gray">Sidste år</button>
+					
+				</div>
+			<?php endif; ?>
 
 			<?php if($template === 'author'): ?>
 				
-				<div class="page-description item-teaser mb bb">
+				<div class="page-description ">
 					
 
 					<div class="text-center">
@@ -72,7 +92,7 @@
 			<?php endif; ?>
 
 			<?php if($template === 'corrections'): ?>
-				<div class="page-description item-teaser mb">
+				<div class="page-description ">
 					
 						
 						<p class="">I Berlingske og på Berlingske.dk bestræber vi os dagligt på at give overblik, indsigt og hastig nyhedsopdatering. For os er det en klar målsætning at være præcise samt at undgå fejl og misforståelser.</p>
