@@ -38,6 +38,19 @@
 	}
 
 }
+.list-icons {
+	text-align: center;
+	margin: 1rem 0;
+	list-style: none;
+	i {
+		color: rgba(0,0,0,.5);
+	}
+	li {
+		display: inline-block;
+		margin-right: 1rem;
+		
+	}
+}
 .list-arrow {
 	li {
 		padding-left: .625rem;

@@ -188,7 +188,7 @@
 	@extend .font-s2;
 	font-weight: 500;
 	text-transform: uppercase;
-	color: #222;
+	color: $col-blue-1;
 	font-size: .9rem;
 	/*&:after {
 		content: '\2013';
@@ -430,9 +430,6 @@
 
 
 .icon-external {
-	// @extend [class^="bicon-"]:before;
-	// @extend .bicon-right-open-mini;
-	// transform: rotate(-45deg) scale(1.6);
 	display: none;
 }
 
@@ -493,19 +490,12 @@
 	}
 }
 
-/*.related-header-category,
-.related-header-trumpet,*/
-
 .related-theme-business {
 	@include relatedTheme($col-business-dark);
-
-
 }
 .related-theme-aok {
 	@include relatedTheme($col-aok);
 }
-
-
 
 .teaser-theme-business {
 	@include teaserTheme($col-business-dark);
@@ -513,6 +503,7 @@
 .teaser-theme-aok {
 	@include teaserTheme($col-aok);
 }
+
 
 
 

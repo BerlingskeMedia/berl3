@@ -32,7 +32,7 @@ if(isset($_GET["business"])) {
 	<title>Berlingske - Section</title>
 	<link rel="stylesheet" href="/dist/styles/main.css">
 </head>
-<body class="tpl-section <?php if($siteBusiness): ?>site-business<?php endif; ?> show-site-search">
+<body class="tpl-section default-header <?php if($siteBusiness): ?>site-business<?php endif; ?> show-site-search">
 
 
 
@@ -45,9 +45,9 @@ if(isset($_GET["business"])) {
 <?php include('includes/offcanvas-menu.php'); ?>
 
 <?php if($siteBusiness): ?>
-	<?php include('includes/header-sub.php'); ?>
+	<?php include('includes/header-front.php'); ?>
 <?php else: ?>
-	<?php include('includes/header-sub.php'); ?>
+	<?php include('includes/header-front.php'); ?>
 <?php endif; ?>
 
 <?php // include('includes/banners.php'); ?>
@@ -70,12 +70,23 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 
 			<div class="container main-content">
 			
+			
+			
+	
 
-			<?php include('includes/frontpage/deck-topics-1.php'); ?>
+						
+					
+					
+
+			
+			
+			<?php  include('includes/frontpage/deck-section-1.php'); ?>
+			
+
 			<?php $bannerLabel = 'Leaderboard_2 930 x 180' ; include('includes/frontpage/deck-ad.php'); ?>
 			<?php $bannerLabel = 'Leaderboard_2 320 x 320/160'; include('includes/frontpage/deck-ad-mobile.php'); ?>
 
-			<?php include('includes/frontpage/deck-topics-2.php'); ?>
+			<?php include('includes/frontpage/deck-section-2.php'); ?>
 
 			<?php $bannerLabel = 'Leaderboard_3 930 x 180'; include('includes/frontpage/deck-ad.php'); ?>
 			<?php $bannerLabel = 'Leaderboard_3 320 x 320/160'; include('includes/frontpage/deck-ad-mobile.php'); ?>

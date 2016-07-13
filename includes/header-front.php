@@ -62,16 +62,16 @@
 							<ul class="section-nav">
 								
 								<li><a href="?business">Business</a></li>
-								<li><a href="#">Politiko</a></li>
-								<li><a href="#">Debat</a></li>
-								<li><a href="#">Global</a></li>
-								<li><a href="#">Tech</a></li>
+								<li><a href="tpl-section.php">Politiko</a></li>
+								<li><a href="tpl-section.php">Debat</a></li>
+								<li><a href="tpl-section.php">Global</a></li>
+								<li><a href="tpl-section.php">Tech</a></li>
 								<!-- <li><a href="#">Viden</a></li>
 								<li><a href="#">Kultur</a></li> -->
-								<li><a href="#">AoK</a></li>
-								<li><a href="#">Livsstil</a></li>
-								<li><a href="#">Rejseliv</a></li>
-								<li><a href="#">Sport</a></li>
+								<li><a href="tpl-section.php">AoK</a></li>
+								<li><a href="tpl-section.php">Livsstil</a></li>
+								<li><a href="tpl-section.php">Rejseliv</a></li>
+								<li><a href="tpl-section.php">Sport</a></li>
 								<li class="menu-shop"><a href="http://shop.berlingske.dk">Shop</a></li>
 							</ul>
 							<?php if($loggedIn): ?>

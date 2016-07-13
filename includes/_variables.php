@@ -48,6 +48,9 @@ if (isset($_GET['imgSize'])) {
 if (isset($_GET['teaserIcon'])) {
 	$teaserIcon = $_GET['teaserIcon'];
 }
+if (isset($_GET['template'])) {
+	$template = $_GET['template'];
+}
 
 if (isset($_GET['partner'])) {
 	$partner = $_GET['partner'];

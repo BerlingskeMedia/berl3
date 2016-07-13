@@ -9,6 +9,7 @@ img {
 }
 body {
 	background: $background-color;
+	@extend .font-g1;
 }
 
 .container {
@@ -20,7 +21,11 @@ body {
 	color: $col-twitter;
 }
 
-
+.page-description {
+	a {
+		@extend .link-blue;
+	}
+}
 .site-business {
 	.header-sticky .container {
 		background: transparent;
@@ -38,6 +43,10 @@ body {
 	}
 
 }
+.author-avatar {
+	border: .2rem solid #fff;
+	box-shadow: 2px 2px 0 rgba(0,0,0,.1);
+}
 .main-content {
 	padding-top: 1.425rem;
 	
@@ -52,7 +61,20 @@ body {
 	}
 }
 
-
+/*.page-header {
+	padding: 0 .625rem;	
+	h1 {
+		// @extend .font-sans-alt;
+		@extend .font-s1;
+		// text-transform: uppercase;
+		font-weight: 900;
+	}
+	
+	
+	a {
+		@extend .link-blue;
+	}
+}*/
 
 ul.list-reset {
 	margin-top: 0;
@@ -263,6 +285,9 @@ $col-sidebar-width: 19.375rem;
 }
 
 @include media-breakpoint-down(lg) {
+	.page-content {
+		padding: 0;
+	}
 	.section-link {
 		float: right;
 	}
@@ -286,12 +311,7 @@ $col-sidebar-width: 19.375rem;
 		left: 0;
 		right: 0;
 	}
-	.main-content {
-		padding-top: .625rem;
-		&:before {
-			display: none;
-		}
-	}
+	
 }
 
 @include media-breakpoint-down(md) {
@@ -483,7 +503,16 @@ $col-deck-label-width: 160px;
 	border-radius: 50%;
 }
 
-
+.box-wiki {
+	@extend .mb;
+	img {
+		max-width: 10rem;
+		margin-left: .625rem;
+	}
+	a {
+		@extend .link-blue;
+	}
+}
 @include media-breakpoint-down(md) {
 	.col-deck-content,
 	.col-deck-label {
@@ -712,6 +741,12 @@ $col-deck-label-width: 160px;
 
 
 @include media-breakpoint-down(sm) {
+	.box-wiki {
+		img {
+			max-width: 6rem;
+		}
+	}
+
 	.overlay-login {
 		.site-logo {
 			font-size: 2rem;
@@ -722,5 +757,11 @@ $col-deck-label-width: 160px;
 	}
 	.deck {
 		margin-bottom: $spacer ;
+	}
+	.main-content {
+		padding-top: .625rem;
+		&:before {
+			display: none;
+		}
 	}
 }

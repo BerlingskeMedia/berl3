@@ -161,6 +161,11 @@
 
 								<?php include('includes/article-embeds/fact-default.php'); ?>
 
+								<?php if($paywall === 'soft'): ?>
+										<div class="fade mb"></div>
+									<?php include('includes/article/paywall.php'); ?>
+								<?php endif; ?>
+
 								<div class="article-bottom">
 									<?php include('includes/article/related-partner.php'); ?>
 									<?php include('includes/article/related.php'); ?>
@@ -169,6 +174,8 @@
 								</div>
 
 							<?php endif; // End Paywall ?>
+
+
 							
 						</div><!-- article body -->
 

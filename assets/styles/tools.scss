@@ -262,6 +262,19 @@
 	.like-berlingske-not-tablet {
 		display: block;
 	}
+	.col-border-left-lg-up {
+		position: relative;
+		&:after {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: auto;
+			width: $border-width;
+			background-color: $border-color;
+			content: '';
+		}	
+	}
 	
 
 }

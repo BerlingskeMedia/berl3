@@ -32,7 +32,7 @@ if(isset($_GET["business"])) {
 	<title>Berlingske - Front</title>
 	<link rel="stylesheet" href="/dist/styles/main.css">
 </head>
-<body class="tpl-front <?php if($siteBusiness): ?>site-business<?php endif; ?> show-site-search">
+<body class="tpl-front default-header <?php if($siteBusiness): ?>site-business<?php endif; ?> show-site-search">
 
 
 
@@ -61,8 +61,8 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 
 	<div class="banner-wrapper">
 	<div class="bg-banner"></div>
-	<div class="topbanner demo-banner hidden-md-down" style="width: 930px; height: 180px;"></div>
-	<div class="hidden-lg-up hidden-sm-down"><img src="/dist/images/banners/ipad930x180.png" width="" height="" alt="" style="margin: 0 auto"/></div>
+	<div class="topbanner demo-banner hidden-sm-down" style="width: 930px; height: 180px;"></div>
+	
 	
 	
 

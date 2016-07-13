@@ -141,8 +141,8 @@ $templateLongread = true;
 
 								
 								<?php if($paywall === 'hard'): ?>
-								<?php include('includes/article/paywall.php'); ?>
-							<?php endif; ?>
+									<?php include('includes/article/paywall.php'); ?>
+								<?php endif; ?>
 
 								
 
@@ -174,7 +174,7 @@ $templateLongread = true;
 								<?php include('includes/article-embeds/tweet.php'); ?>
 								
 								<?php include('includes/article-embeds/fact-default.php'); ?>
-								
+
 								<div class="article-bottom">
 									<?php include('includes/article/related.php'); ?>
 									<?php include('includes/article/topics.php'); ?>

@@ -394,11 +394,11 @@ if(isset($_GET["business"])) {
 						<li class="red"><a href="#">Politiko</a></li>
 						<li class="red"><a href="#">Opinion</a></li>
 
-						<li class="orange"><a href="tpl-corrections.php">Corrections ('Fejl og fakta')</a></li>
+						<li class="orange"><a href="tpl-section.php?template=corrections">Corrections ('Fejl og fakta')</a></li>
 						<li class="red"><a href="#">Blog</a></li>
-						<li class="orange"><a href="tpl-topic.php">Topic page</a></li>
+						<li class="orange"><a href="tpl-section.php?template=topic">Topic page</a></li>
 						<li class="red"><a href="tpl-author-overview.php">Author overview</a></li>
-						<li class="orange"><a href="tpl-author-profile.php">Author profile</a></li>
+						<li class="orange"><a href="tpl-section.php?template=author">Author profile</a></li>
 						<li class="red"><a href="#">Search result</a></li>
 					</ul>
 				</div>

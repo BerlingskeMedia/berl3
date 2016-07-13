@@ -307,6 +307,17 @@ a:hover {
 	margin-right: $col-1-width / 2;
 	
 }
+.link-article {
+	color: darken($col-blue-1, 10%);
+	border-bottom: $border-width solid #ddd;
+	transition: border-color .2s ease;
+	&:hover {
+		color: darken($col-blue-1, 10%);
+		text-decoration: none;
+		border-color: darken($col-blue-1, 0%);
+	}
+}
+.page-content,
 .article-body {
 	@extend .font-g1;
 	@extend .mb;
@@ -318,14 +329,7 @@ a:hover {
 		margin-bottom: $spacer * 2;
 
 		&> a {
-			color: darken($col-blue-1, 10%);
-			border-bottom: $border-width solid #ddd;
-			transition: border-color .2s ease;
-			&:hover {
-				color: darken($col-blue-1, 10%);
-				text-decoration: none;
-				border-color: darken($col-blue-1, 0%);
-			}
+			@extend .link-article;
 		}
 	}
 	
@@ -335,6 +339,9 @@ a:hover {
 
 		li {
 			margin-bottom: 1rem;
+			a {
+				@extend .link-article;
+			}
 		}
 
 	}
@@ -1969,6 +1976,7 @@ $longreadPadding: 20rem;
 		border: 0;
 	}
 
+	.page-content,
 	.article-body {
 		font-size: 1rem;
 

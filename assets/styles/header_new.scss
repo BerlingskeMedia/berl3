@@ -28,7 +28,7 @@ body {
 }
 
 
-body.tpl-front {
+body.default-header {
 	padding-top: $headerHeight;
 }
 
@@ -55,7 +55,7 @@ body.tpl-front {
 		transform: scale(1.6);
 	}
 }
-.tpl-front .header-sticky {
+.default-header .header-sticky {
 	height: $headerHeight;
 }
 
@@ -583,7 +583,7 @@ body.tpl-front {
 			line-height: $subheaderHeight;
 		}
 	}
-	body.tpl-front {
+	body.default-header {
 		padding-top: $subheaderHeight;
 		.section-nav {
 			display: none;
@@ -607,7 +607,7 @@ body.tpl-front {
 		right: 0;
 	}
 	[class*="tools-menu"],
-	.tpl-front .header-sticky,
+	.default-header .header-sticky,
 	.header-sticky,
 	.header-sticky ul {
 		height: $subheaderHeight;
