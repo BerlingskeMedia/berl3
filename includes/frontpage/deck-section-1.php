@@ -23,10 +23,12 @@
 				<h1 class="section-title-no-border">Profil</h1>
 		
 			<?php elseif($template === 'searchresult'): ?>
+
+				<h1 class="section-title-no-border">Søgeresultat</h1>		
 			
 			<?php elseif($template === 'corrections'): ?>
 
-				<h1 class="section-title-no-border">Fejl og fakta</h1>
+				
 					
 			<?php elseif($template === 'topic'):  ?>
 			
@@ -42,13 +44,13 @@
 		
 		<div class="col-primary ">
 			<?php if($template === 'searchresult'): ?>
-				<div class="page-description border-bottom ">
-					<h1 class="article-title">Søgeresultat</h1>
+				<div class="page-description ">
+					<!-- <h1 class="article-title">Søgeresultat</h1> -->
 					
-					<p>Viser 49 resultater for <strong>"Brexit"</strong>.</p>
+					<p>Viser 49 resultater for <strong>"Lars Løkke"</strong>.</p>
 					<form action="" class=" mb search-oneliner-result">
 					<fieldset class="form-group  ">
-					    <input type="search" class="form-control" placeholder="Søg på Berlingske.dk" value="Brexit" autocomplete="off">
+					    <input type="search" class="form-control" placeholder="Søg på Berlingske.dk" value="Lars Løkke" autocomplete="off">
 					    <button class="btn btn-gray "><i class="bicon-search"></i> Søg</button>
 					  </fieldset>
 					</form>
@@ -94,7 +96,7 @@
 			<?php if($template === 'corrections'): ?>
 				<div class="page-description ">
 					
-						
+						<h1 class="article-title">Fejl og fakta</h1>
 						<p class="">I Berlingske og på Berlingske.dk bestræber vi os dagligt på at give overblik, indsigt og hastig nyhedsopdatering. For os er det en klar målsætning at være præcise samt at undgå fejl og misforståelser.</p>
 						<p class="">Troværdighed er en kerneværdi for Berlingske. Laver vi fejl, retter vi dem så hurtigt som muligt, og rettelser vil fremgå både af de enkelte artikler og af denne side.</p>
 						<p class="">Kontakt os på <a href="mailto:fejlogfakta2@berlingske.dk">fejlogfakta2@berlingske.dk</a></p>
@@ -105,9 +107,10 @@
 			<?php endif; ?>
 
 			<?php if($template === 'topic'): ?>
-				<div class="mb item-teaser">
+
 					
 
+				<div class="mb item-teaser">
 					<aside class="article-fact-default box-wiki">
 						<div class="embed-content clearfix">
 							<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/President_Barack_Obama.jpg/220px-President_Barack_Obama.jpg" alt="" class="img pull-right">
@@ -179,6 +182,24 @@
 						
 
 						<? endwhile ?>
+					<?php elseif ($template === 'searchresult'): ?>
+
+						<? while (dumb_luck("10")): ?>
+
+							<?php
+							$imgW='220';  
+							$showImg = '1';
+							$class = 'item-teaser-bt  teaser-img-right teaser-search teaser-small  ';
+							$imgRatio = '16:9';
+							$imgSrc = '/landscape';
+							$showSummary = false;
+							$showSearchsummary = true;
+							$showPaywall = true;
+							$showDate = true;
+							include('includes/frontpage/teasers/teaser.php') ?>
+
+						<? endwhile ?>
+
 
 					<?php else: ?>
 

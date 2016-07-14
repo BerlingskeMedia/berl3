@@ -403,6 +403,7 @@
 
 
 
+.teaser-date,
 .subscriber-notice {
 	font-weight: 400;
 	display: block;
@@ -425,6 +426,13 @@
 		display: none;
 	}
 	
+}
+
+.teaser-date {
+	float: right;
+	&+ .subscriber-notice {
+		float: left;
+	}
 }
 
 
@@ -1128,6 +1136,10 @@
 
 
 @include media-breakpoint-down(sm) {
+
+	.search-summary {
+		font-size: .8rem;
+	}
 
 	.related-header-category + .related-header-trumpet,
 	.teaser-category + .teaser-trumpet {

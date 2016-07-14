@@ -85,6 +85,10 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 
 				</h2>
 
+				<?php if ($showSearchsummary): ?>
+				<p class="search-summary"><? dummy("text@search-result") ?></p>
+				<?php endif; ?>
+
 				<?php if($showRating): ?>
 					
 					<?php $rating = rand(0,6); ?>
@@ -132,7 +136,9 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 
 					</div>
 				<?php endif; ?>
-				
+					<?php if($showDate): ?>
+						<div class="teaser-date"><i class="bicon-clock-alt"></i> <? dummy("text@date") ?></div>
+					<?php endif; ?>
 				<?php if($showPaywall): ?>
 					
 						 <span class="subscriber-notice">Abonnement</span>
@@ -176,4 +182,5 @@ $summarySrc 	= 'short-teaser';
 $showPrice 		= false;
 $showHeader 	= true;
 $blogTeaser 	= false;
+$showSearchsummary = false;
 ?>

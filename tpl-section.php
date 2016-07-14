@@ -70,18 +70,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 
 			<div class="container main-content">
 			
-			
-			
-	
-
-						
-					
-					
-
-			
-			
 			<?php  include('includes/frontpage/deck-section-1.php'); ?>
-			
 
 			<?php $bannerLabel = 'Leaderboard_2 930 x 180' ; include('includes/frontpage/deck-ad.php'); ?>
 			<?php $bannerLabel = 'Leaderboard_2 320 x 320/160'; include('includes/frontpage/deck-ad-mobile.php'); ?>
