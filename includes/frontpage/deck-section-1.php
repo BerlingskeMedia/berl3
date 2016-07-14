@@ -140,6 +140,7 @@
 						$imgRatio = '16:9';
 						$imgSrc = '/landscape';
 						
+						
 						$showPaywall = true;
 						$showSummary = true;
 						$showTrumpet = true;
