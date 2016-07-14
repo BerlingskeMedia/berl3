@@ -34,9 +34,9 @@
 			
 				<h1 class="section-title-no-border">Barack Obama</h1>
 
-			<?php else:  ?>
+			<?php elseif(!$template):  ?>
 			
-				<h1 class="section-title-no-border">Section title</h1>
+				
 
 			<?php endif; ?>
 
@@ -129,7 +129,7 @@
 				
 				<div class="col-xs-12">
 					
-					<?php if($template === 'corrections'): ?>
+					<?php if($template === 'corrections' || $template === 'author'): ?>
 						
 						<? while (dumb_luck("3")): ?>
 
@@ -169,19 +169,24 @@
 
 						include('includes/frontpage/teasers/teaser.php') ?>
 
-						<?php
-						$imgW='220'; 
-						$showImg = '1';
-						$class = 'teaser-img-right  teaser-small item-teaser-bt ';
-						$imgRatio = '16:9';
-						$imgSrc = '/landscape';
-						$showSummary = true;
-						$teaserPack = false;
-						include('includes/frontpage/teasers/teaser.php') ?>
+						
 						
 						
 
 						<? endwhile ?>
+
+						<?php
+						$imgW='220'; 
+						$imgW='220'; 
+						$showImg = '1';
+						$class = 'teaser-img-right  teaser-small teaser-theme-trade item-teaser-bt ';
+						$imgRatio = '16:9';
+						$imgSrc = '/landscape';
+						$showSummary = true;
+						$teaserAd = true;
+
+						include('includes/frontpage/teasers/teaser.php') ?>
+
 					<?php elseif ($template === 'searchresult'): ?>
 
 						<? while (dumb_luck("10")): ?>
@@ -283,7 +288,7 @@
 				</div>
 
 
-				<?php if($template === 'searchresult'): ?>
+				<?php if($template === 'searchresult' ): ?>
 				<div class="col-xs-12">
 					<div class="list-fade mt">
 						<button>Hent flere</button>
