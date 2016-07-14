@@ -281,6 +281,15 @@
 					
 
 				</div>
+
+
+				<?php if($template === 'searchresult'): ?>
+				<div class="col-xs-12">
+					<div class="list-fade mt">
+						<button>Hent flere</button>
+					</div>
+				</div>
+				<?php endif; ?>
 				
 
 				
