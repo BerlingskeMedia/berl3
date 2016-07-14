@@ -43,7 +43,8 @@
 		width: 25%;		
 		@extend .btn;
 		@extend .btn-blue;
-		border-color: darken($col-blue-1, 10%);
+		border-color: darken($col-blue-1, 0);
+		border-radius: 0 .2rem .2rem 0;
 	}
 }
 label {
