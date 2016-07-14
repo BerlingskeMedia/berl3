@@ -41,6 +41,14 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 
 			<a href="<?php echo $teaserLink; ?>" class="teaser-link">	
 				<div class="teaser-body">
+				<?php if($labelType && preg_match('/teaser-xlarge/',$class)): ?>
+					<?php include('includes/frontpage/teasers/labels.php'); ?>
+				<?php endif; ?>
+
+				<?php if($labelType && preg_match('/teaser-xxlarge/',$class)): ?>
+					<?php include('includes/frontpage/teasers/labels.php'); ?>
+				<?php endif; ?>
+				
 				<?php if($category || $teaserAd || $showTrumpet)  : ?>
 					<div class="teaser-footer">
 						
@@ -63,13 +71,7 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 					</div>
 				<?php endif; ?>
 
-				<?php if($labelType && preg_match('/teaser-xlarge/',$class)): ?>
-					<?php include('includes/frontpage/teasers/labels.php'); ?>
-				<?php endif; ?>
-
-				<?php if($labelType && preg_match('/teaser-xxlarge/',$class)): ?>
-					<?php include('includes/frontpage/teasers/labels.php'); ?>
-				<?php endif; ?>
+				
 				
 
 				

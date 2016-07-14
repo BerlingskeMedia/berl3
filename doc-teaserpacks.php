@@ -299,7 +299,7 @@ if(isset($_GET["business"])) {
 			$teaserPack = '8';
 			$showPaywall = true;
 			$showRating = true;
-			
+			$showTrumpet = true;
 
 			$showAuthor = true;
 			include('includes/frontpage/teasers/teaser.php') ?>			
@@ -325,6 +325,7 @@ if(isset($_GET["business"])) {
 			$labelType = 'yellow';
 			$labelText = 'Breaking';
 			$showAuthor = true;
+			$showTrumpet = true;
 			include('includes/frontpage/teasers/teaser.php') ?>			
 		</div>
 	</div>
