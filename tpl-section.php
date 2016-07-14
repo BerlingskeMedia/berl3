@@ -19,6 +19,7 @@ if(isset($_GET["top"])) {
 if(isset($_GET["business"])) {
 	$siteBusiness = true;
 }
+$showDate = true;
 ?>
 
 

@@ -175,17 +175,23 @@
 
 						<? endwhile ?>
 
-						<?php
-						$imgW='220'; 
-						$imgW='220'; 
-						$showImg = '1';
-						$class = 'teaser-img-right  teaser-small teaser-theme-trade item-teaser-bt ';
-						$imgRatio = '16:9';
-						$imgSrc = '/landscape';
-						$showSummary = true;
-						$teaserAd = true;
+						<?php if($template !== 'corrections'): ?>
+							<? while (dumb_luck("2")): ?>
+							<?php
+							$imgW='220'; 
+							$imgW='220'; 
+							$showImg = '1';
+							$class = 'teaser-img-right  teaser-small teaser-theme-trade item-teaser-bt ';
+							$imgRatio = '16:9';
+							$imgSrc = '/landscape';
+							$showSummary = true;
+							$teaserAd = true;
 
-						include('includes/frontpage/teasers/teaser.php') ?>
+							include('includes/frontpage/teasers/teaser.php') ?>
+							<? endwhile ?>
+						<?php endif; ?>
+
+
 
 					<?php elseif ($template === 'searchresult'): ?>
 
@@ -270,6 +276,7 @@
 						$teaserPack = false;
 						include('includes/frontpage/teasers/teaser.php') ?>
 						
+						<? while (dumb_luck("2")): ?>
 						<?php
 						$imgW='220'; 
 						$imgW='220'; 
@@ -281,6 +288,7 @@
 						$teaserAd = true;
 
 						include('includes/frontpage/teasers/teaser.php') ?>
+						<? endwhile ?>
 					
 					<?php endif; ?>
 					
@@ -330,7 +338,11 @@
 							
 						include('includes/list-news.php'); ?>
 
-						<div style="width: 300px; height: 250px;" class="demo-banner hidden-sm-down">Square_2 sticky</div>
+						
+							<div style="width: 300px; height: 250px;" class="demo-banner hidden-sm-down mb">Square_2 sticky</div>
+						
+						
+						
 			</div>
 
 			

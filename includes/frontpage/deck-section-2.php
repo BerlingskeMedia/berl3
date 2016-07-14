@@ -73,6 +73,7 @@ $labelText = false;
 
 						<? endwhile ?>
 
+
 					
 
 				</div>
@@ -96,7 +97,14 @@ $labelText = false;
 			
 		<div class="row">
 			<div class="col-lg-12 col-md-6 col-sm-12">
-				<div style="width: 300px; height: 250px;" class="demo-banner hidden-sm-down mb">Square_3 sticky</div>
+				<?php if(!$template): ?>
+					<div style="width: 300px; height: 250px;" class="demo-banner hidden-sm-down mb">Square_marketing_2</div>
+				<?php else: ?>
+					<div style="width: 300px; height: 250px;" class="demo-banner hidden-sm-down mb">Square_3 sticky</div>
+				<?php endif; ?>
+				<?php if(!$template): ?>
+					<div style="width: 300px; height: 600px;" class="demo-banner hidden-sm-down mb">Jobindex</div>
+				<?php endif; ?>
 			</div>
 
 			

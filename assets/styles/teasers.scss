@@ -125,7 +125,9 @@
 		display: none;
 	}
 }
-
+.search-summary {
+	margin-bottom: .4rem;
+}
 .related-header {
 	.subscriber-notice {
 		display: none
@@ -429,9 +431,14 @@
 }
 
 .teaser-date {
-	float: right;
+	float: left;
+	margin-right: .625rem;
 	&+ .subscriber-notice {
 		float: left;
+		&:before {
+			content: '|';
+			margin-right: .6rem;
+		}
 	}
 }
 
