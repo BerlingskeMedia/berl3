@@ -389,17 +389,17 @@ if(isset($_GET["business"])) {
 				<div class="col-md-3"></div>
 				<div class="col-md-9">
 					<ul>
-						<li class="orange"><a href="tpl-section.php">Auto (default)</a></li>
+						<li class="green"><a href="tpl-section.php">Auto (default)</a></li>
 						<li class="red"><a href="#">Culture</a></li>
 						<li class="red"><a href="#">Politiko</a></li>
 						<li class="red"><a href="#">Opinion</a></li>
 
-						<li class="orange"><a href="tpl-section.php?template=corrections">Corrections ('Fejl og fakta')</a></li>
+						<li class="green"><a href="tpl-section.php?template=corrections">Corrections ('Fejl og fakta')</a></li>
 						<li class="red"><a href="#">Blog</a></li>
-						<li class="orange"><a href="tpl-section.php?template=topic">Topic page</a></li>
+						<li class="green"><a href="tpl-section.php?template=topic">Topic page</a></li>
 						<li class="red"><a href="tpl-author-overview.php">Author overview</a></li>
-						<li class="orange"><a href="tpl-section.php?template=author">Author profile</a></li>
-						<li class="orange"><a href="tpl-section.php?template=searchresult">Search result</a></li>
+						<li class="green"><a href="tpl-section.php?template=author">Author profile</a></li>
+						<li class="green"><a href="tpl-section.php?template=searchresult">Search result</a></li>
 					</ul>
 				</div>
 
