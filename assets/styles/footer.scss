@@ -44,8 +44,8 @@
 	border-top: $border-width solid rgba(255,255,255,.1);
 	border-bottom: $border-width solid rgba(255,255,255,.1);
 	padding: .625rem 0;
-	margin: $spacer;
-	@extend .mb;
+	margin: $spacer 0;
+
 
 	p {
 		margin: 0;
