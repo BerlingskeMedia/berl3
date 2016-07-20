@@ -173,6 +173,11 @@
 		$(this).closest('.overlay').removeClass('show-me');
 	});
 
+	// scroll to top - used in footer
+
+	$('.top-link').click(function(){
+		$("html, body").animate({ scrollTop: 0 }, 600);
+	});
 
 
 })(jQuery); 
