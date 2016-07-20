@@ -52,7 +52,9 @@ $btn-circle-size: 2.2rem;
 		border-color: rgba(255,255,255,.4);
 	}
 }
-
+.footer-logo {
+	max-width: 10rem;
+}
 .social-buttons {
 	border-top: $border-width solid rgba(255,255,255,.1);
 	border-bottom: $border-width solid rgba(255,255,255,.1);
