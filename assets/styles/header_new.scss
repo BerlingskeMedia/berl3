@@ -598,9 +598,14 @@ body.default-header {
 	
 	[class*="tools-menu"],
 	.default-header .header-sticky,
-	
 	.header-sticky ul {
 		height: $subheaderHeight;
+	}
+	.tools-menu-left {
+		left: 0;
+	}
+	.tools-menu-right {
+		right: 0;
 	}
 
 	.site-header-front-desktop .site-logo {
