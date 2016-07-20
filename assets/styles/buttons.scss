@@ -169,7 +169,23 @@ fieldset[disabled] a.btn {
   border-width: .15rem;
 }
 
-
+$btn-circle-size: 2.2rem;
+.btn-circle {
+  border-radius: 50%;
+  border: $border-width solid rgba(255,255,255,.2);
+  text-align: center;
+  height: $btn-circle-size;
+  width: $btn-circle-size;
+  display: inline-block;
+  background-color: transparent;
+  line-height: $btn-circle-size;
+  margin-left: .3rem;
+  font-size: 1.1rem;
+  vertical-align: middle;
+  &:hover {
+    border-color: rgba(255,255,255,.4);
+  }
+}
 
 
 
