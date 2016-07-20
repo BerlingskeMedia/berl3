@@ -10,14 +10,13 @@
 						<a href="tpl-frontpage.php" class="site-logo">Berlingske</a>
 						
 						
-							<ul class="list-reset list-sm tools-menu-left ">
-								<li><a href="#" class="btn-topmenu-menu toggle-offcanvas"><i class="bicon-menu"></i> Indhold</a></li>
-								<li><a href="#" class="btn-topmenu-search toggle-search"><i class="bicon-search"></i> Søg</a></li>
-
+							<ul class="list-reset list-sm tools-menu-left">
+								<li><a href="#" class="topmenu-item-label toggle-offcanvas"><span class="btn-circle "><i class="bicon-menu"></i> <span class="btn-label">Indhold</span></span></a></li>
+								<li><a href="#" class="topmenu-item-label toggle-search"><span class="btn-circle"><i class="bicon-search-1"></i> <span class="btn-label">Søg</span></span></a></li>
 							</ul>
 							
 							<ul class="list-reset list-sm tools-menu-right ">
-								<li><a href="#" class="link-topmenu-cookies hidden-md-down"></a></li>
+								
 								<?php if($loggedIn): ?>
 								<li><a href="#" class="btn-topmenu-user toggle-user-menu"><? dummy("text@author") ?> <i class="bicon-user"></i></a>
 									<?php include('includes/user-menu.php'); ?>
@@ -73,6 +72,7 @@
 								<li><a href="tpl-section.php">Rejseliv</a></li>
 								<li><a href="tpl-section.php">Sport</a></li>
 								<li class="menu-shop"><a href="http://shop.berlingske.dk">Shop</a></li>
+								<li class="pull-right"><a href="#" class="link-topmenu-cookies hidden-md-down"></a></li>
 							</ul>
 							<?php if($loggedIn): ?>
 								<ul class="mobile-user-nav hidden-md-up pull-right" >
