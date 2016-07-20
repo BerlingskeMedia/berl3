@@ -20,11 +20,11 @@
 			<div class="row">
 				<div class="col-md-4 ">
 					<div class="row">
-						<div class="col-md-5 col-xs-5 col-xs-offset-4 col-md-offset-0">
+						<div class="col-md-5 col-sm-6 col-xs-5 col-xs-offset-4 col-md-offset-0">
 							<a href="/"><img src="/dist/images/vaabenskjold-footer.png" alt="" class="mb"></a>
 							<p class="text-center">Udgivet siden 1749</p>
 						</div>
-						<div class="col-md-7 col-xs-12 mb">
+						<div class="col-md-7 col-sm-6 col-xs-12 mb">
 							<p>Berlingske<br>
 							Pilestræde 34<br>
 							DK-1147 København K<br>
