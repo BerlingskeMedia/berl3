@@ -3,8 +3,10 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 ">
-					<span class="site-logo">Berlingske</span>
-					<a href="#" class="top-link">Til toppen <i class="bicon-angle-up"></i></a>
+					<div class="footer-top">
+						<a href="/" class="site-logo">Berlingske</span>
+						<a href="#" class="top-link">Til toppen <span class="btn-circle"><i class="bicon-angle-up"></i></span></a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -19,7 +21,7 @@
 				<div class="col-md-4 ">
 					<div class="row">
 						<div class="col-md-5 col-xs-5 col-xs-offset-4 col-md-offset-0">
-							<img src="/dist/images/vaabenskjold-footer.png" alt="" class="mb">
+							<a href="/"><img src="/dist/images/vaabenskjold-footer.png" alt="" class="mb"></a>
 							<p class="text-center">Udgivet siden 1749</p>
 						</div>
 						<div class="col-md-7 col-xs-12 mb">
@@ -47,7 +49,7 @@
 				
 				<div class="col-md-8">
 					<div class="row">
-						<div class="col-md-4  mb">
+						<div class="col-md-4 mb-1">
 								<strong>Om Berlingske</strong>
 								<ul class="footer-list">
 									<li><a href="#">Redaktionelt regnskab</a></li>
@@ -58,7 +60,7 @@
 								</ul>
 						</div>
 
-						<div class="col-md-4  mb">
+						<div class="col-md-4  mb-1">
 								<strong>Kundeservice</strong>
 								<ul class="footer-list">
 									<li><a href="#">Kontakt kundeservice</a></li>
@@ -68,7 +70,7 @@
 								</ul>
 						</div>
 
-						<div class="col-md-4  mb">
+						<div class="col-md-4  mb-1">
 								<strong>Tjenester</strong>
 								<ul class="footer-list">
 									<li><a href="#">Apps </a></li>
