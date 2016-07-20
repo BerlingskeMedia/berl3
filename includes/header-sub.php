@@ -14,9 +14,20 @@
 					<div class="col-xs-12 hidden-sm-down site-header-sub-desktop">
 						<nav>
 							<div class="left-side">
-								<ul class="list-reset list-sm tools-menu-left ">
-									<li><a href="#" class="btn-topmenu-menu toggle-offcanvas"><i class="bicon-menu"></i></a></li>
-									<li><a href="#" class="btn-topmenu-search toggle-search"><i class="bicon-search"></i></a></li>
+								<ul class="list-reset list-sm tools-menu-left">
+								
+									<li><a href="#" class="topmenu-item-label toggle-offcanvas">
+											<span class="btn-circle "><i class="bicon-menu"></i></span>
+											<span class="topmenu-label">Indhold</span>
+										</a>
+									</li>
+									
+									<li>
+										<a href="#" class="topmenu-item-label toggle-search">
+											<span class="btn-circle"><i class="bicon-search-1"></i></span>
+											<span class="topmenu-label">Søg</span>
+										</a>
+									</li>
 								</ul>
 								<a href="tpl-frontpage.php" class="site-logo">Berlingske</a>	
 							</div>
@@ -28,14 +39,22 @@
 							<?php endif; ?>
 						
 							<ul class="list-reset list-sm tools-menu-right ">
-								<li><a href="#" class="link-topmenu-cookies hidden-md-down"></a></li>
+															
 								<?php if($loggedIn): ?>
-									<li><a href="#" class="btn-topmenu-user toggle-user-menu"><? dummy("text@author") ?> <i class="bicon-user"></i></a>
+								<li><a href="#" class="topmenu-item-label btn-topmenu-user toggle-user-menu"><? dummy("text@author") ?> <i class="bicon-user"></i></a>
 									<?php include('includes/user-menu.php'); ?>
 								</li>
 								<?php else: ?>
-								<li><a href="/" class="btn-topmenu-subscription"> Køb abonnement</a></li>
-								<li><a href="#" class="btn-topmenu-login toggle-login"><i class="bicon-user"></i> Log ind</a></li>
+									<li><a href="/" class="topmenu-item"> Køb abonnement</a></li>
+									<li>
+										<a href="#" class="topmenu-item toggle-login">
+											<span class="btn-circle btn-circle-label">
+												<i class="bicon-user"></i>
+												<span class="topmenu-innerlabel">Log ind</span>
+											</span> 
+											
+										</a>
+									</li>							
 								<?php endif; ?>
 							</ul>
 						</nav>
