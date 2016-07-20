@@ -80,6 +80,7 @@
 									<li><a href="#">Sitemap</a></li>
 									<li><a href="#">Artikelarkiv</a></li>
 									<li><a href="#">Nyhedsbreve</a></li>
+									<li><a href="#">RSS</a></li>
 								</ul>
 						</div>
 					</div>
