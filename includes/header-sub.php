@@ -2,15 +2,13 @@
 
 
 
-
-
-
-<header class="site-header">
+<header class="site-header" >
 
 	<div class="header-sticky">
 		<div class="sticky-inner">
 			<div class="container">
 				<div class="row">
+					
 					<div class="col-xs-12 hidden-sm-down site-header-sub-desktop">
 						<nav>
 							<div class="left-side">
@@ -60,18 +58,34 @@
 						</nav>
 					</div>
 					
-					<div class="col-xs-12 hidden-md-up site-header-mobile">
-						<nav>
-							<a href="tpl-frontpage.php" class="site-logo">Berlingske</a>	
-							<ul class="list-reset list-sm tools-menu-left ">
-								<li><a href="#" class="btn-topmenu-menu toggle-offcanvas"><i class="bicon-menu"></i></a></li>
-							</ul>
-							<ul class="list-reset list-sm tools-menu-right ">
-								<li><a href="#" class="btn-topmenu-search toggle-search"><i class="bicon-search"></i></a></li>
-							</ul>
-						</nav>
-					</div>
+					
+					
 
+						
+							<div class="hidden-md-up site-header-mobile">
+								<nav>
+									<a href="tpl-frontpage.php" class="site-logo">Berlingske</a>	
+									<ul class="list-reset list-sm tools-menu-left">
+										<li><a href="#" class="topmenu-item-label toggle-offcanvas">
+												<span class="btn-circle "><i class="bicon-menu"></i></span>
+												<span class="topmenu-label">Indhold</span>
+											</a>
+										</li>
+									</ul>
+
+									<ul class="list-reset list-sm tools-menu-right ">
+										<li>
+											<a href="#" class="topmenu-item-label toggle-search">
+												<span class="btn-circle"><i class="bicon-search-1"></i></span>
+												<span class="topmenu-label">Søg</span>
+											</a>
+										</li>
+									</ul>
+
+								</nav>
+							</div>
+					
+					
 					
 
 				</div>
