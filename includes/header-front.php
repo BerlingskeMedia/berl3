@@ -35,9 +35,12 @@
 								<?php else: ?>
 									<li><a href="/" class="topmenu-item"> Køb abonnement</a></li>
 									<li>
-										<a href="#" class="topmenu-item-label toggle-login">
-											<span class="btn-circle"><i class="bicon-user"></i></span> 
-											<span class="topmenu-label">Log ind</span>
+										<a href="#" class="topmenu-item toggle-login">
+											<span class="btn-circle btn-circle-label">
+												<i class="bicon-user"></i>
+												<span class="topmenu-innerlabel">Log ind</span>
+											</span> 
+											
 										</a>
 									</li>							
 								<?php endif; ?>
