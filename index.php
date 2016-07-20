@@ -159,7 +159,7 @@ if(isset($_GET["business"])) {
 				<div class="col-md-9">
 					<ul>
 						
-						<li class="red"><a href="#">Footer</a></li>
+						<li class="orange"><a href="doc-footer.php">Footer</a></li>
 					</ul>
 				</div>
 
