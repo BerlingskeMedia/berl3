@@ -3,64 +3,91 @@
 .site-footer {
 	@extend .font-s2;
 	font-size: .9rem;
-	
+	background-color: #222;
+	color: #999;
+	a {
+		color: #ddd;
+		&:hover {
+			color: #fff;
+			text-decoration: none;
+		};
+	}
 	.container {
 		background-color: transparent;
 	}
-
-	.checkbox {
-		font-size: .8rem;
-	}
-
-	ul {
-		list-style: none;
+	ul.footer-list {
 		padding-left: 0;
+		list-style: none;
+		&>li {
+			margin-bottom: .325rem;
+		}
 	}
-	li {
-		font-weight: 400;
-		margin-bottom: .6rem;
-		a {
-			
-			&:hover {
-				color: darken($body-link-color, 10%);
-			}
-		}		
-	}
-	i {
-		width: 1rem;
-		display: inline-block;
+
+}
+.btn-circle {
+	border-radius: 50%;
+	border: $border-width solid rgba(255,255,255,.2);
+	text-align: center;
+	height: 2.5rem;
+	width: 2.5rem;
+	display: inline-block;
+	background-color: transparent;
+	line-height: 2.5rem;
+	margin-left: .3rem;
+	font-size: 1.2rem;
+	&:hover {
+		border-color: rgba(255,255,255,.4);
 	}
 }
 
-.footer-top {
-	border-top: $border-width solid $border-color;
-	border-bottom : $border-width solid $border-color;
-	background-color: #222;
-	@extend .font-g1;
-	li {
-		padding-left: 0;
-		padding-right: 0;
+.social-buttons {
+	border-top: $border-width solid rgba(255,255,255,.1);
+	border-bottom: $border-width solid rgba(255,255,255,.1);
+	padding: .625rem 0;
+	margin: $spacer;
+	@extend .mb;
+
+	p {
 		margin: 0;
-		a {
-			line-height: 45px;
-			color: #fff;
-			padding: 0 .6rem;
-			&:hover {
-				color:#fff;
-				background-color: rgba(255,255,255,.1);
-			}
-		}
+	}
+}
+.divider {
+	padding: 0 .4rem;
+	color: #999;
+}
+.footer-top {
+	height: 3rem;
+	background-color: #000;
+	line-height: 3rem;
+	.site-logo {
+		color: #fff;
+		display: inline-block;
+		float: left;
+		font-size: 1.5rem;
+		line-height: 3rem;
+	}
+}
+.top-link {
+	display: inline-block;
+	line-height: 3rem;
+	float: right;
+	background-color: #222;
+	padding: 0 1rem;
+	font-weight: 700;
+	i {
+		font-size: 2rem;
+		float: right;
+		 margin-left: .425rem;
 	}
 }
 
 .footer-middle {
 	padding-bottom: $spacer;
 	padding-top: $spacer;
-	background-color: rgba(0,0,0,.05);
 }
 
 .footer-bottom {
-	background-color: rgba(0,0,0,.05);
+
 	.container {
 		padding-top: 1rem;
 		border-top: $border-width solid $border-color; 	
