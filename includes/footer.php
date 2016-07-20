@@ -5,7 +5,7 @@
 				<div class="col-xs-12 ">
 					
 						<a href="/" class="site-logo">Berlingske</a>
-						<a href="#" class="top-link">Til toppen <span class="btn-circle"><i class="bicon-angle-up"></i></span></a>
+						<!-- <a href="#" class="top-link">Til toppen <span class="btn-circle"><i class="bicon-angle-up"></i></span></a> -->
 					
 				</div>
 			</div>
