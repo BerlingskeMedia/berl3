@@ -39,7 +39,14 @@
 							<ul class="list-reset list-sm tools-menu-right ">
 															
 								<?php if($loggedIn): ?>
-								<li><a href="#" class="topmenu-item-label btn-topmenu-user toggle-user-menu"><? dummy("text@author") ?> <i class="bicon-user"></i></a>
+								<li>
+									<a href="#" class="topmenu-item toggle-user-menu">
+										<span class="btn-circle btn-circle-label btn-circle-label-clean">
+											<i class="bicon-user"></i>
+											<span class="topmenu-innerlabel"><? dummy("text@author") ?></span>
+										</span> 
+										
+									</a>
 									<?php include('includes/user-menu.php'); ?>
 								</li>
 								<?php else: ?>
@@ -62,7 +69,7 @@
 					
 
 						
-							<div class="hidden-md-up site-header-mobile">
+							<div class="col-xs-12 hidden-md-up site-header-mobile">
 								<nav>
 									<a href="tpl-frontpage.php" class="site-logo">Berlingske</a>	
 									<ul class="list-reset list-sm tools-menu-left">

@@ -181,9 +181,7 @@ body.default-header {
 		margin-right: $spacer;
 		margin-left: 1.5rem;
 		display: inline-block;
-		&:hover {
-			color: #000;
-		}
+		
 
 	}
 	.tools-menu-left {
@@ -195,16 +193,18 @@ body.default-header {
 	}
 }
 
+
 .site-header-front-mobile {
 	.site-logo {
 		font-size: 2.5rem;
 		line-height: $headerHeight;
 		&:hover {
 			text-decoration: none;
+			color: #000;
 		}
 	}
-	
 }
+
 
 
 
@@ -373,14 +373,13 @@ body.default-header {
 		overflow: hidden;
 		white-space: nowrap;
 		max-width: 150px;
-		padding-right: .7rem;
-		&:after {
+		padding-left: .7rem;
+		&:before {
 			content: '\e809';
 			font-family: b-icons;
-		
 			position: absolute;
 			top: 0;
-			right: 0;
+			left: 0;
 		}
 		
 		
@@ -604,6 +603,9 @@ body.default-header {
 		.site-logo {
 			font-size: 2rem;
 			line-height: $subheaderHeight;
+			&:hover {
+				color:#000;
+			}
 		}
 	}
 	
@@ -625,12 +627,12 @@ body.default-header {
 	.header-sticky ul {
 		height: $subheaderHeight;
 	}
-	/*.tools-menu-left {
+	.tools-menu-left {
 		left: 0;
 	}
 	.tools-menu-right {
 		right: 0;
-	}*/
+	}
 
 	.site-header-front-desktop .site-logo {
 		font-size: 2rem;
