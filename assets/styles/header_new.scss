@@ -29,18 +29,23 @@ $border: .063rem;
 	font-weight: 500;
 	text-transform: uppercase;
 	color: #888;
-	transition: color .2s ease;
+	
 	.btn-circle {
 		border-color: rgba(0,0,0,.1);
 		margin: 0;
 		vertical-align: middle;
-		
+		font-size: 1rem;
 	}
 	&:hover {
 		color: $col-blue-1;
 		text-decoration: none;
+		i {
+			color: $col-blue-1;
+
+		}
 		.btn-circle {
-			border-color: $col-blue-1;
+			border-color: rgba(0,0,0,.2);
+
 		}	
 
 	}
@@ -56,6 +61,12 @@ $border: .063rem;
 			vertical-align: middle;
 		}
 	}
+
+}
+.btn-circle-label-clean {
+	border-color: transparent!important;
+	padding: 0!important;
+
 }
 
 .topmenu-item-label {
@@ -203,8 +214,9 @@ body.default-header {
 .link-topmenu-cookies {
 	color: #999;
 	background: url(/dist/images/cookies.png) left center no-repeat;
-	background-size: 13px;width: 14px;
-	height: 14px;
+	background-size: 13px;
+	width: 14px;
+	height: 13px;
 
 }
 
@@ -233,9 +245,8 @@ body.default-header {
 			margin-right: 0;
 		}
 	}
-	/*.menu-shop {
-		font-weight: 500;
-	}*/
+	
+	
 	a {
 		display: block;
 		padding: 0 .4rem;
@@ -246,6 +257,10 @@ body.default-header {
 	}
 	.active a {
 		color: $col-blue-1;
+	}
+	.menu-cookie a {
+		line-height: $subheaderHeight;
+		display: inline-block;
 	}
 }
 .page-title {
@@ -338,12 +353,13 @@ body.default-header {
 	display: inline-block;
 	position: relative;
 	z-index: 100;
-	// max-width: 50%;
 	li {
 		float: left;
 		margin: 0;
 		padding: 0;
 		white-space: nowrap;
+		@extend .font-s2;
+		font-weight: 500;
 	}
 	a {
 		white-space: nowrap;
@@ -380,6 +396,7 @@ body.default-header {
 
 
 .user-menu-container {
+	@extend .font-s2;
 	border: $border-width solid $border-color;
 	background-color: #fff;
 	width: 16rem;
@@ -394,6 +411,8 @@ body.default-header {
 	transition-duration: .2s;
 	transform-origin: top right;
 	transform: scale(0);
+	font-weight: 500;
+	font-size: .8rem;
 
 	.toggle-user-menu {
 		color: #999;
@@ -422,6 +441,8 @@ body.default-header {
 		float: none;
 		text-align: left;
 		line-height: initial;
+		font-weight: 500;
+		font-size: .8rem;
 		&:first-child {
 			padding: 0 0 .4rem .4rem;
 			border-bottom: $border-width solid $border-color;
@@ -441,7 +462,7 @@ body.default-header {
 		display: block;
 		color: #999;
 	
-		padding: .4rem;
+		padding: .6rem .4rem;
 		&:hover {
 			
 			background-color: lighten(#eee, 5%);
@@ -604,12 +625,12 @@ body.default-header {
 	.header-sticky ul {
 		height: $subheaderHeight;
 	}
-	.tools-menu-left {
+	/*.tools-menu-left {
 		left: 0;
 	}
 	.tools-menu-right {
 		right: 0;
-	}
+	}*/
 
 	.site-header-front-desktop .site-logo {
 		font-size: 2rem;

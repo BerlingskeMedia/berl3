@@ -121,6 +121,7 @@
 								<li><a href="tpl-section.php">Kunst</a></li>
 								<li><a href="tpl-section.php">Satiren</a></li>
 								<li><a href="tpl-section.php">TV</a></li>
+								<li class="pull-right menu-cookie hidden-sm-down"><a href="#" class="link-topmenu-cookies "></a></li>
 								<?php else: ?>
 								<li class="main-section"><a href="tpl-section.php">Gå til <? dummy("text@b-cat") ?></a></li>
 								<li><a href="tpl-section.php">Investor</a></li>

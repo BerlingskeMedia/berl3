@@ -29,7 +29,14 @@
 							<ul class="list-reset list-sm tools-menu-right ">
 								
 								<?php if($loggedIn): ?>
-								<li><a href="#" class="topmenu-item-label btn-topmenu-user toggle-user-menu"><? dummy("text@author") ?> <i class="bicon-user"></i></a>
+								<li>
+									<a href="#" class="topmenu-item toggle-user-menu">
+										<span class="btn-circle btn-circle-label btn-circle-label-clean">
+											<i class="bicon-user"></i>
+											<span class="topmenu-innerlabel"><? dummy("text@author") ?></span>
+										</span> 
+										
+									</a>
 									<?php include('includes/user-menu.php'); ?>
 								</li>
 								<?php else: ?>
@@ -102,7 +109,7 @@
 								<li><a href="tpl-section.php">Rejseliv</a></li>
 								<li><a href="tpl-section.php">Sport</a></li>
 								<li class="menu-shop"><a href="http://shop.berlingske.dk">Shop</a></li>
-								<li class="pull-right"><a href="#" class="link-topmenu-cookies hidden-md-down"></a></li>
+								<li class="pull-right menu-cookie hidden-sm-down"><a href="#" class="link-topmenu-cookies "></a></li>
 							</ul>
 							<?php if($loggedIn): ?>
 								<ul class="mobile-user-nav hidden-md-up pull-right" >
