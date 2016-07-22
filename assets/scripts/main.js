@@ -3,7 +3,7 @@
 	var bodyClass = $('body');
 	var sticky_navigation_offset_top = 0;
 
-	$('.toggle-offcanvas').click(function(e){
+	$('.toggle-offcanvas, .close-offcanvas').click(function(e){
 		e.preventDefault();
 		$(bodyClass).toggleClass('show-offcanvas');
 	});
