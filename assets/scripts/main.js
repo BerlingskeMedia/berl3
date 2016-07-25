@@ -12,9 +12,9 @@
 		var showMenu = $('.show-offcanvas');
 		var menuHeight = $('.sticky-inner').height();
 		var winHeight = $(window).height();
-
+		console.log(winHeight);
 		if (menuHeight > winHeight && showMenu.length ) {
-			$('.offcanvas-menu').css('height', winHeight + 40);
+			$('.offcanvas-menu').css('height', winHeight - 40);
 		} else {
 			$('.offcanvas-menu').css('height', 'auto');
 		}

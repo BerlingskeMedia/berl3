@@ -4,22 +4,19 @@
 .offcanvas-menu {
 	text-align: left;
 	background-color: $background-color;
-    padding: 0;
-    position: relative;
-    display: none;
-    max-height: 100%;
-    overflow-x: hidden;
-    overflow-y: auto;
-    /*-webkit-overflow-scroll: touch;*/
-    -webkit-overflow-scrolling: touch;
+	padding: 0;
+	position: relative;
+	display: none;
+	max-height: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
 	-ms-overflow-style: -ms-autohiding-scrollbar;
-    -webkit-font-smoothing: subpixel-antialiased;
-    /*border-top: $border-width solid $border-color;*/
-    /*transform: translateY(-100%);*/
-    transition: transform .2s ease-out;
-    z-index: 28;
-    box-shadow: 0 3px 3px rgba(0,0,0,.2);
-    padding-bottom: 2rem;
+	-webkit-font-smoothing: subpixel-antialiased;
+	transition: transform .2s ease-out;
+	z-index: 28;
+	box-shadow: 0 3px 3px rgba(0,0,0,.2);
+	padding-bottom: 3rem;
 
 }
 
@@ -32,10 +29,9 @@
 .show-offcanvas {	
 	.offcanvas-menu {
 		display: block;
-		/*transform: translateY(0);*/
 	}
 	.site-logo,
-	[class*="tools-menu"] a:not(.btn-topmenu-menu) {
+	[class*="tools-menu"] a:not(.toggle-offcanvas) {
 		opacity: .2;
 	}
 }
