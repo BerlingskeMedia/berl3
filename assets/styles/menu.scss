@@ -10,7 +10,9 @@
     max-height: 100%;
     overflow-x: hidden;
     overflow-y: scroll;
-    -webkit-overflow-scroll: touch;
+    /*-webkit-overflow-scroll: touch;*/
+    -webkit-overflow-scrolling: touch;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
     -webkit-font-smoothing: subpixel-antialiased;
     /*border-top: $border-width solid $border-color;*/
     /*transform: translateY(-100%);*/
