@@ -97,8 +97,10 @@
 
 				</div>
 			</div>
+			<?php include('includes/offcanvas-menu.php'); ?>
 		</div>
 		<?php include('includes/search.php'); ?>
+
 	</div>	
 		
 	<?php // include('includes/oneliners-php') ?>
@@ -162,9 +164,13 @@
 	</div>
 <?php endif; ?>
 
+
+
 <?php if(!$templateLongread): ?>
 	<?php include('includes/marketing-header.php'); ?>
 <?php endif; ?>
+
+
 
 </header>
 

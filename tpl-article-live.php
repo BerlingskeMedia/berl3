@@ -49,7 +49,7 @@ if(isset($_GET["business"])) {
 </div>
 
 <div class="main-wrapper">
-<?php include('includes/offcanvas-menu.php'); ?>
+
 
 
 <?php include('includes/site-header.php'); ?>

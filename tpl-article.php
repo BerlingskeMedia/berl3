@@ -26,7 +26,7 @@
 
 
 <div class="main-wrapper">
-<?php include('includes/offcanvas-menu.php'); ?>
+
 
 
 <?php include('includes/header-sub.php'); ?>

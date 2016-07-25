@@ -1,33 +1,27 @@
 <div class="offcanvas-menu">
 
-	<div class="menu-topbar">
-		<a href="#" class="toggle-offcanvas"><i class="bicon-cancel"></i></a>
-	</div>	
-	
-	
-
-	<div class="colophone small ">
-			<ul>
-				<li>
-					<a href="#">Om Berlingske</a>
-				</li>
-				<li>
-					<a href="#">Tip redaktionen</a>
-				</li>
-				<li>
-					<a href="#">E-avisen</a>
-				</li>
-				<li>
-					<a href="#">Kundeservice</a>
-				</li>
-				<li>
-					<a href="#">Kontakt</a>
-				</li>
-				<li>
-					<a href="#">Vores historie</a>
-				</li>
-
-			</ul>
-		
+	<!-- <div class="offcanvas-top">
+		<a href="#" class="btn-circle toggle-offcanvas"><i class="bicon-cancel"></i></a>
+	</div>	 -->
+	<div class="container">
+		<div class="col-xs-12">
+			<nav class="sitemap">
+				<ul class="sitemap-parent">
+					<? while (dumb_luck("7")): ?>
+					<li>
+						<a href="tpl-section.php"><? dummy("text@category") ?></a>
+						<ul class="sitemap-child">
+							<? while (dumb_luck("3-9")): ?>
+							<li><a href="tpl-section.php"><? dummy("text@category") ?></a></li>
+							<? endwhile ?>
+						</ul>
+					</li>
+					<? endwhile ?>
+				</ul>
+			</nav>		
+		</div>
 	</div>
+	
+
+	
 </div><!-- offcanvas --> 

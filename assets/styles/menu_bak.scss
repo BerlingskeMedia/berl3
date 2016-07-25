@@ -4,25 +4,41 @@ $menu-width-sm: 18rem;
 
 
 .offcanvas-menu {
-	text-align: left;
+	position: fixed;
+	padding: 0;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	width: $menu-width-lg;
 	background-color: $background-color;
-    padding: 0 0 20px;
-    position: relative;
-    display: none;
-    max-height: 100%;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    -webkit-overflow-scroll: touch;
-    -webkit-font-smoothing: subpixel-antialiased;
-    /*transform: translateY(-100%);*/
-    transition: transform .2s ease-out;
-    z-index: 28;
+	z-index: 99999;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	transform: translate3d(-$menu-width-lg,0,0);	
+	-webkit-backface-visibility: hidden;
+	-webkit-overflow-scrolling: touch;
+	transition: all .2s ease-in;
+	background-color: $background-color;
+}
+.main-wrapper {
+	// transition: all .3s ease-out;
 }
 
-.show-offcanvas {	
+.show-offcanvas {
+
+	.close-offcanvas {
+		// display: block;
+	}
+	.main-wrapper {
+		/*transform: translate3d(18rem,0,0);
+		overflow-x: hidden;
+		overflow-y: scroll;*/
+	}
 	.offcanvas-menu {
-		display: block;
-		/*transform: translateY(0);*/
+		
+		transform: translate3d(0,0,0);
+		
 	}
 }
 
@@ -76,29 +92,20 @@ $menu-width-sm: 18rem;
 }
 
 .sitemap-parent {
-
 	&> li {
-		padding-left: 15rem;
-		position: relative;
 		clear: left;
 		display: block;
 		margin-bottom: $spacer;
-		border-top: 1px solid #ddd;
 		
 		> a {
 			font-weight: normal;
-			@extend .font-sans-alt;
-			padding: 0 .625rem;
+			@extend .font-sans-alt;		
+			padding: .625rem .625rem .325rem .625rem;
 			display: block;
-			position: absolute;
-			left: 0;
-			top: 0;
-			
+			border-top: 1px solid #ddd;
 			font-size: 1.4rem;
 			text-transform: uppercase;
 			color: $col-blue-1;
-			width: 20%;
-			float: left;
 			&:after {
 				content: '\e801';
 				font-family: b-icons;
@@ -113,8 +120,7 @@ $menu-width-sm: 18rem;
 }
 
 .sitemap-child {
-	width: 80%;
-	float: left;
+	
 	@extend .clearfix;
 	> li {
 		font-weight: 400;
@@ -124,8 +130,11 @@ $menu-width-sm: 18rem;
 }
 
 @include media-breakpoint-up(lg) {
-	
-	
+	.sitemap-child {
+		> li {
+			width: 33.333333%;
+		}
+	}
 }
 @include media-breakpoint-down(md) {
 	.offcanvas-menu {

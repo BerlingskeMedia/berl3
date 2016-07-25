@@ -83,8 +83,10 @@
 
 				</div>
 			</div>
+			<?php include('includes/offcanvas-menu.php'); ?>
 		</div>
 		<?php include('includes/search.php'); ?>
+
 	</div>	
 		
 	<?php // include('includes/oneliners-php') ?>
@@ -129,8 +131,12 @@
 			</div>
 		</div>	
 	</div>
+	
+	
 
 	<?php include('includes/marketing-header.php'); ?>
+
+
 
 </header>
 
