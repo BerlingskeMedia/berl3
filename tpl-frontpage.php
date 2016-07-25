@@ -42,7 +42,7 @@ if(isset($_GET["business"])) {
 
 
 <div class="main-wrapper">
-<?php include('includes/offcanvas-menu.php'); ?>
+
 
 <?php if($siteBusiness): ?>
 	<?php include('includes/header-sub.php'); ?>

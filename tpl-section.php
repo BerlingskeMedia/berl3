@@ -43,7 +43,7 @@ $showDate = true;
 
 
 <div class="main-wrapper">
-<?php include('includes/offcanvas-menu.php'); ?>
+
 
 <?php if(!$template): ?>
 	<?php include('includes/header-sub.php'); ?>
