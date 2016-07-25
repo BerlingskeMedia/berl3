@@ -5,11 +5,15 @@
 
 
 	
+	
+
 
 	function menuHeight() {
+		var showMenu = $('.show-offcanvas');
 		var menuHeight = $('.sticky-inner').height();
 		var winHeight = $(window).height();
-		if (menuHeight > winHeight ) {
+
+		if (menuHeight > winHeight && showMenu.length ) {
 			$('.offcanvas-menu').css('height', winHeight);
 		} else {
 			$('.offcanvas-menu').css('height', 'auto');
@@ -26,6 +30,7 @@
 	$('.toggle-offcanvas, .close-offcanvas').click(function(e){
 			e.preventDefault();
 			$(bodyClass).toggleClass('show-offcanvas');
+			menuHeight();
 	});
 		
 	// Newsletter fold out breaking option

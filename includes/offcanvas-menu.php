@@ -1,8 +1,4 @@
 <div class="offcanvas-menu">
-
-	<!-- <div class="offcanvas-top">
-		<a href="#" class="btn-circle toggle-offcanvas"><i class="bicon-cancel"></i></a>
-	</div>	 -->
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
