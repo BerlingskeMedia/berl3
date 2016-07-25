@@ -3,9 +3,29 @@
 	var bodyClass = $('body');
 	var sticky_navigation_offset_top = 0;
 
+
+	
+
+	function menuHeight() {
+		var menuHeight = $('.sticky-inner').height();
+		var winHeight = $(window).height();
+		if (menuHeight > winHeight ) {
+			$('.offcanvas-menu').css('height', winHeight);
+		} else {
+			$('.offcanvas-menu').css('height', 'auto');
+		}
+	}
+
+	$( window ).resize(function() {
+		menuHeight();
+
+	});
+
+
+
 	$('.toggle-offcanvas, .close-offcanvas').click(function(e){
-		e.preventDefault();
-		$(bodyClass).toggleClass('show-offcanvas');
+			e.preventDefault();
+			$(bodyClass).toggleClass('show-offcanvas');
 	});
 		
 	// Newsletter fold out breaking option
@@ -179,6 +199,8 @@
 		$("html, body").animate({ scrollTop: 0 }, 600);
 	});
 
+
+	
 
 })(jQuery); 
 
