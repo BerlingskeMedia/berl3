@@ -34,7 +34,7 @@
 	.page-title,
 	.site-logo,
 	[class*="tools-menu"] a:not(.toggle-offcanvas) {
-		opacity: 0;
+		opacity: .2;
 	}
 	.toggle-offcanvas i:before {
 		content: '\e80f';
