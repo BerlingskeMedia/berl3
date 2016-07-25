@@ -32,7 +32,11 @@
 	}
 	.site-logo,
 	[class*="tools-menu"] a:not(.toggle-offcanvas) {
-		opacity: .2;
+		opacity: 0;
+	}
+	.toggle-offcanvas i:before {
+		content: '\e80f';
+		transform: scale(1);
 	}
 }
 
