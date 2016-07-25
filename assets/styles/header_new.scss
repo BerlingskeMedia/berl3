@@ -634,6 +634,17 @@ body.default-header {
 		right: 0;
 	}
 
+	/*.default-header .header-sticky,
+	.header-sticky,
+	[class*="tools-menu"],
+	.header-sticky ul {
+		height: $subheaderHeight;
+	}*/
+	[class*="btn-topmenu"] {
+		padding: .5rem .8rem .4rem;
+		margin: .45rem 0 0 0;
+	}
+
 	.site-header-front-desktop .site-logo {
 		font-size: 2rem;
 		line-height: 3rem;
