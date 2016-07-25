@@ -9,7 +9,7 @@
     display: none;
     max-height: 100%;
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: auto;
     /*-webkit-overflow-scroll: touch;*/
     -webkit-overflow-scrolling: touch;
 	-ms-overflow-style: -ms-autohiding-scrollbar;
@@ -19,11 +19,14 @@
     transition: transform .2s ease-out;
     z-index: 28;
     box-shadow: 0 3px 3px rgba(0,0,0,.2);
+    padding-bottom: 2rem;
+
 }
 
+.site-logo,
 [class*="tools-menu"] a {
 	transition: opacity .2s ease;
-	position: relative;
+	
 }
 
 .show-offcanvas {	
@@ -31,6 +34,7 @@
 		display: block;
 		/*transform: translateY(0);*/
 	}
+	.site-logo,
 	[class*="tools-menu"] a:not(.btn-topmenu-menu) {
 		opacity: .2;
 	}
@@ -131,7 +135,12 @@
 	li {
 		display: inline-block;
 		&+li {
-			margin-left: .4rem;
+			margin-left: .3rem;
+			a:before {
+				content: '-';
+				padding-right: .4rem;
+			}
+
 		}
 	}
 	a {
