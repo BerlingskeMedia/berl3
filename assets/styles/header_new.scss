@@ -623,8 +623,7 @@ body.default-header {
 	}
 	
 	[class*="tools-menu"],
-	.default-header .header-sticky,
-	.header-sticky ul {
+	.default-header .header-sticky {
 		height: $subheaderHeight;
 	}
 	.tools-menu-left {
@@ -634,12 +633,11 @@ body.default-header {
 		right: 0;
 	}
 
-	/*.default-header .header-sticky,
-	.header-sticky,
-	[class*="tools-menu"],
-	.header-sticky ul {
+	.default-header .header-sticky,
+	[class*="tools-menu"] {
 		height: $subheaderHeight;
-	}*/
+	}
+
 	[class*="btn-topmenu"] {
 		padding: .5rem .8rem .4rem;
 		margin: .45rem 0 0 0;
