@@ -16,20 +16,22 @@
 	transition: transform .2s ease-out;
 	z-index: 28;
 	box-shadow: 0 3px 3px rgba(0,0,0,.2);
-	padding-bottom: 3rem;
+	padding-bottom: 2rem;
 
 }
 
+.page-title,
 .site-logo,
 [class*="tools-menu"] a {
 	transition: opacity .2s ease;
-	
+	-webkit-backface-visibility: hidden;
 }
 
 .show-offcanvas {	
 	.offcanvas-menu {
 		display: block;
 	}
+	.page-title,
 	.site-logo,
 	[class*="tools-menu"] a:not(.toggle-offcanvas) {
 		opacity: 0;
@@ -91,7 +93,7 @@
 		position: relative;
 		box-shadow: inset 0 $border-width $border-color;
 		min-height: 2.25rem;
-		padding-left: 10rem;
+		padding-left: 12rem;
 		&:last-child {
 			border-bottom: $border-width solid $border-color;
 		}
@@ -108,7 +110,7 @@
 	color: $col-blue-1;
 	font-weight: normal;
 	line-height: 2.25rem;
-	width: 10rem;
+	width: 12rem;
 }
 
 .sitemap-child {
@@ -145,6 +147,9 @@
 	}
 	a {
 		color: #999;
+		&:hover {
+			color: $col-blue-1;
+		}
 	}
 }
 @include media-breakpoint-up(xl) {
@@ -177,13 +182,14 @@
 	}
 	.sitemap-child {
 		width: 100%;
+		margin-top: .3125;
 		li {
 			padding: 0 .625rem 0 0;
 			width: 50%;
 		}
 	}
 	.offcanvas-menu {
-		padding-bottom: 2rem;
+		padding-bottom: 10rem;
 	}
 	
 }
