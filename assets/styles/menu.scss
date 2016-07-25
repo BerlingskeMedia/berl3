@@ -1,6 +1,4 @@
-$menu-width-lg: 36rem;
-$menu-width-md: 24rem;
-$menu-width-sm: 18rem;
+
 
 
 .offcanvas-menu {
@@ -14,9 +12,11 @@ $menu-width-sm: 18rem;
     overflow-y: scroll;
     -webkit-overflow-scroll: touch;
     -webkit-font-smoothing: subpixel-antialiased;
+    /*border-top: $border-width solid $border-color;*/
     /*transform: translateY(-100%);*/
     transition: transform .2s ease-out;
     z-index: 28;
+    box-shadow: 0 3px 3px rgba(0,0,0,.2);
 }
 
 .show-offcanvas {	
@@ -55,16 +55,7 @@ $menu-width-sm: 18rem;
 		list-style: none;
 		padding: 0;
 	}
-	> ul {
-		margin: 0;	
-	}
-	li {
-		font-size: .9rem;
-		line-height: 2.2;
-	}
 	a {
-		line-height: 2.2;
-		padding: 0 .625rem;
 		display: block;
 		overflow: hidden;
 		text-overflow: ellipsis;
@@ -76,43 +67,37 @@ $menu-width-sm: 18rem;
 }
 
 .sitemap-parent {
-
 	> li {
 		display: block;
 		clear: both;
 		margin-right: 0;
 		overflow: hidden;
 		position: relative;
-		-webkit-box-shadow: inset 0 0.0625rem #ececec;
-		box-shadow: inset 0 0.0625rem #ececec;
+		box-shadow: inset 0 $border-width $border-color;
 		min-height: 2.25rem;
-		padding-left: 15rem;
-		
-
-		> a {
-			-webkit-box-sizing: border-box;
-			-moz-box-sizing: border-box;
-			box-sizing: border-box;
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			left: 0;
-			background: rgba(0,0,0,.05);
-			width: 15rem;
-			padding-left: 1.25rem;
-			@extend .font-sans-alt;
-			font-size: 1.2rem;
-			text-transform: uppercase;
-			color: $col-blue-1;
-			font-weight: normal;
-			line-height: 2.25rem;
+		padding-left: 10rem;
+		&:last-child {
+			border-bottom: $border-width solid $border-color;
 		}
 	}
 }
+.sitemap-parent-link {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	@extend .font-sans-alt;
+	font-size: 1.3rem;
+	text-transform: uppercase;
+	color: $col-blue-1;
+	font-weight: normal;
+	line-height: 2.25rem;
+	width: 10rem;
+}
 
 .sitemap-child {
-	width: 80%;
 	float: left;
+	margin: 0;	
 	@extend .clearfix;
 	> li {
 		font-weight: 400;
@@ -121,15 +106,38 @@ $menu-width-sm: 18rem;
 		padding-bottom: 0.1875rem;
 		padding-left: 0.625rem;
 		min-height: 2.25rem;
-		padding-top: 0.1875rem;
+		padding-top: 0.5875rem;
 		overflow: hidden;
+		font-size: .9rem;
 	}
 }
 
-@include media-breakpoint-up(lg) {
-	
-	
+
+.sitemap-small	{
+
+	font-size: .7rem;
+	li {
+		display: inline-block;
+		&+li {
+			margin-left: .4rem;
+		}
+	}
+	a {
+		color: #999;
+	}
 }
+@include media-breakpoint-up(xl) {
+	.sitemap-parent {
+		> li {
+			padding-left: 15rem;
+		}
+	}
+	.sitemap-parent-link {
+		width: 15rem;
+	}
+}
+
+
 @include media-breakpoint-down(md) {
 	.offcanvas-menu {
 		
@@ -137,8 +145,21 @@ $menu-width-sm: 18rem;
 	
 }
 @include media-breakpoint-down(sm) {
-	.offcanvas-menu {
-	
+	.sitemap-parent {
+		> li {
+			padding-left: 0;
+		}
+	}
+	.sitemap-parent-link {
+		width: 100%;
+		position: relative;
+	}
+	.sitemap-child {
+		width: 100%;
+		li {
+			padding: 0 .625rem 0 0;
+			width: 50%;
+		}
 	}
 	
 }
