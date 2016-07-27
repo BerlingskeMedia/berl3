@@ -9,7 +9,7 @@
 		var winHeight = $(window).height();
 
 		if (menuHeight > winHeight && showMenu.length) {
-			// $('.offcanvas-menu').scrollTo(0);
+
 			$('.offcanvas-menu').css('height', winHeight + 40);
 
 		
@@ -67,19 +67,19 @@
 	
 	window.disqus_shortname = 'btdkbond';
 
-	function check(){
-	    if ( !ds_loaded && $(window).scrollTop() + $(window).height() > top ) {
-	        $.ajax({
-	            type: "GET",
-	            url: "http://" + disqus_shortname + ".disqus.com/embed.js",
-	            dataType: "script",
-	            cache: true
-	        });
-	        ds_loaded = true;
-	    }
-	}
-	$(window).scroll(check);
-	check();
+	// function check(){
+	//     if ( !ds_loaded && $(window).scrollTop() + $(window).height() > top ) {
+	//         $.ajax({
+	//             type: "GET",
+	//             url: "http://" + disqus_shortname + ".disqus.com/embed.js",
+	//             dataType: "script",
+	//             cache: true
+	//         });
+	//         ds_loaded = true;
+	//     }
+	// }
+	// $(window).scroll(check);
+	// check();
 
 	$('.list-tabs').on('click', 'a:not(.active)', function(e){
 		var activeTab = $(this).data('menuid');
