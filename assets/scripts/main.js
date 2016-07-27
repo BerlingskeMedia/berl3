@@ -1,5 +1,5 @@
 (function($) {
-	// MISC VARS - STICKY HEADER ON SCROLL
+	// MISC VARS - STICKY HEADER
 	var bodyClass = $('body');
 	var sticky_navigation_offset_top = 0;
 
@@ -8,8 +8,8 @@
 		var menuHeight = $('.sticky-inner').height();
 		var winHeight = $(window).height();
 
-		if (menuHeight > winHeight && showMenu.length ) {
-			$('.offcanvas-menu').animate({ scrollTop: 0 }, 0);	
+		if (menuHeight > winHeight && showMenu.length) {
+			// $('.offcanvas-menu').scrollTo(0);
 			$('.offcanvas-menu').css('height', winHeight + 40);
 		
 		} else {
