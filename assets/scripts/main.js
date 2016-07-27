@@ -18,9 +18,9 @@
 		}
 	}
 
-	$( window ).resize(function() {
-		menuHeight();
-	});
+	// $( window ).resize(function() {
+	// 	menuHeight();
+	// });
 
 	$('.toggle-offcanvas').click(function(e){
 			e.preventDefault();
