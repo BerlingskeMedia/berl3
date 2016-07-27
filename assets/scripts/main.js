@@ -9,7 +9,7 @@
 		var winHeight = $(window).height();
 
 		if (menuHeight > winHeight && showMenu.length ) {
-			$('.offcanvas-menu').animate({ scrollTop: 0 }, "fast");	
+			$('.offcanvas-menu').animate({ scrollTop: 0 }, 0);	
 			$('.offcanvas-menu').css('height', winHeight + 40);
 			console.log('click');
 		}
