@@ -11,11 +11,10 @@
 		if (menuHeight > winHeight && showMenu.length ) {
 			$('.offcanvas-menu').animate({ scrollTop: 0 }, 0);	
 			$('.offcanvas-menu').css('height', winHeight + 40);
-			console.log('click');
+		
+		} else {
+		 	$('.offcanvas-menu').css('height', 'auto');
 		}
-		// } else {
-		// 	$('.offcanvas-menu').css('height', 'auto');
-		// }
 	}
 
 	$( window ).resize(function() {
