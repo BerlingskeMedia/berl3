@@ -31,8 +31,12 @@
 .show-offcanvas {	
 	height: 100%;
 	overflow: hidden;
+	position: fixed;
 	.offcanvas-menu {
 		display: block;
+	}
+	.sticky-inner {
+		height: 100%;
 	}
 	.page-title,
 	.site-logo,
