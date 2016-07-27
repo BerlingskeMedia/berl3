@@ -3,29 +3,24 @@
 	var bodyClass = $('body');
 	var sticky_navigation_offset_top = 0;
 
-
-	
-	
-
-
 	function menuHeight() {
 		var showMenu = $('.show-offcanvas');
 		var menuHeight = $('.sticky-inner').height();
 		var winHeight = $(window).height();
-		console.log(winHeight);
+
 		if (menuHeight > winHeight && showMenu.length ) {
+			$('.offcanvas-menu').animate({ scrollTop: 0 }, "fast");	
 			$('.offcanvas-menu').css('height', winHeight + 40);
-		} else {
-			$('.offcanvas-menu').css('height', 'auto');
+			console.log('click');
 		}
+		// } else {
+		// 	$('.offcanvas-menu').css('height', 'auto');
+		// }
 	}
 
 	$( window ).resize(function() {
 		menuHeight();
-
 	});
-
-
 
 	$('.toggle-offcanvas, .close-offcanvas').click(function(e){
 			e.preventDefault();
