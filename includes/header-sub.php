@@ -113,7 +113,10 @@
 									<a href="#" class="toggle-submenu"><? dummy("text@b-cat") ?> <i class="bicon-angle-down"></i></a>
 								</li>
 							<?php if(!$siteBusiness): ?>
-								<li class="main-section-link hidden-md-up"><a href="tpl-section.php">Gå til <? dummy("text@b-cat") ?></a><a class="toggle-submenu close-icon"><i class="bicon-cancel"></i></a></li>
+								<li class="main-section-link hidden-md-up">
+									<a href="tpl-section.php">Gå til [Section]</a>
+									<!-- <a class="toggle-submenu close-icon"><i class="bicon-cancel"></i></a> -->
+								</li>
 								<li><a href="tpl-section.php">Anmeldelser</a></li>
 								<li><a href="tpl-section.php">Vi anbefaler</a></li>
 								<li><a href="tpl-section.php">Musik</a></li>
