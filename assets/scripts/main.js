@@ -22,7 +22,7 @@
 		menuHeight();
 	});
 
-	$('.toggle-offcanvas, .close-offcanvas').click(function(e){
+	$('.toggle-offcanvas').click(function(e){
 			e.preventDefault();
 			$(bodyClass).toggleClass('show-offcanvas');
 			menuHeight();

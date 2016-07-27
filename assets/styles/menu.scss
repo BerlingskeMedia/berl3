@@ -28,10 +28,6 @@
 }
 
 .show-offcanvas {	
-	height: 100%;
-	overflow: hidden;
-	overflow-scrolling: none;
-	position: fixed;
 	
 	.offcanvas-menu {
 		display: block;
@@ -40,7 +36,7 @@
 	.page-title,
 	.site-logo,
 	[class*="tools-menu"] a:not(.toggle-offcanvas) {
-		opacity: .2;
+		opacity: 0;
 	}
 	.toggle-offcanvas i:before {
 		content: '\e80f';
@@ -85,6 +81,7 @@
 		white-space: nowrap;
 		&:hover{
 			text-decoration: none;
+			color: $col-blue-1;
 		}
 	}
 }
@@ -209,6 +206,10 @@
 		padding-bottom: 10rem;
 	}
 	.show-offcanvas {	
+		height: 100%;
+		overflow: hidden;
+		overflow-scrolling: auto;
+		position: fixed;
 		.offcanvas-menu {
 			display: block;
 			height: 500px;
