@@ -24,6 +24,7 @@ $border: .063rem;
 }*/
 
 [class*="topmenu-item"] {
+	text-decoration: none!important;
 	line-height: $headerHeight;
 	font-size: 0.688rem;
 	font-weight: 500;
