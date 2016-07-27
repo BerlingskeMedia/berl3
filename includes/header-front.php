@@ -11,7 +11,7 @@
 						
 						
 							<ul class="list-reset list-sm tools-menu-left ">
-								<li><a href="#" class="btn-topmenu-menu toggle-offcanvas"><i class="bicon-menu"></i> Indhold</a></li>
+								<li><a href="#" class="btn-topmenu-menu toggle-offcanvas"><b class="icon-menu"></b> Indhold</a></li>
 								<li><a href="#" class="btn-topmenu-search toggle-search"><i class="bicon-search"></i> Søg</a></li>
 
 							</ul>
