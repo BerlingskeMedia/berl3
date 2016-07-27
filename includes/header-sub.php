@@ -15,7 +15,7 @@
 						<nav>
 							<div class="left-side">
 								<ul class="list-reset list-sm tools-menu-left ">
-									<li><a href="#" class="btn-topmenu-menu toggle-offcanvas"><i class="bicon-menu"></i></a></li>
+									<li><a href="#" class="btn-topmenu-menu toggle-offcanvas"><b class="icon-menu"></b></a></li>
 									<li><a href="#" class="btn-topmenu-search toggle-search"><i class="bicon-search"></i></a></li>
 								</ul>
 								<a href="tpl-frontpage.php" class="site-logo">Berlingske</a>	
