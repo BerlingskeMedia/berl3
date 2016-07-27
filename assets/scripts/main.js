@@ -7,9 +7,11 @@
 		var showMenu = $('.show-offcanvas');
 		var menuHeight = $('.sticky-inner').height();
 		var winHeight = $(window).height();
-		console.log(winHeight);
+
 		if (menuHeight > winHeight && showMenu.length ) {
+			$('.offcanvas-menu').animate({ scrollTop: 0 }, "fast");	
 			$('.offcanvas-menu').css('height', winHeight + 40);
+			console.log('click');
 		}
 		// } else {
 		// 	$('.offcanvas-menu').css('height', 'auto');
