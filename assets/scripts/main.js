@@ -11,6 +11,7 @@
 		if (menuHeight > winHeight && showMenu.length) {
 			// $('.offcanvas-menu').scrollTo(0);
 			$('.offcanvas-menu').css('height', winHeight + 40);
+
 		
 		} else {
 		 	$('.offcanvas-menu').css('height', 'auto');
