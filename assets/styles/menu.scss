@@ -112,7 +112,7 @@
 	@extend .font-sans-alt;
 	font-size: 1.3rem;
 	text-transform: uppercase;
-	color: $col-blue-1;
+	color: #222;
 	font-weight: normal;
 	line-height: 2.25rem;
 	width: 12rem;
@@ -177,6 +177,12 @@
 	.sitemap-parent {
 		> li {
 			padding-left: 0;
+			min-height: initial;
+			margin-top: .625rem;
+			&:first-child {
+				box-shadow: none;
+				margin-top: 0;
+			}
 		}
 	}
 	.sitemap-parent-link {
