@@ -3,11 +3,6 @@
 	var bodyClass = $('body');
 	var sticky_navigation_offset_top = 0;
 
-
-	
-	
-
-
 	function menuHeight() {
 		var showMenu = $('.show-offcanvas');
 		var menuHeight = $('.sticky-inner').height();
@@ -15,17 +10,15 @@
 		console.log(winHeight);
 		if (menuHeight > winHeight && showMenu.length ) {
 			$('.offcanvas-menu').css('height', winHeight + 40);
-		} else {
-			$('.offcanvas-menu').css('height', 'auto');
 		}
+		// } else {
+		// 	$('.offcanvas-menu').css('height', 'auto');
+		// }
 	}
 
 	$( window ).resize(function() {
 		menuHeight();
-
 	});
-
-
 
 	$('.toggle-offcanvas, .close-offcanvas').click(function(e){
 			e.preventDefault();
