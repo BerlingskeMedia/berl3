@@ -6,7 +6,7 @@
 	background-color: $background-color;
 	border-top: $border-color solid $border-width;
 	padding: 0;
-	position: relative;
+	position: fixed;
 	display: none;
 	max-height: 100%;
 	overflow-x: hidden;
