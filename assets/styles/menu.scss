@@ -36,6 +36,7 @@
 	
 	.offcanvas-menu {
 		display: block;
+
 	}
 	.page-title,
 	.site-logo,
@@ -207,6 +208,12 @@
 	}
 	.offcanvas-menu {
 		padding-bottom: 10rem;
+	}
+	.show-offcanvas {	
+		.offcanvas-menu {
+			display: block;
+			height: 500px;
+		}
 	}
 	
 }
