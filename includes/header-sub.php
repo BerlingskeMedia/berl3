@@ -15,7 +15,7 @@
 								<ul class="list-reset list-sm tools-menu-left">
 								
 									<li><a href="#" class="topmenu-item-label toggle-offcanvas">
-											<span class="btn-circle "><i class="bicon-menu"></i></span>
+											<span class="btn-circle "><b class="icon-menu"></b></span>
 											<span class="topmenu-label">Indhold</span>
 										</a>
 									</li>
@@ -74,7 +74,7 @@
 									<a href="tpl-frontpage.php" class="site-logo">Berlingske</a>	
 									<ul class="list-reset list-sm tools-menu-left">
 										<li><a href="#" class="topmenu-item-label toggle-offcanvas">
-												<span class="btn-circle "><i class="bicon-menu"></i></span>
+												<span class="btn-circle "><b class="icon-menu"></b></span>
 												<span class="topmenu-label">Indhold</span>
 											</a>
 										</li>
