@@ -65,35 +65,29 @@
 						</nav>
 					</div>
 					
-					
-					
+					<div class="col-xs-12 hidden-md-up site-header-mobile">
+						<nav>
+							<a href="tpl-frontpage.php" class="site-logo">Berlingske</a>	
+							<ul class="list-reset list-sm tools-menu-left">
+								<li><a href="#" class="topmenu-item-label toggle-offcanvas">
+										<span class="btn-circle "><b class="icon-menu"></b></span>
+										<span class="topmenu-label">Indhold</span>
+									</a>
+								</li>
+							</ul>
 
-						
-							<div class="col-xs-12 hidden-md-up site-header-mobile">
-								<nav>
-									<a href="tpl-frontpage.php" class="site-logo">Berlingske</a>	
-									<ul class="list-reset list-sm tools-menu-left">
-										<li><a href="#" class="topmenu-item-label toggle-offcanvas">
-												<span class="btn-circle "><b class="icon-menu"></b></span>
-												<span class="topmenu-label">Indhold</span>
-											</a>
-										</li>
-									</ul>
 
-									<ul class="list-reset list-sm tools-menu-right ">
-										<li>
-											<a href="#" class="topmenu-item-label toggle-search">
-												<span class="btn-circle"><i class="bicon-search-1"></i></span>
-												<span class="topmenu-label">Søg</span>
-											</a>
-										</li>
-									</ul>
+							<ul class="list-reset list-sm tools-menu-right ">
+								<li>
+									<a href="#" class="topmenu-item-label toggle-search">
+										<span class="btn-circle"><i class="bicon-search-1"></i></span>
+										<span class="topmenu-label">Søg</span>
+									</a>
+								</li>
+							</ul>
 
-								</nav>
-							</div>
-					
-					
-					
+						</nav>
+					</div>
 
 				</div>
 			</div>
