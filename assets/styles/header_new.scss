@@ -37,18 +37,17 @@ $border: .063rem;
 		vertical-align: middle;
 		font-size: 1rem;
 	}
-	&:hover {
-		color: $col-blue-1;
+	&:hover, 
+	&:focus {
+		color: #555;
 		text-decoration: none;
 		i {
-			color: $col-blue-1;
+			color: #555;
 
 		}
 		.btn-circle {
 			border-color: rgba(0,0,0,.2);
-
 		}	
-
 	}
 	.btn-circle-label {
 		border-radius: 30rem;
