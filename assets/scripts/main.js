@@ -38,16 +38,6 @@
 	});
 	
 	
-	// Sticky example 2
-	// $('.stickem-container-ex2').stickem({
-	// 	offset: '60',
-	// 	item: '.sticky-ex2',
-	// 	stickClass: 'stickit-ex2',
-	// 	container: '.stickem-container-ex2'
-	// });
-
-
-	
 	// Load disquss comments
 	
 	var ds_loaded = false;
@@ -58,19 +48,19 @@
 	
 	window.disqus_shortname = 'btdkbond';
 
-	// function check(){
-	//     if ( !ds_loaded && $(window).scrollTop() + $(window).height() > top ) {
-	//         $.ajax({
-	//             type: "GET",
-	//             url: "http://" + disqus_shortname + ".disqus.com/embed.js",
-	//             dataType: "script",
-	//             cache: true
-	//         });
-	//         ds_loaded = true;
-	//     }
-	// }
-	// $(window).scroll(check);
-	// check();
+	function check(){
+	    if ( !ds_loaded && $(window).scrollTop() + $(window).height() > top ) {
+	        $.ajax({
+	            type: "GET",
+	            url: "http://" + disqus_shortname + ".disqus.com/embed.js",
+	            dataType: "script",
+	            cache: true
+	        });
+	        ds_loaded = true;
+	    }
+	}
+	$(window).scroll(check);
+	check();
 
 	$('.list-tabs').on('click', 'a:not(.active)', function(e){
 		var activeTab = $(this).data('menuid');
