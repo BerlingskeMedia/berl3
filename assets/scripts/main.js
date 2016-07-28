@@ -37,16 +37,6 @@
 	});
 	
 	
-	// Sticky example 2
-	// $('.stickem-container-ex2').stickem({
-	// 	offset: '60',
-	// 	item: '.sticky-ex2',
-	// 	stickClass: 'stickit-ex2',
-	// 	container: '.stickem-container-ex2'
-	// });
-
-
-	
 	// Load disquss comments
 	
 	var ds_loaded = false;
