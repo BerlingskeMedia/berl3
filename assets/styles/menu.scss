@@ -12,7 +12,6 @@
 	-ms-overflow-style: -ms-autohiding-scrollbar;
 	-webkit-font-smoothing: subpixel-antialiased;
 	transition: transform .2s ease-out;
-	z-index: 28;
 	box-shadow: 0 3px 3px rgba(0,0,0,.2);
 	padding: 1rem 0;
 	width: 100%;
@@ -206,11 +205,7 @@
 		height: 100%;
 		overflow: hidden;
 		overflow-scrolling: auto;
-		
-		.offcanvas-menu {
-			display: block;
-		}
+		position: fixed;
 	}
-	
 }
 
