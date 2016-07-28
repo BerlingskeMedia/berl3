@@ -5,16 +5,13 @@
 
 	function menuHeight() {
 		var showMenu = $('.show-offcanvas');
-		var menuHeight = $('.sticky-inner').height();
+		var menuHeight = $('.offcanvas-menu').height();
 		var winHeight = $(window).height();
 
-		console.log(menuHeight, winHeight, showMenu.length, (menuHeight > winHeight && showMenu.length));
+		console.log((menuHeight + $('.sticky-inner > .container').height() > winHeight) && showMenu.length);
 
-		if (menuHeight > winHeight && showMenu.length) {
-
+		if (menuHeight + $('.sticky-inner > .container').height() > winHeight && showMenu.length) {
 			$('.offcanvas-menu').css('height', winHeight + 40);
-
-		
 		} else {
 		 	$('.offcanvas-menu').css('height', 'auto');
 		}
@@ -26,10 +23,10 @@
 
 	$('.toggle-offcanvas').click(function(e){
 			e.preventDefault();
-			$('.offcanvas-menu').toggle();
-			$('.canvas-main').toggle();
-			//$(bodyClass).toggleClass('show-offcanvas');
-			//menuHeight();
+			//$('.offcanvas-menu').toggle();
+			// $('.canvas-main').toggle();
+			$(bodyClass).toggleClass('show-offcanvas');
+			menuHeight();
 	});
 		
 	// Newsletter fold out breaking option
