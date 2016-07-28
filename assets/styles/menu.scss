@@ -4,11 +4,8 @@
 .offcanvas-menu {
 	text-align: left;
 	background-color: $background-color;
-	border-top: $border-color solid $border-width;
-	padding: 0;
-	position: relative;
+	position: fixed;
 	display: none;
-	max-height: 100%;
 	overflow-x: hidden;
 	overflow-y: auto;
 	-webkit-overflow-scrolling: touch;
@@ -17,9 +14,10 @@
 	transition: transform .2s ease-out;
 	z-index: 28;
 	box-shadow: 0 3px 3px rgba(0,0,0,.2);
-	padding-bottom: 2rem;
-	text-decoration: none!important
-
+	padding: 1rem 0;
+	width: 100%;
+	margin-top: -$border-width;
+	z-index: 10000;
 }
 
 .page-title,

@@ -1,30 +1,20 @@
 (function($) {
 	// MISC VARS - STICKY HEADER
 	var bodyClass = $('body');
-	var sticky_navigation_offset_top = 0;
 
+	// if screen width is less that 767px, we need to give the offcanvas menu a specific height in order to be able to scroll in the menu
 	function menuHeight() {
-		var showMenu = $('.show-offcanvas');
-		var menuHeight = $('.offcanvas-menu').height();
+
 		var winHeight = $(window).height();
-
-		console.log((menuHeight + $('.sticky-inner > .container').height() > winHeight) && showMenu.length);
-
-		if (menuHeight + $('.sticky-inner > .container').height() > winHeight && showMenu.length) {
-			$('.offcanvas-menu').css('height', winHeight + 40);
-		} else {
-		 	$('.offcanvas-menu').css('height', 'auto');
+		var isMobile = $(window).width();
+		if(isMobile < 767) {
+			$('.offcanvas-menu').scrollTop(0);
+			$('.offcanvas-menu').css('height', winHeight );	
 		}
 	}
 
-	// $( window ).resize(function() {
-	// 	menuHeight();
-	// });
-
 	$('.toggle-offcanvas').click(function(e){
 			e.preventDefault();
-			//$('.offcanvas-menu').toggle();
-			// $('.canvas-main').toggle();
 			$(bodyClass).toggleClass('show-offcanvas');
 			menuHeight();
 	});

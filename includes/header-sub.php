@@ -1,9 +1,6 @@
 
-
-
-
-<header class="site-header" >
-
+<?php include('includes/offcanvas-menu.php'); ?>
+<header class="site-header">
 	<div class="header-sticky">
 		<div class="sticky-inner">
 			<div class="container">
@@ -91,7 +88,6 @@
 
 				</div>
 			</div>
-			<?php include('includes/offcanvas-menu.php'); ?>
 		</div>
 		<?php include('includes/search.php'); ?>
 
