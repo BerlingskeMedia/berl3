@@ -1,3 +1,4 @@
+<?php include('includes/offcanvas-menu.php'); ?>
 <header class="site-header">
 
 	<div class="header-sticky">
@@ -47,7 +48,7 @@
 
 				</div>
 			</div>
-			<?php include('includes/offcanvas-menu.php'); ?>
+			
 		</div>
 		<?php include('includes/search.php'); ?>
 
