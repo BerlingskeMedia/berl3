@@ -11,14 +11,14 @@
 							<div class="left-side">
 								<ul class="list-reset list-sm tools-menu-left">
 								
-									<li><a href="#" class="topmenu-item-label toggle-offcanvas">
+									<li><a href="#" class="topmenu-item-label toggle-offcanvas hidden-label">
 											<span class="btn-circle "><b class="icon-menu"></b></span>
 											<span class="topmenu-label">Indhold</span>
 										</a>
 									</li>
 									
 									<li>
-										<a href="#" class="topmenu-item-label toggle-search">
+										<a href="#" class="topmenu-item-label toggle-search hidden-label">
 											<span class="btn-circle"><i class="bicon-search-1"></i></span>
 											<span class="topmenu-label">Søg</span>
 										</a>
@@ -36,27 +36,19 @@
 							<ul class="list-reset list-sm tools-menu-right ">
 															
 								<?php if($loggedIn): ?>
-								<li>
-									<a href="#" class="topmenu-item toggle-user-menu">
-										<span class="btn-circle btn-circle-label btn-circle-label-clean">
-											<i class="bicon-user"></i>
-											<span class="topmenu-innerlabel"><? dummy("text@author") ?></span>
-										</span> 
-										
+								<li><a href="#" class="topmenu-item-label toggle-user-menu">
+										<span class="btn-circle "><b class="bicon-user"></b></span>
+										<span class="topmenu-label"><? dummy("text@author") ?></span>
 									</a>
 									<?php include('includes/user-menu.php'); ?>
 								</li>
 								<?php else: ?>
 									<li><a href="/" class="topmenu-item"> Køb abonnement</a></li>
-									<li>
-										<a href="#" class="topmenu-item toggle-login">
-											<span class="btn-circle btn-circle-label">
-												<i class="bicon-user"></i>
-												<span class="topmenu-innerlabel">Log ind</span>
-											</span> 
-											
+									<li><a href="#" class="topmenu-item-label toggle-login">
+											<span class="btn-circle "><b class="bicon-user"></b></span>
+											<span class="topmenu-label">Log ind</span>
 										</a>
-									</li>							
+									</li>
 								<?php endif; ?>
 							</ul>
 						</nav>

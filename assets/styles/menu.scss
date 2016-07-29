@@ -54,17 +54,6 @@
 	transform: opacity .2s ease;
 }
 
-.offcanvas-top {
-	height: $subheaderHeight;
-	border-bottom: $border-width solid $border-color;
-	text-align: right;
-	.btn-circle {
-		margin: .45rem .625rem 0 0;
-		border-color: rgba(0,0,0,.1);
-		font-size: .8rem;
-	}
-}
-
 .sitemap {
 	@extend .font-g1;
 	ul {

@@ -32,7 +32,7 @@ $border: .063rem;
 	color: #888;
 	
 	.btn-circle {
-		border-color: rgba(0,0,0,.1);
+		border-color: transparent;
 		margin: 0;
 		vertical-align: middle;
 		font-size: 1rem;
@@ -46,10 +46,10 @@ $border: .063rem;
 
 		}
 		.btn-circle {
-			border-color: rgba(0,0,0,.2);
+			// border-color: rgba(0,0,0,.2);
 		}	
 	}
-	.btn-circle-label {
+	/*.btn-circle-label {
 		border-radius: 30rem;
 		width: auto;
 		padding: 0 1rem;
@@ -60,9 +60,16 @@ $border: .063rem;
 			margin-right: .2rem;
 			vertical-align: middle;
 		}
-	}
+	}*/
 
 }
+.toggle-user-menu,
+.toggle-login {
+	.btn-circle {
+		margin-right: -7px;
+	}
+}
+
 .btn-circle-label-clean {
 	border-color: transparent!important;
 	padding: 0!important;
@@ -111,11 +118,11 @@ body.default-header {
 	@extend .font-s1;
 	line-height: 1;
 	font-weight: 900;
-	color: #222;
+	color: #000;
 	&:hover, 
 	&:focus {
 		text-decoration: none;
-
+		color: #000;
 	}
 }
 
@@ -152,13 +159,14 @@ body.default-header {
 		font-size: 2.5rem;
 		line-height: $headerHeight;
 		height: $headerHeight;
-		&:hover {
-			text-decoration: none;
-			color: #000;
-		}
+
 	}
 }
-
+.hidden-label {
+	.topmenu-label {
+		display: none;
+	}
+}
 .site-header-sub-desktop {
 	[class*="topmenu-item"] {
 		line-height: $subheaderHeight;
@@ -166,9 +174,7 @@ body.default-header {
 	.tools-menu {
 		height: $subheaderHeight;
 	}
-	.topmenu-label {
-		display: none;
-	}
+	
 
 	.left-side {
 		position: absolute;
@@ -180,9 +186,10 @@ body.default-header {
 		margin-top: .2rem;
 		margin-right: $spacer;
 		margin-left: 1.5rem;
-		display: inline-block;
-		
-
+		display: inline-block;	
+		&:hover {
+			color: #000;
+		}
 	}
 	.tools-menu-left {
 		position: relative;
@@ -497,11 +504,11 @@ body.default-header {
 	input[type="search"] {
 		border: 0;
 		color: #222;
-		border-bottom: .2rem solid rgba(0,0,0,.2);
+		border-bottom: .1rem solid rgba(0,0,0,.2);
 		padding-top: .2rem;
 		height: 3.1rem;
 		font-size: 1.4rem;
-		width: calc(100% - 5rem);
+		width: 100%;
 		background-color: transparent;
 		&:focus {
 			outline: 0;
@@ -509,16 +516,16 @@ body.default-header {
 		}
 	}
 	
-	.btn {
+	.btn-circle {
+		/*border-color: rgba(0,0,0,.1)!important;*/
 		position: absolute;
 		right: 0;
-		top: .325rem;
+		top: .625rem;
 		line-height: 1;
-		padding: .7rem .8rem;
 	}
 	.toggle-search {
 		position: absolute;
-		left: .625rem;
+		left: 0;
 		top: 0;
 		display: inline-block;
 		padding: 1.4rem 1rem 0;
@@ -529,23 +536,12 @@ body.default-header {
 		}
 	}
 }
-.close-search {
-	position: fixed;
-	display: none;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background-color: fade-out($background-color, .2);
-}
+
 .show-search {
 	.site-search {
 		transform: translateY(0);
 		
 		@include gradient-vertical(darken($background-color, 10%), $background-color, 0%, 5%);
-	}
-	.close-search {
-		display: block;
 	}
 }
 
