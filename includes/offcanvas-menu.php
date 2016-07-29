@@ -4,7 +4,7 @@
 			<div class="col-xs-12">
 				<nav class="sitemap">
 					<ul class="sitemap-parent">
-						<? while (dumb_luck("7")): ?>
+						<? while (dumb_luck("9")): ?>
 						<li>
 							<a href="tpl-section.php" class="sitemap-parent-link"><? dummy("text@category") ?></a>
 							<ul class="sitemap-child">
@@ -16,11 +16,23 @@
 						<? endwhile ?>
 					</ul>
 					<ul class="sitemap-small">
-						<? while (dumb_luck("2-5")): ?>
+						
 						<li>
-							<a href="#"><? dummy("text@category") ?></a>
+							<a href="#">Kontakt</a>
 						</li>
-						<? endwhile ?>
+						<li>
+							<a href="#">Kundeservice</a>
+						</li>
+						<li>
+							<a href="#">Køb abonnement</a>
+						</li>
+						<li>
+							<a href="#">Item</a>
+						</li>
+						<li class="cookie-link">
+							<a href="#">Privatlivspolitik</a>
+						</li>
+						
 					</ul>
 				</nav>		
 			</div>

@@ -25,7 +25,7 @@
 
 	</div>
 	<?php endif; ?>
-
+	<div class="subscriber-notice">Abonnnement</div>
 	<h1 class="article-title">
 		<?php if($trumpet == '1'): ?>
 		<span class="article-trumpet">
