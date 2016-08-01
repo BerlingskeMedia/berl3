@@ -159,7 +159,7 @@ if(isset($_GET["business"])) {
 				<div class="col-md-9">
 					<ul>
 						
-						<li class="orange"><a href="doc-footer.php">Footer</a></li>
+						<li class="green"><a href="doc-footer.php">Footer</a></li>
 					</ul>
 				</div>
 
@@ -452,6 +452,8 @@ if(isset($_GET["business"])) {
 
 					</ul>
 				</div>
+
+				
 
 				<div class="col-md-12">
 					<h4>Gallery</h4>

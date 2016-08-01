@@ -12,12 +12,24 @@
 	-ms-overflow-style: -ms-autohiding-scrollbar;
 	-webkit-font-smoothing: subpixel-antialiased;
 	transition: transform .2s ease-out;
-	z-index: 28;
 	box-shadow: 0 3px 3px rgba(0,0,0,.2);
-	padding: 1rem 0;
+	padding: 0 0 1rem 0;
 	width: 100%;
 	margin-top: -$border-width;
 	z-index: 10000;
+	.article-topics {
+		border-top: $border-color solid $border-width;
+		@extend .clearfix;
+		padding-top: .3025rem;
+		li {
+			float: left;
+		}
+		span {
+				padding: .3rem 0 .2rem;
+				vertical-align: middle;
+				display: inline-block;
+			}
+	}
 }
 
 .page-title,
@@ -55,18 +67,8 @@
 	transform: opacity .2s ease;
 }
 
-.offcanvas-top {
-	height: $subheaderHeight;
-	border-bottom: $border-width solid $border-color;
-	text-align: right;
-	.btn-circle {
-		margin: .45rem .625rem 0 0;
-		border-color: rgba(0,0,0,.1);
-		font-size: .8rem;
-	}
-}
-
 .sitemap {
+	
 	@extend .font-g1;
 	ul {
 		list-style: none;
@@ -77,10 +79,10 @@
 		overflow: hidden;
 		text-overflow: ellipsis;
 		white-space: nowrap;
-		&:hover{
-			text-decoration: none;
-			color: $col-blue-1;
-		}
+		
+	}
+	.article-topics {
+		margin: 0;
 	}
 }
 
@@ -95,12 +97,19 @@
 		box-shadow: inset 0 $border-width $border-color;
 		min-height: 2.25rem;
 		padding-left: 12rem;
+		&> a {
+			color: $col-blue-1;
+			&:hover {
+				color: darken($col-blue-1, 10%);
+				text-decoration: none;
+			}
+		}
 		&:last-child {
 			border-bottom: $border-width solid $border-color;
 		}
 	}
 }
-.sitemap-parent-link {
+.sitemap-parent-item {
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -108,7 +117,6 @@
 	@extend .font-sans-alt;
 	font-size: 1.5rem;
 	text-transform: uppercase;
-	color: $col-blue-1;
 	font-weight: normal;
 	line-height: 2.25rem;
 	width: 12rem;
@@ -126,6 +134,10 @@
 		min-height: 2.25rem;
 		overflow: hidden;
 		font-size: .9rem;
+	}
+	a:hover {
+		text-decoration: none;
+		color: $col-blue-1;
 	}
 }
 
@@ -164,21 +176,36 @@
 			padding-left: 12rem;
 		}
 	}
-	.sitemap-parent-link {
+	.sitemap-parent-item {
 		width: 12rem;
 	}
 }
 
 
-@include media-breakpoint-down(md) {
-	.offcanvas-menu {
-		
-	}
-	
-}
+
 @include media-breakpoint-down(sm) {
 	.offcanvas-menu {
 		padding-top: 0 ;
+
+		.article-topics {
+			
+			
+			
+			li {
+				margin-bottom: .4rem;
+				span {
+					padding-top: 0;
+				}
+				&:first-child {
+					width: 100%;
+					float: none;
+					margin-bottom: 0;
+				}
+			}
+		}
+
+
+
 	}
 	.sitemap-parent {
 		> li {
@@ -191,7 +218,7 @@
 			}
 		}
 	}
-	.sitemap-parent-link {
+	.sitemap-parent-item {
 		width: 100%;
 		position: relative;
 		line-height: 1.4;
@@ -218,6 +245,5 @@
 		overflow-scrolling: auto;
 		position: fixed;
 	}
-	
 }
 
