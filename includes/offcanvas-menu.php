@@ -8,7 +8,7 @@
 						<li><span>Aktuelle emner:</span></li>
 						<? while (dumb_luck("3-5")): ?>
 						<li>
-							<a href="tpl-topic.php"><? dummy("text@item") ?></a>
+							<a href="tpl-section.php?template=topic"><? dummy("text@item") ?></a>
 						</li>
 						<? endwhile ?>
 					</ul>
