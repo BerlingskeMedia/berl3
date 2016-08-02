@@ -5,6 +5,10 @@
 
 <?php 
 	$hideComments = false;
+	if($isAdvertorial){
+		$hideComments = true;
+	}
+
 ?>
 <!DOCTYPE html>
 <html lang="da">
@@ -15,7 +19,7 @@
 	<link rel="stylesheet" href="/dist/styles/main.css">
 	
 </head>
-<body class="<?php if($siteBusiness): ?>site-business<?php endif; ?> tpl-article ">
+<body class="<?php if($siteBusiness): ?>site-business<?php endif; ?> tpl-article <?php if($isAdvertorial): echo 'default-header'; endif; ?>">
 
 
 
@@ -30,8 +34,12 @@
 <div class="main-wrapper">
 
 
-
+<?php if($isAdvertorial): ?>
+<?php include('includes/header-front.php'); ?>
+<?php else: ?>
 <?php include('includes/header-sub.php'); ?>
+<?php endif; ?>
+
 
 
 <div class="canvas-main <?php echo $campaignId; ?>">
@@ -100,8 +108,8 @@
 							
 
 							<?php include('includes/article-embeds/blog-bio.php'); ?>
-
-							<?php include('includes/article-embeds/newsletter-embedded.php'); ?>
+								
+							<?php if(!$isAdvertorial): include('includes/article-embeds/newsletter-embedded.php'); endif; ?>
 							
 							<p><? dummy("text@paragraph-first-letter") ?></p>
 
@@ -122,9 +130,10 @@
 								
 
 							<?php if($paywall !== 'hard'): ?>
-
-								<div class="hidden-md-down inline-banner" style="width: 300px; height: 250px;">Square_4</div>
-								<div class=" inline-banner hidden-lg-up hidden-sm-down" style="width: 300px; height: 250px;">Square_1 Tablet</div>
+								<?php if(!$isAdvertorial): ?>
+									<div class="hidden-md-down inline-banner" style="width: 300px; height: 250px;">Square_4</div>
+									<div class=" inline-banner hidden-lg-up hidden-sm-down" style="width: 300px; height: 250px;">Square_1 Tablet</div>
+								<?php endif; ?>
 
 								<p><? dummy("text@paragraph") ?></p>
 								<p><? dummy("text@paragraph") ?></p>
@@ -170,9 +179,11 @@
 								<?php endif; ?>
 
 								<div class="article-bottom">
-									<?php include('includes/article/related-partner.php'); ?>
-									<?php include('includes/article/related.php'); ?>
-									<?php include('includes/article/topics.php'); ?>
+									<?php if(!$isAdvertorial): ?>
+										<?php include('includes/article/related-partner.php'); ?>
+										<?php include('includes/article/related.php'); ?>
+										<?php include('includes/article/topics.php'); ?>
+									<?php endif; ?>
 									<?php include('includes/article-embeds/share-buttons-large.php'); ?>
 								</div>
 
@@ -191,7 +202,14 @@
 			
 
 			<div class="col-2-sidebar">
-				<?php include('includes/article/right-col-2.php'); ?>
+				<?php 
+				if($isAdvertorial) :
+					include('includes/article/right-col-advertorial.php');
+				else: 
+					include('includes/article/right-col-2.php'); 
+				endif;
+				?>
+				
 			</div>
 
 	</div>
@@ -199,10 +217,10 @@
 		
 		
 	</div><!-- row -->
+		
+		<?php if(!$isAdvertorial): include('includes/article/footer.php'); endif; ?>
 
-		<?php include('includes/article/footer.php'); ?>
-
-		<?php include('includes/article/comments.php'); ?>
+		<?php if(!$isAdvertorial): include('includes/article/comments.php'); endif;?>
 	</div>		
 		
 		

@@ -6,6 +6,10 @@ $payIcon = false;
 // Hide php "variable not set"-errors:
 error_reporting( error_reporting() & ~E_NOTICE );
 
+if(isset($_GET["advertorial"])) {
+	$isAdvertorial = true;
+}
+
 if(isset($_GET["ab"])) {
 	$adblocker = $_GET["ab"];
 }

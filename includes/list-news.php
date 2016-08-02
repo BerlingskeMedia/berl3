@@ -56,6 +56,11 @@ if ($listBlog) {
 							<span class="subscriber-notice"><span class="pipe"></span>Abonnement</span>
 						<? endif ?>
 					<?php endif; ?>
+					<?php if($isSponsored): ?>
+						
+							<span class="sponsored-notice">Sponseret</span>
+						
+					<?php endif; ?>
 				</a>
 			</div>
 
@@ -90,6 +95,7 @@ $premium 		= false;
 $imgSrc 		= false;
 $listId 		= false;
 $showButton 	= false;
+$isSponsored	= false;
 $btnTxt 		= '';
 $footerLink 	= '';
 $imgW 			= '620';
