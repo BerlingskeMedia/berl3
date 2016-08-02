@@ -25,7 +25,15 @@
 
 	</div>
 	<?php endif; ?>
+	<?php if($isAdvertorial): ?>
+		<div class="advertorial-notice">
+			Sponseret indhold	
+		</div>
+		
+	<?php endif; ?>
+	<?php if(!$isAdvertorial): ?>
 	<div class="subscriber-notice">Abonnnement</div>
+	<?php endif; ?>
 	<h1 class="article-title">
 		<?php if($trumpet == '1'): ?>
 		<span class="article-trumpet">
