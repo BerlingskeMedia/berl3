@@ -18,7 +18,7 @@
 	margin-top: -$border-width;
 	z-index: 10000;
 	.article-topics {
-		border-top: $border-color solid $border-width;
+		border-bottom: $border-color solid $border-width;
 		@extend .clearfix;
 		padding-top: .3025rem;
 		li {
@@ -186,11 +186,7 @@
 @include media-breakpoint-down(sm) {
 	.offcanvas-menu {
 		padding-top: 0 ;
-
 		.article-topics {
-			
-			
-			
 			li {
 				margin-bottom: .4rem;
 				span {
