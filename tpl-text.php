@@ -32,7 +32,7 @@ if(isset($_GET["business"])) {
 	<title>Berlingske - Topic</title>
 	<link rel="stylesheet" href="/dist/styles/main.css">
 </head>
-<body class="tpl-front <?php if($siteBusiness): ?>site-business<?php endif; ?> show-site-search">
+<body class="tpl-front <?php if($siteBusiness): ?>site-business<?php endif; ?> default-header show-site-search">
 
 
 
@@ -110,6 +110,79 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 				<div class="col-xs-12">
 					
 					<div class="page-content">
+						<?php if($page === 'adblocker'): ?>
+						<h1>Tak for at du tillader annoncer på berlingske.dk!</h1>
+
+						<p>Når du bruger en adblocker, forhindrer du annoncer i at blive hentet og vist på websites såsom berlingske.dk. Vi er nødt til at vise dig annoncer for at kunne finansiere de gratis nyheder på berlingske.dk. Denne guide viser dig, hvordan du indstiller din adblocker til at tillade annoncer på berlingske.dk. Oplever du problemer, så kontakt os på <a href="mailto:kundeservice@berlingske.dk">kundeservice@berlingske.dk</a>.</p>
+
+						<p>Her kan du se, hvordan du tillader annoncer på berlingske.dk i de mest populære adblockere.</p>
+
+						<h2>AdBlock Plus</h2>
+						
+						<p><em>Chrome</em></p>
+
+						<ul>
+							<li>Tryk på 'ABP'-knappen foroven til højre og klik på “Aktiveret på dette websted”  eller “Enabled on this site”</li>
+						</ul>
+
+						<p><em>Internet Explorer (version 11)</em></p>
+
+						<ul>
+							<li>Bruger du Adblock Plus i Internet Explorer, kan du desværre ikke tillade annoncer på udvalgte websites. Du er derfor nødt til at deaktivere Adblock Plus.</li>
+						</ul>
+						
+						<ul>
+							<li>Klik på tandhjulet i øverste højre hjørne og vælg "Administrer tilføjelsesprogrammer"
+							<li>I den menu, der kommer frem, skal du markere "Adblock Plus for IE Browser" i listen og trykke  "Deaktiver"
+							<li>Klik på "Luk", og vinduet med tilføjelsesprogrammer lukker.
+						</ul>
+
+						<p><em>Firefox</em></p>
+
+						<ul><li>Klik på ikonet “ABP” foroven til højre og klik på “Slå fra på berlingske.dk” / “Disable on berlingske.dk”</li></ul>
+
+						<p><em>Safari</em></p>
+
+						<ul>
+							<li>Klik på ikonet “ABP”til venstre for adresselinjen og klik på “Aktiveret på dette websted” / ”Enabled on this site”</li>
+						</ul>
+
+						<h2>Chrome AdBlock</h2>
+						<ul>
+							<li>Klik på AdBlock-ikonet og vælg “Benyt ikke på sider på dette domæne” / “Don't run on pages on this domain”</li>
+							<li>I vinduet, der dukker op, skal du nu trykke på 'Udeluk'-knappen</li>
+						</ul>
+
+						 
+
+						<h2>Safari AdBlock</h2>
+						
+						<ul>
+						<li>Klik på AdBlock-ikonet (hånd på rød baggrund) og vælg “Benyt ikke på sider på dette domæne” / “Don't run on pages on this domain”</li>
+						<li>I vinduet, der dukker op, skal du nu trykke på “Udeluk”</li>
+						</ul>
+
+						 
+
+						<h2>Chrome Ghostery</h2>
+						
+						<ul>
+							<li>Tryk på Ghostery-knappen i højre hjørne (til højre for adressefeltet) og vælg “Whitelist site”</li>
+							<li>Kontrollér, at teksten "Site is whitelisted" (grøn baggrund) dukker op</li>	
+						</ul>
+						
+
+						 
+
+						<h2>FireFox Ghostery</h2>
+						<ul>
+							<li>Tryk på Ghostery-knappen i højre hjørne (til højre for adressefeltet) og vælg 'Trust site'</li>
+							<li>Kontrollér, at 'Trust site'-knappen får grøn baggrund</li>	
+						</ul>
+						
+
+
+						<?php endif; ?>
 						<?php if($page === 'ethics'): ?>
 						
 						<h1>
@@ -214,7 +287,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 							<p><strong>Kundeservice</strong><br />(Kontakt for henvendelser vedr. abonnement og nyhedsabonnement)<br /><a href="mailto:kundeservice@berlingske.dk">kundeservice@berlingske.dk</a><br /><a href="https://b.kundeunivers.dk/" target="_blank">b.kundeunivers.dk</a><br />Tlf. 33 75 36 36 mandag-fredag kl. 08.00-17.00.<br />Fax 33 75 20 75</p>
 							<p><strong>Digitalservice</strong><br /><a href="mailto:digital@berlingske.dk">digital@berlingske.dk</a><br />Tlf. 33 75 33 30 mandag-fredag kl. 08.00-18.00, lørdag og søndag 08.00-12.00.</p>
 							<p><strong>Annoncesalg</strong><br /><a href="mailto:annoncer@berlingske.dk">annoncer@berlingske.dk</a><br />Tlf. 33 75 75 00<br />Fax 33 75 20 26</p>
-							<p><strong>B.dk</strong><br /><a href="mailto:internet@berlingske.dk">internet@berlingske.dk</a><br />Tlf. 33 75 22 42</p>
+							<p><strong>berlingske.dk</strong><br /><a href="mailto:internet@berlingske.dk">internet@berlingske.dk</a><br />Tlf. 33 75 22 42</p>
 							<p><strong>Business.dk redaktionen</strong><br /><a href="mailto:redaktionen@business.dk">redaktionen@business.dk</a></p>
 							<p><strong>Job hos Berlingske Media?</strong><br /><a href="http://www.berlingskemedia.dk/65680/">Job &amp; karriere</a></p>
 							
@@ -243,13 +316,13 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 							<p><strong>AOK</strong><br /><em>Camilla Lützhøft Stahlschmidt</em><br /><a href="mailto:cast@aok.dk">cast@aok.dk</a><br />tlf. 25 44 24 74</p>
 							<p><strong>Rejseliv</strong><br /><a href="mailto:nin@berlingske.dk">nin@berlingske.dk</a><br />tlf. 33 75 21 60 fax 33 75 20 20</p>
 							<p><strong>B Søndag</strong><br /><em>Nina Rølle</em><br /><a href="mailto:nin@berlingske.dk">nin@berlingske.dk</a></p>
-							<p><strong>www.b.dk</strong><br /><em>Jakob Weiss</em><br /><a href="mailto:internet@berlingske.dk">internet@berlingske.dk</a><br />tlf. 33 75 75 75</p>
+							<p><strong>www.berlingske.dk</strong><br /><em>Jakob Weiss</em><br /><a href="mailto:internet@berlingske.dk">internet@berlingske.dk</a><br />tlf. 33 75 75 75</p>
 							<p><strong>www.business.dk</strong><br /><em>Mikael Hjorth</em><br /><a href="mailto:redaktionen@business.dk">redaktionen@business.dk</a><br />Tlf. 25 45 63 49</p>
 							<p><strong>www.politiko.dk</strong><br /><em>Jakob Stig Jørgensen</em><br /><a href="mailto:politiko@berlingske.dk">politiko@berlingske.dk</a><br />tlf. 33 75 24 63</p>
-							<p><strong>Fejl og fakta</strong><br /><a href="http://www.b.dk/fejlogfakta">www.b.dk/fejlogfakta</a><br /><a href="mailto:fejlogfakta2@berlingske.dk">fejlogfakta2@berlingske.dk</a></p>
+							<p><strong>Fejl og fakta</strong><br /><a href="http://www.berlingske.dk/fejlogfakta">www.berlingske.dk/fejlogfakta</a><br /><a href="mailto:fejlogfakta2@berlingske.dk">fejlogfakta2@berlingske.dk</a></p>
 							<p><strong>Kundeservice</strong><br /><a href="http://b.kundeunivers.dk">b.kundeunivers.dk</a><br /><a href="mailto:kundeservice@berlingske.dk">kundeservice@berlingske.dk</a><br />Tlf. 33 75 36 36 mandag-fredag kl. 08.00-17.00.</p>
 							<p><strong>Annoncesalg</strong><br />Tlf. 33 75 75 00<br />Fax 33 75 20 26<br /><a href="mailto:annoncer@berlingske.dk">annoncer@berlingske.dk</a></p>
-							<p><strong>Bannerannoncer på B.dk</strong><br /><a href="http://www.berlingskemedia.dk/45385/">www.berlingskemedia.dk</a></p>
+							<p><strong>Bannerannoncer på berlingske.dk</strong><br /><a href="http://www.berlingskemedia.dk/45385/">www.berlingskemedia.dk</a></p>
 							<p><strong>Bureau salg</strong><br /><a href="http://www.berlingskemedia.dk/45385/">www.berlingskemedia.dk</a></p>
 							<p><strong>Bladsalg og marketing</strong><br /><a href="http://www.berlingskemedia.dk/45385/">www.berlingskemedia.dk</a></p>
 							<p><strong>Personaleafdeling</strong><br />Tlf.: 33 75 31 01<br /><a href="mailto:personale@berlingske.dk">personale@berlingske.dk</a></p>

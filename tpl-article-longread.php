@@ -213,6 +213,8 @@ $templateLongread = true;
 
 <?php include('includes/footer.php'); ?>
 
+<?php include('includes/article/adblocker-blocker.php'); ?>
+
 
 <?php include('includes/footer-content.php'); ?>
 
