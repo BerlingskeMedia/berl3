@@ -9,7 +9,22 @@
 	$('iframe.auto-height').iframeAutoHeight({minHeight: 50});	
 </script>
 
+<?php if($adblocker): ?>
+	<script>
+	$(function() {
+		$('body').delay(4000).queue(function(next) {
+		  $(this).addClass('show-antiblocker');
+		  next();
+		});
 
+		$('.close-antiblocker').click(function(e){
+			e.preventDefault();
+			$('body').removeClass('show-antiblocker');
+		});
+	});
+
+	</script>
+<?php endif; ?>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

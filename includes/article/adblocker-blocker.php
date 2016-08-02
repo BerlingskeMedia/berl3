@@ -1,5 +1,4 @@
 <?php if($adblocker === "hard-1"): ?>
-	
 	<div class="antiblocker" id="antiblocker">
 		<div class="container">
 			<div class="row">
