@@ -15,7 +15,9 @@
 	<link rel="stylesheet" href="/dist/styles/main.css">
 	
 </head>
-<body class="<?php if($siteBusiness): ?>site-business<?php endif; ?> tpl-article">
+<body class="<?php if($siteBusiness): ?>site-business<?php endif; ?> tpl-article ">
+
+
 
 <?php include('includes/facebook.php'); ?>
 
@@ -56,6 +58,7 @@
 
 					<div class="article-content">
 						
+
 						
 					
 						<?php if($imageSize == '1' || $imageSize == '4'): // large image ?>
@@ -217,6 +220,7 @@
 <?php include('includes/footer.php'); ?>
 
 
+<?php include('includes/article/adblocker-blocker.php'); ?>
 
 
 <?php include('includes/article/send-to-a-friend.php'); ?>

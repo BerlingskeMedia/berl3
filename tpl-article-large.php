@@ -94,6 +94,7 @@
 <?php // include('includes/consumersales-row.php'); ?>
 
 <?php include('includes/footer.php'); ?>
+<?php include('includes/article/adblocker-blocker.php'); ?>
 
 <?php include('includes/article/author-signup.php'); ?>
 
