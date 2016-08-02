@@ -381,6 +381,21 @@ if(isset($_GET["business"])) {
 					</ul>
 				</div>
 
+				<div class="col-md-12">
+					<h4>Adblocker blocker notice</h4>
+				</div>
+				<div class="col-md-3">
+					
+				</div>
+				<div class="col-md-9">
+					<ul>
+						<li class="orange"><a href="tpl-article.php?ab=hard-1">Hard - ver. 1</a></li>
+						<li class="orange"><a href="tpl-article.php?ab=hard-2">Hard - ver. 2</a></li>
+						<li class="orange"><a href="tpl-article.php?ab=soft">Soft</a></li>
+						<li><em>variable "ab=[hard-1, hard-2, soft]" also works on longreads and article-large</em></li>
+					</ul>
+				</div>
+
 
 				<div class="col-md-12">
 					<h4>Sections</h4>
@@ -476,7 +491,9 @@ if(isset($_GET["business"])) {
 				<div class="col-md-3"></div>
 				<div class="col-md-9">
 					<ul>
-						<li class="red"><a href="#">Contact</a></li>
+						<li class="orange"><a href="tpl-text.php?page=adblocker">Adblocker removal</a></li>
+						<li class="orange"><a href="tpl-text.php?page=contact">Contact</a></li>
+						<li class="orange"><a href="tpl-text.php?page=ethics">Ethics</a></li>
 						<li class="red"><a href="#">Annoncering</a></li>
 					</ul>
 				</div>

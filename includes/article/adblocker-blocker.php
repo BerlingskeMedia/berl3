@@ -7,7 +7,7 @@
 					min artikel af..!?</h2>
 					<p>
 						Du er træt af reklamer. <strong>Vi ved det godt!</strong> Men de betaler for den artikel, du du sidder og læser.
-					Vi vil derfor sætte stor pris på, at du tilføjer Berlingske.dk til din adblocker's "<a href="#" class="link-blue">whiteliste</a>".</p>
+					Vi vil derfor sætte stor pris på, at du tilføjer Berlingske.dk til din adblocker's "<a href="tpl-text.php?page=adblocker" class="link-blue">whiteliste</a>".</p>
 					<p>Tak for din forståelse.</p>			
 				</div>
 			</div>
@@ -26,7 +26,7 @@
 					min artikel af..!?</h2>
 					<p>
 						Du er træt af reklamer. <strong>Vi ved det godt!</strong> Men de betaler for den artikel, du du sidder og læser.
-					Vi vil derfor sætte stor pris på, at du tilføjer Berlingske.dk til din adblocker's "<a href="#" class="link-blue">whiteliste</a>".</p>
+					Vi vil derfor sætte stor pris på, at du tilføjer Berlingske.dk til din adblocker's "<a href="tpl-text.php?page=adblocker" class="link-blue">whiteliste</a>".</p>
 					<p>
 						Du kan også vælge at tegne et abonnement. Vi har garanteret et abonnement, der passer dig. Tak for din forståelse.
 					</p>
@@ -57,7 +57,7 @@
 					<h2>Hov! Hvor blev min artikel af..!?</h2>
 					<p>
 						Du er træt af reklamer. <strong>Vi ved det godt!</strong> Men de betaler for den artikel, du du sidder og læser.
-					Vi vil derfor sætte stor pris på, at du tilføjer Berlingske.dk til din adblocker's "<a href="#" class="link-blue">whiteliste</a>".</p>
+					Vi vil derfor sætte stor pris på, at du tilføjer Berlingske.dk til din adblocker's "<a href="tpl-text.php?page=adblocker" class="link-blue">whiteliste</a>".</p>
 					<p>Tak for din forståelse.</p>			
 				</div>
 			</div>
