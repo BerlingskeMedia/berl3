@@ -3,6 +3,9 @@
 <?php include('includes/_variables.php') ;?>
 <?php 
 $templateLongread = true;
+	if($isAdvertorial){
+		$hideComments = true;
+	}
 ?>
 
 
@@ -105,6 +108,12 @@ $templateLongread = true;
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
+
+				<?php if($isAdvertorial): ?>
+					<div class="article-advertorial-notice">
+						Sponseret indhold
+					</div>
+				<?php endif; ?>
 				
 				<?php include('includes/article/date.php'); ?>
 				<?php include('includes/article-embeds/rating.php'); ?>
@@ -164,7 +173,6 @@ $templateLongread = true;
 	</div>
 
 </aside>
-
 								
 								<p><? dummy("text@paragraph-first-letter") ?></p>
 

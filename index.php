@@ -463,8 +463,8 @@ if(isset($_GET["business"])) {
 				<div class="col-md-9">
 					<ul>
 						
-						<li class="orange"><a href="tpl-article.php?advertorial">Default article</a></li>
-						<li class="orange"><a href="tpl-article-longread.php?advertorial">Longread</a></li>
+						<li class="orange"><a href="tpl-article.php?advertorial">Article default</a></li>
+						<li class="orange"><a href="tpl-article-longread.php?advertorial">Article Longread</a></li>
 
 					</ul>
 				</div>

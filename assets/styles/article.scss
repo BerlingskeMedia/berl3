@@ -1640,6 +1640,14 @@ $longreadPadding: 20rem;
 	margin-bottom: .625rem;
 	text-transform: uppercase;
 }
+.article-advertorial-notice {
+	@extend .font-s2;
+	font-weight: 500;
+	font-size: .8rem;
+	text-transform: uppercase;
+	margin: .625rem 0 0;
+	text-align: center;
+}
 .sponsored-notice {
 	@extend .subscriber-notice;
 	padding:  .1rem .2rem;
@@ -1739,7 +1747,6 @@ $longreadPadding: 20rem;
 		}
 		.share-buttons {
 			margin-left: auto;
-			max-width: none;
 		}
 
 	}
