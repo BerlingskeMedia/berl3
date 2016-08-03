@@ -20,7 +20,13 @@ if(isset($_GET["business"])) {
 	$siteBusiness = true;
 }
 $showDate = true;
+
+if($template === 'advertorial') {
+	$showTrumpet = true;
+	$showPaywall = true;		
+}
 ?>
+
 
 
 <?php 
@@ -76,20 +82,19 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 			<div class="container main-content">
 			
 			<?php  include('includes/frontpage/deck-section-1.php'); ?>
-
-			<?php $bannerLabel = 'Leaderboard_2 930 x 180' ; include('includes/frontpage/deck-ad.php'); ?>
-			<?php $bannerLabel = 'Leaderboard_2 320 x 320/160'; include('includes/frontpage/deck-ad-mobile.php'); ?>
 			
+			<?php if(!$template === 'advertorial'): ?>
+				<?php $bannerLabel = 'Leaderboard_2 930 x 180' ; include('includes/frontpage/deck-ad.php'); ?>
+				<?php $bannerLabel = 'Leaderboard_2 320 x 320/160'; include('includes/frontpage/deck-ad-mobile.php'); ?>	
 
-			
+				<?php if($template !== 'searchresult'): ?>
+					
+					<?php include('includes/frontpage/deck-section-2.php'); ?>
 
-			<?php if($template !== 'searchresult'): ?>
-				
-				<?php include('includes/frontpage/deck-section-2.php'); ?>
+					<?php $bannerLabel = 'Leaderboard_3 930 x 180'; include('includes/frontpage/deck-ad.php'); ?>
+					<?php $bannerLabel = 'Leaderboard_3 320 x 320/160'; include('includes/frontpage/deck-ad-mobile.php'); ?>
 
-				<?php $bannerLabel = 'Leaderboard_3 930 x 180'; include('includes/frontpage/deck-ad.php'); ?>
-				<?php $bannerLabel = 'Leaderboard_3 320 x 320/160'; include('includes/frontpage/deck-ad-mobile.php'); ?>
-
+				<?php endif; ?>
 			<?php endif; ?>
 			
 			</div>

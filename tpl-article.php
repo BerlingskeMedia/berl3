@@ -217,8 +217,8 @@
 		
 		
 	</div><!-- row -->
-		
-		<?php if(!$isAdvertorial): include('includes/article/footer.php'); endif; ?>
+
+		<?php include('includes/article/footer.php');?>
 
 		<?php if(!$isAdvertorial): include('includes/article/comments.php'); endif;?>
 	</div>		

@@ -146,6 +146,10 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 						 <span class="subscriber-notice">Abonnement</span>
 					
 				<?php endif; ?>				
+
+				<?php if($isSponsored): ?>
+					<span class="sponsored-notice">Sponseret</span>
+				<?php endif; ?>
 				
 
 			</div><!-- .teaser-body --> 	

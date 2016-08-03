@@ -558,6 +558,9 @@ a:hover {
 		@extend .font-s2;
 		line-height: 1.4;
 	}
+	a {
+		@extend .link-blue;
+	}
 }
 
 .article-timeline-embedded {
@@ -633,6 +636,7 @@ a:hover {
 		display: block;
 	}
 }
+
 
 .article-fact-default {
 	position: relative;
@@ -1404,6 +1408,7 @@ figure > .open-gallery {
 	.article-content {
 		margin-left: 0;
 		margin-right: 0;
+		padding-bottom: 2rem;
 	}
 }
 
@@ -1509,6 +1514,12 @@ $longreadPadding: 20rem;
 	[class*="event-header-"] {
 		margin: .625rem 0 0;
 	}
+	.advertorial-notice {
+		position: absolute;
+		left: 0;
+		right: 0;
+		z-index: 99;
+	}
 }
 
 .longread-head-inner {
@@ -1560,9 +1571,7 @@ $longreadPadding: 20rem;
 	margin-right: -$col-1-width / 2;
 	width: 16.250rem;
 	float: right;
-
 }
-
 
 [class*="continue-reading-"] {
 	&:before {
@@ -1634,6 +1643,15 @@ $longreadPadding: 20rem;
 	color: darken($col-blue-1, 10%);
 	margin-bottom: .625rem;
 	text-transform: uppercase;
+	width: 100%;
+}
+.article-advertorial-notice {
+	@extend .font-s2;
+	font-weight: 500;
+	font-size: .8rem;
+	text-transform: uppercase;
+	margin: .625rem 0 0;
+	text-align: center;
 }
 .sponsored-notice {
 	@extend .subscriber-notice;
@@ -1642,12 +1660,35 @@ $longreadPadding: 20rem;
 	background-color: #d9ebf5;
 	color: darken($col-blue-1, 10%);
 	font-weight: 500;
-	font-size: .6rem!important
-
+	font-size: .6rem!important;
+	display: inline-block;
+	margin: 0;
 }
 
+.banner-advertorial {
+	text-align: center;
+	img {
+		margin: 0 auto;
+	}
+}
+.section-header-advertorial {
+	padding: 0 .625rem;
+	font-family: "Sanomat Sans Web", Helvetica, "Helvetica Neue", arial, sans-serif;
+	font-weight: 500!important;
+	color: #999!important;
+	text-transform: none!important;
+	margin-bottom: .625rem;
+}
+.advertorial-logo {
+	max-height: 6.250rem;
+	margin: 0 0 .325rem;
+}
 
-	
+.advertorial-profile {
+	a {
+		@extend .link-blue;
+	}
+}	
 
 
 	
@@ -1733,7 +1774,6 @@ $longreadPadding: 20rem;
 		}
 		.share-buttons {
 			margin-left: auto;
-			max-width: none;
 		}
 
 	}
@@ -1838,6 +1878,18 @@ $longreadPadding: 20rem;
 
 
 @include media-breakpoint-down(sm) {
+	.advertorial-notice {
+		margin: -.525rem -.625rem .625rem; 
+		width: auto;
+	}
+
+	.section-header-advertorial {	
+		font-size: 1rem!important;
+		padding: 0;
+	}
+	.advertorial-logo {
+		max-height: 3.125rem;
+	}
 	
 	.show-author-overlay { 
 		overflow: hidden;

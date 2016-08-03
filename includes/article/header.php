@@ -28,8 +28,7 @@
 	<?php if($isAdvertorial): ?>
 		<div class="advertorial-notice">
 			Sponseret indhold	
-		</div>
-		
+		</div>		
 	<?php endif; ?>
 	<?php if(!$isAdvertorial): ?>
 	<div class="subscriber-notice">Abonnnement</div>

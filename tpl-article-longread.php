@@ -3,6 +3,9 @@
 <?php include('includes/_variables.php') ;?>
 <?php 
 $templateLongread = true;
+	if($isAdvertorial){
+		$hideComments = true;
+	}
 ?>
 
 
@@ -14,7 +17,7 @@ $templateLongread = true;
 	<title>Berlingske - Article Longread</title>
 	<link rel="stylesheet" href="/dist/styles/main.css">
 </head>
-<body class=" <?php if($siteBusiness): ?>site-business<?php endif; ?> tpl-article tpl-article-longread">
+<body class=" <?php if($siteBusiness): ?>site-business<?php endif; ?> tpl-article tpl-article-longread <?php if($isAdvertorial): echo 'default-header'; endif; ?>">
 
 
 
@@ -22,7 +25,13 @@ $templateLongread = true;
 
 
 <div class="main-wrapper">
+<?php if($isAdvertorial): ?>
+<?php include('includes/header-front.php'); ?>
+<?php else: ?>
 <?php include('includes/header-sub.php'); ?>
+<?php endif; ?>
+
+
 
 
 <?php // include('includes/site-header.php'); ?>
@@ -62,6 +71,11 @@ $templateLongread = true;
 	</style>
 
 	<header class="longread-head">
+	<?php if($isAdvertorial): ?>
+		<div class="advertorial-notice">
+			Sponseret indhold
+		</div>		
+	<?php endif; ?>
 		
 		<div class="longread-head-inner">
 			<div class="longread-head-image">
@@ -94,6 +108,12 @@ $templateLongread = true;
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
+
+				<?php if($isAdvertorial): ?>
+					<div class="article-advertorial-notice">
+						- Sponseret indhold -
+					</div>
+				<?php endif; ?>
 				
 				<?php include('includes/article/date.php'); ?>
 				<?php include('includes/article-embeds/rating.php'); ?>
@@ -135,7 +155,8 @@ $templateLongread = true;
 								<?php include('includes/article/byline.php') ?>
 
 
-								<?php include('includes/article-embeds/blog-bio.php'); ?>
+
+
 								
 								<p><? dummy("text@paragraph-first-letter") ?></p>
 
@@ -148,7 +169,30 @@ $templateLongread = true;
 
 							<?php if($paywall !== 'hard'): ?>
 								
+								<?php if($isAdvertorial): ?>
 								<p><? dummy("text@paragraph") ?></p>
+
+								<aside class="article-fact-embedded article-embed-pull-right embed-collapsed-sm continue-reading-fact">
+									<div class="embed-content">
+										<div class="aside-header">
+											Om Alm. Brand
+										</div>
+										<? while (dumb_luck("2")): ?>
+											<p><? dummy("text@teaser") ?></p>
+										<? endwhile ?>	
+										<ul>
+									<? while (dumb_luck("2")): ?>
+										<li><a href="#">I am a menu</a></li>
+									<? endwhile ?>
+									</ul>
+
+									</div>
+									<div class=" embed-fade text-center">
+										<button class="btn btn-fact toggle-embed btn-sm btn-round">Udvid faktaboks</button>
+									</div>
+								</aside>
+								<?php endif; ?>
+
 
 								<?php include('includes/article-embeds/link.php'); ?>
 								
@@ -176,8 +220,13 @@ $templateLongread = true;
 								<?php include('includes/article-embeds/fact-default.php'); ?>
 
 								<div class="article-bottom">
-									<?php include('includes/article/related.php'); ?>
-									<?php include('includes/article/topics.php'); ?>
+								<?php if(!$isAdvertorial): ?>
+									
+										<?php include('includes/article/related.php'); ?>
+										<?php include('includes/article/topics.php'); ?>
+									<?php endif; ?>
+
+									
 									<?php include('includes/article-embeds/share-buttons-large.php'); ?>
 								</div>
 							<?php endif; ?>
@@ -198,7 +247,7 @@ $templateLongread = true;
 		
 		<?php include('includes/article/footer.php'); ?>
 
-		<?php include('includes/article/comments.php'); ?>
+		<?php if(!$isAdvertorial): include('includes/article/comments.php'); endif; ?>
 
 	</div>
 		

@@ -1,7 +1,87 @@
 
 
+
+
 <div class="article-footer">
-	
+	<?php if($isAdvertorial): ?>
+		<div class="row flex-row">
+			<div class="col-xs-12">
+				<div class="section-title">
+				<div class="list-sponsored">
+						<span>Sponseret indhold:</span>
+				</div>
+					Mere fra Alm. Brand
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+
+					<ul class=" flex-row list-unstyled list-buffet">
+						<? while (dumb_luck("2")): ?> <!-- MOBILE: Two first teasers are 100% width - the rest are side by side -->
+						<li class="col-xs-12 col-md-6 col-lg-3">
+							<?php
+								$imgW='750';  
+								$showImg = '1';
+								$class = ' teaser-img-wide teaser-xsmall item-teaser ';
+								$imgRatio = '16:9';
+								$imgSrc = '/landscape';
+								$showSummary = false;
+								$teaserPack = false;
+								
+								$isSponsored = false;
+								
+								include('includes/frontpage/teasers/teaser.php') ?>
+
+						</li>
+						<? endwhile ?>
+						
+						<? while (dumb_luck("5")): ?>
+						<li class="col-xs-6 col-md-6 col-lg-3">
+							<?php
+								$imgW='750';  
+								$showImg = '1';
+								$class = ' teaser-img-wide teaser-xsmall item-teaser';
+								$imgRatio = '16:9';
+								$imgSrc = '/landscape';
+								$showSummary = false;
+								$teaserPack = false;
+								$labelType = false;
+								$isSponsored = false;
+								
+								include('includes/frontpage/teasers/teaser.php') ?>
+
+						</li>
+						<? endwhile ?>
+
+						<li class="col-xs-6 col-md-6 col-lg-3">
+							<?php
+								$imgW='750';  
+								$showImg = '1';
+								$class = ' teaser-img-wide teaser-xsmall item-teaser teaser-theme-business';
+								$imgRatio = '16:9';
+								$imgSrc = '/landscape';
+								$category = 'Business.dk';
+								$showSummary = false;
+								$teaserPack = false;
+								$isSponsored = false;
+								
+								
+								include('includes/frontpage/teasers/teaser.php') ?>
+
+						</li>
+
+					</ul>
+
+					
+				
+					
+			</div><!-- row -->
+
+
+
+	<?php endif; ?>
+	<?php if(!$isAdvertorial): ?>
 	<div class="row flex-row">
 		<div class="col-xs-12">
 			<div class="section-title">
@@ -109,5 +189,6 @@
 		</div>
 	</div>
 
-
+<?php endif; ?>
 </div>
+

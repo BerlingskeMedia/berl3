@@ -4,7 +4,11 @@
 				
 			
 			
-
+<?php if($template === 'advertorial'): ?>
+		<div class="advertorial-notice" >
+			Sponseret indhold	
+		</div>		
+	<?php endif; ?>
 
 
 <div class=" deck flex-row">
@@ -12,7 +16,7 @@
 		
 	
 
-
+	
 
 
 	<div class="col-wrapper flex-row">
@@ -34,6 +38,7 @@
 			
 				<h1 class="section-title-no-border">Barack Obama</h1>
 
+
 			<?php elseif(!$template):  ?>
 			
 				
@@ -43,6 +48,12 @@
 		</div>
 		
 		<div class="col-primary ">
+
+			<?php if($template === 'advertorial'):  ?>
+				<h1 class="section-header-advertorial"><img src="http://a.bimg.dk/node-images/619/13/13619168-alm-brand.jpg" alt="" class="advertorial-logo">Giver dig viden med på vejen</h1>
+
+			<?php endif; ?>
+
 			<?php if($template === 'searchresult'): ?>
 				<div class="page-description ">
 					<!-- <h1 class="article-title">Søgeresultat</h1> -->
@@ -141,9 +152,10 @@
 						$imgSrc = '/landscape';
 						
 						
-						$showPaywall = true;
+						
 						$showSummary = true;
 						$showTrumpet = true;
+						$showPaywall = true;
 						include('includes/frontpage/teasers/teaser.php') ?>
 
 						<? while (dumb_luck("4")): ?>
@@ -209,6 +221,45 @@
 							$showPaywall = true;
 							$showDate = true;
 							include('includes/frontpage/teasers/teaser.php') ?>
+
+						<? endwhile ?>
+
+
+					<?php elseif ($template === 'advertorial'): ?>
+						
+						<?php
+						$imgW='930';  
+						$showImg = '1';
+						$class = 'item-teaser  teaser-img-wide teaser-large  ';
+						$imgRatio = '16:9';
+						$imgSrc = '/landscape';
+						$showSummary = true;
+						// $teaserPack = rand(1,6);
+						$showTrumpet = false;
+						$showPaywall = false;
+						$showDate = false;
+						$teaserLink = 'tpl-article.php?advertorial';
+						
+
+						include('includes/frontpage/teasers/teaser.php') ?>
+
+						<? while (dumb_luck("8")): ?>
+
+							
+							<?php
+							$imgW='220'; 
+							$imgW='220'; 
+							$showImg = '1';
+							$class = 'teaser-img-right  teaser-small item-teaser-bt ';
+							$imgRatio = '16:9';
+							$imgSrc = '/landscape';
+							$showSummary = true;
+							$showPaywall = false;
+							$showDate = false;
+							$teaserLink = 'tpl-article.php?advertorial';
+
+							include('includes/frontpage/teasers/teaser.php') ?>
+							
 
 						<? endwhile ?>
 
@@ -319,6 +370,12 @@
 
 			
 		<div class="row">
+			<?php if($template === 'advertorial'): ?>
+			<div class="col-lg-12 col-md-6 col-sm-12">
+			<?php include('includes/article/right-col-advertorial.php');?>
+			</div>
+
+			<?php else: ?>
 			<div class="col-lg-12 col-md-6 col-sm-12">
 				<div style="width: 300px; height: 600px;" class="demo-banner mb hidden-sm-down">Square_1</div>
 			</div>
@@ -345,6 +402,8 @@
 						
 						
 			</div>
+
+		<?php endif; ?>
 
 			
 			
