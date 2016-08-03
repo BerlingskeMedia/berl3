@@ -746,6 +746,9 @@ $col-deck-label-width: 160px;
 .alert-danger {
 	@include alert-variant(#f2dede, fade-out($brand-danger, .8), $brand-danger);
 }
+.alert-info {
+	@include alert-variant(lighten($col-blue-1, 55%), fade-out($col-blue-1, .9), darken($col-blue-1, 5%));
+}
 
 
 

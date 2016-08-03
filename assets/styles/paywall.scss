@@ -1,16 +1,22 @@
+.paywall-ver-1 {
+	background-color: darken($background-color, 5%);
+}
+.paywall-ver-2 {
+	border: $border-width solid $border-color;
+}
+
 .paywall {
-	max-width: 41.250rem;
 	margin-left: auto;
 	margin-right: auto;
-	font-size: 1.1rem;
+	text-align: center;
+	padding: .625rem;
 	h2 {
-		font-size: 2rem;
-		@extend .font-g1;
+		font-size: 1.3rem;
+		@extend .font-s1;
 		
-		margin: 0;
-		&+ p {
-			font-size: 1rem;
-		}
+	}
+	p {
+		font-size: 1rem;
 	}
 	button.btn {
 		@extend .btn-blue;
@@ -19,40 +25,18 @@
 		 max-width: 16rem;
 	}
 
-	@include media-breakpoint-only(md) {
-		.img {
-			 max-width: 16rem;
-		}
-	}
 
 	@include media-breakpoint-down(sm) {
-		font-size: .9rem;
-		
-
 		h2 {
-			font-size: 1.5rem;
-			&+ p {
-				font-size: .8rem;
-			}
+			font-size: 1.2rem;
 		}
-		.img {
-			 max-width: 6rem;
+		p {
+			font-size: .8rem;
 		}
-	}
+	}	
+}
 	
-}
-
-.paywall-soft {
-	.img {
-		margin-left: auto;
-		margin-right: auto;
-	}
-	@include media-breakpoint-down(sm) {
-		.img {
-			 max-width: 14rem;
-		}
-	}
-}
+	
 .fade {
 	&:after {
 		background: radial-gradient(ellipse 50% 10px at 50% 100%,fade-out(darken($background-color, 20%),.0) 0,fade-out(#dfdfdf,1) 110%);

@@ -8,6 +8,11 @@
 	if($isAdvertorial){
 		$hideComments = true;
 	}
+	if($paywall || $isAdvertorial) {
+		$showMarketingBanner = false;
+	} else {
+		$showMarketingBanner = true;
+	}
 
 ?>
 <!DOCTYPE html>
@@ -60,7 +65,9 @@
 		
 		<?php include('includes/article/header.php'); ?>
 
-		
+		<?php if($paywall === 'soft'): ?>
+			<?php include('includes/article/paywall.php'); ?>
+		<?php endif; ?>
 		
 			<div class="col-1-content">
 
@@ -83,9 +90,7 @@
 
 						<?php endif; ?>
 						
-						<?php if($paywall === 'soft'): ?>
-							<?php include('includes/article/paywall.php'); ?>
-						<?php endif; ?>
+						
 
 						<?php include('includes/article/partners.php'); ?>		
 						
@@ -109,7 +114,8 @@
 
 							<?php include('includes/article-embeds/blog-bio.php'); ?>
 								
-							<?php if(!$isAdvertorial): include('includes/article-embeds/newsletter-embedded.php'); endif; ?>
+							
+							<?php if($showMarketingBanner): include('includes/article-embeds/newsletter-embedded.php'); endif; ?>
 							
 							<p><? dummy("text@paragraph-first-letter") ?></p>
 
@@ -174,7 +180,6 @@
 								<?php include('includes/article-embeds/fact-default.php'); ?>
 
 								<?php if($paywall === 'soft'): ?>
-										<div class="fade mb"></div>
 									<?php include('includes/article/paywall.php'); ?>
 								<?php endif; ?>
 

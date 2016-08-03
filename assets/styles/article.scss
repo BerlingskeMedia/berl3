@@ -1685,6 +1685,7 @@ $longreadPadding: 20rem;
 }
 
 .advertorial-profile {
+	@extend .mb-2;
 	a {
 		@extend .link-blue;
 	}
