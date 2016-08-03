@@ -558,6 +558,9 @@ a:hover {
 		@extend .font-s2;
 		line-height: 1.4;
 	}
+	a {
+		@extend .link-blue;
+	}
 }
 
 .article-timeline-embedded {
@@ -633,6 +636,7 @@ a:hover {
 		display: block;
 	}
 }
+
 
 .article-fact-default {
 	position: relative;
@@ -1667,6 +1671,15 @@ $longreadPadding: 20rem;
 		margin: 0 auto;
 	}
 }
+.section-header-advertorial {
+	padding: 0 .625rem;
+	font-family: "Sanomat Sans Web", Helvetica, "Helvetica Neue", arial, sans-serif;
+	text-transform: none!important;
+}
+.advertorial-logo {
+	max-height: 6.250rem;
+	margin: 0 0 .325rem;
+}
 
 	
 
@@ -1858,6 +1871,19 @@ $longreadPadding: 20rem;
 
 
 @include media-breakpoint-down(sm) {
+	.advertorial-notice {
+		margin: -.525rem -.625rem .625rem; 
+		width: auto;
+	}
+
+	.section-header-advertorial {	
+		font-size: 1rem!important;
+		padding: 0;
+	}
+	.advertorial-logo {
+		
+		max-height: 3.125rem;
+	}
 	
 	.show-author-overlay { 
 		overflow: hidden;

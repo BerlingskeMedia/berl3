@@ -156,23 +156,7 @@ $templateLongread = true;
 
 
 
-<aside class="article-fact-embedded article-embed-pull-right embed-collapsed-sm continue-reading-fact">
-	<div class="embed-content">
 
-		<div class="aside-header">
-			Om Alm. Brand
-		</div>
-		<? while (dumb_luck("2")): ?>
-			<p><? dummy("text@teaser") ?></p>
-		<? endwhile ?>	
-
-	</div>
-
-	<div class=" embed-fade text-center">
-		<button class="btn btn-fact toggle-embed btn-sm btn-round">Udvid faktaboks</button>
-	</div>
-
-</aside>
 								
 								<p><? dummy("text@paragraph-first-letter") ?></p>
 
@@ -185,7 +169,30 @@ $templateLongread = true;
 
 							<?php if($paywall !== 'hard'): ?>
 								
+								<?php if($isAdvertorial): ?>
 								<p><? dummy("text@paragraph") ?></p>
+
+								<aside class="article-fact-embedded article-embed-pull-right embed-collapsed-sm continue-reading-fact">
+									<div class="embed-content">
+										<div class="aside-header">
+											Om Alm. Brand
+										</div>
+										<? while (dumb_luck("2")): ?>
+											<p><? dummy("text@teaser") ?></p>
+										<? endwhile ?>	
+										<ul>
+									<? while (dumb_luck("2")): ?>
+										<li><a href="#">I am a menu</a></li>
+									<? endwhile ?>
+									</ul>
+
+									</div>
+									<div class=" embed-fade text-center">
+										<button class="btn btn-fact toggle-embed btn-sm btn-round">Udvid faktaboks</button>
+									</div>
+								</aside>
+								<?php endif; ?>
+
 
 								<?php include('includes/article-embeds/link.php'); ?>
 								

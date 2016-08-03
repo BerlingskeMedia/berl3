@@ -9,6 +9,11 @@
 		Firmaprofil</div>
 	<p><? dummy("text@teaser") ?></p>
 	<p><? dummy("text@teaser") ?></p>
+	<ul>
+	<? while (dumb_luck("2")): ?>
+		<li><a href="#">I am a menu</a></li>
+	<? endwhile ?>
+	</ul>
 
 </div>
 <?php if($template !== 'advertorial'): ?>

@@ -451,18 +451,14 @@ if(isset($_GET["business"])) {
 					<h4>Advertorials</h4>
 				</div>
 				
-				<div class="col-md-3">Section</div>
-				<div class="col-md-9">
-					<ul>
-						<li class="red"><a href="#">Example 1</a> <a href="#">Example 2</a></li>
-					</ul>
-				</div>
+				
 				<div class="col-md-3">
-					Article
+					Advertorial
 				</div>
 				<div class="col-md-9">
 					<ul>
-						
+
+						<li class="orange"><a href="tpl-section.php?template=advertorial">Section</a></li>
 						<li class="orange"><a href="tpl-article.php?advertorial">Article default</a></li>
 						<li class="orange"><a href="tpl-article-longread.php?advertorial">Article Longread</a></li>
 
