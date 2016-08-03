@@ -1404,6 +1404,7 @@ figure > .open-gallery {
 	.article-content {
 		margin-left: 0;
 		margin-right: 0;
+		padding-bottom: 2rem;
 	}
 }
 
@@ -1509,6 +1510,12 @@ $longreadPadding: 20rem;
 	[class*="event-header-"] {
 		margin: .625rem 0 0;
 	}
+	.advertorial-notice {
+		position: absolute;
+		left: 0;
+		right: 0;
+		z-index: 99;
+	}
 }
 
 .longread-head-inner {
@@ -1560,9 +1567,7 @@ $longreadPadding: 20rem;
 	margin-right: -$col-1-width / 2;
 	width: 16.250rem;
 	float: right;
-
 }
-
 
 [class*="continue-reading-"] {
 	&:before {
@@ -1642,8 +1647,9 @@ $longreadPadding: 20rem;
 	background-color: #d9ebf5;
 	color: darken($col-blue-1, 10%);
 	font-weight: 500;
-	font-size: .6rem!important
-
+	font-size: .6rem!important;
+	display: inline-block;
+	margin: 0;
 }
 
 

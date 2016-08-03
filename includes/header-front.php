@@ -56,6 +56,7 @@
 		
 	<?php // include('includes/oneliners-php') ?>
 
+	<?php if(!$templateLongread): ?>
 	<div class="header-bottom">
 		<div class="container">
 			<div class="row">
@@ -95,11 +96,12 @@
 			</div>
 		</div>	
 	</div>
+
 	
 	
 
 	<?php include('includes/marketing-header.php'); ?>
-
+<?php endif; ?>
 
 
 </header>

@@ -16,7 +16,13 @@ if ($listBlog) {
 <div class="<?php echo $sectionClass; ?>" >
 	
 	
-	<div class="section-title"><?php echo $listTitle; ?>
+	<div class="section-title">
+		<?php if($isSponsoredLabel): ?>
+		<div class="list-sponsored">
+			<span><?php echo $isSponsoredLabel; ?></span>
+		</div>
+	<?php endif; ?>
+	<?php echo $listTitle; ?>
 		
 		<?php if($partner === 'videnskabdk' && $showPartner): ?>
 			<div class="partner-logo" style="background-image: url(/dist/images/partnerlogos/videnskabdk.png)"></div>
@@ -77,6 +83,9 @@ if ($listBlog) {
 			<a href="<?php echo $footerLink; ?>"><?php echo $footerTxt; ?></a>
 		</div>
 	<?php endif; ?>
+	
+
+
 </div>
 
 <?php 
@@ -96,6 +105,7 @@ $imgSrc 		= false;
 $listId 		= false;
 $showButton 	= false;
 $isSponsored	= false;
+$isSponsoredLabel = false;
 $btnTxt 		= '';
 $footerLink 	= '';
 $imgW 			= '620';
