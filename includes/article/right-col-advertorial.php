@@ -1,4 +1,4 @@
-<div class="mb">
+<div class="mb-1 text-center banner-advertorial">
 	<img src="/dist/images/demo/alm-brand-300x250.png" alt="">
 </div>
 <div class="mb">
@@ -11,7 +11,7 @@
 	<p><? dummy("text@teaser") ?></p>
 
 </div>
-
+<?php if($template !== 'advertorial'): ?>
 <div class="mb">
 <?php 
 $showTime = false; 
@@ -29,6 +29,8 @@ $sectionClass = 'latest-news';
 
 include('includes/list-news.php');
 ?>
+
 </div>
+<?php endif; ?>
 
  

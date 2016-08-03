@@ -73,7 +73,7 @@ $templateLongread = true;
 	<header class="longread-head">
 	<?php if($isAdvertorial): ?>
 		<div class="advertorial-notice">
-			Sponseret indhold	
+			Sponseret indhold
 		</div>		
 	<?php endif; ?>
 		
@@ -111,7 +111,7 @@ $templateLongread = true;
 
 				<?php if($isAdvertorial): ?>
 					<div class="article-advertorial-notice">
-						Sponseret indhold
+						- Sponseret indhold -
 					</div>
 				<?php endif; ?>
 				

@@ -53,19 +53,7 @@ body {
 	border: .2rem solid #fff;
 	box-shadow: 2px 2px 0 rgba(0,0,0,.1);
 }
-.main-content {
-	padding-top: 1.425rem;
-	
-	&:before {
-		content: '';
-		position: absolute;
-		top: .5rem;
-		left: .625rem;
-		right: .625rem;
-		height: .313rem;
-		background-color: #222;
-	}
-}
+
 
 /*.page-header {
 	padding: 0 .625rem;	
@@ -281,6 +269,22 @@ $col-sidebar-width: 19.375rem;
 		height: $border-width;
 		background-color: $border-color;
 		content: '';
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.main-content {
+		padding-top: 1.425rem;
+		
+		&:before {
+			content: '';
+			position: absolute;
+			top: .5rem;
+			left: .625rem;
+			right: .625rem;
+			height: .313rem;
+			background-color: #222;
+		}
 	}
 }
 @include media-breakpoint-only(lg) {
@@ -747,6 +751,9 @@ $col-deck-label-width: 160px;
 
 
 @include media-breakpoint-down(sm) {
+	.main-content { 
+		margin-top: .625rem;
+	}
 	.box-wiki {
 		img {
 			max-width: 6rem;
