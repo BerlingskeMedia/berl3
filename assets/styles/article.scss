@@ -1678,6 +1678,7 @@ $longreadPadding: 20rem;
 	color: #999!important;
 	text-transform: none!important;
 	margin-bottom: .625rem;
+	border-bottom: $border-color solid $border-width;
 }
 .advertorial-logo {
 	max-height: 6.250rem;
@@ -1690,9 +1691,12 @@ $longreadPadding: 20rem;
 	}
 }	
 
-
 	
 @include media-breakpoint-only(xl) {
+	.section-header-advertorial {
+		padding: 0 .625rem;
+	}
+
 	.tpl-article-longread {	
 		.article-embedded-custom {
 			margin-left: -$col-1-width / 2;
