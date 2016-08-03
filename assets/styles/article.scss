@@ -1674,7 +1674,10 @@ $longreadPadding: 20rem;
 .section-header-advertorial {
 	padding: 0 .625rem;
 	font-family: "Sanomat Sans Web", Helvetica, "Helvetica Neue", arial, sans-serif;
+	font-weight: 500!important;
+	color: #999!important;
 	text-transform: none!important;
+	margin-bottom: .625rem;
 }
 .advertorial-logo {
 	max-height: 6.250rem;
@@ -1881,7 +1884,6 @@ $longreadPadding: 20rem;
 		padding: 0;
 	}
 	.advertorial-logo {
-		
 		max-height: 3.125rem;
 	}
 	

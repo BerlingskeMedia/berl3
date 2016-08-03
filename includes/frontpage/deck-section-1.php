@@ -4,7 +4,11 @@
 				
 			
 			
-
+<?php if($template === 'advertorial'): ?>
+		<div class="advertorial-notice" >
+			Sponseret indhold	
+		</div>		
+	<?php endif; ?>
 
 
 <div class=" deck flex-row">
@@ -12,11 +16,7 @@
 		
 	
 
-	<?php if($template === 'advertorial'): ?>
-		<div class="advertorial-notice" >
-			Sponseret indhold	
-		</div>		
-	<?php endif; ?>
+	
 
 
 	<div class="col-wrapper flex-row">
@@ -50,7 +50,7 @@
 		<div class="col-primary ">
 
 			<?php if($template === 'advertorial'):  ?>
-				<h1 class="section-title-no-border section-header-advertorial"><img src="http://a.bimg.dk/node-images/619/13/13619168-alm-brand.jpg" alt="" class="advertorial-logo">Giver dig viden med på vejen</h1>
+				<h1 class="section-header-advertorial"><img src="http://a.bimg.dk/node-images/619/13/13619168-alm-brand.jpg" alt="" class="advertorial-logo">Giver dig viden med på vejen</h1>
 
 			<?php endif; ?>
 
