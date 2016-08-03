@@ -1684,7 +1684,11 @@ $longreadPadding: 20rem;
 	margin: 0 0 .325rem;
 }
 
-	
+.advertorial-profile {
+	a {
+		@extend .link-blue;
+	}
+}	
 
 
 	

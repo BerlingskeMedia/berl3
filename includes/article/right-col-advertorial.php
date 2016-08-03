@@ -1,7 +1,7 @@
 <div class="mb-1 text-center banner-advertorial">
 	<img src="/dist/images/demo/alm-brand-300x250.png" alt="">
 </div>
-<div class="mb">
+<div class="mb advertorial-profile">
 <div class="section-title">
 	<div class="list-sponsored">
 			<span>Sponseret indhold:</span>
