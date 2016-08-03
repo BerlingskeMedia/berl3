@@ -1673,10 +1673,9 @@ $longreadPadding: 20rem;
 }
 .section-header-advertorial {
 	padding: 0 .625rem;
-	font-family: "Sanomat Sans Web", Helvetica, "Helvetica Neue", arial, sans-serif;
-	font-weight: 500!important;
-	color: #999!important;
-	text-transform: none!important;
+	@extend .font-sans-alt;
+	font-weight: normal;	
+	text-transform: uppercase;
 	margin-bottom: .625rem;
 	border-bottom: $border-color solid $border-width;
 }
