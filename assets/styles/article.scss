@@ -329,7 +329,7 @@ a:hover {
 		margin-bottom: $spacer * 2;
 
 		&> a {
-			@extend .link-article;
+			@extend .link-blue;
 		}
 	}
 	
@@ -1690,7 +1690,6 @@ $longreadPadding: 20rem;
 		@extend .link-blue;
 	}
 }	
-
 	
 @include media-breakpoint-only(xl) {
 	.section-header-advertorial {

@@ -180,6 +180,17 @@
 	});
 
 
+	$('.close-paywall-overlay').click(function(e){
+		e.preventDefault();
+
+		var addOverflow = function(){
+			$('.article-body').css('overflow', 'visible');
+		};
+		$('.paywall').fadeToggle('fast');
+		$('.col-1-content').removeClass('article-cutoff');
+		setTimeout(addOverflow, 500);
+	});
+
 
 	
 

@@ -108,9 +108,10 @@ fieldset[disabled] a.btn {
 }
 
 .btn-gray {
-  @include button-variant(#333, rgba(0,0,0,.1), rgba(0,0,0,.01) );
+  @include button-variant(#666, rgba(0,0,0,.1), rgba(0,0,0,.01) );
   &:hover {
-    background-color: rgba(0,0,0,.2);
+    background-color: rgba(0,0,0,.15);
+    color: #333;
   }
 }
 .btn-green {

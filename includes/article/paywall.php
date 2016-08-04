@@ -1,24 +1,27 @@
 <?php if($paywall === 'soft'): ?>
 
 	
-	<section class="paywall paywall-soft paywall-ver-2 premium-buy-options mb">
-		
+<section class="paywall-fade paywall paywall-soft">
+	
+		<a href="#" class="btn-close-paywall-overlay close-paywall-overlay"><i class="bicon-cancel"></i></a>
 		<div class="row">
-			<div class="col-xs-12">
+			<div class="col-xs-12 col-xl-10 col-xl-offset-1" >
+
 				<h2>Vi er i borgerligt godt humør i dag!</h2>
-				<p class="font-g1">Denne artikel er kun for abonnenter, men vi synes, at du skal læse den alligevel. Vi håber, at du vil overveje at prøve vores digitale abonnement helt gratis i en måned</p>
+				
+				<p>Denne artikel er kun for abonnenter, <strong>men vi synes du skal læse den alligevel</strong>. Prøv vores <a href="#" class="link-blue">digitale abonnement</a> gratis i en måned.</p>
+				
 				
 				<div class="row">
-					<div class="col-md-8 col-md-offset-2">
-						<button class="btn btn-blue btn-md btn-block">Prøv Berlingske Digital gratis </button>
+					<div class="col-md-6 col-md-offset-3">
+						<button class="btn btn-blue no-caps btn-md  btn-block mb close-paywall-overlay">Nej tak, jeg vil bare læse artiklen</button>
+						<p class="small">Allerede abonnement? <a href="#" class="link-blue"><i class="bicon-user"></i> Log ind</a></p>
 					</div>
 				</div>
-
 			</div>
 		</div>
-		
-
-	</section>
+	
+</section>
 
 
 <?php elseif($paywall === 'hard'): ?>

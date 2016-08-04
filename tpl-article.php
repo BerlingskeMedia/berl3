@@ -65,15 +65,17 @@
 		
 		<?php include('includes/article/header.php'); ?>
 
-		<?php if($paywall === 'soft'): ?>
-			<?php include('includes/article/paywall.php'); ?>
-		<?php endif; ?>
 		
-			<div class="col-1-content">
+		
+			<div class="col-1-content <?php if($paywall === 'soft'): echo 'article-cutoff'; endif; ?>">
+					
+					<?php if($paywall === 'soft'): ?>
+							<?php include('includes/article/paywall.php'); ?>
+					<?php endif; ?>
 
-					<div class="article-content">
+					<div class="article-content ">
 						
-
+						
 						
 					
 						<?php if($imageSize == '1' || $imageSize == '4'): // large image ?>
@@ -132,7 +134,7 @@
 							<?php if($paywall === 'hard'): ?>
 								<?php include('includes/article/paywall.php'); ?>
 							<?php endif; ?>
-
+							
 								
 
 							<?php if($paywall !== 'hard'): ?>
@@ -179,8 +181,10 @@
 
 								<?php include('includes/article-embeds/fact-default.php'); ?>
 
-								<?php if($paywall === 'soft'): ?>
-									<?php include('includes/article/paywall.php'); ?>
+								<?php if($paywall === 'soft') :?>
+									<div class="marketing-soft-paywall">
+										Kunne du lide artiklen? <a href="#" class="link-blue">Prøv et Berlingske digitalt abonnement</a>.
+									</div>
 								<?php endif; ?>
 
 								<div class="article-bottom">
