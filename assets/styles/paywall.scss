@@ -27,7 +27,7 @@
 	margin-right: auto;
 	text-align: center;
 	padding-top: 1.5rem;
-	z-index: 10;
+	z-index: 15;
 	background-color: $background-color;
 	h2 {
 		font-size: 2.5rem;
@@ -71,12 +71,12 @@
 		right: 0rem;
 		top: -1rem;
 		height: 1rem;
-		background: radial-gradient(ellipse 50% 10px at 50% 100%,rgba(0,0,0,.1) 0,rgba(0,0,0,.0) 110%);
+		background: radial-gradient(ellipse 50% 10px at 50% 100%,rgba(0,0,0,.15) 0,rgba(0,0,0,.0) 110%);
 		z-index: -1;
 	}
 }
 .article-body {
-	max-height: 99999px;
+	max-height: none;
 	overflow: hidden;
 	transition: max-height 4s ease;
 }
@@ -93,8 +93,10 @@
 		right: -.2rem;
 		bottom: 0rem;
 		height: 30rem;
-		@include gradient-vertical($start-color: fade-out($background-color, 1), $end-color: fade-out($background-color, 0), $start-percent: 0%, $end-percent: 50%);
-		z-index: 2;
+		// @include gradient-vertical($start-color: fade-out($background-color, 1), $end-color: fade-out($background-color, .1), $start-percent: 0%, $end-percent: 50%);
+		//@include gradient-vertical( fade-out($background-color,1), $background-color, $start-percent: 0%, $end-percent: 100%);
+		@include gradient-vertical( fade-out($background-color,.9), $background-color, 0%, 50%);
+		z-index: 10;
 	}
 }
 
@@ -118,7 +120,11 @@
 	.paywall {
 		
 		h2 {
-			font-size: 1.2rem;
+			font-size: 2rem;
+			&+p {
+				font-size: .75rem;
+			}
 		}
+		
 	}
 }

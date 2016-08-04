@@ -3,7 +3,7 @@
 	
 <section class="paywall-fade paywall paywall-soft">
 	
-		<a href="#" class="btn-close-paywall-overlay close-paywall-overlay"><i class="bicon-cancel"></i></a>
+		<!-- <a href="#" class="btn-close-paywall-overlay close-paywall-overlay"><i class="bicon-cancel"></i></a> -->
 		<div class="row">
 			<div class="col-xs-12 col-xl-10 col-xl-offset-1" >
 
