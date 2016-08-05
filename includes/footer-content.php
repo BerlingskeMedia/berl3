@@ -17,7 +17,7 @@
 		  next();
 		});
 
-		$('.close-antiblocker').click(function(e){
+		$('.close-politenotice').click(function(e){
 			e.preventDefault();
 			$('body').removeClass('show-antiblocker');
 		});

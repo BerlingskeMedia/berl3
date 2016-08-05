@@ -8,6 +8,11 @@
 	if($isAdvertorial){
 		$hideComments = true;
 	}
+	if($paywall || $isAdvertorial) {
+		$showMarketingBanner = false;
+	} else {
+		$showMarketingBanner = true;
+	}
 
 ?>
 <!DOCTYPE html>
@@ -62,11 +67,15 @@
 
 		
 		
-			<div class="col-1-content">
+			<div class="col-1-content <?php if($paywall === 'soft'): echo 'article-cutoff'; endif; ?>">
+					
+					<?php if($paywall === 'soft'): ?>
+							<?php include('includes/article/paywall.php'); ?>
+					<?php endif; ?>
 
-					<div class="article-content">
+					<div class="article-content ">
 						
-
+						
 						
 					
 						<?php if($imageSize == '1' || $imageSize == '4'): // large image ?>
@@ -83,9 +92,7 @@
 
 						<?php endif; ?>
 						
-						<?php if($paywall === 'soft'): ?>
-							<?php include('includes/article/paywall.php'); ?>
-						<?php endif; ?>
+						
 
 						<?php include('includes/article/partners.php'); ?>		
 						
@@ -109,27 +116,34 @@
 
 							<?php include('includes/article-embeds/blog-bio.php'); ?>
 								
-							<?php if(!$isAdvertorial): include('includes/article-embeds/newsletter-embedded.php'); endif; ?>
+							
+							<?php if($showMarketingBanner): include('includes/article-embeds/newsletter-embedded.php'); endif; ?>
 							
 							<p><? dummy("text@paragraph-first-letter") ?></p>
-
-							<div class="hidden-md-up mb fw-sm continue-reading-banner">
-								<div class="demo-banner demo-banner-mobile " style="width: 320px; height : 160px;">Leaderboard_1 Mobile</div>
-							</div>
-							
-							<p><? dummy("text@paragraph") ?></p>
-							
-							
-							
-							
 
 							<?php if($paywall === 'hard'): ?>
 								<?php include('includes/article/paywall.php'); ?>
 							<?php endif; ?>
 
+
+							
+							
+							
+							
+							
+							
+							
+
+							
+							
 								
 
 							<?php if($paywall !== 'hard'): ?>
+								
+								<div class="hidden-md-up mb fw-sm continue-reading-banner">
+									<div class="demo-banner demo-banner-mobile " style="width: 320px; height : 160px;">Leaderboard_1 Mobile</div>
+								</div>
+
 								<?php if(!$isAdvertorial): ?>
 									<div class="hidden-md-down inline-banner" style="width: 300px; height: 250px;">Square_4</div>
 									<div class=" inline-banner hidden-lg-up hidden-sm-down" style="width: 300px; height: 250px;">Square_1 Tablet</div>
@@ -173,9 +187,10 @@
 
 								<?php include('includes/article-embeds/fact-default.php'); ?>
 
-								<?php if($paywall === 'soft'): ?>
-										<div class="fade mb"></div>
-									<?php include('includes/article/paywall.php'); ?>
+								<?php if($paywall === 'soft') :?>
+									<div class="marketing-soft-paywall">
+										Kunne du lide artiklen? <a href="#" class="link-blue">Prøv et Berlingske digitalt abonnement</a>.
+									</div>
 								<?php endif; ?>
 
 								<div class="article-bottom">

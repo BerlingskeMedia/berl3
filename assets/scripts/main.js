@@ -181,6 +181,18 @@
 	});
 
 
+	$('.close-paywall-overlay').click(function(e){
+		e.preventDefault();
+
+		var addOverflow = function(){
+			$('.article-body').css('overflow', 'visible');
+			$('.col-1-content').removeClass('article-cutoff');
+		};
+		$('.paywall').fadeToggle('fast');
+		
+		setTimeout(addOverflow, 500);
+	});
+
 
 	
 
