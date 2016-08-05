@@ -75,11 +75,7 @@
 		z-index: -1;
 	}
 }
-.article-body {
-	max-height: none;
-	overflow: hidden;
-	transition: max-height 4s ease;
-}
+
 .article-cutoff {
 	position: relative;
 	.article-body {
