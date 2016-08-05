@@ -26,45 +26,28 @@
 
 <?php elseif($paywall === 'hard'): ?>
 
-	<section class="paywall paywall-fade premium-buy-options article-body mb-2">
+	<section class="paywall-fade paywall ">
 		
 		<div class="row">
 			<div class="col-xs-12">
-				<h2>Ubegrænset adgang!</h2>		
-				<p>Vil du prøve Berlingske.dk gratis i 30 dage?</p>
+				<p>Artiklen er kun for abonnenter</p>
+				<h2>Borgerlig journalistik 24/7/365</h2>		
 			</div>
-			<div class="col-xs-12">
-				<img src="/dist/images/platforms.png" alt="" class="img mb pull-right">
-				<ul class="list-check font-g1">
-					<li>Alt fra Berlingske.dk</li>
-					<li>Alt fra Business.dk</li>
-					<li>Dybdegående artikler</li>
-					<li>Skarpe debatindlæg </li>
-				</ul>
+			<div class="col-xs-6 text-left">
+				Danmarks borgerlige avis holder aldrig lukket, og med et digitalt abonnement kan du altid læse om den verden vi lerver i, mens den drejer rundt.
 			</div>
-			
+			<div class="col-xs-6">
+				<div class="earth"></div>
 			</div>
-			<div class="row sm-text-center">
-			<div class="col-sm-6 col-xs-12 mb">
-			<p class="small mb-05 gray">Ikke abonnent?</p>
-				<button class="btn btn-md btn-blue">
-					Prøv gratis i 30 dage <i class="bicon-angle-right"></i>
-				</button>
-			</div>
-			
-				<div class="col-sm-6 col-xs-12">
-				<p class="small mb-05 gray">Allerede abonnent?</p>
-					<button class="btn btn-md btn-blue toggle-login">
-						Log ind <i class="bicon-angle-right"></i>
-					</button>
-				</div>
 			
 			</div>
 			<div class="row">
-				<div class="col-xs-12">
-					<p class="small mt">Brug for hjælp? <a href="http://b.kundeunivers.dk" class="link-blue">Besøg kundeservice</a> eller ring på tlf. 33 75 36 36 mandag - fredag kl. 8 - 17.</p>
+					<div class="col-md-6 col-md-offset-3">
+						<button class="btn btn-blue no-caps btn-md  btn-block mb close-paywall-overlay">Prøv Berlingske Digital gratis</button>
+						<p class="small">Allerede abonnement? <a href="#" class="link-blue"><i class="bicon-user"></i> Log ind</a></p>
+					</div>
 				</div>
-			</div>
+			
 		
 
 	</section>

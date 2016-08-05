@@ -125,7 +125,7 @@
 								<div class="demo-banner demo-banner-mobile " style="width: 320px; height : 160px;">Leaderboard_1 Mobile</div>
 							</div>
 							
-							<p><? dummy("text@paragraph") ?></p>
+							
 							
 							
 							
