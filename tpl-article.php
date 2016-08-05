@@ -121,9 +121,12 @@
 							
 							<p><? dummy("text@paragraph-first-letter") ?></p>
 
-							<div class="hidden-md-up mb fw-sm continue-reading-banner">
-								<div class="demo-banner demo-banner-mobile " style="width: 320px; height : 160px;">Leaderboard_1 Mobile</div>
-							</div>
+							<?php if($paywall === 'hard'): ?>
+								<?php include('includes/article/paywall.php'); ?>
+							<?php endif; ?>
+
+
+							
 							
 							
 							
@@ -131,13 +134,16 @@
 							
 							
 
-							<?php if($paywall === 'hard'): ?>
-								<?php include('includes/article/paywall.php'); ?>
-							<?php endif; ?>
+							
 							
 								
 
 							<?php if($paywall !== 'hard'): ?>
+								
+								<div class="hidden-md-up mb fw-sm continue-reading-banner">
+									<div class="demo-banner demo-banner-mobile " style="width: 320px; height : 160px;">Leaderboard_1 Mobile</div>
+								</div>
+
 								<?php if(!$isAdvertorial): ?>
 									<div class="hidden-md-down inline-banner" style="width: 300px; height: 250px;">Square_4</div>
 									<div class=" inline-banner hidden-lg-up hidden-sm-down" style="width: 300px; height: 250px;">Square_1 Tablet</div>
