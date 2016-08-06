@@ -20,7 +20,7 @@
 
 <?php elseif($paywall === 'hard'): ?>
 
-<?php $paywallVer = rand(0,1); ?>
+<?php $paywallVer = '1'; ?>
 
 
 
