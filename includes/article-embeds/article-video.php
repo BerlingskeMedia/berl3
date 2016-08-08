@@ -1,16 +1,15 @@
-<?php if($paywall === 'video'): ?>
+<?php if($paywall): ?>
 
 <figure class="article-video mb" >
 			
 	<img src="<? dummy("image@920x,16:9") ?>" width="" height="" alt="" />
 	
 
-	<?php if($paywall === 'video'): ?>
-			<?php include('includes/article/paywall.php'); ?>
-	<?php endif; ?>
+	
+	<?php include('includes/article/paywall.php'); ?>
+
 
 </figure>	
-	
 	
 
 <?php else: ?>

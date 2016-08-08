@@ -18,7 +18,7 @@
 	margin-top: -$border-width;
 	z-index: 10000;
 	.article-topics {
-		border-bottom: $border-color solid $border-width;
+		border-top: $border-color solid $border-width;
 		@extend .clearfix;
 		padding-top: .3025rem;
 		li {

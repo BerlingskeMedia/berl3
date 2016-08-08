@@ -301,8 +301,11 @@ if(isset($_GET["business"])) {
 					<div class="col-md-9">
 						<ul>
 							<li class="orange"><a href="tpl-article.php?paywall=soft">Pay wall sign - Soft</a></li>
+							<li class="orange"><a href="tpl-article.php?imgSize=5&amp;paywall=video-soft">Pay wall sign - Soft (Video) </a></li>
+							<li class="orange"><a href="tpl-article-longread.php?paywall=soft">Pay wall sign - Soft (Longread) </a></li>
 							<li class="orange"><a href="tpl-article.php?paywall=hard">Pay wall sign - Hard</a></li>
-							<li class="orange"><a href="tpl-article.php?imgSize=5&amp;paywall=video">Pay wall sign - Video - Soft </a></li>
+							<li class="orange"><a href="tpl-article.php?imgSize=5&amp;paywall=video-hard">Pay wall sign - Hard (Video) </a></li>
+							<li class="orange"><a href="tpl-article-longread.php?paywall=hard">Pay wall sign - Hard (Longread) </a></li>
 						</ul>
 					</div>
 					

@@ -3,7 +3,15 @@
 		<div class="row">
 			<div class="col-xs-12">
 				<nav class="sitemap">
-
+					<ul class="article-topics">
+						<li><span>Aktuelle emner:</span></li>
+						<? while (dumb_luck("10")): ?>
+						<li>
+							<a href="tpl-section.php?template=topic"><? dummy("text@item") ?></a>
+						</li>
+						<? endwhile ?>
+					</ul>
+					
 					<ul class="sitemap-parent">
 						<? while (dumb_luck("9")): ?>
 						<li>
@@ -17,14 +25,7 @@
 						<? endwhile ?>
 					</ul>
 					
-					<ul class="article-topics">
-						<li><span>Aktuelle emner:</span></li>
-						<? while (dumb_luck("10")): ?>
-						<li>
-							<a href="tpl-section.php?template=topic"><? dummy("text@item") ?></a>
-						</li>
-						<? endwhile ?>
-					</ul>
+					
 
 					<ul class="sitemap-small">
 						
