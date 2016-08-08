@@ -11,10 +11,7 @@
 	transform: translate3d(0,100px,0);
 	visibility: hidden;
 	z-index: -1;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
+	@extend .flex-center;
 	h2 {
 		@extend .font-s1;
 		font-size: 5rem;

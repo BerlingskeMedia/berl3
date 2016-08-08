@@ -20,7 +20,7 @@
 
 <?php elseif($paywall === 'hard'): ?>
 
-<?php $paywallVer = rand(0,1); ?>
+
 
 
 
@@ -30,7 +30,7 @@
 			<div class="col-xs-12 ">
 				<p class="small mb-05" style="color: #999;">Artiklen er kun for abonnenter</p>
 
-				<h2>Borgerlig journalistik <?php if($paywallVer === '0'): ?><div class="earth hidden-sm-down"></div><?php endif; ?> 24/7/365 </h2>		
+				<h2>Borgerlig journalistik 24/7/365 </h2>		
 			</div>
 		
 			
@@ -57,4 +57,40 @@
 			</div>
 		</div>
 	</section>
+
+<?php elseif($paywall === 'video-soft'): ?>
+
+<div class="paywall paywall-video ">
+	<div class="row">
+		<div class="col-xs-12 " >
+			<h2>Vi er i borgerligt godt humør i dag!</h2>
+			<p>Denne video er kun for abonnenter, <strong>men vi synes du skal se den alligevel</strong>. Prøv vores <a href="#" class="link-blue">digitale abonnement</a> gratis i en måned.</p>
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">					
+					<button class="btn btn-blue no-caps btn-md btn-sm-mobile  btn-block close-paywall-video-overlay">Nej tak, jeg vil bare se videoen</button>
+					<p class="small">Allerede abonnement? <a href="#" class="link-blue"><i class="bicon-user"></i> Log ind</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<?php elseif($paywall === 'video-hard'): ?>
+
+<div class="paywall paywall-video ">
+	<div class="row">
+		<div class="col-xs-12 " >
+			
+			<p class="small mb-05" >Videoen kræver abonnement</p>
+			<h2>Borgerlig journalistik 24/7/365 </h2>		
+			<p>Danmarks borgerlige avis holder aldrig lukket, og med et <a href="#" class="link-blue">digitalt abonnement</a> kan du altid læse om den verden vi lever i, mens den drejer rundt.</p>
+			<div class="row">
+				<div class=" col-xs-10 col-xs-offset-1">					
+					<button class="btn btn-blue no-caps btn-md btn-sm-mobile btn-block ">Prøv Berlingske Digital gratis</button>
+					<p class="small">Allerede abonnement? <a href="#" class="link-blue"><i class="bicon-user"></i> Log ind</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
 <?php endif; ?>

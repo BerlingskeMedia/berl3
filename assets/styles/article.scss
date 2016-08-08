@@ -16,7 +16,12 @@
 	font-weight: 900;
 }
 
-.article-video,
+
+.article-video {
+	margin-bottom: $spacer;
+	position: relative;
+}
+
 .article-image {
 	margin-bottom: $spacer;
 	position: relative;
@@ -372,6 +377,7 @@ a:hover {
 	font-weight: 500;
 	display: inline-block;
 	margin-top: .45rem;
+	line-height: 1;
 }
 
 .article-avatar {
@@ -1703,6 +1709,7 @@ $longreadPadding: 20rem;
 		}
 	}
 	.article-video {
+		margin-right:  -$col-1-width / 2;;
 		margin-left: -$col-1-width / 2;
 	}
 

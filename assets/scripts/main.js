@@ -181,16 +181,24 @@
 	});
 
 
+	// soft Paywall - remove overlay ans show article
+
 	$('.close-paywall-overlay').click(function(e){
 		e.preventDefault();
 
 		var addOverflow = function(){
 			$('.article-body').css('overflow', 'visible');
-			$('.col-1-content').removeClass('article-cutoff');
+			$('.article-cutoff').removeClass('article-cutoff');
 		};
 		$('.paywall').fadeToggle('fast');
 		
 		setTimeout(addOverflow, 500);
+	});
+
+	// Soft paywall on video articles. Removes the paywall in the video container
+
+	$('.close-paywall-video-overlay').click(function(){
+		$('.paywall-video').remove();
 	});
 
 
