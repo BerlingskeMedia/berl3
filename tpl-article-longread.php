@@ -141,16 +141,17 @@ $templateLongread = true;
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 ">
-					<article>
-						
+					
+					<article class="<?php if($paywall === 'soft'): echo 'article-cutoff'; endif; ?>">
+					
+						<?php if($paywall === 'soft'): ?>
+							<?php include('includes/article/paywall.php'); ?>
+						<?php endif; ?>
 						
 						<div class="article-content">
 
 							<div class="article-body">
 
-								<?php if($paywall === 'soft'): ?>
-									<?php include('includes/article/paywall.php'); ?>
-								<?php endif; ?>
 
 								<?php include('includes/article/byline.php') ?>
 

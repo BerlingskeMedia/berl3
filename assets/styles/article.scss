@@ -16,7 +16,12 @@
 	font-weight: 900;
 }
 
-.article-video,
+
+.article-video {
+	margin-bottom: $spacer;
+	position: relative;
+}
+
 .article-image {
 	margin-bottom: $spacer;
 	position: relative;

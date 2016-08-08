@@ -323,3 +323,13 @@ button {
 	width: 100%;
 }
 
+@include media-breakpoint-down(sm) {
+  .btn {
+    font-size: .8rem;
+  }
+  .btn-sm-mobile {
+    font-size: .7rem;
+    line-height: 1;
+    padding: .4rem;
+  }
+}
