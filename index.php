@@ -147,7 +147,7 @@ if(isset($_GET["business"])) {
 						<li class="green"><a href="tpl-frontpage.php">Static pages</a> - <a href="tpl-frontpage.php?loggedIn">(Logged in)</a></li>
 						<li class="green"><a href="tpl-article.php">Dynamic pages except longreads</a> - <a href="tpl-article.php?loggedIn">(Logged in)</a></li>
 						<li class="green"><a href="tpl-article-longread.php">Longreads</a> - <a href="tpl-article-longread.php?loggedIn">(Logged in)</a></li>
-						<li class="red"><a href="#">Off-canvas menu</a></a></li>
+						<li class="green"><a href="tpl-frontpage.php">Off-canvas menu</a></a></li>
 					</ul>
 				</div>
 
@@ -297,17 +297,7 @@ if(isset($_GET["business"])) {
 							<li class="green"><a href="tpl-article.php?partner=videnskabdk">'Videnskab.dk'</a></li>
 						</ul>
 					</div>
-					<div class="col-md-3">Paywall</div>
-					<div class="col-md-9">
-						<ul>
-							<li class="orange"><a href="tpl-article.php?paywall=soft">Pay wall sign - Soft</a></li>
-							<li class="orange"><a href="tpl-article.php?imgSize=5&amp;paywall=video-soft">Pay wall sign - Soft (Video) </a></li>
-							<li class="orange"><a href="tpl-article-longread.php?paywall=soft">Pay wall sign - Soft (Longread) </a></li>
-							<li class="orange"><a href="tpl-article.php?paywall=hard">Pay wall sign - Hard</a></li>
-							<li class="orange"><a href="tpl-article.php?imgSize=5&amp;paywall=video-hard">Pay wall sign - Hard (Video) </a></li>
-							<li class="orange"><a href="tpl-article-longread.php?paywall=hard">Pay wall sign - Hard (Longread) </a></li>
-						</ul>
-					</div>
+					
 					
 				
 
@@ -359,18 +349,12 @@ if(isset($_GET["business"])) {
 						</div>
 					
 						
-						<div class="col-md-3">Paywall</div>
-						<div class="col-md-9">
-							<ul>
-								<li class="orange"><a href="tpl-article-longread.php?paywall=soft">Pay wall sign - Soft</a></li>
-								<li class="orange"><a href="tpl-article-longread.php?paywall=hard">Pay wall sign - Hard</a></li>
-							</ul>
-						</div>
-					
 						
 						
 						
-					
+						
+				
+
 				
 
 				<div class="col-md-12">
@@ -382,6 +366,33 @@ if(isset($_GET["business"])) {
 				<div class="col-md-9">
 					<ul>
 						<li class="green"><a href="tpl-article-large.php">Article - Large</a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-12">
+					<h4>Paywall</h4>
+				</div>
+				<div class="col-md-3">Article</div>
+				<div class="col-md-9">
+					<ul>
+						<li class="orange"><a href="tpl-article.php?paywall=soft">Soft</a></li>
+						<li class="orange"><a href="tpl-article.php?paywall=hard">Hard</a></li>
+						
+					</ul>
+				</div>
+				<div class="col-md-3">Video</div>
+				<div class="col-md-9">
+					<ul>
+						
+						<li class="orange"><a href="tpl-article.php?imgSize=5&amp;paywall=video-soft">Soft</a></li>
+						<li class="orange"><a href="tpl-article.php?imgSize=5&amp;paywall=video-hard">Hard</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">Longread</div>
+				<div class="col-md-9">
+					<ul>
+						<li class="orange"><a href="tpl-article-longread.php?paywall=soft">Soft</a></li>
+						<li class="orange"><a href="tpl-article-longread.php?paywall=hard">Hard</a></li>
 					</ul>
 				</div>
 

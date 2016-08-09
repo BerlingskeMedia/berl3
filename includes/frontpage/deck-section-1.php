@@ -372,7 +372,28 @@
 		<div class="row">
 			<?php if($template === 'advertorial'): ?>
 			<div class="col-lg-12 col-md-6 col-sm-12">
-			<?php include('includes/article/right-col-advertorial.php');?>
+				<?php include('includes/article/right-col-advertorial.php');?>
+			
+			</div>
+			<div class="col-lg-12 col-md-6 col-sm-12">
+				<div class=" advertorial-profile">
+					<div class="section-title">
+						<div class="list-sponsored">
+								<span>Sponseret indhold:</span>
+						</div>
+						Firmaprofil
+					</div>
+					<p><? dummy("text@teaser") ?></p>
+					<p><? dummy("text@teaser") ?></p>
+					
+					<ul>
+					<? while (dumb_luck("2")): ?>
+						<li><a href="#">I am a menu</a></li>
+					<? endwhile ?>
+					</ul>
+
+				</div>
+
 			</div>
 
 			<?php else: ?>
