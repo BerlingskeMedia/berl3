@@ -519,7 +519,7 @@ if(isset($_GET["business"])) {
 					<ul>
 						<li class="red"><a href="#">404</a></li>
 						<li class="red"><a href="#">Send tip</a></li>
-						<li class="red"><a href="#">Article archive</a></li>
+						<li class="orange"><a href="tpl-archive.php">Article archive</a></li>
 						
 					
 					</ul>

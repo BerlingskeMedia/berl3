@@ -250,7 +250,25 @@ ul + .list-fade {
 }
 
 
-
+.list-box {
+	padding: 0;
+	list-style: none;
+	li {
+		display: inline-block;
+		width: 6rem;
+		float: left;
+		margin: 0 0 $border-width $border-width;
+		a {
+			display: block;
+			text-align: center;
+			background-color: rgba(0,0,0,.05);
+			line-height: 2rem;
+			&:hover {
+				background-color: rgba(0,0,0,.1);
+			}
+		}
+	}
+}
 .list-bullet-not-first {
 	li:first-child:before {
 		content: none;
