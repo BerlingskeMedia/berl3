@@ -168,7 +168,7 @@ if(isset($_GET["business"])) {
 				</div>
 				<div class="col-md-9">
 					<ul>
-						<li class="red"><a href="#">User profile page</a></li>
+						<li class="orange"><a href="tpl-userprofile.php">User profile page</a></li>
 					</ul>
 				</div>
 
