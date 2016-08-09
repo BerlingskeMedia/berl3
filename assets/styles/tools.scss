@@ -214,7 +214,10 @@
  	display: inline-block;
  }
 
-
+hr {
+	border-color: rgba(0,0,0,.1);
+	border-bottom: 0;
+}
 @include media-breakpoint-down(md){
 	
 }

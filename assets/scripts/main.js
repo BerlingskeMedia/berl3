@@ -201,6 +201,10 @@
 		$('.paywall-video').remove();
 	});
 
+	$('.toggle-trigger').click(function(e){
+		e.preventDefault();
+		$(this).closest('div').find('.toggle-content').toggleClass('hidden');
+	});
 
 	
 

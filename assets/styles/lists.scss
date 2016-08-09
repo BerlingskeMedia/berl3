@@ -11,6 +11,9 @@
 		text-transform: uppercase;
 		color: $col-blue-1;
 	}
+	a {
+		color: #222;
+	}
 	a:hover {
 		color: rgba(0,0,0,.7);
 		text-decoration: none;

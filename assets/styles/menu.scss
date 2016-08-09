@@ -143,16 +143,14 @@
 
 
 .sitemap-small	{
-
-	font-size: .7rem;
+	@extend .font-s2;
+	font-size: .8rem;
+	font-weight: 500;
 	li {
 		display: inline-block;
 		&+li:not(:last-child) {
-			margin-left: .3rem;
-			a:before {
-				content: '-';
-				padding-right: .4rem;
-			}
+			margin-left: .6rem;
+			
 		
 		}
 		&.cookie-link {
@@ -197,8 +195,13 @@
 					float: none;
 					margin-bottom: 0;
 				}
+				&:nth-last-of-type(-n+5) {
+					display: none;
+				}
 			}
 		}
+
+		
 
 
 
