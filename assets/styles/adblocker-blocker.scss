@@ -1,6 +1,5 @@
 .antiblocker {
-	transition: all .35s cubic-bezier(.33,.66,.66,1);
-	background: $background-color;
+	transition: all .35s cubic-bezier(.33,.66,.66,1);	
 	position: fixed;
 	top: 0;
 	bottom: 0;
@@ -12,6 +11,9 @@
 	visibility: hidden;
 	z-index: -1;
 	@extend .flex-center;
+	.container {
+		background-color: transparent;
+	}
 	h2 {
 		@extend .font-s1;
 		font-size: 5rem;
@@ -25,6 +27,18 @@
 		font-size: .75rem;
 	}
 }
+.antiblocker-solid {
+	background: $background-color;
+}
+.antiblocker-trans {
+	background: fade-out($background-color, .2);
+}
+.antiblocker-content {
+	padding: 2rem;
+	box-shadow: 0 0 1rem rgba(0,0,0,.25);
+	border-radius: 1rem;
+	background: $background-color;
+}
 .close-antiblocker {
 	
 	@extend .font-s2;
@@ -37,7 +51,7 @@
 	line-height: 2rem;
 	color: #999;
 	&:before {
-		content: 'Luk';
+		content: 'Luk ';
 		
 		
 		font-size: .9rem;
