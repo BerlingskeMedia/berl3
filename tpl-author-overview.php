@@ -33,7 +33,7 @@ $showDate = true;
 <html lang="da">
 <head>
 	<?php include('includes/head.php'); ?>
-	<title>Berlingske - Fejl</title>
+	<title>Berlingske - Holdet bag Berlingske</title>
 	<link rel="stylesheet" href="/dist/styles/main.css">
 </head>
 <body class="tpl-section default-header <?php if($template): ?> default-header <?php endif; ?> <?php if($siteBusiness): ?>site-business<?php endif; ?> show-site-search">
@@ -62,40 +62,43 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 
 	<div class="banner-wrapper">
 		
-			
+			<div class="bg-banner"></div>
+				<div class="topbanner demo-banner hidden-sm-down" style="width: 930px; height: 180px;"></div>
+				<div class=" demo-banner hidden-md-up" style="width: 100%; height: 160px;">Leaderboard_1 320 x 320/160</div>
 			
 			
 		
 		
 
 
-			<div class="container ">
+			<div class="container main-content ">
 			
-			
-			<div class="col-lg-8 col-lg-offset-2 col-xs-12">
-				<div class="mb text-center container-404 flex-center">
-					<div>
-					<h1 class=" article-title ">Ups. Siden findes ikke!</h1>		
-					<p>Måske kan du finde den ved at foretage en søgning:</p>
-					
-					<div class="form-group form-oneliner">
-						<label class="sr-only" for="searchInputAdv">Søg på Berlingske</label>
-						<input id="searchInputAdv" type="search" class="form-control ui-autocomplete-input" value="" autocomplete="off" placeholder="Søg på Berlingske.dk" accesskey="s" data-url="/autocomplete" data-search-url="/search" name="query">
-						<button id="search" class="btn btn-blue"><i class="bicon-search-1"></i></button>
-					</div>
-					
-					<p><a href="/"><i class="bicon-angle-left"></i> Gå til forsiden</a></p>
-						
-					</div>
-				</div>
-			
-			</div>
 			
 			<div class="col-xs-12">
-				<?php include('includes/article/footer.php');?>	
-			</div>
-
+				
+				<h1 class="text-center article-title mt">Holdet bag Berlingske</h1>
+				
+				<ul class="list-author-overview flex-row">
+					<? while (dumb_luck("25")): ?>
+					<li class="col-xs-6 col-md-4 col-lg-3">
+						<figure>
+							<a href="tpl-section.php?template=author"><img src="<? dummy("image/!author@200x,1:1") ?>" width="" height="" alt="" /></a>
+						</figure>
+						<h3 class="font-s1 "><strong><a href="tpl-section.php?template=author"><? dummy("text@author") ?></a></strong></h3>
+						<p>Claus Skovhus er journalist på Berlingske Business. Jeg var i perioden 2011 til 2015 redaktør for Be...</p>
+					</li>
+					<? endwhile ?>
+				</ul>
+							
+					
+							
+						
+										
+						
+					
 			
+			
+			</div>
 
 		</div><!-- banner-wrapper -->
 

@@ -78,7 +78,7 @@
 					
 
 					<div class="text-center">
-						<img src="<? dummy("image/!author@100x100,") ?>" width="" height="" alt="" class="img-round center-block mb author-avatar" />	
+						<img src="<? dummy("image/!author@200x200,") ?>" width="" height="" alt="" class="img-round center-block mb author-avatar" />	
 						<h1 class="article-title"><? dummy("text@author") ?></h1>
 					
 						<p>Mikael Hjorth er souschef og digital redaktør på Berlingske Business.</p>

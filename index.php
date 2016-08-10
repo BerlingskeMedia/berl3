@@ -427,7 +427,7 @@ if(isset($_GET["business"])) {
 						<li class="green"><a href="tpl-section.php?template=corrections">Corrections ('Fejl og fakta')</a></li>
 						<li class="red"><a href="#">Blog</a></li>
 						<li class="green"><a href="tpl-section.php?template=topic">Topic page</a></li>
-						<li class="red"><a href="tpl-author-overview.php">Author overview</a></li>
+						<li class="orange"><a href="tpl-author-overview.php">Author overview</a></li>
 						<li class="green"><a href="tpl-section.php?template=author">Author profile</a></li>
 						<li class="green"><a href="tpl-section.php?template=searchresult">Search result</a></li>
 					</ul>
@@ -482,7 +482,7 @@ if(isset($_GET["business"])) {
 
 				
 
-				<div class="col-md-12">
+				<!-- <div class="col-md-12">
 					<h4>Gallery</h4>
 				</div>
 				
@@ -494,7 +494,7 @@ if(isset($_GET["business"])) {
 						<li class="red"><a href="#">Overlay - last slide</a></li>
 						
 					</ul>
-				</div>
+				</div> -->
 
 				<div class="col-md-12">
 					<h4>Text pages</h4>
