@@ -72,7 +72,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 			<div class="container ">
 			
 			
-			<div class="col-lg-8 col-lg-offset-2">
+			<div class="col-lg-8 col-lg-offset-2 col-xs-12">
 							
 							
 

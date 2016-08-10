@@ -441,7 +441,7 @@ ul + .list-fade {
 	}
 	.list-box {
 		li:not(.list-box-title) {
-			width: 33%;
+			width: calc(100% / 3);
 		}
 	}
 }
