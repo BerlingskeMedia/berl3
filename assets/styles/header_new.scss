@@ -29,7 +29,7 @@ $border: .063rem;
 	font-size: 0.688rem;
 	font-weight: 500;
 	text-transform: uppercase;
-	color: #888;
+	color: #444;
 	
 	.btn-circle {
 		border-color: transparent;
@@ -39,28 +39,14 @@ $border: .063rem;
 	}
 	&:hover, 
 	&:focus {
-		color: #555;
+		color: #000;
 		text-decoration: none;
 		i {
-			color: #555;
+			color: #000;
 
 		}
-		.btn-circle {
-			// border-color: rgba(0,0,0,.2);
-		}	
+		
 	}
-	/*.btn-circle-label {
-		border-radius: 30rem;
-		width: auto;
-		padding: 0 1rem;
-		font-size: .688rem;
-		i {
-			font-size: 1.1rem;
-			display: inline-block;
-			margin-right: .2rem;
-			vertical-align: middle;
-		}
-	}*/
 
 }
 .toggle-user-menu,
