@@ -421,6 +421,25 @@ ul + .list-fade {
 	background-repeat: no-repeat;
 }
 
+.list-author-overview {
+	list-style: none;
+	padding-left: 0;
+	text-align: center;
+	color: #666;
+	li {
+		margin-bottom: 1rem;
+	}
+	figure {
+		margin-bottom: .625rem;
+	}
+	img {
+		@extend .author-avatar;
+		border-radius: 50%;
+		margin: 0 auto;
+		max-width: 160px;
+	}
+}
+
 @include media-breakpoint-down(sm) {
 	.teaser-sm-start-large-items:nth-child(-n+3) {
 		width: 100%;
@@ -441,7 +460,7 @@ ul + .list-fade {
 	}
 	.list-box {
 		li:not(.list-box-title) {
-			width: 33%;
+			width: calc(100% / 3);
 		}
 	}
 }
