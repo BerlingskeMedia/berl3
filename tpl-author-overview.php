@@ -85,6 +85,9 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 							<a href="tpl-section.php?template=author"><img src="<? dummy("image/!author@200x,1:1") ?>" width="" height="" alt="" /></a>
 						</figure>
 						<h3 class="font-s1 "><strong><a href="tpl-section.php?template=author"><? dummy("text@author") ?></a></strong></h3>
+						
+							<button class="btn btn-xs btn-follow-author btn-blue">Følg</button>
+						
 						<p>Claus Skovhus er journalist på Berlingske Business. Jeg var i perioden 2011 til 2015 redaktør for Be...</p>
 					</li>
 					<? endwhile ?>
@@ -108,6 +111,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 
 <?php include('includes/footer.php'); ?>
 
+<?php include('includes/article/author-signup.php'); ?>	
 <?php include('includes/footer-content.php'); ?>
 
 

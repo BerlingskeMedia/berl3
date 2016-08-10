@@ -30,9 +30,11 @@
 .antiblocker-modal {
 	background: fade-out($background-color, .1);
 	.antiblocker-content {
-		padding: 1rem;
+		@extend .overlay-inner;
+		transform: translateY(-2rem);
+		/*padding: 1rem;
 		box-shadow: 0 0 1rem rgba(0,0,0,.25);
-		background: $background-color;
+		background: $background-color;*/
 	}
 }
 
@@ -45,7 +47,8 @@
 		visibility: visible;
 	}
 	.antiblocker-content {
-		transform: translateY(0);
+		transform: translateY(0)!important;
+		opacity: 1!important;
 	}
 }
 
@@ -66,10 +69,9 @@
 }
 .modal-header {
 	margin: -1rem -1rem 0 -1rem;
-	font-weight: normal;
-	
+	font-weight: 900;	
 	@extend .font-s1;
-	font-size: 2rem;
+	font-size: 2.5rem;
 }
 
 .antiblocker-lg {

@@ -77,7 +77,7 @@
 	<div class="antiblocker antiblocker-modal antiblocker-md" >
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6 col-md-offset-3">
+				<div class="col-md-8 col-md-offset-2">
 					<div class="antiblocker-content">
 						<div class="modal-header">
 							Hov! Hvor blev min artikel af..!?

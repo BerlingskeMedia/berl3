@@ -400,16 +400,6 @@ $col-deck-label-width: 160px;
 	overflow: auto;
 	transition: opacity .2s ease;
 	padding-bottom: 2rem;
-	.overlay-inner {
-		padding: 1rem;
-		border: $border-width solid $border-color;
-		background-color: $background-color;
-		transition: all .3s ease-out;
-		opacity: 0;
-		transform: translateY(-2rem);
-		border-radius: .2rem;
-		box-shadow: 0 0 .5rem rgba(0,0,0,.2);
-	}
 	.close-overlay {
 		z-index: 99;
 	}
@@ -425,6 +415,16 @@ $col-deck-label-width: 160px;
 	}
 }
 
+.overlay-inner {
+	padding: 1rem;
+	border: $border-width solid $border-color;
+	background-color: $background-color;
+	transition: all .3s ease-out;
+	opacity: 0;
+	transform: translateY(-2rem);
+	border-radius: .2rem;
+	box-shadow: 0 0 .5rem rgba(0,0,0,.2);
+}
 
 .overlay-login {
 	
