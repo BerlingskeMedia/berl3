@@ -61,15 +61,15 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 
 
 	<div class="banner-wrapper">
-		<div class="bg-banner"></div>
-			<div class="topbanner demo-banner hidden-sm-down" style="width: 930px; height: 180px;"></div>
-			<div class=" demo-banner hidden-md-up" style="width: 100%; height: 160px;">Leaderboard_1 320 x 320/160</div>
-			<!-- <div class="hidden-lg-up hidden-sm-down"><img src="/dist/images/banners/ipad930x180.png" width="" height="" alt="" style="margin: 0 auto"/></div> -->
+		
+			
+			
+			
 		
 		
 
 
-			<div class="container main-content">
+			<div class="container ">
 			
 			
 			<div class="col-lg-8 col-lg-offset-2">
@@ -78,10 +78,11 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 
 							
 
-							<div class="mb text-center container-404">
-
+							<div class="mb text-center container-404 flex-center">
+									
+									<div>
 								
-									<h1 class=" article-title">Ups. Siden findes ikke</h1>		
+									<h1 class=" article-title ">Ups. Siden findes ikke!</h1>		
 										
 									<p>Måske kan du finde ved ved at foretage en søgning:</p>
 
@@ -95,7 +96,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 									
 									<p><a href="/"><i class="bicon-angle-left"></i> Gå til forsiden</a></p>
 										
-										
+									</div>
 										
 
 								
