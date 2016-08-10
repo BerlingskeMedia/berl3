@@ -72,9 +72,6 @@ $templateLongread = true;
 
 	<header class="longread-head">
 	<?php if($isAdvertorial): ?>
-		<div class="advertorial-notice">
-			Sponseret indhold
-		</div>		
 	<?php endif; ?>
 		
 		<div class="longread-head-inner">
@@ -83,6 +80,11 @@ $templateLongread = true;
 					<div class="header-container">
 						<?php include('includes/article/event-headers.php'); ?>
 						<h1 class="article-title">
+						<?php if($isAdvertorial): ?>
+							<div class="advertorial-notice">
+								Sponsoreret indhold
+							</div>		
+						<?php endif; ?>
 						<?php if($trumpet == '1'): ?>
 						<span class="article-trumpet">
 							<? dummy("text@item") ?>
@@ -109,11 +111,7 @@ $templateLongread = true;
 		<div class="row">
 			<div class="col-xs-12">
 
-				<?php if($isAdvertorial): ?>
-					<div class="article-advertorial-notice">
-						- Sponseret indhold -
-					</div>
-				<?php endif; ?>
+				
 				
 				<?php include('includes/article/date.php'); ?>
 				<?php include('includes/article-embeds/rating.php'); ?>

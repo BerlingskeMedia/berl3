@@ -92,9 +92,9 @@
 					$imgRatio = '16:9';
 					$imgSrc = '/landscape';
 					$showSummary = true;
-					
 					$labelType = false;
 					$teaserAd = true;
+					$teaserLink = 'tpl-article.php?advertorial';
 
 					include('includes/frontpage/teasers/teaser.php') ?>
 

@@ -4,11 +4,6 @@
 				
 			
 			
-<?php if($template === 'advertorial'): ?>
-		<div class="advertorial-notice" >
-			Sponseret indhold	
-		</div>		
-	<?php endif; ?>
 
 
 <div class=" deck flex-row">
@@ -238,6 +233,7 @@
 						$showTrumpet = false;
 						$showPaywall = false;
 						$showDate = false;
+						$sponsorTag = true;
 						$teaserLink = 'tpl-article.php?advertorial';
 						
 
@@ -256,6 +252,7 @@
 							$showSummary = true;
 							$showPaywall = false;
 							$showDate = false;
+							$sponsorTag = true;
 							$teaserLink = 'tpl-article.php?advertorial';
 
 							include('includes/frontpage/teasers/teaser.php') ?>
@@ -338,6 +335,7 @@
 						$imgSrc = '/landscape';
 						$showSummary = true;
 						$teaserAd = true;
+						$teaserLink = 'tpl-article.php?advertorial';
 
 						include('includes/frontpage/teasers/teaser.php') ?>
 						<? endwhile ?>
@@ -379,7 +377,7 @@
 				<div class=" advertorial-profile">
 					<div class="section-title">
 						<div class="list-sponsored">
-								<span>Sponseret indhold:</span>
+								<span>Sponsoreret indhold:</span>
 						</div>
 						Firmaprofil
 					</div>

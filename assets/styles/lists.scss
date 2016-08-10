@@ -250,7 +250,35 @@ ul + .list-fade {
 }
 
 
-
+.list-box {
+	padding: 0;
+	list-style: none;
+	@extend .clearfix;
+	.list-box-title {
+		text-align: center;
+		width: 100%;
+		background-color: darken($background-color, 10%);
+		line-height: 2.5rem;
+		box-shadow: 0 -1px 0 $background-color inset;
+	}
+	li:not(.list-box-title) {
+		display: inline-block;
+		width: 25%;
+		float: left;
+		margin: 0;
+		
+		a {
+			display: block;
+			text-align: center;
+			background-color: rgba(0,0,0,.05);
+			line-height: 2.5rem;
+			box-shadow: -1px -1px 0 $background-color inset;
+			&:hover {
+				background-color: rgba(0,0,0,.1);
+			}
+		}
+	}
+}
 .list-bullet-not-first {
 	li:first-child:before {
 		content: none;
@@ -340,7 +368,7 @@ ul + .list-fade {
 .list-sponsored {
 	@extend .font-s2;
 	font-size: .7rem;
-	font-weight: 400;
+	font-weight: 500;
 	z-index: 2;
 	
 	position: relative;
@@ -409,6 +437,11 @@ ul + .list-fade {
 	.list {
 		.subscriber-notice {
 			font-size: .6rem;
+		}
+	}
+	.list-box {
+		li:not(.list-box-title) {
+			width: 33%;
 		}
 	}
 }
