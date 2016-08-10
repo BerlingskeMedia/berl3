@@ -426,6 +426,12 @@ ul + .list-fade {
 	padding-left: 0;
 	text-align: center;
 	color: #666;
+	a {
+		color: #222;
+	}
+	h3 {
+		margin-bottom: 0;
+	}
 	li {
 		margin-bottom: 1rem;
 	}
