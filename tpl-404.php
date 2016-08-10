@@ -33,7 +33,7 @@ $showDate = true;
 <html lang="da">
 <head>
 	<?php include('includes/head.php'); ?>
-	<title>Berlingske - Section</title>
+	<title>Berlingske - Fejl</title>
 	<link rel="stylesheet" href="/dist/styles/main.css">
 </head>
 <body class="tpl-section default-header <?php if($template): ?> default-header <?php endif; ?> <?php if($siteBusiness): ?>site-business<?php endif; ?> show-site-search">
@@ -84,7 +84,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 								
 									<h1 class=" article-title ">Ups. Siden findes ikke!</h1>		
 										
-									<p>Måske kan du finde ved ved at foretage en søgning:</p>
+									<p>Måske kan du finde den ved at foretage en søgning:</p>
 
 
 									
