@@ -122,7 +122,13 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 					<?php endif; ?>
 					
 
-												
+					
+
+					<div class="form-group form-oneliner">
+						<label class="sr-only" for="searchInputAdv">Søg på Berlingske</label>
+						<input id="searchInputAdv" type="search" class="form-control ui-autocomplete-input" value="" autocomplete="off" placeholder="Søg på Berlingske.dk" accesskey="s" data-url="/autocomplete" data-search-url="/search" name="query">
+						<button id="search" class="btn btn-blue"><i class="bicon-search-1"></i></button>
+					</div>						
 				</div>
 			
 			</div>
