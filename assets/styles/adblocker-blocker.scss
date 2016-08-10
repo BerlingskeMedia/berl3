@@ -1,5 +1,4 @@
 .antiblocker {
-	transition: all .35s cubic-bezier(.33,.66,.66,1);	
 	position: fixed;
 	top: 0;
 	bottom: 0;
@@ -7,13 +6,73 @@
 	right: 0;
 	padding-top: 3rem;
 	opacity: 0;
-	transform: translate3d(0,100px,0);
 	visibility: hidden;
 	z-index: -1;
+	transition: opacity .35s ease;
 	@extend .flex-center;
 	.container {
 		background-color: transparent;
 	}
+	
+	.small {
+		font-size: .75rem;
+	}
+}
+.antiblocker-solid {
+	background: $background-color;
+}
+
+.antiblocker-content {
+	transform: translateY(-2rem);
+	transition: all .35s cubic-bezier(.33,.66,.66,1);	
+}
+
+.antiblocker-modal {
+	background: fade-out($background-color, .1);
+	.antiblocker-content {
+		padding: 1rem;
+		box-shadow: 0 0 1rem rgba(0,0,0,.25);
+		background: $background-color;
+	}
+}
+
+.show-antiblocker {
+	overflow: hidden;
+	opacity: 1;
+	.antiblocker {
+		z-index: 101;
+		opacity: 1;
+		visibility: visible;
+	}
+	.antiblocker-content {
+		transform: translateY(0);
+	}
+}
+
+.close-antiblocker {
+	@extend .font-s2;
+	font-weight: 500;
+	line-height: 2rem;
+	color: $col-blue-1;
+	text-decoration: none!important;	
+	&:before {
+		content: 'LUK ';
+		font-size: .9rem;
+		color: #999;
+	}
+	i {
+		font-size: 1rem;
+	}
+}
+.modal-header {
+	margin: -1rem -1rem 0 -1rem;
+	font-weight: normal;
+	
+	@extend .font-s1;
+	font-size: 2rem;
+}
+
+.antiblocker-lg {
 	h2 {
 		@extend .font-s1;
 		font-size: 5rem;
@@ -22,75 +81,18 @@
 	p {
 		color: #666;
 		font-size: 1.2rem;
-	}
-	.small {
-		font-size: .75rem;
-	}
-}
-.antiblocker-solid {
-	background: $background-color;
-}
-.antiblocker-trans {
-	background: fade-out($background-color, .2);
-}
-.antiblocker-content {
-	padding: 2rem;
-	box-shadow: 0 0 1rem rgba(0,0,0,.25);
-	border-radius: 1rem;
-	background: $background-color;
-}
-.close-antiblocker {
-	
-	@extend .font-s2;
-	font-weight: 500;
-	text-transform: uppercase;
-	border-radius: 50%;
-	// border: $border-width solid $border-color;
-	width: 2rem;
-	height: 2rem;
-	line-height: 2rem;
-	color: #999;
-	&:before {
-		content: 'Luk ';
-		
-		
-		font-size: .9rem;
-	}
-
-	i {
-		font-size: 1rem;
-	}
+	}	
 }
 
-.show-antiblocker {
-	overflow: hidden;
-	.antiblocker {
-		z-index: 101;
-		opacity: 1;
-		transform: translate3d(0,0,0);
-		visibility: visible;
-	}
-}
 
 @include media-breakpoint-down(sm) {
-	.antiblocker {
+	.antiblocker-lg {
 		h2 {
 			font-size: 2rem;
 		}
 		p {
 			font-size: 1rem;
 		}
-		.close-antiblocker {
-			/*width: 1.4rem;
-			height: 1.4rem;
-			line-height: 1.4rem;
-			i {
-				font-size: .6rem;
-			}
-				
-			&:before { 
-				font-size: .8rem;
-			}*/
-		}
+		
 	}
 }

@@ -9,7 +9,7 @@
 $showTime = false; 
 $showImage = true;
 $isSponsored = false;
-$isSponsoredLabel = 'Sponseret indhold';
+$isSponsoredLabel = 'Sponsoreret indhold';
 $imgRatio = '1:1';
 $premium = false;
 $imgSrc = false;

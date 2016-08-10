@@ -57,21 +57,49 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 			
 			
 				<div class="col-lg-8 col-lg-offset-2">
-							
+					
+					<h1>Artikelarkiv</h1>		
+					
 					<?php if($archive === '2'): ?>
-					 Side 2
+					<p class="small"><a href="tpl-archive.php" class="small"><i class="bicon-angle-left"></i> Tilbage</a></p>
+					
+						
+					 <ul class="list-box mb">
+					 	<li class="list-box-title"><strong>2016</strong></li>
+						<li><a href="?page=3">Januar</a></li>
+						<li><a href="?page=3">Februar </a></li>
+						<li><a href="?page=3">Marts</a></li>
+						<li><a href="?page=3">April</a></li>
+						<li><a href="?page=3">Maj</a></li>
+						<li><a href="?page=3">Juni</a></li>
+						<li><a href="?page=3">Juli</a></li>
+						<li><a href="?page=3">August</a></li>
+						<li><a href="?page=3">September</a></li>
+						<li><a href="?page=3">Oktober</a></li>
+						<li><a href="?page=3">November</a></li>
+						<li><a href="?page=3">December</a></li>
+					</ul>
+
+					
+
+					<?php elseif($archive === '3'): ?>
+						<p class="small"><a href="tpl-archive.php" class="small"><i class="bicon-angle-left"></i> Tilbage</a></p>
+						<p ><strong>Juni 2016</strong></p>	
+						
+						
+					 <ul class="list-reset list-news list">
+						<? while (dumb_luck("30")): ?>
+						<li><a href="tpl-article.php"><? dummy("text@headline-b") ?></a></li>
+						<? endwhile ?>
+					</ul>
+
+
 
 					<?php else: ?>
-						<h1>Artikelarkiv</h1>		
+						
 
-					<p>Gennemse alle artikler offentliggjort på Berlingske.dk eller prøv at søge:</p>
-					<div class="form-group form-oneliner">
-						<label class="sr-only" for="searchInputAdv">Søg på Berlingske</label>
-						<input id="searchInputAdv" type="search" class="form-control ui-autocomplete-input" value="" autocomplete="off" placeholder="Søg på Berlingske.dk" accesskey="s" data-url="/autocomplete" data-search-url="/search" name="query">
-						<button id="search" class="btn btn-blue"><i class="bicon-search-1"></i></button>
-					</div>
-					<p><strong>Vælg år</strong></p>
-					<ul class="list-box ">
+					<ul class="list-box mb">
+						<li class="list-box-title"><strong>Vælg år:</strong></li>
 						<li><a href="?page=2">2016</a></li>
 						<li><a href="?page=2">2015</a></li>
 						<li><a href="?page=2">2014</a></li>

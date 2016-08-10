@@ -78,15 +78,25 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 
 							
 
-							<div class="mb">
+							<div class="mb text-center container-404">
 
 								
-									<h1>Siden blev ikke fundet</h1>		
+									<h1 class=" article-title">Ups. Siden findes ikke</h1>		
 										
+									<p>Måske kan du finde ved ved at foretage en søgning:</p>
 
+
+									
+									<div class="form-group form-oneliner">
+										<label class="sr-only" for="searchInputAdv">Søg på Berlingske</label>
+										<input id="searchInputAdv" type="search" class="form-control ui-autocomplete-input" value="" autocomplete="off" placeholder="Søg på Berlingske.dk" accesskey="s" data-url="/autocomplete" data-search-url="/search" name="query">
+										<button id="search" class="btn btn-blue"><i class="bicon-search-1"></i></button>
+									</div>
+									
+									<p><a href="/"><i class="bicon-angle-left"></i> Gå til forsiden</a></p>
 										
 										
-										<p><? dummy("text@teaser") ?>
+										
 
 								
 										

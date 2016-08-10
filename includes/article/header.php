@@ -27,7 +27,7 @@
 	<?php endif; ?>
 	<?php if($isAdvertorial): ?>
 		<div class="advertorial-notice">
-			Sponseret indhold	
+			Sponsoreret indhold	
 		</div>		
 	<?php endif; ?>
 	<?php if(!$isAdvertorial): ?>

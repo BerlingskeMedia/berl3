@@ -166,6 +166,7 @@ $labelText = false;
 					$imgSrc = '/landscape';
 					$showSummary = true;
 					$teaserAd = true;
+					$teaserLink = 'tpl-article.php?advertorial';
 
 					include('includes/frontpage/teasers/teaser.php') ?>
 

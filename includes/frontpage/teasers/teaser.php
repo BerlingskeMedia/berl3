@@ -49,11 +49,13 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 					<?php include('includes/frontpage/teasers/labels.php'); ?>
 				<?php endif; ?>
 				
-				<?php if($category || $teaserAd || $showTrumpet)  : ?>
+				<?php if($category || $teaserAd || $showTrumpet || $sponsorTag)  : ?>
 					<div class="teaser-footer">
-						
+						<?php if($sponsorTag): ?>
+							<div class="teaser-sponsor">Sponsoreret</div>
+						<?php endif; ?>
 						<?php if($teaserAd): ?>
-							<div class="teaser-sponsor">Sponseret af <? dummy("text@company-names") ?></div>
+							<div class="teaser-sponsor">Sponsoreret af <? dummy("text@company-names") ?></div>
 						<?php endif; ?>
 						
 						<?php if($category): ?>
@@ -77,14 +79,7 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 				
 				
 				<h2 class="header">
-					
 					<? dummy("text@".$headerSrc."") ?>
-						
-						<!-- <?php // if($showPaywall) : ?>
-							 <span class="subscriber-notice">Abonnement</span>
-						<?php // endif; ?> -->
-						
-
 				</h2>
 
 				<?php if ($showSearchsummary): ?>
@@ -147,9 +142,6 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 					
 				<?php endif; ?>				
 
-				<?php if($isSponsored): ?>
-					<span class="sponsored-notice">Sponseret</span>
-				<?php endif; ?>
 				
 
 			</div><!-- .teaser-body --> 	
@@ -189,4 +181,5 @@ $showPrice 		= false;
 $showHeader 	= true;
 $blogTeaser 	= false;
 $showSearchsummary = false;
+$sponsorTag 	= false;
 ?>

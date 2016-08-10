@@ -517,7 +517,7 @@ if(isset($_GET["business"])) {
 				<div class="col-md-3"></div>
 				<div class="col-md-9">
 					<ul>
-						<li class="red"><a href="#">404</a></li>
+						<li class="orange"><a href="tpl-404.php">404</a></li>
 						<li class="red"><a href="#">Send tip</a></li>
 						<li class="orange"><a href="tpl-archive.php">Article archive</a></li>
 						
