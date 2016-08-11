@@ -74,13 +74,14 @@
 
 			<?php if($template === 'author'): ?>
 				
-				<div class="page-description ">
+				<div class="page-description mb ">
 					
 
 					<div class="text-center">
 						<img src="<? dummy("image/!author@200x200,") ?>" width="" height="" alt="" class="img-round center-block mb author-avatar" />	
-						<h1 class="article-title"><? dummy("text@author") ?></h1>
-					
+						<h1 class="article-title mb-0"><? dummy("text@author") ?></h1>
+						<button class="btn btn-xs btn-follow-author btn-blue mb-05">Følg</button>
+						<?php include('includes/article/author-signup.php'); ?>	
 						<p>Mikael Hjorth er souschef og digital redaktør på Berlingske Business.</p>
 
 						<p>Siden 1996 redigerende på Berlingske - både på print og på nettet - siden 2002 på Business og siden 2006 som jourhavende på Business.dk. </p>
@@ -88,6 +89,7 @@
 						<p>Fra 2014 digital redaktør og fra august 2015 desuden souschef for Berlingske Business.</p>
 							
 						<ul class="list-icons">
+							<li><i class="bicon-phone"></i> +45 33 75 75 75</li>
 							<li><i class="bicon-mail"></i> <a href="mailto:mih@berlingske.dk">mih@berlingske.dk</a></li>
 							<li><i class="bicon-twitter"></i> <a href="http://twitter.com/hjorth69">@hjorth69</a></li>
 							<li><i class="bicon-facebook"></i> <a href="http://facebook.com/berlingskebusiness">Facebook</a></li>
@@ -131,57 +133,58 @@
 
 
 			<div class="row flex-row teaser-flow">
-
+				<?php if($template === 'author'): ?>
+				<div class="col-xs-12">
+					<h3 class="section-title-alt">Seneste artikler af <? dummy("text@author") ?>:</h3>
+				</div>
+				<?php endif; ?>
 				
 				<div class="col-xs-12">
+
+
 					
 					<?php if($template === 'corrections' || $template === 'author'): ?>
 						
 						<? while (dumb_luck("3")): ?>
 
-						<?php
-						$imgW='320'; 
-						$showImg = '1';
-						$class = 'teaser-img-right teaser-small item-teaser-bt ';
-						$imgRatio = '16:9';
-						$imgSrc = '/landscape';
-						
-						
-						
-						$showSummary = true;
-						$showTrumpet = true;
-						$showPaywall = true;
-						include('includes/frontpage/teasers/teaser.php') ?>
+							<?php
+								$imgW='320'; 
+								$showImg = '1';
+								$class = 'teaser-img-right teaser-small item-teaser-bt ';
+								$imgRatio = '16:9';
+								$imgSrc = '/landscape';
+								$showSummary = true;
+								$showTrumpet = true;
+								$showPaywall = true;
+								include('includes/frontpage/teasers/teaser.php') ?>
 
 						<? while (dumb_luck("4")): ?>
-						<?php
-							$imgW='220'; 
-							$showImg = '1';
-							$class = 'teaser-img-right  teaser-small  item-teaser-bt ';
-							$imgRatio = '16:9';
-							$imgSrc = '/landscape';
-							$showSummary = true;
-							// $category = 'Business.dk';
-							include('includes/frontpage/teasers/teaser.php') ?>
+
+							<?php
+								$imgW='220'; 
+								$showImg = '1';
+								$class = 'teaser-img-right  teaser-small  item-teaser-bt ';
+								$imgRatio = '16:9';
+								$imgSrc = '/landscape';
+								$showSummary = true;
+								// $category = 'Business.dk';
+								include('includes/frontpage/teasers/teaser.php') ?>
 						<? endwhile ?>
 
-						<?php
-						$imgW='320'; 
-						$showImg = '1';
-						$class = ' teaser-img-right teaser-sm item-teaser-bt teaser-theme-feature teaser-small' ;
-						$imgRatio = '1:1';
-						$imgSrc = '/!author';
-						$showSummary = true;			
-						
-						$showAuthor = true;
+							<?php
+								$imgW='320'; 
+								$showImg = '1';
+								$class = ' teaser-img-right teaser-sm item-teaser-bt teaser-theme-feature teaser-small' ;
+								$imgRatio = '1:1';
+								$imgSrc = '/!author';
+								$showSummary = true;			
+								
+								$showAuthor = true;
 
-						include('includes/frontpage/teasers/teaser.php') ?>
-
-						
-						
-						
+								include('includes/frontpage/teasers/teaser.php') ?>
 
 						<? endwhile ?>
+
 
 						<?php if($template !== 'corrections'): ?>
 							<? while (dumb_luck("2")): ?>
@@ -197,6 +200,7 @@
 
 							include('includes/frontpage/teasers/teaser.php') ?>
 							<? endwhile ?>
+
 						<?php endif; ?>
 
 
