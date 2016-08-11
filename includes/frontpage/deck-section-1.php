@@ -31,8 +31,11 @@
 					
 			<?php elseif($template === 'topic'):  ?>
 			
-				<h1 class="section-title-no-border">Barack Obama</h1>
+				<h1 class="section-title-no-border">Barack Obama
+				<button class="btn btn-xs btn-round btn-follow-author btn-blue">Følg emnet</button>
 
+				</h1>
+				<?php include('includes/article/topic-signup.php'); ?>	
 
 			<?php elseif(!$template):  ?>
 			
