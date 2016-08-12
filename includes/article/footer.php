@@ -15,7 +15,7 @@
 		<div class="row">
 
 					<ul class=" flex-row list-unstyled list-buffet">
-						<? while (dumb_luck("2")): ?> <!-- MOBILE: Two first teasers are 100% width - the rest are side by side -->
+						<? while (dumb_luck("2")): ?>
 						<li class="col-xs-6 col-md-6 col-lg-3">
 							<?php
 								$imgW='750';  

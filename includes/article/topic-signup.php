@@ -3,7 +3,7 @@
 	<div class="overlay-inner ">
 		<a href="#" class="close-overlay"><i class="bicon-cancel"></i></a>
 		<i class="bicon-mail"></i>
-		<p>Modtag en e-mail, når <? dummy("text@author") ?> har skrevet en ny artikel</p>
+		<p>Følg emnet <strong>"Barack Obama"</strong></p>
 		
 		<form action="" class="form-round-oneliner form-follow-author">
 			<input type="email" class="input-follow-author" placeholder="Din e-mail">
