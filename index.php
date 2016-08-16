@@ -404,9 +404,9 @@ if(isset($_GET["business"])) {
 				</div>
 				<div class="col-md-9">
 					<ul>
-						<li class="orange"><a href="tpl-article.php?ab=hard-1">Hard - ver. 1</a></li>
-						<li class="orange"><a href="tpl-article.php?ab=hard-2">Hard - ver. 2</a></li>
-						<li class="orange"><a href="tpl-article.php?ab=soft">Soft</a></li>
+						<li class="green"><a href="tpl-article.php?ab=hard-1">Hard</a></li>
+						<!-- <li class="red"><a href="tpl-article.php?ab=hard-2">Hard - ver. 2</a></li> -->
+						<li class="green"><a href="tpl-article.php?ab=soft">Soft</a></li>
 						<li><em>variable "ab=[hard-1, hard-2, soft]" also works on longreads and article-large</em></li>
 					</ul>
 				</div>
@@ -427,7 +427,7 @@ if(isset($_GET["business"])) {
 						<li class="green"><a href="tpl-section.php?template=corrections">Corrections ('Fejl og fakta')</a></li>
 						<li class="red"><a href="#">Blog</a></li>
 						<li class="green"><a href="tpl-section.php?template=topic">Topic page</a></li>
-						<li class="orange"><a href="tpl-author-overview.php">Author overview</a></li>
+						<li class="green"><a href="tpl-author-overview.php">Author overview</a></li>
 						<li class="green"><a href="tpl-section.php?template=author">Author profile</a></li>
 						<li class="green"><a href="tpl-section.php?template=searchresult">Search result</a></li>
 					</ul>
@@ -473,9 +473,9 @@ if(isset($_GET["business"])) {
 				<div class="col-md-9">
 					<ul>
 
-						<li class="orange"><a href="tpl-section.php?template=advertorial">Section</a></li>
-						<li class="orange"><a href="tpl-article.php?advertorial">Article default</a></li>
-						<li class="orange"><a href="tpl-article-longread.php?advertorial">Article Longread</a></li>
+						<li class="green"><a href="tpl-section.php?template=advertorial">Section</a></li>
+						<li class="green"><a href="tpl-article.php?advertorial">Article default</a></li>
+						<li class="green"><a href="tpl-article-longread.php?advertorial">Article Longread</a></li>
 
 					</ul>
 				</div>
@@ -517,8 +517,8 @@ if(isset($_GET["business"])) {
 				<div class="col-md-3"></div>
 				<div class="col-md-9">
 					<ul>
-						<li class="orange"><a href="tpl-404.php">404</a></li>
-						<li class="red"><a href="#">Send tip</a></li>
+						<li class="green"><a href="tpl-404.php">404</a></li>
+						<li class="green"><a href="#">Send tip</a></li>
 						<li class="orange"><a href="tpl-archive.php">Article archive</a></li>
 						
 					
