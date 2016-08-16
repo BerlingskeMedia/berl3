@@ -4,7 +4,7 @@
 <section class="paywall-fade paywall paywall-soft">
 		<div class="row">
 			<div class="col-xs-12 col-xl-10 col-xl-offset-1" >
-				<h2>God fornøjelse!</h2>
+				<h2>God fornøjelse.</h2>
 				<p>Denne artikel er normalt kun for abonnenter, men i dag kan du læse den gratis. Få adgang til alle artikler med et <a href="#" class="link-blue">digitalt abonnement</a> - den første måned er gratis. </p>
 				<div class="row">
 					<div class="col-md-6 col-md-offset-3">
@@ -28,7 +28,7 @@
 				<p class="small mb-05" style="color: #999;">Artiklen er kun for abonnenter</p>
 
 				<h2>Historier med perspektiv</h2>
-				<p>Vi kæmper hver dag for at levere journalistik, der gør en forskel og flytter noget. Få adgang til alle artikler på Berlingske.dk og Business.dk - den første måned er gratis.</p>
+				<p>Vi kæmper hver dag for at levere journalistik, der gør en forskel. Få adgang til alle artikler på Berlingske.dk og Business.dk - den første måned er gratis.</p>
 			</div>
 		
 			
@@ -58,7 +58,7 @@
 	<div class="row">
 
 		<div class="col-xs-12">
-			<h2>God fornøjelse!</h2>
+			<h2>God fornøjelse.</h2>
 			<p>Denne video er normalt kun for abonnenter, men i dag kan du se den gratis. Få adgang til alle artikler med et <a href="#" class="link-blue">digitalt abonnement</a> - den første måned er gratis. </p>
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
@@ -79,7 +79,7 @@
 			<p class="small mb-05" >Videoen kræver abonnement</p>
 				<div class="hidden-sm-don">
 					<h2>Historier med dybde og perspektiv</h2>
-					<p>Vi kæmper hver dag for at levere journalistik, der gør en forskel og flytter noget. Få adgang til alle artikler på Berlingske.dk og Business.dk - den første måned er gratis. </p>
+					<p>Vi kæmper hver dag for at levere journalistik, der gør en forskel. Få adgang til alle artikler på Berlingske.dk og Business.dk - den første måned er gratis. </p>
 				</div>
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">

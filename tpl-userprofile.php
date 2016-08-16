@@ -81,8 +81,9 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 							<div class="mb">
 
 								<h1 class="box-title">
-									Ret profil
+									Din profilside
 								</h1>
+								<p>Nedenfor kan du se dine profiloplysinger. Vi håber, at du vil hjælpe med at holde oplysningerne opdaterede, så vi kan give dig den optimale service</p>
 										<form name="userProfileForm" method="post" action="">
 
 								                <div class="form-group  ">
@@ -178,27 +179,25 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 
 										<div class="mb">
 											<h2 class="box-title">
-												Opsigelse eller ændringer
+												Få hjælp til dit abonnement
 											</h2>
-											<p>Gå til Kundeunivers.dk hvis du vil opsige eller ændre dit abonnement</p>
-											<a href="http://berlingskemedia.kundeunivers.dk/kontakt" class="btn btn-blue btn-sm" target="_blank">Gå til Kundeunivers.dk <i class="bticon-right-dir"></i></a>
+											<p>På Berlingskes kundeunivers kan du se dit abonnement, melde ferieflytning og meget andet</p>
+											<a href="http://berlingskemedia.kundeunivers.dk/kontakt" class="btn btn-blue btn-sm" target="_blank">Gå til dit Kundeunivers <i class="bticon-right-dir"></i></a>
 										</div>
 										
 										<hr>
 
-								<h2>Brug for hjælp?</h2>
+										<h2>Kontakt kundeservice</h2>
 
 
-			<p><strong>Kundeservice</strong><br>
-			Telefon: 33 75 33 30
-			Mandag – torsdag: kl. 8.00-20.00
-			Fredag: kl. 8.00-18.00
-			Weekend/helligdage: 8.00-12.00</p>
+										<p><strong>Kundeservice</strong><br>
+										Telefon: 33 75 33 30
+										Mandag – torsdag: kl. 8.00-20.00
+										Fredag: kl. 8.00-18.00
+										Weekend/helligdage: 8.00-12.00</p>
 
-			<p>Mail til kundeservice: <a href="mailto:plus@bt.dk">plus@bt.dk</a><br>
-			Svar på mails vil ske inden for 48 timer i hverdage</p>
-
-			<p><strong>Spørgsmål og svar</strong><br><a href="tpl-plus-info.php">Se vores spørgsmål og svar vedr. PLUS</a></p>
+										<p>Mail til kundeservice: <a href="mailto:#">[EMAIL TIL KUNDESERVICE]</a><br>
+										Svar på mails vil ske inden for 48 timer i hverdage</p>
 										
 
 							

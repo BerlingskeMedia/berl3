@@ -375,8 +375,8 @@ if(isset($_GET["business"])) {
 				<div class="col-md-3">Article</div>
 				<div class="col-md-9">
 					<ul>
-						<li class="orange"><a href="tpl-article.php?paywall=soft">Soft</a></li>
-						<li class="orange"><a href="tpl-article.php?paywall=hard">Hard</a></li>
+						<li class="green"><a href="tpl-article.php?paywall=soft">Soft</a></li>
+						<li class="green"><a href="tpl-article.php?paywall=hard">Hard</a></li>
 						
 					</ul>
 				</div>
@@ -384,15 +384,15 @@ if(isset($_GET["business"])) {
 				<div class="col-md-9">
 					<ul>
 						
-						<li class="orange"><a href="tpl-article.php?imgSize=5&amp;paywall=video-soft">Soft</a></li>
-						<li class="orange"><a href="tpl-article.php?imgSize=5&amp;paywall=video-hard">Hard</a></li>
+						<li class="green"><a href="tpl-article.php?imgSize=5&amp;paywall=video-soft">Soft</a></li>
+						<li class="green"><a href="tpl-article.php?imgSize=5&amp;paywall=video-hard">Hard</a></li>
 					</ul>
 				</div>
 				<div class="col-md-3">Longread</div>
 				<div class="col-md-9">
 					<ul>
-						<li class="orange"><a href="tpl-article-longread.php?paywall=soft">Soft</a></li>
-						<li class="orange"><a href="tpl-article-longread.php?paywall=hard">Hard</a></li>
+						<li class="green"><a href="tpl-article-longread.php?paywall=soft">Soft</a></li>
+						<li class="green"><a href="tpl-article-longread.php?paywall=hard">Hard</a></li>
 					</ul>
 				</div>
 
@@ -405,8 +405,10 @@ if(isset($_GET["business"])) {
 				<div class="col-md-9">
 					<ul>
 						<li class="green"><a href="tpl-article.php?ab=hard-1">Hard</a></li>
-						<!-- <li class="red"><a href="tpl-article.php?ab=hard-2">Hard - ver. 2</a></li> -->
 						<li class="green"><a href="tpl-article.php?ab=soft">Soft</a></li>
+						<li class="green"><a href="tpl-article-longread.php?ab=hard-1">Longread - Hard </a></li>
+						<li class="green"><a href="tpl-article-longread.php?ab=soft">Longread - Soft</a></li>
+
 						<li><em>variable "ab=[hard-1, hard-2, soft]" also works on longreads and article-large</em></li>
 					</ul>
 				</div>
@@ -506,7 +508,6 @@ if(isset($_GET["business"])) {
 						<li class="orange"><a href="tpl-text.php?page=adblocker">Adblocker removal</a></li>
 						<li class="orange"><a href="tpl-text.php?page=contact">Contact</a></li>
 						<li class="orange"><a href="tpl-text.php?page=ethics">Ethics</a></li>
-						<li class="red"><a href="#">Annoncering</a></li>
 					</ul>
 				</div>
 
@@ -519,7 +520,7 @@ if(isset($_GET["business"])) {
 					<ul>
 						<li class="green"><a href="tpl-404.php">404</a></li>
 						<li class="green"><a href="#">Send tip</a></li>
-						<li class="orange"><a href="tpl-archive.php">Article archive</a></li>
+						<li class="green"><a href="tpl-archive.php">Article archive</a></li>
 						
 					
 					</ul>
