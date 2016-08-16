@@ -154,7 +154,6 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 								                                
 								                                								                                <a href="#" class="toggle-trigger">Mere info <i class="bticon-down-dir"></i></a></p>
 
-
 								                                <div class="toggle-content hidden">Fra tid til anden har Berlingske Media og vores tætte samarbejdspartnere attraktive tilbud og spændende nyheder til dig indenfor forskellige interesseområder. Disse nyheder og tilbud kan bl.a. vedrøre medier, rejser, tøj, mode, mad og vin, sundhed, bolig og livsstil, finans, sport og fritid, biler, elektronik, job og uddannelse, arrangementer, konkurrencer m.v.”
 								    							Du kan læse mere om samkøring og brug af af data i Berlingske Medias Cookie- og Privatlivspolitik <a target="_blank" class="link-blue" href="http://berlingskemedia.dk/82494/">her..</a>
 								    							</div>
