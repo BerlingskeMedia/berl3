@@ -76,7 +76,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 							
 							
 
-							
+
 
 							<div class="mb">
 
@@ -86,7 +86,13 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 								<p>Nedenfor kan du se dine profiloplysinger. Vi håber, at du vil hjælpe med at holde oplysningerne opdaterede, så vi kan give dig den optimale service</p>
 										<form name="userProfileForm" method="post" action="">
 
-								                <div class="form-group  ">
+												<ul>
+													<li>
+														Køn
+													</li>
+													<li>Fødselsdato</li>
+												</ul>
+								                <div class="form-group  ">	
 								                    <label class="form-control-label" for="userProfileForm_username">Navn:</label>
 								                    <input type="text" id="userProfileForm_username" name="userProfileForm[username]" required="required" class="form-control" placeholder="Navn" value="Bo Skakke">
 								                      <small class="form-control-label user-feedback">Dette felt er obligatorisk.</small>
@@ -130,13 +136,10 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 								                <div class="form-group ">
 								                    <label class="form-control-label" for="">Email: </label>
 								                    <input type="text" id="userProfileForm_phone" name="userProfileForm[phone]" required="required" class="form-control" placeholder="" value="bo@skakke.dk" disabled>
-								                </div>
-
-								                <div class="form-group ">
-								                    <label class="form-control-label" for="">Password:</label>
-								                    <input type="password" id="userProfileForm_phone" name="userProfileForm[phone]" required="required" class="form-control" placeholder="" value="" disabled>
 								                    <small><a href="#">Klik her for at skifte email eller password <i class="bticon-right-dir"></i></a></small>
 								                </div>
+
+								                
 								                    
 								                        <div class="checkbox ">
 
@@ -144,16 +147,16 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 								                                <input type="checkbox" name="userProfileForm[newsletter_subscriber]" value="1" checked>
 								                                <p>
 								                                <strong>Samtykke</strong></label><br>
-								                                								                                <small>
-								                                								                                Berlingske Media må gerne gøre mig opmærksom på relevante nyheder og tilbud fra både
-								                                								                                Berlingske Media og samarbejdspartnere via telefon, brev og elektroniske medier (fx
-								                                								                                e-mail, sms, mms, videobeskeder, pop-ups m.v). Jeg kan til enhver tid sige ”Nej tak” og
-								                                								                                afmelde mig denne service. Samtidig accepterer jeg, at Berlingske Media for at målrette
-								                                								                                nyheder og tilbud til mig samkører oplysninger jeg indtaster med oplysninger om mine
-								                                								                                adfærd indsamlet på hjemmesider og øvrige digitale platforme tilhørende Berlingske Media
-								                                								                                og samarbejdspartnere. 
-								                                
-								                                								                                <a href="#" class="toggle-trigger">Mere info <i class="bticon-down-dir"></i></a></p>
+																	<small>
+																	Berlingske Media må gerne gøre mig opmærksom på relevante nyheder og tilbud fra både
+																	Berlingske Media og samarbejdspartnere via telefon, brev og elektroniske medier (fx
+																	e-mail, sms, mms, videobeskeder, pop-ups m.v). Jeg kan til enhver tid sige ”Nej tak” og
+																	afmelde mig denne service. Samtidig accepterer jeg, at Berlingske Media for at målrette
+																	nyheder og tilbud til mig samkører oplysninger jeg indtaster med oplysninger om mine
+																	adfærd indsamlet på hjemmesider og øvrige digitale platforme tilhørende Berlingske Media
+																	og samarbejdspartnere. 
+
+																	<a href="#" class="toggle-trigger">Mere info <i class="bticon-down-dir"></i></a></p>
 
 								                                <div class="toggle-content hidden">Fra tid til anden har Berlingske Media og vores tætte samarbejdspartnere attraktive tilbud og spændende nyheder til dig indenfor forskellige interesseområder. Disse nyheder og tilbud kan bl.a. vedrøre medier, rejser, tøj, mode, mad og vin, sundhed, bolig og livsstil, finans, sport og fritid, biler, elektronik, job og uddannelse, arrangementer, konkurrencer m.v.”
 								    							Du kan læse mere om samkøring og brug af af data i Berlingske Medias Cookie- og Privatlivspolitik <a target="_blank" class="link-blue" href="http://berlingskemedia.dk/82494/">her..</a>
@@ -188,14 +191,13 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 
 										<h2>Kontakt kundeservice</h2>
 
-
 										<p><strong>Kundeservice</strong><br>
-										Telefon: 33 75 33 30
-										Mandag – torsdag: kl. 8.00-20.00
-										Fredag: kl. 8.00-18.00
-										Weekend/helligdage: 8.00-12.00</p>
+										Telefon: 33 75 36 36
+										Mandag – fredag: kl. 8.00-17.00
+										
+										Weekend: 8.00-12.00</p>
 
-										<p>Mail til kundeservice: <a href="mailto:#">[EMAIL TIL KUNDESERVICE]</a><br>
+										<p>Mail til kundeservice: <a href="mailto:kundeservice@berlingske.dk">kundeservice@berlingske.dk</a><br>
 										Svar på mails vil ske inden for 48 timer i hverdage</p>
 										
 
