@@ -86,12 +86,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 								<p>Nedenfor kan du se dine profiloplysinger. Vi håber, at du vil hjælpe med at holde oplysningerne opdaterede, så vi kan give dig den optimale service</p>
 										<form name="userProfileForm" method="post" action="">
 
-												<ul>
-													<li>
-														Køn
-													</li>
-													<li>Fødselsdato</li>
-												</ul>
+												
 								                <div class="form-group  ">	
 								                    <label class="form-control-label" for="userProfileForm_username">Navn:</label>
 								                    <input type="text" id="userProfileForm_username" name="userProfileForm[username]" required="required" class="form-control" placeholder="Navn" value="Bo Skakke">
@@ -130,8 +125,41 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 								                <div class="form-group ">
 								                    <label class="form-control-label" for="userProfileForm_phone">Telefon: </label>
 								                    <input type="text" id="userProfileForm_phone" name="userProfileForm[phone]" required="required" class="form-control" placeholder="Telefon" value="20616768">
-								                        
 								                </div>
+
+										
+												<div class="form-group">
+													<div class="form-check ">
+												
+													<label class="form-check-label">
+													  <input class="form-check-input" type="radio" name="userProfileSex" id="userProfileSexFemale" value="option1" >
+													   Kvinde
+													</label>
+
+													</div>
+													<div class="form-check">
+														<label class="form-check-label">
+														  <input class="form-check-input" type="radio" name="userProfileSex" id="userProfileSexMale" value="option2">
+														   Mand
+														</label>
+													</div>
+													
+												</div>
+													
+												
+												  
+												
+
+												
+												<div class="form-group ">
+												    <label class="form-control-label" for="userProfileForm_phone">Fødselsdato: </label>
+												    <input type="text" id="userProfileForm_phone" name="userProfileForm[phone]" required="required" class="form-control" placeholder="dd/mm/åååå (insert datepicker)" value="">
+												</div>
+
+
+												
+
+
 
 								                <div class="form-group ">
 								                    <label class="form-control-label" for="">Email: </label>
@@ -183,8 +211,8 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 											<h2 class="box-title">
 												Få hjælp til dit abonnement
 											</h2>
-											<p>På Berlingskes kundeunivers kan du se dit abonnement, melde ferieflytning og meget andet</p>
-											<a href="http://berlingskemedia.kundeunivers.dk/kontakt" class="btn btn-blue btn-sm" target="_blank">Gå til dit Kundeunivers <i class="bticon-right-dir"></i></a>
+											<p>På Berlingskes kundeunivers kan du se dit abonnement, melde ferieflytning og meget andet.</p>
+											<a href="http://berlingskemedia.kundeunivers.dk/kontakt" class="" target="_blank">Gå til dit Kundeunivers <i class="bicon-angle-right"></i></a>
 										</div>
 										
 										<hr>
@@ -198,7 +226,7 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 										Weekend: 8.00-12.00</p>
 
 										<p>Mail til kundeservice: <a href="mailto:kundeservice@berlingske.dk">kundeservice@berlingske.dk</a><br>
-										Svar på mails vil ske inden for 48 timer i hverdage</p>
+										Svar på mails vil ske inden for 48 timer i hverdage.</p>
 										
 
 							
