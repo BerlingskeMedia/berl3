@@ -239,6 +239,7 @@ $col-sidebar-width: 19.375rem;
 .col-primary {
 	width: calc(100% - #{$col-tag-width});
 	padding-right: .625rem;
+	padding-left: 0;
 	float: left;
 }
 .col-primary-wide {
@@ -264,6 +265,7 @@ $col-sidebar-width: 19.375rem;
 	width:  $col-tag-width;
 	float: left;
 	padding-right: (.625rem * 2);
+	padding-left: 0;
 	position: relative;
 	.section-title {
 		margin-bottom: .625rem;

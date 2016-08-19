@@ -27,7 +27,7 @@
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2">
 							<button class="btn btn-blue btn-lg mb btn-block">Køb abonnement</button>
-							<p class="small">Allerede abonnement? <a href="#" class="link-blue"><i class="bicon-user"></i> Log ind</a></p>		
+							<p class="small">Allerede abonnent? <a href="#" class="link-blue toggle-login"><i class="bicon-user"></i> Klik her</a></p>		
 						</div>
 					</div>
 					

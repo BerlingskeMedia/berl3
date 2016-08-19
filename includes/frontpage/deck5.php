@@ -91,28 +91,13 @@ $labelText = false;
 
 	
 	
-		<div class="col-tags col-border-right-xl-up hidden-lg-down">
+		<div class="col-tags col-border-right-xl-up hidden-lg-down col-xs-7">
 			<div class="section-title-no-border mb-2">Topnyheder</div>		
-
-			<div class=" mt mb" style="">
-				<!-- <div class=" section-title-small-border">Mandag d. <? dummy("text@date") ?></div> --> 
-			</div>
-			<div class="epaper" style=" ">
-				
-				<!-- <div class="section-title-sm section-title-small-border">Læs dagens e-avis</div>
-				<div class="row row-narrow mt">
-					<div class="col-xl-6"><a href="#"><img src="http://epaper.infomedia.dk/teaser/BMA" style="border: 1px solid #ddd" alt=""></a></div>
-					<div class="col-xl-6"><a href="#"><img src="http://www.b.dk/helpers/business_frontpage/business_frontpage.jpg" style="border: 1px solid #ddd" alt=""></a></div>
-				</div> --> 
-				
-
-			</div>
+			
 		</div>
 		
-		<div class="col-primary ">
-			
+		<div class="col-primary col-xs-7">
 			<div class="row flex-row teaser-flow">
-
 				
 				<div class="col-xs-12">
 					<?php
@@ -242,7 +227,7 @@ $labelText = false;
 
 	
 
-	<div class="col-sidebar col-border-left-lg-up">
+	<div class="col-sidebar col-border-left-lg-up col-xs-7">
 
 			
 		<div class="row">

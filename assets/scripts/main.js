@@ -144,7 +144,8 @@
 
 	// Show login overlay
 
-	$('.toggle-login').click(function(){
+	$('.toggle-login').click(function(e){
+		e.preventDefault();
 		$('#site-login').toggleClass('show-me');
 		setTimeout(function() {
        		$('#site-login .overlay-inner').removeClass("switch-overlay");

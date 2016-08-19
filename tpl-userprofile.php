@@ -33,7 +33,7 @@ $showDate = true;
 <html lang="da">
 <head>
 	<?php include('includes/head.php'); ?>
-	<title>Berlingske - Section</title>
+	<title>Berlingske - User profile</title>
 	<link rel="stylesheet" href="/dist/styles/main.css">
 </head>
 <body class="tpl-section default-header <?php if($template): ?> default-header <?php endif; ?> <?php if($siteBusiness): ?>site-business<?php endif; ?> show-site-search">
