@@ -1,0 +1,63 @@
+$grid-left: 10rem;
+$grid-sidebar: 20rem;
+
+
+[class*="grid-col-"] {
+	position: relative;
+	float: left;
+	padding-left: .625rem;
+	padding-right: .625rem;
+}
+
+.grid-col-left {
+	width: $grid-left;
+	@extend .col-border-right-xl-up ;
+}
+.grid-col-left-wide {
+	width: 100%;
+	// @extend .col-border-right-xl-up ;
+}
+.grid-col-middle {
+	width: calc(100% - #{$grid-left + $grid-sidebar});
+}
+.grid-col-middle-wide {
+	width: calc(100% - #{$grid-left });
+}
+.grid-col-sidebar {
+	width: $grid-sidebar;
+	@extend .col-border-left-lg-up;
+}
+
+@include media-breakpoint-down(lg) {
+	.grid-col-middle-wide {
+		width: 100%;
+	}
+}
+
+@include media-breakpoint-only(lg) {
+	.grid-col-left {
+		width: 100%;
+		float: none;
+	}
+	.grid-col-middle {
+		width: calc(100% - #{$grid-sidebar})
+	}
+	.grid-col-sidebar {
+		width: $grid-sidebar;
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.grid-col-left {
+		width: 100%;
+		float: none;
+	}
+	.grid-col-middle {
+		width: 100%
+	}
+	
+	.grid-col-sidebar {
+		width: 100%;
+	}
+}
+

@@ -9,9 +9,9 @@
 		$themeClass = 'theme-cannes';
 	} 
 ?>
-<div class="deck deck-theme">
-	<div class="theme-container <?php if($themeClass) {echo $themeClass;} else {echo 'theme-berlinale';} ?>">
-		<div class="col-tags ">
+<div class="row deck deck-theme">
+	<div class="col-xs-12 theme-container <?php if($themeClass) {echo $themeClass;} else {echo 'theme-berlinale';} ?>">
+		<div class="grid-col-left col-xs-2 ">
 			<?php if ($theme === 'roskilde'): ?>
 
 				<div class="section-title"> Roskilde</div>
@@ -34,7 +34,7 @@
 			<?php endif; ?>
 
 		</div>
-		<div class="col-primary">
+		<div class="grid-col-middle-wide col-xs-10">
 			
 			<div class="row flex-row">
 				

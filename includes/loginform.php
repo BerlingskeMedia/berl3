@@ -8,7 +8,7 @@
 		<div class="site-logo text-center mb">Berlingske</div>
 
 		  
-		<p class="text-center">Log ind for at få adgang til alt indhold på Berlingske.dk. </p>
+		<p class="text-center">Log ind og få adgang til alt indhold på Berlingske.dk</p>
 		
 		<form action="" class="form ">
 			<div class="alert alert-danger">
@@ -39,7 +39,8 @@
 				
 			
 			<button class="btn  btn-blue btn-block mt mb">Log ind</button>
-			<p class="small"><strong>Hjælp!</strong> Jeg <em>har</em> abonnement på avisen, men mangler brugernavn og adgangskode. Hvad gør jeg? <a href="http://b.kundeunivers.dk/allerede-abonnent?utm_source=paywall&utm_medium=paywall_bdk&utm_term=AL-151222-CP-WKLEDIT1PW&utm_content=login&utm_campaign=abonnementer_berlingske">Klik her</a></p>
+			
+			<p class="small">Har du allerede et avisabonnement men mangler brugernavn og adgangskode? <a href="http://b.kundeunivers.dk/allerede-abonnent?utm_source=paywall&utm_medium=paywall_bdk&utm_term=AL-151222-CP-WKLEDIT1PW&utm_content=login&utm_campaign=abonnementer_berlingske">Få hjælp her <i class="bicon-angle-right"></i></a></p>
 			<div class="msg-error hidden"><i class="bicon-angle-up"></i> Du skal indtaste en gyldig e-mailadresse</div>
 		</form>
 		</div>

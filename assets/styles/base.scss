@@ -233,9 +233,7 @@ $col-sidebar-width: 19.375rem;
 	@extend .flex-row;
 }
 
-.trade-contianer-wide {
-	padding-left: .625rem;
-}
+
 .col-primary {
 	width: calc(100% - #{$col-tag-width});
 	padding-right: .625rem;
@@ -245,6 +243,7 @@ $col-sidebar-width: 19.375rem;
 .col-primary-wide {
 	width: calc(100% - #{$col-tag-width});
 	padding-right: .625rem;
+	padding-left: 0;
 	float: left;
 }
 .col-full-width {
@@ -286,6 +285,14 @@ $col-sidebar-width: 19.375rem;
 		height: $border-width;
 		background-color: $border-color;
 		content: '';
+	}
+}
+
+@include media-breakpoint-only(xl) {
+	.trade-container-wide {
+		.demo-banner {
+			margin-left: 0
+		}
 	}
 }
 
@@ -535,6 +542,10 @@ $col-deck-label-width: 160px;
 		@extend .link-blue;
 	}
 }
+.trade-container-wide {
+	padding-left: .625rem;
+}
+
 @include media-breakpoint-down(md) {
 	.col-deck-content,
 	.col-deck-label {

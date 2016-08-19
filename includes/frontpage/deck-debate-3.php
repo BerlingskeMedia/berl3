@@ -1,18 +1,17 @@
-<div class=" deck ">
-	<div class="col-tags col-border-right-xl-up ">
+<div class="row deck ">
+
+	<div class="grid-col-left col-xs-2 ">
 		<div class="section-title">
 			Den Politiske Puls
 			<span class="section-link">
 				<a href="tpl-section.php">Se alle <i class="bicon-angle-right"></i></a>
 			</span>
-		</div>
-		
+		</div>	
 	</div>
-	<div class="col-primary-wide">
-		<div class="flex-row row ">
-	
-		
 
+	<div class="grid-col-middle-wide col-xs-10">
+		<div class="flex-row row ">
+		
 		<? while (dumb_luck("4")): ?>
 		<div class="col-md-6 col-xs-12  flex-row ">
 			<?php 

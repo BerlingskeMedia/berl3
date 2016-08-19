@@ -1,10 +1,10 @@
-<div class="deck deck-theme ">
-	<div class="theme-container theme-dark">
-		<div class="col-tags ">
+<div class="row deck deck-theme ">
+	<div class="col-xs-12 theme-container theme-dark">
+		<div class="grid-col-left col-xs-2">
 			<div class="section-title">Dagens billede</div>
 		</div>
 
-		<div class="col-primary">
+		<div class="grid-col-middle-wide col-xs-10">
 			
 				<div class="row flex-row">
 					<div class="col-xl-12 ">
