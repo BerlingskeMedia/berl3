@@ -1,21 +1,15 @@
-					
-					
-						
+
+
+
+
 				
 			
 			
 
 
-<div class=" deck flex-row">
-
-		
+<div class="row deck">
 	
-
-	
-
-
-	<div class="col-wrapper flex-row">
-		<div class="col-tags col-border-right-xl-up  ">
+		<div class="grid-col-left col-border-right-xl-up  ">
 			
 			<?php if($template === 'author'): ?>
 			
@@ -45,7 +39,7 @@
 
 		</div>
 		
-		<div class="col-primary ">
+		<div class="grid-col-middle col-xs-6 ">
 
 			<?php if($template === 'advertorial'):  ?>
 				<h1 class="section-header-advertorial"><img src="http://a.bimg.dk/node-images/619/13/13619168-alm-brand.jpg" alt="" class="advertorial-logo">Giver dig viden med på vejen</h1>
@@ -366,12 +360,12 @@
 				
 			</div>
 		</div>
-	</div><!-- col-wrapper --> 
+	
 		
 
 	
 
-	<div class="col-sidebar col-border-left-lg-up">
+	<div class="grid-col-sidebar col-xs-4 col-border-left-lg-up">
 
 			
 		<div class="row">
