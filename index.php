@@ -404,9 +404,9 @@ if(isset($_GET["business"])) {
 				</div>
 				<div class="col-md-9">
 					<ul>
-						<li class="green"><a href="tpl-article.php?ab=hard-1">Hard</a></li>
+						<li class="green"><a href="tpl-article.php?ab=hard-4">Hard</a></li>
 						<li class="green"><a href="tpl-article.php?ab=soft">Soft</a></li>
-						<li class="green"><a href="tpl-article-longread.php?ab=hard-1">Longread - Hard </a></li>
+						<li class="green"><a href="tpl-article-longread.php?ab=hard-4">Longread - Hard </a></li>
 						<li class="green"><a href="tpl-article-longread.php?ab=soft">Longread - Soft</a></li>
 
 						<li><em>variable "ab=[hard-1, hard-2, soft]" also works on longreads and article-large</em></li>
