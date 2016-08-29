@@ -6,23 +6,19 @@
 
 		<div class="grid-col-middle-wide col-xs-10">
 			
-				<div class="row flex-row">
-					<div class="col-xl-12 ">
-						<?php
-							$imgW='1070'; 
-							$showImg = '1';
-							$class = '  teaser-theme-photo item-teaser teaser-small';
-							$imgRatio = '16:9';
-							$showSummary = '1';
-							$showRelated = false;
-							$showDate = false;
-							$showCategory = false;
-							$showRelatedimg = false;
-							$showAuthor = true;
-							include('includes/frontpage/teasers/teaser.php') ?>
-					</div>					
-				</div>
-			
+			<?php
+				$imgW='1070'; 
+				$showImg = '1';
+				$class = '  teaser-theme-photo item-teaser teaser-small';
+				$imgRatio = '16:9';
+				$showSummary = '1';
+				$showRelated = false;
+				$showDate = false;
+				$showCategory = false;
+				$showRelatedimg = false;
+				$showAuthor = true;
+				include('includes/frontpage/teasers/teaser.php') ?>
+				
 		</div>
 	</div>
 </div>
