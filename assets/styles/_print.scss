@@ -1,26 +1,65 @@
 
 @media print {
-  .site-header *,
-  .fixed-bottom,
-  .sidebar,
-  .article-embedded-link,
-  .gallery-container,
-  .article-related,
-  .article-share-bottom,
+   
+  body,
+  .container {
+      color: #000;
+      background: #fff;
+   }
+   @page {
+      margin: 2cm;
+   }
+   h2, h3 {
+    page-break-after: avoid;
+  }
+  img {
+    max-width: 100%!important;
+  }
   .site-footer,
-  .article-content-below, 
-  .no-print,
-  .banner,
-  .article-share,
-  .article-newsletter,
-  .demo-ban,
-  .mobile-share-menu,
-  .share-trigger,
-  .article-embed-video {
-    display: none;
+  .site-header,
+  .article-footer,
+  .col-2-sidebar,
+  .article-bottom,
+  .author-follow,
+  .article-marketing-embedded,
+  .toggle-embed,
+  .embed-fade,
+  .article-newsletter-embedded {
+    display: none!important;
   }
-  .article-content > ul {
-    list-style: disc;
+  .article-header,
+  .article-content {
+    display: block;
   }
+  .article-avatar img {
+    max-width: 25px!important;
+  }
+
+  .embed-content {
+    max-height: 9999px!important;
+    overflow: visible;
+  }
+  .article-body p {
+   a[href^=http]:after {
+      content:" <" attr(href) "> ";
+   }
+    a[href^="#"]:after {
+      content: "";
+   }
+  }
+
+  // Longreads
+  .longread-head {
+    height: auto!important;
+    min-height: 10rem!important;
+    .article-title {
+      color: #000;
+    }
+  }
+
   
+
+   
 }
+
+
