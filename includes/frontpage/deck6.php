@@ -170,11 +170,42 @@
 					include('includes/list-news.php'); ?>
 			</div>
 			<div class="col-lg-12 col-md-6 col-sm-12">
-				<div style="width: 300px; height: 600px;" class="demo-banner">Sticky Banner</div>
+				<div style="width: 300px; height: 600px;" class="demo-banner hidden-sm-down">
+					
+					<?php 
+					if($squareBannerLabel) {
+						echo $squareBannerLabel;
+					} else {
+						echo "Banner";
+					} 
+					
+					?>
+
+				</div>
+
+				
+				<div style="height: 160px;" class="demo-banner hidden-md-up mb banner-mobile">
+					<?php 
+					if($leaderboardBannerLabel) {
+						echo $leaderboardBannerLabel;
+					} else {
+						echo "Banner";
+					} 
+					
+					?>
+
+				</div>
+
 			</div>
+
+
 		</div>
 					
 	</div><!-- sidebar -->
-</div><!-- col-xs-12 -->
+</div>
 
-<?php $showBflow = false; ?>
+
+<?php 
+$showBflow = false; 
+$squareBannerLabel = false;
+?>

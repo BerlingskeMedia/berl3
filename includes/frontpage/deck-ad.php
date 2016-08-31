@@ -1,6 +1,6 @@
-<div class="row deck">
+<div class="row deck hidden-sm-down">
 	
-	<div class="grid-col-left col-border-right-xl-up col-xs-2">
+	<div class="grid-col-left col-border-right-xl-up col-xs-2 ">
 	</div><!-- col-xs-2 -->
 	
 	<div class="grid-col-middle-wide banner col-xs-10">

@@ -72,34 +72,62 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 
 
 
-
+	<?php 
+		$squareBannerLabel = 'Square_2 - Sticky';
+		$leaderboardBannerLabel = 'Leaderboard_3 (320x160 320x320)';
+	 ?>
 	<?php include('includes/frontpage/deck5.php'); ?>
-
-	<?php include('includes/frontpage/deck-ad.php'); ?>
+	
+	<?php 
+		$bannerLabel = 'Leaderboard_2'; 
+		include('includes/frontpage/deck-ad.php'); 
+	?>
 	
 	<?php include('includes/frontpage/deck-longreads-3.php'); ?>
+	
+	<?php $bannerLabel = 'Leaderboard_3'; ?>
 	<?php include('includes/frontpage/deck-ad.php'); ?>
 	
 	<?php 
-	$showBflow = false; 
+		$showBflow = false; 
+		$squareBannerLabel = 'Jobindex';
+		$leaderboardBannerLabel = 'Leaderboard_4 (320x160 320x320)';
 	include('includes/frontpage/deck6.php'); ?>
 	
 	<?php include('includes/frontpage/deck-debate-2.php'); ?>
+	
+	<?php 
+		$squareBannerLabel = 'Square_3'; 
+		$leaderboardBannerLabel = 'Leaderboard_5 (320x160 320x320)';
+	?>
 	<?php include('includes/frontpage/deck6.php'); ?>
 	
 	<?php include('includes/frontpage/deck-image-2.php'); ?>
 	
-	<?php $showBflow = true; ?>
+	
+	<?php 
+		$showBflow = true; 
+		$squareBannerLabel = 'Square_marketing'; 
+		$leaderboardBannerLabel = 'Leaderboard_6 (320x160 320x320)';
+	?>
 	<?php include('includes/frontpage/deck6.php'); ?>
 
 
 	<?php include('includes/frontpage/deck-debate-3.php'); ?> <!-- Den politiske Puls -->
 
-	<?php include('includes/frontpage/deck6.php'); ?>
+	<?php 
+		$squareBannerLabel = 'Square_4';
+		$leaderboardBannerLabel = 'Leaderboard_7 (320x160 320x320)';
+		include('includes/frontpage/deck6.php'); 
+	?>
 
 	<?php include('includes/frontpage/deck-consumersales-2.php'); ?>
 
 	<?php $theme = 'roskilde'; include('includes/frontpage/deck-theme-2.php'); ?>
+	
+	<?php 
+		$squareBannerLabel = 'Square_5 (?)'; 
+		$leaderboardBannerLabel = 'Leaderboard_8 (320x160 320x320)';?>
 
 	<?php include('includes/frontpage/deck6.php'); ?>
 
@@ -107,26 +135,6 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 
 	<?php include('includes/frontpage/deck-debate-4.php'); ?> <!-- Groft sagt -->
 
-	<?php // include('includes/frontpage/deck-cartoons.php'); ?>
-
-	<?php //  include('includes/frontpage/deck-longreads.php'); ?>
-	
-	
-
-	<?php // include('includes/frontpage/deck-image.php'); ?>
-
-	<?php // include('includes/frontpage/deck-more-news.php'); ?>
-
-	<?php // include('includes/frontpage/deck-more-news-2.php'); ?>
-	
-	<?php // include('includes/frontpage/deck-towers.php'); ?>
-	
-	<?php // include('includes/frontpage/deck-consumersales.php'); ?>
-	
-
-
-
-	<?php // include('includes/deck-teaser-longread.php'); ?>
 
 	
 </div>

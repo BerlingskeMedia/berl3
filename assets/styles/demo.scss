@@ -19,6 +19,8 @@
 	}
 
 }
+
+
 .demo-banner {
 	background: rgba(0,0,0,.1);
 	margin: 0 auto;
@@ -35,6 +37,11 @@
 	}
 }
 
+.banner-mobile {
+	margin-left: -.625rem;
+	margin-right: -.625rem;
+	width: auto;
+}
 
 .banner-wrapper {
 	position: relative;

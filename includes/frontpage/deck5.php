@@ -3,7 +3,13 @@
 		// $labelText = 'Breaking';
 		?>
 
-
+<div class="row">
+	<div class="col-xs-12">
+		<div style="height: 160px;" class="demo-banner hidden-md-up mb banner-mobile">
+				Leaderboard_1 320x160
+		</div>		
+	</div>
+</div>
 
 
 <?php if($topXL): ?>
@@ -225,11 +231,15 @@ $labelText = false;
 
 			
 		<div class="row">
-			<div class="col-lg-12 col-md-6 col-sm-12">
-				<div style="width: 300px; height: 250px;" class="demo-banner mb">Banner</div>
+			<div class="col-lg-12 col-md-4 col-sm-12">
+				<div style="width: 300px; height: 250px;" class="demo-banner mb hidden-sm-down">Square_1</div>
+				<div style="height: 160px;" class="demo-banner hidden-md-up mb banner-mobile">
+					Leaderboard_2 (320x160 320x320)
+				</div>
+
 			</div>
 
-			<div class="col-lg-12 col-md-6 col-sm-12">
+			<div class="col-lg-12 col-md-4 col-sm-12">
 				<?php 
 					$sectionClass 	= 'latest-news mb-05';
 					$imgRatio 		= '1:1';
@@ -245,9 +255,40 @@ $labelText = false;
 						
 					include('includes/list-news.php'); ?>
 
-					<div style="width: 300px; height: 600px;" class="demo-banner">Sticky Banner</div>
+					
 			</div>
+			<div class="col-lg-12 col-md-4 col-sm-12">
+				<div style="width: 300px; height: 600px;" class="demo-banner hidden-sm-down">
+					
+					<?php 
+					if($squareBannerLabel) {
+						echo $squareBannerLabel;
+					} else {
+						echo "Banner";
+					} 
+					
+					?>
+
+				</div>
+
+			<div style="height: 160px;" class="demo-banner hidden-md-up banner-mobile mb">
+				
+				<?php 
+				if($leaderboardBannerLabel) {
+					echo $leaderboardBannerLabel;
+				} else {
+					echo "Banner";
+				} 
+				
+				?>
+			</div>
+
 		</div>		
 	</div>
 	
 </div>
+</div>
+<?php 
+$leaderboardBannerLabel = false; 
+$squareBannerLabel = false;
+?>

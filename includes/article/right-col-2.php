@@ -7,7 +7,7 @@
 
 
 <div class="row">
-	<div class="col-md-6 col-lg-12 col-sm-12 col-xs-12">
+	<div class="col-md-4 col-lg-12 col-sm-12 col-xs-12">
 		
 			<?php 
 				$sectionClass = 'latest-news mb-05';
@@ -32,7 +32,19 @@
 				include('includes/list-news.php');
 			?>
 
-			<?php include('includes/follow-berlingske-buttons.php'); ?>	
+			<div class="text-center mb like-berlingske  ">
+			<span class="label-follow">Følg Berlingske: </span>
+			<a href="https://www.facebook.com/berlingske/?fref=ts" class="btn-share-sm-black"  target="_blank"><i class="bicon-facebook"></i></a>
+			<a href="https://twitter.com/berlingske?lang=da" class="btn-share-sm-black"  target="_blank"><i class="bicon-twitter"></i></a>
+			<a href="https://www.instagram.com/berlingske/?hl=da" class="btn-share-sm-black" target="_blank"><i class="bicon-instagram"></i></a>
+		</div>
+
+			<?php // include('includes/follow-berlingske-buttons.php'); ?>	
+	</div>
+	<div class="col-md-4 col-lg-12 col-sm-12 col-xs-12 hidden-lg-up hidden-sm-down">
+		<div class="demo-banner" style="width:300px; height: 600px;">
+			Jobindex iPad
+		</div>
 	</div>
 	
 	<!-- Mobile banner --> 
@@ -42,8 +54,8 @@
 		</div>
 	</div>
 
-	<div class="col-lg-12 col-md-6">
-		<div class="stickem-container-ex2 mb hidden-md-down" style="height: 1000px;">	
+	<div class=" col-lg-12 col-xs-12 hidden-md-down">
+		<div class="stickem-container-ex2 mb " style="height: 1000px;">	
 			<div class="sticky-ex2">	
 				<div class="demo-banner mb" style="height: 600px; width: 300px;">Square_1</div>
 				<div class="demo-banner" style="height: 100px; width: 300px;">Square_Marketing</div>
@@ -51,7 +63,7 @@
 		</div>
 	</div>
 
-	<div class="col-md-6 col-lg-12 col-sm-12 col-xs-12">
+	<div class="col-md-4 col-lg-12 col-xs-12">
 		
 		<?php 
 			$showTime = false;
@@ -73,10 +85,14 @@
 		
 		<div class="stickem-container-ex2 mb-1 hidden-md-down" style="height: 1000px;">	
 			<div class="sticky-ex2">	
-				<div class="demo-banner mb" style="height: 250px; width: 300px;">Square_2</div>
-				<div class="demo-banner mb" style="height: 250px; width: 300px;">Advertorial_1</div>
-				<div class="demo-banner" style="height: 250px; width: 300px;">Square_Marketing_2</div>
+				<div class="demo-banner mb" style="height: 250px; width: 300px;">Square_3 sticky</div>
+				<div class="demo-banner mb" style="height: 100px; width: 300px;">Advertorial_1 sticky</div>
+				<div class="demo-banner mb" style="height: 100px; width: 300px;">Advertorial_2 sticky</div>
 			</div>
+		</div>
+		<div class=" mb-1 hidden-lg-up">	
+			<div class="demo-banner mb" style="height: 100px; width: 300px;">Advertorial tablet</div>
+			<div class="demo-banner mb" style="height: 100px; width: 300px;">Advertorial tablet</div>
 		</div>
 
 	</div>
@@ -96,14 +112,7 @@
 
 	</div>
 	
-	<div class="col-xs-12 hidden-lg-up">
-		<div class="text-center mb like-berlingske like-berlingske-tablet ">
-			<span class="label-follow">Følg Berlingske: </span>
-			<a href="https://www.facebook.com/berlingske/?fref=ts" class="btn-share-sm-black"  target="_blank"><i class="bicon-facebook"></i></a>
-			<a href="https://twitter.com/berlingske?lang=da" class="btn-share-sm-black"  target="_blank"><i class="bicon-twitter"></i></a>
-			<a href="https://www.instagram.com/berlingske/?hl=da" class="btn-share-sm-black" target="_blank"><i class="bicon-instagram"></i></a>
-		</div>
-	</div>
+	
 	
 	
 </div>

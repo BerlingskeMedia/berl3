@@ -145,7 +145,7 @@
 								</div>
 
 								<?php if(!$isAdvertorial): ?>
-									<div class="hidden-md-down inline-banner" style="width: 300px; height: 250px;">Square_4</div>
+									<div class="hidden-md-down inline-banner" style="width: 300px; height: 250px;">Square_2</div>
 									<div class=" inline-banner hidden-lg-up hidden-sm-down" style="width: 300px; height: 250px;">Square_1 Tablet</div>
 								<?php endif; ?>
 

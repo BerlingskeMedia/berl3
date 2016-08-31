@@ -77,6 +77,12 @@
 
 	<?php endif; ?>
 	<?php if(!$isAdvertorial): ?>
+	<div class="row">
+		<div class="col-lg-12 hidden-md-down mt mb">
+			<div class="demo-banner" style="width: 930px; height: 180px; ">Leaderboard_2</div>
+		</div>
+	</div>
+
 	<div class="row flex-row">
 		<div class="col-xs-12">
 			<div class="section-title">
@@ -174,15 +180,7 @@
 			
 	</div><!-- row -->
 
-	<div class="row">
-		<div class="col-lg-12 hidden-md-down mt mb-2">
-			<div class="demo-banner" style="width: 930px; height: 180px; ">Leaderboard_2</div>
-		</div>
-
-		<div class="hidden-sm-down hidden-lg-up mb-2 mt text-center ipad-banner-article">
-			<div class="demo-banner" style="width: 930px; height: 180px; ">Leaderboard_3 (tablet)</div>	
-		</div>
-	</div>
+	
 
 <?php endif; ?>
 </div>

@@ -32,7 +32,7 @@
 <div class="canvas-main <?php echo $campaignId; ?>">
 
 	<div class="banner-wrapper">
-	<div class="bg-banner hidden-md-down"></div>
+	<div class="bg-banner hidden-sm-down"></div>
 
 	<div class="topbanner demo-banner hidden-sm-down" style="width: 930px; height: 180px;"></div>
 
