@@ -38,7 +38,6 @@ $linkcolorB: #007cbb;
 * {
 	box-sizing: border-box;
 	text-rendering: optimizeLegibility;
-	-moz-osx-font-smoothing: grayscale; 
 }
 
 body {
@@ -116,6 +115,7 @@ li {
 				font-family: 'Sanomat Serif', georgia, serif;
 				font-weight: 900;
 				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale; 
 				a {
 					color: #222;
 					vertical-align: middle;
@@ -156,7 +156,7 @@ time {
 	color: $linkcolor;
 	text-decoration: none;
 	&:hover {
-		color: darken($linkcolor, 10%);
+		color: $linkcolorB;
 	}
 	&:active {
 		color: red;
@@ -204,5 +204,6 @@ footer {
 	margin-left: 5px;
 	vertical-align: middle;
 	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale; 
 }
 
