@@ -12,6 +12,11 @@
         "styles/main.scss"
       ]
     },
+    "ni_dk.css": {
+      "files": [
+        "styles/nidk.scss"
+      ]
+    },
     "demo.js": {
       "files": [
         "scripts/demo.js"
