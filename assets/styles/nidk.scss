@@ -39,7 +39,6 @@ $linkcolorB: #007cbb;
 	box-sizing: border-box;
 	text-rendering: optimizeLegibility;
 	-moz-osx-font-smoothing: grayscale; 
-	-webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -116,6 +115,7 @@ li {
 				overflow: hidden;
 				font-family: 'Sanomat Serif', georgia, serif;
 				font-weight: 900;
+				-webkit-font-smoothing: antialiased;
 				a {
 					color: #222;
 					vertical-align: middle;
@@ -186,7 +186,7 @@ footer {
 		font-size: 11px;
 	}	
 	span:nth-child(2) {
-		color: $linkcolorB;
+		color: #666;
 		font-weight: 600;
 
 	}
@@ -203,5 +203,6 @@ footer {
 	font-size: 18px;
 	margin-left: 5px;
 	vertical-align: middle;
+	-webkit-font-smoothing: antialiased;
 }
 
