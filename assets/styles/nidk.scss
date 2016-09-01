@@ -1,4 +1,4 @@
-$linkcolor: #0073A5;
+$linkcolor: #0073a5;
 $linkcolorB: #007cbb;
 
 @mixin installFont($family, $src, $style: normal, $weight: normal) {
@@ -162,7 +162,7 @@ time {
 		color: red;
 	}
 	&:visited {
-		color: #999;
+		color: #666;
 	}
 }
 
