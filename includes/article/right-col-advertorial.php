@@ -1,4 +1,4 @@
-<div class="mb-1 text-center banner-advertorial">
+<div class="mb-1 text-center banner-advertorial hidden-sm-down">
 	<img src="/dist/images/demo/alm-brand-300x250.png" alt="">
 </div>
 

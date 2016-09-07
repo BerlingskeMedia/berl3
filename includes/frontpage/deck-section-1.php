@@ -369,6 +369,7 @@
 
 			
 		<div class="row">
+			
 			<?php if($template === 'advertorial'): ?>
 			<div class="col-lg-12 col-md-6 col-sm-12">
 				<?php include('includes/article/right-col-advertorial.php');?>
@@ -397,6 +398,14 @@
 
 			<?php else: ?>
 			<div class="col-lg-12 col-md-6 col-sm-12">
+					<div class="text-center">
+						<div class="demo-banner banner-mobile hidden-md-up mb" style="width: 320px; height: 320px; margin-left: auto; margin-right: auto;">
+							Square_marketing
+						</div>	
+					</div>
+					
+				
+
 				<div style="width: 300px; height: 600px;" class="demo-banner mb hidden-sm-down">Square_1</div>
 			</div>
 

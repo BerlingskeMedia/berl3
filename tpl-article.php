@@ -140,13 +140,15 @@
 
 							<?php if($paywall !== 'hard'): ?>
 								
+								<?php if(!$isAdvertorial): ?>
 								<div class="hidden-md-up mb fw-sm continue-reading-banner">
-									<div class="demo-banner demo-banner-mobile " style="width: 320px; height : 160px;">Leaderboard_1 Mobile</div>
+									<div class="demo-banner demo-banner-mobile " style="width: 320px; height : 160px;">Leaderboard_2</div>
 								</div>
+							<?php endif; ?>
 
 								<?php if(!$isAdvertorial): ?>
-									<div class="hidden-md-down inline-banner" style="width: 300px; height: 250px;">Square_2</div>
-									<div class=" inline-banner hidden-lg-up hidden-sm-down" style="width: 300px; height: 250px;">Square_1 Tablet</div>
+									<div class="hidden-sm-down inline-banner" style="width: 300px; height: 250px;">Square_2</div>
+									
 								<?php endif; ?>
 
 								<p><? dummy("text@paragraph") ?></p>
@@ -186,6 +188,7 @@
 								<?php include('includes/article-embeds/download-file.php'); ?>
 
 								<?php include('includes/article-embeds/fact-default.php'); ?>
+								
 
 								<?php if($paywall === 'soft') :?>
 									<div class="marketing-soft-paywall">

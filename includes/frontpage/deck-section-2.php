@@ -102,11 +102,14 @@ $labelText = false;
 				<?php else: ?>
 					<div style="width: 300px; height: 250px;" class="demo-banner hidden-sm-down mb">Square_3 sticky</div>
 				<?php endif; ?>
+				
+			</div>
+
+			<div class="col-lg-12 col-md-6 col-sm-12">
 				<?php if(!$template): ?>
 					<div style="width: 300px; height: 600px;" class="demo-banner hidden-sm-down mb">Jobindex</div>
 				<?php endif; ?>
 			</div>
-
 			
 
 			

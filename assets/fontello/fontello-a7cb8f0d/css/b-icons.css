@@ -1,0 +1,102 @@
+@font-face {
+  font-family: 'b-icons';
+  src: url('../font/b-icons.eot?13151927');
+  src: url('../font/b-icons.eot?13151927#iefix') format('embedded-opentype'),
+       url('../font/b-icons.woff2?13151927') format('woff2'),
+       url('../font/b-icons.woff?13151927') format('woff'),
+       url('../font/b-icons.ttf?13151927') format('truetype'),
+       url('../font/b-icons.svg?13151927#b-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'b-icons';
+    src: url('../font/b-icons.svg?13151927#b-icons') format('svg');
+  }
+}
+*/
+ 
+ [class^="bicon-"]:before, [class*=" bicon-"]:before {
+  font-family: "b-icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.bicon-angle-left:before { content: '\e800'; } /* '' */
+.bicon-angle-right:before { content: '\e801'; } /* '' */
+.bicon-angle-up:before { content: '\e802'; } /* '' */
+.bicon-angle-down:before { content: '\e803'; } /* '' */
+.bicon-right-1:before { content: '\e804'; } /* '' */
+.bicon-menu:before { content: '\e805'; } /* '' */
+.bicon-chart-line:before { content: '\e806'; } /* '' */
+.bicon-twitter:before { content: '\e807'; } /* '' */
+.bicon-facebook:before { content: '\e808'; } /* '' */
+.bicon-user:before { content: '\e809'; } /* '' */
+.bicon-down:before { content: '\e80a'; } /* '' */
+.bicon-left:before { content: '\e80b'; } /* '' */
+.bicon-right:before { content: '\e80c'; } /* '' */
+.bicon-up:before { content: '\e80d'; } /* '' */
+.bicon-search:before { content: '\e80e'; } /* '' */
+.bicon-cancel:before { content: '\e80f'; } /* '' */
+.bicon-home:before { content: '\e810'; } /* '' */
+.bicon-clock-alt:before { content: '\e811'; } /* '' */
+.bicon-asterisk:before { content: '\e812'; } /* '' */
+.bicon-link:before { content: '\e813'; } /* '' */
+.bicon-quote:before { content: '\e814'; } /* '' */
+.bicon-down-open-big:before { content: '\e815'; } /* '' */
+.bicon-up-open-big:before { content: '\e816'; } /* '' */
+.bicon-print:before { content: '\e817'; } /* '' */
+.bicon-ok-circled:before { content: '\e818'; } /* '' */
+.bicon-camera:before { content: '\e819'; } /* '' */
+.bicon-star:before { content: '\e81a'; } /* '' */
+.bicon-comment-inv-alt2:before { content: '\e81b'; } /* '' */
+.bicon-linkedin:before { content: '\e81c'; } /* '' */
+.bicon-instagram:before { content: '\e81d'; } /* '' */
+.bicon-mail:before { content: '\e81e'; } /* '' */
+.bicon-search-1:before { content: '\e81f'; } /* '' */
+.bicon-cog:before { content: '\e820'; } /* '' */
+.bicon-doc-text:before { content: '\e821'; } /* '' */
+.bicon-download-alt:before { content: '\e822'; } /* '' */
+.bicon-play:before { content: '\e823'; } /* '' */
+.bicon-play-circled:before { content: '\e824'; } /* '' */
+.bicon-record:before { content: '\e825'; } /* '' */
+.bicon-bicon:before { content: '\e826'; } /* '' */
+.bicon-right-open-mini:before { content: '\e827'; } /* '' */
+.bicon-ccw:before { content: '\e828'; } /* '' */
+.bicon-arrow:before { content: '\e829'; } /* '' */
+.bicon-ok:before { content: '\e82a'; } /* '' */
+.bicon-share:before { content: '\e82b'; } /* '' */
+.bicon-phone:before { content: '\e899'; } /* '' */

@@ -78,9 +78,11 @@
 	<?php endif; ?>
 	<?php if(!$isAdvertorial): ?>
 	<div class="row">
-		<div class="col-lg-12 hidden-md-down mt mb">
+	<?php if($templateLongread): ?>
+		<div class="col-lg-12 hidden-sm-down mt mb">
 			<div class="demo-banner" style="width: 930px; height: 180px; ">Leaderboard_2</div>
 		</div>
+	<?php endif; ?>
 	</div>
 
 	<div class="row flex-row">

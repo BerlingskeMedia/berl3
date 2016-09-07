@@ -41,7 +41,9 @@
 		<?php endif; ?>
 		<? dummy("text@headline") ?>
 	</h1>
-
+	<div class="hidden-md-up">
+		<div class="demo-banner banner-mobile mb" style="height: 160px">Leaderboard_1</div>
+	</div>
 	<?php include('includes/article-embeds/rating.php'); ?>
 	
 	<p class="article-summary relative"><? dummy("text@teaser") ?></p>

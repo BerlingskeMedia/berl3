@@ -122,7 +122,7 @@ $templateLongread = true;
 					<div class="demo-banner" style="width: 930px; height: 180px; background: url(/dist/images/banners/1/topbanner.png) center center no-repeat;"></div>	
 				</div>
 
-				<div class="demo-banner hidden-md-down mb" style="width:930px; height: 180px" >Leaderboard_1</div>
+				<div class="demo-banner hidden-sm-down mb" style="width:930px; height: 180px" >Leaderboard_1</div>
 
 				
 					

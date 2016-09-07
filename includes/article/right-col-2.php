@@ -5,10 +5,19 @@
 	</div>	
 </div>
 
+<!-- Mobile banner --> 
+
+	<div class="mb clearfix banner-mobile hidden-md-up">
+		<div class="demo-banner  demo-banner-mobile" style="width: 320px; height: 160px; ">Leaderboard_3 (mobile)</div>
+	</div>
+
 
 <div class="row">
 	<div class="col-md-4 col-lg-12 col-sm-12 col-xs-12">
-		
+			
+			
+			<div class="demo-banner mb hidden-sm-down" style="height: 250px; width: 300px;">Square_1</div>
+
 			<?php 
 				$sectionClass = 'latest-news mb-05';
 				$imgRatio = '1:1';
@@ -47,17 +56,12 @@
 		</div>
 	</div>
 	
-	<!-- Mobile banner --> 
-	<div class="col-xs-12 hidden-md-up">
-		<div class="fw-sm mb clearfix">
-			<div class="demo-banner demo-banner-mobile" style="width: 320px; height: 320px; ">Leaderboard_2 (mobile)</div>
-		</div>
-	</div>
+	
 
 	<div class=" col-lg-12 col-xs-12 hidden-md-down">
 		<div class="stickem-container-ex2 mb " style="height: 1000px;">	
 			<div class="sticky-ex2">	
-				<div class="demo-banner mb" style="height: 600px; width: 300px;">Square_1</div>
+				<div class="demo-banner mb" style="height: 600px; width: 300px;">Square_3</div>
 				<div class="demo-banner" style="height: 100px; width: 300px;">Square_Marketing</div>
 			</div>
 		</div>
@@ -85,14 +89,14 @@
 		
 		<div class="stickem-container-ex2 mb-1 hidden-md-down" style="height: 1000px;">	
 			<div class="sticky-ex2">	
-				<div class="demo-banner mb" style="height: 250px; width: 300px;">Square_3 sticky</div>
+				<div class="demo-banner mb" style="height: 250px; width: 300px;">Square_4 sticky</div>
 				<div class="demo-banner mb" style="height: 100px; width: 300px;">Advertorial_1 sticky</div>
 				<div class="demo-banner mb" style="height: 100px; width: 300px;">Advertorial_2 sticky</div>
 			</div>
 		</div>
 		<div class=" mb-1 hidden-lg-up">	
-			<div class="demo-banner mb" style="height: 100px; width: 300px;">Advertorial tablet</div>
-			<div class="demo-banner mb" style="height: 100px; width: 300px;">Advertorial tablet</div>
+			<div class="demo-banner mb" style="height: 100px; width: 300px;">Advertorial tablet / Phone</div>
+			<div class="demo-banner mb" style="height: 100px; width: 300px;">Advertorial tablet / Phone</div>
 		</div>
 
 	</div>
@@ -107,7 +111,7 @@
 	<!-- Mobile banner --> 
 	<div class="col-xs-12 hidden-md-up">
 		<div class="fw-sm mb">
-			<div class="demo-banner demo-banner-mobile" style="width: 320px; height: 320px; ">Leaderboard_3 (mobile)</div>
+			<div class="demo-banner demo-banner-mobile" style="width: 320px; height: 160px; ">Leaderboard_4 (mobile)</div>
 		</div>
 
 	</div>
