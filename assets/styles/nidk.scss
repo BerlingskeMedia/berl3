@@ -39,12 +39,12 @@ $linkcolorB: #007cbb;
 	box-sizing: border-box;
 	text-rendering: optimizeLegibility;
 }
-
 body {
 	font-family: roboto, "helvetica neue", helvetica, arial, sans-serif;
 	font-size: 15px;
 	line-height: 1.2;
-
+	margin: 0;
+	padding: 0;
 }
 header {
 	@include gradient-vertical(#e4e6e8, #d7d9db, 0%, 100%);
