@@ -24,7 +24,7 @@
 								<div class="footer-logo">
 								<a href="/"><img src="/dist/images/vaabenskjold-footer.png" alt="" class="mb"></a>
 								</div>
-								<p class="text-center">Udgivet siden 1749</p>
+								<p class="text-center mb-1">Grundlagt 1749 af E.H. Berling</p>
 							</div>
 							<div class="col-md-7 col-xs-12 mb">
 								<p>Berlingske<br>

@@ -100,17 +100,7 @@ body.default-header {
 }
 
 
-.site-logo {
-	@extend .font-s1;
-	line-height: 1;
-	font-weight: 900;
-	color: #000;
-	&:hover, 
-	&:focus {
-		text-decoration: none;
-		color: #000;
-	}
-}
+
 
 [class*="tools-menu"] {
 	display: inline-block;
@@ -133,6 +123,7 @@ body.default-header {
 }
 
 .site-header-front-desktop {
+	height: 4.063rem;
 	.tools-menu {
 		height: $headerHeight;
 	}
@@ -142,10 +133,8 @@ body.default-header {
 	}
 	
 	.site-logo {
-		font-size: 2.5rem;
-		line-height: $headerHeight;
-		height: $headerHeight;
-
+		margin-top: .8rem;
+		@include logo-width(12.938rem, blue);
 	}
 }
 .hidden-label {
@@ -166,16 +155,11 @@ body.default-header {
 		position: absolute;
 		left: 0;
 	}
-	.site-logo {
-		font-size: 2rem;
-		line-height: $subheaderHeight - .2rem;	
-		margin-top: .2rem;
+	.site-logo {	
+		@include logo-width(10.313rem, blue);
+		margin-top: .61rem;
 		margin-right: $spacer;
 		margin-left: 1.5rem;
-		display: inline-block;	
-		&:hover {
-			color: #000;
-		}
 	}
 	.tools-menu-left {
 		position: relative;
@@ -584,11 +568,8 @@ body.default-header {
 
 	.site-header-mobile {
 		.site-logo {
-			font-size: 2rem;
-			line-height: $subheaderHeight;
-			&:hover {
-				color:#000;
-			}
+			@include logo-width(10.313rem, blue);
+			margin-top: .55rem;
 		}
 	}
 	

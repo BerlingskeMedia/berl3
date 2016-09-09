@@ -20,7 +20,10 @@
 
 }
 
-
+.test-logo  {
+	@include logo-width(20rem, blue);
+	margin-top: .55rem;
+}
 .demo-banner {
 	background: rgba(0,0,0,.1);
 	margin: 0 auto;

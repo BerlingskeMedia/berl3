@@ -1,75 +1,33 @@
+/*
+LOGO GENERATOR
+Generates a logo width correct dimensions
 
+Example: 
 
-// Generate correct logo height based on custom width
+$logo-width: width in rem;
+$logo-color: Blue or white;
+$logo-align: align the background image in center or to the left;
+$logo-block: make logo 100% width (for centered logo);
 
-/*Logo Example: 
-1: logo width
-2: background-color (Optional - default $col-news);
-
-.my-green-logo {
-	@extend .bt-logo-flat;
-	@include logo-width(20rem, green);
-}*/
-
-$logo-ratio: (70/214);
-
-
-
-@mixin logo-width($logo-width: 15.88rem, $background-color: $col-news) {
-	width: $logo-width;
-	height: ($logo-width * $logo-ratio);
-	background-color: $background-color;
-	display: inline-block;
+.my-logo {
+	@include logo($logo-width: 10rem, $logo-color: [blue/white], $logo-align: [left/center], $logo-block: [true/false]);
 }
+*/
 
+$logoRatio: 310/1500;
 
-// Generate correct logo width based on custom height
-
-/*Logo Example: 
-1: logo height
-2: background-color (Optional - default $col-news);
-
-.my-small-logo {
-	@extend .bt-logo-flat;
-	@include logo-height(1rem);
-}*/
-
-
-@mixin logo-height($logo-height: 5rem, $background-color: $col-news) {
-	height: $logo-height;
-	width: ($logo-height / $logo-ratio);
-	background-color: $background-color;
-	display: inline-block;
-}
-
-
-// rem: Calculate the rem unit, and return both pixels and rems
-// to support older (non-rem supporting) browsers
-@mixin rem($property, $value, $context: $font-size-root) {
-	#{$property}: $value;
-	#{$property}: cr($value, $context);
-}
-
-// Since the most common application of this is likely to be 
-// with font-size, I've created a special mixin just for that
-// which will save you a whopping **5 characters** per time you
-// have to type it. Productivity FTW!
-@mixin font-size($font-size) {
-	@include rem(font-size, $font-size);
-}
-
-
-// Functions
-
-// calc-rem: calculate the rem value based on the desired pixel 
-// value versus a context value, usually the default font size
-$default-font-size: 16px !default;
-
-@function calc-rem( $target, $context: $font-size-root ) {
-	@return $target / $context * 1rem;
-}
-
-// Shorthand redeclaration of the above
-@function cr( $target, $context: $default-font-size ) {
-	@return calc-rem( $target, $context );
+@mixin logo-width($logo-width: 10rem, $logo-color: blue, $logo-align: center, $logo-block: false) {
+	@extend .logo-berlingske;
+	@if $logo-block == true {
+		width: 100%;	
+	} @else {
+		width: $logo-width;	
+	}
+	height: ($logo-width * $logoRatio);
+	background-size: $logo-width;
+	@if $logo-color == white {
+	background-position: $logo-align bottom;
+	} @else {
+	background-position: $logo-align top;
+	}
 }

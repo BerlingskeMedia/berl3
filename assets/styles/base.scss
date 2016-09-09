@@ -447,7 +447,8 @@ $col-deck-label-width: 160px;
 .overlay-login {
 	
 	.site-logo {
-		font-size: 3rem;
+		@include logo-width(12rem, blue, center, true);
+		margin: 0 auto 1rem;
 	}
 	
 	.overlay-inner {

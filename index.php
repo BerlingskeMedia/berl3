@@ -27,6 +27,7 @@ if(isset($_GET["business"])) {
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Project Berlingske 3.0</title>
 	<link rel="stylesheet" href="/dist/styles/main.css">
+	<link rel="stylesheet" href="/dist/styles/demo.css">
 	<link href='https://fonts.googleapis.com/css?family=Montserrat|Oswald:300' rel='stylesheet' type='text/css'>
 </head>
 <body class="">
@@ -118,7 +119,7 @@ if(isset($_GET["business"])) {
 			<div class="row">
 					
 				<div class="col-md-12  border-bottom mb pb" style="padding-top: 4rem" >
-					<a href="/" class="site-logo" style="font-size: 3rem;" >Berlingske</a>
+					<a href="/" class="site-logo test-logo" >Berlingske</a>
 				</div>
 
 				<div class="col-md-9 col-md-offset-3">
