@@ -14,7 +14,7 @@ $logo-block: make logo 100% width (for centered logo);
 }
 */
 
-$logoRatio: 310/1500;
+$logoRatio: 315/1500;
 
 @mixin logo-width($logo-width: 10rem, $logo-color: blue, $logo-align: center, $logo-block: false) {
 	@extend .logo-berlingske;
