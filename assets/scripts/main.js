@@ -207,6 +207,13 @@
 		$(this).closest('div').find('.toggle-content').toggleClass('hidden');
 	});
 
+
+	// Newsletter subscription box
+
+	$('.newsletter-custom input[type="email"]').on('focus', function(){
+		
+		$(this).closest('.newsletter-custom').addClass('newsletters-open');
+	});
 	
 
 })(jQuery); 

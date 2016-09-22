@@ -162,6 +162,25 @@ label {
 	}
 }
 
+.checkbox-styled-large {
+	input[type="checkbox"] {
+		&:before {
+			width: 2rem;
+			height: 2rem;
+			border-radius: 50%;
+			box-shadow: 2px 2px 2px rgba(0,0,0,.15) inset;
+		}
+		&:checked:after {
+			left: 4px;
+			border-width: 5px;
+			width: $spacer * 2;
+			height: 15px;
+			
+		}
+	}
+}
+
+
 .checkbox-styled-dark {
 	input[type="checkbox"] {
 		 &:before {
@@ -190,4 +209,120 @@ label {
 	transition: all .2s ease;
 	transform: translateY(-100%);
 	content: '';
+}
+
+
+.newsletter-custom-embedded { 
+	padding: 1rem;
+	// background-color: #fff;
+	float: left; 
+	margin: .2rem $spacer .6rem 0;
+	width: 18rem;
+}
+
+.newsletter-custom {
+	b {
+		color: $col-blue-1;
+		font-weight: normal
+	}
+	.newsletter-main-title {
+		@extend .font-g2;
+		font-size: 2.5rem;
+		margin-bottom: .625rem;
+
+	}
+	.other-newsletters {
+
+		border-bottom: $border-width solid $border-color;
+		// border-top: $border-width solid $border-color;
+		padding: .325rem 0;
+		margin: .625rem 0 1rem;
+		font-weight: 700;
+		font-size: .8rem;
+	}
+	form {
+		position: relative;
+	}
+	
+	.main-newsletter {
+		
+	}
+	.newsletter-item {
+		@extend .border-bottom;
+		label {
+			position: relative;
+			padding-right: 3rem;
+			font-weight: normal;
+			display: block;
+		}
+		&:last-child {
+			border-bottom: 0;
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+		.newsletter-title {
+			@extend .font-g2;
+			font-size: 2rem;
+		}
+		input[type="checkbox"] {
+			position: absolute;
+			top: 50%;
+			right: $spacer;
+		}
+	}
+	.newsletter-submit {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	input[type="email"] {
+		border: $border-width solid $border-color; 
+		padding: 0 .625rem;
+		line-height: 1.8;
+		font-size: .85rem;
+		height: 1.8rem;
+		border-radius: .2rem;
+		box-shadow: 1px 1px 2px rgba(0,0,0,.15) inset;
+		@extend .font-s2;
+
+		font-weight: 400;
+		&:focus {
+			border-color: rgba(0,0,0,.5);
+			outline: 0;
+		}
+	}
+	.hidden-newsletters {
+		opacity: 0;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height .2s ease, opacity .2s ease;
+	}
+	&.newsletters-open {
+		.hidden-newsletters {
+			max-height: 9999px;
+			opacity: 1;
+		}
+	}
+	.newsletter-final {
+		text-align: center;
+		display: none;
+		min-height: 8rem;
+	}
+	.newsletter-final_title {
+		@extend .font-g2;
+		color: $col-blue-1;
+		font-size: 3rem;
+		padding: 1rem 0;
+	}
+	.newsletter-final_description {
+		font-size: .8rem;
+	}
+	&.newsletter-submitted {
+		.newsletter-final {
+			display: block;
+		}
+		.newsletter-container {
+			display: none;
+		}
+	}
 }
