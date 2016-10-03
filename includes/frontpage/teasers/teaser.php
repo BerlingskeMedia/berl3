@@ -31,7 +31,11 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 					<figure class="teaser-img <?php if($teaserIcon === 'video'): ?> teaser-icon-video <?php endif; ?> <?php if($teaserIcon === 'gallery'): ?> teaser-icon-gallery <?php endif; ?>">
 
 						<?php include('includes/frontpage/teasers/labels.php'); ?>
-						<img src="<? dummy("image". $imgSrc ."@". $imgW ."x,". $imgRatio ."") ?>" width="" height="" alt="[ARTICLE HEADER]" class="img" />
+						<?php if($showPlaceholder): ?>
+							<img src="/dist/images/placeholder_16-9.png" width="910" height="510" alt="[ARTICLE HEADER]" class="img" /></a>
+						<?php else: ?>
+							<img src="<? dummy("image". $imgSrc ."@". $imgW ."x,". $imgRatio ."") ?>" width="" height="" alt="[ARTICLE HEADER]" class="img" />
+						<?php endif; ?>
 					</figure>
 				<?php endif; ?>
 
@@ -182,4 +186,5 @@ $showHeader 	= true;
 $blogTeaser 	= false;
 $showSearchsummary = false;
 $sponsorTag 	= false;
+$showPlaceholder = false;
 ?>

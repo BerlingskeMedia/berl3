@@ -32,11 +32,16 @@ if ($listBlog) {
 
 	<ul class="list-reset list-news <?php echo $listClass; ?> " <?php if($listId): ?>id="<?php echo $listId; ?>"<?php endif; ?>>
 		<? while (dumb_luck($listCount)): ?>
+
 		<li class="">
 			<?php if($showImage): ?>
 			<figure>
 				<a href="tpl-article.php" title="[ARTICLE HEADER]">
+				<?php if($showPlaceholder): ?>
+					<img src="/dist/images/placeholder_1-1.png" width="100" height="100" alt="" class="img" />
+				<?php else: ?>
 					<img src="<? dummy("image". $imgSrc ."@". $imgW ."x,". $imgRatio ."") ?>" width="" height="" alt="" class="img" />
+				<?php endif; ?>
 				</a>				
 			</figure>
 			<?php endif; ?>
