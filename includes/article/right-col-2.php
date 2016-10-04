@@ -52,8 +52,6 @@
 		</div>
 
 			<?php 
-			$newsletterClass = ' newsletter-custom  continue-reading-newsletter mb'; 
-			$showParagraphs = false;
 			include('includes/newsletter-signup.php') 
 			?>
 
