@@ -127,7 +127,7 @@ $labelText = false;
 				$showPaywall = true;
 
 				include('includes/frontpage/teasers/teaser.php') ?>
-
+				
 				<?php
 				$imgW='930';  
 				$showImg = '1';
@@ -139,6 +139,7 @@ $labelText = false;
 				$teaserPack = '3';
 				$showTrumpet = true;
 				$showPaywall = true;
+				$showPlaceholder = true;
 
 				include('includes/frontpage/teasers/teaser.php') ?>
 
