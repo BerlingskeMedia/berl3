@@ -155,6 +155,11 @@ if (isset($_GET['download'])) {
 	$downloadFile = true;
 }
 
+if (isset($_GET['showNewsletter'])) {
+	$showNewsletter = true;
+}
+
+
 
 
 // Longreads

@@ -184,6 +184,13 @@
 								<?php include('includes/article-embeds/custom.php'); ?>
 
 								<?php include('includes/article-embeds/tweet.php'); ?>
+								
+								<?php 
+									$newsletterClass = ' newsletter-custom newsletter-custom-embedded continue-reading-newsletter'; 
+									$showParagraphs = true;
+									include('includes/newsletter-signup.php') 
+								?>
+
 
 								<?php include('includes/article-embeds/download-file.php'); ?>
 

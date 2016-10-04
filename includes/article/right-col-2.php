@@ -41,6 +41,9 @@
 				include('includes/list-news.php');
 			?>
 
+
+
+
 			<div class="text-center mb like-berlingske  ">
 			<span class="label-follow">Følg Berlingske: </span>
 			<a href="https://www.facebook.com/berlingske/?fref=ts" class="btn-share-sm-black"  target="_blank"><i class="bicon-facebook"></i></a>
@@ -48,7 +51,12 @@
 			<a href="https://www.instagram.com/berlingske/?hl=da" class="btn-share-sm-black" target="_blank"><i class="bicon-instagram"></i></a>
 		</div>
 
-			<?php // include('includes/follow-berlingske-buttons.php'); ?>	
+			<?php 
+			$newsletterClass = ' newsletter-custom  continue-reading-newsletter mb'; 
+			$showParagraphs = false;
+			include('includes/newsletter-signup.php') 
+			?>
+
 	</div>
 	<div class="col-md-4 col-lg-12 col-sm-12 col-xs-12 hidden-lg-up hidden-sm-down">
 		<div class="demo-banner" style="width:300px; height: 600px;">

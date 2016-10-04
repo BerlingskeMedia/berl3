@@ -213,7 +213,7 @@ label {
 
 
 .newsletter-custom-embedded { 
-	padding: 1rem;
+	padding: 0 1rem 1rem 0;
 	// background-color: #fff;
 	float: left; 
 	margin: .2rem $spacer .6rem 0;
@@ -221,6 +221,18 @@ label {
 }
 
 .newsletter-custom {
+	position: relative;
+	padding-bottom: 1rem;
+	&:after {
+		content: '';
+		background-color: $border-color;
+		height: $border-width;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+
+	}
 	b {
 		color: $col-blue-1;
 		font-weight: normal
@@ -232,12 +244,12 @@ label {
 
 	}
 	.other-newsletters {
-
+		@extend .font-s2;
 		border-bottom: $border-width solid $border-color;
 		// border-top: $border-width solid $border-color;
 		padding: .325rem 0;
 		margin: .625rem 0 1rem;
-		font-weight: 700;
+		font-weight: 500;
 		font-size: .8rem;
 	}
 	form {
@@ -324,5 +336,11 @@ label {
 		.newsletter-container {
 			display: none;
 		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.newsletter-custom-embedded { 
+		width: 100%;
 	}
 }
