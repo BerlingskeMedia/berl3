@@ -15,6 +15,7 @@ $logo-block: make logo 100% width (for centered logo);
 */
 
 $logoRatio: 315/1500;
+$ratio2: 82.28/400;
 
 @mixin logo-width($logo-width: 10rem, $logo-color: blue, $logo-align: center, $logo-block: false) {
 	@extend .logo-berlingske;
@@ -24,7 +25,7 @@ $logoRatio: 315/1500;
 		width: $logo-width;	
 	}
 	height: ($logo-width * $logoRatio);
-	background-size: $logo-width;
+	background-size: cover ;
 	@if $logo-color == white {
 	background-position: $logo-align bottom;
 	} @else {

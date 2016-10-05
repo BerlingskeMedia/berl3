@@ -4,8 +4,11 @@
 	<div class="overlay-inner">
 		<a href="#" class="close-overlay"><i class="bicon-cancel"></i></a>		
 		<div class="slide-1">
-
-		<div class="site-logo text-center mb">Berlingske</div>
+			
+			<div class="text-center">
+				<div class="site-logo text-center mb">Berlingske</div>	
+			</div>
+		
 
 		<p class="small text-center">Log ind eller køb et abonnement for at få adgang til alt indhold på Berlingske.dk</p>
 		  
@@ -73,7 +76,7 @@
 						<input type="email" class="form-control" id="login-email" placeholder="E-mailadresse" autocomplete="on" >
 						<div class="msg-error"><i class="bicon-angle-up"></i> Du skal indtaste en gyldig e-mailadresse</div>
 					</fieldset>
-					<button class="btn btn-round btn-blue btn-block mt mb">Send</button>
+					<button class="btn btn-blue btn-block mt mb">Send</button>
 				</form>
 				<div class="alert alert-success">
 					<p>Vi har nu sendt dig en e-mail med instruktioner om, hvordan du ændrer din adgangskode.</p>
