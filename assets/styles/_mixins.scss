@@ -25,7 +25,7 @@ $ratio2: 82.28/400;
 		width: $logo-width;	
 	}
 	height: ($logo-width * $logoRatio);
-	background-size: $logo-width;
+	background-size: $logo-width ($logo-width * $ratio2);
 	@if $logo-color == white {
 	background-position: $logo-align bottom;
 	} @else {
