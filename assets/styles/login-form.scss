@@ -1,0 +1,54 @@
+.login--form {
+	p:last-of-type {
+		margin-bottom: 0;
+	}
+}
+
+.login--form__tabs  {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	@extend .clearfix;
+	border-bottom: $border-width solid $border-color;
+	
+	li {
+		margin: 0 0 -1px .625rem;
+		display: inline-block;
+		float: left;
+		@extend .font-s2;
+		font-weight: 500;
+		font-size: .8rem;
+		border-top: $border-width solid $border-color;
+		border-left: $border-width solid $border-color;
+		border-right: $border-width solid $border-color;
+		border-bottom: 1px solid transparent;
+		@include gradient-vertical($start-color: #f8f8f8, $end-color: darken(#f8f8f8, 10%), $start-percent: 80%, $end-percent: 100%) 
+	}
+	.login--tab__active {
+		z-index: 10;
+		margin-bottom: -$border-width;
+		background-color: #fff;
+		border-bottom: 1px solid #fff;
+		background-image: none;
+		a {
+			color: #666;
+			cursor: default;
+			text-decoration: none!important
+		}
+	}	
+
+	a {
+		display: block;
+		padding: 0 1rem;
+		line-height: 2rem;
+	}
+}
+
+.login--form__inner {
+	background-color: #fff;
+	padding: 1rem;
+	border-left: $border-width solid $border-color;
+	border-right: $border-width solid $border-color;
+	border-bottom: 1px solid $border-color;
+	margin-bottom: .625rem;
+}
