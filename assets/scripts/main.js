@@ -214,6 +214,10 @@
 		
 		$(this).closest('.newsletter-custom').addClass('newsletters-open');
 	});
+
+	$('.show-hide-toggle').click(function(e){
+		$(this).closest('.show-hide-container').toggleClass('collapsed');
+	});
 	
 
 })(jQuery); 
