@@ -51,9 +51,7 @@
 			* @section email border
 			* @tip Set the border for your email.
 			*/
-			#templateContainer{
-				/*@editable*/ 0;
-			}
+			
 
 			/**
 			* @tab Page
@@ -613,7 +611,7 @@
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templatePreheader">
                                         <tr>
                                             <td valign="top" class="preheaderContent" style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:0;" mc:edit="preheader_content00">
-                                                <a href="#"><img src="/dist/images/newsletter/buy-subscription.png"  style="max-width: 121px!important;"/></a>
+                                                <a href="#"><img src="http://berl3.medieimperiet.dk/dist/images/newsletter/buy-subscription.png"  style="max-width: 121px!important;"/></a>
                                             </td>
                                             <!-- *|IFNOT:ARCHIVE_PAGE|* -->
                                             <td valign="top" width="180" class="preheaderContent" style="padding-top:10px; padding-right:0; padding-bottom:10px; padding-left:0; text-align: right" mc:edit="preheader_content01">
@@ -631,7 +629,7 @@
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateHeader">
                                         <tr>
                                             <td valign="top" class="headerContent">
-                                            	<img src="/dist/images/newsletter/header.png" style="max-width:614px;"/>
+                                            	<img src="http://berl3.medieimperiet.dk/dist/images/newsletter/header.png" style="max-width:614px;"/>
                                             </td>
                                         </tr>
                                         <tr>
@@ -655,7 +653,7 @@
                                         
                                     	<tr>
                                         	<td class="bodyContent" style="padding-bottom: 0">
-                                        		<a href="[ARTICLE LINK]""><img src="<? dummy("image@574x,16:9") ?>" width="" height="" alt="" style="max-width:574px;" id="bodyImage" /></a>
+                                        		<a href="[ARTICLE LINK]"><img src="<? dummy("image@574x,16:9") ?>"  style="max-width:574px;" id="bodyImage" /></a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -710,9 +708,9 @@
 														<td colspan="3" align="center">Følg Berlingske</td>
                                                 	</tr>
                                                 	<tr>
-                                                		<td><a href="#"><img src="/dist/images/newsletter/facebook.png" /></a></td>
-                                                		<td><a href="#"><img src="/dist/images/newsletter/twitter.png"  /></a></td>
-                                                		<td><a href="#"><img src="/dist/images/newsletter/instagram.png" /></a></td>
+                                                		<td><a href="#"><img src="http://berl3.medieimperiet.dk/dist/images/newsletter/facebook.png" /></a></td>
+                                                		<td><a href="#"><img src="http://berl3.medieimperiet.dk/dist/images/newsletter/twitter.png"  /></a></td>
+                                                		<td><a href="#"><img src="http://berl3.medieimperiet.dk/dist/images/newsletter/instagram.png" /></a></td>
                                                 	</tr>
                                                 </table>
                                             </td>
