@@ -170,6 +170,8 @@
 					include('includes/list-news.php'); ?>
 			</div>
 			<div class="col-lg-12 col-md-6 col-sm-12">
+				<?php include('includes/frontpage/signup-tip-breaking.php') ?>
+
 				<div style="width: 300px; height: 600px;" class="demo-banner hidden-sm-down">
 					
 					<?php 

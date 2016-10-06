@@ -58,11 +58,17 @@ $bubble-txt: #fff;
 		padding: .625rem;
 		border-top: $border-width solid $border-color;
 	}
+	.newsletter-custom {
+		padding: 0;
+		&:after {
+			display: none;
+		}
+	}
 }
 
 .show-hide-toggle { 
 	line-height: 1;
-	padding: .625rem;
+	padding: .625rem 1.5rem .625rem .625rem;
 	position: relative;
 	cursor: pointer;
 	font-weight: 500;
