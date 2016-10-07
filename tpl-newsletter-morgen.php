@@ -239,7 +239,7 @@
 				font-size: 10px;
 				line-height:125%;	
 				font-family: helvetica, arial, sans-serif;
-				padding: 0 10px 10px;
+				padding: 5px 10px 10px;
 				text-align: center;
 				line-height:125%;	
 			}
