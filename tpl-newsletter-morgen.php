@@ -57,7 +57,7 @@
 			* @tip Set the styling for all first-level headings in your emails. These should be the largest of your headings.
 			* @style heading 1
 			*/
-			h1{
+			.headerH1{
 				/*@editable*/ color:#222222 !important;
 				display:block;
 				/*@editable*/ font-family:georgia, serif;
@@ -79,7 +79,7 @@
 			* @tip Set the styling for all second-level headings in your emails.
 			* @style heading 2
 			*/
-			h2{
+			.headerH2{
 				/*@editable*/ color:#404040 !important;
 				display:block;
 				/*@editable*/ font-family:georgia, serif;
@@ -107,7 +107,7 @@
 				/*@editable*/ letter-spacing:normal;
 				margin-top:0;
 				margin-right:0;
-				margin-bottom:4px;
+				margin-bottom:5px;
 				margin-left:0;
 				/*@editable*/ text-align:left;
 			}
@@ -484,7 +484,7 @@
 				* @section heading 1
 				* @tip Make the first-level headings larger in size for better readability on small screens.
 				*/
-				h1{
+				.headerH1{
 					/*@editable*/ font-size:24px !important;
 					/*@editable*/ line-height:100% !important;
 				}
@@ -494,7 +494,7 @@
 				* @section heading 2
 				* @tip Make the second-level headings larger in size for better readability on small screens.
 				*/
-				h2{
+				.headerH2{
 					/*@editable*/ font-size:20px !important;
 					/*@editable*/ line-height:100% !important;
 				}
@@ -682,7 +682,7 @@
                                         
                                     	<tr>
                                         	<td class="mainImage">
-                                        		<a href="[ARTICLE LINK]"><img src="<? dummy("image@574x,16:9") ?>"  style="max-width:574px;" id="bodyImage" /></a>
+                                        		<a href="#"><img src="<? dummy("image@574x,16:9") ?>"  style="max-width:574px;" id="bodyImage" /></a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -693,7 +693,7 @@
                                         <tr>
                                             <td valign="top" class="bodyContent" mc:edit="body_content01" style="padding-top: 0;">
 	                                            
-                                                <h1><a href="#"><? dummy("text@headline-b") ?></a></h1>
+                                                <a href="#" class="headerH1"><? dummy("text@headline-b") ?></a>
                                                 
                                             </td>
                                         </tr>

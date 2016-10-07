@@ -13,8 +13,8 @@
                     </td>    
                 </tr>
                 <tr>
-                	<td valign="top" class="leftColumnContent" mc:edit="left_column_content">
-                        <h2><a href="#"><? dummy("text@headline") ?></a></h2>
+                	<td valign="top" class="leftColumnContent headerH2" mc:edit="left_column_content">
+                        <a href="#" class="headerH2"><? dummy("text@headline") ?></a>
                     </td>
                 </tr>
             </table>
@@ -30,8 +30,8 @@
                     </td>    
                 </tr>
                 <tr>
-                	<td valign="top" class="rightColumnContent" mc:edit="right_column_content">
-                        <h2><a href="#"><? dummy("text@headline") ?></a></h2>
+                	<td valign="top" class="rightColumnContent headerH2" mc:edit="right_column_content">
+                        <a href="#" class="headerH2"><? dummy("text@headline") ?></a>
                     </td>
                 </tr>
             </table>
