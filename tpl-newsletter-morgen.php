@@ -95,12 +95,6 @@
 				/*@editable*/ text-align:left;
 			}
 
-			/**
-			* @tab Page
-			* @section heading 3
-			* @tip Set the styling for all third-level headings in your emails.
-			* @style heading 3
-			*/
 			h3{
 				/*@editable*/ color:#007cbb !important;
 				display:block;
@@ -490,7 +484,7 @@
 				* @tip Make the second-level headings larger in size for better readability on small screens.
 				*/
 				h2{
-					/*@editable*/ font-size:18px !important;
+					/*@editable*/ font-size:20px !important;
 					/*@editable*/ line-height:100% !important;
 				}
 
@@ -685,9 +679,7 @@
                                         </tr>
                                         <tr>
                                             <td valign="top" class="bodyContent" mc:edit="body_content01">
-	                                            <h3>
-	                                            	Politiko
-	                                            </h3>
+	                                            <h3>Politiko</h3>
                                                 <h1><a href="[AERTICLE LINK]"><? dummy("text@headline-b") ?></a></h1>
                                                 
                                             </td>
