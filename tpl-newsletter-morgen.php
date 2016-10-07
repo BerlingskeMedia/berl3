@@ -686,7 +686,7 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td valign="top" class="trumpetContent" style="padding-left: 20px; padding-top: 10px;" mc:edit="body_content04">
+                                            <td valign="top" class="trumpetContent" style="padding-left: 20px; padding-top: 10px; padding-bottom: 0; margin-top: 0; margin-bottom: 0;" mc:edit="body_content04">
                                                 <a href="#">Politiko</a>
                                             </td>    
                                         </tr>
@@ -721,7 +721,7 @@
 
 							<tr>
 								<td align="center" class="newsletterFooter">
-									<a href="[SITE LINK]">Se flere historier på Berlingske.dk</a>
+									<a href="#">Se flere historier på Berlingske.dk</a>
 								</td>
 							</tr>
 
