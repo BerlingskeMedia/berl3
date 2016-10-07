@@ -271,7 +271,7 @@
 			* @tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
 			*/
 			.bodyContent a:link, .bodyContent a:visited, /* Yahoo! Mail Override */ .bodyContent a .yshortcuts /* Yahoo! Mail Override */{
-				/*@editable*/ color:#000;
+				/*@editable*/ color:#000000;
 				
 				/*@editable*/ text-decoration:none;
 			}
@@ -284,7 +284,8 @@
 
 			/* ========== Column Styles ========== */
 
-			.templateColumnContainer{display:inline; width:267px;}
+			.templateColumnContainer{display:inline; width:267px;background-color: #ffffff;}
+
 
 			/**
 			* @tab Columns
@@ -295,7 +296,7 @@
 				/*@editable*/ border-top:1px solid #FFFFFF;
 				/*@editable*/ border-bottom:1px solid #e5e5e5;
 			}
-			#templateColumns{
+			.templateColumns{
 				/*@editable*/ background-color:#ffffff;
 				
 			}

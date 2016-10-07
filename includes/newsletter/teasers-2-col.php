@@ -1,4 +1,4 @@
-<table border="0" cellpadding="20" cellspacing="0" width="100%" id="templateColumns">
+<table border="0" cellpadding="20" cellspacing="0" width="100%" class="templateColumns">
 	<tr mc:repeatable>
     	<td align="left" valign="top" style="padding-bottom:0;">
         	<table align="left" border="0" cellpadding="0" cellspacing="0" class="templateColumnContainer">
