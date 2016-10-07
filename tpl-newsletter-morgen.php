@@ -111,6 +111,10 @@
 				margin-left:0;
 				/*@editable*/ text-align:left;
 			}
+			h3 a {
+				/*@editable*/ color:#007cbb !important;
+				text-decoration: none !important;
+			}
 
 			/**
 			* @tab Page
