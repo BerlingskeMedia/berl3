@@ -241,6 +241,13 @@
 				color: #606060;
 			}
 			
+			.trumpetContent {
+				/*@editable*/ font-size:12px !important;
+				/*@editable*/ line-height:100% !important;
+				font-family: helvetica, arial, sans-serif;
+				font-weight: bold;
+			}
+
 			/* ========== Body Styles ========== */
 
 			/**
@@ -564,10 +571,7 @@
 					/*@editable*/ font-size:18px !important;
 					/*@editable*/ line-height:125% !important;
 				}
-				.trumpetContent {
-					/*@editable*/ font-size:12px !important;
-					/*@editable*/ line-height:100% !important;
-				}
+
 
 				/* ======== Column Styles ======== */
 
@@ -682,12 +686,12 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td valign="top" class="trumpetContent">
+                                            <td valign="top" class="trumpetContent" style="padding-left: 20px; padding-top: 10px;">
                                                 <h3>Politiko</h3>
                                             </td>    
                                         </tr>
                                         <tr>
-                                            <td valign="top" class="bodyContent" mc:edit="body_content01">
+                                            <td valign="top" class="bodyContent" mc:edit="body_content01" style="padding-top: 0;">
 	                                            
                                                 <h1><a href="[AERTICLE LINK]"><? dummy("text@headline-b") ?></a></h1>
                                                 
