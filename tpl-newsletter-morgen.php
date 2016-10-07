@@ -99,7 +99,7 @@
 				/*@editable*/ color:#007cbb !important;
 				display:block;
 				/*@editable*/ font-family:helvetica. arial, sans-serif;
-				/*@editable*/ font-size:12px;
+				/*@editable*/ font-size:12px!important;
 				text-transform: uppercase;
 				/*@editable*/ font-style:normal;
 				/*@editable*/ font-weight:bold;
@@ -500,11 +500,7 @@
 				* @section heading 3
 				* @tip Make the third-level headings larger in size for better readability on small screens.
 				*/
-				h3{
-					/*@editable*/ font-size:12px !important;
-					/*@editable*/ line-height:100% !important;
-				}
-
+				
 				/**
 				* @tab Mobile Styles
 				* @section heading 4
