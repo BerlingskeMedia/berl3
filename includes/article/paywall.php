@@ -39,11 +39,20 @@
 
 				<div class="row">
 					<div class="col-md-6 col-md-offset-3">
-						<button class="btn btn-blue no-caps btn-md  btn-block mb close-paywall-overlay">Få den frøste måned gratis nu <i class="bicon-angle-right"></i></button>
+						<button class="btn btn-blue no-caps btn-md  btn-block mb close-paywall-overlay">Få den første måned gratis nu <i class="bicon-angle-right"></i></button>
 						<p class="small">Allerede abonnent? <a href="#" class="toggle-login"><i class="bicon-user"></i> Klik her</a></p>
 					</div>
 				</div>
 <div class="alert alert-danger">
+				<p>Du er logget ind med en profil, der desværre ikke giver adgang til Berlingske.dk i dag. Det kan skyldes, at dit abonnement har begrænset digital adgang, eller at din ordre ikke er tilknyttet din profil. 
+				
+				<a href="https ://b.kundeunivers.dk/ allerede-abonnent user">Tilknyt ordrenummer</a> </p>
+
+<p><strong>Har du brug for hjælp?</strong>
+Kontakt Kundeservice på 3375 3330</p>
+</div>
+
+<div class="alert alert-info">
 				<p>Du er logget ind med en profil, der desværre ikke giver adgang til Berlingske.dk i dag. Det kan skyldes, at dit abonnement har begrænset digital adgang, eller at din ordre ikke er tilknyttet din profil. 
 				
 				<a href="https ://b.kundeunivers.dk/ allerede-abonnent user">Tilknyt ordrenummer</a> </p>
