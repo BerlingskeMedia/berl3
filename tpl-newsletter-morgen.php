@@ -220,16 +220,17 @@
 				max-width:614px;
 			}
 			.headerTitle {
-				/*@editable*/ font-size:22px !important;
-				/*@editable*/ line-height:175% !important;	
+				/*@editable*/ font-size:22px;
+				/*@editable*/ line-height:175%;	
 				text-align: center;
 				font-family:georgia, serif;
 				font-style: italic;
 			}
 			.headerDate {
-				/*@editable*/ font-size:13px !important;
-				/*@editable*/ line-height:125% !important;	
+				/*@editable*/ font-size:13px;
+				/*@editable*/ line-height:125%;	
 				text-align: center;
+				text-transform: uppercase;
 				font-family:georgia, serif;
 				color: #999;
 				padding: 0 0 30px;
@@ -264,6 +265,17 @@
 				padding-left:20px;
 				/*@editable*/ text-align:left;
 			}
+			.mainImage {
+				/*@editable*/ color:#505050;
+				/*@editable*/ font-family:Helvetica, arial, sans-serif;
+				/*@editable*/ font-size:16px;
+				/*@editable*/ line-height:150%;
+				padding-top:10px;
+				padding-right:20px;
+				padding-bottom:0;
+				padding-left:20px;
+				/*@editable*/ text-align:left;	
+			}
 
 			/**
 			* @tab Body
@@ -276,7 +288,7 @@
 				/*@editable*/ text-decoration:none;
 			}
 
-			.bodyContent img{
+			.mainImage img, .bodyContent img{
 				display:inline;
 				height:auto;
 				max-width:574px;
@@ -491,10 +503,11 @@
 					/*@editable*/ line-height:100% !important;
 				}
 				.headerTitle {
+					/*@editable*/ padding-top: 20px;
 					/*@editable*/ font-size:16px !important;
 				}
 				.headerDate {
-					/*@editable*/ font-size:12px !important;
+					/*@editable*/ font-size:11px !important;
 				}
 
 				/* ======== Header Styles ======== */
@@ -651,7 +664,7 @@
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody">
                                         
                                     	<tr>
-                                        	<td class="bodyContent" style="padding-bottom: 0">
+                                        	<td class="mainImage">
                                         		<a href="[ARTICLE LINK]"><img src="<? dummy("image@574x,16:9") ?>"  style="max-width:574px;" id="bodyImage" /></a>
                                             </td>
                                         </tr>
