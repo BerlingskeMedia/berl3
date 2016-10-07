@@ -47,7 +47,15 @@
 	.img {
 		 max-width: 16rem;
 	}
-
+	.alert {
+		p {
+			font-size: .85rem;
+			@extend .font-s2;
+		}
+		a {
+			text-decoration: underline;
+		}
+	}
 	
 }
 
