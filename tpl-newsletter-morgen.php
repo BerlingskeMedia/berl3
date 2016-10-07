@@ -560,10 +560,7 @@
 				* @section body text
 				* @tip Make the body content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
 				*/
-				.bodyContent{
-					/*@editable*/ font-size:18px !important;
-					/*@editable*/ line-height:125% !important;
-				}
+				
 
 				/* ======== Column Styles ======== */
 
