@@ -237,8 +237,9 @@
 			}
 			.headerSubscription  {
 				font-size: 10px;
+				line-height:125%;	
 				font-family: helvetica, arial, sans-serif;
-				padding: 10px;
+				padding: 0 10px 10px;
 				text-align: center;
 				line-height:125%;	
 			}
