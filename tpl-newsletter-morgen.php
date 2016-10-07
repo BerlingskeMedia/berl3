@@ -107,7 +107,7 @@
 				/*@editable*/ letter-spacing:normal;
 				margin-top:0;
 				margin-right:0;
-				margin-bottom:0;
+				margin-bottom:4px;
 				margin-left:0;
 				/*@editable*/ text-align:left;
 			}

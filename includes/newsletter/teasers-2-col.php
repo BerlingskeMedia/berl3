@@ -8,7 +8,7 @@
                     </td>
                 </tr>
                 <tr>
-                   <td valign="top" class="trumpetContent" style="padding-left: 20px; padding-top: 10px;" mc:edit="body_content04">
+                   <td valign="top" class="trumpetContent" mc:edit="body_content04">
                         <a href="#">Politiko</a>
                     </td>    
                 </tr>
@@ -25,7 +25,7 @@
                     </td>
                 </tr>
                 <tr>
-                   <td valign="top" class="trumpetContent" style="padding-left: 20px; padding-top: 10px;" mc:edit="body_content04">
+                   <td valign="top" class="trumpetContent" mc:edit="body_content04">
                         <a href="#">Politiko</a>
                     </td>    
                 </tr>
