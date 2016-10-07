@@ -691,10 +691,8 @@
                                             </td>    
                                         </tr>
                                         <tr>
-                                            <td valign="top" class="bodyContent" mc:edit="body_content01" style="padding-top: 0;">
-	                                            
+                                            <td valign="top" class="bodyContent" mc:edit="body_content01" style="padding-top: 0; margin-top:0;">
                                                 <a href="#" class="headerH1"><? dummy("text@headline-b") ?></a>
-                                                
                                             </td>
                                         </tr>
                                     </table>
