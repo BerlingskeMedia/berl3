@@ -99,7 +99,7 @@
 				/*@editable*/ color:#007cbb !important;
 				display:block;
 				/*@editable*/ font-family:helvetica. arial, sans-serif;
-				/*@editable*/ font-size:12px!important;
+				/*@editable*/ font-size:11px!important;
 				text-transform: uppercase;
 				/*@editable*/ font-style:normal;
 				/*@editable*/ font-weight:bold;
@@ -246,7 +246,7 @@
 			}
 			
 			.trumpetContent {
-				/*@editable*/ font-size:12px !important;
+				/*@editable*/ font-size:11px !important;
 				/*@editable*/ line-height:100% !important;
 				font-family: helvetica, arial, sans-serif;
 				font-weight: bold;
