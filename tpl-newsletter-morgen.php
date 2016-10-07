@@ -95,7 +95,7 @@
 				/*@editable*/ text-align:left;
 			}
 
-			h3{
+			.trumpetContent{
 				/*@editable*/ color:#007cbb !important;
 				display:block;
 				/*@editable*/ font-family:helvetica. arial, sans-serif;
@@ -111,7 +111,7 @@
 				margin-left:0;
 				/*@editable*/ text-align:left;
 			}
-			h3 a {
+			.trumpetContent a {
 				/*@editable*/ color:#007cbb !important;
 				text-decoration: none !important;
 			}
@@ -687,7 +687,7 @@
                                         </tr>
                                         <tr>
                                             <td valign="top" class="trumpetContent" style="padding-left: 20px; padding-top: 10px;" mc:edit="body_content04">
-                                                <h3><a href="#">Politiko</a></h3>
+                                                <a href="#">Politiko</a>
                                             </td>    
                                         </tr>
                                         <tr>
