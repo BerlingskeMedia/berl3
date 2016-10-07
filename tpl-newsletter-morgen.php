@@ -560,7 +560,14 @@
 				* @section body text
 				* @tip Make the body content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
 				*/
-				
+				.bodyContent{
+					/*@editable*/ font-size:18px !important;
+					/*@editable*/ line-height:125% !important;
+				}
+				.trumpetContent {
+					/*@editable*/ font-size:12px !important;
+					/*@editable*/ line-height:100% !important;
+				}
 
 				/* ======== Column Styles ======== */
 
@@ -675,8 +682,13 @@
                                             </td>
                                         </tr>
                                         <tr>
+                                            <td valign="top" class="trumpetContent">
+                                                <h3>Politiko</h3>
+                                            </td>    
+                                        </tr>
+                                        <tr>
                                             <td valign="top" class="bodyContent" mc:edit="body_content01">
-	                                            <h3>Politiko</h3>
+	                                            
                                                 <h1><a href="[AERTICLE LINK]"><? dummy("text@headline-b") ?></a></h1>
                                                 
                                             </td>

@@ -8,10 +8,12 @@
                     </td>
                 </tr>
                 <tr>
+                    <td valign="top" class="trumpetContent">
+                        <h3>Politiko</h3>
+                    </td>    
+                </tr>
+                <tr>
                 	<td valign="top" class="leftColumnContent" mc:edit="left_column_content">
-                        <h3>
-                        	Politiko
-                        </h3>
                         <h2><a href="[ARTICLE LINK]"><? dummy("text@headline") ?></a></h2>
                     </td>
                 </tr>
@@ -23,10 +25,12 @@
                     </td>
                 </tr>
                 <tr>
+                    <td valign="top" class="trumpetContent">
+                        <h3>Politiko</h3>
+                    </td>    
+                </tr>
+                <tr>
                 	<td valign="top" class="rightColumnContent" mc:edit="right_column_content">
-                		<h3>
-                			Politiko
-                		</h3>
                         <h2><a href="[ARTICLE LINK]"><? dummy("text@headline") ?></a></h2>
                     </td>
                 </tr>
