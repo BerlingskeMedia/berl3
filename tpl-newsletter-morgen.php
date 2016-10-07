@@ -682,8 +682,8 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td valign="top" class="trumpetContent" style="padding-left: 20px; padding-top: 10px;">
-                                                <h3>Politiko</h3>
+                                            <td valign="top" class="trumpetContent" style="padding-left: 20px; padding-top: 10px;" mc:edit="body_content04">
+                                                <h3><a href="#">Politiko</a></h3>
                                             </td>    
                                         </tr>
                                         <tr>
