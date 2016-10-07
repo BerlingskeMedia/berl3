@@ -689,7 +689,7 @@
                                         <tr>
                                             <td valign="top" class="bodyContent" mc:edit="body_content01" style="padding-top: 0;">
 	                                            
-                                                <h1><a href="[AERTICLE LINK]"><? dummy("text@headline-b") ?></a></h1>
+                                                <h1><a href="#"><? dummy("text@headline-b") ?></a></h1>
                                                 
                                             </td>
                                         </tr>

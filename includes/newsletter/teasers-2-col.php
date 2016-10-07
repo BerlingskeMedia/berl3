@@ -4,7 +4,7 @@
         	<table align="left" border="0" cellpadding="0" cellspacing="0" class="templateColumnContainer">
             	<tr>
                 	<td class="leftColumnContent">
-                		<a href="[ARTICLE LINK]"><img src="<? dummy("image@534x,16:9") ?>" class="columnImage"/></a>
+                		<a href="#"><img src="<? dummy("image@534x,16:9") ?>" class="columnImage"/></a>
                     </td>
                 </tr>
                 <tr>
@@ -14,7 +14,7 @@
                 </tr>
                 <tr>
                 	<td valign="top" class="leftColumnContent" mc:edit="left_column_content">
-                        <h2><a href="[ARTICLE LINK]"><? dummy("text@headline") ?></a></h2>
+                        <h2><a href="#"><? dummy("text@headline") ?></a></h2>
                     </td>
                 </tr>
             </table>
@@ -31,7 +31,7 @@
                 </tr>
                 <tr>
                 	<td valign="top" class="rightColumnContent" mc:edit="right_column_content">
-                        <h2><a href="[ARTICLE LINK]"><? dummy("text@headline") ?></a></h2>
+                        <h2><a href="#"><? dummy("text@headline") ?></a></h2>
                     </td>
                 </tr>
             </table>
