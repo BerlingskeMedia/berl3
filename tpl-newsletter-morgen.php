@@ -233,7 +233,17 @@
 				text-transform: uppercase;
 				font-family:georgia, serif;
 				color: #999;
-				padding: 0 0 30px;
+				padding: 0;
+			}
+			.headerSubscription  {
+				font-size: 10px;
+				font-family: helvetica, arial, sans-serif;
+				padding: 10px;
+				text-align: center;
+				line-height:125%;	
+			}
+			.headerSubscription a {
+				color: #606060;
 			}
 			
 			/* ========== Body Styles ========== */
@@ -622,12 +632,10 @@
                                 	<!-- BEGIN PREHEADER // -->
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templatePreheader">
                                         <tr>
-                                            <td valign="top" class="preheaderContent" style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:0;" mc:edit="preheader_content00">
-                                                <a href="#"><img src="http://berl-test.medieimperiet.dk/dist/images/newsletter/buy-subscription.png"  style="max-width: 121px!important;"/></a>
-                                            </td>
+                                            
                                             <!-- *|IFNOT:ARCHIVE_PAGE|* -->
-                                            <td valign="top" width="180" class="preheaderContent" style="padding-top:10px; padding-right:0; padding-bottom:10px; padding-left:0; text-align: right" mc:edit="preheader_content01">
-                                                Ser nyhedsbrevet forkert ud?<br /><a href="*|ARCHIVE|*" target="_blank">Se det i din browser</a>.
+                                            <td valign="top" class="preheaderContent" align="center" style="padding-top:10px; padding-right:0; padding-bottom:10px; padding-left:0; text-align: center" mc:edit="preheader_content01">
+                                                Ser nyhedsbrevet forkert ud? <a href="*|ARCHIVE|*" target="_blank">Se det i din browser</a>.
                                             </td>
                                             <!-- *|END:IF|* -->
                                         </tr>
@@ -654,6 +662,12 @@
                                         		Mandag d. 6. oktober 2016
                                         	</td>
                                         </tr>
+                                        <tr>
+                                        	<td class="headerSubscription">
+                                        		<a href="#">Køb abonnement</a>
+                                        	</td>
+                                        </tr>
+                                        
                                     </table>
                                     <!-- // END HEADER -->
                                 </td>
