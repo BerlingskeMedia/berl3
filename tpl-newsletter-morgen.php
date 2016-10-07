@@ -42,9 +42,7 @@
 			* @tip Set the background color and top border for your email. You may want to choose colors that match your company's branding.
 			* @theme page
 			*/
-			#bodyCell{
-				
-			}
+			
 
 			/**
 			* @tab Page
