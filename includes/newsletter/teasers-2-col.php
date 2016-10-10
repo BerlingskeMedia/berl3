@@ -4,7 +4,7 @@
         	<table align="left" border="0" cellpadding="0" cellspacing="0" class="templateColumnContainer">
             	<tr>
                 	<td class="leftColumnContent">
-                		<a href="#"><img src="<? dummy("image@534x,16:9") ?>" class="columnImage"/></a>
+                		<a href="#"><img src="http://dummy.medieimperiet.dk/cache/webb_actuators_NASA_goddard_534x300.jpg" class="columnImage"/></a>
                     </td>
                 </tr>
                 <tr>
@@ -21,7 +21,8 @@
         	<table align="right" border="0" cellpadding="0" cellspacing="0" class="templateColumnContainer">
             	<tr>
                 	<td class="rightColumnContent">
-                    	<img src="<? dummy("image@534x,16:9") ?>" class="columnImage"/>
+
+                    	<img src="http://dummy.medieimperiet.dk/cache/webb_actuators_NASA_goddard_534x300.jpg" class="columnImage"/>
                     </td>
                 </tr>
                 <tr>

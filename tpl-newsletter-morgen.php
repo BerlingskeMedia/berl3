@@ -94,6 +94,29 @@
 				margin-left:0;
 				/*@editable*/ text-align:left;
 			}
+			.trumpetContentMain{
+				padding-left: 20px; 
+				padding-top: 10px; 
+				padding-bottom: 0; 
+				margin-right:0;
+				margin-left:0;
+				margin-top: 0; 
+				margin-bottom: 0;
+				/*@editable*/ color:#007cbb !important;
+				display:block;
+				/*@editable*/ font-family:helvetica. arial, sans-serif;
+				/*@editable*/ font-size:11px!important;
+				text-transform: uppercase;
+				/*@editable*/ font-style:normal;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ line-height:100%;
+				/*@editable*/ letter-spacing:normal;
+				/*@editable*/ text-align:left;
+			}
+			.trumpetContentMain a {
+				/*@editable*/ color:#007cbb !important;
+				text-decoration: none !important;
+			}
 
 			.trumpetContent{
 				/*@editable*/ color:#007cbb !important;
@@ -237,7 +260,7 @@
 				font-size: 10px;
 				line-height:125%;	
 				font-family: helvetica, arial, sans-serif;
-				padding: 5px 10px 10px;
+				padding: 5px 10px 15px;
 				text-align: center;
 				line-height:125%;	
 			}
@@ -245,6 +268,7 @@
 				color: #606060;
 			}
 			
+			.trumpetContentMain,
 			.trumpetContent {
 				/*@editable*/ font-size:11px !important;
 				/*@editable*/ line-height:100% !important;
@@ -682,11 +706,11 @@
                                         
                                     	<tr>
                                         	<td class="mainImage">
-                                        		<a href="#"><img src="<? dummy("image@574x,16:9") ?>"  style="max-width:574px;" id="bodyImage" /></a>
+                                        		<a href="#"><img src="http://dummy.medieimperiet.dk/cache/8230482_29busfrance_eu_parliamentjpg_574x322.jpeg" style="max-width:574px;" id="bodyImage" />
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td valign="top" class="trumpetContent" style="padding-left: 20px; padding-top: 10px; padding-bottom: 0; margin-top: 0; margin-bottom: 0;" mc:edit="body_content04">
+                                            <td valign="top" class="trumpetContentMain" mc:edit="body_content04">
                                                 <a href="#">Politiko</a>
                                             </td>    
                                         </tr>
