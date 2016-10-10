@@ -217,7 +217,7 @@
 				/*@editable*/ font-size:20px;
 				/*@editable*/ font-weight:bold;
 				/*@editable*/ line-height:100%;
-				/*@editable*/ padding-top:20px;
+				/*@editable*/ padding-top:10px;
 				/*@editable*/ padding-right:0;
 				/*@editable*/ padding-bottom:0;
 				/*@editable*/ padding-left:0;
@@ -246,15 +246,6 @@
 				text-align: center;
 				font-family:georgia, serif;
 				font-style: italic;
-			}
-			.headerDate {
-				/*@editable*/ font-size:13px;
-				/*@editable*/ line-height:125%;	
-				text-align: center;
-				text-transform: uppercase;
-				font-family:georgia, serif;
-				color: #999;
-				padding: 0;
 			}
 			.headerSubscription  {
 				font-size: 10px;
@@ -542,9 +533,7 @@
 					/*@editable*/ padding-top: 20px;
 					/*@editable*/ font-size:16px !important;
 				}
-				.headerDate {
-					/*@editable*/ font-size:11px !important;
-				}
+				
 
 				/* ======== Header Styles ======== */
 
@@ -684,11 +673,7 @@
                                         		Berlingske Morgen
                                         	</td>
                                         </tr>
-                                        <tr>
-                                        	<td class="headerDate">
-                                        		Mandag d. 6. oktober 2016
-                                        	</td>
-                                        </tr>
+                                        
                                         <tr>
                                         	<td class="headerSubscription">
                                         		<a href="#">Køb abonnement</a>
