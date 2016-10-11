@@ -112,7 +112,8 @@ $templateLongread = true;
 			<div class="col-xs-12">
 
 				
-				
+				<div class="subscriber-notice text-center mt">For abonneneter</div>
+
 				<?php include('includes/article/date.php'); ?>
 				<?php include('includes/article-embeds/rating.php'); ?>
 				
