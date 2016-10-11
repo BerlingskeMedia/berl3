@@ -1,0 +1,43 @@
+.cookie-warning {
+	position: fixed;
+	bottom: -$border-width;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,.95);
+	color: #fff;
+	
+	padding: 1rem 1rem;
+	@extend .font-s2;
+
+	p {
+		margin: 0;
+		position: relative;
+		padding: 0 7rem 0 2.5rem;
+		margin: 1rem 0;
+		background: url(/dist/images/cookies.png) left top no-repeat;
+	}
+	.btn {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		height: auto;
+		line-height: 100%;
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+	.container {
+		background: initial;
+	}
+	@include media-breakpoint-down(sm) {
+		p {
+			font-size: .85rem;
+			padding-right: 4rem;
+		}
+		.btn {
+			padding-left: 1rem;
+			padding-right: 1rem;
+		}
+	}
+}
+

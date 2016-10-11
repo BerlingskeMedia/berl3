@@ -180,6 +180,9 @@ $campaignId = 'campaign-' . mt_rand(1,4);
 if (isset($_GET['deck'])) {
 	$deck = $_GET['deck'];
 }
+if (isset($_GET['cookiewarning'])) {
+	$cookiewarning = true;
+}
 
 
 ?>
