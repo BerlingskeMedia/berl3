@@ -524,6 +524,7 @@ if(isset($_GET["business"])) {
 						<li class="green"><a href="tpl-404.php">404</a></li>
 						<li class="green"><a href="#">Send tip</a></li>
 						<li class="green"><a href="tpl-archive.php">Article archive</a></li>
+						<li class="orange"><a href="tpl-article.php?cookiewarning">Cookie warning</a></li>
 						
 					
 					</ul>
