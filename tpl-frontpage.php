@@ -135,7 +135,11 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 
 	<?php include('includes/frontpage/deck-debate-4.php'); ?> <!-- Groft sagt -->
 
-
+	
+	<div class="text-center plus-sign" >
+		<p style="font-size: 120%"><strong>Leder du efter Plus?</strong> Vores Plus-sektion er flyttet til <a href="http://www.bt.dk/plus" style="">bt.dk/plus</a></p>	
+	</div>
+	
 	
 </div>
 

@@ -547,6 +547,24 @@ $col-deck-label-width: 160px;
 	padding-left: .625rem;
 }
 
+
+.plus-sign {
+	position: relative;
+	&:before,
+	&:after {
+		height: $border-width;
+		background-color: $border-color;
+		position: absolute;
+		left: 20%;
+		right: 20%;
+		content: '';
+		top: -1rem;
+	}
+	&:after {
+		bottom: -1rem;
+		top: auto;
+	}
+}
 @include media-breakpoint-down(md) {
 	.col-deck-content,
 	.col-deck-label {
