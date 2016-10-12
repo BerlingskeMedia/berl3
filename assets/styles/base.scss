@@ -560,6 +560,9 @@ $col-deck-label-width: 160px;
 		content: '';
 		top: -1rem;
 	}
+	a {
+		color: #aaca53;
+	}
 	&:after {
 		bottom: -1rem;
 		top: auto;
