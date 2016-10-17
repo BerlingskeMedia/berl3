@@ -27,8 +27,13 @@
 	
 	// Expand embedded elements in articles
 	$('.toggle-embed').click(function(){
-		$(this).closest('aside').removeClass('embed-collapsed-sm');
-		$(this).closest('aside').removeClass('embed-collapsed');
+		$(this).closest('aside').toggleClass('embed-collapsed');
+	});
+	$('.toggle-embed-hide').click(function(){
+		var factOffsetTop = $(this).closest('aside').offset().top - 60;
+		$('html, body').animate({
+		    scrollTop: factOffsetTop
+		 }, 1000);
 	});
 
 	// Toggle additional related articles

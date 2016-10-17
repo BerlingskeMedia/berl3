@@ -500,7 +500,7 @@ a:hover {
 
 
 .embed-fade {
-	display: none;
+	display: block;
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -626,13 +626,26 @@ a:hover {
 }
 
 
+button.toggle-embed-expand {
+	display: none;
+}
+.embed-content {
+	max-height: 9999px;
+	transition: max-height .2s;
+	padding-bottom: 3rem;
+}
 .embed-collapsed {
 	.embed-content {
 		max-height: 140px;
 		overflow: hidden;
+		transition: max-height .2s;
+		padding-bottom: 0;
 	}
-	.embed-fade {
-		display: block;
+	.toggle-embed-expand {
+		display: inline-block;
+	}
+	.toggle-embed-hide {
+		display: none;
 	}
 }
 
@@ -2020,15 +2033,7 @@ $longreadPadding: 20rem;
 		}
 	}
 
-	.embed-collapsed-sm {
-		.embed-content {
-			max-height: 140px;
-			overflow: hidden;
-		}
-		.embed-fade {
-			display: block;
-		}
-	}
+	
 
 	
 

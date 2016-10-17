@@ -1,13 +1,16 @@
 <?php if($showFactboxDefault): ?>
 
+
 <aside class="article-fact-default embed-collapsed">
-	
 	<div class="embed-content">
 
 		<div class="aside-header">
-			Jeg er en fakta header
+			I'm an embedded fact box. I can always be expanded
 		</div>
 	
+		<p>Same code as the default fact box. <a href="?showFactEmbedded&showFactDefault">Example</a></p>
+
+		<? while (dumb_luck("10")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
 		<? while (dumb_luck("1-2")): ?>
 			<p><? dummy("text@teaser") ?></p>
 		<? endwhile ?>
@@ -17,10 +20,12 @@
 
 	</div>
 
-	<div class="embed-fade text-center">
-		<button class="btn btn-fact toggle-embed btn-sm btn-round">Udvid faktaboks</button>
+	<div class=" embed-fade text-center">
+		<button class="btn btn-fact toggle-embed toggle-embed-expand btn-sm btn-round">Udvid faktaboks <i class="bicon-angle-down"></i></button>
+		<button class="btn btn-fact toggle-embed toggle-embed-hide btn-sm btn-round">Skjul faktaboks <i class="bicon-angle-up"></i></button>
 	</div>
 
 </aside>
+
 
 <?php endif; ?>
