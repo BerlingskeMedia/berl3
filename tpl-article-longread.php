@@ -76,7 +76,9 @@ $templateLongread = true;
 		
 		<div class="longread-head-inner">
 			<div class="longread-head-image">
+				<span class="longread-photo-byline">Foto: <? dummy("text@author") ?></span>
 				<div class="longread-wrapper">
+
 					<div class="header-container">
 						<?php include('includes/article/event-headers.php'); ?>
 						<h1 class="article-title">

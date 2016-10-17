@@ -1421,6 +1421,19 @@ figure > .open-gallery {
 
 $longreadPadding: 20rem;
 
+.longread-photo-byline {
+	position: absolute;
+	top: .3125rem;
+	right: .3125rem;
+	color: rgba(255,255,255,.4);
+	background-color: rgba(0,0,0,.2);
+	@extend .font-s2;
+	font-weight: 500;
+	font-size: .6rem;
+	display: inline-block;
+	line-height: 1.2;
+	padding: 0 .2rem;
+}
 .tpl-article-longread {
 	
 	.article-embedded-custom {
