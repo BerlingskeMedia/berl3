@@ -25,7 +25,7 @@
  }
 }
 
-@include installFont('CPHsigns', '../fonts/cph_signs_regular', 'normal','300');
+@include installFont('CPH-signs', '../fonts/CPH-Signs Berlingske-RegularWEB', 'normal','300');
 @include installFont('b-icons', '../fonts/b-icons', 'normal','300');
 
 @include installFont('Sanomat Serif', '../fonts/Sanomat Serif Regular', 'normal','400');
@@ -91,7 +91,7 @@
 
 
 $font-serif-regular: georgia, times, "times new roman", serif;
-$font-sans-alt: 'CPHsigns', 'Montserrat', sans-serif;
+$font-sans-alt: 'CPH-signs', 'Montserrat', sans-serif;
 
 $font-teaser-weight: 700;
 $font-teaser-lineheight: 1.2;
