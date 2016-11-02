@@ -148,6 +148,36 @@ if (isset($_GET['labelType'])) {
 
 			</div>
 	</div>
+	
+
+	<div class="row">
+	<div class="col-xs-12 col-md-2" >
+		<h3>Teaser large without image</h3>
+	</div>
+	
+	<div class="col-xs-8 col-xs-12 " style="max-width:780px">
+
+
+		<?php
+		$imgW='920'; 
+		$showImg = '0';
+		$class = ' teaser-img-wide item-teaser teaser-large';
+		$imgRatio = '16:9';
+		$imgSrc = '/landscape';
+		$showSummary = true;
+		$showDate = false;
+		$showCategory = false;
+		$showHeader = true;
+		$category = false;
+		$showPaywall = true;
+		$teaserPack = false;
+		include('includes/frontpage/teasers/teaser.php') ?>
+
+	</div>
+
+	</div>
+
+		
 
 	<div class="row">
 

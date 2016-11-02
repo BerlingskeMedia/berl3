@@ -115,6 +115,33 @@
 	background-color: $col-business-dark;
 }
 
+.header {
+	.teaser-label-yellow,
+	.teaser-label-red,
+	.teaser-label-blue,
+	.teaser-label-live {
+		vertical-align: middle;
+		font-size: 1.3rem;
+		padding: .5rem .625rem .35rem;
+		color: #fff;
+		margin-top: -4px;
+	}
+	.teaser-label-yellow {
+		background-color: $col-breaking;
+		color: #000;
+	}
+	.teaser-label-live,
+	.teaser-label-red {
+		background-color: $col-live;
+	}
+
+	.teaser-label-blue {
+		background-color: $col-blue-1;
+	}
+}
+
+
+
 
 @include media-breakpoint-down(lg) {
 	.teaser-theme-giant {
@@ -167,6 +194,14 @@
 			}
 		}
 	}
-	
+	.header {
+		.teaser-label-yellow,
+		.teaser-label-red,
+		.teaser-label-blue,
+		.teaser-label-live {
+			font-size: .8rem;
+			padding: .3rem .625rem .3rem;
+		}
+	}
 
 }

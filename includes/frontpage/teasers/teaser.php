@@ -83,6 +83,10 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 				
 				
 				<h2 class="header">
+				<?php if($showImg === '0'): ?>
+					<?php include('includes/frontpage/teasers/labels.php'); ?>
+				<?php endif; ?>
+
 					<? dummy("text@".$headerSrc."") ?>
 				</h2>
 
