@@ -183,6 +183,9 @@ if (isset($_GET['deck'])) {
 if (isset($_GET['cookiewarning'])) {
 	$cookiewarning = true;
 }
+if (isset($_GET['browserwarning'])) {
+	$browserwarning = true;
+}
 
 
 ?>

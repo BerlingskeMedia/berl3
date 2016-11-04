@@ -223,6 +223,10 @@
 	$('.show-hide-toggle').click(function(e){
 		$(this).closest('.show-hide-container').toggleClass('collapsed');
 	});
+
+	$('.close-warning').click(function() {
+		$(this).closest('div').remove();
+	});
 	
 
 })(jQuery); 

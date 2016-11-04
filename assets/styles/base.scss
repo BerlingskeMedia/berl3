@@ -802,3 +802,33 @@ $col-deck-label-width: 160px;
 		font-size: .9rem;
 	}
 }
+
+.browser-warning {
+	background-color: $col-blue-3;
+	color: #222;
+	padding: 2rem;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 99;
+	.container {
+		background-color: transparent;
+	}
+	.close-warning {
+		position: absolute;
+		top: 1rem;
+		right: 1rem;
+		cursor: pointer;
+
+	}
+}
+.browser-warning-header {
+	@extend .font-s2;
+	font-weight: 600;
+	font-size: 1.3rem;
+}
+.browser-warning-body {
+	@extend .font-s2;
+	font-weight: 500;
+}
