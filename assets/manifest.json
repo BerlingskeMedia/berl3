@@ -12,7 +12,7 @@
         "styles/main.scss"
       ]
     },
-    "ni_dk.css": {
+    "nidk_iframe.css": {
       "files": [
         "styles/nidk.scss"
       ]
@@ -21,7 +21,12 @@
       "files": [
         "scripts/demo.js"
       ]
-    },   
+    },
+    "nidk.js": {
+      "files": [
+        "scripts/nidk.js"
+      ]
+    },
     "modernizr.js": {
       "bower": ["modernizr"]
     }
