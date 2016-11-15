@@ -16,7 +16,7 @@ $col-news: blue;
     }
 }
 
-/*@include fontFace('CPH-Signs', '../fonts/CPH-Signs Berlingske-RegularWEB', 'normal',400);*/
+@include fontFace('CPH-Signs', '../fonts/CPH-Signs Berlingske-RegularWEB', 'normal',400);
 @include fontFace('Sanomat', '../fonts/Sanomat Serif regular', 'normal',400);
 @include fontFace('Sanomat', '../fonts/Sanomat Serif Black', 'normal',900);
 /*@include fontFace('Guardian', '../fonts/Guardian Text Egyp Web-Regular', 'normal',400);*/
@@ -25,9 +25,10 @@ $col-news: blue;
 .sanomat {
 	font-family: Sanomat, Georgia, "times new roman", times, serif;
 }
-/*.cph {
+.cph {
 	font-family: CPH-Signs, "helvetica neue", helvetica, arial, sans-serif;
 }
+/*
 .guardian {
 	font-family: Guardian, "times new roman", times, serif;
 }*/
@@ -84,7 +85,7 @@ body {
 .menu {
 	text-align: right;
 	padding-left: 83px;
-	height: 24px;
+	height: 30px;
 	border-left: 1px solid #c7c9cb;
 	border-right: 1px solid #c7c9cb;
 }
@@ -92,12 +93,12 @@ body {
 .logo {
     @extend .sanomat;
     font-weight: 900;
-    font-size: 18px;
+    font-size: 20px;
     position: absolute;
-    top: 3px;
+    top: 7px;
     left: 10px;
     z-index: 99;
-    color: #000;
+    color: #1e1448;
     text-decoration: none;
 }
 
@@ -109,7 +110,7 @@ body {
 
 .tabs {
 	margin: 0;
-	height: 24px;
+	height: 30px;
 	display: inline-block;
 	margin: 0;
 	
@@ -118,17 +119,17 @@ body {
         padding: 0 12px;
         margin: 0;
         display: inline-block;
-        font-size: 12px;
+        font-size: 15px;
         text-transform: uppercase;
         cursor: pointer;
-       	// @extend .cph;
+       	@extend .cph;
         line-height: 1;
-        font-weight: 600;
+        font-weight: normal;
 		.current {
 			color: #007cbb;
 		}
 		a {
-			padding: 7px 0 0px 0;
+			padding: 10px 0 0px 0;
 			margin-bottom: 2px;
 			text-decoration: none;
 			display: inline-block;
@@ -172,7 +173,7 @@ figure {
 }
 figcaption {
 	position: absolute;
-	left: 5px;
+	left: 8px;
 	bottom: 10px;
 	right: 5px;
 	color: #fff;
@@ -180,21 +181,21 @@ figcaption {
 	z-index: 2;
 	@extend .sanomat;
 	font-size: 15px;
-	font-weight: 300;
+	font-weight: 900;
 }
 
 
 
 
 .tab {
-    height: 138px;
+    height: 132px;
     border-bottom: 1px solid #c7c9cb;
     overflow: hidden;
     ul {
-    	margin: 6px 0 0 5px;
+    	margin: 2px 0 0 5px;
     	padding: 0;
     	list-style: none;
-    	font-family: "helvetica neue", helvetica, arial, sans-serif;
+    	
     }
     li {
     	margin: 0 ;
