@@ -18,7 +18,7 @@
     
     <div class="content-wrapper">
     	
-    	<a href="http://www.bt.dk" class="logo">Berlingske</a>
+    	<a href="http://www.berlingske.dk" class="logo">Berlingske</a>
     	
     	<div class="menu">
     		<ul class="tabs">
@@ -95,7 +95,7 @@
     	
     </div>
     <div class="footer">
-    	<a href="http://www.bt.dk"></a>
+    	<a href="http://www.berlingske.dk"></a>
     	<p>Partner</p>
     	<p>Læs mere på berlingske.dk</p>
     </div>
