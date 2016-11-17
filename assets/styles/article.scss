@@ -825,9 +825,9 @@ button.toggle-embed-expand {
 		font-size: 1rem;
 		line-height: 1.2;
 		margin-bottom: 0;
-		a:hover {
-			color: $col-blue-1;
-		}
+	}
+	a {
+		color: #222;
 	}
 }
 
