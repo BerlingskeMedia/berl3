@@ -701,24 +701,18 @@
 
 // teaser: Image of the day
 
-
+.teaser-photo-summary-content {
+	color: rgba(255,255,255,.9);
+	@extend .font-s2;
+	font-size: .9rem;	
+	color: #fff;
+	font-weight: 500;
+}
 .teaser-theme-photo {
 	position: relative;
 	padding-bottom: 0!important;
 	margin-bottom: 0;
 	padding: 0;
-	.img {
-		width: 100%;
-		max-width: none;
-	}
-	.teaser-summary-content {
-			color: rgba(255,255,255,.9);
-			@extend .font-s2;
-			font-size: .9rem;	
-			display: inline;
-			color: #fff;
-			font-weight: 500;
-	}
 	.teaser-img {
 		margin-bottom: .2rem;
 	}
@@ -731,10 +725,6 @@
 		display: none;
 	}
 
-	
-	.teaser-summary {
-		display: block!important;
-	}
 	.teaser-author {
 		display: inline;
 		color: #ccc;
@@ -743,10 +733,7 @@
 			content: 'Fotograf: ';
 			margin-right: .2rem;
 		}
-
-	}
-	
-	
+	}	
 }
 
 .teaser-theme-longread {
