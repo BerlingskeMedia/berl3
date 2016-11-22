@@ -9,7 +9,8 @@
   "dependencies": {
     "jquery": "^2.2.0",
     "stickem": "jQuery-Stickem#^1.4.1",
-    "jquery-iframe-auto-height": "^2.0.0"
+    "jquery-iframe-auto-height": "^2.0.0",
+    "slick-carousel": "^1.6.0"
   },
   "devDependencies": {},
   "description": "",

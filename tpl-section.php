@@ -83,6 +83,12 @@ $campaignId = 'campaign-' . mt_rand(1,3);
 			
 			<?php  include('includes/frontpage/deck-section-1.php'); ?>
 			
+			<?php if($bshop === 'wine'): ?>
+			<div class="mb-1">
+			<?php include('includes/bshop-elements.php'); ?>
+			</div>
+			<?php endif; ?>
+
 			<?php  if($template !== 'advertorial'): ?> 
 
 				<?php $bannerLabel = 'Leaderboard_2 930 x 180' ; include('includes/frontpage/deck-ad.php'); ?>

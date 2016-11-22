@@ -343,6 +343,11 @@
 					
 					<?php endif; ?>
 					
+					<?php if($bshop === 'travel'): ?>
+					<div class="col-xs-12">
+					<?php include('includes/bshop-elements.php'); ?>
+					</div>
+					<?php endif; ?>
 
 				</div>
 
@@ -369,7 +374,13 @@
 
 			
 		<div class="row">
+			<?php if($bshop === 'handpicked'): ?>			
+				<div class="col-xs-12">
+				<?php include('includes/bshop-elements.php'); ?>
+				</div>
+			<?php endif; ?>
 			
+
 			<?php if($template === 'advertorial'): ?>
 			<div class="col-lg-12 col-md-6 col-sm-12">
 				<?php include('includes/article/right-col-advertorial.php');?>

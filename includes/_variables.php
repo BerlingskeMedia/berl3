@@ -186,6 +186,8 @@ if (isset($_GET['cookiewarning'])) {
 if (isset($_GET['browserwarning'])) {
 	$browserwarning = true;
 }
-
+if (isset($_GET['bshop'])) {
+	$bshop = $_GET['bshop'];
+}
 
 ?>

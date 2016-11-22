@@ -1,0 +1,235 @@
+$bshop-blue: #00023D;
+.box-bshop {
+	.section-title {
+		
+		span {
+			display: block;
+			font-size: .9rem;
+			@extend .font-s2;
+			text-transform: none;
+		}
+		a {
+			color: #222;
+		}
+		
+	}
+}
+
+.teaser-price {
+	font-size: 1rem;
+	margin-top: .3125rem;
+	
+}
+.teaser-price-before {
+	float: left;
+	text-decoration: line-through;
+	opacity: .8;
+	font-size: 80%;
+	line-height: 2;
+}
+.teaser-price-current {
+	float: right;
+}
+
+.box-bshop-1 {
+	background: $bshop-blue;
+	padding: $spacer .625rem .6125rem ;
+	.section-title {
+		color: #fff;
+		a {
+			color: #fff;
+		}
+	}
+	.teaser-price {
+		color: #fff;
+	}
+}
+.box-bshop-2 {
+	border: $border-width solid $border-color;
+	padding: $spacer .625rem .6125rem ;
+	.list-bshop-2 {
+		a {
+			color: #fff;
+		}
+	}
+}
+
+.list-bshop {
+	@extend .clearfix;
+	@extend .list-border;
+	
+	padding-left: 0;
+	list-style: none;
+	li {
+		margin-bottom: .625rem;
+		@extend .font-s1;
+	}
+	
+	a {
+		color: #222;
+	}
+	span {
+		@extend .font-s2;
+		display: block;
+		font-size: .8rem;
+		font-weight: 500;
+	}
+}
+
+.box-bshop-1 {
+	.list-bshop {
+		a {
+			color: #fff;
+		}
+	}
+}
+.list-bshop-1 {
+	margin: 0;
+	li {
+		margin: 0 0 .625rem;
+	}
+	figcaption {
+		
+	}
+	img {
+		margin: 0 0 .3125rem;
+	}
+}
+
+.list-bshop-2 {
+	margin: 0;
+	figure {
+		@extend .flex-center;
+		position: relative;
+	}
+	figcaption {
+		position: absolute;
+		left: 0;
+		right: 0;
+		text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+		padding: 0 .3125rem;
+	}
+
+	
+	img {
+		opacity: .6;
+		margin: 0;
+		transition: opacity .2s ease;
+		backface-visibility: hidden;
+	}
+	li {
+		margin-bottom: 0;
+	}
+	li:nth-child(odd) {
+		background: rgba(27, 26, 55, .9);
+	}
+	li:nth-child(even) {
+		background: #00023D
+	}
+	a:hover {
+		img {
+			opacity: .2;
+		}
+	}
+	@include media-breakpoint-only(md) {
+		columns: 2;
+		column-gap: $spacer;
+		li {
+			margin: $spacer 0;
+			&:first-child {
+				margin-top: 0;
+			}
+
+		}
+	}
+}
+
+
+.list-bshop-3 {
+	@extend .row;
+	li {
+		display: inline-block;
+		@extend .col-xs-6;
+		margin-bottom: 0;
+	}
+
+	img {
+		margin: 0 0 .625rem;
+		backface-visibility: hidden;
+	}
+	a:hover {
+		text-decoration: none;
+		img {
+			opacity: .95;
+		}
+	}
+}
+
+.wide-lg {
+	@include media-breakpoint-down(lg) {
+		margin-left: -.625rem;
+		margin-right: -.625rem;
+
+	}
+}
+
+.bshop-wine {
+	a {
+		color: #fff;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	padding: $spacer $spacer * 2;
+	.slide {
+		@extend .text-center;
+	}
+	img {
+		margin: 0 auto;
+	}
+	.slider-price {
+		color: #fff;
+		margin-top: .625rem;
+		text-align: center;
+		.description {
+			display: block;
+			@extend .font-s2;
+			font-size: .8rem;
+		}
+	}
+
+	figcaption {
+		@extend .font-s1;
+		height: 4rem;
+		margin-top: .625rem;
+		span {
+			@extend .font-s2; 
+			font-size: .9rem;
+			font-weight: 500;
+			display: none;
+		}
+	}
+}
+
+.bshop-wine {
+	background-color: $bshop-blue;
+}
+.bshop-wine-slider {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	li {
+		margin: 0;
+	}
+}
+
+.slick-prev:before,
+.slick-next:before {
+	font-family: b-icons;
+}
+.slick-next:before {
+	content: '\e801';
+}
+.slick-prev:before {
+	content: '\e800';
+}
