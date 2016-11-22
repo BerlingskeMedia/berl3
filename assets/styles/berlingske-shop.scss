@@ -57,7 +57,7 @@ $bshop-blue: #00023D;
 .list-bshop {
 	@extend .clearfix;
 	@extend .list-border;
-	
+	margin-bottom: 0;
 	padding-left: 0;
 	list-style: none;
 	li {
@@ -146,10 +146,9 @@ $bshop-blue: #00023D;
 
 
 .list-bshop-3 {
-	@extend .row;
+
 	li {
 		display: inline-block;
-		@extend .col-xs-6;
 		margin-bottom: 0;
 	}
 

@@ -203,7 +203,9 @@
 										<?php include('includes/article/related.php'); ?>
 										<?php include('includes/article/topics.php'); ?>
 									<?php endif; ?>
-									<?php include('includes/article-embeds/share-buttons-large.php'); ?>
+									
+
+									<div class="mb-1"><?php include('includes/article-embeds/share-buttons-large.php'); ?></div>
 
 
 									<?php 
@@ -211,8 +213,9 @@
 									$showBshopArticle = true;
 									$wideLG = false;
 									$shopLink = 'Tilbud fra Berlingske Shop';
-									 ?>
-									<?php include('includes/bshop-elements.php'); ?>
+									
+									include('includes/bshop-elements.php'); 
+									$showBshopArticle = false; ?>
 									
 									
 								</div>
@@ -236,6 +239,9 @@
 				if($isAdvertorial) :
 					include('includes/article/right-col-advertorial.php');
 				else: 
+					$bshopArticleRight = true;
+					include('includes/bshop-elements.php');
+
 					include('includes/article/right-col-2.php'); 
 				endif;
 				?>

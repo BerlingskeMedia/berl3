@@ -36,9 +36,9 @@
 			<?php echo $bshopHeader; ?>
 			<span><i class="bicon-arrow"></i> <a href="#"><?php echo $shopLink ?></a> </span>
 		</div>
-		<ul class="list-bshop list-bshop-3" id="bshop-list">
+		<ul class="list-bshop list-bshop-3 row " id="bshop-list">
 			<? while (dumb_luck("2")): ?>
-			<li class="flex-row">
+			<li class="flex-row col-xs-6">
 				<a href="http://test2-shop-b.bemit.dk/">
 					<article>
 						<figure class="">
@@ -59,6 +59,37 @@
 	</div>	
 </div>
 <?php endif; ?>
+
+<?php if($bshopArticleRight): ?>
+
+	<div class="box-bshop box-bshop-1 mb-1" id="bshop-box">
+		<div class="section-title-no-border clearfix">
+			<?php echo $bshopHeader; ?>
+			<span><i class="bicon-arrow"></i> <a href="#"><?php echo $shopLink ?></a> </span>
+		</div>
+		<ul class="list-bshop list-bshop-3" id="bshop-list">
+			<li class="flex-row">
+				<a href="http://test2-shop-b.bemit.dk/">
+					<article>
+						<figure class="">
+							<img src="<? dummy("image/!bshop-travel@620x,1:1") ?>" width="" height="" alt="" />
+							<figcaption><? dummy("text@bshop-travel") ?>
+								<div class="teaser-price">
+								<? if (dumb_luck("50%")): ?><div class="teaser-price-before"><? dummy("text@prices") ?> kr.</div><? endif ?>
+								<div class="teaser-price-current"><i class="bicon-arrow"></i> <? dummy("text@prices") ?> kr.</div>
+								</div>
+							</figcaption>
+
+						</figure>
+					</article>
+				</a>
+			</li>
+		</ul>
+	</div>	
+
+<?php endif; ?>
+
+
 
 <?php if($bshop === 'wine'): ?>
 
