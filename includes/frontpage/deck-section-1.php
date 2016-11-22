@@ -343,8 +343,12 @@
 					
 					<?php endif; ?>
 					
-					<?php if($bshop === 'travel'): ?>
-					<div class="col-xs-12">
+					<?php if($bshop === 'travel'): 
+					$shopLink = 'Med Berlingske Shop';
+					$wideLG = true;
+					?>
+
+					<div class="col-xs-12 mb-1 mt">
 					<?php include('includes/bshop-elements.php'); ?>
 					</div>
 					<?php endif; ?>

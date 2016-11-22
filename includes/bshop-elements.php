@@ -1,3 +1,7 @@
+<?php if(!$bshopHeader)  {
+	$bshopHeader = 'Oplev verden';
+} 
+?>
 <?php if($bshop === 'handpicked'): ?>
 <div class="bshop-iframe mb-05">
 	<div class="box-bshop box-bshop-1" id="bshop-box">
@@ -24,12 +28,13 @@
 <?php endif; ?>
 
 
-<?php if($bshop === 'travel'): ?>
+
+<?php if($bshop === 'travel' || $showBshopArticle === true): ?>
 <div class="bshop-iframe mb-05 ">
-	<div class="box-bshop box-bshop-1 wide-lg" id="bshop-box">
+	<div class="box-bshop box-bshop-1 <?php if($wideLG === true):  echo 'wide-lg'; endif; ?>" id="bshop-box">
 		<div class="section-title-no-border clearfix">
-			Oplev verden
-			<span><i class="bicon-arrow"></i> <a href="#">Med Berlingske Shop</a> </span>
+			<?php echo $bshopHeader; ?>
+			<span><i class="bicon-arrow"></i> <a href="#"><?php echo $shopLink ?></a> </span>
 		</div>
 		<ul class="list-bshop list-bshop-3" id="bshop-list">
 			<? while (dumb_luck("2")): ?>

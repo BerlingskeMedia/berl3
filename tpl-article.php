@@ -204,6 +204,17 @@
 										<?php include('includes/article/topics.php'); ?>
 									<?php endif; ?>
 									<?php include('includes/article-embeds/share-buttons-large.php'); ?>
+
+
+									<?php 
+									$bshopHeader = 'Særligt udvalgt til dig';
+									$showBshopArticle = true;
+									$wideLG = false;
+									$shopLink = 'Tilbud fra Berlingske Shop';
+									 ?>
+									<?php include('includes/bshop-elements.php'); ?>
+									
+									
 								</div>
 
 							<?php endif; // End Paywall ?>
