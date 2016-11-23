@@ -1,17 +1,18 @@
 <div class="row deck deck-theme ">
 	<div class="col-xs-12 theme-container theme-dark">
-		<div class="grid-col-left col-xs-2">
-			<div class="section-title">Dagens billede</div>
+		<div class="col-xs-12">
+			<div class="section-title mb-05">Dagens billede</div>
+			<p class="teaser-photo-summary-content"><? dummy("text@teaser") ?></p>
 		</div>
 
-		<div class="grid-col-middle-wide col-xs-10">
+		<div class="col-xs-12">
 			
 			<?php
-				$imgW='1070'; 
+				$imgW='1240'; 
 				$showImg = '1';
 				$class = '  teaser-theme-photo item-teaser teaser-small';
 				$imgRatio = '16:9';
-				$showSummary = '1';
+				$showSummary = '0';
 				$showRelated = false;
 				$showDate = false;
 				$showCategory = false;
