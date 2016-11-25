@@ -468,12 +468,32 @@ if(isset($_GET["business"])) {
 				</div> -->
 
 				<div class="col-md-12">
-					<h4>Advertorials</h4>
+					<h4>Berlingske Shop</h4>
 				</div>
 				
 				
 				<div class="col-md-3">
-					Advertorial
+					Sections and articles
+				</div>
+				<div class="col-md-9">
+					<ul>
+
+						<li class="orange"><a href="tpl-section.php?bshop=handpicked">Handpicked</a></li>
+						<li class="orange"><a href="tpl-section.php?bshop=travel">Travel</a></li>
+						<li class="orange"><a href="tpl-section.php?bshop=wine">Wines</a></li>
+						<li class="orange"><a href="tpl-article.php">Article teasers</a></li>
+						<li class="orange"><a href="tpl-article.php">Article Longread teasers</a></li>
+
+					</ul>
+				</div>
+
+				
+				<div class="col-md-12">
+					<h4>Advertorials</h4>
+				</div>
+				
+				<div class="col-md-3">
+					
 				</div>
 				<div class="col-md-9">
 					<ul>

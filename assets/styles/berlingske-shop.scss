@@ -178,10 +178,18 @@ $bshop-blue: #00023D;
 		&:hover {
 			text-decoration: none;
 		}
+
 	}
 	padding: $spacer $spacer * 2;
 	.slide {
 		@extend .text-center;
+		a {
+			display: block;
+			transition: all .1s ease;
+			&:hover {
+				background-color: rgba(255,255,255,.15);
+			}
+		}
 	}
 	img {
 		margin: 0 auto;
@@ -196,7 +204,7 @@ $bshop-blue: #00023D;
 			font-size: .8rem;
 		}
 	}
-
+	
 	figcaption {
 		@extend .font-s1;
 		height: 4rem;
@@ -221,11 +229,17 @@ $bshop-blue: #00023D;
 		margin: 0;
 	}
 }
-
-.slick-prev:before,
-.slick-next:before {
-	font-family: b-icons;
+.slick-next, 
+.slick-prev {
+	height: 40px;
+	margin-top: -20px;
+	&:before,
+	&:before {
+		font-family: b-icons;
+		font-size: 35px;
+	}
 }
+
 .slick-next:before {
 	content: '\e801';
 }

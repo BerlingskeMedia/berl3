@@ -229,7 +229,16 @@ $templateLongread = true;
 									<?php endif; ?>
 
 									
-									<?php include('includes/article-embeds/share-buttons-large.php'); ?>
+									<div class="mb-1"><?php include('includes/article-embeds/share-buttons-large.php'); ?></div>
+
+									<?php 
+									$bshopHeader = 'Særligt udvalgt til dig';
+									$bshop = 'article-right';
+									$wideLG = false;
+									$shopLink = 'Tilbud fra Berlingske Shop';
+									
+									include('includes/bshop-elements.php'); 
+									?>
 								</div>
 							<?php endif; ?>
 								

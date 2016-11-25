@@ -29,7 +29,7 @@
 
 
 
-<?php if($bshop === 'travel' || $showBshopArticle === true): ?>
+<?php if($bshop === 'travel' || $bshop === 'article-right'): ?>
 <div class="bshop-iframe mb-05 ">
 	<div class="box-bshop box-bshop-1 <?php if($wideLG === true):  echo 'wide-lg'; endif; ?>" id="bshop-box">
 		<div class="section-title-no-border clearfix">
@@ -60,7 +60,7 @@
 </div>
 <?php endif; ?>
 
-<?php if($bshopArticleRight): ?>
+<?php if($bshop === 'article-bottom'): ?>
 
 	<div class="box-bshop box-bshop-1 mb-1" id="bshop-box">
 		<div class="section-title-no-border clearfix">
@@ -102,7 +102,7 @@
 		<div class="slide">
 			<a href="#">
 				<figure>
-					<img src="<? dummy("image@40x150,") ?>" width="" height="" alt="" />
+					<img src="<? dummy("image/!bshop-wine@x207,") ?>" width="" height="" alt="" />
 					<figcaption>
 						<? dummy("text@bshop-wine") ?>
 					</figcaption>

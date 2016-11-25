@@ -210,12 +210,12 @@
 
 									<?php 
 									$bshopHeader = 'Særligt udvalgt til dig';
-									$showBshopArticle = true;
+									$bshop = 'article-right';
 									$wideLG = false;
 									$shopLink = 'Tilbud fra Berlingske Shop';
 									
 									include('includes/bshop-elements.php'); 
-									$showBshopArticle = false; ?>
+									?>
 									
 									
 								</div>
@@ -239,9 +239,9 @@
 				if($isAdvertorial) :
 					include('includes/article/right-col-advertorial.php');
 				else: 
-					$bshopArticleRight = true;
+					$bshop = 'article-bottom';
 					include('includes/bshop-elements.php');
-
+					$bshop = false;
 					include('includes/article/right-col-2.php'); 
 				endif;
 				?>
