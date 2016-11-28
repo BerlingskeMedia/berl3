@@ -173,6 +173,18 @@ $bshop-blue: #00023D;
 }
 
 .bshop-wine {
+	padding: 0rem $spacer * 2 1rem;
+	background: url(/dist/images/bshop/concrete.jpg) center center repeat-x;
+	&:before {
+		position: relative;
+		top: 290px;
+		content: '';
+		height: 16px;
+		background: url(/dist/images/bshop/shelf.jpg) center center repeat-x;
+		width: calc(100% - 2rem);
+		box-shadow: 2px 2px 4px rgba(0,0,0,.7);
+		display: inline-block;
+	}
 	a {
 		color: #fff;
 		&:hover {
@@ -180,7 +192,7 @@ $bshop-blue: #00023D;
 		}
 
 	}
-	padding: $spacer $spacer * 2;
+	
 	.slide {
 		@extend .text-center;
 		a {
@@ -208,7 +220,7 @@ $bshop-blue: #00023D;
 	figcaption {
 		@extend .font-s1;
 		height: 4rem;
-		margin-top: .625rem;
+		margin-top: 2rem;
 		span {
 			@extend .font-s2; 
 			font-size: .9rem;
@@ -218,9 +230,7 @@ $bshop-blue: #00023D;
 	}
 }
 
-.bshop-wine {
-	background-color: $bshop-blue;
-}
+
 .bshop-wine-slider {
 	margin: 0;
 	padding: 0;
