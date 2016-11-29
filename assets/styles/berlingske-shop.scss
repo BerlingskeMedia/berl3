@@ -25,7 +25,7 @@ $bshop-blue: #00023D;
 	text-decoration: line-through;
 	opacity: .8;
 	font-size: 80%;
-	line-height: 2;
+	
 }
 .teaser-price-current {
 	float: right;
@@ -152,9 +152,26 @@ $bshop-blue: #00023D;
 		margin-bottom: 0;
 	}
 
+	figure {
+		padding-left: 110px;
+	}
+	figcaption {
+		display: block;
+		position: relative;
+		min-height: 100px;
+		padding-bottom: 20px;
+		overflow: hidden;
+	}
+	.teaser-price {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
 	img {
-		margin: 0 0 .625rem;
-		backface-visibility: hidden;
+		float: left;
+		max-width: 100px;
+		margin: 0  0 0 -110px;
 	}
 	a:hover {
 		text-decoration: none;
@@ -162,6 +179,7 @@ $bshop-blue: #00023D;
 			opacity: .95;
 		}
 	}
+
 }
 
 .wide-lg {
@@ -174,19 +192,20 @@ $bshop-blue: #00023D;
 
 .bshop-wine {
 	padding: 0rem $spacer * 2 1rem;
-	background: url(/dist/images/bshop/concrete.jpg) center center repeat-x;
+	background: url(/dist/images/bshop/concrete2.jpg) center center repeat-x;
 	&:before {
 		position: relative;
-		top: 290px;
+		top: 235px;
 		content: '';
 		height: 16px;
 		background: url(/dist/images/bshop/shelf.jpg) center center repeat-x;
-		width: calc(100% - 2rem);
+		width: 100%;
 		box-shadow: 2px 2px 4px rgba(0,0,0,.7);
 		display: inline-block;
 	}
 	a {
-		color: #fff;
+		color: #000;
+
 		&:hover {
 			text-decoration: none;
 		}
@@ -205,6 +224,7 @@ $bshop-blue: #00023D;
 	}
 	img {
 		margin: 0 auto;
+		max-height: 150px;
 	}
 	.slider-price {
 		color: #fff;
@@ -218,9 +238,12 @@ $bshop-blue: #00023D;
 	}
 	
 	figcaption {
-		@extend .font-s1;
-		height: 4rem;
-		margin-top: 2rem;
+		@extend .font-s2;
+		font-weight: 500;
+		font-size: .8rem;
+		line-height: 1.2;
+		height: 2.5rem;
+		margin-top: 1.7rem;
 		span {
 			@extend .font-s2; 
 			font-size: .9rem;

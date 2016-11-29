@@ -93,7 +93,7 @@
 
 <?php if($bshop === 'wine'): ?>
 
-<section class="box-bshop box-bshop-1 bshop-wine">
+<section class="box-bshop box-bshop- bshop-wine">
 	<div class="section-title-no-border">
 		Vores vinreol <span><a href="#"><i class="bicon-arrow"></i> Tilbud fra Berlingske Shop</a></span>
 	</div>

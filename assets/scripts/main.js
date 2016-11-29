@@ -257,8 +257,8 @@
 	     {
 	       breakpoint: 480,
 	       settings: {
-	         slidesToShow: 2,
-	         slidesToScroll: 2
+	         slidesToShow: 3,
+	         slidesToScroll: 3
 	       }
 	     }
 	     // You can unslick at a given breakpoint now by adding:
