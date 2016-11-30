@@ -158,6 +158,8 @@ $bshop-blue: #00023D;
 
 	figure {
 		padding-left: 130px;
+		background-color: #fff;
+		padding: 2px 2px 2px 132px;
 	}
 	figcaption {
 		display: block;
@@ -165,12 +167,16 @@ $bshop-blue: #00023D;
 		min-height: 120px;
 		padding-bottom: 20px;
 		overflow: hidden;
+		color: #222;
+		padding-top: 5px;
 	}
+
 	.teaser-price {
 		position: absolute;
 		bottom: 0;
 		left: 0;
 		right: 0;
+		color: #222;
 	}
 	img {
 		float: left;
