@@ -80,15 +80,19 @@ if(!$summarySrc) { // if no summary src, just show random dummy sumamry from ber
 				
 				
 
-				
-				
-				<h2 class="header">
+				<?php if($headerStyling): ?>
+					
+					$headerStyling = ' style="" ';
+
+				<?php endif ?>
+					
+				<h2 class="header" <?php echo $headerStyle; ?>>
 				<?php if($showImg === '0'): ?>
 					<div>
 						<?php include('includes/frontpage/teasers/labels.php'); ?>
 					</div>
 				<?php endif; ?>
-
+					
 					<? dummy("text@".$headerSrc."") ?>
 				</h2>
 
