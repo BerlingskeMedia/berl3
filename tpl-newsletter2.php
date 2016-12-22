@@ -15,22 +15,20 @@ if($nl == 'bt') {
 
  ?>
 
-
-
 <!DOCTYPE html>
 <html lang="da">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Berlingske - Newsletter</title>
+	<title>Newsletter</title>
 	<link rel="stylesheet" href="/dist/styles/main.css">
 </head>
 <body>
 
-
-
 <?php include('includes/newsletter-css.php') ?>
+
+
 
 
 <div class="newsletter-container">
@@ -53,39 +51,27 @@ if($nl == 'bt') {
 
 		<div class="newsletter-element large-text text-center">
 			<p>Tak fordi du har abonneret på <strong><?php echo $brand; ?> Poker</strong>, som er vores nyhedsbrev om poker!</p>
+			<p><a href="#">Bekræft venligst din e-mail-adresse</a></p>
 		</div>
 
 		<hr>
 
-		<div class="newsletter-element medium-text text-center element-serif">
-			<p>Ønsker du at abonnere på flere nyhedsbreve fra <?php echo $brand; ?>?<br>
-			<a href="#">Se alle nyhedsbreve</a></p>
-		</div>		
-		<hr>
+		
 
-		<div class="newsletter-element medium-text text-center element-serif">
-			<p>For at redigere i de nyhedsbreve du abonnerer på, skal du gå ind på din profilside.</p>
-			<?php if($nl == "berlingske"): ?>
-				
-				<a href="#"><img src="/dist/images/newsletter-button.png" alt="" style="margin: 0 auto"></a>
+		
+		
 
-			<?php elseif($nl == "bt"): ?>
-
-				<a href="#"><img src="/dist/images/newsletter-button-bt.png" alt="" style="margin: 0 auto"></a>
-
-			<?php endif; ?>
-			
-		</div>
-		<hr>
+		
+		
 		<div class="newsletter-element small-text element-serif text-center">
-			<p>For at være sikker på at modtage vores nyhedsbreve, kan du tilføje <a href="#" style="text-transform: none;">mail@<?php echo $brand; ?>.dk</a> til din adressebog.<br>Vil du ikke modtage Berlingske Poker? <a href="#">Afmeld her</a></p>
+			<p>For at være sikker på at modtage vores nyhedsbreve, kan du tilføje <a href="#" style="text-transform: none;">mail@<?php echo $nl; ?>.dk</a> til din adressebog.<br>Vil du ikke modtage <?php echo $brand; ?> Poker? <a href="#">Afmeld her</a></p>
 		</div>
 
 		<hr>
 
 		<div class="newsletter-element micro-text element-sans-serif">
 			<p><strong>Om denne e-mail</strong><br>
-			Dette er en autogeneret email. Den kan ikke besvares. Du har modtaget denne email fordi du har valg at abonnere på nyhedsbrevet Berlingske Poker fra Berlingske.dk</p>
+			Dette er en autogeneret email. Den kan ikke besvares. Du har modtaget denne email fordi du har valg at abonnere på nyhedsbrevet <?php echo $brand; ?> Poker fra <?php echo $nl; ?>.dk</p>
 
 			<p><a href="#">Redigér dine nyhedsbreve</a>   <span class="space">|</span>    <a href="#">Ændr din e-mail-adresse</a>   <span class="space">|</span>   <a href="#">Betingelser</a>   <span class="space">|</span>   <a href="#">Abonnér på <?php echo $brand; ?></a></p>
 		</div>
