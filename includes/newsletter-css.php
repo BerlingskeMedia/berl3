@@ -15,7 +15,7 @@
 	}
 
 	.newsletter-illu-solid {
-		margin: 0 -2rem 1rem;
+		margin: 0 -2rem 2rem;
 	}
 
 	@media (max-width:767px){
