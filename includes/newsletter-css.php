@@ -1,3 +1,27 @@
+<style>
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+	hr {
+		border-color: transparent;
+	}
+	.micro-text {
+		background-color: #eee;
+		margin: 0 -2rem -2rem;
+		padding:2rem;
+		border-top: 1px solid #ddd;
+	}
+
+	@media (max-width:767px){
+		.micro-text {
+			margin: 0 -1rem -2rem;
+			padding: 1rem;
+		}
+	}
+
+
+</style>
 <?php if($nl == "berlingske"): ?>
 
 <style>
@@ -20,9 +44,7 @@
 		padding: 2rem;
 		background-color: #fff;
 	}
-	.newsletter-element p {
-		
-	}
+	
 	.newsletter-logo {
 		margin-bottom: 2rem;
 	}
@@ -40,6 +62,9 @@
 	.micro-text p {
 		font-size: 12px;
 	}
+
+	
+	
 	.space {
 		padding: 0 .2rem;
 	}
@@ -106,7 +131,12 @@
 		hr {
 			margin: 2rem 0;
 		}
+		.newsletter-illu-solid {
+			background-color: #cd0403;
+			margin: 0 -2rem 1rem;
+		}
 		
+
 		@media (max-width:767px){
 			.newsletter-inner {
 				margin: 0rem;

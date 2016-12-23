@@ -13,6 +13,10 @@ if($nl == 'bt') {
 	$brand = 'Berlingske';
 }
 
+if(isset($_GET["illu"])) {
+	$illu = $_GET["illu"]; 
+}
+
  ?>
 
 
@@ -37,7 +41,7 @@ if($nl == 'bt') {
 	
 	<div class="newsletter-inner">
 		
-		<div class="newsletter-logo text-center">
+		<div class="newsletter-logo ">
 			
 			<?php if($nl == "berlingske"): ?>
 				
@@ -45,25 +49,43 @@ if($nl == 'bt') {
 
 			<?php elseif($nl == "bt"): ?>
 				
-				<img src="/dist/images/bt-logo.svg" alt="" style="width: 250px; margin: 0 auto;" class="logo">
+				<img src="/dist/images/bt-logo.svg" alt="" style="width: 140px; margin: 0 auto;" class="logo">
 
 			<?php endif; ?>
 
 		</div>
 
-		<div class="newsletter-element large-text text-center">
+		<?php if ($illu == 1): ?>
+		<div class="newsletter-illu bt-illu ">
+			<img src="http://d9hhrg4mnvzow.cloudfront.net/abonnement.bt.dk/abonnementer/9856a005-bt-plus-billede3.jpg" alt="" style="margin: 0 auto;">
+		</div>
+
+		<?php elseif ($illu == 2): ?>
+
+		<div class="newsletter-illu-solid bt-illu ">
+			<img src="https://images.images4us.com/888poker/en/TS-19585-SEO-PokerStrategy_600x338-NewTeaserImage_1448283814836_tcm1488-264504.jpg" alt="">
+		</div>
+
+		<?php elseif ($illu == 3): ?>
+
+		<div class="newsletter-illu-solid bt-illu ">
+			<img src="/dist/images/newsletter-lorem.png" alt="">
+		</div>
+		<?php endif; ?>
+
+		<div class="newsletter-element large-text ">
 			<p>Tak fordi du har abonneret på <strong><?php echo $brand; ?> Poker</strong>, som er vores nyhedsbrev om poker!</p>
 		</div>
 
 		<hr>
 
-		<div class="newsletter-element medium-text text-center element-serif">
+		<div class="newsletter-element medium-text  element-serif">
 			<p>Ønsker du at abonnere på flere nyhedsbreve fra <?php echo $brand; ?>?<br>
 			<a href="#">Se alle nyhedsbreve</a></p>
 		</div>		
 		<hr>
 
-		<div class="newsletter-element medium-text text-center element-serif">
+		<div class="newsletter-element medium-text  element-serif">
 			<p>For at redigere i de nyhedsbreve du abonnerer på, skal du gå ind på din profilside.</p>
 			<?php if($nl == "berlingske"): ?>
 				
@@ -77,7 +99,7 @@ if($nl == 'bt') {
 			
 		</div>
 		<hr>
-		<div class="newsletter-element small-text element-serif text-center">
+		<div class="newsletter-element small-text element-serif ">
 			<p>For at være sikker på at modtage vores nyhedsbreve, kan du tilføje <a href="#" style="text-transform: none;">mail@<?php echo $brand; ?>.dk</a> til din adressebog.<br>Vil du ikke modtage Berlingske Poker? <a href="#">Afmeld her</a></p>
 		</div>
 

@@ -19,82 +19,79 @@ if(isset($_GET["illu"])) {
 
  ?>
 
+
+
 <!DOCTYPE html>
 <html lang="da">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Newsletter</title>
+	<title>Berlingske - Newsletter</title>
 	<link rel="stylesheet" href="/dist/styles/main.css">
 </head>
 <body>
 
+
+
 <?php include('includes/newsletter-css.php') ?>
-
-
 
 
 <div class="newsletter-container">
 	
 	<div class="newsletter-inner">
 		
-		<div class="newsletter-logo">
+		<div class="newsletter-logo text-center">
 			
 			<?php if($nl == "berlingske"): ?>
 				
-				<img src="/dist/images/berlingske_skjold.svg" alt="" style="width: 250px; ;" class="logo">
+				<img src="/dist/images/berlingske_skjold.svg" alt="" style="width: 250px; margin: 0 auto;" class="logo">
 
 			<?php elseif($nl == "bt"): ?>
 				
-				<img src="/dist/images/bt-logo.svg" alt="" style="width: 140px; ;" class="logo">
+				<img src="/dist/images/bt-logo.svg" alt="" style="width: 140px; margin: 0 auto;" class="logo">
 
 			<?php endif; ?>
 
 		</div>
 
-	
 		<?php if ($illu == 1): ?>
-		<div class="newsletter-illu bt-illu ">
+		<div class="newsletter-illu bt-illu text-center">
 			<img src="http://d9hhrg4mnvzow.cloudfront.net/abonnement.bt.dk/abonnementer/9856a005-bt-plus-billede3.jpg" alt="" style="margin: 0 auto;">
 		</div>
 
 		<?php elseif ($illu == 2): ?>
 
-		<div class="newsletter-illu-solid bt-illu ">
+		<div class="newsletter-illu-solid bt-illu text-center">
 			<img src="https://images.images4us.com/888poker/en/TS-19585-SEO-PokerStrategy_600x338-NewTeaserImage_1448283814836_tcm1488-264504.jpg" alt="">
 		</div>
 
 		<?php elseif ($illu == 3): ?>
 
-		<div class="newsletter-illu-solid bt-illu ">
+		<div class="newsletter-illu-solid bt-illu text-center">
 			<img src="/dist/images/newsletter-lorem.png" alt="">
 		</div>
 		<?php endif; ?>
-		
-		<div class="newsletter-element large-text ">
-			<p>Tak fordi du har abonneret på <strong><?php echo $brand; ?> Poker</strong>, som er vores nyhedsbrev om poker!</p>
-			<p><a href="#">Bekræft venligst din e-mail-adresse</a></p>
+
+		<div class="newsletter-element large-text text-center">
+			<p><? dummy("text@paragraph") ?></p>
+			<p><? dummy("text@short-teaser") ?></p>
+			<p><a href="#">Læs mere</a></p>
 		</div>
 
 		<hr>
 
 		
-
+		
+		
 		
 		
 
 		
-		
-		<div class="newsletter-element small-text element-serif ">
-			<p>For at være sikker på at modtage vores nyhedsbreve, kan du tilføje <a href="#" style="text-transform: none;">mail@<?php echo $nl; ?>.dk</a> til din adressebog.<br>Vil du ikke modtage <?php echo $brand; ?> Poker? <a href="#">Afmeld her</a></p>
-		</div>
-
-		<hr>
 
 		<div class="newsletter-element micro-text element-sans-serif">
 			<p><strong>Om denne e-mail</strong><br>
-			Dette er en autogeneret email. Den kan ikke besvares. Du har modtaget denne email fordi du har valg at abonnere på nyhedsbrevet <?php echo $brand; ?> Poker fra <?php echo $nl; ?>.dk</p>
+			Dette er en autogeneret email. Den kan ikke besvares. Du har modtaget denne email fordi du har valg at abonnere på nyhedsbrevet Berlingske Poker fra Berlingske.dk</p>
 
 			<p><a href="#">Redigér dine nyhedsbreve</a>   <span class="space">|</span>    <a href="#">Ændr din e-mail-adresse</a>   <span class="space">|</span>   <a href="#">Betingelser</a>   <span class="space">|</span>   <a href="#">Abonnér på <?php echo $brand; ?></a></p>
 		</div>
