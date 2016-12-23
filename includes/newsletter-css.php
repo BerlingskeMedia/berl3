@@ -11,6 +11,11 @@
 		margin: 0 -2rem -2rem;
 		padding:2rem;
 		border-top: 1px solid #ddd;
+		font-family: "helvetica neue", helvetica, arial, sans-serif;
+	}
+
+	.newsletter-illu-solid {
+		margin: 0 -2rem 1rem;
 	}
 
 	@media (max-width:767px){
@@ -131,10 +136,7 @@
 		hr {
 			margin: 2rem 0;
 		}
-		.newsletter-illu-solid {
-			background-color: #cd0403;
-			margin: 0 -2rem 1rem;
-		}
+		
 		
 
 		@media (max-width:767px){
