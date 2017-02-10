@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@import "variables";
-@import "logo";
+@import "variables.scss";
+@import "logo.scss";
 $col-news: blue;
 
 @mixin fontFace($family, $src, $style: normal, $weight: normal) {

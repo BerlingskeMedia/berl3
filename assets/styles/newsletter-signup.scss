@@ -1,0 +1,140 @@
+@charset "UTF-8";
+@import "_variables.scss";
+// @import "logo.scss";
+
+$CPH-signs: 'CPH-signs', 'Montserrat', sans-serif;
+
+
+
+.newsletter-custom {
+	position: relative;
+	padding: 1rem 0 ;
+	margin: 1rem 0;
+	&:after {
+		content: '';
+		background-color: $border-color;
+		height: 1px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+
+	}
+	b {
+		color: $col-blue-1;
+		font-weight: normal;
+	}
+	.newsletter-main-title {
+		color: #333;
+		line-height: 1.2;
+		font-size: 1.5rem;
+		display: block;
+		letter-spacing: 0;
+		margin: 0 0 1rem;
+		font-weight: 400;
+		text-transform: uppercase;
+		font-family: $CPH-signs;
+
+		
+
+	}
+	.other-newsletters {
+		font-family: "Guardian Text Egyptian Web", georgia, times, serif;
+		margin: .625rem 0 0;
+		font-weight: 400;
+		font-size: 11px;
+		font-weight: 600;
+	}
+	form {
+		position: relative;
+	}
+	
+	.newsletter-item {
+		margin-top: .625rem;
+
+		label {
+			position: relative;
+			padding-left: 2rem;
+			font-weight: normal;
+			display: block;
+		}
+		&:last-child {
+			border-bottom: 0;
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+		.newsletter-title {
+			// font-family: $CPH-signs;
+			font-family: "Guardian Text Egyptian Web", georgia, times, serif;
+			font-weight: 500;
+			font-size: 1rem;
+			b {
+				font-weight: 500;
+			}
+		}
+		input[type="checkbox"] {
+			position: absolute;
+			top: .3125rem;
+			left: 0;
+		}
+	}
+	.newsletter-submit {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	input[type="email"] {
+		border: 1px solid $border-color; 
+		padding: 0 .625rem;
+		line-height: 1.8;
+		font-size: .85rem;
+		height: 1.8rem;
+		border-radius: .2rem;
+		box-shadow: 1px 1px 2px rgba(0,0,0,.15) inset;
+		font-family: helvetica, arial;
+		width: 70%;
+		font-weight: 400;
+		&:focus {
+			border-color: rgba(0,0,0,.5);
+			outline: 0;
+		}
+	}
+	.hidden-newsletters {
+		opacity: 0;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height .2s ease, opacity .2s ease;
+	}
+	&.newsletters-open {
+		.hidden-newsletters {
+			max-height: 9999px;
+			opacity: 1;
+		}
+	}
+	.newsletter-final {
+		text-align: center;
+		display: none;
+		min-height: 8rem;
+	}
+	.newsletter-final_title {
+		font-family: $CPH-signs;
+		color: $col-blue-1;
+		font-size: 3rem;
+		padding: 1rem 0;
+	}
+	.newsletter-final_description {
+		font-size: .8rem;
+	}
+	&.newsletter-submitted {
+		.newsletter-final {
+			display: block;
+		}
+		.newsletter-container {
+			display: none;
+		}
+	}
+}
+.checkbox-styled input[type=checkbox]:before {
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25) inset;
+}
+

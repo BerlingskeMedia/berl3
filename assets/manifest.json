@@ -17,6 +17,11 @@
         "styles/nidk.scss"
       ]
     },
+    "newsletter-signup.css": {
+      "files": [
+        "styles/newsletter-signup.scss"
+      ]
+    },
     "demo.js": {
       "files": [
         "scripts/demo.js"

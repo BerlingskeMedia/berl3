@@ -110,7 +110,7 @@ $font-teaser-lineheight: 1.2;
 }
 
 .font-sans {
-  
+  @extend .font-s2;
   
 }
 .font-sans-alt {
@@ -121,7 +121,7 @@ $font-teaser-lineheight: 1.2;
 // Define font variables
 
 h1, h2, h3, h4, h5, h6 {
-  @extend .header-font;
+  @extend .header-font !optional;
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

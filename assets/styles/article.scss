@@ -157,7 +157,7 @@
 }
 .large-share-buttons {
 	
-	@extend .ipadHack;
+	@extend .ipadHack !optional;
 	
 	
 	padding-top: 1rem;
@@ -1154,7 +1154,7 @@ $sharebutton-sm: 1.7rem;
 
 .article-topics {
 	position: relative;
-	@extend .ipadHack;
+	@extend .ipadHack!optional;
 	
 	padding-top: 1rem;
 	font-size: .7rem;
@@ -1222,7 +1222,7 @@ $sharebutton-sm: 1.7rem;
 	@extend .border-top;
 	position: relative;
 	margin-top: $spacer;
-	@extend .ipadHack;
+	@extend .ipadHack !optional;
 	padding-top: .625rem;
 	@extend .mb;
 	clear: both;
@@ -1499,7 +1499,7 @@ $longreadPadding: 20rem;
 		color: #000;
 	}
 	.share-buttons {
-		@extend .ipadHack;
+		@extend .ipadHack!optional;
 	}
 
 	[class*="article-rating"] {

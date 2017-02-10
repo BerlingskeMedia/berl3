@@ -686,7 +686,7 @@ body.default-header {
 				transition: transform, opacity;
 				transition-duration: .2s;
 				font-size: .9rem;
-				@extend .font-g1;
+				font-family: "Guardian Text Egyptian Web", georgia, times, serif;
 				&.active {
 					a {
 						color: $col-blue-1;
@@ -718,7 +718,7 @@ body.default-header {
 	}
 	
 	.mobile-section-title {
-		@extend .font-sans-alt;
+		font-family: $font-sans-alt;
 		text-transform: uppercase;
 		font-size: 1.5rem;
 		max-width: 50%;

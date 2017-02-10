@@ -1,7 +1,7 @@
 
 html, body {
 	height: 100%;
-	@extend .font-sans;
+	@extend .font-serif;
 }
 
 img {
@@ -707,7 +707,7 @@ $col-deck-label-width: 160px;
 	margin-left: 20px;
 	@include media-breakpoint-down(md) {
 		width: 100%;
-		@extend .ipadHack;
+		@extend .ipadHack!optional;
 		float: none;
 		margin: 0 auto;
 	}

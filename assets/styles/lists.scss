@@ -321,7 +321,7 @@ ul + .list-fade {
 
 .icon-premium {
 
-	@extend .bicon-key;
+	@extend .bicon-key!optional;
 }
 .list-item-video {
 	figure{
