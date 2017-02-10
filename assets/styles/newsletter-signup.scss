@@ -87,8 +87,8 @@ $CPH-signs: 'CPH-signs', 'Montserrat', sans-serif;
 		border: 1px solid $border-color; 
 		padding: 0 .625rem;
 		line-height: 1.8;
-		font-size: .85rem;
-		height: 1.8rem;
+		
+		
 		border-radius: .2rem;
 		box-shadow: 1px 1px 2px rgba(0,0,0,.15) inset;
 		font-family: helvetica, arial;
@@ -138,3 +138,29 @@ $CPH-signs: 'CPH-signs', 'Montserrat', sans-serif;
 	box-shadow: 1px 1px 1px rgba(0,0,0,.25) inset;
 }
 
+
+.newsletter-error {
+	margin-top: .3125rem;
+	padding: .3125rem 0;
+	font-size: 11px;
+	line-height: 1;
+	animation-fill-mode:forwards;
+	animation-timing-function: ease;
+	display: none;
+	color: #d9534f;
+	&.show-error {
+		animation: ups .2s 3;
+		display: block;
+	}
+}
+
+
+
+@keyframes ups {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

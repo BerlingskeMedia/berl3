@@ -36,6 +36,7 @@
 			
 			<div class="main-newsletter">
 				<input type="email" name="email" placeholder="Indtast din email" required="required">	
+				<div class="newsletter-error"><i class="bicon-angle-up"></i> Husk at udfylde din email</div>
 			</div>
 			
 			<div class="hidden-newsletters">
@@ -116,7 +117,7 @@
 		  	method: 'GET'
 		})
 		.fail(function() {
-		    alert( "error" );
+		    $('.newsletter-error').addClass('show-error');
 		})
 		.done(function( data ) {
 			$('.newsletter-custom').addClass('newsletter-submitted');
