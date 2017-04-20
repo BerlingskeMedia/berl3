@@ -1,6 +1,6 @@
-# BT prototype
+# Berlingske prototype
 
-* Source: [https://github.com/boskakke/sage](https://github.com/boskakke/sage)
+
 
 
 ## Requirements
